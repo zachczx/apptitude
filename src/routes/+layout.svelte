@@ -15,7 +15,7 @@
 			<li><a href="/todo">To-Do List</a></li>
 		</ul>
 	  </div>
-	  <a class="btn btn-ghost text-xl"><img src={logo} width="70" height="70" class="max-w-full"> The Skill Drill</a>
+	  <a href="/" class="btn btn-ghost text-xl"><img src={logo} width="70" height="70" class="max-w-full"> The Skill Drill</a>
 	</div>
 	<div class="navbar-center hidden lg:flex">
 	  <ul class="menu menu-horizontal px-1">
