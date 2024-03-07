@@ -2,31 +2,11 @@
 	import { info } from './data.js';
 </script>
 
-<div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 justify-items-center gap-y-6 gap-x-8 px-[3rem]">
-	<!--
-    {#each Object.entries(data) as [category, value]}
-    <div class="card w-full bg-base-300 shadow-xl">
-        <figure><img src="" alt="Shoes" /></figure>
-        <div class="card-body">
-          <h2 class="card-title">
-            {category}
-          </h2>
-            <ul class="list-disc">
-                {#each value as item}
-                <li>{item}</li>
-                {/each}
-            </ul>
-          <div class="card-actions justify-end">
-            <div class="badge badge-outline">XXX</div> 
-            <div class="badge badge-outline">YYY</div>
-          </div>
-        </div>
-    </div>
-    {/each}-->
+<div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 justify-items-center gap-y-8 gap-x-8 px-[3rem]">
 
 	{#each info as item, index}
 		{#if item.name}
-			<div class="card w-full bg-base-300 shadow-xl hover:bg-gradient-to-r hover:from-emerald-900 from-50% hover:to-teal-700 to-90%">
+			<div class="card w-full bg-base-300 shadow-xl hover:bg-gradient-to-r hover:from-emerald-900 from-40% hover:to-teal-700 to-70%">
 				<figure><img src="" alt="" /></figure>
 				<div class="card-body grid place-content-start">
 					<h2 class="mb-7 bg-gradient-to-r from-emerald-200 via-blue-300 to-red-600 inline-block text-transparent bg-clip-text">
@@ -55,7 +35,7 @@
 					  <div class="collapse collapse-plus bg-base-200">
 						<input type="radio" name="accordion-{item.name}-2" /> 
 						<div class="collapse-title text-xl font-medium">
-							<h3>Final Form (Bankai)</h3>
+							<h3>Your Final Form</h3>
 						</div>
 						<div class="collapse-content"> 
 							<ul class="list-disc ps-4">

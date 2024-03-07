@@ -124,7 +124,7 @@ export const info = [
 	},
 	{
 		name: 'AI',
-		topics: ['AI', 'deep learning', 'machine learning', 'LLM', 'neural networks', 'natural language processing', 'computer vision', 'prompting', 'pretraining', 'embeddings'],
+		topics: ['AI', 'deep learning', 'machine learning', 'LLM', 'RAG', 'neural networks', 'natural language processing', 'computer vision', 'prompting', 'pretraining', 'embeddings'],
 		questions: [
 			'What are the foundational principles and technologies behind AI and LLMs?',
 			'How can AI and LLMs be leveraged to enhance public service delivery?',
@@ -134,13 +134,31 @@ export const info = [
 			'How can AI contribute to more efficient and effective public service workflows?',
 			'What training or skills are necessary for public sector employees to work effectively with AI?',
 		],
-		objectives: [],
+		objectives: [
+			'Sort through the AI hype from the keepers',
+			'Know what everyone not on LLMs is missing out',
+			'Understand the different techniques and methods to enhance your business processes with AI',
+			'Spot opportunities to do things much faster and easier with LLMs',
+			'Know which LLMs are good, how good, for what',
+		],
 	},
 	{
-		name: '',
-		topics: [],
-		questions: [],
-		objectives: [],
+		name: 'Technical (bonus)',
+		topics: ['programming', 'languages', 'development', 'algorithms', 'data', 'structures', 'engineering', 'cybersecurity', 'CI/CD', 'git'],
+		questions: [
+			'What is <insert language> and what does it do well?',
+			'How do I solve <X> problem? How do others solve it with <Y>?',
+			'How do developers work in the normal world?',
+			'What are difficulties that developers face in my environment?',
+			'How hard is it to do <X>?',
+		],
+		objectives: [
+			'Know what the rest of the world does to solve computer engineering problems',
+			'Learn a useful life skill using logic to solve problems',
+			'Understand whether what you have around you is good or trash',
+			'Opt for the simpler solutions you know people use but which we don\'t necessarily',
+			'Scrutinize billable man effort, fees, proposed work by vendors',
+		],
 	},
 ];
 
