@@ -30,7 +30,7 @@ export const info = [
 	},
 	{
 		name: 'Apps',
-		topics: ['SaaS', 'apps', 'applications'],
+		topics: ['SaaS', 'apps', 'applications', 'AWS', 'Azure', 'GCP', 'M365', 'Workspace'],
 		questions: [
 			'Cloud services on AWS, Azure, Google Cloud Platform',
 			'Do office work on M365, Google Workspace, LibreOffice',
