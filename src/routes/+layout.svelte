@@ -45,7 +45,7 @@
 
 <slot />
 
-<footer class="footer footer-center mt-10 p-4 text-base-content">
+<footer class="footer footer-center mt-[7rem] mb-5 text-base-content">
 	<aside>
 		<p>Copyright © 2024 Zixian Chen. All rights reserved.</p>
 	</aside>

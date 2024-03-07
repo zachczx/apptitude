@@ -2,15 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+    font-family: "Roboto", sans-serif;
+}
+
 @layer base {
     h1 {
         @apply text-5xl lg:text-6xl;
-        font-weight: 800;
+        font-weight: 900;
     }
 
     h2 {
         @apply text-3xl lg:text-4xl;
-        font-weight: 800;
+        font-weight: 600;
     }
 
     h3 {

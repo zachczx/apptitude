@@ -23,12 +23,6 @@ export const info = [
 		]
 	},
 	{
-		name: '',
-		topics: [],
-		questions: [],
-		objectives: []
-	},
-	{
 		name: 'Apps',
 		topics: ['SaaS', 'apps', 'applications', 'AWS', 'Azure', 'GCP', 'M365', 'Workspace'],
 		questions: [
@@ -58,7 +52,7 @@ export const info = [
 			'HR administration through HRPS, Workpal'
 		],
 		objectives: [
-			'Avoid dumping money recreating what has already been developed',
+			'Don\'t dumping money recreating what has already been developed',
 			'See how far we are behind everyone else',
 			'Rid ourselves of misguided sense of superiority and uniqueness'
 		]
@@ -91,21 +85,67 @@ export const info = [
 		]
 	},
 	{
+		name: 'Methodologies',
+		topics: ['agile', 'waterfall', 'scrum', 'lean', 'kanban'],
+		questions: [
+			'What is Agile?',
+			'Is Scrum what you do when you\'re Agile?',
+			'Wait, Agile is not just implementing Scrum?',
+			'What is waterfall and why do people fall back to it?',
+			'What about Lean/Kanban/Less?',
+			'How do I apply Agile/Scrum/Lean/Kanban in my team?'
+		],
+		objectives: [
+			'Feel even more lost navigating the world of "agile"',
+			'Get upset realizing you spent $4000 paying for a Certified Scrum Master / Product Owner',
+			'Notice when people spout nonsense and attaching keywords like agile and waterfall',
+			'Know the limits of implementing methodologies when the organization is structurally incapable',
+			'Feel confident rejecting "daily standups" from ScrumMaster-wannabes'
+		],
+	},
+	{
+		name: 'Data',
+		topics: ['database','data warehouse', 'data lake', 'analysis', 'data visualization', 'data sanitation', 'business intelligence', 'storytelling', 'Tableau', 'ETL'],
+		questions: [
+			'How mature is the organization in the collection, manipulation, exploitation of data?',
+			'What are our business needs for data',
+			'What does the data tell us about our current business performance?',
+			'How can we improve our customer experience based on the data?',
+			'What is ETL?',
+			'How can we design and implement a scalable data pipeline to ingest and process large volumes of structured and unstructured data from multiple sources?',
+			'What is a typical design of a cloud-native stack to derive business intelligence?',
+		],
+		objectives: [
+			'Know where we truly are amid (self created) hype on data science, transformation, AI',
+			'Know what\'s possible and what\s not',
+			'Understand the link between business needs, data collection, analysis, storytelling, arriving at actionable insights',
+			'Learn about modern cloud-based stacks that let you build a scalable data pipeline',
+		],
+	},
+	{
+		name: 'AI',
+		topics: ['AI', 'deep learning', 'machine learning', 'LLM', 'neural networks', 'natural language processing', 'computer vision', 'prompting', 'pretraining', 'embeddings'],
+		questions: [
+			'What are the foundational principles and technologies behind AI and LLMs?',
+			'How can AI and LLMs be leveraged to enhance public service delivery?',
+			'What ethical considerations should guide the use of AI in public sectors?',
+			'How can we ensure the privacy and security of data used by AI systems?',
+			'What are the key challenges in integrating AI technologies into existing IT infrastructure?',
+			'How can AI contribute to more efficient and effective public service workflows?',
+			'What training or skills are necessary for public sector employees to work effectively with AI?',
+		],
+		objectives: [],
+	},
+	{
 		name: '',
 		topics: [],
 		questions: [],
-		objectives: []
-	}
+		objectives: [],
+	},
 ];
 
 export const data = {
-	Products: ['UX', 'Management', 'Strategy', 'Execution (proj mgmt.)', 'Starting products/coys'],
-	Philosophies: ['Agile', 'Scrum/Lean/Kanban/etc'],
-	Data: [
-		'Producing data, cleaning, manipulating, visualizing',
-		'Extraction, Transformation, Loading',
-		'Database/ Warehousing/ Lakes'
-	],
+
 	AI: [
 		'Basics (how it works, what is needed, what goes into final AI algo/model, prompting/training/finetuning/RAG)',
 		'Gen AI, LLMs',
