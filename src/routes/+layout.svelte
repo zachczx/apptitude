@@ -33,7 +33,7 @@
 			</ul>
 		</div>
 		<a href="/" class="btn btn-ghost text-3xl"
-			><img src={logo} width="60" height="60" class="max-w-full" /> Zixian's Skill Seedling</a
+			><img src={logo} width="60" height="60" class="max-w-full" /> Zixian's GitWitty</a
 		>
 	</div>
 	<div class="navbar-center hidden lg:flex">
