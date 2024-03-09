@@ -22,7 +22,6 @@
 
 	$effect(() => {
 		let todosSaved = localStorage.getItem('todos');
-		console.log(todosSaved);
 
 		if (todosSaved) {
 			todos = JSON.parse(todosSaved);
@@ -53,8 +52,6 @@
 
 	function editTodo(index, text, done) {
 		todos[index] = { text, done };
-		console.log(todos[index]);
-		console.log(todos);
 	}
 
 	function toggleTodo(event) {
