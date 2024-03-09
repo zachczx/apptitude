@@ -24,9 +24,9 @@ export const info = [
 		resources: [
 			'https://youtube.com/embed/zN8YNNHcaZc?si=Tj2S7qrsec51DKrJ',
 			'https://youtube.com/embed/zOjov-2OZ0E?si=pQnCP85QMk1MNHIh',
-			'https://youtube.com/embed/zOjov-2OZ0E?si=pQnCP85QMk1MNHIh',
-			'https://youtube.com/embed/WG5ikvJ2TKA?si=PwXJII7jNxOcsWcy',
-			'https://youtube.com/embed/Uq5w1lnKzlk?si=e3CDZfWZr56kjZb9'
+			'https://www.youtube.com/embed/6hPMdpk9qA4?si=3eIaOho9EkNWTPjM',
+			'https://youtube.com/embed/Uq5w1lnKzlk?si=e3CDZfWZr56kjZb9',
+			'https://youtube.com/embed/LTH9m4HkeYY?si=-SCEzZABqeWnriup',
 		]
 	},
 	{
@@ -46,6 +46,11 @@ export const info = [
 			'Know what the free world uses for work',
 			'Identify how efficient and simple processes can be',
 			'See the opportunity costs and trade-offs for not using them'
+		],
+		resources: [
+			"https://www.youtube.com/embed/Uq5w1lnKzlk?si=TDvoQNQel3EjCY3_",
+			"https://www.youtube.com/embed/II-6dDzc-80?si=S_tQl9gngez_DKj3",
+			"https://www.youtube.com/embed/ohtDFXNAUns?si=Fjc4NOyi1-Zdx5p4",
 		]
 	},
 	{
