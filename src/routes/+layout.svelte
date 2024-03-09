@@ -28,7 +28,7 @@
 				class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
 			>
 				<li><a href="/buckets">Competency Buckets</a></li>
-				<li><a href="/wizard">Competency Wizard</a></li>
+				<li><a href="/consult">Consult Z</a></li>
 				<li><a href="/todo">To-Do List</a></li>
 			</ul>
 		</div>
@@ -62,7 +62,7 @@
 				>
 			</li>
 			<li>
-				<a href="/wizard"
+				<a href="/consult"
 					><svg
 						xmlns="http://www.w3.org/2000/svg"
 						class="icon icon-tabler icon-tabler-wand"
@@ -79,7 +79,7 @@
 						/><path d="M15 6l3 3" /><path
 							d="M9 3a2 2 0 0 0 2 2a2 2 0 0 0 -2 2a2 2 0 0 0 -2 -2a2 2 0 0 0 2 -2"
 						/><path d="M19 13a2 2 0 0 0 2 2a2 2 0 0 0 -2 2a2 2 0 0 0 -2 -2a2 2 0 0 0 2 -2" /></svg
-					> Competency Wizard</a
+					> Consult Z</a
 				>
 			</li>
 			<li>

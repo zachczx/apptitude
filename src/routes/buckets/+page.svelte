@@ -19,7 +19,7 @@
 					<h3>Topics</h3>
 					<p class="mb-7">
 						{#each item.topics as topic}
-							<span class="btn btn-primary btn-xs me-2 mt-1">{topic}</span>
+							<span class="btn btn-outline btn-xs me-2 mt-1">{topic}</span>
 						{/each}
 					</p>
 
