@@ -24,7 +24,7 @@
 					</p>
 
 					<div class="collapse collapse-plus bg-base-200">
-						<input type="radio" name="accordion-{item.name}-1" checked="checked" />
+						<input type="radio" name="accordion-{item.name}-1" />
 						<div class="collapse-title">
 							<h3>Find answers to...</h3>
 						</div>

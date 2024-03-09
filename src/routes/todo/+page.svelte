@@ -1,7 +1,7 @@
 <script>
 	let todos = $state([
-		{ text: 'First item', done: true },
-		{ text: 'Second item', done: false }
+		{ text: 'Sample item 1', done: true },
+		{ text: 'Sample item 2', done: false }
 	]);
 
 	////////////////////////////////////
@@ -71,8 +71,8 @@
 	}
 </script>
 
-<div class="grid grid-cols-1 min-h-dvh justify-items-center content-center gap-y-3">
-	<div class=""><h1 class="text-3xl">To-do list</h1></div>
+<div class="grid grid-cols-1 justify-items-center content-start gap-y-3">
+	<div class="mt-5 mb-10"><h1>To-do list</h1></div>
 	<div class="mb-5">
 		<input
 			onkeydown={addTodo}
@@ -130,7 +130,9 @@
 	</div>
 	<div>
 		{outputRemaining()}
-		{#if todoCount > 1}tasks{:else}task{/if} remaining.
+		<i
+			>{#if todoCount > 1}tasks{:else}task{/if} remaining.</i
+		>
 	</div>
 </div>
 

@@ -1,6 +1,8 @@
 <script>
 	import '../app.css';
-	import logo from '$lib/assets/skilldrilllogo_resized.webp';
+	import logo from '$lib/assets/logo_tree.webp';
+	import PageTransition from '$lib/Transition.svelte';
+	export let data;
 </script>
 
 <div class="navbar bg-base-100 mb-10">
@@ -30,8 +32,8 @@
 				<li><a href="/todo">To-Do List</a></li>
 			</ul>
 		</div>
-		<a href="/" class="btn btn-ghost text-xl"
-			><img src={logo} width="70" height="70" class="max-w-full" /> The Skill Drill</a
+		<a href="/" class="btn btn-ghost text-3xl"
+			><img src={logo} width="60" height="60" class="max-w-full" /> Zixian's Skill Seedling</a
 		>
 	</div>
 	<div class="navbar-center hidden lg:flex">
@@ -105,7 +107,9 @@
 	</div>
 </div>
 
-<slot />
+<PageTransition url={data.url}>
+	<slot />
+</PageTransition>
 
 <footer class="footer footer-center mt-[7rem] mb-5 text-base-content">
 	<aside>

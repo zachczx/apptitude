@@ -21,13 +21,20 @@ export const info = [
 			'Know what constitutes modern, digital infrastructure',
 			'Explore cloud computing, cloud storage, virtualization and cloud infrastructure management tools'
 		],
-		resources: [
-			'https://youtube.com/embed/zN8YNNHcaZc?si=Tj2S7qrsec51DKrJ',
-			'https://youtube.com/embed/zOjov-2OZ0E?si=pQnCP85QMk1MNHIh',
-			'https://www.youtube.com/embed/6hPMdpk9qA4?si=3eIaOho9EkNWTPjM',
-			'https://youtube.com/embed/Uq5w1lnKzlk?si=e3CDZfWZr56kjZb9',
-			'https://youtube.com/embed/LTH9m4HkeYY?si=-SCEzZABqeWnriup',
-		]
+		resources: {
+			youtube: [
+				'https://youtube.com/embed/zN8YNNHcaZc?si=Tj2S7qrsec51DKrJ',
+				'https://youtube.com/embed/zOjov-2OZ0E?si=pQnCP85QMk1MNHIh',
+				'https://www.youtube.com/embed/6hPMdpk9qA4?si=3eIaOho9EkNWTPjM',
+				'https://youtube.com/embed/Uq5w1lnKzlk?si=e3CDZfWZr56kjZb9',
+				'https://youtube.com/embed/LTH9m4HkeYY?si=-SCEzZABqeWnriup'
+			],
+			links: [
+				'https://www.coursera.org/learn/python',
+				'https://pll.harvard.edu/course/cs50-introduction-computer-science',
+				'https://www.coursera.org/specializations/aws-fundamentals'
+			]
+		}
 	},
 	{
 		name: 'Apps',
@@ -47,11 +54,14 @@ export const info = [
 			'Identify how efficient and simple processes can be',
 			'See the opportunity costs and trade-offs for not using them'
 		],
-		resources: [
-			"https://www.youtube.com/embed/Uq5w1lnKzlk?si=TDvoQNQel3EjCY3_",
-			"https://www.youtube.com/embed/II-6dDzc-80?si=S_tQl9gngez_DKj3",
-			"https://www.youtube.com/embed/ohtDFXNAUns?si=Fjc4NOyi1-Zdx5p4",
-		]
+		resources: {
+			youtube: [
+				'https://www.youtube.com/embed/Uq5w1lnKzlk?si=TDvoQNQel3EjCY3_',
+				'https://www.youtube.com/embed/II-6dDzc-80?si=S_tQl9gngez_DKj3',
+				'https://www.youtube.com/embed/ohtDFXNAUns?si=Fjc4NOyi1-Zdx5p4'
+			],
+			links: []
+		}
 	},
 	{
 		name: 'WOG',
@@ -67,7 +77,21 @@ export const info = [
 			"Don't dump money recreating stuff already developed",
 			'See how far we are behind everyone else',
 			'Rid ourselves of misguided sense of superiority and uniqueness'
-		]
+		],
+		resources: {
+			youtube: [
+				'https://www.youtube.com/embed/5u6nRus74ZQ?si=AJoNdLtdkxV4TV3i',
+				'https://www.youtube.com/embed/02f4G6pU-08',
+				'https://www.youtube.com/embed/MfGD-cG6nOA',
+				'https://www.youtube.com/embed/l8qmHxzCTfE',
+				'https://www.youtube.com/embed/E3lum6GcjQo'
+			],
+			links: [
+				'https://www.developer.tech.gov.sg/',
+				'https://www.open.gov.sg/products/',
+				'https://www.tech.gov.sg/products-and-services/'
+			]
+		}
 	},
 	{
 		name: 'Products',
@@ -94,7 +118,20 @@ export const info = [
 			'Spot solutions in search of a problem',
 			'Feel it in your soul when a "product" just ain\'t it',
 			'Think user-first, Min/PS/DS last'
-		]
+		],
+		resources: {
+			youtube: [
+				'https://www.youtube.com/embed/0LNQxT9LvM0?si=KHzWpcisYehJbdHF',
+				'https://www.youtube.com/embed/C27RVio2rOs?si=rKY_2K-n0lC6vk54',
+				'https://www.youtube.com/embed/QRZ_l7cVzzU?si=sh3L1sWZzBhLb2dy',
+				'https://www.youtube.com/embed/6DTK9yDP6p0?si=niskiu1FnnDNhiOQ',
+				'https://www.youtube.com/embed/oWZbWzAyHAE?si=aFy0z0ePzrlUTvSD'
+			],
+			links: [
+				'https://youtube.com/playlist?list=PLbRVPa07FtZe4oDvfvQXH-MtZBl-_00Rh&si=1Gi3t6ilHD46tF6z',
+				'https://www.coursera.org/professional-certificates/google-ux-design'
+			]
+		}
 	},
 	{
 		name: 'Methodologies',
@@ -113,7 +150,22 @@ export const info = [
 			'Notice when people spout nonsense and attaching keywords like agile and waterfall',
 			'Know the limits of implementing methodologies when the organization is structurally incapable',
 			'Feel confident rejecting "daily standups" from ScrumMaster-wannabes'
-		]
+		],
+		resources: {
+			youtube: [
+				'https://youtube.com/embed/5Ty-WC4gLto',
+				'https://youtube.com/embed/J4ihLROXzPk?si=wfk8YSa3fePUtHxs',
+				'https://youtube.com/embed/OosYzkP-pLk?si=E7RqVQeN3L50b4sk',
+				'https://youtube.com/embed/vSnCeJEka_s?si=GNhjdQVV8rn9l4iH',
+				'https://youtube.com/embed/scEDHsr3APg'
+			],
+			links: [
+				'https://agilemanifesto.org/',
+				'https://agilemanifesto.org/principles.html',
+				'https://youtube.com/playlist?list=PLD2BMPY5WcfAYTEYXW0NGxodOi1PLC1XN&si=b_ym-Jy4_UOeS1Iv',
+				'https://www.youtube.com/playlist?list=PL32pD389V8xt_znF-pvOl7OP_xNfnkGgq'
+			]
+		}
 	},
 	{
 		name: 'Data',
@@ -143,7 +195,19 @@ export const info = [
 			"Know what's possible and whats not",
 			'Understand the link between business needs, data collection, analysis, storytelling, arriving at actionable insights',
 			'Learn about modern cloud-based stacks that let you build a scalable data pipeline'
-		]
+		],
+		resources: {
+			youtube: [
+				'https://youtube.com/embed/yZvFH7B6gKI?si=knmkZUMf5A21sLXs',
+				'https://youtube.com/embed/-bSkREem8dM?si=i6lRT55iMs30lOLS'
+			],
+			links: [
+				'https://www.coursera.org/learn/foundations-data',
+				'https://www.youtube.com/embed/ZPw0dmGuyyE&list=PLTZYG7bZ1u6rcPlcX75pMkjsYY_HTL7aZ',
+				'https://www.coursera.org/professional-certificates/google-data-analytics',
+				'https://www.coursera.org/professional-certificates/ibm-data-science'
+			]
+		}
 	},
 	{
 		name: 'AI',
@@ -175,7 +239,20 @@ export const info = [
 			'Understand the different techniques and methods to enhance your business processes with AI',
 			'Spot opportunities to do things much faster and easier with LLMs',
 			'Know which LLMs are good, how good, for what'
-		]
+		],
+		resources: {
+			youtube: [
+				'https://youtube.com/embed/PeMlggyqz0Y?si=X1ZeR-qr01d_BnP-',
+				'https://youtube.com/embed/5sLYAQS9sWQ',
+				'https://youtube.com/embed/T-D1OfcDW1M?si=WZJLcElfcEh4-51c',
+				'https://youtube.com/embed/5t1vTLU7s40?si=uEflOaOw_p1eyRoZ'
+			],
+			links: [
+				'https://www.cloudskillsboost.google/course_templates/536',
+				'https://www.coursera.org/learn/ai-for-everyone',
+				'https://www.deeplearning.ai/courses/deep-learning-specialization/'
+			]
+		}
 	},
 	{
 		name: 'Technical',
@@ -204,21 +281,21 @@ export const info = [
 			'Understand whether what you have around you is good or trash',
 			"Opt for the simpler solutions you know people use but which we don't necessarily",
 			'Scrutinize billable man effort, fees, proposed work by vendors'
-		]
+		],
+		resources: {
+			youtube: [
+				'https://youtube.com/embed/pEfrdAtAmqk?si=XbNLZmktdg7oQCis',
+				'https://youtube.com/embed/-uleG_Vecis?si=R0MCXM6csXiGXyjD',
+				'https://youtube.com/embed/aXOChLn5ZdQ?si=-KXtJPY2mI3pRlIv'
+			],
+			links: [
+				'https://www.coursera.org/professional-certificates/meta-back-end-developer',
+				'https://www.coursera.org/professional-certificates/meta-front-end-developer',
+				'https://www.youtube.com/@WebDevSimplified',
+				'https://www.youtube.com/@JoyofCodeDev',
+				'https://www.youtube.com/@bugbytes3923',
+				'https://www.youtube.com/@KevinPowell'
+			]
+		}
 	}
 ];
-
-export const data = {
-	AI: [
-		'Basics (how it works, what is needed, what goes into final AI algo/model, prompting/training/finetuning/RAG)',
-		'Gen AI, LLMs',
-		'Under the hood with more traditional concepts about DL, ML, NN, GAN',
-		'Image generation'
-	],
-	Technical: [
-		'Programming/scripting',
-		'Algorithms, data structures, classic "hard" problems',
-		'Engineering mindset to solving problems',
-		'Cybersecurity'
-	]
-};
