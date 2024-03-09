@@ -52,7 +52,7 @@ export const info = [
 			'HR administration through HRPS, Workpal'
 		],
 		objectives: [
-			'Don\'t dumping money recreating what has already been developed',
+			"Don't dumping money recreating what has already been developed",
 			'See how far we are behind everyone else',
 			'Rid ourselves of misguided sense of superiority and uniqueness'
 		]
@@ -89,7 +89,7 @@ export const info = [
 		topics: ['agile', 'waterfall', 'scrum', 'lean', 'kanban'],
 		questions: [
 			'What is Agile?',
-			'Is Scrum what you do when you\'re Agile?',
+			"Is Scrum what you do when you're Agile?",
 			'Wait, Agile is not just implementing Scrum?',
 			'What is waterfall and why do people fall back to it?',
 			'What about Lean/Kanban/Less?',
@@ -101,11 +101,22 @@ export const info = [
 			'Notice when people spout nonsense and attaching keywords like agile and waterfall',
 			'Know the limits of implementing methodologies when the organization is structurally incapable',
 			'Feel confident rejecting "daily standups" from ScrumMaster-wannabes'
-		],
+		]
 	},
 	{
 		name: 'Data',
-		topics: ['database','data warehouse', 'data lake', 'analysis', 'data visualization', 'data sanitation', 'business intelligence', 'storytelling', 'Tableau', 'ETL'],
+		topics: [
+			'database',
+			'data warehouse',
+			'data lake',
+			'analysis',
+			'data visualization',
+			'data sanitation',
+			'business intelligence',
+			'storytelling',
+			'Tableau',
+			'ETL'
+		],
 		questions: [
 			'How mature is the organization in the collection, manipulation, exploitation of data?',
 			'What are our business needs for data',
@@ -113,18 +124,30 @@ export const info = [
 			'How can we improve our customer experience based on the data?',
 			'What is ETL?',
 			'How can we design and implement a scalable data pipeline to ingest and process large volumes of structured and unstructured data from multiple sources?',
-			'What is a typical design of a cloud-native stack to derive business intelligence?',
+			'What is a typical design of a cloud-native stack to derive business intelligence?'
 		],
 		objectives: [
 			'Know where we truly are amid (self created) hype on data science, transformation, AI',
-			'Know what\'s possible and what\s not',
+			"Know what's possible and whats not",
 			'Understand the link between business needs, data collection, analysis, storytelling, arriving at actionable insights',
-			'Learn about modern cloud-based stacks that let you build a scalable data pipeline',
-		],
+			'Learn about modern cloud-based stacks that let you build a scalable data pipeline'
+		]
 	},
 	{
 		name: 'AI',
-		topics: ['AI', 'deep learning', 'machine learning', 'LLM', 'RAG', 'neural networks', 'natural language processing', 'computer vision', 'prompting', 'pretraining', 'embeddings'],
+		topics: [
+			'AI',
+			'deep learning',
+			'machine learning',
+			'LLM',
+			'RAG',
+			'neural networks',
+			'natural language processing',
+			'computer vision',
+			'prompting',
+			'pretraining',
+			'embeddings'
+		],
 		questions: [
 			'What are the foundational principles and technologies behind AI and LLMs?',
 			'How can AI and LLMs be leveraged to enhance public service delivery?',
@@ -132,38 +155,48 @@ export const info = [
 			'How can we ensure the privacy and security of data used by AI systems?',
 			'What are the key challenges in integrating AI technologies into existing IT infrastructure?',
 			'How can AI contribute to more efficient and effective public service workflows?',
-			'What training or skills are necessary for public sector employees to work effectively with AI?',
+			'What training or skills are necessary for public sector employees to work effectively with AI?'
 		],
 		objectives: [
 			'Sort through the AI hype from the keepers',
 			'Know what everyone not on LLMs is missing out',
 			'Understand the different techniques and methods to enhance your business processes with AI',
 			'Spot opportunities to do things much faster and easier with LLMs',
-			'Know which LLMs are good, how good, for what',
-		],
+			'Know which LLMs are good, how good, for what'
+		]
 	},
 	{
 		name: 'Technical (bonus)',
-		topics: ['programming', 'languages', 'development', 'algorithms', 'data', 'structures', 'engineering', 'cybersecurity', 'CI/CD', 'git'],
+		topics: [
+			'programming',
+			'languages',
+			'development',
+			'algorithms',
+			'data',
+			'structures',
+			'engineering',
+			'cybersecurity',
+			'CI/CD',
+			'git'
+		],
 		questions: [
 			'What is <insert language> and what does it do well?',
 			'How do I solve <X> problem? How do others solve it with <Y>?',
 			'How do developers work in the normal world?',
 			'What are difficulties that developers face in my environment?',
-			'How hard is it to do <X>?',
+			'How hard is it to do <X>?'
 		],
 		objectives: [
 			'Know what the rest of the world does to solve computer engineering problems',
 			'Learn a useful life skill using logic to solve problems',
 			'Understand whether what you have around you is good or trash',
-			'Opt for the simpler solutions you know people use but which we don\'t necessarily',
-			'Scrutinize billable man effort, fees, proposed work by vendors',
-		],
-	},
+			"Opt for the simpler solutions you know people use but which we don't necessarily",
+			'Scrutinize billable man effort, fees, proposed work by vendors'
+		]
+	}
 ];
 
 export const data = {
-
 	AI: [
 		'Basics (how it works, what is needed, what goes into final AI algo/model, prompting/training/finetuning/RAG)',
 		'Gen AI, LLMs',

@@ -3,26 +3,26 @@
 @tailwind utilities;
 
 :root {
-    font-family: "Roboto", sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 
 @layer base {
-    h1 {
-        @apply text-5xl lg:text-6xl;
-        font-weight: 900;
-    }
+	h1 {
+		@apply text-5xl lg:text-6xl;
+		font-weight: 900;
+	}
 
-    h2 {
-        @apply text-3xl lg:text-4xl;
-        font-weight: 600;
-    }
+	h2 {
+		@apply text-3xl lg:text-4xl;
+		font-weight: 600;
+	}
 
-    h3 {
-        @apply text-xl lg:text-2xl;
-        font-weight: 600;
-    }
+	h3 {
+		@apply text-xl lg:text-2xl;
+		font-weight: 600;
+	}
 
-    /*
+	/*
     p {
         @apply lg:text-lg xl:text-xl;
     }
