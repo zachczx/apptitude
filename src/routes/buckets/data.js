@@ -20,6 +20,13 @@ export const info = [
 			'Grasp the Fundamentals of Internet, web technologies, network infrastructure',
 			'Know what constitutes modern, digital infrastructure',
 			'Explore cloud computing, cloud storage, virtualization and cloud infrastructure management tools'
+		],
+		resources: [
+			'https://youtube.com/embed/zN8YNNHcaZc?si=Tj2S7qrsec51DKrJ',
+			'https://youtube.com/embed/zOjov-2OZ0E?si=pQnCP85QMk1MNHIh',
+			'https://youtube.com/embed/zOjov-2OZ0E?si=pQnCP85QMk1MNHIh',
+			'https://youtube.com/embed/WG5ikvJ2TKA?si=PwXJII7jNxOcsWcy',
+			'https://youtube.com/embed/Uq5w1lnKzlk?si=e3CDZfWZr56kjZb9'
 		]
 	},
 	{
@@ -42,7 +49,7 @@ export const info = [
 		]
 	},
 	{
-		name: 'WOG products',
+		name: 'WOG',
 		topics: ['SG Tech Stack', 'GSIB', 'GCC', 'GDC', 'SG-Teams'],
 		questions: [
 			'Mainstays in WOG networks, especially the endpoint device, network, and backend infrastructure',
@@ -52,7 +59,7 @@ export const info = [
 			'HR administration through HRPS, Workpal'
 		],
 		objectives: [
-			"Don't dumping money recreating what has already been developed",
+			"Don't dump money recreating stuff already developed",
 			'See how far we are behind everyone else',
 			'Rid ourselves of misguided sense of superiority and uniqueness'
 		]
@@ -166,7 +173,7 @@ export const info = [
 		]
 	},
 	{
-		name: 'Technical (bonus)',
+		name: 'Technical',
 		topics: [
 			'programming',
 			'languages',
