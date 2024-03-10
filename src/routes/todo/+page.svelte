@@ -69,7 +69,10 @@
 </script>
 
 <div class="grid grid-cols-1 justify-items-center content-start gap-y-3">
-	<div class="mt-5 mb-10"><h1>To-do list</h1></div>
+	<div class="text-center mb-10 lg:mb-20">
+		<h1 class="bg-gradient-to-r from-emerald-200 via-orange-200 to-pink-200 inline-block text-transparent bg-clip-text py-3">To-Dos</h1>
+		<div><i>Track what you gotta do.</i></div>	
+	</div>
 	<div class="mb-5">
 		<input
 			onkeydown={addTodo}

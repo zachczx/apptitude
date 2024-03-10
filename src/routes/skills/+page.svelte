@@ -2,8 +2,12 @@
 	import { info } from './data.js';
 </script>
 
+<div class="text-center mb-10 lg:mb-20 ">
+<h1 class="bg-gradient-to-r from-emerald-200 via-orange-200 to-pink-200 inline-block text-transparent bg-clip-text py-3">The Skill Forge</h1>
+<div><i>Find your own path upsizing your Bytes into Megabytes.</i></div>	
+</div>
 <div
-	class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 justify-items-center gap-y-8 gap-x-8 px-[3rem]"
+	class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 justify-items-center gap-y-8 gap-x-8 px-5 lg:px-20"
 >
 	{#each info as item}
 		{#if item.name}
@@ -14,7 +18,7 @@
 					<h2
 						class="mb-7 bg-gradient-to-r from-emerald-200 via-blue-300 to-teal-600 inline-block text-transparent bg-clip-text"
 					>
-						<a href="/buckets/{item.name}">{item.name}</a>
+						<a href="/skills/{item.name}">{item.name}</a>
 					</h2>
 					<h3>Topics</h3>
 					<p class="mb-7">
@@ -55,7 +59,7 @@
 							</ul>
 						</div>
 					</div>
-					<a href="/buckets/{item.name}" class="btn btn-warning btn-sm"
+					<a href="/skills/{item.name}" class="btn btn-warning btn-sm"
 						>Read more&nbsp;&nbsp;&#x2192;</a
 					>
 				</div>
