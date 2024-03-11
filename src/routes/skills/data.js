@@ -1,6 +1,6 @@
 export const info = [
 	{
-		id:1,
+		id: 1,
 		name: 'Basics',
 		topics: ['cloud', 'Internet', 'computing', 'networking', 'development', 'software'],
 		questions: [
@@ -38,7 +38,7 @@ export const info = [
 		}
 	},
 	{
-		id:2,
+		id: 2,
 		name: 'Apps',
 		topics: ['SaaS', 'apps', 'applications', 'AWS', 'Azure', 'GCP', 'M365', 'Workspace'],
 		questions: [
@@ -66,7 +66,7 @@ export const info = [
 		}
 	},
 	{
-		id:3,
+		id: 3,
 		name: 'WOG',
 		topics: ['SG Tech Stack', 'GSIB', 'GCC', 'GDC', 'SG-Teams'],
 		questions: [
@@ -97,7 +97,7 @@ export const info = [
 		}
 	},
 	{
-		id:4,
+		id: 4,
 		name: 'Products',
 		topics: [
 			'product management',
@@ -138,7 +138,7 @@ export const info = [
 		}
 	},
 	{
-		id:5,
+		id: 5,
 		name: 'Methodologies',
 		topics: ['agile', 'waterfall', 'scrum', 'lean', 'kanban'],
 		questions: [
@@ -173,7 +173,7 @@ export const info = [
 		}
 	},
 	{
-		id:6,
+		id: 6,
 		name: 'Data',
 		topics: [
 			'database',
@@ -216,7 +216,7 @@ export const info = [
 		}
 	},
 	{
-		id:7,
+		id: 7,
 		name: 'AI',
 		topics: [
 			'AI',
@@ -262,7 +262,7 @@ export const info = [
 		}
 	},
 	{
-		id:8,
+		id: 8,
 		name: 'Technical',
 		topics: [
 			'programming',

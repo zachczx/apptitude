@@ -2,21 +2,25 @@
 	import { info } from './data.js';
 </script>
 
-<div class="text-center mb-10 lg:mb-20 ">
-<h1 class="bg-gradient-to-r from-emerald-200 via-orange-200 to-pink-200 inline-block text-transparent bg-clip-text py-3">The Skill Forge</h1>
-<div><i>Find your own path upsizing your Bytes into Megabytes.</i></div>	
+<div class="mb-10 text-center lg:mb-20">
+	<h1
+		class="inline-block bg-gradient-to-r from-emerald-200 via-orange-200 to-pink-200 bg-clip-text py-3 text-transparent"
+	>
+		The Skill Forge
+	</h1>
+	<div><i>Find your own path upsizing your Bytes into Megabytes.</i></div>
 </div>
 <div
-	class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 justify-items-center gap-y-8 gap-x-8 px-5 lg:px-20"
+	class="grid grid-cols-1 justify-items-center gap-x-8 gap-y-8 px-5 lg:grid-cols-2 lg:px-20 xl:grid-cols-4"
 >
 	{#each info as item}
 		{#if item.name}
 			<div
-				class="card w-full bg-base-300 shadow-xl hover:bg-gradient-to-r hover:from-gray-700 from-40% hover:to-slate-700 to-70%"
+				class="card w-full bg-base-300 from-40% to-70% shadow-xl hover:bg-gradient-to-r hover:from-gray-700 hover:to-slate-700"
 			>
-				<div class="card-body grid place-content-start">
+				<div class="card-body grid grid-cols-1 place-content-start">
 					<h2
-						class="mb-7 bg-gradient-to-r from-emerald-200 via-blue-300 to-teal-600 inline-block text-transparent bg-clip-text"
+						class="mb-7 inline-block bg-gradient-to-r from-emerald-200 via-blue-300 to-teal-600 bg-clip-text text-transparent"
 					>
 						<a href="/skills/{item.name}">{item.name}</a>
 					</h2>
@@ -33,7 +37,7 @@
 							<h3>Find answers to...</h3>
 						</div>
 						<div class="collapse-content">
-							<ul class="list-disc mb-7 ps-4">
+							<ul class="mb-7 list-disc ps-4">
 								{#each item.questions as question, index}
 									{#if index < 3}
 										<li>{question}</li>
@@ -59,7 +63,7 @@
 							</ul>
 						</div>
 					</div>
-					<a href="/skills/{item.name}" class="btn btn-warning btn-sm"
+					<a href="/skills/{item.name}" class="btn btn-primary btn-sm"
 						>Read more&nbsp;&nbsp;&#x2192;</a
 					>
 				</div>

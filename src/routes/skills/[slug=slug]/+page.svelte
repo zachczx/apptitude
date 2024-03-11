@@ -6,23 +6,58 @@
 </script>
 
 <div
-	class="grid grid-cols-1 lg:grid-cols-2 bg-base-300 gap-4 rounded-lg shadow-xl place-content-start mx-7 px-5 py-5"
+	class="mx-7 grid grid-cols-1 place-content-start gap-4 rounded-lg bg-base-300 px-5 py-5 shadow-xl lg:grid-cols-2"
 >
-
-	<div class="lg:col-span-2 text-center font-bold grid grid-cols-2">
-		<div class="justify-self-start"><a href="/skills/{data.lastPost.name}"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-chevron-left inline align-top" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M13 15l-3 -3l3 -3" /><path d="M21 12a9 9 0 1 0 -18 0a9 9 0 0 0 18 0z" /></svg> Previous</a></div>
-		<div class="justify-self-end"><a href="/skills/{data.nextPost.name}">Next <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-chevron-right inline align-top" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M11 9l3 3l-3 3" /><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0z" /></svg></a></div>
+	<div class="grid grid-cols-2 text-center font-bold lg:col-span-2">
+		<div class="justify-self-start">
+			<a href="/skills/{data.lastPost.name}"
+				><svg
+					xmlns="http://www.w3.org/2000/svg"
+					class="icon icon-tabler icon-tabler-circle-chevron-left inline align-top"
+					width="24"
+					height="24"
+					viewBox="0 0 24 24"
+					stroke-width="1.5"
+					stroke="currentColor"
+					fill="none"
+					stroke-linecap="round"
+					stroke-linejoin="round"
+					><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M13 15l-3 -3l3 -3" /><path
+						d="M21 12a9 9 0 1 0 -18 0a9 9 0 0 0 18 0z"
+					/></svg
+				> Previous</a
+			>
+		</div>
+		<div class="justify-self-end">
+			<a href="/skills/{data.nextPost.name}"
+				>Next <svg
+					xmlns="http://www.w3.org/2000/svg"
+					class="icon icon-tabler icon-tabler-circle-chevron-right inline align-top"
+					width="24"
+					height="24"
+					viewBox="0 0 24 24"
+					stroke-width="1.5"
+					stroke="currentColor"
+					fill="none"
+					stroke-linecap="round"
+					stroke-linejoin="round"
+					><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M11 9l3 3l-3 3" /><path
+						d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0z"
+					/></svg
+				></a
+			>
+		</div>
 	</div>
-	<div class="lg:col-span-2 text-center">
+	<div class="text-center lg:col-span-2">
 		<figure><img src="" alt="" /></figure>
 		<h1
-			class="mb-3 bg-gradient-to-r from-emerald-200 via-blue-300 to-teal-300 inline-block text-transparent bg-clip-text"
+			class="mb-3 inline-block bg-gradient-to-r from-emerald-200 via-blue-300 to-teal-300 bg-clip-text text-transparent"
 		>
 			Let's talk: {data.post.name}
 		</h1>
 	</div>
 
-	<div class="lg:col-span-2 rounded-lg bg-base-200 p-5">
+	<div class="rounded-lg bg-base-200 p-5 lg:col-span-2">
 		<h3 class="mb-5">Topics</h3>
 		<p class="mb-7">
 			{#each data.post.topics as topic}
@@ -30,15 +65,15 @@
 			{/each}
 		</p>
 	</div>
-	<div class="bg-base-200 p-5 rounded-lg">
+	<div class="rounded-lg bg-base-200 p-5">
 		<h3 class="mb-5">Find answers to...</h3>
-		<ul class="list-disc mb-7 ps-4">
+		<ul class="mb-7 list-disc ps-4">
 			{#each data.post.questions as question}
 				<li>{question}</li>
 			{/each}
 		</ul>
 	</div>
-	<div class="bg-base-200 p-5 rounded-lg">
+	<div class="rounded-lg bg-base-200 p-5">
 		<h3 class="mb-5">Your Final Form</h3>
 		<ul class="list-disc ps-4">
 			{#each data.post.objectives as objective}
@@ -46,7 +81,7 @@
 			{/each}
 		</ul>
 	</div>
-	<div class="col-span-1 lg:col-span-2 bg-base-200 p-5 rounded-lg">
+	<div class="col-span-1 rounded-lg bg-base-200 p-5 lg:col-span-2">
 		<h3 class="mb-5">Resources</h3>
 		<div class="grid">
 			<h4 class="mb-3">
@@ -66,7 +101,8 @@
 					/><path
 						d="M13 18l-.397 .534a5.068 5.068 0 0 1 -7.127 0a4.972 4.972 0 0 1 0 -7.071l.524 -.463"
 					/></svg
-				> Links
+				>
+				Links
 			</h4>
 			{#if data.post.resources.links == ''}
 				Sorry, nothing here
@@ -77,7 +113,7 @@
 					</ul>
 				{/each}
 			{/if}
-			<h4 class="mt-7 mb-2">
+			<h4 class="mb-2 mt-7">
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
 					class="icon icon-tabler icon-tabler-brand-youtube-filled inline"
