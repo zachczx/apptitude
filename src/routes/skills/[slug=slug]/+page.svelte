@@ -152,3 +152,11 @@
 		</div>
 	</div>
 </div>
+
+
+<style>
+	li {
+		margin-bottom: 0.75rem;
+		padding-left: 0.75rem;
+	}
+</style>
