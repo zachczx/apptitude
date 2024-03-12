@@ -20,16 +20,25 @@ function seeMore() {
 	>
 		{data.post.name}
 	</h1>
-	<p>
-		<a href="https://www.mckinsey.com/industries/public-sector/our-insights/unlocking-the-potential-of-public-sector-it-projects"
-			><i>"Eight out of ten public-sector IT projects take longer than expected, compared with just more than half of projects in the private sector.<br>Cost overruns occur in nearly one in two public-sector projects, as opposed to about one in three in the private sector."<br> - Kerstin Balka, Breanna Heslin, and Sina Risse-Tenk (2022)</i></a
-		>
-	</p>
+	<div class="px-20 grid grid-cols-auto place-items-center">
+		
+		{#each data.post.bylines as byline, index}
+			<div class="chat {index%2 === 0 ? 'chat-start' : 'chat-end'}">
+			<div class="chat-image avatar">
+			  <div class="w-14 rounded-full">
+				<img src="/src/lib/assets/profilehead/{byline.icon ? byline.icon : 'user-circle.svg'}" alt="Author">
+			</div>
+			</div>
+			<div class="chat-bubble text-sm">{byline.text}</div>
+		  </div>
+		  {/each}
+
+	</div>
 </div>
 
 <div class="grid grid-cols-1 justify-items-center gap-x-8 gap-y-8 px-5 lg:px-20">
 	<div class="collapse bg-base-200">
-		<input type="checkbox" class="peer" bind:group={checkAll} />
+		<input type="checkbox" class="peer" />
 		<div
 			class="collapse-title flex justify-between bg-base-300 text-center peer-checked:bg-slate-900"
 		>
@@ -40,9 +49,9 @@ function seeMore() {
 		<div class="collapse-content bg-gradient-to-b from-slate-900 to-slate-800">
 			<div class="card w-full bg-base-300 px-5 shadow-xl xl:col-span-1">
 				<div class="card-body">
-					<ol class="list-decimal">
+					<ol class="list-decimal divide-y-2 divide-slate-600">
 						{#each data.post.definitions as definition}
-							<li class="text-lg">{definition}</li>
+							<li class="text-lg rounded hover:bg-slate-700">{definition}</li>
 						{/each}
 					</ol>
 				</div>
@@ -62,9 +71,9 @@ function seeMore() {
 		<div class="collapse-content bg-gradient-to-b from-pink-800 to-rose-700">
 			<div class="card w-full bg-base-300 px-5 shadow-xl">
 				<div class="card-body">
-					<ol class="list-decimal">
+					<ol class="list-decimal divide-y-2 divide-slate-600">
 						{#each data.post.goals as goal}
-							<li class="text-lg">{goal}</li>
+							<li class="text-lg rounded hover:bg-slate-700">{goal}</li>
 						{/each}
 					</ol>
 				</div>
@@ -84,17 +93,17 @@ function seeMore() {
 		<div class="collapse-content bg-gradient-to-b from-pink-800 to-rose-700">
 			<div class="card w-full bg-base-300 px-5 shadow-xl">
 				<div class="card-body">
-					<ol class="list-decimal">
+					<ol class="list-decimal divide-y-2 divide-slate-600">
 						{#each data.post.questions as question, index}
 							{#if index < 5}
-								<li class="text-lg">{question}</li>
+								<li class="text-lg rounded hover:bg-slate-700">{question}</li>
 							{:else if index >= 5 && seeMoreVar === true}
-								<li class="text-lg">{question}</li>
+								<li class="text-lg rounded hover:bg-slate-700">{question}</li>
 							{/if}
 						{/each}
 					</ol>
-					<button onclick={seeMore} class="btn btn-outline btn-sm mt-5"
-						>{#if seeMoreVar === true}See less{:else}See more{/if}</button
+					<button onclick={seeMore} class="btn btn-ghost btn-sm mt-5"
+						>{seeMoreVar === true ? 'See less' : 'See more'}</button
 					>
 				</div>
 			</div>
@@ -107,15 +116,15 @@ function seeMore() {
 			class="collapse-title flex justify-between bg-base-300 text-center peer-checked:bg-red-800"
 		>
 			<div class="self-center"><img src={chevronDown} alt="Arrow down" /></div>
-			<h2 class="flex"><svg  xmlns="http://www.w3.org/2000/svg"  width="40"  height="40"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-circle-x inline me-3"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /><path d="M10 10l4 4m0 -4l-4 4" /></svg>Dealbreakers - kill switch conditions</h2>
+			<h2 class="flex"><svg  xmlns="http://www.w3.org/2000/svg"  width="40"  height="40"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-circle-x inline me-3"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /><path d="M10 10l4 4m0 -4l-4 4" /></svg>Dealbreakers (when things are bad)</h2>
 			<div class="self-center"><img src={chevronDown} alt="Arrow down" /></div>
 		</div>
 		<div class="collapse-content bg-gradient-to-b from-red-800 to-orange-700">
 			<div class="card w-full bg-base-300 px-5 shadow-xl xl:col-span-2">
 				<div class="card-body">
-					<ol class="list-decimal">
+					<ol class="list-decimal divide-y-2 divide-slate-600">
 						{#each data.post.dealbreakers as dealbreaker}
-							<li class="text-lg">{dealbreaker}</li>
+							<li class="text-lg rounded hover:bg-slate-700">{dealbreaker}</li>
 						{/each}
 					</ol>
 				</div>
@@ -135,9 +144,9 @@ function seeMore() {
 		<div class="collapse-content bg-gradient-to-b from-slate-900 to-slate-800">
 			<div class="card w-full bg-base-300 px-5 shadow-xl">
 				<div class="card-body">
-					<ol class="list-decimal">
+					<ol class="list-decimal divide-y-2 divide-slate-600">
 						{#each data.post.solutions as solution}
-							<li class="text-lg">{solution}</li>
+							<li class="text-lg rounded hover:bg-slate-700">{solution}</li>
 						{/each}
 					</ol>
 				</div>
@@ -157,9 +166,9 @@ function seeMore() {
 		<div class="collapse-content bg-gradient-to-b from-slate-900 to-slate-800">
 			<div class="card w-full bg-base-300 px-5 shadow-xl">
 				<div class="card-body">
-					<ol class="list-decimal">
+					<ol class="list-decimal divide-y-2 divide-slate-600">
 						{#each data.post.suggestions as suggestion}
-							<li class="text-lg">{suggestion}</li>
+							<li class="text-lg rounded hover:bg-slate-700">{suggestion}</li>
 						{/each}
 					</ol>
 				</div>
@@ -170,7 +179,9 @@ function seeMore() {
 
 <style>
 	li {
-		margin-bottom: 0.75rem;
-		padding-left: 0.75rem;
+		padding-top: 0.5rem;
+		padding-bottom: 0.5rem;
+		padding-left: 0.5rem;
+		
 	}
 </style>

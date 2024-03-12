@@ -28,8 +28,9 @@
 				class="menu dropdown-content menu-sm z-[1] mt-3 w-52 rounded-box bg-base-100 p-2 shadow"
 			>
 				<li><a href="/skills">The Skill Forge</a></li>
-				<li><a href="/cacheup">Cache-Up!</a></li>
+				<li><a href="/cacheup">Cache Up!</a></li>
 				<li><a href="/todo">To-Do List</a></li>
+				<li><a href="/faq">FAQs</a></li>
 			</ul>
 		</div>
 		<a href="/" class="btn btn-ghost text-3xl"
@@ -37,7 +38,7 @@
 		>
 	</div>
 	<div class="navbar-center hidden lg:flex">
-		<ul class="menu menu-horizontal px-1">
+		<ul class="menu menu-horizontal px-1 gap-x-3">
 			<li>
 				<a href="/skills">
 					<svg
@@ -102,7 +103,7 @@
 						/><path d="M15 6l3 3" /><path
 							d="M9 3a2 2 0 0 0 2 2a2 2 0 0 0 -2 2a2 2 0 0 0 -2 -2a2 2 0 0 0 2 -2"
 						/><path d="M19 13a2 2 0 0 0 2 2a2 2 0 0 0 -2 2a2 2 0 0 0 -2 -2a2 2 0 0 0 2 -2" /></svg
-					> Cache-Up!</a
+					> Cache Up!</a
 				>
 			</li>
 			<li>
@@ -125,6 +126,12 @@
 						/><path d="M11 12l9 0" /><path d="M11 18l9 0" /></svg
 					> To-Dos</a
 				>
+			</li>
+			<li>
+				<a href="/faq">
+					<svg  xmlns="http://www.w3.org/2000/svg"  width="30"  height="30"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-help-circle"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" /><path d="M12 16v.01" /><path d="M12 13a2 2 0 0 0 .914 -3.782a1.98 1.98 0 0 0 -2.414 .483" /></svg>
+					 FAQs
+				</a>
 			</li>
 		</ul>
 	</div>
