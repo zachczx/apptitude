@@ -153,7 +153,6 @@
 	</div>
 </div>
 
-
 <style>
 	li {
 		margin-bottom: 0.75rem;
