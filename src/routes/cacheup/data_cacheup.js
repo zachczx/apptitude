@@ -153,7 +153,7 @@ export const cacheup = [
 		bylines: [
 			{
 				text: "Eight out of ten public-sector IT projects take longer than expected, compared with just more than half of projects in the private sector. Cost overruns occur in nearly one in two public-sector projects, as opposed to about one in three in the private sector.\" - Kerstin Balka, Breanna Heslin, and Sina Risse-Tenk (2022)",
-				icon: "",
+				icon: "KerstinBalka.webp",
 			},
 		],
 		definitions: [
