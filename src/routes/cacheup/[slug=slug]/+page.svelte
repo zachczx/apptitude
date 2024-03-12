@@ -13,6 +13,9 @@ function seeMore() {
 	seeMoreVar = !seeMoreVar;
 	console.log(seeMoreVar);
 }
+
+import 
+
 </script>
 
 <div class="mb-10 text-center lg:mb-20">
@@ -27,7 +30,7 @@ function seeMore() {
 			<div class="chat {index%2 === 0 ? 'chat-start' : 'chat-end'}">
 			<div class="chat-image avatar">
 			  <div class="w-14 rounded-full">
-				<img src="/%sveltekit.assets%/{byline.icon ? byline.icon : 'user-circle.svg'}" alt="Author">
+				<img src={byline.icon ? byline.icon : 'user-circle.svg'} alt="Author">
 			</div>
 			</div>
 			<div class="chat-bubble text-sm">{byline.text}</div>

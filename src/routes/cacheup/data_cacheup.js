@@ -7,11 +7,11 @@ export const cacheup = [
 		bylines: [
 			{
 				text: "Important truths can be uncomfortable, they can be awkward, they can be exhausting... Any high performing organization has to have mechanisms and a culture that supports truth telling.",
-				icon: "JeffBezos.webp",
+				icon: "/JeffBezos.webp",
 			},
 			{
 				text: "Pay attention to what users do, not what they say.",
-				icon: "JakobNielsen.webp",
+				icon: "/JakobNielsen.webp",
 			},
 		],
 		definitions: [
@@ -64,11 +64,11 @@ export const cacheup = [
 		bylines: [
 			{
 				text: "Goals must be measurable or have quantifiable targets. Maybe it’s shipping a certain number of products or hitting a release schedule, but in any case, we have to be able to track and measure the goals.",
-				icon: "JohnDoerr.webp",
+				icon: "/JohnDoerr.webp",
 			},
 			{
 				text: "In my experience, the worst thing about product in the past was that is was all about opinions... the higher up in the organization, the more that opinion counted... (and) I hear constantly from teams now how often they are surprised by the data and how minds are changed.",
-				icon: "MartyCagan.webp",
+				icon: "/MartyCagan.webp",
 			},
 		],
 		definitions: [
@@ -153,7 +153,7 @@ export const cacheup = [
 		bylines: [
 			{
 				text: "Eight out of ten public-sector IT projects take longer than expected, compared with just more than half of projects in the private sector. Cost overruns occur in nearly one in two public-sector projects, as opposed to about one in three in the private sector.\" - Kerstin Balka, Breanna Heslin, and Sina Risse-Tenk (2022)",
-				icon: "KerstinBalka.webp",
+				icon: "/KerstinBalka.webp",
 			},
 		],
 		definitions: [
