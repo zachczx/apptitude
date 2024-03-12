@@ -1,6 +1,6 @@
 <script>
 	import '../app.css';
-	import logo from '$lib/assets/atom_logo2.webp';
+	import logo from '$lib/assets/atom_logo.webp';
 	import PageTransition from '$lib/Transition.svelte';
 	export let data;
 </script>
@@ -34,7 +34,7 @@
 			</ul>
 		</div>
 		<a href="/" class="btn btn-ghost text-3xl"
-			><img src={logo} width="60" height="60" class="max-w-full" /> App.titude</a
+			><img src={logo} width="60" height="60" class="max-w-full" />Apptitude</a
 		>
 	</div>
 	<div class="navbar-center hidden lg:flex">
