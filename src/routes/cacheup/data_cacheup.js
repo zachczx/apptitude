@@ -148,11 +148,11 @@ export const cacheup = [
 	{
 		id: 3,
 		name: 'Cost',
-		tagline: 'Money always no enough.',
+		tagline: "We're not sure what we're building, but we know we'll need a bigger budget.",
 		slug: 'cost',
 		bylines: [
 			{
-				text: 'Eight out of ten public-sector IT projects take longer than expected, compared with just more than half of projects in the private sector. Cost overruns occur in nearly one in two public-sector projects, as opposed to about one in three in the private sector." - Kerstin Balka, Breanna Heslin, and Sina Risse-Tenk (2022)',
+				text: 'Eight out of ten public-sector IT projects take longer than expected, compared with just more than half of projects in the private sector. Cost overruns occur in nearly one in two public-sector projects, as opposed to about one in three in the private sector." - Kerstin Balka, Breanna Heslin, Sina Risse-Tenk (2022)',
 				icon: 'https://bucket.titude.app/KerstinBalka.webp'
 			}
 		],
@@ -192,13 +192,13 @@ export const cacheup = [
 			'A lot of cost is needed to almost completely mitigate X cyber security risk, but nevermind it was a theoretical risk in the first place.',
 			'We spend $10M over several years to reduce 1 headcount (might as well spend $150K on that headcount and save $9.5M).',
 			'Might as well spend it since the FY is closing.',
-			'I need to find a new justification to get funding for 2.0 of this project.'
+			'Everyone dumps their requirements onto a project to get funding.',
+			'Staffers say they need to find a new justification to get funding for 2.0 of their project.'
 		],
 		solutions: [
 			'Kill the product or project.',
 			'Start UX research to redo all requirements.',
 			'Optimize for costs, while offering the option for additional value, performance, security.',
-			'uncompetitive',
 			"Just because it's not your money, doesn't mean we should spend it frivolously."
 		],
 		suggestions: [
