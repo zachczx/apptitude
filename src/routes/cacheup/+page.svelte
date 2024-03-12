@@ -8,7 +8,9 @@
 	>
 		Cache Up!
 	</h1>
+  <div><i>Rebooting your obsolescence - migrating from Windows 95 to actually current tech skills.</i></div>
 </div>
+
 
 <div class="grid grid-cols-1 justify-items-center gap-x-8 gap-y-8 px-5 lg:grid-cols-2 lg:px-20">
 	{#each cacheup as item, i}
