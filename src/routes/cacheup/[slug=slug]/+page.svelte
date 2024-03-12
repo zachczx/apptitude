@@ -1,5 +1,4 @@
 <script>
-import JeffBezos from "$lib/assets/profileheads/JeffBezos.webp"
 
 import chevronDown from '$lib/assets/svg/chevron-down.svg';
 	import { page } from '$app/stores';
@@ -28,7 +27,7 @@ function seeMore() {
 			<div class="chat {index%2 === 0 ? 'chat-start' : 'chat-end'}">
 			<div class="chat-image avatar">
 			  <div class="w-14 rounded-full">
-				<img src="/src/lib/assets/profileheads/{byline.icon ? byline.icon : 'user-circle.svg'}" alt="Author">
+				<img src="%sveltekit.assets%/{byline.icon ? byline.icon : 'user-circle.svg'}" alt="Author">
 			</div>
 			</div>
 			<div class="chat-bubble text-sm">{byline.text}</div>
