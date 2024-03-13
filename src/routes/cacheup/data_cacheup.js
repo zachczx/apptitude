@@ -73,7 +73,7 @@ export const cacheup = [
 				icon: JohnDoerr
 			},
 			{
-				text: 'In my experience, the worst thing about product in the past was that is was all about opinions... the higher up in the organization, the more that opinion counted... (and) I hear constantly from teams now how often they are surprised by the data and how minds are changed.',
+				text: 'The worst thing about product in the past was that is was all about opinions... the higher up in the organization, the more that opinion counted... I hear constantly from teams now how often they are surprised by the data and how minds are changed.',
 				icon: MartyCagan
 			}
 		],
@@ -133,24 +133,57 @@ export const cacheup = [
 			"A product is not a project, don't manage it like one."
 		]
 	},
-	//{
-	//	id: 4,
-	//	name: 'Security',
-	//	slug: 'security',
-	//bylines: [
-	//	{
-	//		text: "",
-	//		icon: "",
-	//	},
-	//],
-	//	definitions: [],
-	//	goals: [],
-	//questions: [],
-	//dealbreakers: [],
-	//solutions: [],
-	//suggestions: [],
-	//	screening: [],
-	//},
+	{
+		id: 4,
+		name: 'Security',
+		tagline: 'Cyber security so tight, even the 1s and 0s can\'t escape',
+		slug: 'security',
+		bylines: [
+			{
+				text: "",
+				icon: "",
+			},
+		],
+		definitions: [
+			"Note: This section assumes the cyber security professionals are competent and what is needed is getting the best outcome between cyber security and business.",
+			"Common Vulnerabilities and Exposures, is a standard for identifying and cataloging cybersecurity vulnerabilities and exposures in computer software and hardware. Each CVE entry provides a detailed explanation of a vulnerability, including its potential impact, how it can be exploited, and, often, how it can be mitigated or resolved.",
+		],
+		goals: [
+			'Decide the appropriate trade-offs across threat vector, likelihood, severity, mitigation, timelines, cost, residual risk',
+			"Mitigation is not free and even the best theorized mitigations can fail when not kept up with.",
+			"Move beyond theorycrafting and indecipherable threat-risk assessments to outlining threats with actual impact and likelihood for business to assume risk",
+			"Understand cloud is as secure, if not more, than on-prem systems. Especially if you use native cloud services for logging and triggering alerts for anomalous behaviors."
+		],
+		questions: [
+			"What sensitive data will my product handle, and how will it be secured (encryption, access controls, etc.)?",
+			"Who am I afraid of attacking me (attack vectors)?",
+			"How will they attack me, how long will they take, how likely are they to succeed?",
+			"If they succeed, what do I lose, for how long?",
+			"What are the options for mitigation, how much does it cost, how long does it take to implement/maintain, how much man effort?",
+			"Despite mitigation, what are the residual risks I need to live with, and how much additional cost is each mitigation?",
+			"If I'm brought down, how can I do disaster recovery and data restoration/validation?",
+			"What third-party components or services will the product use?",
+			"What is the strategy for managing vulnerabilities (CVEs) and patches?",
+			"How will my product handle and respond to security incidents and breaches?",
+			"How will my product's security be monitored and audited on an ongoing basis?",
+			"What are the potential legal and regulatory implications related to my product's security?",
+		],
+		dealbreakers: [
+			"Cyber security guidelines hinder innovation - \"It can't be done!\"",
+			"Cyber security cannot be questioned and yet it is poorly explained/quantified/verifiable.",
+			"Business is not confident of taking on any risk because they can't understand them, so they just go the most conservative possible.",
+			"Tons of money is spent tightening up every possible doomsday scenario you can think of.",
+			"Cybersecurity lock-downs prevent business from achieving its product outcomes (then what's the point?).",
+			"We rely on threat risk assessments as scriptures, never mind that the scoring and likelihood multipliers are almost always done arbitrarily.",
+			"We drink our kool-aid so much that we believe in the illusion of layering on more frameworks and theories, not what top tier companies do.",
+		],
+		solutions: [
+			"Discuss with the cyber security professional the threat vector, likelihood, severity, mitigation, timelines, cost, residual risk",
+		],
+		suggestions: [
+			"I wish I could give you a solution, but I won't pretend to know the solution."
+		],
+	},
 	{
 		id: 3,
 		name: 'Cost',
@@ -158,7 +191,7 @@ export const cacheup = [
 		slug: 'cost',
 		bylines: [
 			{
-				text: 'Eight out of ten public-sector IT projects take longer than expected, compared with just more than half of projects in the private sector. Cost overruns occur in nearly one in two public-sector projects, as opposed to about one in three in the private sector." - Kerstin Balka, Breanna Heslin, Sina Risse-Tenk (2022)',
+				text: '8/10 public-sector IT projects take longer than expected, compared with just more than half of projects in the private sector. Cost overruns occur in nearly 1/2 public-sector projects, as opposed to about 1/3 in the private sector.',
 				icon: KerstinBalka
 			}
 		],

@@ -21,6 +21,7 @@
 	>
 		{data.post.name}
 	</h1>
+	{#if data.post.bylines[0].text != ''}
 	<div class="grid-cols-auto grid place-items-center">
 		{#each data.post.bylines as byline, index}
 			<div class="chat {index % 2 === 0 ? 'chat-start' : 'chat-start'}">
@@ -33,6 +34,7 @@
 			</div>
 		{/each}
 	</div>
+	{/if}
 </div>
 
 <div class="grid grid-cols-1 justify-items-center gap-x-8 gap-y-8 px-5 lg:px-20">
