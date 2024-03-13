@@ -6,6 +6,13 @@
 	font-family: 'Roboto', sans-serif;
 }
 
+.jost {
+	font-family: "Jost", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 600;
+	font-style: normal;
+  }
+
 @layer base {
 	h1 {
 		@apply text-5xl lg:text-6xl;

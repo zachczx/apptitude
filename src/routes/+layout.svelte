@@ -1,6 +1,6 @@
 <script>
 	import '../app.css';
-	import logo from '$lib/assets/atom_logo.webp';
+	import logo from '$lib/assets/logo_whale.webp';
 	import PageTransition from '$lib/Transition.svelte';
 	export let data;
 </script>
@@ -33,8 +33,8 @@
 				<li><a href="/faq">FAQs</a></li>
 			</ul>
 		</div>
-		<a href="/" class="btn btn-ghost text-3xl"
-			><img src={logo} width="60" height="60" class="max-w-full" />Apptitude</a
+		<a href="/" class="btn btn-ghost text-4xl xl:text-5xl jost text-white"
+			><img src={logo} width="60" height="60" class="max-w-full" />apptitude</a
 		>
 	</div>
 	<div class="navbar-center hidden lg:flex">
@@ -154,7 +154,9 @@
 </div>
 
 <PageTransition url={data.url}>
+	<div class="px-3 lg:px-0">
 	<slot />
+	</div>
 </PageTransition>
 
 <footer class="footer footer-center mb-5 mt-[7rem] text-base-content">

@@ -1,3 +1,9 @@
+import JeffBezos from '$lib/assets/profileheads/JeffBezos.webp';
+import JakobNielsen from '$lib/assets/profileheads/JakobNielsen.webp';
+import JohnDoerr from '$lib/assets/profileheads/JohnDoerr.webp';
+import MartyCagan from '$lib/assets/profileheads/MartyCagan.webp';
+import KerstinBalka from '$lib/assets/profileheads/KerstinBalka.webp';
+
 export const cacheup = [
 	{
 		id: 1,
@@ -6,12 +12,12 @@ export const cacheup = [
 		slug: 'problems',
 		bylines: [
 			{
-				text: 'Important truths can be uncomfortable, they can be awkward, they can be exhausting... Any high performing organization has to have mechanisms and a culture that supports truth telling.',
-				icon: 'https://bucket.titude.app/JeffBezos.webp'
+				text: 'Important truths can be uncomfortable, awkward, exhausting... Any high performing organization has to have mechanisms and a culture that supports truth telling.',
+				icon: JeffBezos
 			},
 			{
 				text: 'Pay attention to what users do, not what they say.',
-				icon: 'https://bucket.titude.app/JakobNielsen.webp'
+				icon: JakobNielsen
 			}
 		],
 		definitions: [
@@ -64,11 +70,11 @@ export const cacheup = [
 		bylines: [
 			{
 				text: 'Goals must be measurable or have quantifiable targets. Maybe it’s shipping a certain number of products or hitting a release schedule, but in any case, we have to be able to track and measure the goals.',
-				icon: 'https://bucket.titude.app/JohnDoerr.webp'
+				icon: JohnDoerr
 			},
 			{
 				text: 'In my experience, the worst thing about product in the past was that is was all about opinions... the higher up in the organization, the more that opinion counted... (and) I hear constantly from teams now how often they are surprised by the data and how minds are changed.',
-				icon: 'https://bucket.titude.app/MartyCagan.webp'
+				icon: MartyCagan
 			}
 		],
 		definitions: [
@@ -153,7 +159,7 @@ export const cacheup = [
 		bylines: [
 			{
 				text: 'Eight out of ten public-sector IT projects take longer than expected, compared with just more than half of projects in the private sector. Cost overruns occur in nearly one in two public-sector projects, as opposed to about one in three in the private sector." - Kerstin Balka, Breanna Heslin, Sina Risse-Tenk (2022)',
-				icon: 'https://bucket.titude.app/KerstinBalka.webp'
+				icon: KerstinBalka
 			}
 		],
 		definitions: [
