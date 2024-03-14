@@ -4,6 +4,9 @@ import JohnDoerr from '$lib/assets/profileheads/JohnDoerr.webp';
 import MartyCagan from '$lib/assets/profileheads/MartyCagan.webp';
 import KerstinBalka from '$lib/assets/profileheads/KerstinBalka.webp';
 import JimmySanders from '$lib/assets/profileheads/JimmySanders.webp';
+import SethGodin from '$lib/assets/profileheads/SethGodin.webp';
+import LeaHickman from '$lib/assets/profileheads/LeaHickman.webp';
+import TeresaTorres from '$lib/assets/profileheads/TeresaTorres.webp';
 
 export const cacheup = [
 	{
@@ -19,6 +22,14 @@ export const cacheup = [
 			{
 				text: 'Pay attention to what users do, not what they say.',
 				icon: JakobNielsen
+			},
+			{
+				text: 'Don’t find customers for your products, find products for your customers.',
+				icon: SethGodin
+			},
+			{
+				text: 'If we focus on collecting stories in our customer interviews, opportunities will emerge from those stories.',
+				icon: TeresaTorres
 			}
 		],
 		definitions: [
@@ -106,7 +117,7 @@ export const cacheup = [
 			'What is your go-to market plan?',
 			'What is the development/iteration timeline for your product?',
 			'How will you measure the success of your product?',
-			"Are you replacing/refactoring for the sake of it? (common when trying to rewrite existing/legacy services in latest framework)",
+			'Are you replacing/refactoring for the sake of it? (common when trying to rewrite existing/legacy services in latest framework)'
 		],
 		dealbreakers: [
 			'Product is a suboptimal solution (read: XY problem)',
@@ -118,7 +129,7 @@ export const cacheup = [
 			'Existing products that have no traction, users keeps getting life support with no end in sight.',
 			'X product has Y% of weekly active users, never mind that these are captive users who are forced to use the platform.',
 			"If user anecdotes are contradicting your data (that everything's alright), you might be measuring the wrong thing.",
-			"Are the gains marginal? We spend 10mil to cut one process by 2 days but overall process still takes 5 months because of other manual processes.",
+			'Are the gains marginal? We spend 10mil to cut one process by 2 days but overall process still takes 5 months because of other manual processes.'
 		],
 		solutions: [
 			'Conduct UX/market research to understand your customers/users, and then base your product strategy on the data.',
@@ -194,6 +205,10 @@ export const cacheup = [
 			{
 				text: '8/10 public-sector IT projects take longer than expected, compared with just more than half of projects in the private sector. Cost overruns occur in nearly 1/2 public-sector projects, as opposed to about 1/3 in the private sector.',
 				icon: KerstinBalka
+			},
+			{
+				text: 'It is easy to give employees a new job title, but much harder to change how they think and behave.  And sometimes that new job title carries along with it expectations that existing staff may not be able to perform.',
+				icon: MartyCagan
 			}
 		],
 		definitions: [
@@ -247,14 +262,19 @@ export const cacheup = [
 			"There's no shame to you or your team to kill projects.",
 			"Get opinions from people who know their stuff - nothing worse than pretending to approve when you've no idea.",
 			"Buy the cheapest option of anything and use it to the limits before you upgrade (you'd do the same for your own laptop anyway, who starts off with an i9?)",
-			"Developer resources are the most precious they're not your pptx/docx machines!",
+			"Developer resources are the most precious they're not your pptx/docx machines!"
 		]
 	}
 	//{
 	//	id: 5,
 	//	name: "Structures and processes",
 	//	slug: "structure",
-	//  bylines: ["\"No grand idea was ever born in a conference, but a lot of foolish ideas have died there.\" - Scott Fitzgerald"],
+	//  bylines: [
+	//{
+	//	text: "As transformation to the product model involves moving from output to outcomes, the problem here is that the transformation effort hides behind output (activities) rather than outcomes (results).",
+	//	icon: LeaHickman
+	//}
+	//],
 	//	definitions: [],
 	//	goals: [],
 	//  questions: [],

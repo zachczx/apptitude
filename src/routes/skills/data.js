@@ -133,7 +133,9 @@ export const info = [
 			],
 			links: [
 				'https://youtube.com/playlist?list=PLbRVPa07FtZe4oDvfvQXH-MtZBl-_00Rh&si=1Gi3t6ilHD46tF6z',
-				'https://www.coursera.org/professional-certificates/google-ux-design'
+				'https://www.coursera.org/professional-certificates/google-ux-design',
+				'https://www.svpg.com/transformation-fail/',
+				'https://www.mindtheproduct.com/transforming-product-culture-lea-hickman/'
 			]
 		}
 	},
@@ -168,7 +170,8 @@ export const info = [
 				'https://agilemanifesto.org/',
 				'https://agilemanifesto.org/principles.html',
 				'https://youtube.com/playlist?list=PLD2BMPY5WcfAYTEYXW0NGxodOi1PLC1XN&si=b_ym-Jy4_UOeS1Iv',
-				'https://www.youtube.com/playlist?list=PL32pD389V8xt_znF-pvOl7OP_xNfnkGgq'
+				'https://www.youtube.com/playlist?list=PL32pD389V8xt_znF-pvOl7OP_xNfnkGgq',
+				'https://www.svpg.com/transformation-theater/'
 			]
 		}
 	},

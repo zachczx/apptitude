@@ -37,7 +37,7 @@
 	{/if}
 </div>
 
-<div class="grid grid-cols-1 justify-items-center gap-x-8 gap-y-8 px-5 lg:px-20">
+<div class="grid grid-cols-1 justify-items-center gap-x-8 gap-y-8 px-2 lg:px-20">
 	<div class="collapse bg-base-200">
 		<input type="checkbox" class="peer" />
 		<div
@@ -66,7 +66,7 @@
 			<div class="self-center"><img src={chevronDown} alt="Arrow down" /></div>
 		</div>
 		<div class="collapse-content bg-gradient-to-b from-slate-900 to-slate-800">
-			<div class="card w-full bg-base-300 px-5 shadow-xl xl:col-span-1">
+			<div class="card w-full bg-base-300 shadow-xl xl:col-span-1">
 				<div class="card-body">
 					<ol class="list-decimal divide-y-2 divide-slate-600">
 						{#each data.post.definitions as definition}
@@ -106,7 +106,7 @@
 			<div class="self-center"><img src={chevronDown} alt="Arrow down" /></div>
 		</div>
 		<div class="collapse-content bg-gradient-to-b from-pink-800 to-rose-700">
-			<div class="card w-full bg-base-300 px-5 shadow-xl">
+			<div class="card w-full bg-base-300 shadow-xl">
 				<div class="card-body">
 					<ol class="list-decimal divide-y-2 divide-slate-600">
 						{#each data.post.goals as goal}
@@ -148,7 +148,7 @@
 			<div class="self-center"><img src={chevronDown} alt="Arrow down" /></div>
 		</div>
 		<div class="collapse-content bg-gradient-to-b from-pink-800 to-rose-700">
-			<div class="card w-full bg-base-300 px-5 shadow-xl">
+			<div class="card w-full bg-base-300 shadow-xl">
 				<div class="card-body">
 					<ol class="list-decimal divide-y-2 divide-slate-600">
 						{#each data.post.questions as question, index}
@@ -193,7 +193,7 @@
 			<div class="self-center"><img src={chevronDown} alt="Arrow down" /></div>
 		</div>
 		<div class="collapse-content bg-gradient-to-b from-red-800 to-orange-700">
-			<div class="card w-full bg-base-300 px-5 shadow-xl xl:col-span-2">
+			<div class="card w-full bg-base-300 shadow-xl xl:col-span-2">
 				<div class="card-body">
 					<ol class="list-decimal divide-y-2 divide-slate-600">
 						{#each data.post.dealbreakers as dealbreaker}
@@ -233,7 +233,7 @@
 			<div class="self-center"><img src={chevronDown} alt="Arrow down" /></div>
 		</div>
 		<div class="collapse-content bg-gradient-to-b from-slate-900 to-slate-800">
-			<div class="card w-full bg-base-300 px-5 shadow-xl">
+			<div class="card w-full bg-base-300 shadow-xl">
 				<div class="card-body">
 					<ol class="list-decimal divide-y-2 divide-slate-600">
 						{#each data.post.solutions as solution}
@@ -273,7 +273,7 @@
 			<div class="self-center"><img src={chevronDown} alt="Arrow down" /></div>
 		</div>
 		<div class="collapse-content bg-gradient-to-b from-slate-900 to-slate-800">
-			<div class="card w-full bg-base-300 px-5 shadow-xl">
+			<div class="card w-full bg-base-300 shadow-xl">
 				<div class="card-body">
 					<ol class="list-decimal divide-y-2 divide-slate-600">
 						{#each data.post.suggestions as suggestion}
@@ -290,6 +290,6 @@
 	li {
 		padding-top: 0.5rem;
 		padding-bottom: 0.5rem;
-		padding-left: 0.5rem;
+		padding-left: 0.75rem;
 	}
 </style>

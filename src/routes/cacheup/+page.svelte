@@ -5,7 +5,7 @@
 		'bg-gradient-to-t from-orange-300 via-orange-700 to-pink-700',
 		'bg-gradient-to-t from-[#67C6E3] via-[#378CE7] to-[#5356FF]',
 		'bg-gradient-to-t from-[#87A922] via-[#50623A] to-[#114232]',
-		'bg-gradient-to-t from-[#FFEE63] from-2% via-[#F49D1A] to-[#C58940]',
+		'bg-gradient-to-t from-[#FFEE63] from-2% via-[#F49D1A] to-[#C58940]'
 	];
 </script>
 
