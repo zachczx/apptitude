@@ -13,15 +13,17 @@ let seeMore = false
 		<div class="ps-2 pe-4">
 			<h1 class="mb-11 font-bold">What's Apptitude?</h1>
 			<h2 class="mb-7">Tell me in 1 sentence.</h2>
-			<p class="mb-7">Apptitude is my webapp to help my teammates learn new competencies and refer to questions I like to ask. 
-				<button class="btn btn-outline btn-sm align-middle w-full mt-7" onclick={() => {seeMore = !seeMore}}>See more <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-caret-down inline self-start pt-1"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 10l6 6l6 -6h-12" /></svg></button></p>
-			{#if seeMore == true}
+			<p class="mb-7">Apptitude is my webapp to help my teammates learn new competencies and refer to questions I like to ask.</p> 
+				<div class="border-t-2 border-slate-400 text-center">
+				<button class="bg-slate-800 align-middle rounded-lg hover:bg-slate-900" style="transform: translateY(-14px)" onclick={() => {seeMore = !seeMore}}> <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-caret-down inline align-top"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 10l6 6l6 -6h-12" /></svg> See more <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-caret-down inline align-top"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 10l6 6l6 -6h-12" /></svg></button>
+			</div>
+				{#if seeMore == true}
 			<div class="mb-7 rounded-lg p-3 bg-base-300" transition:slide={{ delay: 0, duration: 500 }}>
 			<h2 class="mb-7">Ok, a longer explanation?</h2>
 			<p class="">Apptitude is my attempt to start a more dissatisfied culture/attitude to tech products, by opening up the veil and giving people the mental tools/mindset to challenge bad plans and decisions. Looking around, some of Government's tech products don't make sense to me, especially for the amount of money we spend <a href="https://www.tech.gov.sg/media/media-releases/2023-05-24-government-projected-to-spend-on-ict-in-fy23">(here)</a>. Sometimes the product are slow, laggy, hard to use, super expensive.</p>
 			</div>
 			{/if}
-			<h2 class="mb-7">Pointless? Slow? Expensive?</h2>
+			<h2 class="mt-7 mb-7">Pointless? Slow? Expensive?</h2>
 			<p class="mb-7">Take LifeSG. I used LifeSG in the delivery suite after my wife gave birth. What a lifesaver! I downloaded the app (didn't mind it tbh), registered my baby's name, didn't even have to go to ICA. After that I deleted the app.</p>
 			<p class="mb-7">I was annoyed some time later that I needed to use LifeSG to use my NS55 credits. The app loaded slow on my Pixel, far slower than PayLah. And I couldn't even finish all my credits, kena makan by Gahmen. To make it worse, my go-to app for reporting HDB estate issues needed to be done via LifeSG. Ugh, so much worse than the original OneService app.</p>
 			<h2 class="mb-7">Road to hell is paved with good intentions</h2>
@@ -36,7 +38,7 @@ let seeMore = false
 					<li class="ps-3">(This is also for my personal goal of learning Svelte5 and Sveltekit.)</li>
 				</ul>
 				<h2 class="mb-7">Who cares about a shitty webapp/blog?</h2>
-				<p class="mb-7">I spent USD 10 a year for a .com and my free time. So it costs nothing, that's the magic, we can dump this into the Internet Wayback Machine and move on.</p>
+				<p class="mb-7">Apptitude costs me $13.28/year for a .com. So if this indeed sucks we can dump this into the Internet Wayback Machine and move on.</p>
 		</div>
 	</div>
 </div>
