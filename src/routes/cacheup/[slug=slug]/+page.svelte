@@ -135,7 +135,7 @@
 					stroke-width="2"
 					stroke-linecap="round"
 					stroke-linejoin="round"
-					class="icon icon-tabler icons-tabler-outline icon-tabler-progress-help me-3 inline"
+					class="icon icon-tabler icons-tabler-outline icon-tabler-progress-help me-3"
 					><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M12 16v.01" /><path
 						d="M12 13a2 2 0 0 0 .914 -3.782a1.98 1.98 0 0 0 -2.414 .483"
 					/><path d="M10 20.777a8.942 8.942 0 0 1 -2.48 -.969" /><path
@@ -143,7 +143,7 @@
 					/><path d="M4.579 17.093a8.961 8.961 0 0 1 -1.227 -2.592" /><path
 						d="M3.124 10.5c.16 -.95 .468 -1.85 .9 -2.675l.169 -.305"
 					/><path d="M6.907 4.579a8.954 8.954 0 0 1 3.093 -1.356" /></svg
-				>Questions to answer
+				>Hard Truth Questions
 			</h2>
 			<div class="self-center"><img src={chevronDown} alt="Arrow down" /></div>
 		</div>
@@ -188,7 +188,7 @@
 					><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path
 						d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"
 					/><path d="M10 10l4 4m0 -4l-4 4" /></svg
-				>Dealbreakers (when things are bad)
+				>Dealbreakers and Dire Times
 			</h2>
 			<div class="self-center"><img src={chevronDown} alt="Arrow down" /></div>
 		</div>
@@ -228,7 +228,7 @@
 					/><path d="M9 4v13" /><path d="M15 7v4" /><path
 						d="M17.8 20.817l-2.172 1.138a.392 .392 0 0 1 -.568 -.41l.415 -2.411l-1.757 -1.707a.389 .389 0 0 1 .217 -.665l2.428 -.352l1.086 -2.193a.392 .392 0 0 1 .702 0l1.086 2.193l2.428 .352a.39 .39 0 0 1 .217 .665l-1.757 1.707l.414 2.41a.39 .39 0 0 1 -.567 .411l-2.172 -1.138z"
 					/></svg
-				>Solutions and the way ahead
+				>Possible Solutions
 			</h2>
 			<div class="self-center"><img src={chevronDown} alt="Arrow down" /></div>
 		</div>
