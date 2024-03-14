@@ -22,18 +22,18 @@
 		{data.post.name}
 	</h1>
 	{#if data.post.bylines[0].text != ''}
-	<div class="grid-cols-auto grid place-items-center">
-		{#each data.post.bylines as byline, index}
-			<div class="chat {index % 2 === 0 ? 'chat-start' : 'chat-start'}">
-				<div class="avatar chat-image">
-					<div class="w-14 rounded-full">
-						<img src={byline.icon ? byline.icon : userCircle} alt="Author" />
+		<div class="grid-cols-auto grid place-items-center px-5 lg:px-20">
+			{#each data.post.bylines as byline, index}
+				<div class="chat {index % 2 === 0 ? 'chat-start' : 'chat-start'}">
+					<div class="avatar chat-image">
+						<div class="w-14 rounded-full">
+							<img src={byline.icon ? byline.icon : userCircle} alt="Author" />
+						</div>
 					</div>
+					<div class="chat-bubble"><i>{byline.text}</i></div>
 				</div>
-				<div class="chat-bubble"><i>{byline.text}</i></div>
-			</div>
-		{/each}
-	</div>
+			{/each}
+		</div>
 	{/if}
 </div>
 

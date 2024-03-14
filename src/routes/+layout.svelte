@@ -33,7 +33,7 @@
 				<li><a href="/faq">FAQs</a></li>
 			</ul>
 		</div>
-		<a href="/" class="btn btn-ghost text-4xl xl:text-5xl jost text-white"
+		<a href="/" class="jost btn btn-ghost text-4xl text-white xl:text-5xl"
 			><img src={logo} width="60" height="60" class="max-w-full" />apptitude</a
 		>
 	</div>
@@ -155,7 +155,7 @@
 
 <PageTransition url={data.url}>
 	<div class="px-3 lg:px-0">
-	<slot />
+		<slot />
 	</div>
 </PageTransition>
 

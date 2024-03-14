@@ -3,6 +3,7 @@ import JakobNielsen from '$lib/assets/profileheads/JakobNielsen.webp';
 import JohnDoerr from '$lib/assets/profileheads/JohnDoerr.webp';
 import MartyCagan from '$lib/assets/profileheads/MartyCagan.webp';
 import KerstinBalka from '$lib/assets/profileheads/KerstinBalka.webp';
+import JimmySanders from '$lib/assets/profileheads/JimmySanders.webp';
 
 export const cacheup = [
 	{
@@ -104,7 +105,8 @@ export const cacheup = [
 			'Who are your competitors, and how is your product different?',
 			'What is your go-to market plan?',
 			'What is the development/iteration timeline for your product?',
-			'How will you measure the success of your product?'
+			'How will you measure the success of your product?',
+			"Are you replacing/refactoring for the sake of it? (common when trying to rewrite existing/legacy services in latest framework)",
 		],
 		dealbreakers: [
 			'Product is a suboptimal solution (read: XY problem)',
@@ -115,7 +117,8 @@ export const cacheup = [
 			"Market has (new) alternatives, we either don't know or we hid our heads in the sand (insisting that ours is better).",
 			'Existing products that have no traction, users keeps getting life support with no end in sight.',
 			'X product has Y% of weekly active users, never mind that these are captive users who are forced to use the platform.',
-			"If user anecdotes are contradicting your data (that everything's alright), you might be measuring the wrong thing."
+			"If user anecdotes are contradicting your data (that everything's alright), you might be measuring the wrong thing.",
+			"Are the gains marginal? We spend 10mil to cut one process by 2 days but overall process still takes 5 months because of other manual processes.",
 		],
 		solutions: [
 			'Conduct UX/market research to understand your customers/users, and then base your product strategy on the data.',
@@ -136,53 +139,51 @@ export const cacheup = [
 	{
 		id: 4,
 		name: 'Security',
-		tagline: 'Cyber security so tight, even the 1s and 0s can\'t escape',
+		tagline: "Cyber security so tight, even the 1s and 0s can't escape",
 		slug: 'security',
 		bylines: [
 			{
-				text: "",
-				icon: "",
-			},
+				text: "We'll give developers, engineers, we’ll give different practitioners the freedom to do what they want to do. But it’s their responsibility to do it to a certain standard... My security tools have to be in lockstep with that. My tools can’t block them from the freedom that is a core tenant of Netflix.",
+				icon: JimmySanders
+			}
 		],
 		definitions: [
-			"Note: This section assumes the cyber security professionals are competent and what is needed is getting the best outcome between cyber security and business.",
-			"Common Vulnerabilities and Exposures, is a standard for identifying and cataloging cybersecurity vulnerabilities and exposures in computer software and hardware. Each CVE entry provides a detailed explanation of a vulnerability, including its potential impact, how it can be exploited, and, often, how it can be mitigated or resolved.",
+			'Note: This section assumes the cyber security professionals are competent and what is needed is getting the best outcome between cyber security and business.',
+			'Common Vulnerabilities and Exposures, is a standard for identifying and cataloging cybersecurity vulnerabilities and exposures in computer software and hardware. Each CVE entry provides a detailed explanation of a vulnerability, including its potential impact, how it can be exploited, and, often, how it can be mitigated or resolved.'
 		],
 		goals: [
 			'Decide the appropriate trade-offs across threat vector, likelihood, severity, mitigation, timelines, cost, residual risk',
-			"Mitigation is not free and even the best theorized mitigations can fail when not kept up with.",
-			"Move beyond theorycrafting and indecipherable threat-risk assessments to outlining threats with actual impact and likelihood for business to assume risk",
-			"Understand cloud is as secure, if not more, than on-prem systems. Especially if you use native cloud services for logging and triggering alerts for anomalous behaviors."
+			'Mitigation is not free and even the best theorized mitigations can fail when not kept up with.',
+			'Move beyond theorycrafting and indecipherable threat-risk assessments to outlining threats with actual impact and likelihood for business to assume risk',
+			'Understand cloud is as secure, if not more, than on-prem systems. Especially if you use native cloud services for logging and triggering alerts for anomalous behaviors.'
 		],
 		questions: [
-			"What sensitive data will my product handle, and how will it be secured (encryption, access controls, etc.)?",
-			"Who am I afraid of attacking me (attack vectors)?",
-			"How will they attack me, how long will they take, how likely are they to succeed?",
-			"If they succeed, what do I lose, for how long?",
-			"What are the options for mitigation, how much does it cost, how long does it take to implement/maintain, how much man effort?",
-			"Despite mitigation, what are the residual risks I need to live with, and how much additional cost is each mitigation?",
+			'What sensitive data will my product handle, and how will it be secured (encryption, access controls, etc.)?',
+			'Who am I afraid of attacking me (attack vectors)?',
+			'How will they attack me, how long will they take, how likely are they to succeed?',
+			'If they succeed, what do I lose, for how long?',
+			'What are the options for mitigation, how much does it cost, how long does it take to implement/maintain, how much man effort?',
+			'Despite mitigation, what are the residual risks I need to live with, and how much additional cost is each mitigation?',
 			"If I'm brought down, how can I do disaster recovery and data restoration/validation?",
-			"What third-party components or services will the product use?",
-			"What is the strategy for managing vulnerabilities (CVEs) and patches?",
-			"How will my product handle and respond to security incidents and breaches?",
+			'What third-party components or services will the product use?',
+			'What is the strategy for managing vulnerabilities (CVEs) and patches?',
+			'How will my product handle and respond to security incidents and breaches?',
 			"How will my product's security be monitored and audited on an ongoing basis?",
-			"What are the potential legal and regulatory implications related to my product's security?",
+			"What are the potential legal and regulatory implications related to my product's security?"
 		],
 		dealbreakers: [
-			"Cyber security guidelines hinder innovation - \"It can't be done!\"",
-			"Cyber security cannot be questioned and yet it is poorly explained/quantified/verifiable.",
+			'Cyber security guidelines hinder innovation - "It can\'t be done!"',
+			'Cyber security cannot be questioned and yet it is poorly explained/quantified/verifiable.',
 			"Business is not confident of taking on any risk because they can't understand them, so they just go the most conservative possible.",
-			"Tons of money is spent tightening up every possible doomsday scenario you can think of.",
+			'Tons of money is spent tightening up every possible doomsday scenario you can think of.',
 			"Cybersecurity lock-downs prevent business from achieving its product outcomes (then what's the point?).",
-			"We rely on threat risk assessments as scriptures, never mind that the scoring and likelihood multipliers are almost always done arbitrarily.",
-			"We drink our kool-aid so much that we believe in the illusion of layering on more frameworks and theories, not what top tier companies do.",
+			'We rely on threat risk assessments as scriptures, never mind that the scoring and likelihood multipliers are almost always done arbitrarily.',
+			'We drink our kool-aid so much that we believe in the illusion of layering on more frameworks and theories, not what top tier companies do.'
 		],
 		solutions: [
-			"Discuss with the cyber security professional the threat vector, likelihood, severity, mitigation, timelines, cost, residual risk",
+			'Discuss with the cyber security professional the threat vector, likelihood, severity, mitigation, timelines, cost, residual risk'
 		],
-		suggestions: [
-			"I wish I could give you a solution, but I won't pretend to know the solution."
-		],
+		suggestions: ["I wish I could give you a solution, but I won't pretend to know the solution."]
 	},
 	{
 		id: 3,
@@ -245,7 +246,8 @@ export const cacheup = [
 			'Start projects you would want to invest in personally.',
 			"There's no shame to you or your team to kill projects.",
 			"Get opinions from people who know their stuff - nothing worse than pretending to approve when you've no idea.",
-			"Buy the cheapest option of anything and use it to the limits before you upgrade (you'd do the same for your own laptop anyway, who starts off with an i9?)"
+			"Buy the cheapest option of anything and use it to the limits before you upgrade (you'd do the same for your own laptop anyway, who starts off with an i9?)",
+			"Developer resources are the most precious they're not your pptx/docx machines!",
 		]
 	}
 	//{
@@ -256,6 +258,15 @@ export const cacheup = [
 	//	definitions: [],
 	//	goals: [],
 	//  questions: [],
+	//"Has this undergone business process reengineering?",
+	//"Explain what agile/velocity means to you and what are examples of agility/velocity?",
+	//"What are real world figures for developers or business owners when it comes to adding new features for business needs?",
+	//"Why is on boarding of developers/services still manual?,"
+	//"How long does it take to on-board a new service or API or platform?,"
+	//"(perennial claims about implementing microservices architecture)",
+	//"What are the steps to get approval for this idea?",
+	//"Why can't we just get all these people into a room and decide?",
+	//"Why are you coming with an \"all or nothing\" or fait accompli plan? (usually when process of seeking further funding is tedious, so it's all tied up in one big bang)",
 	//  dealbreakers: [],
 	//  solutions: [],
 	//  suggestions: [],
