@@ -3,7 +3,7 @@ import { info } from '../data.js';
 
 export function load({ params }) {
 	try {
-		const post = info.find((post) => post.name === params.slug);
+		const post = info.find((post) => post.slug === params.slug);
 		let nextPostId, lastPostId;
 
 		// if it's the max number, cap at 8

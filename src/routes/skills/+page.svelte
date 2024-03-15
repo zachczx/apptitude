@@ -22,7 +22,7 @@
 					<h2
 						class="mb-7 inline-block bg-gradient-to-r from-emerald-200 via-blue-300 to-teal-600 bg-clip-text text-transparent"
 					>
-						<a href="/skills/{item.name}">{item.name}</a>
+						<a href="/skills/{item.slug}">{item.name}</a>
 					</h2>
 					<h3>Topics</h3>
 					<p class="mb-7">
@@ -63,7 +63,7 @@
 							</ul>
 						</div>
 					</div>
-					<a href="/skills/{item.name}" class="btn btn-primary btn-sm"
+					<a href="/skills/{item.slug}" class="btn btn-primary btn-sm"
 						>Read more&nbsp;&nbsp;&#x2192;</a
 					>
 				</div>

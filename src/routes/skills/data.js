@@ -2,6 +2,7 @@ export const info = [
 	{
 		id: 1,
 		name: 'Basics',
+		slug: 'basics',
 		topics: ['cloud', 'Internet', 'computing', 'networking', 'development', 'software'],
 		questions: [
 			'What is a computer?',
@@ -40,6 +41,7 @@ export const info = [
 	{
 		id: 2,
 		name: 'Apps',
+		slug: 'apps',
 		topics: ['SaaS', 'apps', 'applications', 'AWS', 'Azure', 'GCP', 'M365', 'Workspace'],
 		questions: [
 			'Cloud services on AWS, Azure, Google Cloud Platform',
@@ -68,6 +70,7 @@ export const info = [
 	{
 		id: 3,
 		name: 'WOG',
+		slug: 'wog',
 		topics: ['SG Tech Stack', 'GSIB', 'GCC', 'GDC', 'SG-Teams'],
 		questions: [
 			'Mainstays in WOG networks, especially the endpoint device, network, and backend infrastructure',
@@ -99,6 +102,7 @@ export const info = [
 	{
 		id: 4,
 		name: 'Products',
+		slug: 'products',
 		topics: [
 			'product management',
 			'UX',
@@ -142,6 +146,7 @@ export const info = [
 	{
 		id: 5,
 		name: 'Methodologies',
+		slug: 'methodologies',
 		topics: ['agile', 'waterfall', 'scrum', 'lean', 'kanban'],
 		questions: [
 			'What is Agile?',
@@ -178,6 +183,7 @@ export const info = [
 	{
 		id: 6,
 		name: 'Data',
+		slug: 'data',
 		topics: [
 			'database',
 			'data warehouse',
@@ -221,6 +227,7 @@ export const info = [
 	{
 		id: 7,
 		name: 'AI',
+		slug: 'ai',
 		topics: [
 			'AI',
 			'deep learning',
@@ -267,6 +274,7 @@ export const info = [
 	{
 		id: 8,
 		name: 'Technical',
+		slug: 'technical',
 		topics: [
 			'programming',
 			'languages',

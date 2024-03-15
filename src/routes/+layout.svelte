@@ -3,6 +3,8 @@
 	import logo from '$lib/assets/logo_whale.webp';
 	import PageTransition from '$lib/Transition.svelte';
 	export let data;
+	import { cacheup } from './cacheup/data_cacheup.js';
+	import { info } from './skills/data.js';
 </script>
 
 <div class="navbar mb-10 bg-base-100 lg:mb-20">
@@ -24,41 +26,58 @@
 				>
 			</div>
 			<ul
-				tabindex="0"
+				tabindex="-1"
 				class="menu dropdown-content menu-sm z-[1] mt-3 w-52 rounded-box bg-base-100 p-2 shadow"
 			>
 				<li><a href="/skills">The Skill Forge</a></li>
 				<li><a href="/cacheup">Cache Up!</a></li>
+				<li><a href="/techtrippin">Tech Trippin'</a></li>
 				<li><a href="/todo">To-Do List</a></li>
+				<li><a href="/faq">About</a></li>
+
 			</ul>
 		</div>
 		<a href="/" class="jost btn btn-ghost text-4xl text-white xl:text-5xl"
-			><img src={logo} width="60" height="60" class="max-w-full" />apptitude</a
+			><img src={logo} width="60" height="60" class="max-w-full" alt="Apptitude" />apptitude</a
 		>
 	</div>
 	<div class="navbar-center hidden lg:flex">
-		<ul class="menu-horizontal gap-x-[5rem] ps-1 pe-5 pt-7 text-xl font-medium">
+		<ul class="menu menu-horizontal gap-x-[2rem] pe-5 ps-1 pt-7 text-xl font-medium">
 			<!-- removed menu class -->
-			<li class="border-b-2 border-base-100 hover:border-b-2 hover:border-slate-200 pb-3">
-				<a href="/skills">
-					The Skill Forge</a
-				>
+			<li class="border-b-2 border-base-100 pb-3 hover:border-b-2 hover:border-slate-200">
+				<details>
+					<summary class="hover:bg-base-100"> <a href="/skills"> The Skill Forge</a></summary>
+					<ul class="z-10 p-2 text-base">
+						{#each info as skillsItem}
+							<li><a href="/skills/{skillsItem.slug}">{skillsItem.name}</a></li>
+						{/each}
+					</ul>
+				</details>
 			</li>
-			<li class="border-b-2 border-base-100 hover:border-b-2 hover:border-slate-200 pb-3">
-				<a href="/cacheup"
-					>Cache Up!</a
-				>
+			<li class="border-b-2 border-base-100 pb-3 hover:border-b-2 hover:border-slate-200">
+				<details>
+					<summary class="hover:bg-base-100"><a href="/cacheup">Cache Up!</a></summary>
+					<ul class="p-2 text-base">
+						{#each cacheup as cacheupItem}
+							<li class="hover:bg-base-100">
+								<a href="/cacheup/{cacheupItem.slug}">{cacheupItem.name}</a>
+							</li>
+						{/each}
+					</ul>
+				</details>
 			</li>
-			<li class="border-b-2 border-base-100 hover:border-b-2 hover:border-slate-200 pb-3">
-				<a href="/todo"
-					>To-Dos</a
-				>
+			<li class="border-b-2 border-base-100 pb-3 hover:border-b-2 hover:border-slate-200">
+				<a class="hover:bg-base-100" href="/techtrippin">Tech Trippin'</a>
+			</li>
+			<li class="border-b-2 border-base-100 pb-3 hover:border-b-2 hover:border-slate-200">
+				<a class="hover:bg-base-100" href="/todo">To-Dos</a>
+			</li>
+			<li class="border-b-2 border-base-100 pb-3 hover:border-b-2 hover:border-slate-200">
+				<a class="hover:bg-base-100" href="/faq">About</a>
 			</li>
 		</ul>
 	</div>
-	<div class="navbar-end">
-		
-	  </div>
+	<div class="navbar-end"></div>
 </div>
 
 <PageTransition url={data.url}>

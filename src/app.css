@@ -37,7 +37,6 @@
 	}
 
 	p {
-        @apply lg:text-lg xl:text-lg;
-    }
-    
+		@apply lg:text-lg xl:text-lg;
+	}
 }
