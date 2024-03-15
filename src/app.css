@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,600;1,600&family=Roboto:wght@400;500&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -35,9 +36,8 @@
 		font-style: italic;
 	}
 
-	/*
-    p {
-        @apply lg:text-lg xl:text-xl;
+	p {
+        @apply lg:text-lg xl:text-lg;
     }
-    */
+    
 }

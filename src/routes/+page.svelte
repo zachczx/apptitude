@@ -100,8 +100,7 @@
 			</p>
 			<h2 class="mb-7">Apptitude is a good product then?</h2>
 			<p class="mb-7">
-				This is a simple project in my free time creating a resource for my teammates to figure out
-				for themselves:
+				This is not a product. Just a personal project to share my ideas with my teammates:
 			</p>
 			<ul class="mb-7 ms-7 list-decimal space-y-1">
 				<li class="ps-3">What people who made successful products think a good product is</li>

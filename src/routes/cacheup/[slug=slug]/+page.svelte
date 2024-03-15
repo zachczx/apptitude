@@ -143,7 +143,7 @@
 					/><path d="M4.579 17.093a8.961 8.961 0 0 1 -1.227 -2.592" /><path
 						d="M3.124 10.5c.16 -.95 .468 -1.85 .9 -2.675l.169 -.305"
 					/><path d="M6.907 4.579a8.954 8.954 0 0 1 3.093 -1.356" /></svg
-				>Hard Truth Questions
+				>Questions
 			</h2>
 			<div class="self-center"><img src={chevronDown} alt="Arrow down" /></div>
 		</div>
@@ -159,7 +159,7 @@
 							{/if}
 						{/each}
 					</ol>
-					<button onclick={seeMore} class="btn btn-ghost btn-sm mt-5"
+					<button onclick={seeMore} class="btn btn-ghost btn-sm mt-1"
 						>{seeMoreVar === true ? 'See less' : 'See more'}</button
 					>
 				</div>
@@ -188,7 +188,7 @@
 					><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path
 						d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"
 					/><path d="M10 10l4 4m0 -4l-4 4" /></svg
-				>Dealbreakers and Dire Times
+				>Dealbreakers
 			</h2>
 			<div class="self-center"><img src={chevronDown} alt="Arrow down" /></div>
 		</div>
