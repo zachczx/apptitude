@@ -10,7 +10,7 @@
 >
 	<div class="grid grid-cols-2 text-center font-bold lg:col-span-2">
 		<div class="justify-self-start">
-			<a href="/skills/{data.lastPost.name}"
+			<a href="/skills/{data.lastPost.slug}"
 				><svg
 					xmlns="http://www.w3.org/2000/svg"
 					class="icon icon-tabler icon-tabler-circle-chevron-left inline align-top"
@@ -29,7 +29,7 @@
 			>
 		</div>
 		<div class="justify-self-end">
-			<a href="/skills/{data.nextPost.name}"
+			<a href="/skills/{data.nextPost.slug}"
 				>Next <svg
 					xmlns="http://www.w3.org/2000/svg"
 					class="icon icon-tabler icon-tabler-circle-chevron-right inline align-top"
