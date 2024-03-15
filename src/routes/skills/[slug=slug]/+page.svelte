@@ -6,7 +6,7 @@
 </script>
 
 <div
-	class="mx-7 grid grid-cols-1 place-content-start gap-4 rounded-lg bg-base-300 px-5 py-5 shadow-xl lg:grid-cols-2"
+	class="mx-1 lg:mx-7 grid grid-cols-1 place-content-start gap-4 rounded-lg bg-base-300 px-2 lg:px-5 py-5 shadow-xl lg:grid-cols-2"
 >
 	<div class="grid grid-cols-2 text-center font-bold lg:col-span-2">
 		<div class="justify-self-start">
