@@ -2,15 +2,17 @@ export const techtrippin = [
 	{
 		id: 1,
 		prompt:
-			'It all depends on the business requirements and use-case, GPT 4, 5, 6, 7, and so on would not change much.',
-		response:
-			"While clarifying use cases is important based on customer needs and their problem statements, it's incorrect to claim that use-cases impossible on GPT-3 would also be impossible on GPT-5 or future AGI systems. Such statements can sound incredibly out of touch with the rapid advancements in AI week-on-week."
+			'It all depends on the business requirements and use-case. GPT 4, 5, 6, 7, and so on would not change much.',
+		response: [
+			"Look, clarifying use-cases is super important, understanding customer needs and their problem statements. But it's ridiculous to say technological advancements don't matter. Business needs that are unthinkable on GPT-3 are already solved by Claude3 Haiku. You'll keep seeing more giant leaps in AI and when AGI comes around.",
+			"Such statements sound incredibly like a copy-paste answer when we're lazy to think about what we're lacking or what the latest technologies already can do.",
+		]	
 	},
 	{
 		id: 2,
 		prompt: 'Technically, anything can be done, it just depends on the use-case.',
 		response:
-			"No shit Sherlock, of course anything can be done. It's just lazy to say this. Geniuses have demonstrated its possible to create a roller coaster in Excel or Snake in HTML (with some PHP for game state). <br>What's more important are presenting good options (not outdated/trashy options from 10 years ago), scrutinizing how well each option solves problems, deciding the trade-offs needed, and then guiding business owners to make the best choices."
+			"No shit Sherlock, of course anything can be done. It's just lazy to say this. Geniuses have demonstrated its possible to create a roller coaster in Excel or Snake in HTML (with some PHP for game state). What's more important are presenting good options (not outdated/trashy options from 10 years ago), scrutinizing how well each option solves problems, deciding the trade-offs needed, and then guiding business owners to make the best choices."
 	},
 	{
 		id: 3,

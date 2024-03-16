@@ -46,7 +46,7 @@
 			>
 		</p>
 	</div>
-	<div class="avatar mt-5 flex px-12 lg:col-span-2 lg:w-2/3">
+	<div class="avatar flex px-12 lg:col-span-2 lg:w-2/3">
 		<div class="rounded-full">
 			<enhanced:img
 				src={hero}

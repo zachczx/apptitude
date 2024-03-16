@@ -17,7 +17,7 @@
 	</div>
 	<div class="grid content-start justify-items-center lg:col-span-3">
 		<div class="pe-4 ps-2">
-			<h1 class="mb-11 font-bold">What's <span class="text-primary">Apptitude</span>?</h1>
+			<h1 class="mb-11 inline-block bg-gradient-to-r from-emerald-200 via-orange-200 to-pink-200 bg-clip-text py-3 text-transparent">What's Apptitude?</h1>
 			<h2 class="mb-7">TL;DR</h2>
 			<p class="mb-7">
 				I made Apptitude to help my teammates know what competencies to learn, find out where to
@@ -90,31 +90,42 @@
 					</p>
 				</div>
 			{/if}
-			<h2 class="mb-7 mt-7">What is a bad product?</h2>
+			<h2 class="mb-7 mt-12">What's in it for you?</h2>
+			<p class="mb-12">
+				I do this so that I can feel like I did some good for society. If you asked just one extra
+				question that saves taxpayers some money or give users a better product, Apptitude would
+				have done some good for Singaporeans. (If this really does work out, maybe I should put some
+				ads or make this in patreon or something. /jk)
+			</p>
+			<h2 class="mb-7">What's a bad product?</h2>
 			<p class="mb-7">
 				I'll draw from personal experience. Take LifeSG. I used LifeSG in the delivery suite after
 				my wife gave birth. What a lifesaver! I downloaded the app (didn't mind it tbh), registered
 				my baby's name, didn't even have to go to ICA. After that I deleted the app.
 			</p>
-			<p class="mb-7">
+			<p class="mb-12">
 				I was annoyed some time later that I needed to use LifeSG to use my NS55 credits. The app
 				loaded slow on my Pixel, far slower than PayLah. And I couldn't even finish all my credits,
 				kena makan by Gahmen. To make it worse, my go-to app for reporting HDB estate issues needed
 				to be done via LifeSG. Ugh, so much worse than the original OneService app.
 			</p>
 			<h2 class="mb-7">Road to hell is paved with good intentions</h2>
-			<p class="mb-7">
+			<p class="mb-12">
 				I don't think any public servant wakes up and says "let me think of ways to waste money and
 				make a bad product". If there is, fire that person! In my view, a lot of the time, decisions
 				or policies made are head scratchers. Maybe because they were made by people who don't hear
 				from the ones actually using or building these things. Or maybe they're unaware they're
 				doing the wrong things despite best intentions, and then they get promoted.
 			</p>
-			<h2 class="mb-7">Apptitude is a good product then?</h2>
+			<h2 class="mb-7">You're being too harsh</h2>
+			<p class="mb-12">
+				I'm not a nice person (though certainly not at Linus' level). I don't know a way to say the stuff here nicely. I'd personally prefer someone to just tell me if I'm screwing things up. If you're doing good, share your wisdom with everyone else in a nicer way.
+			</p>
+			<h2 class="mb-7">You're an idiot too, you think Apptitude's a good product?</h2>
 			<p class="mb-7">
 				This is not a product. Just a personal project to share my ideas with my teammates:
 			</p>
-			<ul class="mb-7 ms-7 list-decimal space-y-1">
+			<ul class="mb-12 ms-7 list-decimal space-y-1">
 				<li class="ps-3">What people who made successful products think a good product is</li>
 				<li class="ps-3">
 					Questions to keep at the back of my mind to expose bad products and decisions
@@ -122,15 +133,8 @@
 				<li class="ps-3">What competencies I think I need to make better tech-related decisions</li>
 				<li class="ps-3">(This is also for my personal goal of learning Svelte5 and Sveltekit.)</li>
 			</ul>
-			<h2 class="mb-7">What's in it for you?</h2>
-			<p class="mb-7">
-				I do this so that I can feel like I did some good for society. If you asked just one extra
-				question that saves taxpayers some money or give users a better product, Apptitude would
-				have done some good for Singaporeans. (If this really does work out, maybe I should put some
-				ads or make this in patreon or something. /jk)
-			</p>
 			<h2 class="mb-7">Who cares about your shitty webapp/blog?</h2>
-			<p class="mb-7">
+			<p class="mb-12">
 				Ouch. But actually Apptitude costs me $13.28/yr (incl GST), solely for the domain name. I
 				got to learn Svelte through this, so it's not wasted effort. If you think this sucks, cool.
 				It's still cheap enough to dump without second thought.

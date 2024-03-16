@@ -24,10 +24,10 @@
 					>
 						<a href="/skills/{item.slug}">{item.name}</a>
 					</h2>
-					<h3>Topics</h3>
+					<h3><a href="/skills/{item.slug}">Topics</a></h3>
 					<p class="mb-7">
 						{#each item.topics as topic}
-							<span class="btn btn-outline btn-xs me-2 mt-1">{topic}</span>
+							<a href="/skills/{item.slug}" class="btn btn-outline btn-xs me-2 mt-1">{topic}</a>
 						{/each}
 					</p>
 
@@ -40,10 +40,10 @@
 							<ul class="mb-7 list-disc ps-4">
 								{#each item.questions as question, index}
 									{#if index < 3}
-										<li>{question}</li>
+										<li><a href="/skills/{item.slug}">{question}</a></li>
 									{/if}
 								{/each}
-								...
+								<a href="/skills/{item.slug}">...</a>
 							</ul>
 						</div>
 					</div>
@@ -56,10 +56,10 @@
 							<ul class="list-disc ps-4">
 								{#each item.objectives as objective, index}
 									{#if index < 3}
-										<li>{objective}</li>
+										<li><a href="/skills/{item.slug}">{objective}</a></li>
 									{/if}
 								{/each}
-								...
+								<a href="/skills/{item.slug}">...</a>
 							</ul>
 						</div>
 					</div>
