@@ -34,7 +34,6 @@
 				<li><a href="/techtrippin">Tech Trippin'</a></li>
 				<li><a href="/todo">To-Do List</a></li>
 				<li><a href="/faq">About</a></li>
-
 			</ul>
 		</div>
 		<a href="/" class="jost btn btn-ghost text-4xl text-white xl:text-5xl"

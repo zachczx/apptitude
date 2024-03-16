@@ -6,7 +6,7 @@
 </script>
 
 <div class="grid grid-cols-1 justify-items-center gap-x-8 gap-y-8 px-5 lg:grid-cols-5 lg:px-20">
-	<div class="avatar flex self-stretch px-12 lg:self-start lg:col-span-2">
+	<div class="avatar flex self-stretch px-12 lg:col-span-2 lg:self-start">
 		<div class="rounded-full">
 			<enhanced:img
 				src={sgneopunk}
@@ -15,12 +15,13 @@
 			></enhanced:img>
 		</div>
 	</div>
-	<div class="lg:col-span-3 grid content-start justify-items-center">
+	<div class="grid content-start justify-items-center lg:col-span-3">
 		<div class="pe-4 ps-2">
 			<h1 class="mb-11 font-bold">What's <span class="text-primary">Apptitude</span>?</h1>
 			<h2 class="mb-7">TL;DR</h2>
 			<p class="mb-7">
-				I made Apptitude to help my teammates know what competencies to learn, find out where to learn them, and quickly get started to scrutinize tech stuff that I like to.
+				I made Apptitude to help my teammates know what competencies to learn, find out where to
+				learn them, and quickly get started to scrutinize tech stuff that I like to.
 			</p>
 			<div class="border-t-2 border-slate-400 text-center">
 				<button
@@ -30,9 +31,37 @@
 						seeMore = !seeMore;
 					}}
 				>
-				<svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-chevrons-down inline align-top"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 7l5 5l5 -5" /><path d="M7 13l5 5l5 -5" /></svg>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="24"
+						height="24"
+						viewBox="0 0 24 24"
+						fill="none"
+						stroke="currentColor"
+						stroke-width="2"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						class="icon icon-tabler icons-tabler-outline icon-tabler-chevrons-down inline align-top"
+						><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M7 7l5 5l5 -5" /><path
+							d="M7 13l5 5l5 -5"
+						/></svg
+					>
 					See more
-					<svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-chevrons-down inline align-top"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 7l5 5l5 -5" /><path d="M7 13l5 5l5 -5" /></svg></button
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="24"
+						height="24"
+						viewBox="0 0 24 24"
+						fill="none"
+						stroke="currentColor"
+						stroke-width="2"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						class="icon icon-tabler icons-tabler-outline icon-tabler-chevrons-down inline align-top"
+						><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M7 7l5 5l5 -5" /><path
+							d="M7 13l5 5l5 -5"
+						/></svg
+					></button
 				>
 			</div>
 			{#if seeMore == true}
@@ -41,20 +70,31 @@
 					<p class="mb-7">
 						Apptitude is my attempt to start a more dissatisfied culture/attitude to tech products,
 						by opening up the veil and giving people the mental tools/mindset to challenge bad plans
-						and decisions.</p>
-						<p class="mb-7">
-						In my past job as a "tech policy officer" I came to realize WOG tech outcomes are poor. Looking around, many of Govt's tech products don't make sense, especially for the amount of money we spend <a href="https://www.tech.gov.sg/media/media-releases/2023-05-24-government-projected-to-spend-on-ict-in-fy23">(here)</a>. Products are slow, laggy, hard to use, super expensive.
-						</p>
-						<p class="mb-7">
-						Reflecting on my own inadequacies and what really capable people thought, I understood that this was because people simply didn't know better. A competency gap. Like a third eye, I couldn't unsee this competency gap. I saw it everywhere, myself included. I can never finish learning, there's too much to pick up and new things keep coming up. But I try my best and supplement those with what I hear from good people around, the good and bad I saw.
+						and decisions.
+					</p>
+					<p class="mb-7">
+						In my past job as a "tech policy officer" I came to realize WOG tech outcomes are poor.
+						Looking around, many of Govt's tech products don't make sense, especially for the amount
+						of money we spend <a
+							href="https://www.tech.gov.sg/media/media-releases/2023-05-24-government-projected-to-spend-on-ict-in-fy23"
+							>(here)</a
+						>. Products are slow, laggy, hard to use, super expensive.
+					</p>
+					<p class="mb-7">
+						Reflecting on my own inadequacies and what really capable people thought, I understood
+						that this was because people simply didn't know better. A competency gap. Like a third
+						eye, I couldn't unsee this competency gap. I saw it everywhere, myself included. I can
+						never finish learning, there's too much to pick up and new things keep coming up. But I
+						try my best and supplement those with what I hear from good people around, the good and
+						bad I saw.
 					</p>
 				</div>
 			{/if}
 			<h2 class="mb-7 mt-7">What is a bad product?</h2>
 			<p class="mb-7">
-				I'll draw from personal experience. Take LifeSG. I used LifeSG in the delivery suite after my wife gave birth. What a lifesaver!
-				I downloaded the app (didn't mind it tbh), registered my baby's name, didn't even have to go
-				to ICA. After that I deleted the app.
+				I'll draw from personal experience. Take LifeSG. I used LifeSG in the delivery suite after
+				my wife gave birth. What a lifesaver! I downloaded the app (didn't mind it tbh), registered
+				my baby's name, didn't even have to go to ICA. After that I deleted the app.
 			</p>
 			<p class="mb-7">
 				I was annoyed some time later that I needed to use LifeSG to use my NS55 credits. The app
@@ -83,13 +123,17 @@
 				<li class="ps-3">(This is also for my personal goal of learning Svelte5 and Sveltekit.)</li>
 			</ul>
 			<h2 class="mb-7">What's in it for you?</h2>
-			<p class="mb-7">I do this so that I can feel like I did some good for society. 
-				If you asked just one extra question that saves taxpayers some money or give users a better product, Apptitude would have done some good for Singaporeans. (If this really does work out, maybe I should put some ads or make this in patreon or something. /jk) 
-			</p>
-				<h2 class="mb-7">Who cares about your shitty webapp/blog?</h2>
 			<p class="mb-7">
-				Ouch. But actually Apptitude costs me $13.28/yr (incl GST), solely for the domain name. I got to learn Svelte through this, so it's not wasted effort. If you think this
-				sucks, cool. It's still cheap enough to dump without second thought.
+				I do this so that I can feel like I did some good for society. If you asked just one extra
+				question that saves taxpayers some money or give users a better product, Apptitude would
+				have done some good for Singaporeans. (If this really does work out, maybe I should put some
+				ads or make this in patreon or something. /jk)
+			</p>
+			<h2 class="mb-7">Who cares about your shitty webapp/blog?</h2>
+			<p class="mb-7">
+				Ouch. But actually Apptitude costs me $13.28/yr (incl GST), solely for the domain name. I
+				got to learn Svelte through this, so it's not wasted effort. If you think this sucks, cool.
+				It's still cheap enough to dump without second thought.
 			</p>
 		</div>
 	</div>
