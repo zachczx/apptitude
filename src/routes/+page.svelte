@@ -16,14 +16,11 @@
 			good tech decisions look like, so you can improve outcomes for your tech products and projects.
 		</p>
 		<p class="mb-5">
-			Stop the buck where it's at. Your users and customers deserve good products at the lowest
-			cost.
+			Let's improve public sector tech together. Your users and customers deserve good products at the lowest
+			cost. 
+
 		</p>
-		<p class="mb-5">
-			Right the wrongs of tech in the public sector. The slow, laggy, bloated apps. The
-			overspending. The timeline delays.
-		</p>
-		<p class="mb-5 mt-10 space-x-2 lg:space-x-5">
+		<p class="mb-5 mt-8 space-x-2 lg:space-x-5">
 			<a href="/skills" class="btn bg-lime-600 font-medium text-white hover:bg-lime-800 lg:text-xl"
 				>Start Learning <svg
 					xmlns="http://www.w3.org/2000/svg"
@@ -46,7 +43,7 @@
 			>
 		</p>
 	</div>
-	<div class="avatar flex px-12 lg:col-span-2 lg:w-2/3">
+	<div class="avatar flex px-12 lg:col-span-2 lg:w-3/5">
 		<div class="rounded-full">
 			<enhanced:img
 				src={hero}

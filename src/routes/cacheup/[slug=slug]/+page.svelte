@@ -2,20 +2,31 @@
 	import userCircle from '$lib/assets/svg/user-circle.svg';
 	import chevronDown from '$lib/assets/svg/chevron-down.svg';
 	import { page } from '$app/stores';
+	import { fade } from 'svelte/transition';
 	const slug = $page.params.slug;
 	let { data } = $props();
 
-	let checkAll = $state(false);
-
 	let seeMoreVar = $state(false);
-
 	function seeMore() {
 		seeMoreVar = !seeMoreVar;
 		console.log(seeMoreVar);
 	}
+
+	//for byline
+	let currentBylineNumber = $state(0)
+	let bylineTotal = data.post.bylines.length - 1
+
+		setInterval(() => {
+			if (currentBylineNumber < bylineTotal) {
+				currentBylineNumber += 1
+			} else {
+				currentBylineNumber = 0
+			}
+		}, 10000)
+
 </script>
 
-<div class="mb-10 text-center lg:mb-20">
+<div class="mb-10 text-center lg:mb-10">
 	<h1
 		class="mb-10 inline-block bg-gradient-to-r from-emerald-200 via-orange-200 to-pink-200 bg-clip-text py-3 text-transparent"
 	>
@@ -23,16 +34,16 @@
 	</h1>
 	{#if data.post.bylines[0].text != ''}
 		<div class="grid-cols-auto grid place-items-center px-5 lg:px-20">
-			{#each data.post.bylines as byline, index}
-				<div class="chat {index % 2 === 0 ? 'chat-start' : 'chat-start'}">
-					<div class="avatar chat-image">
-						<div class="w-14 rounded-full">
-							<img src={byline.icon ? byline.icon : userCircle} alt="Author" />
-						</div>
+			{#key currentBylineNumber}
+			<div class="chat chat-start" in:fade={{duration:1000}}>
+				<div class="avatar chat-image">
+					<div class="w-14 rounded-full">
+						<img src={data.post.bylines[currentBylineNumber].icon} alt="Author" />
 					</div>
-					<div class="chat-bubble"><i>{byline.text}</i></div>
 				</div>
-			{/each}
+				<div class="chat-bubble"><i>{data.post.bylines[currentBylineNumber].text}</i></div>
+			</div>
+			{/key}
 		</div>
 	{/if}
 </div>

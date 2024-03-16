@@ -81,7 +81,7 @@ export const cacheup = [
 		slug: 'product',
 		bylines: [
 			{
-				text: 'Goals must be measurable or have quantifiable targets. Maybe it’s shipping a certain number of products or hitting a release schedule, but in any case, we have to be able to track and measure the goals.',
+				text: 'Goals must be measurable or have quantifiable targets. Maybe it’s shipping a certain number of products or hitting a release schedule... we have to be able to track and measure the goals.',
 				icon: JohnDoerr
 			},
 			{
