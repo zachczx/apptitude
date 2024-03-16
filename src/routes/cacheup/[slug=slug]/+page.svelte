@@ -13,17 +13,16 @@
 	}
 
 	//for byline
-	let currentBylineNumber = $state(0)
-	let bylineTotal = data.post.bylines.length - 1
+	let currentBylineNumber = $state(0);
+	let bylineTotal = data.post.bylines.length - 1;
 
-		setInterval(() => {
-			if (currentBylineNumber < bylineTotal) {
-				currentBylineNumber += 1
-			} else {
-				currentBylineNumber = 0
-			}
-		}, 10000)
-
+	setInterval(() => {
+		if (currentBylineNumber < bylineTotal) {
+			currentBylineNumber += 1;
+		} else {
+			currentBylineNumber = 0;
+		}
+	}, 10000);
 </script>
 
 <div class="mb-10 text-center lg:mb-10">
@@ -35,14 +34,14 @@
 	{#if data.post.bylines[0].text != ''}
 		<div class="grid-cols-auto grid place-items-center px-5 lg:px-20">
 			{#key currentBylineNumber}
-			<div class="chat chat-start" in:fade={{duration:1000}}>
-				<div class="avatar chat-image">
-					<div class="w-14 rounded-full">
-						<img src={data.post.bylines[currentBylineNumber].icon} alt="Author" />
+				<div class="chat chat-start" in:fade={{ duration: 1000 }}>
+					<div class="avatar chat-image">
+						<div class="w-14 rounded-full">
+							<img src={data.post.bylines[currentBylineNumber].icon} alt="Author" />
+						</div>
 					</div>
+					<div class="chat-bubble"><i>{data.post.bylines[currentBylineNumber].text}</i></div>
 				</div>
-				<div class="chat-bubble"><i>{data.post.bylines[currentBylineNumber].text}</i></div>
-			</div>
 			{/key}
 		</div>
 	{/if}

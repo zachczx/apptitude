@@ -16,9 +16,8 @@
 			good tech decisions look like, so you can improve outcomes for your tech products and projects.
 		</p>
 		<p class="mb-5">
-			Let's improve public sector tech together. Your users and customers deserve good products at the lowest
-			cost. 
-
+			Let's improve public sector tech together. Your users and customers deserve good products at
+			the lowest cost.
 		</p>
 		<p class="mb-5 mt-8 space-x-2 lg:space-x-5">
 			<a href="/skills" class="btn bg-lime-600 font-medium text-white hover:bg-lime-800 lg:text-xl"

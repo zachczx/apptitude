@@ -17,7 +17,11 @@
 	</div>
 	<div class="grid content-start justify-items-center lg:col-span-3">
 		<div class="pe-4 ps-2">
-			<h1 class="mb-11 inline-block bg-gradient-to-r from-emerald-200 via-orange-200 to-pink-200 bg-clip-text py-3 text-transparent">What's Apptitude?</h1>
+			<h1
+				class="mb-11 inline-block bg-gradient-to-r from-emerald-200 via-orange-200 to-pink-200 bg-clip-text py-3 text-transparent"
+			>
+				What's Apptitude?
+			</h1>
 			<h2 class="mb-7">TL;DR</h2>
 			<p class="mb-7">
 				I made Apptitude to help my teammates know what competencies to learn, find out where to
@@ -119,7 +123,9 @@
 			</p>
 			<h2 class="mb-7">You're being too harsh</h2>
 			<p class="mb-12">
-				I'm not a nice person (though certainly not at Linus' level). I don't know a way to say the stuff here nicely. I'd personally prefer someone to just tell me if I'm screwing things up. If you're doing good, share your wisdom with everyone else in a nicer way.
+				I'm not a nice person (though certainly not at Linus' level). I don't know a way to say the
+				stuff here nicely. I'd personally prefer someone to just tell me if I'm screwing things up.
+				If you're doing good, share your wisdom with everyone else in a nicer way.
 			</p>
 			<h2 class="mb-7">You're an idiot too, you think Apptitude's a good product?</h2>
 			<p class="mb-7">

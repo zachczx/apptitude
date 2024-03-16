@@ -5,8 +5,8 @@ export const techtrippin = [
 			'It all depends on the business requirements and use-case. GPT 4, 5, 6, 7, and so on would not change much.',
 		response: [
 			"Look, clarifying use-cases is super important, understanding customer needs and their problem statements. But it's ridiculous to say technological advancements don't matter. Business needs that are unthinkable on GPT-3 are already solved by Claude3 Haiku. You'll keep seeing more giant leaps in AI and when AGI comes around.",
-			"Such statements sound incredibly like a copy-paste answer when we're lazy to think about what we're lacking or what the latest technologies already can do.",
-		]	
+			"Such statements sound incredibly like a copy-paste answer when we're lazy to think about what we're lacking or what the latest technologies already can do."
+		]
 	},
 	{
 		id: 2,
