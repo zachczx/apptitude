@@ -36,8 +36,7 @@ function clickPrev(current) {
 	</h1>
 	<div>
 		<i
-			>Decrypting garbled tech jargon-gibberish (wannabe) "tech" consultants, designed to use many
-			words to say absolutely nothing.</i
+			>Decrypting garbled tech jargon-gibberish (wannabe) "tech" consultants, who always try to use as many words as possible to say absolutely nothing.</i
 		>
 	</div>
 </div>
@@ -55,20 +54,20 @@ function clickPrev(current) {
 						<div class="w-10 rounded-full lg:w-[200px]">
 							{#if i%2 == 0}
 							<enhanced:img
-								alt="Professional Tech Consultant"
+								alt="Tech Consultant"
 								src={consultant}
 								sizes="(min-width:1920px) 200px, (min-width:1080px) 150px, (min-width:768px) 70px"
 							/>
 							{:else}
 							<enhanced:img
-							alt="Professional Tech Consultant"
+							alt="Tech Consultant"
 							src={consultant2}
 							sizes="(min-width:1920px) 200px, (min-width:1080px) 150px, (min-width:768px) 70px"
 						/>
 						{/if}
 						</div>
 					</div>
-					<div class="chat-header self-end lg:text-xl ms-5 font-medium pb-1">Tech Consultant/Advisor</div>
+					<div class="chat-header self-end lg:text-xl ms-5 font-medium pb-1">Consultant, Project Manager</div>
 					<div class="chat-bubble text-xl bg-gradient-to-r from-base-300 via-blue-900 to-slate-900 p-2 lg:p-5">{techtrippinItem.prompt}</div>
 				</div>
 				<div class="chat chat-end">
