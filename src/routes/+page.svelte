@@ -2,15 +2,49 @@
 	import sgneopunk from '$lib/assets/sgneopunk.webp?enhanced&w=1714;640;400';
 	import { slide } from 'svelte/transition';
 	import hero from '$lib/assets/kari-shea-1SAnrIxw5OY-unsplash.webp?enhanced&w=2560;1080;400';
+import anime from 'animejs'
 
+	import { onMount } from 'svelte';
+
+	onMount(() => {
+		anime({
+			targets: '.box',
+			keyframes: [
+				{translateY: 1000, opacity: 0, duration:0},				
+    {translateY: 0, translateX: 0, opacity:1, duration:2000, rotate: '1turn'},
+			],
+			easing: 'easeOutCubic',
+			autoplay: true,
+		});
+
+		anime({
+			targets: '.animateLeft',
+			keyframes: [
+				{translateX: -500, opacity: 0, duration:0},
+    {translateX: 0, opacity:1, duration:2000},
+			],
+			autoplay: true,
+			easing: 'easeOutCubic',
+		});
+
+		anime({
+			targets: '.animateRight',
+			keyframes: [
+				{translateX: 500, opacity: 0, duration:0},
+    {translateX: 0, opacity:1, duration:2000},
+			],
+			easing: 'easeOutCubic',
+			autoplay: true,
+		});
+	})
 	let seeMore = false;
 </script>
 
 <div class="grid grid-cols-1 justify-items-center gap-x-8 gap-y-8 px-5 lg:grid-cols-2 lg:px-20">
-	<div class="self-center text-center lg:ps-[10rem]">
-		<h1>Make <span class="text-primary">better tech decisions</span> for Govt products.</h1>
+	<div class="self-center text-center lg:ps-[10rem] animateLeft">
+		<h1 class="lg:text-7xl xl:text-8xl">Make <span class="text-primary">better tech decisions</span> for Govt products.</h1>
 	</div>
-	<div class="text-lg lg:pe-20">
+	<div class="text-lg lg:pe-20 animateRight">
 		<p class="mb-5">
 			<span class="font-bold text-primary">Apptitude</span> helps you learn new competencies and what
 			good tech decisions look like, so you can improve outcomes for your tech products and projects.
@@ -42,8 +76,8 @@
 			>
 		</p>
 	</div>
-	<div class="avatar flex px-12 lg:col-span-2 lg:w-3/5">
-		<div class="rounded-full">
+	<div class="avatar flex px-12 lg:col-span-2 lg:mt-20 lg:w-3/5">
+		<div class="rounded-full box">
 			<enhanced:img
 				src={hero}
 				alt="Hero"
