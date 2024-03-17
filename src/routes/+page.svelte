@@ -2,58 +2,57 @@
 	import sgneopunk from '$lib/assets/sgneopunk.webp?enhanced&w=1714;640;400';
 	import { slide } from 'svelte/transition';
 	import hero from '$lib/assets/kari-shea-1SAnrIxw5OY-unsplash.webp?enhanced&w=2560;1080;400';
-import anime from 'animejs'
 
 	import { onMount } from 'svelte';
+	import { gsap } from 'gsap';
 
 	onMount(() => {
-		anime({
-			targets: '.box',
-			keyframes: [
-				{translateY: 1000, opacity: 0, duration:0},				
-    {translateY: 0, translateX: 0, opacity:1, duration:2000, rotate: '1turn'},
-			],
-			easing: 'easeOutCubic',
-			autoplay: true,
+		let tl = gsap.timeline({
+			scrollTrigger: {
+				trigger: '.animateImg',
+				pin: true, // pin the trigger element while active
+				start: 'top top', // when the top of the trigger hits the top of the viewport
+				end: '+=500', // end after scrolling 500px beyond the start
+				scrub: 1, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
+				snap: {
+					snapTo: 'labels', // snap to the closest label in the timeline
+					duration: { min: 0.2, max: 3 }, // the snap animation should be at least 0.2 seconds, but no more than 3 seconds (determined by velocity)
+					delay: 0.2, // wait 0.2 seconds from the last scroll event before doing the snapping
+					ease: 'power1.inOut' // the ease of the snap animation ("power3" by default)
+				}
+			}
 		});
-
-		anime({
-			targets: '.animateLeft',
-			keyframes: [
-				{translateX: -500, opacity: 0, duration:0},
-    {translateX: 0, opacity:1, duration:2000},
-			],
-			autoplay: true,
-			easing: 'easeOutCubic',
-		});
-
-		anime({
-			targets: '.animateRight',
-			keyframes: [
-				{translateX: 500, opacity: 0, duration:0},
-    {translateX: 0, opacity:1, duration:2000},
-			],
-			easing: 'easeOutCubic',
-			autoplay: true,
-		});
-	})
+		tl.add('start')
+			.to('.animateLeft', { xPercent: -50, duration: 0, opacity: 0 }, 'start')
+			.to('.animateRight', { xPercent: 50, duration: 0, opacity: 0 }, 'start')
+			.to('.animateImg', { yPercent: 50, duration: 0, opacity: 0, rotation: '1.75rad' }, 'start')
+			.to('.animateLeft', { xPercent: 0, duration: 1, opacity: 1, ease: 'sine.out' }, 'start')
+			.to('.animateRight', { xPercent: 0, duration: 1, opacity: 1, ease: 'sine.out' }, 'start')
+			.to(
+				'.animateImg',
+				{ yPercent: 0, duration: 1, opacity: 1, ease: 'sine.out', rotation: '0rad' },
+				'start'
+			);
+	});
 	let seeMore = false;
 </script>
 
 <div class="grid grid-cols-1 justify-items-center gap-x-8 gap-y-8 px-5 lg:grid-cols-2 lg:px-20">
-	<div class="self-center text-center lg:ps-[10rem] animateLeft">
-		<h1 class="lg:text-7xl xl:text-8xl">Make <span class="text-primary">better tech decisions</span> for Govt products.</h1>
+	<div class="animateLeft self-center text-center lg:ps-[10rem] xl:px-[5rem]">
+		<h1 class="lg:text-5xl xl:text-7xl">
+			Make <span class="text-primary">better tech decisions</span> for Govt products.
+		</h1>
 	</div>
-	<div class="text-lg lg:pe-20 animateRight">
-		<p class="mb-5">
+	<div class="animateRight lg:pe-20">
+		<p class="mb-5 lg:text-xl">
 			<span class="font-bold text-primary">Apptitude</span> helps you learn new competencies and what
 			good tech decisions look like, so you can improve outcomes for your tech products and projects.
 		</p>
-		<p class="mb-5">
+		<p class="mb-5 lg:text-xl">
 			Let's improve public sector tech together. Your users and customers deserve good products at
 			the lowest cost.
 		</p>
-		<p class="mb-5 mt-8 space-x-2 lg:space-x-5">
+		<p class="mb-5 mt-8 space-x-2 lg:space-x-5 lg:text-xl">
 			<a href="/skills" class="btn bg-lime-600 font-medium text-white hover:bg-lime-800 lg:text-xl"
 				>Start Learning <svg
 					xmlns="http://www.w3.org/2000/svg"
@@ -76,8 +75,8 @@ import anime from 'animejs'
 			>
 		</p>
 	</div>
-	<div class="avatar flex px-12 lg:col-span-2 lg:mt-20 lg:w-3/5">
-		<div class="rounded-full box">
+	<div class="avatar flex px-12 lg:col-span-2 lg:mt-12 lg:w-3/5">
+		<div class="animateImg rounded-full">
 			<enhanced:img
 				src={hero}
 				alt="Hero"
