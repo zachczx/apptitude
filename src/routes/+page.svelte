@@ -2,10 +2,10 @@
 	import hero from '$lib/assets/kari-shea-1SAnrIxw5OY-unsplash.webp?enhanced&w=2560;1080;400';
 	import { onMount } from 'svelte';
 	import { gsap } from 'gsap';
-	import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+	import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 
 	onMount(() => {
-		gsap.registerPlugin(ScrollTrigger) 
+		gsap.registerPlugin(ScrollTrigger);
 
 		let tl = gsap.timeline();
 		tl.add('start')
@@ -19,8 +19,8 @@
 				{ yPercent: 0, duration: 1, opacity: 1, ease: 'sine.out', rotation: '0rad' },
 				'start'
 			);
-	
 
+		/*
 	let t2 = gsap.matchMedia()
 	t2.add("(min-width: 1028px)", () => {
 
@@ -78,10 +78,8 @@
 			},
 		)
 	})
-
-}); //close onmount
-
-
+	*/
+	}); //close onmount
 </script>
 
 <div class="grid grid-cols-1 justify-items-center gap-x-8 gap-y-8 px-5 lg:grid-cols-2 lg:px-20">
@@ -131,7 +129,6 @@
 			></enhanced:img>
 		</div>
 	</div>
-	
 </div>
 <!--
 <div class="epilogue mt-[5rem] text-center opacity-0 lg:opacity-20"><h2><span class="text-primary">The Skills Forge</span> builds your foundation, by telling you what to learn and links you the resources.</h2></div>
