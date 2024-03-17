@@ -44,7 +44,7 @@
 					start: 'top bottom',
 					end: 'bottom 20%',
 					scrub: true,
-					markers: true,
+					markers: false,
 				},
 			scale:1.5,
 			y: "10vw",
