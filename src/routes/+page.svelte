@@ -1,27 +1,13 @@
 <script>
-	import sgneopunk from '$lib/assets/sgneopunk.webp?enhanced&w=1714;640;400';
-	import { slide } from 'svelte/transition';
 	import hero from '$lib/assets/kari-shea-1SAnrIxw5OY-unsplash.webp?enhanced&w=2560;1080;400';
-
 	import { onMount } from 'svelte';
 	import { gsap } from 'gsap';
+	import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 	onMount(() => {
-		let tl = gsap.timeline({
-			scrollTrigger: {
-				trigger: '.animateImg',
-				pin: true, // pin the trigger element while active
-				start: 'top top', // when the top of the trigger hits the top of the viewport
-				end: '+=500', // end after scrolling 500px beyond the start
-				scrub: 1, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
-				snap: {
-					snapTo: 'labels', // snap to the closest label in the timeline
-					duration: { min: 0.2, max: 3 }, // the snap animation should be at least 0.2 seconds, but no more than 3 seconds (determined by velocity)
-					delay: 0.2, // wait 0.2 seconds from the last scroll event before doing the snapping
-					ease: 'power1.inOut' // the ease of the snap animation ("power3" by default)
-				}
-			}
-		});
+		gsap.registerPlugin(ScrollTrigger) 
+
+		let tl = gsap.timeline();
 		tl.add('start')
 			.to('.animateLeft', { xPercent: -50, duration: 0, opacity: 0 }, 'start')
 			.to('.animateRight', { xPercent: 50, duration: 0, opacity: 0 }, 'start')
@@ -33,8 +19,69 @@
 				{ yPercent: 0, duration: 1, opacity: 1, ease: 'sine.out', rotation: '0rad' },
 				'start'
 			);
-	});
-	let seeMore = false;
+	
+
+	let t2 = gsap.matchMedia()
+	t2.add("(min-width: 1028px)", () => {
+
+		gsap.to(".epilogue", {autoAlpha: 0})
+		gsap.to(".epilogue2", {autoAlpha: 0})
+		gsap.to(".epilogue3", {autoAlpha: 0})
+		gsap.to(".animateImg", {
+			scrollTrigger: {
+					trigger: ".animateImg",
+					start: 'top center',
+					end: 'bottom center',
+					scrub: true,
+					markers: false,
+				},
+			scale:1.5,
+			},
+		)
+		gsap.to(".epilogue", {
+			scrollTrigger: {
+					trigger: ".epilogue",
+					start: 'top bottom',
+					end: 'bottom 20%',
+					scrub: true,
+					markers: true,
+				},
+			scale:1.5,
+			y: "10vw",
+			autoAlpha: 1,
+			},
+		)
+		gsap.to(".epilogue2", {
+			scrollTrigger: {
+					trigger: ".epilogue2",
+					start: 'top bottom',
+					end: 'bottom 20%',
+					scrub: true,
+					markers: false,
+				},
+			scale:1.5,
+			y: "10vw",
+			autoAlpha: 1,
+			},
+		)
+		gsap.to(".epilogue3", {
+			scrollTrigger: {
+					trigger: ".epilogue3",
+					start: 'top bottom',
+					end: 'bottom 20%',
+					scrub: true,
+					markers: false,
+				},
+			scale:1.5,
+			y: "10vw",
+			autoAlpha: 1,
+			},
+		)
+	})
+
+}); //close onmount
+
+
 </script>
 
 <div class="grid grid-cols-1 justify-items-center gap-x-8 gap-y-8 px-5 lg:grid-cols-2 lg:px-20">
@@ -75,7 +122,7 @@
 			>
 		</p>
 	</div>
-	<div class="avatar flex px-12 lg:col-span-2 lg:mt-12 lg:w-3/5">
+	<div class="avatar flex px-12 lg:col-span-2 lg:mt-12 lg:w-3/6">
 		<div class="animateImg rounded-full">
 			<enhanced:img
 				src={hero}
@@ -84,4 +131,10 @@
 			></enhanced:img>
 		</div>
 	</div>
+	
 </div>
+<!--
+<div class="epilogue mt-[5rem] text-center opacity-0 lg:opacity-20"><h2><span class="text-primary">The Skills Forge</span> builds your foundation, by telling you what to learn and links you the resources.</h2></div>
+<div class="epilogue2 mt-[5rem] text-center opacity-0 lg:opacity-20"><h2><span class="text-primary">Cache Up!</span> is your cheat sheet, giving you a quickstart for getting good tech outcomes.</h2></div>
+<div class="epilogue3 mt-[5rem] text-center opacity-0 lg:opacity-20"><h2><span class="text-primary">Tech Trippin'</span> is the equivalent of "Kids Say the Darndest Things", overheard in the real world.</h2></div>
+<div class="lg:h-[60rem]"></div>-->
