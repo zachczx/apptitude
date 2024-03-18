@@ -1,10 +1,13 @@
 <script>
 	import sgneopunk from '$lib/assets/sgneopunk.webp?enhanced&w=1714;640;400';
 	import { slide } from 'svelte/transition';
-import Breadcrumbs from '$lib/Breadcrumbs.svelte';
+	import Breadcrumbs from '$lib/Breadcrumbs.svelte';
+
 	let seeMore = false;
 </script>
+
 <Breadcrumbs textCurrent={'About Apptitude'} />
+
 <div class="grid grid-cols-1 justify-items-center gap-x-8 gap-y-8 px-5 lg:grid-cols-5 lg:px-20">
 	<div class="avatar flex self-stretch px-12 lg:sticky lg:top-20 lg:col-span-2 lg:self-start">
 		<div class="rounded-full">
@@ -123,9 +126,9 @@ import Breadcrumbs from '$lib/Breadcrumbs.svelte';
 			</p>
 			<h2 class="mb-7">You're too harsh!</h2>
 			<p class="mb-12">
-				I'm not nice (though certainly not at Linus' level). I don't know a way to say the
-				stuff here nicely. I'd personally prefer someone to just tell me if I'm screwing things up.
-				If you're doing good, share your wisdom with everyone else in a nicer way.
+				I'm not nice (though certainly not at Linus' level). I don't know a way to say the stuff
+				here nicely. I'd personally prefer someone to just tell me if I'm screwing things up. If
+				you're doing good, share your wisdom with everyone else in a nicer way.
 			</p>
 			<h2 class="mb-7">You're an idiot too, you think this is a good product?</h2>
 			<p class="mb-7">
@@ -142,9 +145,9 @@ import Breadcrumbs from '$lib/Breadcrumbs.svelte';
 			<h2 class="mb-7">Who cares about your shitty webapp/blog?</h2>
 			<p class="mb-7">Ouch. At least I tried though.</p>
 			<p class="mb-12">
-				In any case Apptitude only costs me $13.28/yr (incl GST), for the domain name. I
-				got to learn Svelte through this, so it's not wasted effort. If you think this sucks, cool.
-				It's cheap enough to write off without second thought.
+				In any case Apptitude only costs me $13.28/yr (incl GST), for the domain name. I got to
+				learn Svelte through this, so it's not wasted effort. If you think this sucks, cool. It's
+				cheap enough to write off without second thought.
 			</p>
 		</div>
 	</div>
