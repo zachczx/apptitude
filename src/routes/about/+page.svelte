@@ -121,13 +121,13 @@
 				from the ones actually using or building these things. Or maybe they're unaware they're
 				doing the wrong things despite best intentions, and then they get promoted.
 			</p>
-			<h2 class="mb-7">You're being too harsh</h2>
+			<h2 class="mb-7">You're too harsh!</h2>
 			<p class="mb-12">
-				I'm not a nice person (though certainly not at Linus' level). I don't know a way to say the
+				I'm not nice (though certainly not at Linus' level). I don't know a way to say the
 				stuff here nicely. I'd personally prefer someone to just tell me if I'm screwing things up.
 				If you're doing good, share your wisdom with everyone else in a nicer way.
 			</p>
-			<h2 class="mb-7">You're an idiot too, you think Apptitude's a good product?</h2>
+			<h2 class="mb-7">You're an idiot too, you think this is a good product?</h2>
 			<p class="mb-7">
 				This is not a product. Just a personal project to share my ideas with my teammates:
 			</p>
@@ -140,10 +140,11 @@
 				<li class="ps-3">(This is also for my personal goal of learning Svelte5 and Sveltekit.)</li>
 			</ul>
 			<h2 class="mb-7">Who cares about your shitty webapp/blog?</h2>
+			<p class="mb-7">Ouch. At least I tried though.</p>
 			<p class="mb-12">
-				Ouch. But actually Apptitude costs me $13.28/yr (incl GST), solely for the domain name. I
+				In any case Apptitude only costs me $13.28/yr (incl GST), for the domain name. I
 				got to learn Svelte through this, so it's not wasted effort. If you think this sucks, cool.
-				It's still cheap enough to dump without second thought.
+				It's cheap enough to write off without second thought.
 			</p>
 		</div>
 	</div>
