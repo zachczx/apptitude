@@ -20,7 +20,7 @@
 				'start'
 			);
 
-		/*
+		
 	let t2 = gsap.matchMedia()
 	t2.add("(min-width: 1028px)", () => {
 
@@ -35,9 +35,12 @@
 					scrub: true,
 					markers: false,
 				},
-			scale:1.5,
+			scale:2,
+			y: "20vw",
 			},
 		)
+	})
+		/*
 		gsap.to(".epilogue", {
 			scrollTrigger: {
 					trigger: ".epilogue",
@@ -77,7 +80,7 @@
 			autoAlpha: 1,
 			},
 		)
-	})
+
 	*/
 	}); //close onmount
 </script>

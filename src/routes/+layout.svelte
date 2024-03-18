@@ -4,7 +4,7 @@
 	import PageTransition from '$lib/Transition.svelte';
 	export let data;
 	import { cacheup } from './cacheup/data_cacheup.js';
-	import { info } from './skills/data.js';
+	import { info } from './learn/data.js';
 </script>
 
 <div class="navbar mb-10 bg-base-100 lg:mb-20">
@@ -29,7 +29,7 @@
 				tabindex="-1"
 				class="menu dropdown-content menu-sm z-[1] mt-3 w-52 rounded-box bg-base-100 p-2 shadow"
 			>
-				<li><a href="/skills">The Skill Forge</a></li>
+				<li><a href="/learn">Learn</a></li>
 				<li><a href="/cacheup">Cache Up!</a></li>
 				<li><a href="/techtrippin">Tech Trippin'</a></li>
 				<li><a href="/todo">To-Do List</a></li>
@@ -45,10 +45,10 @@
 			<!-- removed menu class -->
 			<li class="border-b-2 border-base-100 pb-3 hover:border-b-2 hover:border-slate-200">
 				<details>
-					<summary class="hover:bg-base-100"> <a href="/skills"> The Skill Forge</a></summary>
+					<summary class="hover:bg-base-100"> <a href="/learn">Learn</a></summary>
 					<ul class="z-10 p-2 text-base">
 						{#each info as skillsItem}
-							<li><a href="/skills/{skillsItem.slug}">{skillsItem.name}</a></li>
+							<li><a href="/learn/{skillsItem.slug}">{skillsItem.name}</a></li>
 						{/each}
 					</ul>
 				</details>
