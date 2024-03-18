@@ -1,10 +1,10 @@
 <script>
 	import sgneopunk from '$lib/assets/sgneopunk.webp?enhanced&w=1714;640;400';
 	import { slide } from 'svelte/transition';
-
+import Breadcrumbs from '$lib/Breadcrumbs.svelte';
 	let seeMore = false;
 </script>
-
+<Breadcrumbs textCurrent={'About Apptitude'} />
 <div class="grid grid-cols-1 justify-items-center gap-x-8 gap-y-8 px-5 lg:grid-cols-5 lg:px-20">
 	<div class="avatar flex self-stretch px-12 lg:sticky lg:top-20 lg:col-span-2 lg:self-start">
 		<div class="rounded-full">

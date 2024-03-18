@@ -35,7 +35,7 @@
 		Tech Trippin'
 	</h1>
 	<div>
-		<i>Going through real world examples of tech jargon-gibberish and what I'd call out.</i>
+		<i>Going through real world examples of tech jargon-gibberish and calling out what makes absolutely no sense.</i>
 	</div>
 </div>
 <div
