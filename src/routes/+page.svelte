@@ -1,5 +1,5 @@
 <script>
-	import hero from '$lib/assets/kari-shea-1SAnrIxw5OY-unsplash.webp?enhanced&w=2560;1080;400';
+	import hero from '$lib/assets/kari-shea-1SAnrIxw5OY-unsplash.webp?enhanced&w=2560;2000;400';
 	import { onMount } from 'svelte';
 	import { gsap } from 'gsap';
 	import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
@@ -9,38 +9,75 @@
 
 		let tl = gsap.timeline();
 		tl.add('start')
-			.to('.animateLeft', { xPercent: -50, duration: 0, opacity: 0 }, 'start')
-			.to('.animateRight', { xPercent: 50, duration: 0, opacity: 0 }, 'start')
-			.to('.animateImg', { yPercent: 50, duration: 0, opacity: 0, rotation: '1.75rad' }, 'start')
-			.to('.animateLeft', { xPercent: 0, duration: 1, opacity: 1, ease: 'sine.out' }, 'start')
-			.to('.animateRight', { xPercent: 0, duration: 1, opacity: 1, ease: 'sine.out' }, 'start')
-			.to(
-				'.animateImg',
-				{ yPercent: 0, duration: 1, opacity: 1, ease: 'sine.out', rotation: '0rad' },
-				'start'
-			);
+			.to('.animateLeft', { xPercent: -50, duration: 0, autoAlpha: 0 }, 'start')
+			.to('.animateRight', { xPercent: 50, duration: 0, autoAlpha: 0 }, 'start')
+			.to('.animateImg', { yPercent: 50, duration: 0, autoAlpha: 0 }, 'start')
+			.to('.animateLeft', { xPercent: 0, duration: 1, autoAlpha: 1, ease: 'sine.out' }, 'start')
+			.to('.animateRight', { xPercent: 0, duration: 1, autoAlpha: 1, ease: 'sine.out' }, 'start')
+			.to('.animateImg', { yPercent: 0, duration: 1, autoAlpha: 1, ease: 'circ.out' }, 'start');
 
-		
-	let t2 = gsap.matchMedia()
-	t2.add("(min-width: 1028px)", () => {
-
-		gsap.to(".epilogue", {autoAlpha: 0})
-		gsap.to(".epilogue2", {autoAlpha: 0})
-		gsap.to(".epilogue3", {autoAlpha: 0})
-		gsap.to(".animateImg", {
-			scrollTrigger: {
-					trigger: ".animateImg",
+		let t2 = gsap.matchMedia();
+		t2.add('(min-width: 1028px)', () => {
+			gsap.to('.animateTitle', {
+				scrollTrigger: {
+					trigger: '.animateTitle',
+					start: '-30 top',
+					end: '110% top',
+					scrub: true,
+					markers: false
+				},
+				y: 50,
+				autoAlpha: 0
+			});
+			gsap.to('.animate-first-para', {
+				scrollTrigger: {
+					trigger: '.animate-first-para',
+					start: '-30 top',
+					end: '+=30',
+					scrub: true,
+					markers: false
+				},
+				y: 50,
+				autoAlpha: 0
+			});
+			gsap.to('.animate-second-para', {
+				scrollTrigger: {
+					trigger: '.animate-second-para',
+					start: '-30 top',
+					end: '+=30',
+					scrub: true,
+					markers: false
+				},
+				y: 50,
+				autoAlpha: 0
+			});
+			gsap.to('.animate-cta', {
+				scrollTrigger: {
+					trigger: '.animate-cta',
+					start: '-30 top',
+					end: '+=50',
+					scrub: true,
+					markers: false
+				},
+				y: 50,
+				autoAlpha: 0
+			});
+			gsap.to('.animateImg', {
+				scrollTrigger: {
+					trigger: '.animateImg',
 					start: 'top center',
 					end: 'bottom center',
 					scrub: true,
-					markers: false,
+					markers: false
 				},
-			scale:2,
-			y: "20vw",
-			},
-		)
-	})
+				scale: 1.5,
+				y: '20vw'
+			});
+		});
 		/*
+		gsap.to(".epilogue", {autoAlpha: 0})
+		gsap.to(".epilogue2", {autoAlpha: 0})
+		gsap.to(".epilogue3", {autoAlpha: 0})
 		gsap.to(".epilogue", {
 			scrollTrigger: {
 					trigger: ".epilogue",
@@ -87,20 +124,20 @@
 
 <div class="grid grid-cols-1 justify-items-center gap-x-8 gap-y-8 px-5 lg:grid-cols-2 lg:px-20">
 	<div class="animateLeft self-center text-center lg:ps-[10rem] xl:px-[5rem]">
-		<h1 class="lg:text-5xl xl:text-7xl">
+		<h1 class="animateTitle lg:text-5xl xl:text-7xl">
 			Make <span class="text-primary">better tech decisions</span> for Govt products.
 		</h1>
 	</div>
 	<div class="animateRight lg:pe-20">
-		<p class="mb-5 lg:text-xl">
+		<p class="animate-first-para z-10 pb-7 lg:text-xl">
 			<span class="font-bold text-primary">Apptitude</span> helps you learn new competencies and what
 			good tech decisions look like, so you can improve outcomes for your tech products and projects.
 		</p>
-		<p class="mb-5 lg:text-xl">
+		<p class="animate-second-para z-20 pb-7 lg:text-xl">
 			Let's improve public sector tech together. Your users and customers deserve good products at
 			the lowest cost.
 		</p>
-		<p class="mb-5 mt-8 space-x-2 lg:space-x-5 lg:text-xl">
+		<p class="animate-cta mb-5 mt-8 space-x-2 lg:space-x-2 lg:text-xl">
 			<a href="/skills" class="btn bg-lime-600 font-medium text-white hover:bg-lime-800 lg:text-xl"
 				>Start Learning <svg
 					xmlns="http://www.w3.org/2000/svg"
@@ -123,15 +160,23 @@
 			>
 		</p>
 	</div>
-	<div class="avatar flex px-12 lg:col-span-2 lg:mt-12 lg:w-3/6">
-		<div class="animateImg rounded-full">
+	<!--<div class="avatar flex px-12 lg:col-span-2 lg:mt-12 lg:w-3/6">
+		 <div class="animateImg rounded-full">
 			<enhanced:img
 				src={hero}
 				alt="Hero"
 				sizes="(min-width:1920px) 2560px, (min-width:1080px) 1080px, (min-width:768px) 400px"
 			></enhanced:img>
 		</div>
-	</div>
+	</div>-->
+</div>
+<div class="animateImg mt-8 lg:mt-20">
+	<enhanced:img
+		src={hero}
+		alt="Hero"
+		sizes="(min-width:1440px) 2560px, (min-width:1080px) 2000px, (min-width:768px) 400px"
+		class="object-contain"
+	></enhanced:img>
 </div>
 <!--
 <div class="epilogue mt-[5rem] text-center opacity-0 lg:opacity-20"><h2><span class="text-primary">The Skills Forge</span> builds your foundation, by telling you what to learn and links you the resources.</h2></div>

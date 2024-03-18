@@ -33,10 +33,12 @@
 				<li><a href="/cacheup">Cache Up!</a></li>
 				<li><a href="/techtrippin">Tech Trippin'</a></li>
 				<li><a href="/todo">To-Do List</a></li>
-				<li><a href="/faq">About</a></li>
+				<li><a href="/about">About</a></li>
 			</ul>
 		</div>
-		<a href="/" class="jost btn btn-ghost text-4xl text-white xl:text-5xl"
+		<a
+			href="/"
+			class="jost btn border-0 bg-base-100 text-4xl text-white hover:bg-base-100 xl:text-5xl"
 			><img src={logo} width="60" height="60" class="max-w-full" alt="Apptitude" />apptitude</a
 		>
 	</div>
@@ -72,7 +74,7 @@
 				<a class="hover:bg-base-100" href="/todo">To-Dos</a>
 			</li>
 			<li class="border-b-2 border-base-100 pb-3 hover:border-b-2 hover:border-slate-200">
-				<a class="hover:bg-base-100" href="/faq">About</a>
+				<a class="hover:bg-base-100" href="/about">About</a>
 			</li>
 		</ul>
 	</div>

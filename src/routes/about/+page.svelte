@@ -6,7 +6,7 @@
 </script>
 
 <div class="grid grid-cols-1 justify-items-center gap-x-8 gap-y-8 px-5 lg:grid-cols-5 lg:px-20">
-	<div class="avatar flex self-stretch px-12 lg:col-span-2 lg:self-start">
+	<div class="avatar flex self-stretch px-12 lg:sticky lg:top-20 lg:col-span-2 lg:self-start">
 		<div class="rounded-full">
 			<enhanced:img
 				src={sgneopunk}
