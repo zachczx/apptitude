@@ -47,12 +47,10 @@
 			<!-- removed menu class -->
 			<li class="border-b-2 border-base-100 pb-3 hover:border-b-2 hover:border-slate-200">
 				<details>
-					<summary class="hover:bg-base-100 hover:text-secondary"
-						><a href="/learn">Learn</a></summary
-					>
+					<summary class="hover:bg-base-100 hover:text-primary"><a href="/learn">Learn</a></summary>
 					<ul class="z-50 p-2 text-base">
 						{#each info as skillsItem}
-							<li class="hover:text-secondary">
+							<li class="hover:text-primary">
 								<a href="/learn/{skillsItem.slug}">{skillsItem.name}</a>
 							</li>
 						{/each}
@@ -61,12 +59,12 @@
 			</li>
 			<li class="border-b-2 border-base-100 pb-3 hover:border-b-2 hover:border-slate-200">
 				<details>
-					<summary class="hover:bg-base-100 hover:text-secondary"
+					<summary class="hover:bg-base-100 hover:text-primary"
 						><a href="/cacheup">Cache Up!</a></summary
 					>
 					<ul class="z-50 p-2 text-base">
 						{#each cacheup as cacheupItem}
-							<li class="hover:bg-base-100 hover:text-secondary">
+							<li class="hover:bg-base-100 hover:text-primary">
 								<a href="/cacheup/{cacheupItem.slug}">{cacheupItem.name}</a>
 							</li>
 						{/each}
@@ -74,17 +72,17 @@
 				</details>
 			</li>
 			<li
-				class="border-b-2 border-base-100 pb-3 hover:border-b-2 hover:border-slate-200 hover:text-secondary"
+				class="border-b-2 border-base-100 pb-3 hover:border-b-2 hover:border-slate-200 hover:text-primary"
 			>
 				<a class="hover:bg-base-100" href="/techtrippin">Tech Trippin'</a>
 			</li>
 			<li
-				class="border-b-2 border-base-100 pb-3 hover:border-b-2 hover:border-slate-200 hover:text-secondary"
+				class="border-b-2 border-base-100 pb-3 hover:border-b-2 hover:border-slate-200 hover:text-primary"
 			>
 				<a class="hover:bg-base-100" href="/todo">To-Dos</a>
 			</li>
 			<li
-				class="border-b-2 border-base-100 pb-3 hover:border-b-2 hover:border-slate-200 hover:text-secondary"
+				class="border-b-2 border-base-100 pb-3 hover:border-b-2 hover:border-slate-200 hover:text-primary"
 			>
 				<a class="hover:bg-base-100" href="/about">About</a>
 			</li>

@@ -32,7 +32,7 @@
 			</p>
 			<div class="border-t-2 border-slate-400 text-center">
 				<button
-					class="rounded-full bg-slate-600 align-middle hover:bg-slate-900"
+					class="rounded-full bg-slate-600 align-middle hover:text-primary"
 					style="transform: translateY(-14px)"
 					onclick={() => {
 						seeMore = !seeMore;
@@ -84,7 +84,7 @@
 						Looking around, many of Govt's tech products don't make sense, especially for the amount
 						of money we spend <a
 							href="https://www.tech.gov.sg/media/media-releases/2023-05-24-government-projected-to-spend-on-ict-in-fy23"
-							>(here)</a
+							class="text-primary">(here)</a
 						>. Products are slow, laggy, hard to use, super expensive.
 					</p>
 					<p class="mb-7">

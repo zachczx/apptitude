@@ -127,20 +127,22 @@
 		class="animateLeft self-center text-center lg:ps-[10rem] xl:px-[5rem] min-[1921px]:px-[10rem]"
 	>
 		<h1 class="animateTitle lg:text-5xl xl:text-7xl">
-			Make <span class="text-primary">better tech decisions</span> for Govt products.
+			Make <span class="text-pink-200">better tech decisions</span> for Govt products.
 		</h1>
 	</div>
 	<div class="animateRight lg:pe-20">
 		<p class="animate-first-para z-10 pb-7 lg:text-xl">
-			<span class="font-bold text-primary">Apptitude</span> helps you learn new competencies and what
-			good tech decisions look like, so you can improve outcomes for your tech products and projects.
+			<a href="/learn" class="font-bold text-primary">Apptitude helps you learn new competencies.</a
+			> Make better decisions, get better outcomes for your tech products and projects.
 		</p>
 		<p class="animate-second-para z-20 pb-7 lg:text-xl">
-			Let's improve public sector tech together. Your users and customers deserve good products at
-			the lowest cost.
+			<a href="/about" class="font-bold text-primary"
+				>Let's do a bit better in public sector tech.</a
+			>
+			Your users and customers deserve good products at the lowest cost.
 		</p>
 		<p class="animate-cta mb-5 mt-8 space-x-2 lg:space-x-2 lg:text-xl">
-			<a href="/learn" class="btn bg-red-600 font-medium text-white hover:bg-red-800 lg:text-xl"
+			<a href="/learn" class="btn bg-lime-600 font-medium text-white hover:bg-lime-700 lg:text-xl"
 				>Start Learning <svg
 					xmlns="http://www.w3.org/2000/svg"
 					width="24"
@@ -157,7 +159,7 @@
 			>
 			<a
 				href="/cacheup"
-				class="btn btn-outline btn-secondary font-medium text-lime-600 hover:bg-red-600 hover:text-white lg:text-xl"
+				class="btn btn-outline btn-primary font-medium text-lime-600 hover:bg-red-600 hover:text-white lg:text-xl"
 				>Quickstart Guides</a
 			>
 		</p>
