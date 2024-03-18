@@ -127,7 +127,7 @@
 		class="animateLeft self-center text-center lg:ps-[10rem] xl:px-[5rem] min-[1921px]:px-[10rem]"
 	>
 		<h1 class="animateTitle lg:text-5xl xl:text-7xl">
-			Make <span class="text-pink-200">better tech decisions</span> for Govt products.
+			Make <span class="text-primary">better tech decisions</span> for Govt products.
 		</h1>
 	</div>
 	<div class="animateRight lg:pe-20">
