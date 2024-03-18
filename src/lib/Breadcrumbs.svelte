@@ -5,10 +5,10 @@
 
 <div class="mb-10 px-5 text-lg font-medium lg:px-20">
 	<ul class="flex">
-		<li><a href="/" class="text-primary">Home</a></li>
+		<li><a href="/" class="text-secondary">Home</a></li>
 		{#if urlMiddle && textMiddle}
 			<li>
-				<a href="/{urlMiddle}" class="text-primary"
+				<a href="/{urlMiddle}" class="text-secondary"
 					><SvgChevronRight class="mx-2 inline" />{textMiddle}</a
 				>
 			</li>

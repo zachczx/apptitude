@@ -143,7 +143,7 @@
 				<li class="ps-3">(This is also for my personal goal of learning Svelte5 and Sveltekit.)</li>
 			</ul>
 			<h2 class="mb-7">Who cares about your shitty webapp/blog?</h2>
-			<p class="mb-7">Ouch. At least I tried though.</p>
+			<p class="mb-7">Ouch. At least I tried.</p>
 			<p class="mb-12">
 				In any case Apptitude only costs me $13.28/yr (incl GST), for the domain name. I got to
 				learn Svelte through this, so it's not wasted effort. If you think this sucks, cool. It's

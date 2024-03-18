@@ -10,7 +10,7 @@
 	class="mx-1 grid grid-cols-1 place-content-start gap-4 rounded-lg bg-base-300 px-2 py-5 shadow-xl lg:mx-20 lg:grid-cols-2 lg:px-5"
 >
 	<div class="grid grid-cols-2 text-center font-bold lg:col-span-2">
-		<div class="justify-self-start">
+		<div class="justify-self-start hover:text-secondary">
 			<a href="/learn/{data.lastPost.slug}"
 				><svg
 					xmlns="http://www.w3.org/2000/svg"
@@ -29,7 +29,7 @@
 				> Previous</a
 			>
 		</div>
-		<div class="justify-self-end">
+		<div class="justify-self-end hover:text-secondary">
 			<a href="/learn/{data.nextPost.slug}"
 				>Next <svg
 					xmlns="http://www.w3.org/2000/svg"

@@ -47,33 +47,45 @@
 			<!-- removed menu class -->
 			<li class="border-b-2 border-base-100 pb-3 hover:border-b-2 hover:border-slate-200">
 				<details>
-					<summary class="hover:bg-base-100"> <a href="/learn">Learn</a></summary>
-					<ul class="z-10 p-2 text-base">
+					<summary class="hover:bg-base-100 hover:text-secondary"
+						><a href="/learn">Learn</a></summary
+					>
+					<ul class="z-50 p-2 text-base">
 						{#each info as skillsItem}
-							<li><a href="/learn/{skillsItem.slug}">{skillsItem.name}</a></li>
-						{/each}
-					</ul>
-				</details>
-			</li>
-			<li class="border-b-2 border-base-100 pb-3 hover:border-b-2 hover:border-slate-200">
-				<details>
-					<summary class="hover:bg-base-100"><a href="/cacheup">Cache Up!</a></summary>
-					<ul class="p-2 text-base">
-						{#each cacheup as cacheupItem}
-							<li class="hover:bg-base-100">
-								<a href="/cacheup/{cacheupItem.slug}">{cacheupItem.name}</a>
+							<li class="hover:text-secondary">
+								<a href="/learn/{skillsItem.slug}">{skillsItem.name}</a>
 							</li>
 						{/each}
 					</ul>
 				</details>
 			</li>
 			<li class="border-b-2 border-base-100 pb-3 hover:border-b-2 hover:border-slate-200">
+				<details>
+					<summary class="hover:bg-base-100 hover:text-secondary"
+						><a href="/cacheup">Cache Up!</a></summary
+					>
+					<ul class="z-50 p-2 text-base">
+						{#each cacheup as cacheupItem}
+							<li class="hover:bg-base-100 hover:text-secondary">
+								<a href="/cacheup/{cacheupItem.slug}">{cacheupItem.name}</a>
+							</li>
+						{/each}
+					</ul>
+				</details>
+			</li>
+			<li
+				class="border-b-2 border-base-100 pb-3 hover:border-b-2 hover:border-slate-200 hover:text-secondary"
+			>
 				<a class="hover:bg-base-100" href="/techtrippin">Tech Trippin'</a>
 			</li>
-			<li class="border-b-2 border-base-100 pb-3 hover:border-b-2 hover:border-slate-200">
+			<li
+				class="border-b-2 border-base-100 pb-3 hover:border-b-2 hover:border-slate-200 hover:text-secondary"
+			>
 				<a class="hover:bg-base-100" href="/todo">To-Dos</a>
 			</li>
-			<li class="border-b-2 border-base-100 pb-3 hover:border-b-2 hover:border-slate-200">
+			<li
+				class="border-b-2 border-base-100 pb-3 hover:border-b-2 hover:border-slate-200 hover:text-secondary"
+			>
 				<a class="hover:bg-base-100" href="/about">About</a>
 			</li>
 		</ul>

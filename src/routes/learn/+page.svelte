@@ -22,14 +22,18 @@
 			>
 				<div class="card-body grid grid-cols-1 place-content-start">
 					<h2
-						class="mb-7 inline-block bg-gradient-to-r from-emerald-200 via-blue-300 to-teal-600 bg-clip-text text-transparent"
+						class="mb-7 inline-block bg-gradient-to-r from-emerald-200 via-blue-300 to-teal-600 bg-clip-text text-transparent hover:text-secondary"
 					>
 						<a href="/learn/{item.slug}">{item.name}</a>
 					</h2>
-					<h3><a href="/learn/{item.slug}">Topics</a></h3>
-					<p class="mb-7">
+					<h3 class="hover:text-secondary"><a href="/learn/{item.slug}">Topics</a></h3>
+					<p class="mb-7 hover:text-secondary">
 						{#each item.topics as topic}
-							<a href="/learn/{item.slug}" class="btn btn-outline btn-xs me-2 mt-1">{topic}</a>
+							<a
+								href="/learn/{item.slug}"
+								class="btn btn-outline btn-xs me-2 mt-1 hover:bg-base-300 hover:text-secondary"
+								>{topic}</a
+							>
 						{/each}
 					</p>
 
@@ -42,10 +46,12 @@
 							<ul class="mb-7 list-disc ps-4">
 								{#each item.questions as question, index}
 									{#if index < 3}
-										<li><a href="/learn/{item.slug}">{question}</a></li>
+										<li class="hover:text-secondary">
+											<a href="/learn/{item.slug}">{question}</a>
+										</li>
 									{/if}
 								{/each}
-								<a href="/learn/{item.slug}">...</a>
+								<a href="/learn/{item.slug}" class="hover:text-secondary">...</a>
 							</ul>
 						</div>
 					</div>
@@ -58,14 +64,16 @@
 							<ul class="list-disc ps-4">
 								{#each item.objectives as objective, index}
 									{#if index < 3}
-										<li><a href="/learn/{item.slug}">{objective}</a></li>
+										<li class="hover:text-secondary">
+											<a href="/learn/{item.slug}">{objective}</a>
+										</li>
 									{/if}
 								{/each}
-								<a href="/learn/{item.slug}">...</a>
+								<a href="/learn/{item.slug}" class="hover:text-secondary">...</a>
 							</ul>
 						</div>
 					</div>
-					<a href="/learn/{item.slug}" class="btn btn-primary btn-sm"
+					<a href="/learn/{item.slug}" class="btn btn-secondary btn-sm"
 						>Read more&nbsp;&nbsp;&#x2192;</a
 					>
 				</div>

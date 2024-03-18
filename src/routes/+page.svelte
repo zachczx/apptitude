@@ -140,7 +140,7 @@
 			the lowest cost.
 		</p>
 		<p class="animate-cta mb-5 mt-8 space-x-2 lg:space-x-2 lg:text-xl">
-			<a href="/learn" class="btn bg-lime-600 font-medium text-white hover:bg-lime-800 lg:text-xl"
+			<a href="/learn" class="btn bg-red-600 font-medium text-white hover:bg-red-800 lg:text-xl"
 				>Start Learning <svg
 					xmlns="http://www.w3.org/2000/svg"
 					width="24"
@@ -157,7 +157,7 @@
 			>
 			<a
 				href="/cacheup"
-				class="btn btn-outline btn-primary font-medium text-lime-600 hover:bg-lime-600 lg:text-xl"
+				class="btn btn-outline btn-secondary font-medium text-lime-600 hover:bg-red-600 hover:text-white lg:text-xl"
 				>Quickstart Guides</a
 			>
 		</p>
