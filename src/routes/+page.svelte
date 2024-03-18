@@ -138,7 +138,7 @@
 			the lowest cost.
 		</p>
 		<p class="animate-cta mb-5 mt-8 space-x-2 lg:space-x-2 lg:text-xl">
-			<a href="/skills" class="btn bg-lime-600 font-medium text-white hover:bg-lime-800 lg:text-xl"
+			<a href="/learn" class="btn bg-lime-600 font-medium text-white hover:bg-lime-800 lg:text-xl"
 				>Start Learning <svg
 					xmlns="http://www.w3.org/2000/svg"
 					width="24"
