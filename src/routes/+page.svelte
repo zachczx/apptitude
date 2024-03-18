@@ -178,8 +178,3 @@
 		class="object-contain"
 	></enhanced:img>
 </div>
-<!--
-<div class="epilogue mt-[5rem] text-center opacity-0 lg:opacity-20"><h2><span class="text-primary">The Skills Forge</span> builds your foundation, by telling you what to learn and links you the resources.</h2></div>
-<div class="epilogue2 mt-[5rem] text-center opacity-0 lg:opacity-20"><h2><span class="text-primary">Cache Up!</span> is your cheat sheet, giving you a quickstart for getting good tech outcomes.</h2></div>
-<div class="epilogue3 mt-[5rem] text-center opacity-0 lg:opacity-20"><h2><span class="text-primary">Tech Trippin'</span> is the equivalent of "Kids Say the Darndest Things", overheard in the real world.</h2></div>
-<div class="lg:h-[60rem]"></div>-->

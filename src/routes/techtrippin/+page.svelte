@@ -45,7 +45,7 @@
 >
 	<div class="carousel w-full">
 		{#each techtrippin as techtrippinItem, i}
-			<div id="slide-{i}" class="carousel-item relative w-full">
+			<div id="tidbit-{i}" class="carousel-item relative w-full">
 				<div>
 					<div class="chat chat-start">
 						<div class="avatar chat-image">
@@ -66,10 +66,10 @@
 							</div>
 						</div>
 						<div class="chat-header ms-5 self-end pb-1 font-medium lg:text-xl">
-							Consultant, Project Manager
+							Project Manager
 						</div>
 						<div
-							class="chat-bubble bg-gradient-to-r from-base-300 via-blue-900 to-slate-900 p-2 text-xl lg:p-5"
+							class="chat-bubble bg-gradient-to-r from-base-200 to-slate-800 p-2 text-xl lg:p-5"
 						>
 							{techtrippinItem.prompt}
 						</div>
@@ -87,7 +87,7 @@
 
 						<div class="chat-header me-5 self-end pb-1 font-medium lg:text-xl">Me</div>
 						<div
-							class="chat-bubble self-start bg-gradient-to-r from-red-900 via-pink-900 to-rose-900 p-2 text-xl lg:p-2"
+							class="chat-bubble self-start bg-gradient-to-r from-slate-900 via-base-300 to-slate-900 p-2 text-xl lg:p-2"
 						>
 							{techtrippinItem.response}
 						</div>
@@ -98,12 +98,12 @@
 					class="absolute left-1 right-1 top-1/2 flex -translate-y-1/2 transform justify-between"
 				>
 					<a
-						href="#slide-{clickPrev(i)}"
+						href="#tidbit-{clickPrev(i)}"
 						class="btn btn-circle bg-gray-900 lg:btn-lg focus:ring focus:ring-slate-300 lg:text-3xl"
 						>❮</a
 					>
 					<a
-						href="#slide-{clickNext(i)}"
+						href="#tidbit-{clickNext(i)}"
 						class="btn btn-circle bg-gray-900 lg:btn-lg hover:text-gray-100 focus:ring focus:ring-slate-300 lg:text-3xl"
 						>❯</a
 					>
