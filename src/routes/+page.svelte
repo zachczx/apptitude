@@ -1,5 +1,5 @@
 <script>
-	import hero from '$lib/assets/kari-shea-1SAnrIxw5OY-unsplash.webp?enhanced&w=2560;2000;400';
+	import hero from '$lib/assets/kari-shea-1SAnrIxw5OY-unsplash.avif?enhanced&w=2600;2000;400';
 	import { onMount } from 'svelte';
 	import { gsap } from 'gsap';
 	import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
@@ -174,7 +174,7 @@
 	<enhanced:img
 		src={hero}
 		alt="Hero"
-		sizes="(min-width:1440px) 2560px, (min-width:1080px) 2000px, (min-width:768px) 400px"
+		sizes="(min-width:1440px) 2600px, (min-width:1080px) 2000px, (min-width:768px) 400px"
 		class="object-contain"
 	></enhanced:img>
 </div>
