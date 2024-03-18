@@ -1,4 +1,5 @@
 <script>
+	import Breadcrumbs from '$lib/Breadcrumbs.svelte';
 	let todos = $state([
 		{ text: 'Sample item 1', done: true },
 		{ text: 'Sample item 2', done: false }
@@ -68,6 +69,7 @@
 	}
 </script>
 
+<Breadcrumbs textCurrent={'To-Do List'} />
 <div class="grid grid-cols-1 content-start justify-items-center gap-y-3">
 	<div class="mb-10 text-center lg:mb-20">
 		<h1

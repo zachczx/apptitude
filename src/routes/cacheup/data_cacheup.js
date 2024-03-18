@@ -130,7 +130,7 @@ export const cacheup = [
 			'X product has Y% of weekly active users, never mind that these are captive users who are forced to use the platform.',
 			"If user anecdotes are contradicting your data (that everything's alright), you might be measuring the wrong thing.",
 			'Are the gains marginal? We spend 10mil to cut one process by 2 days but overall process still takes 5 months because of other manual processes.',
-			'Everything\'s a native app, no matter if all you do is provide info (i.e. a static url or webapp is more fitting).',
+			"Everything's a native app, no matter if all you do is provide info (i.e. a static url or webapp is more fitting)."
 		],
 		solutions: [
 			'Conduct UX/market research to understand your customers/users, and then base your product strategy on the data.',

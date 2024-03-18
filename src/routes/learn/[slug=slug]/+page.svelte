@@ -1,12 +1,13 @@
 <script>
 	import { page } from '$app/stores';
-
+	import Breadcrumbs from '$lib/Breadcrumbs.svelte';
 	const slug = $page.params.slug;
 	export let data;
 </script>
 
+<Breadcrumbs urlMiddle="learn" textMiddle={'Learn'} textCurrent={data.post.name} />
 <div
-	class="mx-1 grid grid-cols-1 place-content-start gap-4 rounded-lg bg-base-300 px-2 py-5 shadow-xl lg:mx-7 lg:grid-cols-2 lg:px-5"
+	class="mx-1 grid grid-cols-1 place-content-start gap-4 rounded-lg bg-base-300 px-2 py-5 shadow-xl lg:mx-20 lg:grid-cols-2 lg:px-5"
 >
 	<div class="grid grid-cols-2 text-center font-bold lg:col-span-2">
 		<div class="justify-self-start">

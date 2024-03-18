@@ -5,7 +5,7 @@
 	import consultant2 from '$lib/assets/consultant2.webp?enhanced&w=200;150;70';
 	import yesChad from '$lib/assets/yeschad.webp?enhanced&w=200;150;70';
 	import twentyFiveDev from '$lib/assets/25yodev.webp?enhanced&w=200;150;70';
-
+	import Breadcrumbs from '$lib/Breadcrumbs.svelte';
 	let totalNumber = techtrippin.length - 1;
 
 	function clickNext(current) {
@@ -27,6 +27,7 @@
 	}
 </script>
 
+<Breadcrumbs textCurrent={"Tech Trippin'"} />
 <div class="mb-10 text-center lg:mb-20">
 	<h1
 		class="inline-block bg-gradient-to-r from-emerald-200 via-orange-200 to-pink-200 bg-clip-text py-3 text-transparent"
@@ -34,10 +35,7 @@
 		Tech Trippin'
 	</h1>
 	<div>
-		<i
-			>Decrypting garbled tech jargon-gibberish (wannabe) "tech" consultants, who always try to use
-			as many words as possible to say absolutely nothing.</i
-		>
+		<i>Going through real world examples of tech jargon-gibberish and what I'd call out.</i>
 	</div>
 </div>
 <div
@@ -65,12 +63,8 @@
 								{/if}
 							</div>
 						</div>
-						<div class="chat-header ms-5 self-end pb-1 font-medium lg:text-xl">
-							Project Manager
-						</div>
-						<div
-							class="chat-bubble bg-gradient-to-r from-base-200 to-slate-800 p-2 text-xl lg:p-5"
-						>
+						<div class="chat-header ms-5 self-end pb-1 font-medium lg:text-xl">Project Manager</div>
+						<div class="chat-bubble bg-gradient-to-r from-base-200 to-slate-800 p-2 text-xl lg:p-5">
 							{techtrippinItem.prompt}
 						</div>
 					</div>

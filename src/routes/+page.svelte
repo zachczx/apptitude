@@ -123,7 +123,9 @@
 </script>
 
 <div class="grid grid-cols-1 justify-items-center gap-x-8 gap-y-8 px-5 lg:grid-cols-2 lg:px-20">
-	<div class="animateLeft self-center text-center lg:ps-[10rem] xl:px-[5rem] min-[1921px]:px-[10rem]">
+	<div
+		class="animateLeft self-center text-center lg:ps-[10rem] xl:px-[5rem] min-[1921px]:px-[10rem]"
+	>
 		<h1 class="animateTitle lg:text-5xl xl:text-7xl">
 			Make <span class="text-primary">better tech decisions</span> for Govt products.
 		</h1>

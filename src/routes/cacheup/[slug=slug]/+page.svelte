@@ -1,5 +1,6 @@
 <script>
 	import userCircle from '$lib/assets/svg/user-circle.svg';
+	import Breadcrumbs from '$lib/Breadcrumbs.svelte';
 	import chevronDown from '$lib/assets/svg/chevron-down.svg';
 	import { page } from '$app/stores';
 	import { fade } from 'svelte/transition';
@@ -25,6 +26,7 @@
 	}, 10000);
 </script>
 
+<Breadcrumbs urlMiddle="cacheup" textMiddle={'Cache Up!'} textCurrent={data.post.name} />
 <div class="mb-10 text-center lg:mb-10">
 	<h1
 		class="mb-10 inline-block bg-gradient-to-r from-emerald-200 via-orange-200 to-pink-200 bg-clip-text py-3 text-transparent"
