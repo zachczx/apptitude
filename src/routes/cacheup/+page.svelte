@@ -24,17 +24,21 @@
 
 <div class="grid grid-cols-1 justify-items-center gap-x-8 gap-y-8 px-5 lg:grid-cols-2 lg:px-20">
 	{#each cacheup as item, i}
-		<div
+		<!--	
+	<div
 			class="card grid h-96 w-full content-center {i <= gradients.length
 				? gradients[i]
 				: gradients[0]} shadow-xl hover:from-gray-600 hover:to-slate-900"
 		>
-			<div class="card-body text-center text-white">
-				<a href="/cacheup/{item.slug}"
-					><h1 class="mb-3">{item.name}</h1>
-					<i>{item.tagline}</i>
-				</a>
+		-->
+		<a
+			href="/cacheup/{item.slug}"
+			class="group card grid w-full content-center bg-base-300 text-primary shadow-xl hover:bg-gradient-to-r hover:from-primary hover:to-warning hover:text-slate-900 lg:h-96"
+		>
+			<div class="card-body text-center">
+				<h1 class="mb-3">{item.name}</h1>
+				<span class="text-lg text-slate-300 group-hover:text-slate-700"><i>{item.tagline}</i></span>
 			</div>
-		</div>
+		</a>
 	{/each}
 </div>

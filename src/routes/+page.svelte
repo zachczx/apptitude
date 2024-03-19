@@ -1,5 +1,6 @@
 <script>
 	import hero from '$lib/assets/kari-shea-1SAnrIxw5OY-unsplash.avif?enhanced&w=2600;2000;400';
+	import SvgChevronRight from '$lib/assets/svg/TablerChevronRight.svelte';
 	import { onMount } from 'svelte';
 	import { gsap } from 'gsap';
 	import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
@@ -65,60 +66,16 @@
 			gsap.to('.animateImg', {
 				scrollTrigger: {
 					trigger: '.animateImg',
-					start: 'top center',
+					start: '-10% center',
 					end: 'bottom center',
 					scrub: true,
 					markers: false
 				},
-				scale: 1.5,
-				y: '20vw'
+				scale: 1.7,
+				y: '20vw',
+				skew: 90
 			});
 		});
-		/*
-		gsap.to(".epilogue", {autoAlpha: 0})
-		gsap.to(".epilogue2", {autoAlpha: 0})
-		gsap.to(".epilogue3", {autoAlpha: 0})
-		gsap.to(".epilogue", {
-			scrollTrigger: {
-					trigger: ".epilogue",
-					start: 'top bottom',
-					end: 'bottom 20%',
-					scrub: true,
-					markers: false,
-				},
-			scale:1.5,
-			y: "10vw",
-			autoAlpha: 1,
-			},
-		)
-		gsap.to(".epilogue2", {
-			scrollTrigger: {
-					trigger: ".epilogue2",
-					start: 'top bottom',
-					end: 'bottom 20%',
-					scrub: true,
-					markers: false,
-				},
-			scale:1.5,
-			y: "10vw",
-			autoAlpha: 1,
-			},
-		)
-		gsap.to(".epilogue3", {
-			scrollTrigger: {
-					trigger: ".epilogue3",
-					start: 'top bottom',
-					end: 'bottom 20%',
-					scrub: true,
-					markers: false,
-				},
-			scale:1.5,
-			y: "10vw",
-			autoAlpha: 1,
-			},
-		)
-
-	*/
 	}); //close onmount
 </script>
 
@@ -127,38 +84,30 @@
 </svelte:head>
 <div class="grid grid-cols-1 justify-items-center gap-x-8 gap-y-8 px-5 lg:grid-cols-2 lg:px-20">
 	<div
-		class="animateLeft self-center text-center lg:ps-[10rem] xl:px-[5rem] min-[1921px]:px-[10rem]"
+		class="animateLeft self-center text-center lg:ps-[10rem] xl:px-[5rem] min-[1921px]:px-[8rem]"
 	>
 		<h1 class="animateTitle lg:text-5xl xl:text-7xl">
-			Make <span class="text-secondary">better tech decisions</span> for Govt products.
+			Make <span class="bg-gradient-to-r from-lime-300 to-orange-300 bg-clip-text text-transparent"
+				>better tech decisions</span
+			> for Govt products.
 		</h1>
 	</div>
 	<div class="animateRight lg:pe-20">
 		<p class="animate-first-para z-10 pb-7 lg:text-xl">
-			<a href="/learn" class="font-bold text-primary">Apptitude helps you learn new competencies.</a
-			> Make better decisions, get better outcomes for your tech products and projects.
+			<a href="/learn" class="font-medium text-primary">
+				Apptitude helps you learn new competencies.</a
+			>
+			Make better decisions, get better outcomes for your tech products and projects.
 		</p>
 		<p class="animate-second-para z-20 pb-7 lg:text-xl">
-			<a href="/about" class="font-bold text-primary"
+			<a href="/about" class="font-medium text-primary"
 				>Let's do a bit better in public sector tech.</a
 			>
-			Your users and customers deserve good products at the lowest cost.
+			Your users and customers deserve good products that are cheap and work well.
 		</p>
 		<p class="animate-cta mb-5 mt-8 space-x-2 lg:space-x-2 lg:text-xl">
 			<a href="/learn" class="btn bg-lime-600 font-medium text-white hover:bg-lime-700 lg:text-xl"
-				>Start Learning <svg
-					xmlns="http://www.w3.org/2000/svg"
-					width="24"
-					height="24"
-					viewBox="0 0 24 24"
-					fill="none"
-					stroke="currentColor"
-					stroke-width="2"
-					stroke-linecap="round"
-					stroke-linejoin="round"
-					class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-right inline align-top"
-					><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M9 6l6 6l-6 6" /></svg
-				></a
+				>Start Learning <SvgChevronRight height="1.5rem" width="1.5rem" stroke="white" /></a
 			>
 			<a
 				href="/cacheup"
