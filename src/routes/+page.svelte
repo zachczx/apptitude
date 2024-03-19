@@ -84,34 +84,34 @@
 </svelte:head>
 <div class="grid grid-cols-1 justify-items-center gap-x-8 gap-y-8 px-5 lg:grid-cols-2 lg:px-20">
 	<div
-		class="animateLeft self-center text-center lg:ps-[10rem] xl:px-[5rem] min-[1921px]:px-[8rem]"
+		class="animateLeft self-center text-center lg:ps-[10rem] xl:px-[4rem] min-[1921px]:pe-[5rem] min-[1921px]:ps-[7rem]"
 	>
-		<h1 class="animateTitle lg:text-5xl xl:text-7xl">
-			Make <span class="bg-gradient-to-r from-lime-300 to-orange-300 bg-clip-text text-transparent"
-				>better tech decisions</span
-			> for Govt products.
+		<h1 class="animateTitle lg:text-5xl xl:text-7xl min-[1921px]:text-8xl">
+			<span class="bg-gradient-to-r from-lime-300 to-orange-300 bg-clip-text text-transparent"
+				>Make better decisions</span
+			> on Govt's digital products.
 		</h1>
 	</div>
 	<div class="animateRight lg:pe-20">
+		<p class="animate-first-para z-10 pb-7 lg:text-2xl">
+			<a href="/learn" class="mb-7 font-bold">Apptitude helps you learn skills.</a>
+		</p>
 		<p class="animate-first-para z-10 pb-7 lg:text-xl">
-			<a href="/learn" class="font-medium text-primary">
-				Apptitude helps you learn new competencies.</a
-			>
-			Make better decisions, get better outcomes for your tech products and projects.
+			Git gud so you can make better decisions, get better outcomes for your products and projects.
 		</p>
 		<p class="animate-second-para z-20 pb-7 lg:text-xl">
-			<a href="/about" class="font-medium text-primary"
-				>Let's do a bit better in public sector tech.</a
-			>
-			Your users and customers deserve good products that are cheap and work well.
+			Let's do a bit better in public sector tech. Your users deserve good products that are cheap
+			and work well. Your decision-makers deserve the best recommendations.
 		</p>
-		<p class="animate-cta mb-5 mt-8 space-x-2 lg:space-x-2 lg:text-xl">
-			<a href="/learn" class="btn bg-lime-600 font-medium text-white hover:bg-lime-700 lg:text-xl"
+		<p class="animate-cta mb-5 mt-1 space-x-2 lg:space-x-2 lg:text-xl">
+			<a
+				href="/learn"
+				class="btn bg-lime-500 font-medium text-white hover:bg-gradient-to-r hover:from-lime-500 hover:via-teal-500 hover:to-emerald-600 active:from-lime-600 active:via-teal-600 active:to-emerald-700 lg:text-xl"
 				>Start Learning <SvgChevronRight height="1.5rem" width="1.5rem" stroke="white" /></a
 			>
 			<a
 				href="/cacheup"
-				class="btn btn-outline btn-primary font-medium text-lime-600 hover:bg-red-600 hover:text-white lg:text-xl"
+				class="btn border border-primary bg-base-100 from-red-500 via-orange-500 to-pink-500 font-medium text-primary hover:bg-gradient-to-r hover:from-red-600 hover:via-orange-600 hover:to-pink-600 hover:text-white active:from-red-700 active:via-orange-700 active:to-pink-700 lg:text-xl"
 				>Quickstart Guides</a
 			>
 		</p>

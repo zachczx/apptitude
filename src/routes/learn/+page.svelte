@@ -73,7 +73,9 @@
 							</ul>
 						</div>
 					</div>
-					<a href="/learn/{item.slug}" class="btn btn-primary btn-sm"
+					<a
+						href="/learn/{item.slug}"
+						class="btn btn-primary btn-sm hover:bg-lime-500 active:bg-lime-700 active:text-base-content"
 						>Read more&nbsp;&nbsp;&#x2192;</a
 					>
 				</div>

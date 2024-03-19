@@ -33,7 +33,7 @@
 		-->
 		<a
 			href="/cacheup/{item.slug}"
-			class="group card grid w-full content-center bg-base-300 text-primary shadow-xl hover:bg-gradient-to-r hover:from-primary hover:to-warning hover:text-slate-900 lg:h-96"
+			class="group card grid w-full content-center bg-base-300 text-primary shadow-xl hover:bg-gradient-to-r hover:from-primary hover:to-warning hover:text-slate-900 focus:outline-none focus:ring focus:ring-lime-400 lg:h-96"
 		>
 			<div class="card-body text-center">
 				<h1 class="mb-3">{item.name}</h1>

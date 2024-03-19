@@ -38,7 +38,7 @@
 		</div>
 		<a
 			href="/"
-			class="jost btn border-0 bg-base-100 text-4xl text-white hover:bg-base-100 xl:text-5xl"
+			class="jost btn border-0 bg-base-100 text-4xl text-white hover:bg-base-100 hover:text-primary xl:text-5xl"
 			><img src={logo} width="60" height="60" class="max-w-full" alt="Apptitude" />apptitude</a
 		>
 	</div>

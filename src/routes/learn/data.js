@@ -3,7 +3,17 @@ export const info = [
 		id: 1,
 		name: 'Basics',
 		slug: 'basics',
-		topics: ['cloud', 'Internet', 'computing', 'networking', 'development', 'software'],
+		topics: [
+			'computing',
+			'internet',
+			'http',
+			'https',
+			'networking',
+			'cloud',
+			'development',
+			'software',
+			'apps'
+		],
 		questions: [
 			'What is a computer?',
 			'How do computers run?',
@@ -12,6 +22,7 @@ export const info = [
 			'How does the Internet work?',
 			'How does a website get displayed on my computer?',
 			'What are routers, servers, packets, DNS?',
+			'What are HTTP, SSL, GET, POST?',
 			'What is the cloud, compute, storage?',
 			'What is on-premises?',
 			'What is virtualization, virtual machines, hypervisors, key management systems?'
@@ -32,9 +43,42 @@ export const info = [
 				'https://youtube.com/embed/LTH9m4HkeYY?si=-SCEzZABqeWnriup'
 			],
 			links: [
-				'https://www.coursera.org/learn/python',
-				'https://pll.harvard.edu/course/cs50-introduction-computer-science',
-				'https://www.coursera.org/specializations/aws-fundamentals'
+				{
+					text: "CS50's Understanding Technology | Harvard University",
+					url: 'https://pll.harvard.edu/course/cs50s-understanding-technology-0'
+				},
+				{
+					text: 'How Computers Work (UOL) | Coursera',
+					url: 'https://www.coursera.org/learn/how-computers-work'
+				},
+				{
+					text: 'How the Web Works: A Primer for Newcomers to Web Development (or anyone, really)',
+					url: 'https://www.freecodecamp.org/news/how-the-web-works-a-primer-for-newcomers-to-web-development-or-anyone-really-b4584e63585c/'
+				},
+				{
+					text: 'What is SSL (Secure Sockets Layer)? | Cloudflare',
+					url: 'https://www.cloudflare.com/en-gb/learning/ssl/what-is-ssl/'
+				},
+				{
+					text: 'Computational Thinking for Problem Solving Course (UPenn) | Coursera',
+					url: 'https://www.coursera.org/learn/computational-thinking-problem-solving'
+				},
+				{
+					text: "CS50's Computer Science for Business Professionals | Harvard University",
+					url: 'https://pll.harvard.edu/course/cs50s-computer-science-business-professionals-0'
+				},
+				{
+					text: 'Programming for Everybody (Getting Started with Python) | Coursera',
+					url: 'https://www.coursera.org/learn/python'
+				},
+				{
+					text: 'AWS Fundamentals Specialization [3 courses] (AWS) | Coursera',
+					url: 'https://www.coursera.org/specializations/aws-fundamentals'
+				},
+				{
+					text: 'Google IT Support Professional Certificate | Coursera',
+					url: 'https://www.coursera.org/professional-certificates/google-it-support'
+				}
 			]
 		}
 	},
@@ -93,9 +137,18 @@ export const info = [
 				'https://www.youtube.com/embed/E3lum6GcjQo'
 			],
 			links: [
-				'https://www.developer.tech.gov.sg/',
-				'https://www.open.gov.sg/products/',
-				'https://www.tech.gov.sg/products-and-services/'
+				{
+					text: 'Home | Singapore Government Developer Portal',
+					url: 'https://www.developer.tech.gov.sg/'
+				},
+				{
+					text: 'Our Products',
+					url: 'https://www.open.gov.sg/products/'
+				},
+				{
+					text: 'Products and Services',
+					url: 'https://www.tech.gov.sg/products-and-services/'
+				}
 			]
 		}
 	},
@@ -136,10 +189,22 @@ export const info = [
 				'https://www.youtube.com/embed/oWZbWzAyHAE?si=aFy0z0ePzrlUTvSD'
 			],
 			links: [
-				'https://youtube.com/playlist?list=PLbRVPa07FtZe4oDvfvQXH-MtZBl-_00Rh&si=1Gi3t6ilHD46tF6z',
-				'https://www.coursera.org/professional-certificates/google-ux-design',
-				'https://www.svpg.com/transformation-fail/',
-				'https://www.mindtheproduct.com/transforming-product-culture-lea-hickman/'
+				{
+					text: 'Y Combinator - YouTube',
+					url: 'https://www.youtube.com/c/ycombinator'
+				},
+				{
+					text: 'Google UX Design Professional Certificate | Coursera',
+					url: 'https://www.coursera.org/professional-certificates/google-ux-design'
+				},
+				{
+					text: 'Transformation Fail - Silicon Valley Product Group',
+					url: 'https://www.svpg.com/transformation-fail/'
+				},
+				{
+					text: 'Transforming Product Culture with Lea Hickman',
+					url: 'https://www.mindtheproduct.com/transforming-product-culture-lea-hickman/'
+				}
 			]
 		}
 	},
@@ -172,11 +237,26 @@ export const info = [
 				'https://youtube.com/embed/scEDHsr3APg'
 			],
 			links: [
-				'https://agilemanifesto.org/',
-				'https://agilemanifesto.org/principles.html',
-				'https://youtube.com/playlist?list=PLD2BMPY5WcfAYTEYXW0NGxodOi1PLC1XN&si=b_ym-Jy4_UOeS1Iv',
-				'https://www.youtube.com/playlist?list=PL32pD389V8xt_znF-pvOl7OP_xNfnkGgq',
-				'https://www.svpg.com/transformation-theater/'
+				{
+					text: 'Manifesto for Agile Software Development',
+					url: 'https://agilemanifesto.org/'
+				},
+				{
+					text: 'Principles behind the Agile Manifesto',
+					url: 'https://agilemanifesto.org/principles.html'
+				},
+				{
+					text: 'Scrum Training Series - YouTube',
+					url: 'https://youtube.com/playlist?list=PLD2BMPY5WcfAYTEYXW0NGxodOi1PLC1XN&si=b_ym-Jy4_UOeS1Iv'
+				},
+				{
+					text: 'Agile Project Management with Scrum and Kanban - YouTube',
+					url: 'https://www.youtube.com/playlist?list=PL32pD389V8xt_znF-pvOl7OP_xNfnkGgq'
+				},
+				{
+					text: 'Transformation Theater - Silicon Valley Product Group',
+					url: 'https://www.svpg.com/transformation-theater/'
+				}
 			]
 		}
 	},
@@ -217,10 +297,22 @@ export const info = [
 				'https://youtube.com/embed/-bSkREem8dM?si=i6lRT55iMs30lOLS'
 			],
 			links: [
-				'https://www.coursera.org/learn/foundations-data',
-				'https://www.youtube.com/embed/ZPw0dmGuyyE&list=PLTZYG7bZ1u6rcPlcX75pMkjsYY_HTL7aZ',
-				'https://www.coursera.org/professional-certificates/google-data-analytics',
-				'https://www.coursera.org/professional-certificates/ibm-data-science'
+				{
+					text: 'Foundations: Data, Data, Everywhere Course (Google) | Coursera',
+					url: 'https://www.coursera.org/learn/foundations-data'
+				},
+				{
+					text: 'Google Data Analytics Professional Certificate | Coursera',
+					url: 'https://www.coursera.org/professional-certificates/google-data-analytics'
+				},
+				{
+					text: 'IBM Data Science Professional Certificate | Coursera',
+					url: 'https://www.coursera.org/professional-certificates/ibm-data-science'
+				},
+				{
+					text: 'Video Title Placeholder',
+					url: 'https://www.youtube.com/embed/ZPw0dmGuyyE&list=PLTZYG7bZ1u6rcPlcX75pMkjsYY_HTL7aZ'
+				}
 			]
 		}
 	},
@@ -265,9 +357,18 @@ export const info = [
 				'https://youtube.com/embed/5t1vTLU7s40?si=uEflOaOw_p1eyRoZ'
 			],
 			links: [
-				'https://www.cloudskillsboost.google/course_templates/536',
-				'https://www.coursera.org/learn/ai-for-everyone',
-				'https://www.deeplearning.ai/courses/deep-learning-specialization/'
+				{
+					text: 'Introduction to Generative AI',
+					url: 'https://www.cloudskillsboost.google/course_templates/536'
+				},
+				{
+					text: 'AI For Everyone Course (DeepLearning.AI) | Coursera',
+					url: 'https://www.coursera.org/learn/ai-for-everyone'
+				},
+				{
+					text: 'Deep Learning Specialization - DeepLearning.AI',
+					url: 'https://www.deeplearning.ai/courses/deep-learning-specialization/'
+				}
 			]
 		}
 	},
@@ -308,12 +409,54 @@ export const info = [
 				'https://youtube.com/embed/aXOChLn5ZdQ?si=-KXtJPY2mI3pRlIv'
 			],
 			links: [
-				'https://www.coursera.org/professional-certificates/meta-back-end-developer',
-				'https://www.coursera.org/professional-certificates/meta-front-end-developer',
-				'https://www.youtube.com/@WebDevSimplified',
-				'https://www.youtube.com/@JoyofCodeDev',
-				'https://www.youtube.com/@bugbytes3923',
-				'https://www.youtube.com/@KevinPowell'
+				{
+					text: 'CS50: Introduction to Computer Science | Harvard University',
+					url: 'https://pll.harvard.edu/course/cs50-introduction-computer-science'
+				},
+				{
+					text: 'Fundamentals of Computing Specialization [7 courses] (Rice) | Coursera',
+					url: 'https://www.coursera.org/specializations/computer-fundamentals'
+				},
+				{
+					text: 'Computer Science 101 I Stanford Online',
+					url: 'https://online.stanford.edu/courses/soe-ycscs101-computer-science-101'
+				},
+				{
+					text: 'Meta Back-End Developer Professional Certificate | Coursera',
+					url: 'https://www.coursera.org/professional-certificates/meta-back-end-developer'
+				},
+				{
+					text: 'Meta Front-End Developer Professional Certificate | Coursera',
+					url: 'https://www.coursera.org/professional-certificates/meta-front-end-developer'
+				},
+				{
+					text: 'Introduction to Computer Science and Programming in Python | Electrical Engineering and Computer Science | MIT OpenCourseWare',
+					url: 'https://ocw.mit.edu/courses/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/'
+				},
+				{
+					text: 'W3Schools Online Web Tutorials',
+					url: 'https://www.w3schools.com/'
+				},
+				{
+					text: 'GeeksforGeeks | A computer science portal for geeks',
+					url: 'https://www.geeksforgeeks.org/'
+				},
+				{
+					text: 'Web Dev Simplified - YouTube',
+					url: 'https://www.youtube.com/@WebDevSimplified'
+				},
+				{
+					text: 'Joy of Code - YouTube',
+					url: 'https://www.youtube.com/@JoyofCodeDev'
+				},
+				{
+					text: 'BugBytes - YouTube',
+					url: 'https://www.youtube.com/@bugbytes3923'
+				},
+				{
+					text: 'Kevin Powell - YouTube',
+					url: 'https://www.youtube.com/@KevinPowell'
+				}
 			]
 		}
 	}

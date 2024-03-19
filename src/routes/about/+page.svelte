@@ -2,6 +2,7 @@
 	import sgneopunk from '$lib/assets/sgneopunk.webp?enhanced&w=1714;640;400';
 	import { slide } from 'svelte/transition';
 	import Breadcrumbs from '$lib/Breadcrumbs.svelte';
+	import TablerLink from '$lib/assets/svg/TablerLink.svelte';
 
 	let seeMore = false;
 </script>
@@ -148,6 +149,13 @@
 				In any case Apptitude only costs me $13.28/yr (incl GST), for the domain name. I got to
 				learn Svelte through this, so it's not wasted effort. If you think this sucks, cool. It's
 				cheap enough to write off without second thought.
+			</p>
+			<h2 class="mb-7">I found Apptitude very useful!</h2>
+			<p class="mb-12">
+				I'd love to hear from you - <a
+					href="https://forms.gle/zhfhmSR4RSA6FJNf6"
+					class="hover:text-primary">via this Google form <TablerLink class="inline" /></a
+				>.
 			</p>
 		</div>
 	</div>
