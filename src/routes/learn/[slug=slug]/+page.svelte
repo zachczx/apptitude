@@ -4,7 +4,17 @@
 	import TablerLink from '$lib/assets/svg/TablerLink.svelte';
 	const slug = $page.params.slug;
 	export let data;
+	import { newItem } from '../../todo/todo_store.js';
 </script>
+
+<!--<button
+	class="btn btn-primary"
+	value="Hehe"
+	onclick={() => {
+		newItem.set(1);
+		console.log(newItem);
+	}}>Add something</button-->
+>{newItem}
 
 <Breadcrumbs urlMiddle="learn" textMiddle={'Learn'} textCurrent={data.post.name} />
 <div

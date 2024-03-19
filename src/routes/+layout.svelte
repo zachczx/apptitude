@@ -57,7 +57,7 @@
 					</ul>
 				</details>
 			</li>
-			<li class="border-b-2 border-base-100 pb-3 hover:border-b-2 hover:border-slate-200">
+			<li class="border-b-2 border-base-100 hover:border-b-2 hover:border-slate-200">
 				<details>
 					<summary class="hover:bg-base-100 hover:text-primary"
 						><a href="/cacheup">Cache Up!</a></summary
