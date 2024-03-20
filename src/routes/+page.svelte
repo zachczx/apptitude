@@ -1,9 +1,11 @@
 <script>
 	import hero from '$lib/assets/kari-shea-1SAnrIxw5OY-unsplash.avif?enhanced&w=2600;2000;400';
+	import TablerSquareRoundedCheckFilled from '$lib/assets/svg/TablerSquareRoundedCheckFilled.svelte';
 	import SvgChevronRight from '$lib/assets/svg/TablerChevronRight.svelte';
 	import { onMount } from 'svelte';
 	import { gsap } from 'gsap';
 	import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
+	import TablerHelpCircleFilled from '$lib/assets/svg/TablerHelpCircleFilled.svelte';
 
 	onMount(() => {
 		gsap.registerPlugin(ScrollTrigger);
@@ -88,20 +90,46 @@
 	>
 		<h1 class="animateTitle lg:text-5xl xl:text-7xl min-[1921px]:text-8xl">
 			<span class="bg-gradient-to-r from-lime-300 to-yellow-300 bg-clip-text text-transparent"
-				>Make better decisions on digital products.</span
+				>Get good, make better decisions on digital products.</span
 			>
 		</h1>
 	</div>
 	<div class="animateRight lg:pe-20">
-		<p class="animate-first-para z-10 pb-7 lg:text-2xl">
-			<a href="/learn" class="mb-7 font-bold">Apptitude helps you learn skills.</a>
+		<h2 class="animate-first-para pb-7">How this works</h2>
+		<p class="animate-first-para z-10 pb-4 lg:text-xl">
+			<TablerSquareRoundedCheckFilled
+				class="me-3 inline fill-primary"
+				width="1.5em"
+				height="1.5em"
+			/>Figure out the competencies you lack.
 		</p>
-		<p class="animate-first-para z-10 pb-7 lg:text-xl">
-			Git gud so you can make better decisions, get better outcomes for your products and projects.
+		<p class="animate-first-para z-10 pb-4 lg:text-xl">
+			<TablerSquareRoundedCheckFilled
+				class="me-3 inline fill-primary"
+				width="1.5em"
+				height="1.5em"
+			/>Use the resources here to learn.
 		</p>
-		<p class="animate-second-para z-20 pb-7 lg:text-xl">
-			Your users deserve good products that are cheap and work well. Your decision-makers deserve
-			the best recommendations.
+		<p class="animate-first-para z-10 pb-4 lg:text-xl">
+			<TablerSquareRoundedCheckFilled
+				class="me-3 inline fill-primary"
+				width="1.5em"
+				height="1.5em"
+			/>Refer to quickstart guides to turbo charge your progress.
+		</p>
+		<p class="animate-first-para z-10 pb-4 lg:text-xl">
+			<TablerSquareRoundedCheckFilled
+				class="me-3 inline fill-primary"
+				width="1.5em"
+				height="1.5em"
+			/>Git gud, make better decisions, get better outcomes.
+		</p>
+		<p class="animate-second-para z-20 pb-8 lg:text-xl">
+			<TablerSquareRoundedCheckFilled
+				class="me-3 inline fill-primary"
+				width="1.5em"
+				height="1.5em"
+			/>Users get good products, ministry/taxpayers save money, decisionmakers are happy.
 		</p>
 		<p class="animate-cta mb-5 mt-1 space-x-2 lg:space-x-2 lg:text-xl">
 			<a
