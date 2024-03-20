@@ -89,7 +89,8 @@
 		class="animateLeft self-center text-center lg:ps-[10rem] xl:px-[4rem] min-[1921px]:pe-[5rem] min-[1921px]:ps-[7rem]"
 	>
 		<h1 class="animateTitle lg:text-5xl xl:text-7xl min-[1921px]:text-8xl">
-			<span class="bg-gradient-to-r from-lime-300 to-yellow-300 bg-clip-text text-transparent"
+			<span
+				class="bg-gradient-to-r from-lime-400 via-orange-300 to-yellow-300 bg-clip-text text-transparent"
 				>Get good, make better decisions on digital products.</span
 			>
 		</h1>
