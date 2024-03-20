@@ -3,18 +3,27 @@
 	import Breadcrumbs from '$lib/Breadcrumbs.svelte';
 	import TablerLink from '$lib/assets/svg/TablerLink.svelte';
 	const slug = $page.params.slug;
-	export let data;
-	import { newItem } from '../../todo/todo_store.js';
+	let { data } = $props();
+	import { newitem } from '../../todo/todo_store.js';
+
+	function updateItem(value) {
+		newitem.update((currentList) => {
+			currentList.push(value);
+			return currentList;
+		});
+	}
+
+	let newitem_value = $state();
+	newitem.subscribe((value) => {
+		newitem_value = value;
+	});
+
+	$effect = () => {
+		console.log(newitem_value);
+	};
 </script>
 
-<!--<button
-	class="btn btn-primary"
-	value="Hehe"
-	onclick={() => {
-		newItem.set(1);
-		console.log(newItem);
-	}}>Add something</button
->{newItem}-->
+{newitem_value}
 
 <Breadcrumbs urlMiddle="learn" textMiddle={'Learn'} textCurrent={data.post.name} />
 <div
@@ -73,7 +82,13 @@
 		<h3 class="mb-5">Topics</h3>
 		<p class="mb-7">
 			{#each data.post.topics as topic}
-				<span class="btn btn-primary btn-xs me-2 mt-1">{topic}</span>
+				<span
+					class="btn btn-primary btn-xs me-2 mt-1"
+					onclick={() => {
+						updateItem(topic);
+						console.log(newitem_value);
+					}}>{topic}</span
+				>
 			{/each}
 		</p>
 	</div>
