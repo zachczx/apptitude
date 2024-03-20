@@ -3,6 +3,10 @@
 	import Breadcrumbs from '$lib/Breadcrumbs.svelte';
 </script>
 
+<svelte:head>
+	<title>Learn</title>
+</svelte:head>
+
 <Breadcrumbs textCurrent={'Learn'} />
 <div class="mb-10 text-center lg:mb-20">
 	<h1

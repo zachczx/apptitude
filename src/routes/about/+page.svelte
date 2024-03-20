@@ -7,6 +7,9 @@
 	let seeMore = false;
 </script>
 
+<svelte:head>
+	<title>About Apptitude</title>
+</svelte:head>
 <Breadcrumbs textCurrent={'About Apptitude'} />
 
 <div class="grid grid-cols-1 justify-items-center gap-x-8 gap-y-8 px-5 lg:grid-cols-5 lg:px-20">

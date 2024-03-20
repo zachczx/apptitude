@@ -23,7 +23,9 @@
 	};
 </script>
 
-{newitem_value}
+<svelte:head>
+	<title>Learn {data.post.name}</title>
+</svelte:head>
 
 <Breadcrumbs urlMiddle="learn" textMiddle={'Learn'} textCurrent={data.post.name} />
 <div
