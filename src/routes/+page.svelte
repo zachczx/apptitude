@@ -1,11 +1,12 @@
 <script>
 	import hero from '$lib/assets/kari-shea-1SAnrIxw5OY-unsplash.avif?enhanced&w=2600;2000;400';
-	import TablerSquareRoundedCheckFilled from '$lib/assets/svg/TablerSquareRoundedCheckFilled.svelte';
+	import TablerSquareRoundedPlusFilled from '$lib/assets/svg/TablerSquareRoundedPlusFilled.svelte';
 	import SvgChevronRight from '$lib/assets/svg/TablerChevronRight.svelte';
 	import { onMount } from 'svelte';
 	import { gsap } from 'gsap';
 	import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 	import TablerHelpCircleFilled from '$lib/assets/svg/TablerHelpCircleFilled.svelte';
+	import TablerChevronRight from '$lib/assets/svg/TablerChevronRight.svelte';
 
 	onMount(() => {
 		gsap.registerPlugin(ScrollTrigger);
@@ -35,7 +36,7 @@
 			gsap.to('.animate-first-para', {
 				scrollTrigger: {
 					trigger: '.animate-first-para',
-					start: '-30 top',
+					start: 'top top',
 					end: '+=30',
 					scrub: true,
 					markers: false
@@ -46,6 +47,17 @@
 			gsap.to('.animate-second-para', {
 				scrollTrigger: {
 					trigger: '.animate-second-para',
+					start: 'top top',
+					end: '+=30',
+					scrub: true,
+					markers: false
+				},
+				y: 50,
+				autoAlpha: 0
+			});
+			gsap.to('.animate-third-para', {
+				scrollTrigger: {
+					trigger: '.animate-third-para',
 					start: '-30 top',
 					end: '+=30',
 					scrub: true,
@@ -91,51 +103,51 @@
 		<h1 class="animateTitle lg:text-5xl xl:text-7xl min-[1921px]:text-8xl">
 			<span
 				class="bg-gradient-to-r from-lime-400 via-orange-300 to-yellow-300 bg-clip-text text-transparent"
-				>Get good, make better decisions on digital products.</span
+				>Learn and better manage public digital products.</span
 			>
 		</h1>
 	</div>
 	<div class="animateRight lg:pe-20">
-		<h2 class="animate-first-para pb-7">How this works</h2>
-		<p class="animate-first-para z-10 pb-4 lg:text-xl">
-			<TablerSquareRoundedCheckFilled
-				class="me-3 inline fill-primary"
+		<h2 class="animate-first-para group mb-7">How this works</h2>
+		<p class="animate-first-para z-10 py-2 lg:text-xl">
+			<TablerSquareRoundedPlusFilled
+				class="me-3 inline fill-primary align-middle"
 				width="1.5em"
 				height="1.5em"
-			/>Figure out the competencies you lack.
+			/>Figure out the competencies you lack
 		</p>
-		<p class="animate-first-para z-10 pb-4 lg:text-xl">
-			<TablerSquareRoundedCheckFilled
+		<p class="animate-second-para z-10 py-2 lg:text-xl">
+			<TablerSquareRoundedPlusFilled
 				class="me-3 inline fill-primary"
 				width="1.5em"
 				height="1.5em"
-			/>Use the resources here to learn.
+			/>Use the resources, learn for the long term
 		</p>
-		<p class="animate-first-para z-10 pb-4 lg:text-xl">
-			<TablerSquareRoundedCheckFilled
+		<p class="animate-second-para z-10 py-2 lg:text-xl">
+			<TablerSquareRoundedPlusFilled
 				class="me-3 inline fill-primary"
 				width="1.5em"
 				height="1.5em"
-			/>Refer to quickstart guides to turbo charge your progress.
+			/>Refer to quickstart guides to turbo charge progress
 		</p>
-		<p class="animate-first-para z-10 pb-4 lg:text-xl">
-			<TablerSquareRoundedCheckFilled
+		<p class="animate-third-para z-10 py-2 lg:text-xl">
+			<TablerSquareRoundedPlusFilled
 				class="me-3 inline fill-primary"
 				width="1.5em"
 				height="1.5em"
-			/>Git gud, make better decisions, get better outcomes.
+			/>Git gud, make better decisions, get better outcomes
 		</p>
-		<p class="animate-second-para z-20 pb-8 lg:text-xl">
-			<TablerSquareRoundedCheckFilled
+		<p class="animate-third-para z-20 pb-7 pt-2 lg:text-xl">
+			<TablerSquareRoundedPlusFilled
 				class="me-3 inline fill-primary"
 				width="1.5em"
 				height="1.5em"
-			/>Users get good products, ministry/taxpayers save money, decisionmakers are happy.
+			/>Good + cheap product = happy (bosses + taxpayers)
 		</p>
 		<p class="animate-cta mb-5 mt-1 space-x-2 lg:space-x-2 lg:text-xl">
 			<a
 				href="/learn"
-				class="btn bg-lime-500 font-medium text-white hover:bg-gradient-to-r hover:from-lime-500 hover:via-teal-500 hover:to-emerald-600 active:from-lime-600 active:via-teal-600 active:to-emerald-700 lg:text-xl"
+				class="btn bg-lime-600 font-medium text-white hover:bg-gradient-to-r hover:from-lime-500 hover:via-teal-500 hover:to-emerald-600 active:from-lime-600 active:via-teal-600 active:to-emerald-700 lg:text-xl"
 				>Start Learning <SvgChevronRight height="1.5rem" width="1.5rem" stroke="white" /></a
 			>
 			<a
