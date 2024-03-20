@@ -10,9 +10,6 @@
 	];
 </script>
 
-<svelte:head>
-	<title>Cache Up!</title>
-</svelte:head>
 <Breadcrumbs textCurrent="Cache Up!" />
 <div class="mb-10 text-center lg:mb-20">
 	<h1

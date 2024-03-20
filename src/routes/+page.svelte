@@ -93,9 +93,6 @@
 	}); //close onmount
 </script>
 
-<svelte:head>
-	<title>Apptitude</title>
-</svelte:head>
 <div class="grid grid-cols-1 justify-items-center gap-x-8 gap-y-8 px-5 lg:grid-cols-2 lg:px-20">
 	<div
 		class="animateLeft self-center text-center lg:ps-[10rem] xl:px-[4rem] min-[1921px]:pe-[5rem] min-[1921px]:ps-[7rem]"

@@ -2,11 +2,15 @@
 	import '../app.css';
 	import logo from '$lib/assets/logo_whale.webp';
 	import PageTransition from '$lib/Transition.svelte';
-	export let data;
+	let { data } = $props();
 	import { cacheup } from './cacheup/data_cacheup.js';
 	import { info } from './learn/data.js';
+	let pageName = $state('Apptitude');
 </script>
 
+<svelte:head>
+	<title>{pageName}</title>
+</svelte:head>
 <div class="navbar mb-10 bg-base-100 lg:mb-20">
 	<div class="navbar-start">
 		<div class="dropdown">

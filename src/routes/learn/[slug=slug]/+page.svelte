@@ -23,10 +23,6 @@
 	};
 </script>
 
-<svelte:head>
-	<title>Learn {data.post.name}</title>
-</svelte:head>
-
 <Breadcrumbs urlMiddle="learn" textMiddle={'Learn'} textCurrent={data.post.name} />
 <div
 	class="mx-1 grid grid-cols-1 place-content-start gap-4 rounded-lg bg-base-300 px-2 py-5 shadow-xl lg:mx-20 lg:grid-cols-2 lg:px-5"

@@ -69,9 +69,6 @@
 	}
 </script>
 
-<svelte:head>
-	<title>To-Dos</title>
-</svelte:head>
 <Breadcrumbs textCurrent={'To-Do List'} />
 <div class="grid grid-cols-1 content-start justify-items-center gap-y-3">
 	<div class="mb-10 text-center lg:mb-20">

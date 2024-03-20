@@ -29,9 +29,6 @@
 	let showMore = false;
 </script>
 
-<svelte:head>
-	<title>Tech Trippin'</title>
-</svelte:head>
 <Breadcrumbs textCurrent={"Tech Trippin'"} />
 <div class="mb-10 grid-cols-1 rounded-lg bg-base-300 px-5 py-5 lg:mx-20 lg:mb-20">
 	<div class="text-center">

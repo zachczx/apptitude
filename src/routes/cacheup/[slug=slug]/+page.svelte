@@ -26,9 +26,6 @@
 	}, 10000);
 </script>
 
-<svelte:head>
-	<title>Cache Up! {data.post.name}</title>
-</svelte:head>
 <Breadcrumbs urlMiddle="cacheup" textMiddle={'Cache Up!'} textCurrent={data.post.name} />
 <div class="mb-10 text-center lg:mb-10">
 	<h1
