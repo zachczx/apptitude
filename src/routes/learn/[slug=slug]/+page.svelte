@@ -13,8 +13,8 @@
 	onclick={() => {
 		newItem.set(1);
 		console.log(newItem);
-	}}>Add something</button-->
->{newItem}
+	}}>Add something</button
+>{newItem}-->
 
 <Breadcrumbs urlMiddle="learn" textMiddle={'Learn'} textCurrent={data.post.name} />
 <div
