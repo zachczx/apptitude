@@ -69,13 +69,13 @@
 		return todoCount;
 	}
 
-	let newitem_value_todo = $state();
+	let newVar;
 	newitem.subscribe((value) => {
-		newitem_value_todo = value;
+		console.log(value);
+		newVar = value;
 	});
 </script>
 
-{newitem_value_todo}
 <Breadcrumbs textCurrent={'To-Do List'} />
 <div class="grid grid-cols-1 content-start justify-items-center gap-y-3">
 	<div class="mb-10 text-center lg:mb-20">
@@ -89,9 +89,9 @@
 	<div class="mb-5">
 		<input
 			onkeydown={addTodo}
-			placeholder="Add something"
+			placeholder={newVar.length > 0 ? newVar : 'Add something'}
 			type="text"
-			value=""
+			value={newVar}
 			id="add-new"
 			class="input input-bordered input-primary w-72"
 		/>
