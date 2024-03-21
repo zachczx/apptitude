@@ -81,8 +81,7 @@
 					class="hover:border-1 group btn btn-primary btn-xs me-2 mt-1 hover:border hover:border-neutral hover:bg-teal-400 hover:text-white"
 					onclick={(e) => {
 						updateItem(topic);
-						let current = e.currentTarget;
-						current.classList.add('btn-secondary');
+						e.currentTarget.classList.add('btn-secondary');
 						console.log(newitem_value);
 					}}
 					>{topic}
