@@ -98,8 +98,7 @@
 					markers: false
 				},
 				scale: 1.7,
-				y: '20vw',
-				skew: 90
+				y: '20vw'
 			});
 		});
 	}); //close onmount
@@ -120,35 +119,35 @@
 		<h2 class="animate-first-para group mb-7">How this works</h2>
 		<p class="animate-first-para z-10 py-2 lg:text-xl">
 			<TablerSquareRoundedPlusFilled
-				class="me-3 inline fill-primary align-middle"
+				class="me-3 inline fill-primary align-bottom"
 				width="1.5em"
 				height="1.5em"
 			/>Figure out the competencies you lack
 		</p>
 		<p class="animate-second-para z-10 py-2 lg:text-xl">
 			<TablerSquareRoundedPlusFilled
-				class="me-3 inline fill-primary"
+				class="me-3 inline fill-primary align-bottom"
 				width="1.5em"
 				height="1.5em"
 			/>Use the resources, learn for the long term
 		</p>
 		<p class="animate-second-para z-10 py-2 lg:text-xl">
 			<TablerSquareRoundedPlusFilled
-				class="me-3 inline fill-primary"
+				class="me-3 inline fill-primary align-bottom"
 				width="1.5em"
 				height="1.5em"
 			/>Refer to quickstart guides to turbo charge progress
 		</p>
 		<p class="animate-third-para z-10 py-2 lg:text-xl">
 			<TablerSquareRoundedPlusFilled
-				class="me-3 inline fill-primary"
+				class="me-3 inline fill-primary align-bottom"
 				width="1.5em"
 				height="1.5em"
 			/>Git gud, make better decisions, get better outcomes
 		</p>
 		<p class="animate-third-para z-20 pb-7 pt-2 lg:text-xl">
 			<TablerSquareRoundedPlusFilled
-				class="me-3 inline fill-primary"
+				class="me-3 inline fill-primary align-bottom"
 				width="1.5em"
 				height="1.5em"
 			/>Good + cheap product = happy (bosses + taxpayers)

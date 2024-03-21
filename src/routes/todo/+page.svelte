@@ -1,5 +1,6 @@
 <script>
 	import Breadcrumbs from '$lib/Breadcrumbs.svelte';
+	import { newitem } from './todo_store';
 	let todos = $state([
 		{ text: 'Sample item 1', done: true },
 		{ text: 'Sample item 2', done: false }
@@ -67,6 +68,14 @@
 		todoCount = todos.filter((todo) => !todo.done).length;
 		return todoCount;
 	}
+
+	let newitem_value = $state();
+	newitem.subscribe((value) => {
+		newitem_value = value;
+	});
+	$effect(() => {
+		console.log(newitem_value);
+	});
 </script>
 
 <Breadcrumbs textCurrent={'To-Do List'} />
@@ -82,8 +91,9 @@
 	<div class="mb-5">
 		<input
 			onkeydown={addTodo}
-			placeholder="Add something"
+			placeholder={newitem_value.length > 0 ? newitem_value : 'Add something'}
 			type="text"
+			value={newitem_value.length > 0 ? newitem_value : ''}
 			id="add-new"
 			class="input input-bordered input-primary w-72"
 		/>

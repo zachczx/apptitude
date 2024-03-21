@@ -5,6 +5,7 @@
 	const slug = $page.params.slug;
 	let { data } = $props();
 	import { newitem } from '../../todo/todo_store.js';
+	import TablerSquareRoundedPlusFilled from '$lib/assets/svg/TablerSquareRoundedPlusFilled.svelte';
 
 	function updateItem(value) {
 		newitem.update((currentList) => {
@@ -23,7 +24,7 @@
 	};
 </script>
 
-<Breadcrumbs urlMiddle="learn" textMiddle={'Learn'} textCurrent={data.post.name} />
+<Breadcrumbs urlMiddle="learn" textMiddle="Learn" textCurrent={data.post.name} />
 <div
 	class="mx-1 grid grid-cols-1 place-content-start gap-4 rounded-lg bg-base-300 px-2 py-5 shadow-xl lg:mx-20 lg:grid-cols-2 lg:px-5"
 >
@@ -81,11 +82,19 @@
 		<p class="mb-7">
 			{#each data.post.topics as topic}
 				<span
-					class="btn btn-primary btn-xs me-2 mt-1"
-					onclick={() => {
+					class="hover:border-1 group btn btn-primary btn-xs me-2 mt-1 hover:border hover:border-neutral hover:bg-teal-400 hover:text-white"
+					onclick={(e) => {
 						updateItem(topic);
+						let current = e.currentTarget;
+						current.classList.add('btn-secondary');
 						console.log(newitem_value);
-					}}>{topic}</span
+					}}
+					>{topic}
+					<TablerSquareRoundedPlusFilled
+						class="-me-2.5 inline pb-0.5 group-hover:fill-white"
+						height="2em"
+						width="2em"
+					/></span
 				>
 			{/each}
 		</p>
