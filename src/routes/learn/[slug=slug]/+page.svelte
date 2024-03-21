@@ -18,10 +18,6 @@
 	newitem.subscribe((value) => {
 		newitem_value = value;
 	});
-
-	$effect = () => {
-		console.log(newitem_value);
-	};
 </script>
 
 <Breadcrumbs urlMiddle="learn" textMiddle="Learn" textCurrent={data.post.name} />

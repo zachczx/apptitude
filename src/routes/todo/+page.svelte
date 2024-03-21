@@ -73,9 +73,6 @@
 	newitem.subscribe((value) => {
 		newitem_value = value;
 	});
-	$effect(() => {
-		console.log(newitem_value);
-	});
 </script>
 
 <Breadcrumbs textCurrent={'To-Do List'} />
