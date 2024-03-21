@@ -68,8 +68,14 @@
 		todoCount = todos.filter((todo) => !todo.done).length;
 		return todoCount;
 	}
+
+	let newitem_value_todo = $state();
+	newitem.subscribe((value) => {
+		newitem_value_todo = value;
+	});
 </script>
 
+{newitem_value_todo}
 <Breadcrumbs textCurrent={'To-Do List'} />
 <div class="grid grid-cols-1 content-start justify-items-center gap-y-3">
 	<div class="mb-10 text-center lg:mb-20">
