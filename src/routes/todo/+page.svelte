@@ -68,12 +68,12 @@
 		todoCount = todos.filter((todo) => !todo.done).length;
 		return todoCount;
 	}
-
+	/*
 	let newVar;
 	newitem.subscribe((value) => {
 		console.log(value);
 		newVar = value;
-	});
+	});*/
 </script>
 
 <Breadcrumbs textCurrent={'To-Do List'} />
@@ -89,9 +89,9 @@
 	<div class="mb-5">
 		<input
 			onkeydown={addTodo}
-			placeholder={newVar.length > 0 ? newVar : 'Add something'}
+			placeholder="Add something"
 			type="text"
-			value={newVar}
+			value=""
 			id="add-new"
 			class="input input-bordered input-primary w-72"
 		/>
