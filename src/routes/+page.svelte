@@ -11,14 +11,26 @@
 	onMount(() => {
 		gsap.registerPlugin(ScrollTrigger);
 
-		let tl = gsap.timeline();
-		tl.add('start')
-			.to('.animateLeft', { xPercent: -50, duration: 0, autoAlpha: 0 }, 'start')
-			.to('.animateRight', { xPercent: 50, duration: 0, autoAlpha: 0 }, 'start')
-			.to('.animateImg', { yPercent: 50, duration: 0, autoAlpha: 0 }, 'start')
-			.to('.animateLeft', { xPercent: 0, duration: 1, autoAlpha: 1, ease: 'sine.out' }, 'start')
-			.to('.animateRight', { xPercent: 0, duration: 1, autoAlpha: 1, ease: 'sine.out' }, 'start')
-			.to('.animateImg', { yPercent: 0, duration: 1, autoAlpha: 1, ease: 'circ.out' }, 'start');
+		let t1 = gsap.matchMedia();
+		t1.add('(min-width: 1028px)', () => {
+			gsap.fromTo(
+				'.animateLeft',
+				{ xPercent: -50, duration: 0, autoAlpha: 0 },
+				{ xPercent: 0, duration: 1, autoAlpha: 1, ease: 'sine.out' }
+			);
+			gsap.fromTo(
+				'.animateRight',
+				{ xPercent: 50, duration: 0, autoAlpha: 0 },
+				{ xPercent: 0, duration: 1, autoAlpha: 1, ease: 'sine.out' },
+				'<'
+			);
+			gsap.fromTo(
+				'.animateImg',
+				{ yPercent: 50, duration: 0, autoAlpha: 0 },
+				{ yPercent: 0, duration: 1, autoAlpha: 1, ease: 'circ.out' },
+				'<'
+			);
+		});
 
 		let t2 = gsap.matchMedia();
 		t2.add('(min-width: 1028px)', () => {
