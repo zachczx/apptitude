@@ -69,10 +69,10 @@
 		return todoCount;
 	}
 
-	let newVar;
+	let storeLearnButton;
 	newitem.subscribe((value) => {
 		console.log(value);
-		newVar = value;
+		storeLearnButton = value;
 	});
 </script>
 
@@ -89,9 +89,9 @@
 	<div class="mb-5">
 		<input
 			onkeydown={addTodo}
-			placeholder={newVar}
+			placeholder={storeLearnButton.length > 0 ? storeLearnButton : 'Add something'}
 			type="text"
-			value={newVar}
+			value={storeLearnButton.length > 0 ? storeLearnButton : 'Add something'}
 			id="add-new"
 			class="input input-bordered input-primary w-72"
 		/>
