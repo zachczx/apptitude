@@ -100,9 +100,14 @@
 	<slot />
 </PageTransition>
 
-<footer class="footer justify-center space-x-8 text-neutral-content md:mt-[7rem]">
-	<nav>
-		<h6 class="font-bold">App Junkyard</h6>
+<footer
+	class="footer footer-center mt-10 gap-y-2 rounded bg-base-200 p-10 text-base-content lg:mt-24"
+>
+	<aside>
+		<p class="mb-2">Copyright © 2024 Zixian Chen. All rights reserved.</p>
+	</aside>
+	<nav class="grid grid-flow-col gap-4">
+		<span class="font-bold">App Junkyard</span>
 		<a href="https://titude.app/" class="link-hover link"
 			><TablerSquareRoundedPlusFilled class="mb-1 inline fill-primary" /> Apptitude</a
 		>
@@ -116,8 +121,8 @@
 			><TablerSquareRoundedPlusFilled class="mb-1 inline fill-primary" /> Btonomics</a
 		>
 	</nav>
-	<nav>
-		<h6 class="font-bold">Socials</h6>
+	<nav class="grid grid-flow-col gap-4">
+		<span class="font-bold">Socials</span>
 		<a href="https://www.linkedin.com/in/zixianchen/" class="link-hover link"
 			><TablerSquareRoundedPlusFilled class="mb-1 inline fill-primary" /> LinkedIn</a
 		>
@@ -125,9 +130,4 @@
 			><TablerSquareRoundedPlusFilled class="mb-1 inline fill-primary" /> Website</a
 		>
 	</nav>
-</footer>
-<footer class="footer mb-5 mt-5 justify-center">
-	<aside>
-		<h6>Copyright © 2024 Zixian Chen. All rights reserved.</h6>
-	</aside>
 </footer>
