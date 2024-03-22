@@ -102,7 +102,10 @@
 
 <footer class="footer justify-center space-x-8 text-neutral-content md:mt-[7rem]">
 	<nav>
-		<h6 class="font-bold">ZX's App Junkyard</h6>
+		<h6 class="font-bold">App Junkyard</h6>
+		<a href="https://titude.app/" class="link-hover link"
+			><TablerSquareRoundedPlusFilled class="mb-1 inline fill-primary" /> Apptitude</a
+		>
 		<a href="https://app.zixian.dev/rank/" class="link-hover link"
 			><TablerSquareRoundedPlusFilled class="mb-1 inline fill-primary" /> Rank-a-Mate</a
 		>
@@ -114,7 +117,7 @@
 		>
 	</nav>
 	<nav>
-		<h6 class="font-bold">ZX's Socials</h6>
+		<h6 class="font-bold">Socials</h6>
 		<a href="https://www.linkedin.com/in/zixianchen/" class="link-hover link"
 			><TablerSquareRoundedPlusFilled class="mb-1 inline fill-primary" /> LinkedIn</a
 		>
