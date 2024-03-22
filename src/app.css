@@ -14,6 +14,10 @@
 	font-style: normal;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 @layer base {
 	h1 {
 		@apply text-5xl lg:text-6xl;

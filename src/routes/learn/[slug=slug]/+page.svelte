@@ -6,6 +6,9 @@
 	let { data } = $props();
 	import { newitem } from '../../todo/todo_store.js';
 	import TablerSquareRoundedPlusFilled from '$lib/assets/svg/TablerSquareRoundedPlusFilled.svelte';
+	import { slide } from 'svelte/transition';
+	import { elasticOut } from 'svelte/easing';
+	import TablerSquareRoundedChevronsRightFilled from '$lib/assets/svg/TablerSquareRoundedChevronsRightFilled.svelte';
 
 	function updateItem(value) {
 		newitem.update((currentList) => {
@@ -18,6 +21,8 @@
 	newitem.subscribe((value) => {
 		newitem_value = value;
 	});
+
+	let goTodo = $state(false);
 </script>
 
 <Breadcrumbs urlMiddle="learn" textMiddle="Learn" textCurrent={data.post.name} />
@@ -77,21 +82,35 @@
 		<h3 class="mb-5">Topics</h3>
 		<p class="mb-7">
 			{#each data.post.topics as topic}
-				<span
-					class="hover:border-1 group btn btn-primary btn-xs me-2 mt-1 hover:border hover:border-neutral hover:bg-teal-400 hover:text-white"
+				<a
+					class="hover:border-1 group btn btn-outline btn-xs me-2 mt-1 hover:border hover:border-neutral hover:bg-teal-400 hover:text-white"
 					onclick={(e) => {
 						updateItem(topic);
-						e.currentTarget.classList.add('btn-secondary');
+						e.currentTarget.classList.add('btn-primary');
+						goTodo = true;
+						console.log(goTodo);
 						console.log(newitem_value);
 					}}
 					>{topic}
 					<TablerSquareRoundedPlusFilled
-						class="-me-2.5 inline pb-0.5 group-hover:fill-white"
+						class="-me-2.5 inline fill-base-content pb-0.5 group-hover:fill-white"
 						height="2em"
 						width="2em"
-					/></span
+					/></a
 				>
 			{/each}
+			{#if goTodo}
+				<a
+					href="/todo"
+					class="ms-5 text-base font-medium text-primary"
+					in:slide={{ axis: 'x', duration: 700, delay: 50, easing: elasticOut }}
+					><TablerSquareRoundedChevronsRightFilled
+						class="mb-1 inline fill-primary"
+						width="1.5rem"
+						height="1.5rem"
+					/> Track these as To-Dos</a
+				>
+			{/if}
 		</p>
 	</div>
 	<div class="rounded-lg bg-base-200 p-5">

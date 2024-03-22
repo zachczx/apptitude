@@ -91,7 +91,7 @@
 			onkeydown={addTodo}
 			placeholder={storeLearnButton.length > 0 ? storeLearnButton : 'Add something'}
 			type="text"
-			value={storeLearnButton.length > 0 ? storeLearnButton : 'Add something'}
+			value={storeLearnButton.length > 0 ? storeLearnButton : ''}
 			id="add-new"
 			class="input input-bordered input-primary w-72"
 		/>

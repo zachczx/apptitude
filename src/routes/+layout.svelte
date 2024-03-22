@@ -2,6 +2,7 @@
 	import '../app.css';
 	import logo from '$lib/assets/logo_whale.webp';
 	import PageTransition from '$lib/Transition.svelte';
+	import TablerSquareRoundedPlusFilled from '$lib/assets/svg/TablerSquareRoundedPlusFilled.svelte';
 	let { data } = $props();
 	import { cacheup } from './cacheup/data_cacheup.js';
 	import { info } from './learn/data.js';
@@ -96,13 +97,34 @@
 </div>
 
 <PageTransition url={data.url}>
-	<div class="px-3 lg:px-0">
-		<slot />
-	</div>
+	<slot />
 </PageTransition>
 
-<footer class="footer footer-center mb-5 mt-[7rem] text-base-content">
+<footer class="footer justify-center space-x-8 text-neutral-content md:mt-[7rem]">
+	<nav>
+		<h6 class="font-bold">ZX's App Junkyard</h6>
+		<a href="https://app.zixian.dev/rank/" class="link-hover link"
+			><TablerSquareRoundedPlusFilled class="mb-1 inline fill-primary" /> Rank-a-Mate</a
+		>
+		<a href="https://app.zixian.dev/eatyourmeds/" class="link-hover link"
+			><TablerSquareRoundedPlusFilled class="mb-1 inline fill-primary" /> Eat Your Medicine</a
+		>
+		<a href="https://btonomics.com/" class="link-hover link"
+			><TablerSquareRoundedPlusFilled class="mb-1 inline fill-primary" /> Btonomics</a
+		>
+	</nav>
+	<nav>
+		<h6 class="font-bold">ZX's Socials</h6>
+		<a href="https://www.linkedin.com/in/zixianchen/" class="link-hover link"
+			><TablerSquareRoundedPlusFilled class="mb-1 inline fill-primary" /> LinkedIn</a
+		>
+		<a href="https://zixianchen.com/" class="link-hover link"
+			><TablerSquareRoundedPlusFilled class="mb-1 inline fill-primary" /> Website</a
+		>
+	</nav>
+</footer>
+<footer class="footer mb-5 mt-5 justify-center">
 	<aside>
-		<p>Copyright © 2024 Zixian Chen. All rights reserved.</p>
+		<h6>Copyright © 2024 Zixian Chen. All rights reserved.</h6>
 	</aside>
 </footer>
