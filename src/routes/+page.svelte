@@ -110,12 +110,12 @@
 	>
 		<h1 class="animateTitle lg:text-5xl xl:text-7xl min-[1921px]:text-8xl">
 			<span
-				class="bg-gradient-to-r from-lime-400 via-orange-300 to-yellow-300 bg-clip-text text-transparent"
+				class="bg-gradient-to-r from-lime-300 via-green-400 to-teal-300 bg-clip-text text-transparent"
 				>Learn and better manage public digital products.</span
 			>
 		</h1>
 	</div>
-	<div class="animateRight lg:pe-20">
+	<div class="animateRight justify-self-start lg:pe-20">
 		<h2 class="animate-first-para group mb-7">How this works</h2>
 		<p class="animate-first-para z-10 py-2 lg:text-xl">
 			<TablerSquareRoundedPlusFilled
