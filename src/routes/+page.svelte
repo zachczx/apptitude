@@ -42,7 +42,7 @@
 					scrub: true,
 					markers: false
 				},
-				y: 1000,
+				y: 100,
 				autoAlpha: 0
 			});
 			gsap.to('.animate-first-para', {
@@ -98,7 +98,7 @@
 					markers: false
 				},
 				scale: 1.7,
-				y: '-20vw'
+				y: '-17vw'
 			});
 		});
 	}); //close onmount
@@ -175,7 +175,7 @@
 		</div>
 	</div>-->
 </div>
-<div class="animateImg mt-8">
+<div class="animateImg mt-2">
 	<enhanced:img
 		src={hero2}
 		alt="Hero"
