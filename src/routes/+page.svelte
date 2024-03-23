@@ -11,6 +11,7 @@
 	import pixarEarth from '$lib/assets/pixar-earth.webp?enhanced&w=1200;600;400';
 	import cloud1 from '$lib/assets/cloud1.webp?enhanced&w=700;500;200';
 	import cloud2 from '$lib/assets/cloud2.webp?enhanced&w=700;500;200';
+	import bellCurveMeme from '$lib/assets/c9m2ve26zqib1.jpg?enhanced&w=1300;700;500';
 	import { elasticIn, elasticInOut } from 'svelte/easing';
 
 	onMount(() => {
@@ -151,7 +152,7 @@
 			y: '10vh',
 			x: '-30vw',
 			scale: 2,
-			autoAlpha: 0.6
+			autoAlpha: 0.8
 		});
 		gsap.to('.tagline-green2', {
 			scrollTrigger: {
@@ -163,7 +164,7 @@
 			},
 			y: '15vh',
 			scale: 5,
-			autoAlpha: 1
+			autoAlpha: 0.9
 		});
 		gsap.to('.tagline-green', {
 			scrollTrigger: {
@@ -175,7 +176,7 @@
 			},
 			y: '15vh',
 			scale: 5,
-			autoAlpha: 1
+			autoAlpha: 0.9
 		});
 		gsap.to('.tagline-darkgreen', {
 			scrollTrigger: {
@@ -187,7 +188,7 @@
 			},
 			y: '15vh',
 			scale: 5,
-			autoAlpha: 1
+			autoAlpha: 0.9
 		});
 		/*
 			gsap.to('.rocket2', {
@@ -220,7 +221,7 @@
 	class="-mt-20 mb-[10rem] grid grid-cols-1 justify-items-center gap-x-8 gap-y-8 px-5 pt-20 pt-20 lg:grid-cols-2 lg:px-20"
 >
 	<div
-		class="animateLeft self-center text-center lg:ps-[10rem] xl:px-[4rem] min-[1921px]:pe-[5rem] min-[1921px]:ps-[7rem]"
+		class="animateLeft self-center text-center xl:px-[4rem] min-[1921px]:pe-[5rem] min-[1921px]:ps-[7rem]"
 	>
 		<h1 class="animateTitle lg:text-5xl xl:text-7xl min-[1921px]:text-8xl">
 			<span
@@ -231,37 +232,37 @@
 	</div>
 	<div class="animateRight z-50 self-center justify-self-start lg:pe-20">
 		<h2 class="animate-first-para group mb-7">Let Apptitude support you</h2>
-		<p class="animate-first-para z-10 py-2 lg:text-xl">
+		<p class="animate-first-para z-10 py-2 lg:text-2xl">
 			<TablerSquareRoundedPlusFilled
 				class="me-3 inline fill-primary align-bottom"
 				width="1.5em"
 				height="1.5em"
 			/>Find competencies, use resources, learn
 		</p>
-		<p class="animate-second-para z-10 py-2 lg:text-xl">
+		<p class="animate-second-para z-10 py-2 lg:text-2xl">
 			<TablerSquareRoundedPlusFilled
 				class="me-3 inline fill-primary align-bottom"
 				width="1.5em"
 				height="1.5em"
 			/>Turbo charge your progress using quickstart guides,
 		</p>
-		<p class="animate-third-para z-10 mb-7 py-2 lg:text-xl">
+		<p class="animate-third-para z-10 mb-7 py-2 lg:text-2xl">
 			<TablerSquareRoundedPlusFilled
 				class="me-3 inline fill-primary align-bottom"
 				width="1.5em"
 				height="1.5em"
 			/>Git gud, make better decisions
 		</p>
-		<p class="animate-cta mb-5 mt-1 space-x-2 lg:space-x-2 lg:text-xl">
+		<p class="animate-cta mb-5 mt-1 space-x-2 lg:space-x-2 lg:text-2xl">
 			<a
 				href="/learn"
 				class="btn bg-lime-600 font-medium text-white hover:bg-gradient-to-r hover:from-lime-500 hover:via-teal-500 hover:to-emerald-600 active:from-lime-600 active:via-teal-600 active:to-emerald-700 lg:text-xl"
-				>Start Learning <SvgChevronRight height="1.5rem" width="1.5rem" stroke="white" /></a
+				>Start Learning <SvgChevronRight height="1rem" width="1rem" stroke="white" /></a
 			>
 			<a
 				href="/cacheup"
 				class="btn border border-primary bg-base-100 from-red-500 via-orange-500 to-pink-500 font-medium text-primary hover:bg-gradient-to-r hover:from-red-600 hover:via-orange-600 hover:to-pink-600 hover:text-white active:from-red-700 active:via-orange-700 active:to-pink-700 lg:text-xl"
-				>Quickstart Guides</a
+				>Quickstart</a
 			>
 		</p>
 	</div>
@@ -306,13 +307,7 @@
 	<div class="tagline-intro text-3xl font-bold lg:text-6xl">
 		<span class="text-white">Learning take-off in...</span>
 	</div>
-	<div class="tagline-green2 text-3xl font-bold lg:text-6xl">
-		<span
-			class="bg-gradient-to-r from-orange-300 via-red-300 to-pink-500 bg-clip-text text-transparent"
-		>
-			3. 2. 1. Launch!</span
-		>
-	</div>
+
 	<div class="tagline-green2 text-3xl font-bold lg:text-6xl">
 		<span
 			class="bg-gradient-to-r from-green-400 via-emerald-300 to-lime-400 bg-clip-text text-transparent"
@@ -322,7 +317,7 @@
 	</div>
 	<div class="tagline-green text-3xl font-bold lg:text-6xl">
 		<span
-			class="bg-gradient-to-r from-yellow-200 via-green-600 to-lime-300 bg-clip-text text-transparent"
+			class="bg-gradient-to-r from-yellow-200 via-yellow-300 to-yellow-200 bg-clip-text text-transparent"
 		>
 			3. 2. 1. Launch!</span
 		>
@@ -344,31 +339,28 @@
 		>
 			So what's this about?
 		</h1>
-		<h2 class="mb-7">TL;DR</h2>
-		<p class="mb-7">
+		<p class="mb-7 text-2xl">
 			I made Apptitude to help my teammates know what competencies to learn, find out where to learn
 			them, and quickly get started to scrutinize tech stuff that I like to.
 		</p>
-		<h2 class="mb-7">A longer explanation?</h2>
-		<p class="mb-7">
+		<p class="mb-7 text-2xl">
 			Apptitude is my attempt to start a more dissatisfied culture/attitude to tech products, by
 			opening up the veil and giving people the mental tools/mindset to challenge bad plans and
 			decisions.
 		</p>
-		<p class="mb-7">
-			In my past job as a "tech policy officer" I came to realize WOG tech outcomes are poor.
-			Looking around, many of Govt's tech products don't make sense, especially for the amount of
-			money we spend <a
-				href="https://www.tech.gov.sg/media/media-releases/2023-05-24-government-projected-to-spend-on-ict-in-fy23"
-				class="text-primary">(here)</a
-			>. Products are slow, laggy, hard to use, super expensive.
+		<p class="mb-7 text-2xl">
+			Good decisions are mostly common sense, but what's intuitive doesn't get chosen in the public
+			service. Like this meme here actually.
 		</p>
-		<p class="mb-7">
-			Reflecting on my own inadequacies and what really capable people thought, I understood that
-			this was because people simply didn't know better. A competency gap. Like a third eye, I
-			couldn't unsee this competency gap. I saw it everywhere, myself included. I can never finish
-			learning, there's too much to pick up and new things keep coming up. But I try my best and
-			supplement those with what I hear from good people around, the good and bad I saw.
+		<enhanced:img
+			src={bellCurveMeme}
+			class="mb-7"
+			alt="Geniuses and noobs"
+			sizes="(min-width:1400px) 1300px, (min-width:800px) 700px, (max-width:px) 500px"
+		/>
+		<p class="mb-7 text-2xl">
+			Hopefully with a better idea of competencies and better choices, I (and maybe you) can decide
+			to shift to the left or right parts of the curve.
 		</p>
 	</div>
 </div>
@@ -432,11 +424,5 @@
 		transform: translate(-50%, -50%);
 		opacity: 0;
 		z-index: 5;
-	}
-
-	@media only screen and (max-width: 600px) {
-		.tagline-intro .tagline-green2 {
-			opacity: 1;
-		}
 	}
 </style>

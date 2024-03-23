@@ -3,6 +3,7 @@
 	import { slide } from 'svelte/transition';
 	import Breadcrumbs from '$lib/Breadcrumbs.svelte';
 	import TablerLink from '$lib/assets/svg/TablerLink.svelte';
+	import bellCurveMeme from '$lib/assets/c9m2ve26zqib1.jpg?enhanced&w=1300;700;500';
 
 	let seeMore = false;
 </script>
@@ -96,6 +97,17 @@
 						try my best and supplement those with what I hear from good people around, the good and
 						bad I saw.
 					</p>
+					<p class="mb-7">
+						Good decisions are mostly common sense, but what's intuitive doesn't get chosen in the
+						public service. Hopefully with a better idea of competencies and better choices, I (and
+						maybe you) can decide to shift to the left or right parts of the curve.
+					</p>
+					<enhanced:img
+						src={bellCurveMeme}
+						class="mb-7"
+						alt="Geniuses and noobs"
+						sizes="(min-width:1400px) 1300px, (min-width:800px) 700px, (max-width:px) 500px"
+					/>
 				</div>
 			{/if}
 			<h2 class="mb-7 mt-12">What's in it for you?</h2>
