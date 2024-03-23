@@ -11,6 +11,7 @@
 	import pixarEarth from '$lib/assets/pixar-earth.webp?enhanced&w=1200;600;400';
 	import cloud1 from '$lib/assets/cloud1.webp?enhanced&w=700;500;200';
 	import cloud2 from '$lib/assets/cloud2.webp?enhanced&w=700;500;200';
+	import cloud3 from '$lib/assets/cloud3.webp?enhanced&w=700;500;200';
 	import bellCurveMeme from '$lib/assets/c9m2ve26zqib1.jpg?enhanced&w=1300;700;500';
 	import { elasticIn, elasticInOut } from 'svelte/easing';
 
@@ -44,12 +45,12 @@
 			gsap.to('.animateTitle', {
 				scrollTrigger: {
 					trigger: '.animateTitle',
-					start: '-30 top',
+					start: 'center top',
 					end: '110% top',
 					scrub: true,
 					markers: false
 				},
-				y: 100,
+				y: -50,
 				autoAlpha: 0
 			});
 			gsap.to('.animate-first-para', {
@@ -60,7 +61,7 @@
 					scrub: true,
 					markers: false
 				},
-				y: -100,
+				y: -50,
 				autoAlpha: 0
 			});
 			gsap.to('.animate-second-para', {
@@ -71,18 +72,7 @@
 					scrub: true,
 					markers: false
 				},
-				y: -100,
-				autoAlpha: 0
-			});
-			gsap.to('.animate-third-para', {
-				scrollTrigger: {
-					trigger: '.animate-third-para',
-					start: 'top top',
-					end: '+=200',
-					scrub: true,
-					markers: false
-				},
-				y: -100,
+				y: -50,
 				autoAlpha: 0
 			});
 			gsap.to('.animate-cta', {
@@ -93,7 +83,7 @@
 					scrub: true,
 					markers: false
 				},
-				y: -100,
+				y: -50,
 				autoAlpha: 0
 			});
 		});
@@ -111,7 +101,7 @@
 				markers: false
 			},
 			y: '15vh',
-			rotation: 3,
+			rotation: 2,
 			delay: 0.5,
 			duration: 3
 		});
@@ -135,7 +125,20 @@
 				markers: false
 			},
 			y: '10vh',
-			x: '5vw',
+			x: '-20vw',
+			opacity: 1,
+			easing: elasticIn
+		});
+		gsap.to('.cloud3-div', {
+			scrollTrigger: {
+				trigger: '.planet',
+				start: 'top center',
+				scrub: true,
+				markers: false
+			},
+			y: 0.1,
+			x: 0.1,
+			rotation: '0.1rad',
 			opacity: 1,
 			easing: elasticIn
 		});
@@ -199,80 +202,43 @@
 			scale: 5,
 			autoAlpha: 0.9
 		});
-		/*
-			gsap.to('.rocket2', {
-				scrollTrigger: {
-					trigger: '.rocket2',
-					start: '-10% center',
-					end: 'bottom bottom',
-					scrub: true,
-					markers: false
-				},
-				y: -600,
-				scale: 0.7
-			});
-			gsap.to('.rocket3', {
-				scrollTrigger: {
-					trigger: '.rocket3',
-					start: 'top center',
-					end: 'bottom bottom',
-					scrub: true,
-					markers: false
-				},
-				y: -400,
-				scale: 2.5,
-				x: 100
-			}); */
 	}); //close onmount
 </script>
 
 <div
-	class="-mt-20 mb-[10rem] grid grid-cols-1 justify-items-center gap-x-8 gap-y-8 px-5 pt-20 pt-20 lg:grid-cols-2 lg:px-20"
+	class="-mt-20 mb-[8rem] grid grid-cols-1 justify-items-center gap-x-8 gap-y-8 px-5 pt-20 pt-20 md:grid-cols-2 lg:px-20"
 >
-	<div
-		class="animateLeft self-center text-center xl:px-[4rem] min-[1921px]:pe-[5rem] min-[1921px]:ps-[7rem]"
-	>
-		<h1 class="animateTitle lg:text-5xl xl:text-7xl min-[1921px]:text-8xl">
+	<div class="animateLeft self-center text-center xl:px-[4rem] min-[1921px]:px-[4rem]">
+		<h1 class="animateTitle text-6xl lg:text-7xl xl:text-9xl min-[1921px]:text-9xl">
 			<span
 				class="bg-gradient-to-r from-lime-300 via-green-400 to-teal-300 bg-clip-text text-transparent"
-				>Learn and better manage public digital products.</span
+				>Make digital delights, not disasters.</span
 			>
 		</h1>
 	</div>
 	<div class="animateRight z-50 self-center justify-self-start lg:pe-20">
-		<h2 class="animate-first-para group mb-7">Let Apptitude support you</h2>
-		<p class="animate-first-para z-10 py-2 lg:text-2xl">
-			<TablerSquareRoundedPlusFilled
-				class="me-3 inline fill-primary align-bottom"
-				width="1.5em"
-				height="1.5em"
-			/>Find competencies, use resources, learn
+		<p class="animate-first-para z-10 py-2 text-3xl font-medium lg:text-5xl">
+			You lack tech knowledge.
 		</p>
-		<p class="animate-second-para z-10 py-2 lg:text-2xl">
-			<TablerSquareRoundedPlusFilled
-				class="me-3 inline fill-primary align-bottom"
-				width="1.5em"
-				height="1.5em"
-			/>Turbo charge your progress using quickstart guides,
+		<p class="animate-first-para z-10 py-2 text-3xl font-medium lg:text-5xl">You learn.</p>
+		<p class="animate-second-para z-10 mb-7 py-2 text-3xl font-medium lg:text-5xl">You git gud.</p>
+		<p class="animate-second-para z-10 mb-7 py-2 text-lg lg:text-xl">
+			Turbo charge your development with resources and quickstart guides here.
 		</p>
-		<p class="animate-third-para z-10 mb-7 py-2 lg:text-2xl">
-			<TablerSquareRoundedPlusFilled
-				class="me-3 inline fill-primary align-bottom"
-				width="1.5em"
-				height="1.5em"
-			/>Git gud, make better decisions
-		</p>
-		<p class="animate-cta mb-5 mt-1 space-x-2 lg:space-x-2 lg:text-2xl">
+		<div class="animate-cta join join-vertical mb-5 lg:join-horizontal">
 			<a
 				href="/learn"
-				class="btn bg-lime-600 font-medium text-white hover:bg-gradient-to-r hover:from-lime-500 hover:via-teal-500 hover:to-emerald-600 active:from-lime-600 active:via-teal-600 active:to-emerald-700 lg:text-xl"
-				>Start Learning <SvgChevronRight height="1rem" width="1rem" stroke="white" /></a
+				class="btn join-item border border-primary bg-lime-600 font-medium text-white hover:border hover:border-primary hover:bg-gradient-to-r hover:from-lime-500 hover:via-teal-500 hover:to-emerald-600 active:from-lime-600 active:via-teal-600 active:to-emerald-700 lg:text-xl"
+				>Learn Basics <SvgChevronRight height="1.7rem" width="1.7rem" stroke="white" /></a
 			>
 			<a
 				href="/cacheup"
-				class="btn border border-primary bg-base-100 from-red-500 via-orange-500 to-pink-500 font-medium text-primary hover:bg-gradient-to-r hover:from-red-600 hover:via-orange-600 hover:to-pink-600 hover:text-white active:from-red-700 active:via-orange-700 active:to-pink-700 lg:text-xl"
-				>Quickstart</a
+				class="btn join-item border border-primary bg-base-100 from-red-500 via-orange-500 to-pink-500 font-medium text-primary hover:border hover:border-primary hover:bg-gradient-to-r hover:from-red-600 hover:via-orange-600 hover:to-pink-600 hover:text-white active:from-red-700 active:via-orange-700 active:to-pink-700 lg:text-xl"
+				>Quickstart Guides</a
 			>
+		</div>
+		<p class="animate-cta z-10 py-2 text-lg lg:text-xl">
+			Soothe that headache whenever you think of digital products or technical problems.
 		</p>
 	</div>
 </div>
@@ -300,6 +266,14 @@
 	<div class="cloud2-div">
 		<enhanced:img
 			src={cloud2}
+			class="cloud"
+			alt="Cloud"
+			sizes="(min-width:1400px) 700px, (max-width:1399px) 500px, (max-width:768px) 200px"
+		/>
+	</div>
+	<div class="cloud3-div">
+		<enhanced:img
+			src={cloud3}
 			class="cloud"
 			alt="Cloud"
 			sizes="(min-width:1400px) 700px, (max-width:1399px) 500px, (max-width:768px) 200px"
@@ -346,7 +320,7 @@
 		<h1
 			class="mb-11 inline-block bg-gradient-to-r from-emerald-200 via-orange-200 to-pink-200 bg-clip-text py-3 text-transparent"
 		>
-			So what's this about?
+			What's Apptitude?
 		</h1>
 		<p class="mb-7 text-2xl">
 			I made Apptitude to help my teammates know what competencies to learn, find out where to learn
@@ -383,25 +357,37 @@
 		top: 40%;
 		left: 50%;
 		transform: translate(-50%, -50%);
+		z-index: 2;
 	}
 	.cloud1-div {
 		position: absolute;
 		top: 60%;
 		left: 80%;
 		transform: translate(-50%, -50%);
+		z-index: 3;
 	}
 	.cloud2-div {
 		position: absolute;
+		top: 20%;
+		left: 75%;
+		scale: 0.8;
+		transform: translate(-50%, -50%);
+		z-index: 1;
+	}
+	.cloud3-div {
+		position: absolute;
 		top: 40%;
-		left: 20%;
+		left: 15%;
 		scale: 0.7;
 		transform: translate(-50%, -50%);
+		z-index: 3;
 	}
 	.rocket-div {
 		position: absolute;
 		top: 100%;
 		left: 50%;
 		transform: translate(-50%, -50%);
+		z-index: 3;
 	}
 	.tagline-intro {
 		position: absolute;
