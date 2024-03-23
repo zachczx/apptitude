@@ -101,35 +101,44 @@
 		let t3 = gsap.timeline();
 
 		gsap.from('.planet', {
-			y: '15vh',
-			delay: 0.5,
-			duration: 1.5,
-			opacity: 1
+			y: '-15vh'
 		});
-		gsap.from(
-			'.cloud1-div',
-			{
-				y: 100,
-				x: 100,
-				duration: 0.3,
-				opacity: 1,
-				scale: 0.5,
-				easing: elasticIn
+		gsap.to('.planet', {
+			scrollTrigger: {
+				trigger: '.planet',
+				start: 'top center',
+				scrub: true,
+				markers: false
 			},
-			'<'
-		);
-		gsap.from(
-			'.cloud2-div',
-			{
-				y: -100,
-				x: -400,
-				duration: 0.3,
-				opacity: 1,
-				scale: 0.3,
-				easing: elasticInOut
+			y: '15vh',
+			rotation: 3,
+			delay: 0.5,
+			duration: 3
+		});
+		gsap.to('.cloud1-div', {
+			scrollTrigger: {
+				trigger: '.planet',
+				start: 'top center',
+				scrub: true,
+				markers: false
 			},
-			'<'
-		);
+			y: '-10vh',
+			x: '-30vw',
+			opacity: 1,
+			easing: elasticIn
+		});
+		gsap.to('.cloud2-div', {
+			scrollTrigger: {
+				trigger: '.planet',
+				start: 'top center',
+				scrub: true,
+				markers: false
+			},
+			y: '10vh',
+			x: '5vw',
+			opacity: 1,
+			easing: elasticIn
+		});
 		gsap.to('.rocket1', {
 			scrollTrigger: {
 				trigger: '.animation-div',
@@ -377,14 +386,14 @@
 	}
 	.cloud1-div {
 		position: absolute;
-		top: 50%;
-		left: 60%;
+		top: 60%;
+		left: 80%;
 		transform: translate(-50%, -50%);
 	}
 	.cloud2-div {
 		position: absolute;
-		top: 50%;
-		left: 35%;
+		top: 40%;
+		left: 20%;
 		scale: 0.7;
 		transform: translate(-50%, -50%);
 	}
