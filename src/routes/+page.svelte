@@ -368,8 +368,8 @@
 			sizes="(min-width:1400px) 1300px, (min-width:800px) 700px, (max-width:px) 500px"
 		/>
 		<p class="mb-7 text-2xl">
-			Hopefully with a better idea of competencies and better choices, I (and maybe you) can decide
-			to shift to the left or right parts of the curve.
+			Hopefully with a better idea of competencies and better choices, we can all shift to the left
+			or right parts of the curve.
 		</p>
 	</div>
 </div>
