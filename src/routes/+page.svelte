@@ -165,6 +165,30 @@
 			scale: 5,
 			autoAlpha: 1
 		});
+		gsap.to('.text-div3', {
+			scrollTrigger: {
+				trigger: '.text-div2',
+				start: 'top bottom',
+				end: '=+500',
+				scrub: true,
+				markers: false
+			},
+			y: '15vh',
+			scale: 5,
+			autoAlpha: 1
+		});
+		gsap.to('.text-div4', {
+			scrollTrigger: {
+				trigger: '.text-div2',
+				start: 'top bottom',
+				end: '=+500',
+				scrub: true,
+				markers: false
+			},
+			y: '15vh',
+			scale: 5,
+			autoAlpha: 1
+		});
 		/*
 			gsap.to('.rocket2', {
 				scrollTrigger: {
@@ -280,11 +304,32 @@
 		/>
 	</div>
 	<div class="text-div text-3xl font-bold lg:text-6xl">
-		<span class="text-white">Learning take-off...</span>
+		<span class="text-white">Learning take-off in...</span>
 	</div>
 	<div class="text-div2 text-3xl font-bold lg:text-6xl">
 		<span
 			class="bg-gradient-to-r from-orange-400 via-red-300 to-pink-500 bg-clip-text text-transparent"
+		>
+			3. 2. 1. Launch!</span
+		>
+	</div>
+	<div class="text-div2 text-3xl font-bold lg:text-6xl">
+		<span
+			class="bg-gradient-to-r from-orange-400 via-red-300 to-pink-500 bg-clip-text text-transparent"
+		>
+			3. 2. 1. Launch!</span
+		>
+	</div>
+	<div class="text-div3 text-3xl font-bold lg:text-6xl">
+		<span
+			class="bg-gradient-to-r from-teal-400 via-green-300 to-teal-500 bg-clip-text text-transparent"
+		>
+			3. 2. 1. Launch!</span
+		>
+	</div>
+	<div class="text-div4 text-3xl font-bold lg:text-6xl">
+		<span
+			class="bg-gradient-to-r from-red-400 via-pink-600 to-rose-700 bg-clip-text text-transparent"
 		>
 			3. 2. 1. Launch!</span
 		>
@@ -370,6 +415,23 @@
 		left: 50%;
 		transform: translate(-50%, -50%);
 		opacity: 0;
+		z-index: 20;
+	}
+	.text-div3 {
+		position: absolute;
+		top: 8.2%;
+		left: 50.3%;
+		transform: translate(-50%, -50%);
+		opacity: 0;
+		z-index: 10;
+	}
+	.text-div4 {
+		position: absolute;
+		top: 7.9%;
+		left: 49.9%;
+		transform: translate(-50%, -50%);
+		opacity: 0;
+		z-index: 5;
 	}
 
 	@media only screen and (max-width: 600px) {
