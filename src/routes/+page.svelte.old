@@ -1,4 +1,5 @@
 <script>
+	import hero from '$lib/assets/kari-shea-1SAnrIxw5OY-unsplash.avif?enhanced&w=2600;2000;400';
 	import TablerSquareRoundedPlusFilled from '$lib/assets/svg/TablerSquareRoundedPlusFilled.svelte';
 	import SvgChevronRight from '$lib/assets/svg/TablerChevronRight.svelte';
 	import { onMount } from 'svelte';
@@ -6,13 +7,7 @@
 	import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 	import TablerHelpCircleFilled from '$lib/assets/svg/TablerHelpCircleFilled.svelte';
 	import TablerChevronRight from '$lib/assets/svg/TablerChevronRight.svelte';
-	import rocket1 from '$lib/assets/rocket_b.webp?enhanced&w=1200;600;400';
-	import starBg from '$lib/assets/paul-volkmer-qVotvbsuM_c-unsplash.webp';
-	import pixarEarth from '$lib/assets/pixar-earth.webp?enhanced&w=1200;600;400';
-	import cloud1 from '$lib/assets/cloud1.webp?enhanced&w=700;500;200';
-	import cloud2 from '$lib/assets/cloud2.webp?enhanced&w=700;500;200';
-	import { elasticIn, elasticInOut } from 'svelte/easing';
-
+	import hero2 from '$lib/assets/marina-bay-sands-hotel-singapore-night-life-city-lights-6000x4000-2665.webp?enhanced&w=2600;2000;400';
 	onMount(() => {
 		gsap.registerPlugin(ScrollTrigger);
 
@@ -29,13 +24,12 @@
 				{ xPercent: 0, duration: 1, autoAlpha: 1, ease: 'sine.out' },
 				'<'
 			);
-			/*
 			gsap.fromTo(
 				'.animateImg',
 				{ yPercent: 0, duration: 0, autoAlpha: 0 },
 				{ yPercent: -15, duration: 1, autoAlpha: 1, ease: 'circ.out' },
 				'<'
-			);*/
+			);
 		});
 
 		let t2 = gsap.matchMedia();
@@ -59,7 +53,7 @@
 					scrub: true,
 					markers: false
 				},
-				y: -100,
+				y: 50,
 				autoAlpha: 0
 			});
 			gsap.to('.animate-second-para', {
@@ -70,7 +64,7 @@
 					scrub: true,
 					markers: false
 				},
-				y: -100,
+				y: 50,
 				autoAlpha: 0
 			});
 			gsap.to('.animate-third-para', {
@@ -81,7 +75,7 @@
 					scrub: true,
 					markers: false
 				},
-				y: -100,
+				y: 50,
 				autoAlpha: 0
 			});
 			gsap.to('.animate-cta', {
@@ -92,109 +86,25 @@
 					scrub: true,
 					markers: false
 				},
-				y: -100,
+				y: 50,
 				autoAlpha: 0
 			});
-		});
-
-		let t3 = gsap.timeline();
-
-		gsap.from('.planet', {
-			y: '15vh',
-			delay: 0.5,
-			duration: 1.5,
-			opacity: 1
-		});
-		gsap.from(
-			'.cloud1-div',
-			{
-				y: 100,
-				x: 100,
-				duration: 0.3,
-				opacity: 1,
-				scale: 0.5,
-				easing: elasticIn
-			},
-			'<'
-		);
-		gsap.from(
-			'.cloud2-div',
-			{
-				y: -100,
-				x: -400,
-				duration: 0.3,
-				opacity: 1,
-				scale: 0.3,
-				easing: elasticInOut
-			},
-			'<'
-		);
-		gsap.to('.rocket1', {
-			scrollTrigger: {
-				trigger: '.animation-div',
-				start: 'top top',
-				scrub: true,
-				markers: false
-			},
-			y: '-120vh',
-			scale: 0.05,
-			autoAlpha: 1
-		});
-		gsap.to('.text-div', {
-			scrollTrigger: {
-				trigger: '.text-div',
-				start: 'top bottom',
-				end: '=+500',
-				scrub: true,
-				markers: false
-			},
-			y: '10vh',
-			x: '-30vw',
-			scale: 2,
-			autoAlpha: 0.6
-		});
-		gsap.to('.text-div2', {
-			scrollTrigger: {
-				trigger: '.text-div2',
-				start: 'top bottom',
-				end: '=+500',
-				scrub: true,
-				markers: false
-			},
-			y: '15vh',
-			scale: 5,
-			autoAlpha: 1
-		});
-		/*
-			gsap.to('.rocket2', {
+			gsap.to('.animateImg', {
 				scrollTrigger: {
-					trigger: '.rocket2',
+					trigger: '.animateImg',
 					start: '-10% center',
-					end: 'bottom bottom',
+					end: 'bottom center',
 					scrub: true,
 					markers: false
 				},
-				y: -600,
-				scale: 0.7
+				scale: 1.7,
+				y: '-17vw'
 			});
-			gsap.to('.rocket3', {
-				scrollTrigger: {
-					trigger: '.rocket3',
-					start: 'top center',
-					end: 'bottom bottom',
-					scrub: true,
-					markers: false
-				},
-				y: -400,
-				scale: 2.5,
-				x: 100
-			}); */
+		});
 	}); //close onmount
 </script>
 
-<div
-	class="-mt-20 mb-[10rem] grid grid-cols-1 justify-items-center gap-x-8 gap-y-8 px-5 pt-20 pt-20 lg:grid-cols-2 lg:px-20"
->
+<div class="grid grid-cols-1 justify-items-center gap-x-8 gap-y-8 px-5 lg:grid-cols-2 lg:px-20">
 	<div
 		class="animateLeft self-center text-center lg:ps-[10rem] xl:px-[4rem] min-[1921px]:pe-[5rem] min-[1921px]:ps-[7rem]"
 	>
@@ -205,14 +115,21 @@
 			>
 		</h1>
 	</div>
-	<div class="animateRight z-50 self-center justify-self-start lg:pe-20">
-		<h2 class="animate-first-para group mb-7">Let Apptitude support you</h2>
+	<div class="animateRight z-50 justify-self-start lg:pe-20">
+		<h2 class="animate-first-para group mb-7">How Apptitude helps you</h2>
 		<p class="animate-first-para z-10 py-2 lg:text-xl">
 			<TablerSquareRoundedPlusFilled
 				class="me-3 inline fill-primary align-bottom"
 				width="1.5em"
 				height="1.5em"
-			/>Find competencies, use resources, learn
+			/>Find out competencies you need to have
+		</p>
+		<p class="animate-second-para z-10 py-2 lg:text-xl">
+			<TablerSquareRoundedPlusFilled
+				class="me-3 inline fill-primary align-bottom"
+				width="1.5em"
+				height="1.5em"
+			/>Use resources here, do self learning
 		</p>
 		<p class="animate-second-para z-10 py-2 lg:text-xl">
 			<TablerSquareRoundedPlusFilled
@@ -221,12 +138,19 @@
 				height="1.5em"
 			/>Turbo charge your progress using quickstart guides,
 		</p>
-		<p class="animate-third-para z-10 mb-7 py-2 lg:text-xl">
+		<p class="animate-third-para z-10 py-2 lg:text-xl">
 			<TablerSquareRoundedPlusFilled
 				class="me-3 inline fill-primary align-bottom"
 				width="1.5em"
 				height="1.5em"
 			/>Git gud, make better decisions
+		</p>
+		<p class="animate-third-para z-20 pb-7 pt-2 lg:text-xl">
+			<TablerSquareRoundedPlusFilled
+				class="me-3 inline fill-primary align-bottom"
+				width="1.5em"
+				height="1.5em"
+			/>Good + cheap product = happy (bosses + taxpayers)
 		</p>
 		<p class="animate-cta mb-5 mt-1 space-x-2 lg:space-x-2 lg:text-xl">
 			<a
@@ -241,63 +165,30 @@
 			>
 		</p>
 	</div>
+	<!--<div class="avatar flex px-12 lg:col-span-2 lg:mt-12 lg:w-3/6">
+		 <div class="animateImg rounded-full">
+			<enhanced:img
+				src={hero}
+				alt="Hero"
+				sizes="(min-width:1920px) 2560px, (min-width:1080px) 1080px, (min-width:768px) 400px"
+			></enhanced:img>
+		</div>
+	</div>-->
 </div>
-<div
-	class="animation-div relative"
-	style="background-image: url({starBg}); background-size: cover; background-position: center; overflow: clip"
->
-	<div></div>
-	<div class="planet-div">
-		<enhanced:img
-			src={pixarEarth}
-			class="planet"
-			alt="Planet"
-			sizes="(min-width:1400px) 1200px, (max-width:1399px) 600px, (max-width:768px) 400px"
-		/>
-	</div>
-	<div class="cloud1-div">
-		<enhanced:img
-			src={cloud1}
-			class="cloud"
-			alt="Cloud"
-			sizes="(min-width:1400px) 700px, (max-width:1399px) 500px, (max-width:768px) 200px"
-		/>
-	</div>
-	<div class="cloud2-div">
-		<enhanced:img
-			src={cloud2}
-			class="cloud"
-			alt="Cloud"
-			sizes="(min-width:1400px) 700px, (max-width:1399px) 500px, (max-width:768px) 200px"
-		/>
-	</div>
-	<div class="rocket-div">
-		<enhanced:img
-			src={rocket1}
-			class="rocket1"
-			alt="Rocket"
-			sizes="(min-width:1400px) 1200px, (max-width:1399px) 600px, (max-width:768px) 400px"
-		/>
-	</div>
-	<div class="text-div text-3xl font-bold lg:text-6xl">
-		<span class="text-white">Learning take-off...</span>
-	</div>
-	<div class="text-div2 text-3xl font-bold lg:text-6xl">
-		<span
-			class="bg-gradient-to-r from-orange-400 via-red-300 to-pink-500 bg-clip-text text-transparent"
-		>
-			3. 2. 1. Launch!</span
-		>
-	</div>
-	<!--<div><img src={rocket1} class="rocket2" alt="rocket" /></div>
-	<div><img src={rocket1} class="rocket3" alt="rocket" /></div>-->
+<div class="animateImg mt-2">
+	<enhanced:img
+		src={hero2}
+		alt="Hero"
+		sizes="(min-width:1440px) 2600px, (min-width:1080px) 2000px, (min-width:768px) 400px"
+		class="object-contain"
+	></enhanced:img>
 </div>
 <div class="grid w-full grid-cols-1 justify-items-center px-5 lg:px-20">
-	<div class="ending-text mt-20">
+	<div>
 		<h1
 			class="mb-11 inline-block bg-gradient-to-r from-emerald-200 via-orange-200 to-pink-200 bg-clip-text py-3 text-transparent"
 		>
-			So what's this about?
+			What's Apptitude?
 		</h1>
 		<h2 class="mb-7">TL;DR</h2>
 		<p class="mb-7">
@@ -327,54 +218,3 @@
 		</p>
 	</div>
 </div>
-
-<style>
-	.animation-div {
-		min-height: 200vh;
-	}
-	.planet-div {
-		position: absolute;
-		top: 40%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-	}
-	.cloud1-div {
-		position: absolute;
-		top: 50%;
-		left: 60%;
-		transform: translate(-50%, -50%);
-	}
-	.cloud2-div {
-		position: absolute;
-		top: 50%;
-		left: 35%;
-		scale: 0.7;
-		transform: translate(-50%, -50%);
-	}
-	.rocket-div {
-		position: absolute;
-		top: 100%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-	}
-	.text-div {
-		position: absolute;
-		top: 2%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		opacity: 0;
-	}
-	.text-div2 {
-		position: absolute;
-		top: 8%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		opacity: 0;
-	}
-
-	@media only screen and (max-width: 600px) {
-		.text-div .text-div2 {
-			opacity: 1;
-		}
-	}
-</style>

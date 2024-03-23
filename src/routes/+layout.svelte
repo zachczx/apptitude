@@ -107,7 +107,7 @@
 		<p class="mb-2">Copyright © 2024 Zixian Chen. All rights reserved.</p>
 	</aside>
 	<nav class="grid grid-flow-col gap-4">
-		<span class="font-bold">App Junkyard</span>
+		<span class="font-bold">My App Junkyard</span>
 		<a href="https://titude.app/" class="link-hover link"
 			><TablerSquareRoundedPlusFilled class="mb-1 inline fill-primary" /> Apptitude</a
 		>
