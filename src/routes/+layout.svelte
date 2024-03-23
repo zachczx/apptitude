@@ -108,25 +108,25 @@
 	</aside>
 	<nav class="grid grid-flow-col gap-4">
 		<span class="font-bold">My App Junkyard</span>
-		<a href="https://titude.app/" class="link-hover link"
+		<a href="https://titude.app/" class="hover:text-primary"
 			><TablerSquareRoundedPlusFilled class="mb-1 inline fill-primary" /> Apptitude</a
 		>
-		<a href="https://app.zixian.dev/rank/" class="link-hover link"
+		<a href="https://app.zixian.dev/rank/" class="hover:text-primary"
 			><TablerSquareRoundedPlusFilled class="mb-1 inline fill-primary" /> Rank-a-Mate</a
 		>
-		<a href="https://app.zixian.dev/eatyourmeds/" class="link-hover link"
+		<a href="https://app.zixian.dev/eatyourmeds/" class="hover:text-primary"
 			><TablerSquareRoundedPlusFilled class="mb-1 inline fill-primary" /> Eat Your Medicine</a
 		>
-		<a href="https://btonomics.com/" class="link-hover link"
+		<a href="https://btonomics.com/" class="hover:text-primary"
 			><TablerSquareRoundedPlusFilled class="mb-1 inline fill-primary" /> Btonomics</a
 		>
 	</nav>
 	<nav class="grid grid-flow-col gap-4">
 		<span class="font-bold">Socials</span>
-		<a href="https://www.linkedin.com/in/zixianchen/" class="link-hover link"
+		<a href="https://www.linkedin.com/in/zixianchen/" class="hover:text-primary"
 			><TablerSquareRoundedPlusFilled class="mb-1 inline fill-primary" /> LinkedIn</a
 		>
-		<a href="https://zixianchen.com/" class="link-hover link"
+		<a href="https://zixianchen.com/" class="hover:text-primary"
 			><TablerSquareRoundedPlusFilled class="mb-1 inline fill-primary" /> Website</a
 		>
 	</nav>
