@@ -12,7 +12,7 @@
 	import cloud1 from '$lib/assets/cloud1.webp?enhanced&w=700;500;200';
 	import cloud2 from '$lib/assets/cloud2.webp?enhanced&w=700;500;200';
 	import cloud3 from '$lib/assets/cloud3.webp?enhanced&w=700;500;200';
-	import bellCurveMeme from '$lib/assets/c9m2ve26zqib1.jpg?enhanced&w=1300;700;500';
+	import bellCurveMeme from '$lib/assets/product-bell-curve.webp';
 	import { elasticIn, elasticInOut } from 'svelte/easing';
 
 	onMount(() => {
@@ -335,12 +335,7 @@
 			Good decisions are mostly common sense, but what's intuitive doesn't get chosen in the public
 			service. Like this meme here actually.
 		</p>
-		<enhanced:img
-			src={bellCurveMeme}
-			class="mb-7"
-			alt="Geniuses and noobs"
-			sizes="(min-width:1400px) 1300px, (min-width:800px) 700px, (max-width:px) 500px"
-		/>
+		<img src={bellCurveMeme} class="mb-7" alt="Geniuses and noobs" />
 		<p class="mb-7 text-2xl">
 			Hopefully with a better idea of competencies and better choices, we can all shift to the left
 			or right parts of the curve.

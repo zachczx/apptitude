@@ -3,7 +3,7 @@
 	import { slide } from 'svelte/transition';
 	import Breadcrumbs from '$lib/Breadcrumbs.svelte';
 	import TablerLink from '$lib/assets/svg/TablerLink.svelte';
-	import bellCurveMeme from '$lib/assets/c9m2ve26zqib1.jpg?enhanced&w=1300;700;500';
+	import bellCurveMeme from '$lib/assets/product-bell-curve.webp';
 
 	let seeMore = false;
 </script>
@@ -102,12 +102,7 @@
 						public service. Hopefully with a better idea of competencies and better choices, I (and
 						maybe you) can decide to shift to the left or right parts of the curve.
 					</p>
-					<enhanced:img
-						src={bellCurveMeme}
-						class="mb-7"
-						alt="Geniuses and noobs"
-						sizes="(min-width:1400px) 1300px, (min-width:800px) 700px, (max-width:px) 500px"
-					/>
+					<img src={bellCurveMeme} class="mb-7" alt="Geniuses and noobs" />
 				</div>
 			{/if}
 			<h2 class="mb-7 mt-12">What's in it for you?</h2>
