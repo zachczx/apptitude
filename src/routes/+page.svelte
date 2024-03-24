@@ -6,7 +6,8 @@
 	import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 	import TablerHelpCircleFilled from '$lib/assets/svg/TablerHelpCircleFilled.svelte';
 	import TablerChevronRight from '$lib/assets/svg/TablerChevronRight.svelte';
-	import rocket1 from '$lib/assets/rocket_b.webp?enhanced&w=1200;600;400';
+	import rocketb from '$lib/assets/rocket_b.webp?enhanced&w=1200;600;400';
+	import rocketc from '$lib/assets/rocket_c.webp?enhanced&w=1200;600;400';
 	import starBg from '$lib/assets/paul-volkmer-qVotvbsuM_c-unsplash.webp';
 	import pixarEarth from '$lib/assets/pixar-earth.webp?enhanced&w=1200;600;400';
 	import cloud1 from '$lib/assets/cloud1.webp?enhanced&w=700;500;200';
@@ -135,7 +136,7 @@
 			opacity: 1,
 			easing: elasticIn
 		});
-		gsap.to('.rocket1', {
+		gsap.to('.rocketb', {
 			scrollTrigger: {
 				trigger: '.animation-div',
 				start: 'top top',
@@ -144,6 +145,19 @@
 			},
 			y: '-120vh',
 			scale: 0.05,
+			autoAlpha: 1
+		});
+		gsap.to('.rocketc', {
+			scrollTrigger: {
+				trigger: '.animation-div',
+				start: 'top center',
+				scrub: true,
+				markers: true
+			},
+			y: '-120vh',
+			x: '-30vw',
+			rotation: '-0.8rad',
+			scale: 10,
 			autoAlpha: 1
 		});
 		gsap.to('.tagline-intro', {
@@ -276,10 +290,18 @@
 			sizes="(min-width:1400px) 700px, (max-width:1399px) 500px, (max-width:768px) 200px"
 		/>
 	</div>
-	<div class="rocket-div">
+	<div class="rocket-b-div">
 		<enhanced:img
-			src={rocket1}
-			class="rocket1"
+			src={rocketb}
+			class="rocketb"
+			alt="Rocket"
+			sizes="(min-width:1400px) 1200px, (max-width:1399px) 600px, (max-width:768px) 400px"
+		/>
+	</div>
+	<div class="rocket-c-div">
+		<enhanced:img
+			src={rocketc}
+			class="rocketc"
 			alt="Rocket"
 			sizes="(min-width:1400px) 1200px, (max-width:1399px) 600px, (max-width:768px) 400px"
 		/>
@@ -309,13 +331,11 @@
 			3. 2. 1. Launch!</span
 		>
 	</div>
-	<!--<div><img src={rocket1} class="rocket2" alt="rocket" /></div>
-	<div><img src={rocket1} class="rocket3" alt="rocket" /></div>-->
 </div>
 <div
 	class="mt-16 grid w-full grid-cols-1 justify-items-center gap-x-16 px-5 lg:grid-cols-2 lg:px-20"
 >
-	<div class="avatar self-center">
+	<div class="avatar self-center self-center">
 		<div class="mask mask-squircle">
 			<enhanced:img
 				src={oops2}
@@ -324,7 +344,7 @@
 			/>
 		</div>
 	</div>
-	<div class="ending-text mt-4">
+	<div class="ending-text mt-4 self-center">
 		<h1
 			class="mb-11 inline-block bg-gradient-to-r from-emerald-200 via-orange-200 to-pink-200 bg-clip-text py-3 text-transparent"
 		>
@@ -384,10 +404,17 @@
 		transform: translate(-50%, -50%);
 		z-index: 3;
 	}
-	.rocket-div {
+	.rocket-b-div {
 		position: absolute;
 		top: 110%;
 		left: 50%;
+		transform: translate(-50%, -50%);
+		z-index: 3;
+	}
+	.rocket-c-div {
+		position: absolute;
+		top: 110%;
+		left: 95%;
 		transform: translate(-50%, -50%);
 		z-index: 3;
 	}
