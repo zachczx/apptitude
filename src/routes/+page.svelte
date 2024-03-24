@@ -6,15 +6,14 @@
 	import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 	import TablerHelpCircleFilled from '$lib/assets/svg/TablerHelpCircleFilled.svelte';
 	import TablerChevronRight from '$lib/assets/svg/TablerChevronRight.svelte';
-	import rocketb from '$lib/assets/rocket_b.webp?enhanced&w=1200;600;400';
-	import rocketc from '$lib/assets/rocket_c.webp?enhanced&w=1200;600;400';
+	import rocketb from '$lib/assets/rocket_b.webp?enhanced&w=1200;800;400';
+	import rocketc from '$lib/assets/rocket_c.webp?enhanced&w=1500;800;400';
 	import starBg from '$lib/assets/paul-volkmer-qVotvbsuM_c-unsplash.webp';
 	import pixarEarth from '$lib/assets/pixar-earth.webp?enhanced&w=1200;600;400';
 	import cloud1 from '$lib/assets/cloud1.webp?enhanced&w=700;500;200';
 	import cloud2 from '$lib/assets/cloud2.webp?enhanced&w=700;500;200';
 	import cloud3 from '$lib/assets/cloud3.webp?enhanced&w=700;500;200';
 	import bellCurveMeme from '$lib/assets/product-bell-curve.webp';
-	import { elasticIn, elasticInOut } from 'svelte/easing';
 	import oops from '$lib/assets/oops.webp?enhanced&w=1600;800;400';
 	import oops2 from '$lib/assets/oops2.webp?enhanced&w=1600;800;400';
 
@@ -83,60 +82,122 @@
 			});
 		});*/
 
-		let t3 = gsap.timeline();
+		let t3 = gsap.matchMedia();
+		t3.add('(min-width: 1028px)', () => {
+			gsap.from('.planet', {
+				y: '-15vh'
+			});
+			gsap.from('.tagline-intro', {
+				autoAlpha: 0
+			});
+			gsap.from('.tagline-green', {
+				autoAlpha: 0
+			});
+			gsap.from('.tagline-green2', {
+				autoAlpha: 0
+			});
+			gsap.from('.tagline-darkgreen', {
+				autoAlpha: 0
+			});
 
-		gsap.from('.planet', {
-			y: '-15vh'
+			gsap.to('.planet', {
+				scrollTrigger: {
+					trigger: '.planet',
+					start: 'top center',
+					scrub: true,
+					markers: false
+				},
+				y: '15vh',
+				rotation: 2,
+				delay: 0.5,
+				duration: 3
+			});
+			gsap.to('.cloud1-div', {
+				scrollTrigger: {
+					trigger: '.planet',
+					start: 'top center',
+					scrub: true,
+					markers: false
+				},
+				y: '-10vh',
+				x: '-30vw',
+				opacity: 1
+			});
+			gsap.to('.cloud2-div', {
+				scrollTrigger: {
+					trigger: '.planet',
+					start: 'top center',
+					scrub: true,
+					markers: false
+				},
+				y: '30vh',
+				x: '-20vw',
+				opacity: 1
+			});
+			gsap.to('.cloud3-div', {
+				scrollTrigger: {
+					trigger: '.planet',
+					start: 'top center',
+					scrub: true,
+					markers: false
+				},
+				y: 0.1,
+				x: 0.1,
+				opacity: 1
+			});
+			gsap.to('.tagline-intro', {
+				scrollTrigger: {
+					trigger: '.tagline-intro',
+					start: 'top bottom',
+					end: '=+500',
+					scrub: true,
+					markers: false
+				},
+				y: '10vh',
+				x: '-30vw',
+				scale: 2,
+				autoAlpha: 0.8
+			});
+			gsap.to('.tagline-green2', {
+				scrollTrigger: {
+					trigger: '.tagline-green2',
+					start: 'top bottom',
+					end: '=+500',
+					scrub: true,
+					markers: false
+				},
+				y: '15vh',
+				scale: 5,
+				autoAlpha: 0.9
+			});
+			gsap.to('.tagline-green', {
+				scrollTrigger: {
+					trigger: '.tagline-green2',
+					start: 'top bottom',
+					end: '=+500',
+					scrub: true,
+					markers: false
+				},
+				y: '15vh',
+				scale: 5,
+				autoAlpha: 0.9
+			});
+			gsap.to('.tagline-darkgreen', {
+				scrollTrigger: {
+					trigger: '.tagline-green2',
+					start: 'top bottom',
+					end: '=+500',
+					scrub: true,
+					markers: false
+				},
+				y: '15vh',
+				scale: 5,
+				autoAlpha: 0.9
+			});
 		});
-		gsap.to('.planet', {
-			scrollTrigger: {
-				trigger: '.planet',
-				start: 'top center',
-				scrub: true,
-				markers: false
-			},
-			y: '15vh',
-			rotation: 2,
-			delay: 0.5,
-			duration: 3
-		});
-		gsap.to('.cloud1-div', {
-			scrollTrigger: {
-				trigger: '.planet',
-				start: 'top center',
-				scrub: true,
-				markers: false
-			},
-			y: '-10vh',
-			x: '-30vw',
-			opacity: 1,
-			easing: elasticIn
-		});
-		gsap.to('.cloud2-div', {
-			scrollTrigger: {
-				trigger: '.planet',
-				start: 'top center',
-				scrub: true,
-				markers: false
-			},
-			y: '30vh',
-			x: '-20vw',
-			opacity: 1,
-			easing: elasticIn
-		});
-		gsap.to('.cloud3-div', {
-			scrollTrigger: {
-				trigger: '.planet',
-				start: 'top center',
-				scrub: true,
-				markers: false
-			},
-			y: 0.1,
-			x: 0.1,
-			opacity: 1,
-			easing: elasticIn
-		});
-		gsap.to('.rocketb', {
+
+		let t4 = gsap.timeline();
+		t4.to('.rocketb', {
 			scrollTrigger: {
 				trigger: '.animation-div',
 				start: 'top top',
@@ -147,67 +208,18 @@
 			scale: 0.05,
 			autoAlpha: 1
 		});
-		gsap.to('.rocketc', {
+		t4.to('.rocketc', {
 			scrollTrigger: {
 				trigger: '.animation-div',
 				start: 'top center',
 				scrub: true,
 				markers: false
 			},
-			y: '-120vh',
-			x: '-30vw',
+			y: '-60vh',
+			x: '-80vw',
 			rotation: '-0.8rad',
-			scale: 10,
+			scale: 12,
 			autoAlpha: 1
-		});
-		gsap.to('.tagline-intro', {
-			scrollTrigger: {
-				trigger: '.tagline-intro',
-				start: 'top bottom',
-				end: '=+500',
-				scrub: true,
-				markers: false
-			},
-			y: '10vh',
-			x: '-30vw',
-			scale: 2,
-			autoAlpha: 0.8
-		});
-		gsap.to('.tagline-green2', {
-			scrollTrigger: {
-				trigger: '.tagline-green2',
-				start: 'top bottom',
-				end: '=+500',
-				scrub: true,
-				markers: false
-			},
-			y: '15vh',
-			scale: 5,
-			autoAlpha: 0.9
-		});
-		gsap.to('.tagline-green', {
-			scrollTrigger: {
-				trigger: '.tagline-green2',
-				start: 'top bottom',
-				end: '=+500',
-				scrub: true,
-				markers: false
-			},
-			y: '15vh',
-			scale: 5,
-			autoAlpha: 0.9
-		});
-		gsap.to('.tagline-darkgreen', {
-			scrollTrigger: {
-				trigger: '.tagline-green2',
-				start: 'top bottom',
-				end: '=+500',
-				scrub: true,
-				markers: false
-			},
-			y: '15vh',
-			scale: 5,
-			autoAlpha: 0.9
 		});
 	}); //close onmount
 </script>
@@ -227,12 +239,12 @@
 	<div class="self-center justify-self-center lg:ps-16">
 		<h1 class=" mb-12 text-5xl lg:text-6xl xl:text-7xl min-[1921px]:text-9xl">
 			<span
-				class="bg-gradient-to-r from-lime-300 via-green-400 to-teal-300 bg-clip-text text-transparent"
+				class="bg-gradient-to-r from-lime-300 via-green-400 to-teal-100 bg-clip-text text-transparent"
 				>Make digital delights, not disasters.</span
 			>
 		</h1>
 		<p class="mb-1 py-2 text-lg lg:text-2xl">
-			Digital products in the public sector can and should do better. Get access to resources, learn
+			Digital products in the public sector can and should be better. Get access to resources, learn
 			what it takes to make good digital products that citizens will enjoy using.
 		</p>
 		<p class="mb-7 py-2 text-lg lg:text-2xl">
@@ -295,7 +307,7 @@
 			src={rocketb}
 			class="rocketb"
 			alt="Rocket"
-			sizes="(min-width:1400px) 1200px, (max-width:1399px) 600px, (max-width:768px) 400px"
+			sizes="(min-width:1400px) 1200px, (max-width:1399px) 800px, (max-width:768px) 400px"
 		/>
 	</div>
 	<div class="rocket-c-div">
@@ -303,11 +315,11 @@
 			src={rocketc}
 			class="rocketc"
 			alt="Rocket"
-			sizes="(min-width:1400px) 1200px, (max-width:1399px) 600px, (max-width:768px) 400px"
+			sizes="(min-width:1400px) 1500px, (max-width:1399px) 800px, (max-width:768px) 400px"
 		/>
 	</div>
 	<div class="tagline-intro text-3xl font-bold lg:text-6xl">
-		<span class="text-white">Learning take-off in...</span>
+		<span class="text-white">Learning lift-off in...</span>
 	</div>
 
 	<div class="tagline-green2 text-3xl font-bold lg:text-6xl">
@@ -355,18 +367,21 @@
 			them, and quickly get started to scrutinize tech stuff that I like to.
 		</p>
 		<p class="mb-7 text-xl">
-			Apptitude is my attempt to start a more dissatisfied culture/attitude to tech products, by
-			opening up the veil and giving people the mental tools/mindset to challenge bad plans and
-			decisions.
+			Apptitude is my attempt to start more dissatisfaction and rebellion against poor product
+			outcomes and decision making. Breaking groupthink. Giving people the mental tools/mindset to
+			critique and understand good decisions don't magically come with positions of power.
 		</p>
 		<p class="mb-7 text-xl">
-			Good decisions are mostly common sense, but what's intuitive doesn't get chosen in the public
-			service. Like this meme here actually.
+			Good decisions are mostly common sense, but what sounds 'duh' often doesn't get chosen in the
+			public service. Like this meme here actually. Sometimes it's entrenched mindsets, but
+			oftentimes it's simply not knowing what the issue even is and what's the standard out in the
+			world.
 		</p>
 		<img src={bellCurveMeme} class="mb-7" alt="Geniuses and noobs" />
 		<p class="mb-7 text-xl">
-			Hopefully with a better idea of competencies and better choices, we can all shift to the left
-			or right parts of the curve.
+			Hopefully with a better idea of the real world (this does include the imperfects in tech,
+			*cough* js runtimes and frameworks *cough*) and seeing a more complete set of choices, we can
+			all shift to the right (or left is fine too) parts of the curve.
 		</p>
 	</div>
 </div>
@@ -413,7 +428,7 @@
 	}
 	.rocket-c-div {
 		position: absolute;
-		top: 110%;
+		top: 99%;
 		left: 95%;
 		transform: translate(-50%, -50%);
 		z-index: 3;
@@ -423,14 +438,12 @@
 		top: 12%;
 		left: 50%;
 		transform: translate(-50%, -50%);
-		opacity: 0;
 	}
 	.tagline-green2 {
 		position: absolute;
 		top: 18%;
 		left: 50%;
 		transform: translate(-50%, -50%);
-		opacity: 0;
 		z-index: 20;
 	}
 	.tagline-green {
@@ -438,7 +451,6 @@
 		top: 18.2%;
 		left: 50.3%;
 		transform: translate(-50%, -50%);
-		opacity: 0;
 		z-index: 10;
 	}
 	.tagline-darkgreen {
@@ -446,7 +458,6 @@
 		top: 17.8%;
 		left: 49.8%;
 		transform: translate(-50%, -50%);
-		opacity: 0;
 		z-index: 5;
 	}
 </style>

@@ -106,28 +106,33 @@
 	<aside>
 		<p class="mb-2">Copyright © 2024 Zixian Chen. All rights reserved.</p>
 	</aside>
-	<nav class="grid grid-flow-col gap-4">
-		<span class="font-bold">My App Junkyard</span>
-		<a href="https://titude.app/" class="hover:text-primary"
-			><TablerSquareRoundedPlusFilled class="mb-1 inline fill-primary" /> Apptitude</a
-		>
-		<a href="https://app.zixian.dev/rank/" class="hover:text-primary"
-			><TablerSquareRoundedPlusFilled class="mb-1 inline fill-primary" /> Rank-a-Mate</a
-		>
-		<a href="https://app.zixian.dev/eatyourmeds/" class="hover:text-primary"
-			><TablerSquareRoundedPlusFilled class="mb-1 inline fill-primary" /> Eat Your Medicine</a
-		>
-		<a href="https://btonomics.com/" class="hover:text-primary"
-			><TablerSquareRoundedPlusFilled class="mb-1 inline fill-primary" /> Btonomics</a
-		>
-	</nav>
-	<nav class="grid grid-flow-col gap-4">
-		<span class="font-bold">Socials</span>
-		<a href="https://www.linkedin.com/in/zixianchen/" class="hover:text-primary"
-			><TablerSquareRoundedPlusFilled class="mb-1 inline fill-primary" /> LinkedIn</a
-		>
-		<a href="https://zixianchen.com/" class="hover:text-primary"
-			><TablerSquareRoundedPlusFilled class="mb-1 inline fill-primary" /> Website</a
-		>
-	</nav>
+	<div class="grid grid-cols-1 md:grid-flow-col md:gap-4">
+		<div class="font-bold">My App Junkyard</div>
+		<div>
+			<a href="https://titude.app/" class="hover:text-primary"
+				><TablerSquareRoundedPlusFilled class="mb-1 me-1 ms-2 inline fill-primary" />Apptitude</a
+			>
+			<a href="https://app.zixian.dev/rank/" class="hover:text-primary"
+				><TablerSquareRoundedPlusFilled class="mb-1 me-1 ms-2 inline fill-primary" />Rank a Mate</a
+			>
+			<a href="https://app.zixian.dev/eatyourmeds/" class="hover:text-primary"
+				><TablerSquareRoundedPlusFilled class="mb-1 me-1 ms-2 inline fill-primary" />Eat Your
+				Medicine</a
+			>
+			<a href="https://btonomics.com/" class="hover:text-primary"
+				><TablerSquareRoundedPlusFilled class="mb-1 me-1 ms-2 inline fill-primary" />Btonomics</a
+			>
+		</div>
+	</div>
+	<div class="grid grid-cols-1 md:grid-flow-col md:gap-4">
+		<div class="font-bold">Socials</div>
+		<div>
+			<a href="https://www.linkedin.com/in/zixianchen/" class="hover:text-primary"
+				><TablerSquareRoundedPlusFilled class="mb-1 me-1 ms-2 inline fill-primary" /> LinkedIn</a
+			>
+			<a href="https://zixianchen.com/" class="hover:text-primary"
+				><TablerSquareRoundedPlusFilled class="mb-1 me-1 ms-2 inline fill-primary" /> Website</a
+			>
+		</div>
+	</div>
 </footer>
