@@ -14,10 +14,11 @@
 	import cloud3 from '$lib/assets/cloud3.webp?enhanced&w=700;500;200';
 	import bellCurveMeme from '$lib/assets/product-bell-curve.webp';
 	import { elasticIn, elasticInOut } from 'svelte/easing';
+	import oops from '$lib/assets/oops.webp?enhanced&w=1600;800;400';
 
 	onMount(() => {
 		gsap.registerPlugin(ScrollTrigger);
-
+		/*
 		let t1 = gsap.matchMedia();
 		t1.add('(min-width: 1028px)', () => {
 			gsap.fromTo(
@@ -30,14 +31,6 @@
 				{ xPercent: 50, duration: 0, autoAlpha: 0 },
 				{ xPercent: 0, duration: 1, autoAlpha: 1, ease: 'sine.out' },
 				'<'
-			);
-			/*
-			gsap.fromTo(
-				'.animateImg',
-				{ yPercent: 0, duration: 0, autoAlpha: 0 },
-				{ yPercent: -15, duration: 1, autoAlpha: 1, ease: 'circ.out' },
-				'<'
-			);*/
 		});
 
 		let t2 = gsap.matchMedia();
@@ -86,7 +79,7 @@
 				y: -50,
 				autoAlpha: 0
 			});
-		});
+		});*/
 
 		let t3 = gsap.timeline();
 
@@ -124,7 +117,7 @@
 				scrub: true,
 				markers: false
 			},
-			y: '10vh',
+			y: '30vh',
 			x: '-20vw',
 			opacity: 1,
 			easing: elasticIn
@@ -138,7 +131,6 @@
 			},
 			y: 0.1,
 			x: 0.1,
-			rotation: '0.1rad',
 			opacity: 1,
 			easing: elasticIn
 		});
@@ -206,40 +198,39 @@
 </script>
 
 <div
-	class="-mt-20 mb-[8rem] grid grid-cols-1 justify-items-center gap-x-8 gap-y-8 px-5 pt-20 pt-20 md:grid-cols-2 lg:px-20"
+	class="-mt-20 grid min-h-dvh grid-cols-1 justify-items-center gap-x-8 gap-y-8 px-5 pb-[8rem] pt-20 md:grid-cols-2 lg:px-10"
 >
-	<div class="animateLeft self-center text-center xl:px-[4rem] min-[1921px]:px-[4rem]">
-		<h1 class="animateTitle text-6xl lg:text-7xl xl:text-9xl min-[1921px]:text-9xl">
+	<div class="avatar self-center text-center">
+		<div class="mask mask-squircle">
+			<enhanced:img
+				src={oops}
+				alt="Oops"
+				sizes="(min-width:4000px) 1600px, (max-width:1600px) 800px, (max-width:768px) 400px"
+			/>
+		</div>
+	</div>
+	<div class="self-center justify-self-center lg:ps-16">
+		<h1 class=" mb-12 text-5xl lg:text-6xl xl:text-7xl min-[1921px]:text-9xl">
 			<span
 				class="bg-gradient-to-r from-lime-300 via-green-400 to-teal-300 bg-clip-text text-transparent"
 				>Make digital delights, not disasters.</span
 			>
 		</h1>
-	</div>
-	<div class="animateRight z-50 self-center justify-self-start lg:pe-20">
-		<p class="animate-first-para z-10 py-2 text-3xl font-medium lg:text-5xl">
-			You lack tech knowledge.
+		<p class="mb-7 py-2 text-lg lg:text-2xl">
+			I'll help you turbo charge your learning with resources and quickstart guides.
 		</p>
-		<p class="animate-first-para z-10 py-2 text-3xl font-medium lg:text-5xl">You learn.</p>
-		<p class="animate-second-para z-10 mb-7 py-2 text-3xl font-medium lg:text-5xl">You git gud.</p>
-		<p class="animate-second-para z-10 mb-7 py-2 text-lg lg:text-xl">
-			Turbo charge your development with resources and quickstart guides here.
-		</p>
-		<div class="animate-cta join join-vertical mb-5 lg:join-horizontal">
+		<div class="join join-vertical mb-5 lg:join-horizontal">
 			<a
 				href="/learn"
-				class="btn join-item border border-primary bg-lime-600 font-medium text-white hover:border hover:border-primary hover:bg-gradient-to-r hover:from-lime-500 hover:via-teal-500 hover:to-emerald-600 active:from-lime-600 active:via-teal-600 active:to-emerald-700 lg:text-xl"
+				class="btn join-item border border-primary bg-lime-600 font-medium text-white hover:border hover:border-primary hover:bg-gradient-to-r hover:from-lime-500 hover:via-teal-500 hover:to-emerald-600 active:from-lime-600 active:via-teal-600 active:to-emerald-700 lg:text-2xl"
 				>Learn Basics <SvgChevronRight height="1.7rem" width="1.7rem" stroke="white" /></a
 			>
 			<a
 				href="/cacheup"
-				class="btn join-item border border-primary bg-base-100 from-red-500 via-orange-500 to-pink-500 font-medium text-primary hover:border hover:border-primary hover:bg-gradient-to-r hover:from-red-600 hover:via-orange-600 hover:to-pink-600 hover:text-white active:from-red-700 active:via-orange-700 active:to-pink-700 lg:text-xl"
+				class="btn join-item border border-primary bg-base-100 from-red-500 via-orange-500 to-pink-500 font-medium text-primary hover:border hover:border-primary hover:bg-gradient-to-r hover:from-red-600 hover:via-orange-600 hover:to-pink-600 hover:text-white active:from-red-700 active:via-orange-700 active:to-pink-700 lg:text-2xl"
 				>Quickstart Guides</a
 			>
 		</div>
-		<p class="animate-cta z-10 py-2 text-lg lg:text-xl">
-			Soothe that headache whenever you think of digital products or technical problems.
-		</p>
 	</div>
 </div>
 <div
@@ -349,7 +340,7 @@
 	}
 	.planet-div {
 		position: absolute;
-		top: 40%;
+		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
 		z-index: 2;
@@ -363,15 +354,14 @@
 	}
 	.cloud2-div {
 		position: absolute;
-		top: 20%;
+		top: 30%;
 		left: 75%;
-		scale: 0.8;
 		transform: translate(-50%, -50%);
 		z-index: 1;
 	}
 	.cloud3-div {
 		position: absolute;
-		top: 40%;
+		top: 50%;
 		left: 15%;
 		scale: 0.7;
 		transform: translate(-50%, -50%);
@@ -379,21 +369,21 @@
 	}
 	.rocket-div {
 		position: absolute;
-		top: 100%;
+		top: 110%;
 		left: 50%;
 		transform: translate(-50%, -50%);
 		z-index: 3;
 	}
 	.tagline-intro {
 		position: absolute;
-		top: 2%;
+		top: 12%;
 		left: 50%;
 		transform: translate(-50%, -50%);
 		opacity: 0;
 	}
 	.tagline-green2 {
 		position: absolute;
-		top: 8%;
+		top: 18%;
 		left: 50%;
 		transform: translate(-50%, -50%);
 		opacity: 0;
@@ -401,7 +391,7 @@
 	}
 	.tagline-green {
 		position: absolute;
-		top: 8.2%;
+		top: 18.2%;
 		left: 50.3%;
 		transform: translate(-50%, -50%);
 		opacity: 0;
@@ -409,7 +399,7 @@
 	}
 	.tagline-darkgreen {
 		position: absolute;
-		top: 7.8%;
+		top: 17.8%;
 		left: 49.8%;
 		transform: translate(-50%, -50%);
 		opacity: 0;
