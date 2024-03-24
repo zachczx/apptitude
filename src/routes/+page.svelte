@@ -240,12 +240,17 @@
 		<h1 class=" mb-12 text-5xl lg:text-6xl xl:text-7xl min-[1921px]:text-9xl">
 			<span
 				class="bg-gradient-to-r from-lime-300 via-green-400 to-teal-100 bg-clip-text text-transparent"
-				>Make digital delights, not disasters.</span
+				>Build digital dreams, not nightmares.</span
 			>
 		</h1>
+		<div class="mockup-code mb-7">
+			<pre data-prefix="$"><code>apptitude test tech-knowledge</code></pre>
+			<pre data-prefix=">" class="text-warning"><code>testing......</code></pre>
+			<pre data-prefix=">" class="text-secondary"><code>Error: No module found</code></pre>
+		</div>
 		<p class="mb-1 py-2 text-lg lg:text-2xl">
-			Digital products in the public sector can and should be better. Get access to resources, learn
-			what it takes to make good digital products that citizens will enjoy using.
+			Digital products in the public sector can and should be better. Get access to resources, find
+			out what it takes to make good digital products that citizens will enjoy using.
 		</p>
 		<p class="mb-7 py-2 text-lg lg:text-2xl">
 			Apptitude tries to remedy the slow, unusable, expensive and oft-delayed Govt systems and apps
