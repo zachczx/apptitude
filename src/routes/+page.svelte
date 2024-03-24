@@ -15,6 +15,7 @@
 	import bellCurveMeme from '$lib/assets/product-bell-curve.webp';
 	import { elasticIn, elasticInOut } from 'svelte/easing';
 	import oops from '$lib/assets/oops.webp?enhanced&w=1600;800;400';
+	import oops2 from '$lib/assets/oops2.webp?enhanced&w=1600;800;400';
 
 	onMount(() => {
 		gsap.registerPlugin(ScrollTrigger);
@@ -216,8 +217,13 @@
 				>Make digital delights, not disasters.</span
 			>
 		</h1>
+		<p class="mb-1 py-2 text-lg lg:text-2xl">
+			Digital products in the public sector can and should do better. Get access to resources, learn
+			what it takes to make good digital products that citizens will enjoy using.
+		</p>
 		<p class="mb-7 py-2 text-lg lg:text-2xl">
-			I'll help you turbo charge your learning with resources and quickstart guides.
+			Apptitude tries to remedy the slow, unusable, expensive and oft-delayed Govt systems and apps
+			we see around us, at the root cause.
 		</p>
 		<div class="join join-vertical mb-5 lg:join-horizontal">
 			<a
@@ -306,28 +312,39 @@
 	<!--<div><img src={rocket1} class="rocket2" alt="rocket" /></div>
 	<div><img src={rocket1} class="rocket3" alt="rocket" /></div>-->
 </div>
-<div class="grid w-full grid-cols-1 justify-items-center px-5 lg:px-20">
-	<div class="ending-text mt-20">
+<div
+	class="mt-16 grid w-full grid-cols-1 justify-items-center gap-x-16 px-5 lg:grid-cols-2 lg:px-20"
+>
+	<div class="avatar self-center">
+		<div class="mask mask-squircle">
+			<enhanced:img
+				src={oops2}
+				alt="Oops"
+				sizes="(min-width:4000px) 1600px, (max-width:1600px) 800px, (max-width:768px) 400px"
+			/>
+		</div>
+	</div>
+	<div class="ending-text mt-4">
 		<h1
 			class="mb-11 inline-block bg-gradient-to-r from-emerald-200 via-orange-200 to-pink-200 bg-clip-text py-3 text-transparent"
 		>
 			What's Apptitude?
 		</h1>
-		<p class="mb-7 text-2xl">
+		<p class="mb-7 text-xl">
 			I made Apptitude to help my teammates know what competencies to learn, find out where to learn
 			them, and quickly get started to scrutinize tech stuff that I like to.
 		</p>
-		<p class="mb-7 text-2xl">
+		<p class="mb-7 text-xl">
 			Apptitude is my attempt to start a more dissatisfied culture/attitude to tech products, by
 			opening up the veil and giving people the mental tools/mindset to challenge bad plans and
 			decisions.
 		</p>
-		<p class="mb-7 text-2xl">
+		<p class="mb-7 text-xl">
 			Good decisions are mostly common sense, but what's intuitive doesn't get chosen in the public
 			service. Like this meme here actually.
 		</p>
 		<img src={bellCurveMeme} class="mb-7" alt="Geniuses and noobs" />
-		<p class="mb-7 text-2xl">
+		<p class="mb-7 text-xl">
 			Hopefully with a better idea of competencies and better choices, we can all shift to the left
 			or right parts of the curve.
 		</p>

@@ -1,6 +1,7 @@
 import consultant from '$lib/assets/consultant.webp';
 import consultant2 from '$lib/assets/consultant2.webp';
 import fireshipIO from '$lib/assets/fireship.gif';
+import bizOwner from '$lib/assets/bizowner.webp';
 
 export const techtrippin = [
 	{
@@ -38,5 +39,14 @@ export const techtrippin = [
 			"(On Aceternity UI code) That seems pretty inefficient for something that's purely cosmetic, but in JavaScript development, this is the way. If it looks cool, the code is correct even if the code is not super efficient. It doesn't really matter because the end user is only going to hover over it for a couple of seconds at most.",
 		response: 'Yes.',
 		icon: fireshipIO
+	},
+	{
+		id: 5,
+		name: 'Business owner',
+		prompt:
+			"My form filling e-service needs to be desktop first. It's complex, has many fields so it's only useful to a desktop user. I don't want to and it's not worth redoing to make it mobile first.",
+		response:
+			"Strictly from usability, mobile first is the standard now. There's also no excuse. CSS media queries are so easy to write. Long, complex forms can be a good experience with accordions or pagination. If we go the multiple page app way, state management might require a few lines of code, but any backend/front-end framework should have built in or easily integrated libraries. This is a false choice reminiscent of 2000s web dev!",
+		icon: bizOwner
 	}
 ];

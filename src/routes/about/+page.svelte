@@ -4,6 +4,7 @@
 	import Breadcrumbs from '$lib/Breadcrumbs.svelte';
 	import TablerLink from '$lib/assets/svg/TablerLink.svelte';
 	import bellCurveMeme from '$lib/assets/product-bell-curve.webp';
+	import oops3 from '$lib/assets/oops3.webp?enhanced&w=1600;800;400';
 
 	let seeMore = false;
 </script>
@@ -14,10 +15,10 @@
 	<div class="avatar flex self-stretch px-12 lg:sticky lg:top-20 lg:col-span-2 lg:self-start">
 		<div class="rounded-full">
 			<enhanced:img
-				src={sgneopunk}
-				alt="Dystopian Singapore"
-				sizes="(min-width:1920px) 1428px, (min-width:1080px) 1080px, (min-width:768px) 400px"
-			></enhanced:img>
+				src={oops3}
+				alt="Oops"
+				sizes="(min-width:4000px) 1600px, (max-width:1600px) 800px, (max-width:768px) 400px"
+			/>
 		</div>
 	</div>
 	<div class="grid content-start justify-items-center lg:col-span-3">
