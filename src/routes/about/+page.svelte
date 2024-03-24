@@ -13,7 +13,7 @@
 
 <div class="grid grid-cols-1 justify-items-center gap-x-8 gap-y-8 px-5 lg:grid-cols-5 lg:px-20">
 	<div class="avatar flex self-stretch px-12 lg:sticky lg:top-20 lg:col-span-2 lg:self-start">
-		<div class="rounded-full">
+		<div class="animateImg rounded-full">
 			<enhanced:img
 				src={oops3}
 				alt="Oops"
@@ -78,30 +78,30 @@
 				<div class="mb-7 rounded-lg bg-base-300 p-3" transition:slide={{ delay: 0, duration: 500 }}>
 					<h2 class="mb-7">A longer explanation?</h2>
 					<p class="mb-7">
-						Apptitude is my attempt to start a more dissatisfied culture/attitude to tech products,
-						by opening up the veil and giving people the mental tools/mindset to challenge bad plans
-						and decisions.
+						Apptitude is my attempt to start more dissatisfaction and rebellion against poor product
+						outcomes and decision making. Breaking groupthink, because disagreeing can be very
+						difficult. Giving people the mental tools/mindset to critique and understand good
+						decisions don't magically come with positions of power.
 					</p>
 					<p class="mb-7">
-						In my past job as a "tech policy officer" I came to realize WOG tech outcomes are poor.
-						Looking around, many of Govt's tech products don't make sense, especially for the amount
-						of money we spend <a
+						In my past job as a "tech policy officer" I came to realize WOG tech outcomes were poor.
+						Looking around, many of Govt's tech products weren't good or flat out didn't make sense,
+						especially for the crazy sums we spend <a
 							href="https://www.tech.gov.sg/media/media-releases/2023-05-24-government-projected-to-spend-on-ict-in-fy23"
 							class="text-primary">(here)</a
 						>. Products are slow, laggy, hard to use, super expensive.
 					</p>
 					<p class="mb-7">
-						Reflecting on my own inadequacies and what really capable people thought, I understood
-						that this was because people simply didn't know better. A competency gap. Like a third
-						eye, I couldn't unsee this competency gap. I saw it everywhere, myself included. I can
-						never finish learning, there's too much to pick up and new things keep coming up. But I
-						try my best and supplement those with what I hear from good people around, the good and
-						bad I saw.
+						Reflecting on my own journey and weaknesses, good decisions are mostly common sense, but
+						what sounds 'duh' often doesn't get chosen in the public service. Like this meme here
+						actually. Sometimes it's entrenched mindsets, but oftentimes it's simply not knowing
+						what the issue even is and what's the standard out in the world.But I try my best and
+						supplement those with what I hear from good people around, the good and bad I saw.
 					</p>
 					<p class="mb-7">
-						Good decisions are mostly common sense, but what's intuitive doesn't get chosen in the
-						public service. Hopefully with a better idea of competencies and better choices, I (and
-						maybe you) can decide to shift to the left or right parts of the curve.
+						Hopefully with a better idea of the real world (this does include the imperfects in
+						tech, *cough* js runtimes and frameworks *cough*) and seeing a more complete set of
+						choices, we can all shift to the right (or left is fine too) parts of the curve.
 					</p>
 					<img src={bellCurveMeme} class="mb-7" alt="Geniuses and noobs" />
 				</div>
