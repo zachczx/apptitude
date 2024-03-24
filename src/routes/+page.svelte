@@ -152,7 +152,7 @@
 				trigger: '.animation-div',
 				start: 'top center',
 				scrub: true,
-				markers: true
+				markers: false
 			},
 			y: '-120vh',
 			x: '-30vw',
