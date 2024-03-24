@@ -1,5 +1,6 @@
 import consultant from '$lib/assets/consultant.webp';
 import consultant2 from '$lib/assets/consultant2.webp';
+import consultant3 from '$lib/assets/consultant3.webp';
 import fireshipIO from '$lib/assets/fireship.gif';
 import bizOwner from '$lib/assets/bizowner.webp';
 
@@ -30,7 +31,7 @@ export const techtrippin = [
 			"It's just the way it is --OR-- This cannot be done any other way because that's SOP/policy/IM8 --OR-- We're just doing what PS/DS/CEO commented on.",
 		response:
 			"If something doesn't make sense and will cost tax payers more money, and I'm a tax payer too, voice it! Singapore wasn't built on spending frivolously and decision makers would definitely not choose to do so if they knew. It's a side effect of an efficient civil service where bosses can be given incomplete assessment.",
-		icon: consultant
+		icon: consultant3
 	},
 	{
 		id: 4,

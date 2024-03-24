@@ -246,7 +246,9 @@
 		<div class="mockup-code mb-7">
 			<pre data-prefix="$"><code>apptitude test tech-knowledge</code></pre>
 			<pre data-prefix=">" class="text-warning"><code>testing......</code></pre>
-			<pre data-prefix=">" class="text-secondary"><code>Error: No module found</code></pre>
+			<pre data-prefix=">" class="text-secondary"><code
+					>Error: Module 'tech-knowledge' not found</code
+				></pre>
 		</div>
 		<p class="mb-1 py-2 text-lg lg:text-2xl">
 			Digital products in the public sector can and should be better. Get access to resources, find
@@ -323,25 +325,25 @@
 			sizes="(min-width:1400px) 1500px, (max-width:1399px) 800px, (max-width:768px) 400px"
 		/>
 	</div>
-	<div class="tagline-intro text-3xl font-bold lg:text-6xl">
+	<div class="tagline-intro pixar text-3xl font-bold lg:text-6xl">
 		<span class="text-white">Learning lift-off in...</span>
 	</div>
 
-	<div class="tagline-green2 text-3xl font-bold lg:text-6xl">
+	<div class="tagline-green2 pixar text-3xl font-bold lg:text-6xl">
 		<span
 			class="bg-gradient-to-r from-green-400 via-emerald-300 to-lime-400 bg-clip-text text-transparent"
 		>
 			3. 2. 1. Launch!</span
 		>
 	</div>
-	<div class="tagline-green text-3xl font-bold lg:text-6xl">
+	<div class="tagline-green pixar text-3xl font-bold lg:text-6xl">
 		<span
 			class="bg-gradient-to-r from-yellow-200 via-yellow-300 to-yellow-200 bg-clip-text text-transparent"
 		>
 			3. 2. 1. Launch!</span
 		>
 	</div>
-	<div class="tagline-darkgreen text-3xl font-bold lg:text-6xl">
+	<div class="tagline-darkgreen pixar text-3xl font-bold lg:text-6xl">
 		<span
 			class="bg-gradient-to-r from-green-600 via-lime-600 to-emerald-600 bg-clip-text text-transparent"
 		>
@@ -441,7 +443,7 @@
 	.tagline-intro {
 		position: absolute;
 		top: 12%;
-		left: 50%;
+		left: 60%;
 		transform: translate(-50%, -50%);
 	}
 	.tagline-green2 {
