@@ -1,5 +1,5 @@
 import { error } from '@sveltejs/kit';
-import { info } from '../data.js';
+import { info } from '../data_learn.js';
 
 export function load({ params }) {
 	try {

@@ -198,6 +198,19 @@ export const info = [
 					url: 'https://www.coursera.org/professional-certificates/google-ux-design'
 				},
 				{
+					text: '99% Invisible',
+					url: 'https://99percentinvisible.org/'
+				},
+				{
+					text: 'All-In Podcast - YouTube',
+					url: 'https://www.youtube.com/@allin'
+				},
+				{
+					text: 'UXPodcast',
+					url: 'https://uxpodcast.com/'
+				},
+
+				{
 					text: 'Transformation Fail - Silicon Valley Product Group',
 					url: 'https://www.svpg.com/transformation-fail/'
 				},
@@ -310,8 +323,8 @@ export const info = [
 					url: 'https://www.coursera.org/professional-certificates/ibm-data-science'
 				},
 				{
-					text: 'Video Title Placeholder',
-					url: 'https://www.youtube.com/embed/ZPw0dmGuyyE&list=PLTZYG7bZ1u6rcPlcX75pMkjsYY_HTL7aZ'
+					text: 'Intro to Data Visualization with R & ggplot2 | Google Data Analytics Certificate',
+					url: 'https://www.youtube.com/watch?v=ZPw0dmGuyyE&list=PLTZYG7bZ1u6rcPlcX75pMkjsYY_HTL7aZ'
 				}
 			]
 		}
@@ -335,7 +348,9 @@ export const info = [
 		],
 		questions: [
 			'What are the foundational principles and technologies behind AI and LLMs?',
+			'How are the various options for deploying AI/LLMs/vision models ',
 			'How can AI and LLMs be leveraged to enhance public service delivery?',
+			'What part of the AI value chain do we tackle?',
 			'What ethical considerations should guide the use of AI in public sectors?',
 			'How can we ensure the privacy and security of data used by AI systems?',
 			'What are the key challenges in integrating AI technologies into existing IT infrastructure?',
@@ -345,6 +360,7 @@ export const info = [
 		objectives: [
 			'Sort through the AI hype from the keepers',
 			'Know what everyone not on LLMs is missing out',
+			'See the opportunities and challenges across the AI value chain - GPU Chips, Foundational Models, Compute (Training, Inference) + Storage + Data Infrastructure, Application.',
 			'Understand the different techniques and methods to enhance your business processes with AI',
 			'Spot opportunities to do things much faster and easier with LLMs',
 			'Know which LLMs are good, how good, for what'
@@ -368,6 +384,18 @@ export const info = [
 				{
 					text: 'Deep Learning Specialization - DeepLearning.AI',
 					url: 'https://www.deeplearning.ai/courses/deep-learning-specialization/'
+				},
+				{
+					text: 'AI Explained',
+					url: 'https://www.youtube.com/@aiexplained-official'
+				},
+				{
+					text: 'LLM Visualization',
+					url: 'https://bbycroft.net/llm'
+				},
+				{
+					text: "Chamath Palihapitiya podcast chat with Groq's Jonathan Ross",
+					url: 'https://twitter.com/chamath/status/1754641005851328553?lang=en'
 				}
 			]
 		}
@@ -442,6 +470,10 @@ export const info = [
 					url: 'https://www.geeksforgeeks.org/'
 				},
 				{
+					text: 'Kevin Powell - YouTube',
+					url: 'https://www.youtube.com/@KevinPowell'
+				},
+				{
 					text: 'Web Dev Simplified - YouTube',
 					url: 'https://www.youtube.com/@WebDevSimplified'
 				},
@@ -452,10 +484,6 @@ export const info = [
 				{
 					text: 'BugBytes - YouTube',
 					url: 'https://www.youtube.com/@bugbytes3923'
-				},
-				{
-					text: 'Kevin Powell - YouTube',
-					url: 'https://www.youtube.com/@KevinPowell'
 				}
 			]
 		}

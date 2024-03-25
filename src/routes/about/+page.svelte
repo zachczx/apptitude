@@ -4,7 +4,9 @@
 	import Breadcrumbs from '$lib/Breadcrumbs.svelte';
 	import TablerLink from '$lib/assets/svg/TablerLink.svelte';
 	import bellCurveMeme from '$lib/assets/product-bell-curve.webp';
-	import oops3 from '$lib/assets/oops3.webp?enhanced&w=1600;800;400';
+	import oops3 from '$lib/assets/oops3.webp?enhanced&w=1000;700;400';
+	import pandablanket from '$lib/assets/pandablanket.webp?enhanced&w=1000;700;400';
+	import pandayawn from '$lib/assets/pandayawn.webp?enhanced&w=1000;700;400';
 
 	let seeMore = false;
 </script>
@@ -12,15 +14,9 @@
 <Breadcrumbs textCurrent={'About Apptitude'} />
 
 <div class="grid grid-cols-1 justify-items-center gap-x-8 gap-y-8 px-5 lg:grid-cols-5 lg:px-20">
-	<div class="avatar flex self-stretch px-12 lg:sticky lg:top-20 lg:col-span-2 lg:self-start">
-		<div class="animateImg rounded-full">
-			<enhanced:img
-				src={oops3}
-				alt="Oops"
-				sizes="(min-width:4000px) 1600px, (max-width:1600px) 800px, (max-width:768px) 400px"
-			/>
-		</div>
-	</div>
+	<!--<div class="avatar flex self-stretch px-12 lg:sticky lg:top-20 lg:col-span-2 lg:self-start">
+		<div class="animateImg rounded-full">-->
+
 	<div class="grid content-start justify-items-center lg:col-span-3">
 		<div class="pe-4 ps-2">
 			<h1
@@ -165,6 +161,25 @@
 					class="hover:text-primary">via this Google form <TablerLink class="inline" /></a
 				>.
 			</p>
+		</div>
+	</div>
+	<div class="col-span-2">
+		<div class="overflow-hidden rounded-b-3xl rounded-t-3xl">
+			<enhanced:img
+				src={oops3}
+				alt="Red pandas, because they're cute"
+				sizes="(min-width:4000px) 1000px, (max-width:1600px) 700px, (max-width:768px) 400px"
+			/>
+			<enhanced:img
+				src={pandayawn}
+				alt="Red pandas, because they're cute"
+				sizes="(min-width:4000px) 1000px, (max-width:1600px) 700px, (max-width:768px) 400px"
+			/>
+			<enhanced:img
+				src={pandablanket}
+				alt="Red pandas, because they're cute"
+				sizes="(min-width:4000px) 1000px, (max-width:1600px) 700px, (max-width:768px) 400px"
+			/>
 		</div>
 	</div>
 </div>

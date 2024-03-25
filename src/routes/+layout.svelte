@@ -5,7 +5,7 @@
 	import TablerSquareRoundedPlusFilled from '$lib/assets/svg/TablerSquareRoundedPlusFilled.svelte';
 	let { data } = $props();
 	import { cacheup } from './cacheup/data_cacheup.js';
-	import { info } from './learn/data.js';
+	import { info } from './learn/data_learn.js';
 	let pageName = $state('Apptitude');
 </script>
 

@@ -30,7 +30,7 @@
 </script>
 
 <Breadcrumbs textCurrent={"Tech Trippin'"} />
-<div class="mb-10 grid-cols-1 rounded-lg bg-base-300 px-5 py-5 lg:mx-20 lg:mb-20">
+<div class="mb-10 grid-cols-1 rounded-lg px-5 py-5 lg:mx-20 lg:mb-20">
 	<div class="text-center">
 		<h1
 			class="inline-block bg-gradient-to-r from-emerald-200 via-orange-200 to-pink-200 bg-clip-text py-3 text-transparent"
@@ -43,7 +43,7 @@
 				absolutely no sense.</i
 			>
 		</div>
-		<div class="mx-1 rounded-lg bg-base-100 p-5 text-start text-lg lg:mx-5">
+		<div class="mx-1 rounded-lg bg-base-100 bg-base-300 p-5 text-start text-lg lg:mx-5">
 			<div class="collapse collapse-arrow mb-10 bg-base-200">
 				<input type="checkbox" name="my-accordion-2" bind:checked={showMore} />
 				<div class="collapse-title">

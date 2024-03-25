@@ -1,5 +1,5 @@
 <script>
-	import { info } from './data.js';
+	import { info } from './data_learn.js';
 	import Breadcrumbs from '$lib/Breadcrumbs.svelte';
 </script>
 

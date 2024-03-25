@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,600;1,600&family=Concert+One&family=Roboto:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,600;1,600&family=Outfit:wght@700&family=Roboto:wght@400;500&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -14,13 +15,10 @@
 	font-style: normal;
 }
 
-.pixar {
-	font-family: 'Pixar', sans-serif;
-}
-
-.concert {
-	font-family: 'Concert One', sans-serif;
-	font-weight: 400;
+.popped {
+	font-family: 'Outfit', sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 700;
 	font-style: normal;
 }
 

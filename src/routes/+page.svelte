@@ -32,54 +32,6 @@
 				{ xPercent: 50, duration: 0, autoAlpha: 0 },
 				{ xPercent: 0, duration: 1, autoAlpha: 1, ease: 'sine.out' },
 				'<'
-		});
-
-		let t2 = gsap.matchMedia();
-		t2.add('(min-width: 1028px)', () => {
-			gsap.to('.animateTitle', {
-				scrollTrigger: {
-					trigger: '.animateTitle',
-					start: 'center top',
-					end: '110% top',
-					scrub: true,
-					markers: false
-				},
-				y: -50,
-				autoAlpha: 0
-			});
-			gsap.to('.animate-first-para', {
-				scrollTrigger: {
-					trigger: '.animate-first-para',
-					start: 'top top',
-					end: '+=200',
-					scrub: true,
-					markers: false
-				},
-				y: -50,
-				autoAlpha: 0
-			});
-			gsap.to('.animate-second-para', {
-				scrollTrigger: {
-					trigger: '.animate-second-para',
-					start: 'top top',
-					end: '+=200',
-					scrub: true,
-					markers: false
-				},
-				y: -50,
-				autoAlpha: 0
-			});
-			gsap.to('.animate-cta', {
-				scrollTrigger: {
-					trigger: '.animate-cta',
-					start: '-30 top',
-					end: '+=200',
-					scrub: true,
-					markers: false
-				},
-				y: -50,
-				autoAlpha: 0
-			});
 		});*/
 
 		let t3 = gsap.matchMedia();
@@ -245,12 +197,12 @@
 		</h1>
 		<div class="mockup-code mb-7 w-11/12">
 			<pre data-prefix="$"><code>test tech-knowledge</code></pre>
-			<pre data-prefix=">" class="text-warning"><code>testing......</code></pre>
-			<pre data-prefix=">" class="text-secondary"><code>Error: Module not found</code></pre>
+			<pre data-prefix=">"><code>testing......</code></pre>
+			<pre data-prefix=">" class="text-secondary"><code>Error: tech-knowledge failed</code></pre>
 		</div>
 		<p class="mb-1 py-2 text-lg lg:text-xl">
-			Digital products in the public sector can and should be better. Get access to resources, find
-			out what it takes to make good digital products that citizens will enjoy using.
+			Digital products in the public sector can and should be better. Get help, get resources, find
+			out what makes good digital products that citizens enjoy using.
 		</p>
 		<p class="mb-7 py-2 text-lg lg:text-xl">
 			Apptitude tries to remedy the slow, unusable, expensive and oft-delayed Govt systems and apps
@@ -323,29 +275,29 @@
 			sizes="(min-width:1400px) 1500px, (max-width:1399px) 800px, (max-width:768px) 400px"
 		/>
 	</div>
-	<div class="tagline-intro concert text-2xl font-bold lg:text-5xl">
-		<span class="text-slate-200">Learning lift-off in...</span>
+	<div class="tagline-intro popped text-2xl font-bold lg:text-5xl">
+		<span class="text-slate-100">Launch your learning in...</span>
 	</div>
 
-	<div class="tagline-green2 concert text-3xl font-bold lg:text-6xl">
+	<div class="tagline-green2 popped text-3xl font-bold lg:text-6xl">
 		<span
 			class="bg-gradient-to-r from-green-400 via-emerald-300 to-lime-400 bg-clip-text text-transparent"
 		>
-			3. 2. 1. Launch!</span
+			3.. 2.. 1.. Go!</span
 		>
 	</div>
-	<div class="tagline-green concert text-3xl font-bold lg:text-6xl">
+	<div class="tagline-green popped text-3xl font-bold lg:text-6xl">
 		<span
 			class="bg-gradient-to-r from-yellow-200 via-yellow-300 to-yellow-200 bg-clip-text text-transparent"
 		>
-			3. 2. 1. Launch!</span
+			3.. 2.. 1.. Go!</span
 		>
 	</div>
-	<div class="tagline-darkgreen concert text-3xl font-bold lg:text-6xl">
+	<div class="tagline-darkgreen popped text-3xl font-bold lg:text-6xl">
 		<span
 			class="bg-gradient-to-r from-green-600 via-lime-600 to-emerald-600 bg-clip-text text-transparent"
 		>
-			3. 2. 1. Launch!</span
+			3.. 2.. 1.. Go!</span
 		>
 	</div>
 </div>
@@ -368,25 +320,26 @@
 			What's Apptitude?
 		</h1>
 		<p class="mb-7 text-xl">
-			I made Apptitude to help my teammates know what competencies to learn, find out where to learn
-			them, and quickly get started to scrutinize tech stuff that I like to.
+			I wrote Apptitude to learn Svelte and at the same time figure a way to help my teammates know
+			what competencies to learn, easily grab resources, and quickly use the knowledge to call out
+			bad tech outcomes.
 		</p>
 		<p class="mb-7 text-xl">
-			Apptitude is my attempt to start more dissatisfaction and rebellion against poor product
-			outcomes and decision making. Breaking groupthink. Giving people the mental tools/mindset to
-			critique and understand good decisions don't magically come with positions of power.
+			Apptitude is an attempt to start more dissatisfaction and rebel against poor product outcomes
+			and groupthink. My hypothesis is that people need the knowledge and safety to critique,
+			otherwise it's always safer to defer to people in high positions of power.
 		</p>
 		<p class="mb-7 text-xl">
-			Good decisions are mostly common sense, but what sounds 'duh' often doesn't get chosen in the
-			public service. Like this meme here actually. Sometimes it's entrenched mindsets, but
-			oftentimes it's simply not knowing what the issue even is and what's the standard out in the
-			world.
+			Occam's razor applies - the simplest solution is almost always the best. But that often
+			doesn't get chosen in the public service. Like this meme here actually. Sometimes it's
+			entrenched mindsets, but often people who make assessments don't know what the issue is and
+			what's standard out there.
 		</p>
 		<img src={bellCurveMeme} class="mb-7" alt="Geniuses and noobs" />
 		<p class="mb-7 text-xl">
-			Hopefully with a better idea of the real world (this does include the imperfects in tech,
-			*cough* js runtimes and frameworks *cough*) and seeing a more complete set of choices, we can
-			all shift to the right (or left is fine too) parts of the curve.
+			Hopefully with a better idea of the real world - the good and the bad - and seeing a more
+			complete set of choices, we can all shift to the right (or left is fine too) parts of the
+			curve.
 		</p>
 	</div>
 </div>
