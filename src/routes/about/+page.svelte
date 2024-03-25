@@ -169,22 +169,22 @@
 			<enhanced:img
 				src={oops3}
 				alt="Red pandas, because they're cute"
-				sizes="(min-width:4000px) 1000px, (max-width:1600px) 700px, (max-width:768px) 400px"
+				sizes="(min-width:1920px) 1000px, (min-width:1200px) 700px, (min-width:768px) 400px"
 			/>
 			<enhanced:img
 				src={pandayawn}
 				alt="Red pandas, because they're cute"
-				sizes="(min-width:4000px) 1000px, (max-width:1600px) 700px, (max-width:768px) 400px"
+				sizes="(min-width:1920px) 1000px, (min-width:1200px) 700px, (min-width:768px) 400px"
 			/>
 			<enhanced:img
 				src={pandablanket}
 				alt="Red pandas, because they're cute"
-				sizes="(min-width:4000px) 1000px, (max-width:1600px) 700px, (max-width:768px) 400px"
+				sizes="(min-width:1920px) 1000px, (min-width:1200px) 700px, (min-width:768px) 400px"
 			/>
 			<enhanced:img
 				src={pandabutterfly}
 				alt="Red pandas, because they're cute"
-				sizes="(min-width:4000px) 1000px, (max-width:1600px) 700px, (max-width:768px) 400px"
+				sizes="(min-width:1920px) 1000px, (min-width:1200px) 700px, (min-width:768px) 400px"
 			/>
 		</div>
 	</div>

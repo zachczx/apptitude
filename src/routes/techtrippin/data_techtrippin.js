@@ -5,6 +5,7 @@ import consultant4 from '$lib/assets/consultant4.webp';
 import fireshipIO from '$lib/assets/fireship.gif';
 import bizOwner from '$lib/assets/bizowner.webp';
 import techLead from '$lib/assets/techlead.webp';
+import techLead2 from '$lib/assets/techlead2.webp';
 
 export const techtrippin = [
 	{
@@ -71,7 +72,7 @@ export const techtrippin = [
 		prompt2:
 			"We're not sure, the survey results don't allow us to establish causality. We've some guesses... It could be xxx or yyy, but really we don't know.",
 		response2: '...',
-		icon: consultant2
+		icon: techLead2
 	},
 	{
 		id: 8,

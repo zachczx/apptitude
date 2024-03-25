@@ -113,7 +113,7 @@ export const info = [
 	},
 	{
 		id: 3,
-		name: 'WOG, COG Tools',
+		name: 'Central Tools',
 		slug: 'wog',
 		topics: ['SG Tech Stack', 'GSIB', 'GCC', 'GDC', 'SG-Teams'],
 		questions: [
@@ -248,7 +248,8 @@ export const info = [
 				'https://youtube.com/embed/J4ihLROXzPk?si=wfk8YSa3fePUtHxs',
 				'https://youtube.com/embed/OosYzkP-pLk?si=E7RqVQeN3L50b4sk',
 				'https://youtube.com/embed/vSnCeJEka_s?si=GNhjdQVV8rn9l4iH',
-				'https://youtube.com/embed/scEDHsr3APg'
+				'https://youtube.com/embed/scEDHsr3APg',
+				'https://youtube.com/embed/1evfn3qTYGM'
 			],
 			links: [
 				{
@@ -262,6 +263,10 @@ export const info = [
 				{
 					text: 'Scrum Training Series - YouTube',
 					url: 'https://youtube.com/playlist?list=PLD2BMPY5WcfAYTEYXW0NGxodOi1PLC1XN&si=b_ym-Jy4_UOeS1Iv'
+				},
+				{
+					text: 'Google Project Management: Professional Certificate | Coursera',
+					url: 'https://www.coursera.org/professional-certificates/google-project-management'
 				},
 				{
 					text: 'Agile Project Management with Scrum and Kanban - YouTube',
@@ -369,9 +374,12 @@ export const info = [
 		resources: {
 			youtube: [
 				'https://youtube.com/embed/PeMlggyqz0Y?si=X1ZeR-qr01d_BnP-',
+				'https://youtube.com/embed/Mf1P3n6TqCc',
 				'https://youtube.com/embed/5sLYAQS9sWQ',
+				'https://youtube.com/embed/5t1vTLU7s40?si=uEflOaOw_p1eyRoZ',
+				'https://youtube.com/embed/jvqFAi7vkBc',
 				'https://youtube.com/embed/T-D1OfcDW1M?si=WZJLcElfcEh4-51c',
-				'https://youtube.com/embed/5t1vTLU7s40?si=uEflOaOw_p1eyRoZ'
+				'https://youtube.com/embed/oZPTBXnaSBI'
 			],
 			links: [
 				{
@@ -397,6 +405,10 @@ export const info = [
 				{
 					text: "Chamath Palihapitiya podcast chat with Groq's Jonathan Ross",
 					url: 'https://twitter.com/chamath/status/1754641005851328553?lang=en'
+				},
+				{
+					text: 'Attention Is All You Need | 31st Conference on Neural Information Processing Systems (NIPS 2017)',
+					url: 'https://proceedings.neurips.cc/paper_files/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf'
 				}
 			]
 		}
