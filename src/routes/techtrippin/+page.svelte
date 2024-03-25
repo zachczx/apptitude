@@ -7,6 +7,7 @@
 	import Breadcrumbs from '$lib/Breadcrumbs.svelte';
 	import TablerHelpCircleFilled from '$lib/assets/svg/TablerHelpCircleFilled.svelte';
 	let totalNumber = techtrippin.length - 1;
+	let prev = $state();
 
 	function clickNext(current) {
 		if (current < totalNumber) {
@@ -19,7 +20,7 @@
 
 	function clickPrev(current) {
 		if (current <= totalNumber && current != 0) {
-			let prev = current - 1;
+			prev = current - 1;
 			return prev;
 		} else if (current === 0) {
 			return totalNumber;
@@ -43,11 +44,11 @@
 				absolutely no sense.</i
 			>
 		</div>
-		<div class="mx-1 rounded-lg bg-base-100 bg-base-300 p-5 text-start text-lg lg:mx-5">
+		<div class="mx-1 rounded-lg bg-base-100 p-5 text-start text-lg lg:mx-5">
 			<div class="collapse collapse-arrow mb-10 bg-base-200">
 				<input type="checkbox" name="my-accordion-2" bind:checked={showMore} />
 				<div class="collapse-title">
-					<h2><TablerHelpCircleFilled class="me-3 inline" />What is this?</h2>
+					<h2><TablerHelpCircleFilled class="me-3 inline" />What's this?</h2>
 				</div>
 				<div class="collapse-content">
 					<p class="mb-7 mt-5">
@@ -98,6 +99,42 @@
 										{techtrippinItem.response}
 									</div>
 								</div>
+								{#if techtrippinItem.prompt2 && techtrippinItem.response2}
+									<div class="chat chat-start">
+										<div class="avatar chat-image">
+											<div class="w-10 rounded-full lg:w-[200px]">
+												<img alt="Person" src={techtrippinItem.icon} />
+											</div>
+										</div>
+										<div class="chat-header ms-5 self-end pb-1 font-medium lg:text-xl">
+											{techtrippinItem.name}
+										</div>
+										<div
+											class="chat-bubble bg-gradient-to-r from-slate-800 to-slate-800 p-2 text-xl lg:p-6"
+										>
+											{techtrippinItem.prompt2}
+										</div>
+									</div>
+
+									<div class="chat chat-end">
+										<div class="avatar chat-image">
+											<div class="w-10 rounded-full lg:w-[200px]">
+												<enhanced:img
+													alt="Soy Dev"
+													src={twentyFiveDev}
+													sizes="(min-width:1920px) 200px, (min-width:1080px) 150px, (min-width:768px) 70px"
+												/>
+											</div>
+										</div>
+
+										<div class="chat-header me-5 self-end pb-1 font-medium lg:text-xl">Me</div>
+										<div
+											class="chat-bubble self-start bg-gradient-to-r from-slate-900 via-base-300 to-slate-900 p-2 text-xl lg:p-6"
+										>
+											{techtrippinItem.response2}
+										</div>
+									</div>
+								{/if}
 							</div>
 
 							<div

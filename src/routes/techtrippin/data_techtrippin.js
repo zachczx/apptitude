@@ -1,8 +1,10 @@
 import consultant from '$lib/assets/consultant.webp';
 import consultant2 from '$lib/assets/consultant2.webp';
 import consultant3 from '$lib/assets/consultant3.webp';
+import consultant4 from '$lib/assets/consultant4.webp';
 import fireshipIO from '$lib/assets/fireship.gif';
 import bizOwner from '$lib/assets/bizowner.webp';
+import techLead from '$lib/assets/techlead.webp';
 
 export const techtrippin = [
 	{
@@ -49,5 +51,35 @@ export const techtrippin = [
 		response:
 			"Strictly from usability, mobile first is the standard now. There's also no excuse. CSS media queries are so easy to write. Long, complex forms can be a good experience with accordions or pagination. If we go the multiple page app way, state management might require a few lines of code, but any backend/front-end framework should have built in or easily integrated libraries. This is a false choice reminiscent of 2000s web dev!",
 		icon: bizOwner
+	},
+	{
+		id: 6,
+		name: 'Business owner',
+		prompt: "I'm confident of rolling out my product to internal employee users.",
+		response: 'How do you know your product solves a real pain point?',
+		prompt2:
+			'We have a usability testing framework where we find issues with the product. We make sure users test it.',
+		response2: '...',
+		icon: consultant4
+	},
+	{
+		id: 7,
+		name: 'Tech Product Lead',
+		prompt:
+			"Satisfaction in survey went up double digits. We did a great job and we're surprised and happy.",
+		response: 'Great. Why was that so?',
+		prompt2:
+			"We're not sure, the survey results don't allow us to establish causality. We've some guesses... It could be xxx or yyy, but really we don't know.",
+		response2: '...',
+		icon: consultant2
+	},
+	{
+		id: 8,
+		name: 'Tech Lead',
+		prompt:
+			"Business owner says it's a legacy system, the current system and form filling UI are dated, ugly. We reached the max customization to make it prettier. So we'll need money to refactor. We'll go to the cloud, use Next JS, break up the monolith as many micro services, build common components that we can eventually share across the sector. We'll buy a new business rules engine because the current one is very old and no one knows what's inside. We'll make the new one customizable for non-technical users to write business logic.",
+		response:
+			"Well, you haven't told me why you need to rebuild the system, not with objective stats. And you seem to be asking for money to replace the rules engine, so you need to tell me more about that and the trade-offs, instead of putting the cart before the horse with the Next JS, cloud etc.",
+		icon: techLead
 	}
 ];

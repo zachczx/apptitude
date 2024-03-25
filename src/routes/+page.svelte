@@ -189,7 +189,9 @@
 		</div>
 	</div>
 	<div class="self-center justify-self-center lg:ps-16">
-		<h1 class=" mb-12 text-5xl lg:text-6xl xl:text-7xl min-[1921px]:text-9xl">
+		<h1
+			class=" mb-12 text-center text-5xl md:text-start lg:text-6xl xl:text-7xl min-[1921px]:text-9xl"
+		>
 			<span
 				class="bg-gradient-to-r from-lime-300 via-green-400 to-teal-100 bg-clip-text text-transparent"
 				>Build digital dreams, not nightmares.</span
