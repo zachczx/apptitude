@@ -225,9 +225,9 @@
 </script>
 
 <div
-	class="-mt-20 grid min-h-dvh grid-cols-1 justify-items-center gap-x-8 gap-y-8 px-5 pb-[8rem] pt-20 md:grid-cols-2 lg:px-10"
+	class="-mt-20 grid min-h-dvh grid-cols-1 justify-items-center gap-x-4 gap-y-8 px-3 pb-[8rem] pt-20 md:grid-cols-2 lg:px-10"
 >
-	<div class="avatar self-center text-center">
+	<div class="avatar self-center px-4 text-center">
 		<div class="mask mask-squircle">
 			<enhanced:img
 				src={oops}
@@ -243,18 +243,16 @@
 				>Build digital dreams, not nightmares.</span
 			>
 		</h1>
-		<div class="mockup-code mb-7">
-			<pre data-prefix="$"><code>apptitude test tech-knowledge</code></pre>
+		<div class="mockup-code mb-7 w-11/12">
+			<pre data-prefix="$"><code>test tech-knowledge</code></pre>
 			<pre data-prefix=">" class="text-warning"><code>testing......</code></pre>
-			<pre data-prefix=">" class="text-secondary"><code
-					>Error: Module 'tech-knowledge' not found</code
-				></pre>
+			<pre data-prefix=">" class="text-secondary"><code>Error: Module not found</code></pre>
 		</div>
-		<p class="mb-1 py-2 text-lg lg:text-2xl">
+		<p class="mb-1 py-2 text-lg lg:text-xl">
 			Digital products in the public sector can and should be better. Get access to resources, find
 			out what it takes to make good digital products that citizens will enjoy using.
 		</p>
-		<p class="mb-7 py-2 text-lg lg:text-2xl">
+		<p class="mb-7 py-2 text-lg lg:text-xl">
 			Apptitude tries to remedy the slow, unusable, expensive and oft-delayed Govt systems and apps
 			we see around us, at the root cause.
 		</p>
@@ -274,7 +272,7 @@
 </div>
 <div
 	class="animation-div relative"
-	style="background-image: url({starBg}); background-size: cover; background-position: center; overflow: clip"
+	style="background-image: url({starBg}); background-size: cover; width: 100dvw; background-position: center; overflow-x: clip"
 >
 	<div></div>
 	<div class="planet-div">
@@ -325,25 +323,25 @@
 			sizes="(min-width:1400px) 1500px, (max-width:1399px) 800px, (max-width:768px) 400px"
 		/>
 	</div>
-	<div class="tagline-intro pixar text-3xl font-bold lg:text-6xl">
-		<span class="text-white">Learning lift-off in...</span>
+	<div class="tagline-intro concert text-2xl font-bold lg:text-5xl">
+		<span class="text-slate-200">Learning lift-off in...</span>
 	</div>
 
-	<div class="tagline-green2 pixar text-3xl font-bold lg:text-6xl">
+	<div class="tagline-green2 concert text-3xl font-bold lg:text-6xl">
 		<span
 			class="bg-gradient-to-r from-green-400 via-emerald-300 to-lime-400 bg-clip-text text-transparent"
 		>
 			3. 2. 1. Launch!</span
 		>
 	</div>
-	<div class="tagline-green pixar text-3xl font-bold lg:text-6xl">
+	<div class="tagline-green concert text-3xl font-bold lg:text-6xl">
 		<span
 			class="bg-gradient-to-r from-yellow-200 via-yellow-300 to-yellow-200 bg-clip-text text-transparent"
 		>
 			3. 2. 1. Launch!</span
 		>
 	</div>
-	<div class="tagline-darkgreen pixar text-3xl font-bold lg:text-6xl">
+	<div class="tagline-darkgreen concert text-3xl font-bold lg:text-6xl">
 		<span
 			class="bg-gradient-to-r from-green-600 via-lime-600 to-emerald-600 bg-clip-text text-transparent"
 		>
@@ -467,4 +465,7 @@
 		transform: translate(-50%, -50%);
 		z-index: 5;
 	}
+	/*	* {
+		outline: 1px solid #f00 !important;
+	}*/
 </style>
