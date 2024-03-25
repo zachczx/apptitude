@@ -8,7 +8,7 @@
 	import pandablanket from '$lib/assets/pandablanket.webp?enhanced&w=1000;700;400';
 	import pandayawn from '$lib/assets/pandayawn.webp?enhanced&w=1000;700;400';
 
-	let seeMore = false;
+	let seeMore = true;
 </script>
 
 <Breadcrumbs textCurrent={'About Apptitude'} />
@@ -47,12 +47,12 @@
 						stroke-width="2"
 						stroke-linecap="round"
 						stroke-linejoin="round"
-						class="icon icon-tabler icons-tabler-outline icon-tabler-chevrons-down inline align-top"
+						class="icon icon-tabler icons-tabler-outline icon-tabler-chevrons-down inline rotate-180 align-top"
 						><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M7 7l5 5l5 -5" /><path
 							d="M7 13l5 5l5 -5"
 						/></svg
 					>
-					See more
+					See less
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
 						width="24"
@@ -63,7 +63,7 @@
 						stroke-width="2"
 						stroke-linecap="round"
 						stroke-linejoin="round"
-						class="icon icon-tabler icons-tabler-outline icon-tabler-chevrons-down inline align-top"
+						class="icon icon-tabler icons-tabler-outline icon-tabler-chevrons-down inline rotate-180 align-top"
 						><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M7 7l5 5l5 -5" /><path
 							d="M7 13l5 5l5 -5"
 						/></svg

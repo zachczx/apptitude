@@ -72,7 +72,7 @@
 					markers: false
 				},
 				y: '-10vh',
-				x: '-30vw',
+				x: '-10vw',
 				opacity: 1
 			});
 			gsap.to('.cloud2-div', {
@@ -170,7 +170,7 @@
 			y: '-60vh',
 			x: '-80vw',
 			rotation: '-0.8rad',
-			scale: 12,
+			scale: 13,
 			autoAlpha: 1
 		});
 	}); //close onmount
@@ -357,7 +357,7 @@
 	}
 	.cloud1-div {
 		position: absolute;
-		top: 60%;
+		top: 65%;
 		left: 80%;
 		transform: translate(-50%, -50%);
 		z-index: 3;

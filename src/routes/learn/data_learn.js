@@ -113,7 +113,7 @@ export const info = [
 	},
 	{
 		id: 3,
-		name: 'WOG',
+		name: 'WOG, COG Tools',
 		slug: 'wog',
 		topics: ['SG Tech Stack', 'GSIB', 'GCC', 'GDC', 'SG-Teams'],
 		questions: [
@@ -134,7 +134,8 @@ export const info = [
 				'https://www.youtube.com/embed/02f4G6pU-08',
 				'https://www.youtube.com/embed/MfGD-cG6nOA',
 				'https://www.youtube.com/embed/l8qmHxzCTfE',
-				'https://www.youtube.com/embed/E3lum6GcjQo'
+				'https://www.youtube.com/embed/E3lum6GcjQo',
+				'https://www.youtube.com/embed/k0XR6qv6W-w'
 			],
 			links: [
 				{
@@ -386,7 +387,7 @@ export const info = [
 					url: 'https://www.deeplearning.ai/courses/deep-learning-specialization/'
 				},
 				{
-					text: 'AI Explained',
+					text: 'AI Explained - Youtube',
 					url: 'https://www.youtube.com/@aiexplained-official'
 				},
 				{
