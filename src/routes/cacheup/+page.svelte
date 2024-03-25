@@ -17,7 +17,7 @@
 	>
 		Cache Up!
 	</h1>
-	<div>
+	<div class="px-2">
 		<i>Rebooting your obsolescence - migrating from Windows XP to actually current tech skills.</i>
 	</div>
 </div>

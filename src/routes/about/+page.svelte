@@ -7,6 +7,7 @@
 	import oops3 from '$lib/assets/oops3.webp?enhanced&w=1000;700;400';
 	import pandablanket from '$lib/assets/pandablanket.webp?enhanced&w=1000;700;400';
 	import pandayawn from '$lib/assets/pandayawn.webp?enhanced&w=1000;700;400';
+	import pandabutterfly from '$lib/assets/panda-butterfly.webp?enhanced&w=1000;700;400';
 
 	let seeMore = true;
 </script>
@@ -20,7 +21,7 @@
 	<div class="grid content-start justify-items-center lg:col-span-3">
 		<div class="pe-4 ps-2">
 			<h1
-				class="mb-11 inline-block bg-gradient-to-r from-emerald-200 via-orange-200 to-pink-200 bg-clip-text py-3 text-transparent"
+				class="mb-11 bg-gradient-to-r from-emerald-200 via-orange-200 to-pink-200 bg-clip-text py-3 text-center text-transparent"
 			>
 				What's Apptitude?
 			</h1>
@@ -177,6 +178,11 @@
 			/>
 			<enhanced:img
 				src={pandablanket}
+				alt="Red pandas, because they're cute"
+				sizes="(min-width:4000px) 1000px, (max-width:1600px) 700px, (max-width:768px) 400px"
+			/>
+			<enhanced:img
+				src={pandabutterfly}
 				alt="Red pandas, because they're cute"
 				sizes="(min-width:4000px) 1000px, (max-width:1600px) 700px, (max-width:768px) 400px"
 			/>
