@@ -182,8 +182,10 @@
 	class="no-bg -mt-20 grid min-h-dvh grid-cols-1 justify-items-center gap-x-4 gap-y-8 px-3 pb-[8rem] pt-20 lg:px-10 xl:grid-cols-2"
 	style="background-image: url({oopsBg}); background-size: cover; background-position: 70% center"
 >
-	<div class="self-center justify-self-center rounded-2xl bg-base-300 lg:ps-16 xl:p-8">
-		<div class="avatar mb-8 self-center px-4 text-center xl:hidden">
+	<div
+		class="self-center justify-self-center rounded-2xl bg-base-300 shadow-lg shadow-black xl:p-8"
+	>
+		<div class="avatar mb-8 flex justify-center px-4 text-center xl:hidden">
 			<div class="mask mask-squircle">
 				<enhanced:img
 					src={oops}
@@ -195,7 +197,7 @@
 		<h1 class="mb-12 text-center text-5xl lg:text-6xl xl:text-7xl min-[1921px]:text-9xl">
 			<span
 				class="bg-gradient-to-r from-lime-300 via-green-400 to-teal-100 bg-clip-text text-transparent"
-				>Build digital dreams.<br /> Not nightmares.</span
+				>Build digital dreams.<br />Not nightmares.</span
 			>
 		</h1>
 		<div class="mockup-code mb-7 w-11/12 bg-base-100 xl:w-full">
@@ -204,14 +206,14 @@
 			<pre data-prefix=">" class="text-secondary"><code>Error: tech-knowledge failed</code></pre>
 		</div>
 		<p class="mb-1 py-2 text-lg lg:text-xl">
-			Digital products in the public sector can and should be better. Get help, get resources, find
-			out what makes good digital products that citizens enjoy using.
+			Digital products in the public sector can and should be better.
 		</p>
 		<p class="mb-7 py-2 text-lg lg:text-xl">
-			Apptitude tries to remedy the slow, unusable, expensive and oft-delayed Govt systems and apps
-			we see around us, at the root cause.
+			Apptitude aims to remedy the root cause of low, unusable, expensive and oft-delayed Govt
+			systems and apps we see around us. Use the resources here to find out what goes into good
+			digital products for citizens.
 		</p>
-		<div class="join join-vertical mb-12 lg:join-horizontal lg:mb-5">
+		<div class="join join-vertical mb-12 flex justify-center lg:join-horizontal lg:mb-5">
 			<a
 				href="/learn"
 				class="btn join-item border border-primary bg-lime-600 font-medium text-white hover:border hover:border-primary hover:bg-gradient-to-r hover:from-lime-500 hover:via-teal-500 hover:to-emerald-600 active:from-lime-600 active:via-teal-600 active:to-emerald-700 lg:text-2xl"
@@ -307,7 +309,7 @@
 	</div>
 </div>
 <div
-	class="mt-16 grid w-full grid-cols-1 justify-items-center gap-x-16 px-5 lg:grid-cols-2 lg:px-20"
+	class="mt-16 grid w-full grid-cols-1 justify-items-center gap-x-16 px-5 lg:px-20 xl:grid-cols-2"
 >
 	<div class="avatar self-center self-center">
 		<div class="mask mask-squircle">
