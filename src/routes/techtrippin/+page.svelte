@@ -7,30 +7,8 @@
 	import { onMount } from 'svelte';
 	import { gsap } from 'gsap';
 	import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
-	/////////////////////////////////
-	let totalNumber = techtrippin.length - 1;
-	let prev = $state();
-
-	function clickNext(current) {
-		if (current < totalNumber) {
-			let next = current + 1;
-			return next;
-		} else {
-			return 0;
-		}
-	}
-
-	function clickPrev(current) {
-		if (current <= totalNumber && current != 0) {
-			prev = current - 1;
-			return prev;
-		} else if (current === 0) {
-			return totalNumber;
-		}
-	}
 
 	let showMore = $state(false);
-	/////////////////////////////
 
 	onMount(() => {
 		gsap.registerPlugin(ScrollTrigger);
@@ -44,18 +22,37 @@
 					scrollTrigger: {
 						trigger: convoEach,
 						start: '-100% top',
-						toggleActions: 'play none none reverse',
+						end: 'bottom 30%',
+						toggleActions: 'play reverse play reverse',
 						scrub: false,
 						markers: false
 					},
 					backgroundColor: '#20252E',
-					y: '-30',
-					duration: 0.3,
-					scale: 1
+					duration: 0.5,
+					scale: 1.1
 				});
 			}
 		});
 	});
+
+	////////////////////////////////////////
+	/*
+	import { animate, scroll } from 'motion';
+
+	onMount(() => {
+		const convoVar = document.getElementsByClassName('convo');
+		for (const convoEach of convoVar) {
+			scroll(
+				animate(convoEach, {
+					scale: [0.9, 1],
+
+					backgroundColor: ['#2A303C', '#20252E']
+				}),
+				{ target: convoEach, offset: ['start end', 'end end'] }
+			);
+		}
+	});
+	*/
 </script>
 
 <Breadcrumbs textCurrent={"Tech Trippin'"} />
@@ -89,12 +86,9 @@
 				</div>
 			</div>
 
-			<div class="grid grid-cols-1 justify-items-center gap-x-8 gap-y-8 lg:mb-7">
+			<div class="grid grid-cols-1 justify-items-center gap-y-8 lg:mb-7 lg:gap-y-20">
 				{#each techtrippin as techtrippinItem, i}
-					<div
-						id="tidbit-{i}"
-						class="convo my-2 rounded-2xl bg-base-300 p-2 lg:scale-95 lg:bg-base-100 xl:p-10"
-					>
+					<div id="tidbit-{i}" class="convo rounded-2xl bg-gray-700 p-2 xl:p-6">
 						<div>
 							<div class="chat chat-start">
 								<div class="avatar chat-image">

@@ -24,6 +24,60 @@
 			currentBylineNumber = 0;
 		}
 	}, 10000);
+
+	//for checkboxes
+	let boxDefinition = $state(false);
+	let boxGoals = $state(false);
+	let boxQuestions = $state(false);
+	let boxDealbreakers = $state(false);
+	let boxPossibleSolutions = $state(false);
+	let boxSuggestions = $state(false);
+	let toggleButtonValue = $state(false);
+	function toggleButton() {
+		if (toggleButtonValue === false) {
+			boxDefinition =
+				boxGoals =
+				boxQuestions =
+				boxDealbreakers =
+				boxPossibleSolutions =
+				boxSuggestions =
+					true;
+
+			toggleButtonValue = !toggleButtonValue;
+			console.log(
+				boxDefinition,
+				boxGoals,
+				boxQuestions,
+				boxDealbreakers,
+				boxPossibleSolutions,
+				boxSuggestions
+			);
+		} else {
+			boxDefinition =
+				boxGoals =
+				boxQuestions =
+				boxDealbreakers =
+				boxPossibleSolutions =
+				boxSuggestions =
+					false;
+			console.log(
+				boxDefinition,
+				boxGoals,
+				boxQuestions,
+				boxDealbreakers,
+				boxPossibleSolutions,
+				boxSuggestions
+			);
+			toggleButtonValue = !toggleButtonValue;
+		}
+		/*
+		boxDefinition = !boxDefinition;
+		boxGoals = !boxGoals;
+		boxQuestions = !boxQuestions;
+		boxDealbreakers = !boxDealbreakers;
+		boxPossibleSolutions = !boxPossibleSolutions;
+		boxSuggestions = !boxSuggestions;*/
+	}
 </script>
 
 <Breadcrumbs urlMiddle="cacheup" textMiddle={'Cache Up!'} textCurrent={data.post.name} />
@@ -48,10 +102,15 @@
 		</div>
 	{/if}
 </div>
-
+<div class="mb-5 flex justify-end px-6 lg:px-20">
+	<label class="space-x-2">
+		<span class="align-top text-lg">Expand all</span>
+		<input type="checkbox" class="toggle" on:click={toggleButton} />
+	</label>
+</div>
 <div class="grid grid-cols-1 justify-items-center gap-x-8 gap-y-8 px-2 lg:px-20">
 	<div class="collapse bg-base-200">
-		<input type="checkbox" class="peer" />
+		<input type="checkbox" class="peer" bind:checked={boxDefinition} />
 		<div
 			class="collapse-title flex justify-between bg-base-300 text-center peer-checked:bg-slate-900"
 		>
@@ -91,7 +150,7 @@
 	</div>
 
 	<div class="collapse bg-base-200">
-		<input type="checkbox" class="peer" checked="true" />
+		<input type="checkbox" class="peer" bind:checked={boxGoals} />
 		<div
 			class="collapse-title flex justify-between bg-base-300 text-center peer-checked:bg-pink-800"
 		>
@@ -131,7 +190,7 @@
 	</div>
 
 	<div class="collapse bg-base-200">
-		<input type="checkbox" class="peer" />
+		<input type="checkbox" class="peer" bind:checked={boxQuestions} />
 		<div
 			class="collapse-title flex justify-between bg-base-300 text-center peer-checked:bg-pink-800"
 		>
@@ -180,7 +239,7 @@
 	</div>
 
 	<div class="collapse bg-base-200">
-		<input type="checkbox" class="peer" />
+		<input type="checkbox" class="peer" bind:checked={boxDealbreakers} />
 		<div
 			class="collapse-title flex justify-between bg-base-300 text-center peer-checked:bg-red-800"
 		>
@@ -218,7 +277,7 @@
 	</div>
 
 	<div class="collapse bg-base-200">
-		<input type="checkbox" class="peer" />
+		<input type="checkbox" class="peer" bind:checked={boxPossibleSolutions} />
 		<div
 			class="collapse-title flex justify-between bg-base-300 text-center peer-checked:bg-slate-900"
 		>
@@ -258,7 +317,7 @@
 	</div>
 
 	<div class="collapse bg-base-200">
-		<input type="checkbox" class="peer" />
+		<input type="checkbox" class="peer" bind:checked={boxSuggestions} />
 		<div
 			class="collapse-title flex items-center justify-between bg-base-300 peer-checked:bg-slate-900"
 		>
