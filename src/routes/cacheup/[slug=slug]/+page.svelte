@@ -27,7 +27,7 @@
 
 	//for checkboxes
 	let boxDefinition = $state(false);
-	let boxGoals = $state(false);
+	let boxGoals = $state(true);
 	let boxQuestions = $state(false);
 	let boxDealbreakers = $state(false);
 	let boxPossibleSolutions = $state(false);
