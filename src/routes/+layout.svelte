@@ -29,7 +29,7 @@
 <svelte:head>
 	<title>{pageName}</title>
 </svelte:head>
-<div class="navbar mb-10 bg-base-100 lg:mb-20">
+<div class="navbar mb-10 lg:mb-20">
 	<div class="navbar-start">
 		<div class="dropdown">
 			<div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -102,21 +102,26 @@
 				</details>
 			</li>
 			<li
-				class="hover:border-b-2 hover:border-primary {data.url == '/techtrippin'
+				class="border-b-2 border-base-100 hover:border-b-2 hover:border-primary {data.url ==
+				'/techtrippin'
 					? 'selected border-b-2 border-base-content hover:text-primary'
 					: ''}"
 			>
-				<a class="hover:bg-base-100 hover:text-primary" href="/techtrippin">Tech Trippin'</a>
+				<a
+					class="border-b-2 border-base-100 hover:bg-base-100 hover:text-primary"
+					href="/techtrippin">Tech Trippin'</a
+				>
 			</li>
 			<li
-				class="hover:border-b-2 hover:border-primary {data.url == '/todo'
+				class="border-b-2 border-base-100 hover:border-b-2 hover:border-primary {data.url == '/todo'
 					? 'selected border-b-2 border-base-content hover:text-primary'
 					: ''}"
 			>
 				<a class="hover:bg-base-100 hover:text-primary" href="/todo">To-Dos</a>
 			</li>
 			<li
-				class="hover:border-b-2 hover:border-primary {data.url == '/about'
+				class="border-b-2 border-base-100 hover:border-b-2 hover:border-primary {data.url ==
+				'/about'
 					? 'selected border-b-2 border-base-content'
 					: ''}"
 			>

@@ -9,6 +9,7 @@
 	import rocketb from '$lib/assets/rocket_b.webp?enhanced&w=1200;800;400';
 	import rocketc from '$lib/assets/rocket_c.webp?enhanced&w=1500;800;400';
 	import starBg from '$lib/assets/paul-volkmer-qVotvbsuM_c-unsplash.webp';
+	import oopsBlackBg from '$lib/assets/oops-bg-black.webp'
 	import pixarEarth from '$lib/assets/pixar-earth.webp?enhanced&w=1200;600;400';
 	import cloud1 from '$lib/assets/cloud1.webp?enhanced&w=700;500;200';
 	import cloud2 from '$lib/assets/cloud2.webp?enhanced&w=700;500;200';
