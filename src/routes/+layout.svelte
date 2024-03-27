@@ -103,24 +103,24 @@
 			</li>
 			<li
 				class="hover:border-b-2 hover:border-primary {data.url == '/techtrippin'
-					? 'selected border-b-2 border-base-content'
+					? 'selected border-b-2 border-base-content hover:text-primary'
 					: ''}"
 			>
-				<a class="hover:bg-base-100" href="/techtrippin">Tech Trippin'</a>
+				<a class="hover:bg-base-100 hover:text-primary" href="/techtrippin">Tech Trippin'</a>
 			</li>
 			<li
 				class="hover:border-b-2 hover:border-primary {data.url == '/todo'
-					? 'selected border-b-2 border-base-content'
+					? 'selected border-b-2 border-base-content hover:text-primary'
 					: ''}"
 			>
-				<a class="hover:bg-base-100" href="/todo">To-Dos</a>
+				<a class="hover:bg-base-100 hover:text-primary" href="/todo">To-Dos</a>
 			</li>
 			<li
 				class="hover:border-b-2 hover:border-primary {data.url == '/about'
 					? 'selected border-b-2 border-base-content'
 					: ''}"
 			>
-				<a class="hover:bg-base-100" href="/about">About</a>
+				<a class="hover:bg-base-100 hover:text-primary" href="/about">About</a>
 			</li>
 		</ul>
 	</div>
