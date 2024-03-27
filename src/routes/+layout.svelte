@@ -7,6 +7,23 @@
 	import { cacheup } from './cacheup/data_cacheup.js';
 	import { info } from './learn/data_learn.js';
 	let pageName = $state('Apptitude');
+	import { onNavigate } from '$app/navigation';
+
+	let viewTransition = $state('');
+
+	onNavigate((navigation) => {
+		if (!document.startViewTransition) {
+			viewTransition = false;
+			return;
+		}
+
+		return new Promise((resolve) => {
+			document.startViewTransition(async () => {
+				resolve();
+				await navigation.complete;
+			});
+		});
+	});
 </script>
 
 <svelte:head>
@@ -50,7 +67,11 @@
 	<div class="navbar-center hidden lg:flex">
 		<ul class="menu menu-horizontal gap-x-[2rem] pe-5 ps-1 pt-7 text-xl font-medium">
 			<!-- removed menu class -->
-			<li class="border-b-2 border-base-100 pb-3 hover:border-b-2 hover:border-slate-200">
+			<li
+				class="hover:border-b-2 hover:border-primary {data.url == '/learn'
+					? 'border-b-2 border-base-content'
+					: ''}"
+			>
 				<details>
 					<summary class="hover:bg-base-100 hover:text-primary"><a href="/learn">Learn</a></summary>
 					<ul class="z-50 p-2 text-base">
@@ -62,7 +83,11 @@
 					</ul>
 				</details>
 			</li>
-			<li class="border-b-2 border-base-100 hover:border-b-2 hover:border-slate-200">
+			<li
+				class="hover:border-b-2 hover:border-primary {data.url == '/cacheup'
+					? 'selected border-b-2 border-base-content'
+					: ''}"
+			>
 				<details>
 					<summary class="hover:bg-base-100 hover:text-primary"
 						><a href="/cacheup">Cache Up!</a></summary
@@ -77,17 +102,23 @@
 				</details>
 			</li>
 			<li
-				class="border-b-2 border-base-100 pb-3 hover:border-b-2 hover:border-slate-200 hover:text-primary"
+				class="hover:border-b-2 hover:border-primary {data.url == '/techtrippin'
+					? 'selected border-b-2 border-base-content'
+					: ''}"
 			>
 				<a class="hover:bg-base-100" href="/techtrippin">Tech Trippin'</a>
 			</li>
 			<li
-				class="border-b-2 border-base-100 pb-3 hover:border-b-2 hover:border-slate-200 hover:text-primary"
+				class="hover:border-b-2 hover:border-primary {data.url == '/todo'
+					? 'selected border-b-2 border-base-content'
+					: ''}"
 			>
 				<a class="hover:bg-base-100" href="/todo">To-Dos</a>
 			</li>
 			<li
-				class="border-b-2 border-base-100 pb-3 hover:border-b-2 hover:border-slate-200 hover:text-primary"
+				class="hover:border-b-2 hover:border-primary {data.url == '/about'
+					? 'selected border-b-2 border-base-content'
+					: ''}"
 			>
 				<a class="hover:bg-base-100" href="/about">About</a>
 			</li>
@@ -96,9 +127,13 @@
 	<div class="navbar-end"></div>
 </div>
 
-<PageTransition url={data.url}>
+{#if !viewTransition}
+	<PageTransition url={data.url}>
+		<slot />
+	</PageTransition>
+{:else}
 	<slot />
-</PageTransition>
+{/if}
 
 <footer
 	class="footer footer-center mt-10 gap-y-2 rounded bg-base-200 p-10 text-base-content lg:mt-24"
@@ -141,4 +176,44 @@
 	/** {
 		outline: 1px solid #f00 !important;
 	}*/
+
+	@keyframes fade-in {
+		from {
+			opacity: 0;
+		}
+	}
+
+	@keyframes fade-out {
+		to {
+			opacity: 0;
+		}
+	}
+
+	@keyframes slide-from-right {
+		from {
+			transform: translateX(30px);
+		}
+	}
+
+	@keyframes slide-to-left {
+		to {
+			transform: translateX(-30px);
+		}
+	}
+
+	:root::view-transition-old(root) {
+		animation:
+			90ms cubic-bezier(0.4, 0, 1, 1) both fade-out,
+			300ms cubic-bezier(0.4, 0, 0.2, 1) both slide-to-left;
+	}
+
+	:root::view-transition-new(root) {
+		animation:
+			210ms cubic-bezier(0, 0, 0.2, 1) 90ms both fade-in,
+			300ms cubic-bezier(0.4, 0, 0.2, 1) both slide-from-right;
+	}
+
+	li {
+		view-transition-name: navbar;
+	}
 </style>

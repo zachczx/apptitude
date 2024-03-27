@@ -8,7 +8,6 @@
 	import TablerChevronRight from '$lib/assets/svg/TablerChevronRight.svelte';
 	import rocketb from '$lib/assets/rocket_b.webp?enhanced&w=1200;800;400';
 	import rocketc from '$lib/assets/rocket_c.webp?enhanced&w=1500;800;400';
-	import starBg from '$lib/assets/paul-volkmer-qVotvbsuM_c-unsplash.webp';
 	import oopsBg from '$lib/assets/oops-bg.webp';
 	import pixarEarth from '$lib/assets/pixar-earth.webp?enhanced&w=1200;600;400';
 	import cloud1 from '$lib/assets/cloud1.webp?enhanced&w=700;500;200';
@@ -179,11 +178,11 @@
 </script>
 
 <div
-	class="no-bg -mt-20 grid min-h-dvh grid-cols-1 justify-items-center gap-x-4 gap-y-8 px-3 pb-[8rem] pt-20 lg:px-10 xl:grid-cols-2"
-	style="background-image: url({oopsBg}); background-size: cover; background-position: 70% center"
+	class="no-bg hero -mt-20 grid min-h-dvh grid-cols-1 justify-items-center gap-x-4 gap-y-8 px-3 pb-[8rem] pt-20 lg:px-10 xl:grid-cols-2"
+	style="background: url({oopsBg}); background-size: cover; background-position: 70% center;"
 >
 	<div
-		class="self-center justify-self-center rounded-2xl bg-base-300 shadow-lg shadow-black xl:p-8"
+		class="self-center justify-self-center rounded-2xl px-3 pt-3 xl:bg-base-300 xl:p-8 xl:shadow-xl xl:shadow-lime-300"
 	>
 		<div class="avatar mb-8 flex justify-center px-4 text-center xl:hidden">
 			<div class="mask mask-squircle">
@@ -200,7 +199,7 @@
 				>Build digital dreams.<br />Not nightmares.</span
 			>
 		</h1>
-		<div class="mockup-code mb-7 w-11/12 bg-base-100 xl:w-full">
+		<div class="mockup-code mb-7 w-11/12 bg-gray-900 xl:w-full">
 			<pre data-prefix="$"><code>test tech-knowledge</code></pre>
 			<pre data-prefix=">"><code>testing......</code></pre>
 			<pre data-prefix=">" class="text-secondary"><code>Error: tech-knowledge failed</code></pre>
@@ -309,7 +308,7 @@
 	</div>
 </div>
 <div
-	class="mt-16 grid w-full grid-cols-1 justify-items-center gap-x-16 px-5 lg:px-20 xl:grid-cols-2"
+	class="topfade grid w-full grid-cols-1 justify-items-center gap-x-16 px-5 pt-20 lg:px-20 xl:grid-cols-2"
 >
 	<div class="avatar self-center self-center">
 		<div class="mask mask-squircle">
@@ -356,6 +355,13 @@
 		.no-bg {
 			background: #2a303c !important;
 		}
+	}
+
+	.hero {
+		box-shadow: inset 0 -180px 100px -100px rgba(0, 0, 0, 1);
+	}
+	.topfade {
+		box-shadow: inset 0 180px 100px -100px rgba(0, 0, 0, 1);
 	}
 	.animation-div {
 		min-height: 200vh;
