@@ -1,6 +1,6 @@
 <script>
 	import '../app.css';
-	import logo from '$lib/assets/logo_whale.webp';
+	import logo from '$lib/assets/green-logo.webp?enhanced&w=1000;800;600;400';
 	import PageTransition from '$lib/Transition.svelte';
 	import TablerSquareRoundedPlusFilled from '$lib/assets/svg/TablerSquareRoundedPlusFilled.svelte';
 	import TablerChevronRight from '$lib/assets/svg/TablerChevronRight.svelte';
@@ -26,7 +26,6 @@
 		});
 	});
 
-	console.log('The URL is ', data.url);
 	function matchUrl(currentUrl, navUrl) {
 		let result = currentUrl.search(navUrl);
 		return result;
@@ -75,26 +74,26 @@
 				>
 			</nav>
 		</div>
-		<a
-			href="/"
-			class="jost btn border-0 bg-base-100 text-4xl text-white hover:bg-base-100 hover:text-primary xl:text-5xl"
-			><img src={logo} width="60" height="60" class="max-w-full" alt="Apptitude" />apptitude</a
+		<a href="/"
+			><enhanced:img
+				src={logo}
+				sizes="(min-width:2560px) 1000px, (min-width:1920px) 800px, (min-width:1600px) 600px, (min-width:1280px) 400px"
+				alt="Apptitude"
+			/></a
 		>
 	</div>
-	<div class="navbar-center hidden lg:flex">
+	<div class="navbar-center"></div>
+	<div class="navbar-end hidden pe-12 lg:flex">
 		<ul class="menu menu-horizontal gap-x-[2rem] pe-5 ps-1 pt-7 text-xl font-medium">
 			<!-- removed menu class -->
 			<li aria-current={matchUrl(data.url, '/learn') === 0 ? 'page' : undefined}>
-				<a href="/learn">Learn</a>
+				<a class="hover:bg-base-100 hover:text-primary" href="/learn">Learn</a>
 			</li>
 			<li aria-current={matchUrl(data.url, '/cacheup') === 0 ? 'page' : undefined}>
-				<a href="/cacheup">Cache Up!</a>
+				<a class="hover:bg-base-100 hover:text-primary" href="/cacheup">Cache Up!</a>
 			</li>
 			<li aria-current={matchUrl(data.url, '/techtrippin') === 0 ? 'page' : undefined}>
-				<a
-					class="border-b-2 border-base-100 hover:bg-base-100 hover:text-primary"
-					href="/techtrippin">Tech Trippin'</a
-				>
+				<a class="hover:bg-base-100 hover:text-primary" href="/techtrippin">Tech Trippin'</a>
 			</li>
 			<li aria-current={matchUrl(data.url, '/todo') === 0 ? 'page' : undefined}>
 				<a class="hover:bg-base-100 hover:text-primary" href="/todo">To-Dos</a>
@@ -104,7 +103,6 @@
 			</li>
 		</ul>
 	</div>
-	<div class="navbar-end"></div>
 </div>
 
 {#if !viewTransition}
@@ -194,7 +192,7 @@
 		.navbar {
 			view-transition-name: navbar;
 		}
-
+		/*
 		li[aria-current='page']::before {
 			--size: 8px;
 			content: '';
@@ -206,6 +204,19 @@
 			border: var(--size) solid #9fe88d;
 			border-top: var(--size) solid var(--color-theme-1);
 			view-transition-name: active-page;
+		}*/
+		li[aria-current='page'] {
+			color: #9fe88d;
+		}
+
+		li[aria-current='page']::after {
+			--size: 2px;
+			content: '';
+			width: 100%;
+			position: absolute;
+			bottom: -4px;
+			border: var(--size) solid #9fe88d;
+			view-transition-name: active-page2;
 		}
 	}
 </style>

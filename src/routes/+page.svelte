@@ -8,15 +8,15 @@
 	import TablerChevronRight from '$lib/assets/svg/TablerChevronRight.svelte';
 	import rocketb from '$lib/assets/rocket_b.webp?enhanced&w=1200;800;400';
 	import rocketc from '$lib/assets/rocket_c.webp?enhanced&w=1500;800;400';
-	import oopsBg from '$lib/assets/oops-bg.webp?enhanced&w=2560;1920;1600;1280';
-	import oops2Bg from '$lib/assets/oops2-bg.webp?enhanced&w=2560;1920;1600;1280';
+	import oopsBg from '$lib/assets/oops-bg.webp?enhanced&w=2060;1536;1280;1024';
+	import oops2Bg from '$lib/assets/oops2-bg.webp?enhanced&w=2060;1536;1280;1024';
 	import pixarEarth from '$lib/assets/pixar-earth.webp?enhanced&w=1200;600;400';
 	import cloud1 from '$lib/assets/cloud1.webp?enhanced&w=700;500;200';
 	import cloud2 from '$lib/assets/cloud2.webp?enhanced&w=700;500;200';
 	import cloud3 from '$lib/assets/cloud3.webp?enhanced&w=700;500;200';
 	import bellCurveMeme from '$lib/assets/product-bell-curve.webp';
-	import oops from '$lib/assets/oops.webp?enhanced&w=1600;800;400';
-	import oops2 from '$lib/assets/oops2.webp?enhanced&w=1600;800;400';
+	import oops from '$lib/assets/oops.webp?enhanced&w=600;300';
+	import oops2 from '$lib/assets/oops2.webp?enhanced&w=600;300';
 	import starBlackBg from '$lib/assets/star-black-bg.webp';
 
 	onMount(() => {
@@ -184,7 +184,7 @@
 			src={oopsBg}
 			alt="Hero"
 			class="hero-img"
-			sizes="(min-width:2560px) 2560px, (min-width:1920px) 1920px, (min-width:1600px) 1600px, (min-width:1280px) 1280px"
+			sizes="(min-width:2560px) 2060px, (min-width:1920px) 1536px, (min-width:1600px) 1280px, (min-width:1280px) 1024px"
 		/>
 	</figure>
 	<div
@@ -196,7 +196,7 @@
 					src={oops}
 					alt="Oops"
 					class="relative"
-					sizes="(min-width:2560px) 1600px, (min-width:1000px) 800px, (min-width:768px) 400px"
+					sizes="(min-width:1000px) 600px, (min-width:768px) 300px"
 				/>
 			</div>
 		</div>
@@ -322,7 +322,7 @@
 			src={oops2Bg}
 			alt="Hero"
 			class="ending-img"
-			sizes="(min-width:2560px) 2560px, (min-width:1920px) 1920px, (min-width:1600px) 1600px, (min-width:1280px) 1280px"
+			sizes="(min-width:2560px) 2060px, (min-width:1920px) 1536px, (min-width:1600px) 1280px, (min-width:1280px) 1024px"
 		/>
 	</figure>
 	<div class="avatar self-center self-center xl:hidden">
@@ -330,7 +330,7 @@
 			<enhanced:img
 				src={oops2}
 				alt="Oops"
-				sizes="(min-width:2560px) 1600px, (max-width:1600px) 800px, (max-width:768px) 400px"
+				sizes="(min-width:1600px) 600px, (max-width:768px) 300px"
 			/>
 		</div>
 	</div>

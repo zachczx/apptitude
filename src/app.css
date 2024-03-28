@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,600;1,600&family=Outfit:wght@700&family=Roboto:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@700&family=Roboto:wght@400;500&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -6,13 +6,6 @@
 
 :root {
 	font-family: 'Roboto', sans-serif;
-}
-
-.jost {
-	font-family: 'Jost', sans-serif;
-	font-optical-sizing: auto;
-	font-weight: 600;
-	font-style: normal;
 }
 
 .popped {
