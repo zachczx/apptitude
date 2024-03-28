@@ -65,7 +65,7 @@ export const techtrippin = [
 		prompt: "I'm confident of rolling out my product to internal employee users.",
 		response: 'How do you know your product solves a real pain point?',
 		prompt2:
-			'We have a usability testing framework where we find issues with the product. We make sure users test it.',
+			"We have a usability testing framework where we get actual users to test our product before we launch it. It's part of the usability testing requirement. We find bugs and we fix them. We don't do separate user research.",
 		response2: '...',
 		icon: consultant4
 	},
@@ -90,5 +90,15 @@ export const techtrippin = [
 		response:
 			"Well, you haven't told me why you need to rebuild the system, not with objective stats. And you seem to be asking for money to replace the rules engine, so you need to tell me more about that and the trade-offs, instead of putting the cart before the horse with the Next JS, cloud etc.",
 		icon: techLead
+	},
+	{
+		id: 8,
+		title: 'When the Blind Lead the Blind... Right Off a Tech Cliff',
+		name: 'Tech Program Manager',
+		prompt:
+			"We did assessments on the requirements for the new system. This requirement for XXX, we assess it's reasonable. This is because the current system was previously approved at a sum of $900K. With inflation and higher manpower costs we think it's reasonable to pitch it at $1.5M going forward.",
+		response:
+			'Assessing based on inflation and generic qualitative statements about manpower costs is rubbish. This was supposed to be a tech assessment but it might as well have been a ChatGPT generic response. There\'s no mention of what problem is being solved, how complex those problems are, unique selling points for the system, and whether the requirements being proposed are even relevant. To top it off, finance folks have no basis and would then go along with this, adding their "support" and also comimng to the conclusion that the resourcing ask is reasonable, despite there being no real basis for such a conclusion in the first place.',
+		icon: consultant3
 	}
 ];

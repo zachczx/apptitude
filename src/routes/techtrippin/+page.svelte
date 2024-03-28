@@ -87,7 +87,7 @@
 
 			<div class="grid grid-cols-1 justify-items-center gap-y-8 lg:mb-7 lg:gap-y-20">
 				{#each techtrippin as techtrippinItem, i}
-					<div id="tidbit-{i}" class="convo rounded-2xl bg-gray-700 p-2 xl:p-6">
+					<div id="tidbit-{i}" class="convo rounded-2xl bg-slate-700 p-2 xl:p-6">
 						<div>
 							<h2 class="pb-10 pt-3 text-center">{techtrippinItem.title}</h2>
 							<div class="chat chat-start">

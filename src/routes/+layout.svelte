@@ -1,6 +1,6 @@
 <script>
 	import '../app.css';
-	import logo from '$lib/assets/green-logo.webp?enhanced&w=1000;800;600;400';
+	import logo from '$lib/assets/green-logo.webp?enhanced&w=800;600;400';
 	import PageTransition from '$lib/Transition.svelte';
 	import TablerSquareRoundedPlusFilled from '$lib/assets/svg/TablerSquareRoundedPlusFilled.svelte';
 	import TablerChevronRight from '$lib/assets/svg/TablerChevronRight.svelte';
@@ -77,14 +77,14 @@
 		<a href="/"
 			><enhanced:img
 				src={logo}
-				sizes="(min-width:2560px) 1000px, (min-width:1920px) 800px, (min-width:1600px) 600px, (min-width:1280px) 400px"
+				sizes="(min-width:1920px) 800px, (min-width:1600px) 600px, (min-width:1280px) 400px"
 				alt="Apptitude"
 			/></a
 		>
 	</div>
 	<div class="navbar-center"></div>
 	<div class="navbar-end hidden pe-12 lg:flex">
-		<ul class="menu menu-horizontal gap-x-[2rem] pe-5 ps-1 pt-7 text-xl font-medium">
+		<ul class="menu menu-horizontal gap-x-[2rem] pe-5 ps-1 pt-7 text-2xl font-medium">
 			<!-- removed menu class -->
 			<li aria-current={matchUrl(data.url, '/learn') === 0 ? 'page' : undefined}>
 				<a class="hover:bg-base-100 hover:text-primary" href="/learn">Learn</a>
