@@ -10,6 +10,7 @@ import techLead2 from '$lib/assets/techlead2.webp';
 export const techtrippin = [
 	{
 		id: 1,
+		title: "You're So Close... Yet So Far Away from Getting It",
 		name: 'Consultant/Dir',
 		prompt:
 			'It all depends on the business requirements and use-case. GPT 4, 5, 6, 7, and so on would not change much.',
@@ -21,6 +22,7 @@ export const techtrippin = [
 	},
 	{
 		id: 2,
+		title: "The 'But It Depends' Cop-Out: An Exercise in Missing the Point Entirely",
 		name: 'Project Lead',
 		prompt: 'Technically, anything can be done, it just depends on the use-case.',
 		response:
@@ -29,6 +31,7 @@ export const techtrippin = [
 	},
 	{
 		id: 3,
+		title: 'The Ostrich Maneuver: Burying Your Head in Bureaucratic Sand',
 		name: 'Project Manager',
 		prompt:
 			"It's just the way it is --OR-- This cannot be done any other way because that's SOP/policy/IM8 --OR-- We're just doing what PS/DS/CEO commented on.",
@@ -38,6 +41,7 @@ export const techtrippin = [
 	},
 	{
 		id: 4,
+		title: "The JavaScript Hipster's Manifesto: Style Over Substance, Always",
 		name: 'Fireship.io',
 		prompt:
 			"(On Aceternity UI code) That seems pretty inefficient for something that's purely cosmetic, but in JavaScript development, this is the way. If it looks cool, the code is correct even if the code is not super efficient. It doesn't really matter because the end user is only going to hover over it for a couple of seconds at most.",
@@ -46,6 +50,7 @@ export const techtrippin = [
 	},
 	{
 		id: 5,
+		title: "The Dinosaur's Guide to Ignoring User Experience in the 21st Century",
 		name: 'Business owner',
 		prompt:
 			"My form filling e-service needs to be desktop first. It's complex, has many fields so it's only useful to a desktop user. I don't want to and it's not worth redoing to make it mobile first.",
@@ -55,6 +60,7 @@ export const techtrippin = [
 	},
 	{
 		id: 6,
+		title: 'Rearranging Deck Chairs on the Titanic: A Futile Attempt at Last-Ditch Usability Fixes',
 		name: 'Business owner',
 		prompt: "I'm confident of rolling out my product to internal employee users.",
 		response: 'How do you know your product solves a real pain point?',
@@ -65,6 +71,7 @@ export const techtrippin = [
 	},
 	{
 		id: 7,
+		title: 'Ignorance is Bliss: A Celebration of Clueless Satisfaction',
 		name: 'Tech Product Lead',
 		prompt:
 			"Satisfaction in survey went up double digits. We did a great job and we're surprised and happy.",
@@ -76,6 +83,7 @@ export const techtrippin = [
 	},
 	{
 		id: 8,
+		title: 'The Great Tech Overhaul: More Buzzwords Than Business Case',
 		name: 'Tech Lead',
 		prompt:
 			"Business owner says it's a legacy system, the current system and form filling UI are dated, ugly. We reached the max customization to make it prettier. So we'll need money to refactor. We'll go to the cloud, use Next JS, break up the monolith as many micro services, build common components that we can eventually share across the sector. We'll buy a new business rules engine because the current one is very old and no one knows what's inside. We'll make the new one customizable for non-technical users to write business logic.",

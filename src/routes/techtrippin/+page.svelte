@@ -28,8 +28,8 @@
 						markers: false
 					},
 					backgroundColor: '#20252E',
-					duration: 0.5,
-					scale: 1.1
+					duration: 0.3,
+					scale: 1.05
 				});
 			}
 		});
@@ -90,6 +90,7 @@
 				{#each techtrippin as techtrippinItem, i}
 					<div id="tidbit-{i}" class="convo rounded-2xl bg-gray-700 p-2 xl:p-6">
 						<div>
+							<h2 class="pb-10 pt-3 text-center">{techtrippinItem.title}</h2>
 							<div class="chat chat-start">
 								<div class="avatar chat-image">
 									<div class="w-10 rounded-full lg:w-[200px]">
