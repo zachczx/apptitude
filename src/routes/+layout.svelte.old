@@ -3,7 +3,6 @@
 	import logo from '$lib/assets/logo_whale.webp';
 	import PageTransition from '$lib/Transition.svelte';
 	import TablerSquareRoundedPlusFilled from '$lib/assets/svg/TablerSquareRoundedPlusFilled.svelte';
-	import TablerChevronRight from '$lib/assets/svg/TablerChevronRight.svelte';
 	let { data } = $props();
 	import { cacheup } from './cacheup/data_cacheup.js';
 	import { info } from './learn/data_learn.js';
@@ -25,19 +24,12 @@
 			});
 		});
 	});
-
-	console.log('The URL is ', data.url);
-	function matchUrl(currentUrl, navUrl) {
-		let result = currentUrl.search(navUrl);
-		return result;
-	}
 </script>
 
 <svelte:head>
 	<title>{pageName}</title>
 </svelte:head>
-
-<div class="navbar relative mb-10 lg:mb-0">
+<div class="navbar mb-10 lg:mb-20">
 	<div class="navbar-start">
 		<div class="dropdown">
 			<div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -55,25 +47,16 @@
 					/></svg
 				>
 			</div>
-			<nav class="opacity-1 menu dropdown-content z-50 w-48 rounded-lg bg-slate-900 p-0 text-xl">
-				<a class="px-1 py-1 hover:bg-slate-600 active:font-bold active:text-primary" href="/learn"
-					><TablerChevronRight class="inline align-middle" height="1rem" width="1rem" /> Learn</a
-				>
-				<a class="px-1 py-1 hover:bg-slate-600 active:font-bold active:text-primary" href="/cacheup"
-					><TablerChevronRight class="inline align-middle" height="1rem" width="1rem" /> Cache Up!</a
-				>
-				<a
-					class="px-1 py-1 hover:bg-slate-600 active:font-bold active:text-primary"
-					href="/techtrippin"
-					><TablerChevronRight class="inline align-middle" height="1rem" width="1rem" /> Tech Trippin'</a
-				>
-				<a class="px-1 py-1 hover:bg-slate-600 active:font-bold active:text-primary" href="/todo"
-					><TablerChevronRight class="inline align-middle" height="1rem" width="1rem" /> To-Do List</a
-				>
-				<a class="px-1 py-1 hover:bg-slate-600 active:font-bold active:text-primary" href="/about"
-					><TablerChevronRight class="inline align-middle" height="1rem" width="1rem" /> About</a
-				>
-			</nav>
+			<ul
+				tabindex="-1"
+				class="menu dropdown-content menu-sm z-[1] mt-3 w-52 rounded-box bg-base-100 p-2 shadow"
+			>
+				<li><a href="/learn">Learn</a></li>
+				<li><a href="/cacheup">Cache Up!</a></li>
+				<li><a href="/techtrippin">Tech Trippin'</a></li>
+				<li><a href="/todo">To-Do List</a></li>
+				<li><a href="/about">About</a></li>
+			</ul>
 		</div>
 		<a
 			href="/"
@@ -84,22 +67,64 @@
 	<div class="navbar-center hidden lg:flex">
 		<ul class="menu menu-horizontal gap-x-[2rem] pe-5 ps-1 pt-7 text-xl font-medium">
 			<!-- removed menu class -->
-			<li aria-current={matchUrl(data.url, '/learn') === 0 ? 'page' : undefined}>
-				<a href="/learn">Learn</a>
+			<li
+				class="hover:border-b-2 hover:border-primary {data.url == '/learn'
+					? 'border-b-2 border-base-content'
+					: ''}"
+			>
+				<details>
+					<summary class="hover:bg-base-100 hover:text-primary"><a href="/learn">Learn</a></summary>
+					<ul class="z-50 p-2 text-base">
+						{#each info as skillsItem}
+							<li class="hover:text-primary">
+								<a href="/learn/{skillsItem.slug}">{skillsItem.name}</a>
+							</li>
+						{/each}
+					</ul>
+				</details>
 			</li>
-			<li aria-current={matchUrl(data.url, '/cacheup') === 0 ? 'page' : undefined}>
-				<a href="/cacheup">Cache Up!</a>
+			<li
+				class="hover:border-b-2 hover:border-primary {data.url == '/cacheup'
+					? 'selected border-b-2 border-base-content'
+					: ''}"
+			>
+				<details>
+					<summary class="hover:bg-base-100 hover:text-primary"
+						><a href="/cacheup">Cache Up!</a></summary
+					>
+					<ul class="z-50 p-2 text-base">
+						{#each cacheup as cacheupItem}
+							<li class="hover:bg-base-100 hover:text-primary">
+								<a href="/cacheup/{cacheupItem.slug}">{cacheupItem.name}</a>
+							</li>
+						{/each}
+					</ul>
+				</details>
 			</li>
-			<li aria-current={matchUrl(data.url, '/techtrippin') === 0 ? 'page' : undefined}>
+			<li
+				class="border-b-2 border-base-100 hover:border-b-2 hover:border-primary {data.url ==
+				'/techtrippin'
+					? 'selected border-b-2 border-base-content hover:text-primary'
+					: ''}"
+			>
 				<a
 					class="border-b-2 border-base-100 hover:bg-base-100 hover:text-primary"
 					href="/techtrippin">Tech Trippin'</a
 				>
 			</li>
-			<li aria-current={matchUrl(data.url, '/todo') === 0 ? 'page' : undefined}>
+			<li
+				class="border-b-2 border-base-100 hover:border-b-2 hover:border-primary {data.url == '/todo'
+					? 'selected border-b-2 border-base-content hover:text-primary'
+					: ''}"
+			>
 				<a class="hover:bg-base-100 hover:text-primary" href="/todo">To-Dos</a>
 			</li>
-			<li aria-current={matchUrl(data.url, '/about') === 0 ? 'page' : undefined}>
+			<li
+				class="border-b-2 border-base-100 hover:border-b-2 hover:border-primary {data.url ==
+				'/about'
+					? 'selected border-b-2 border-base-content'
+					: ''}"
+			>
 				<a class="hover:bg-base-100 hover:text-primary" href="/about">About</a>
 			</li>
 		</ul>
@@ -115,7 +140,9 @@
 	<slot />
 {/if}
 
-<footer class="footer footer-center gap-y-2 rounded bg-base-200 p-10 pt-10 text-base-content">
+<footer
+	class="footer footer-center mt-10 gap-y-2 rounded bg-base-200 p-10 text-base-content lg:mt-24"
+>
 	<aside>
 		<p class="mb-2">Copyright © 2024 Zixian Chen. All rights reserved.</p>
 	</aside>
@@ -155,57 +182,43 @@
 		outline: 1px solid #f00 !important;
 	}*/
 
-	@media (min-width: 1281px) {
-		@keyframes fade-in {
-			from {
-				opacity: 0;
-			}
+	@keyframes fade-in {
+		from {
+			opacity: 0;
 		}
+	}
 
-		@keyframes fade-out {
-			to {
-				opacity: 0;
-			}
+	@keyframes fade-out {
+		to {
+			opacity: 0;
 		}
+	}
 
-		@keyframes slide-from-right {
-			from {
-				transform: translateX(30px);
-			}
+	@keyframes slide-from-right {
+		from {
+			transform: translateX(30px);
 		}
+	}
 
-		@keyframes slide-to-left {
-			to {
-				transform: translateX(-30px);
-			}
+	@keyframes slide-to-left {
+		to {
+			transform: translateX(-30px);
 		}
-		:root::view-transition-old(root) {
-			animation:
-				90ms cubic-bezier(0.4, 0, 1, 1) both fade-out,
-				300ms cubic-bezier(0.4, 0, 0.2, 1) both slide-to-left;
-		}
+	}
 
-		:root::view-transition-new(root) {
-			animation:
-				210ms cubic-bezier(0, 0, 0.2, 1) 90ms both fade-in,
-				300ms cubic-bezier(0.4, 0, 0.2, 1) both slide-from-right;
-		}
+	:root::view-transition-old(root) {
+		animation:
+			90ms cubic-bezier(0.4, 0, 1, 1) both fade-out,
+			300ms cubic-bezier(0.4, 0, 0.2, 1) both slide-to-left;
+	}
 
-		.navbar {
-			view-transition-name: navbar;
-		}
+	:root::view-transition-new(root) {
+		animation:
+			210ms cubic-bezier(0, 0, 0.2, 1) 90ms both fade-in,
+			300ms cubic-bezier(0.4, 0, 0.2, 1) both slide-from-right;
+	}
 
-		li[aria-current='page']::before {
-			--size: 8px;
-			content: '';
-			width: 0;
-			height: 0;
-			position: absolute;
-			top: -8px;
-			left: calc(50% - var(--size));
-			border: var(--size) solid #9fe88d;
-			border-top: var(--size) solid var(--color-theme-1);
-			view-transition-name: active-page;
-		}
+	li {
+		view-transition-name: navbar;
 	}
 </style>

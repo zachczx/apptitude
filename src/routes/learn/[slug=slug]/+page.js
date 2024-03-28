@@ -8,7 +8,7 @@ export function load({ params }) {
 
 		// if it's the max number, cap at 8
 		if (post.id >= 8) {
-			nextPostId = 8;
+			nextPostId = 1;
 		} else {
 			nextPostId = post.id + 1;
 		}
@@ -16,7 +16,7 @@ export function load({ params }) {
 
 		//same thing for minimum, cap at 1
 		if (post.id <= 1) {
-			lastPostId = 1;
+			lastPostId = 8;
 		} else {
 			lastPostId = post.id - 1;
 		}

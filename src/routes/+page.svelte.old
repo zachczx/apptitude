@@ -8,8 +8,7 @@
 	import TablerChevronRight from '$lib/assets/svg/TablerChevronRight.svelte';
 	import rocketb from '$lib/assets/rocket_b.webp?enhanced&w=1200;800;400';
 	import rocketc from '$lib/assets/rocket_c.webp?enhanced&w=1500;800;400';
-	import starBg from '$lib/assets/paul-volkmer-qVotvbsuM_c-unsplash.webp';
-	import oopsBlackBg from '$lib/assets/oops-bg-black.webp'
+	import oopsBg from '$lib/assets/oops-bg.webp';
 	import pixarEarth from '$lib/assets/pixar-earth.webp?enhanced&w=1200;600;400';
 	import cloud1 from '$lib/assets/cloud1.webp?enhanced&w=700;500;200';
 	import cloud2 from '$lib/assets/cloud2.webp?enhanced&w=700;500;200';
@@ -17,6 +16,7 @@
 	import bellCurveMeme from '$lib/assets/product-bell-curve.webp';
 	import oops from '$lib/assets/oops.webp?enhanced&w=1600;800;400';
 	import oops2 from '$lib/assets/oops2.webp?enhanced&w=1600;800;400';
+	import starBlackBg from '$lib/assets/star-black-bg.webp';
 
 	onMount(() => {
 		gsap.registerPlugin(ScrollTrigger);
@@ -72,8 +72,8 @@
 					scrub: true,
 					markers: false
 				},
-				y: '-10vh',
-				x: '-10vw',
+				y: '-20vh',
+				x: '-20vw',
 				opacity: 1
 			});
 			gsap.to('.cloud2-div', {
@@ -178,40 +178,41 @@
 </script>
 
 <div
-	class="-mt-20 grid min-h-dvh grid-cols-1 justify-items-center gap-x-4 gap-y-8 px-3 pb-[8rem] pt-20 md:grid-cols-2 lg:px-10"
+	class="no-bg hero -mt-20 grid min-h-dvh grid-cols-1 justify-items-center gap-x-4 gap-y-8 px-3 pb-[8rem] pt-20 lg:px-10 xl:grid-cols-2"
+	style="background: url({oopsBg}); background-size: cover; background-position: 70% center;"
 >
-	<div class="avatar self-center px-4 text-center">
-		<div class="mask mask-squircle">
-			<enhanced:img
-				src={oops}
-				alt="Oops"
-				sizes="(min-width:4000px) 1600px, (max-width:1600px) 800px, (max-width:768px) 400px"
-			/>
+	<div
+		class="self-center justify-self-center rounded-2xl px-3 pt-3 xl:bg-base-300 xl:p-8 xl:shadow-2xl xl:shadow-slate-800"
+	>
+		<div class="avatar mb-8 flex justify-center px-4 text-center xl:hidden">
+			<div class="mask mask-squircle">
+				<enhanced:img
+					src={oops}
+					alt="Oops"
+					sizes="(min-width:4000px) 1600px, (max-width:1600px) 800px, (max-width:768px) 400px"
+				/>
+			</div>
 		</div>
-	</div>
-	<div class="self-center justify-self-center lg:ps-16">
-		<h1
-			class=" mb-12 text-center text-5xl md:text-start lg:text-6xl xl:text-7xl min-[1921px]:text-9xl"
-		>
+		<h1 class="mb-12 text-center text-5xl lg:text-6xl xl:text-7xl min-[1921px]:text-9xl">
 			<span
 				class="bg-gradient-to-r from-lime-300 via-green-400 to-teal-100 bg-clip-text text-transparent"
-				>Build digital dreams, not nightmares.</span
+				>Build digital dreams.<br />Not nightmares.</span
 			>
 		</h1>
-		<div class="mockup-code mb-7 w-11/12">
+		<div class="mockup-code mb-7 w-11/12 bg-gray-900 xl:w-full">
 			<pre data-prefix="$"><code>test tech-knowledge</code></pre>
 			<pre data-prefix=">"><code>testing......</code></pre>
-			<pre data-prefix=">" class="text-secondary"><code>Error: tech-knowledge failed</code></pre>
+			<pre data-prefix=">" class="text-red-500"><code>Error: tech-knowledge failed</code></pre>
 		</div>
 		<p class="mb-1 py-2 text-lg lg:text-xl">
-			Digital products in the public sector can and should be better. Get help, get resources, find
-			out what makes good digital products that citizens enjoy using.
+			Digital products in the public sector can and should be better.
 		</p>
 		<p class="mb-7 py-2 text-lg lg:text-xl">
-			Apptitude tries to remedy the slow, unusable, expensive and oft-delayed Govt systems and apps
-			we see around us, at the root cause.
+			Apptitude aims to remedy the root cause of low, unusable, expensive and oft-delayed Govt
+			systems and apps we see around us. Use the resources here to find out what goes into good
+			digital products for citizens.
 		</p>
-		<div class="join join-vertical mb-5 lg:join-horizontal">
+		<div class="join join-vertical mb-12 flex justify-center lg:join-horizontal lg:mb-5">
 			<a
 				href="/learn"
 				class="btn join-item border border-primary bg-lime-600 font-medium text-white hover:border hover:border-primary hover:bg-gradient-to-r hover:from-lime-500 hover:via-teal-500 hover:to-emerald-600 active:from-lime-600 active:via-teal-600 active:to-emerald-700 lg:text-2xl"
@@ -225,11 +226,12 @@
 		</div>
 	</div>
 </div>
-<!--<div
-	class="animation-div relative"
-	style="background-image: url({starBg}); background-size: cover; width: 100dvw; background-position: center; overflow-x: clip"
->-->
-<div class="animation-div relative" style="background-color: #07090a">
+
+<div
+	class="animation-div relative overflow-x-clip"
+	style="background: url({starBlackBg}), linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)); background-size: cover; background-position: center; background-blend-mode: overlay;"
+>
+	<!--<div class="animation-div relative" style="background-color: #07090a">-->
 	<div></div>
 	<div class="planet-div">
 		<enhanced:img
@@ -306,7 +308,7 @@
 	</div>
 </div>
 <div
-	class="mt-16 grid w-full grid-cols-1 justify-items-center gap-x-16 px-5 lg:grid-cols-2 lg:px-20"
+	class="topfade grid w-full grid-cols-1 justify-items-center gap-x-16 px-5 pt-20 lg:px-20 xl:grid-cols-2"
 >
 	<div class="avatar self-center self-center">
 		<div class="mask mask-squircle">
@@ -349,6 +351,19 @@
 </div>
 
 <style>
+	@media (max-width: 1280px) {
+		.no-bg {
+			background: #2a303c !important;
+		}
+	}
+
+	.hero {
+		
+		box-shadow: inset 0 -180px 100px -100px rgba(0, 0, 0, 1);
+	}
+	.topfade {
+		box-shadow: inset 0 180px 100px -100px rgba(0, 0, 0, 1);
+	}
 	.animation-div {
 		min-height: 200vh;
 	}

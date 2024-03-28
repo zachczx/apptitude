@@ -178,7 +178,9 @@
 	}); //close onmount
 </script>
 
-<div class="hero grid min-h-dvh grid-cols-1 justify-items-center gap-x-4 pb-[8rem] xl:grid-cols-2">
+<div
+	class="no-bg hero grid min-h-dvh grid-cols-1 justify-items-center gap-x-4 pb-[8rem] xl:grid-cols-2"
+>
 	<figure class="overlay">
 		<enhanced:img
 			src={oopsBg}
@@ -188,14 +190,13 @@
 		/>
 	</figure>
 	<div
-		class="mx-3 self-center justify-self-center rounded-2xl px-3 pt-3 lg:z-10 lg:mx-12 xl:bg-base-300 xl:p-8 xl:shadow-2xl xl:shadow-slate-800"
+		class="z-30 mx-3 self-center justify-self-center rounded-2xl px-3 pt-3 lg:mx-12 xl:bg-base-300 xl:p-8 xl:shadow-2xl xl:shadow-slate-800"
 	>
 		<div class="avatar mb-8 flex justify-center px-4 text-center xl:hidden">
 			<div class="mask mask-squircle">
 				<enhanced:img
 					src={oops}
 					alt="Oops"
-					class="relative"
 					sizes="(min-width:2560px) 1600px, (min-width:1000px) 800px, (min-width:768px) 400px"
 				/>
 			</div>
@@ -315,7 +316,7 @@
 	</div>
 </div>
 <div
-	class="no-bg grid min-h-dvh w-full grid-cols-1 justify-items-center gap-x-16 px-5 pb-5 pt-20 lg:px-20 xl:relative xl:grid-cols-2"
+	class="no-bg grid min-h-dvh w-full grid-cols-1 justify-items-center gap-x-16 px-5 pt-20 lg:px-20 xl:relative xl:grid-cols-2"
 >
 	<figure class="overlay-reverse">
 		<enhanced:img
@@ -359,8 +360,10 @@
 			what's standard out there.
 		</p>
 		<img src={bellCurveMeme} class="mb-7" alt="Geniuses and noobs" />
-		<p class="mb-3 text-xl">
-			Hopefully we can all shift to the right (or left is fine too) parts of the curve.
+		<p class="mb-7 text-xl">
+			Hopefully with a better idea of the real world - the good and the bad - and seeing a more
+			complete set of choices, we can all shift to the right (or left is fine too) parts of the
+			curve.
 		</p>
 	</div>
 </div>

@@ -3,7 +3,7 @@
 	export let urlMiddle, textMiddle, textCurrent;
 </script>
 
-<div class="mb-10 px-5 text-lg font-medium lg:px-20">
+<div class="nav-breadcrumb mb-10 px-5 text-lg font-medium lg:px-20">
 	<ul class="flex">
 		<li><a href="/" class="text-primary">Home</a></li>
 		{#if urlMiddle && textMiddle}
@@ -16,3 +16,9 @@
 		<li><SvgChevronRight class="mx-2 inline" />{textCurrent}</li>
 	</ul>
 </div>
+
+<style>
+	.nav-breadcrumb {
+		view-transition-name: nav-breadcrumb;
+	}
+</style>
