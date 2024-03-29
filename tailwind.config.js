@@ -6,13 +6,6 @@ export default {
 	},
 	plugins: [require('daisyui')],
 	daisyui: {
-		themes: [
-			{
-				dim: {
-					...require('daisyui/src/theming/themes')['dim']
-				}
-			},
-			'synthwave'
-		]
+		themes: ['dim']
 	}
 };

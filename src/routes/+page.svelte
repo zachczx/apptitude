@@ -179,7 +179,7 @@
 	}); //close onmount
 </script>
 
-<div class="hero grid min-h-dvh grid-cols-1 justify-items-center gap-x-4 pb-[8rem] xl:grid-cols-2">
+<div class="hero grid min-h-dvh grid-cols-1 justify-items-center pb-12 lg:pb-[8rem] xl:grid-cols-2">
 	<figure class="overlay">
 		<enhanced:img
 			src={oopsBg}
@@ -189,7 +189,7 @@
 		/>
 	</figure>
 	<div
-		class="mx-3 self-center justify-self-center rounded-2xl px-3 pt-3 lg:z-10 lg:mx-12 lg:mt-12 xl:bg-base-300 xl:p-8 xl:shadow-xl xl:shadow-lime-300"
+		class="mx-3 self-center justify-self-center rounded-2xl px-3 pt-3 lg:z-10 lg:mx-12 lg:mt-12 xl:bg-base-300 xl:p-8 xl:shadow-xl xl:shadow-black"
 	>
 		<div class="avatar mb-8 flex justify-center px-4 text-center xl:hidden">
 			<div class="mask mask-squircle">
@@ -207,79 +207,11 @@
 				>Build digital dreams.<br />Not nightmares.</span
 			>
 		</h1>
-		<h3 class="mb-1 py-2 text-2xl lg:text-4xl">
-			Digital products can be bad. Why aren't product owners doing anything?
-		</h3>
 		<p class="mb-7 py-2 text-lg lg:text-xl">
-			Slow, unusable, expensive, delayed, pointless Govt systems/apps around us.
+			Apptitude wants to make product and tech-related knowledge more accessible to civil servants.
+			Do things right and do the right things, instead of creating more nightmarish products.
 		</p>
-		<h3 class="mb-1 py-2 text-2xl lg:text-4xl">
-			Hypothesis: No one knows they're making bad decisions.
-		</h3>
-		<p class="mb-4 py-2 text-lg lg:text-xl">Ever had these thoughts?</p>
-		<div class="mb-7 grid grid-cols-1 gap-2 lg:grid-cols-2 xl:grid-cols-3">
-			<div class="card bg-base-300 shadow-xl lg:bg-base-100">
-				<div class="card-body">
-					<TablerQuotes
-						class="absolute bottom-0 right-0 stroke-green-400"
-						width="3em"
-						height="3em"
-					/>IDK what engineers are talking about.
-				</div>
-			</div>
-			<div class="card grid bg-base-300 shadow-xl lg:bg-base-100">
-				<div class="card-body">
-					<TablerQuotes
-						class="absolute bottom-0 right-0 stroke-green-400"
-						width="3em"
-						height="3em"
-					/>IDK why engineers are taking so long.
-				</div>
-			</div>
-			<div class="card bg-base-300 shadow-xl lg:bg-base-100">
-				<div class="card-body">
-					<TablerQuotes
-						class="absolute bottom-0 right-0 stroke-green-400"
-						width="3em"
-						height="3em"
-					/>IDK why engineers are complaining about policy.
-				</div>
-			</div>
-			<div class="card bg-base-300 shadow-xl lg:bg-base-100">
-				<div class="card-body">
-					<TablerQuotes
-						class="absolute bottom-0 right-0 stroke-green-400"
-						width="3em"
-						height="3em"
-					/>My system is good, I just need more $$, users will come.
-				</div>
-			</div>
-			<div class="card bg-base-300 shadow-xl lg:bg-base-100">
-				<div class="card-body">
-					<TablerQuotes
-						class="absolute bottom-0 right-0 stroke-green-400"
-						width="3em"
-						height="3em"
-					/>IDC just give me what my Dir wants.
-				</div>
-			</div>
-			<div class="card bg-base-300 shadow-xl lg:bg-base-100">
-				<div class="card-body">
-					<TablerQuotes
-						class="absolute bottom-0 right-0 stroke-green-400"
-						width="3em"
-						height="3em"
-					/>Just merge everyone's wishes and past SORs into the new SOR.
-				</div>
-			</div>
-		</div>
-
-		<h3 class="mb-1 py-2 text-2xl lg:text-4xl">Let's change this.</h3>
-		<p class="mb-7 py-2 text-lg lg:text-xl">
-			Apptitude makes product and tech-related info more accessible to civil servants. Use these
-			resources to get more knowledgeable and in turn make better product decisions.
-		</p>
-		<div class="join join-vertical mb-12 flex justify-center lg:join-horizontal lg:mb-5">
+		<div class="join join-vertical mb-12 flex justify-center lg:join-horizontal lg:mb-8">
 			<a
 				href="/learn"
 				class="btn join-item border border-primary bg-lime-600 font-medium text-white hover:border hover:border-primary hover:bg-gradient-to-r hover:from-lime-500 hover:via-teal-500 hover:to-emerald-600 active:from-lime-600 active:via-teal-600 active:to-emerald-700 lg:text-2xl"
@@ -290,6 +222,82 @@
 				class="btn join-item border border-primary bg-base-100 from-red-500 via-orange-500 to-pink-500 font-medium text-primary hover:border hover:border-primary hover:bg-gradient-to-r hover:from-red-600 hover:via-orange-600 hover:to-pink-600 hover:text-white active:from-red-700 active:via-orange-700 active:to-pink-700 lg:text-2xl"
 				>Quickstart Guides</a
 			>
+		</div>
+
+		<div class="card bg-base-300 text-base-content lg:bg-base-100">
+			<div class="card-body">
+				<h3 class="mb-5 text-xl lg:text-3xl">
+					Product owners don't know they're part of the problem
+				</h3>
+				<p class="text-lg lg:text-xl">
+					If these sound like you, you might be contributing to bad decisions & products:
+				</p>
+				<div class="grid grid-cols-1 gap-2 lg:grid-cols-2 xl:grid-cols-3">
+					<div class="card grid border-2 border-base-content bg-base-300 shadow-xl lg:bg-base-100">
+						<div class="card-body">
+							<TablerQuotes
+								class="absolute bottom-0 right-0 stroke-base-content"
+								width="3em"
+								height="3em"
+							/>IDK what engineers are saying.
+						</div>
+					</div>
+					<div class="card grid border-2 border-base-content bg-base-300 shadow-xl lg:bg-base-100">
+						<div class="card-body">
+							<TablerQuotes
+								class="absolute bottom-0 right-0 stroke-base-content"
+								width="3em"
+								height="3em"
+							/>Let's spend allocated $$, IDC about saving it.
+						</div>
+					</div>
+					<div class="card grid border-2 border-base-content bg-base-300 shadow-xl lg:bg-base-100">
+						<div class="card-body">
+							<TablerQuotes
+								class="absolute bottom-0 right-0 stroke-base-content"
+								width="3em"
+								height="3em"
+							/>Engineers and users should just suck it up.
+						</div>
+					</div>
+					<div class="card grid border-2 border-base-content bg-base-300 shadow-xl lg:bg-base-100">
+						<div class="card-body">
+							<TablerQuotes
+								class="absolute bottom-0 right-0 stroke-base-content"
+								width="3em"
+								height="3em"
+							/>My system is good, I just need more $$ for it.
+						</div>
+					</div>
+					<div class="card grid border-2 border-base-content bg-base-300 shadow-xl lg:bg-base-100">
+						<div class="card-body">
+							<TablerQuotes
+								class="absolute bottom-0 right-0 stroke-base-content"
+								width="3em"
+								height="3em"
+							/>Stop asking and just do what my Dir said.
+						</div>
+					</div>
+					<div class="card grid border-2 border-base-content bg-base-300 shadow-xl lg:bg-base-100">
+						<div class="card-body">
+							<TablerQuotes
+								class="absolute bottom-0 right-0 stroke-base-content"
+								width="3em"
+								height="3em"
+							/>New SOR = existing + every possible rqmt.
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="card mt-5 bg-base-300 text-base-content lg:bg-base-100">
+			<div class="card-body">
+				<h3 class="mb-5 text-xl lg:text-3xl">Let's change this.</h3>
+				<p class="text-lg lg:text-xl">
+					Supercharge your learning to make better product decisions, give users a good experience,
+					save taxpayers money.
+				</p>
+			</div>
 		</div>
 	</div>
 </div>
