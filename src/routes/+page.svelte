@@ -6,6 +6,7 @@
 	import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 	import TablerHelpCircleFilled from '$lib/assets/svg/TablerHelpCircleFilled.svelte';
 	import TablerChevronRight from '$lib/assets/svg/TablerChevronRight.svelte';
+	import TablerQuotes from '$lib/assets/svg/TablerQuotes.svelte';
 	import rocketb from '$lib/assets/rocket_b.webp?enhanced&w=1200;800;400';
 	import rocketc from '$lib/assets/rocket_c.webp?enhanced&w=1500;800;400';
 	import oopsBg from '$lib/assets/oops-bg.webp?enhanced&w=2060;1536;1280;1024';
@@ -188,7 +189,7 @@
 		/>
 	</figure>
 	<div
-		class="mx-3 self-center justify-self-center rounded-2xl px-3 pt-3 lg:z-10 lg:mx-12 xl:bg-base-300 xl:p-8 xl:shadow-2xl xl:shadow-slate-800"
+		class="mx-3 self-center justify-self-center rounded-2xl px-3 pt-3 lg:z-10 lg:mx-12 lg:mt-12 xl:bg-base-300 xl:p-8 xl:shadow-xl xl:shadow-lime-300"
 	>
 		<div class="avatar mb-8 flex justify-center px-4 text-center xl:hidden">
 			<div class="mask mask-squircle">
@@ -207,20 +208,72 @@
 			>
 		</h1>
 		<h3 class="mb-1 py-2 text-2xl lg:text-4xl">
-			Digital products in the public sector are often bad.
+			Digital products can be bad. Why aren't product owners doing anything?
 		</h3>
 		<p class="mb-7 py-2 text-lg lg:text-xl">
-			We see slow, unusable, expensive, oft-delayed or pointless Govt systems/apps around us. Why
-			aren't product owners doing anything?
+			Slow, unusable, expensive, delayed, pointless Govt systems/apps around us.
 		</p>
 		<h3 class="mb-1 py-2 text-2xl lg:text-4xl">
-			The root cause: they don't even know they're making bad decisions.
+			Hypothesis: No one knows they're making bad decisions.
 		</h3>
-		<div class="mockup-code mb-7 w-11/12 bg-gray-900 xl:w-full">
-			<pre data-prefix="$"><code>test tech-knowledge</code></pre>
-			<pre data-prefix=">"><code>testing......</code></pre>
-			<pre data-prefix=">" class="text-red-500"><code>Error: tech-knowledge failed</code></pre>
+		<p class="mb-4 py-2 text-lg lg:text-xl">Ever had these thoughts?</p>
+		<div class="mb-7 grid grid-cols-1 gap-2 lg:grid-cols-2 xl:grid-cols-3">
+			<div class="card bg-base-300 shadow-xl lg:bg-base-100">
+				<div class="card-body">
+					<TablerQuotes
+						class="absolute bottom-0 right-0 stroke-green-400"
+						width="3em"
+						height="3em"
+					/>IDK what engineers are talking about.
+				</div>
+			</div>
+			<div class="card grid bg-base-300 shadow-xl lg:bg-base-100">
+				<div class="card-body">
+					<TablerQuotes
+						class="absolute bottom-0 right-0 stroke-green-400"
+						width="3em"
+						height="3em"
+					/>IDK why engineers are taking so long.
+				</div>
+			</div>
+			<div class="card bg-base-300 shadow-xl lg:bg-base-100">
+				<div class="card-body">
+					<TablerQuotes
+						class="absolute bottom-0 right-0 stroke-green-400"
+						width="3em"
+						height="3em"
+					/>IDK why engineers are complaining about policy.
+				</div>
+			</div>
+			<div class="card bg-base-300 shadow-xl lg:bg-base-100">
+				<div class="card-body">
+					<TablerQuotes
+						class="absolute bottom-0 right-0 stroke-green-400"
+						width="3em"
+						height="3em"
+					/>My system is good, I just need more $$, users will come.
+				</div>
+			</div>
+			<div class="card bg-base-300 shadow-xl lg:bg-base-100">
+				<div class="card-body">
+					<TablerQuotes
+						class="absolute bottom-0 right-0 stroke-green-400"
+						width="3em"
+						height="3em"
+					/>IDC just give me what my Dir wants.
+				</div>
+			</div>
+			<div class="card bg-base-300 shadow-xl lg:bg-base-100">
+				<div class="card-body">
+					<TablerQuotes
+						class="absolute bottom-0 right-0 stroke-green-400"
+						width="3em"
+						height="3em"
+					/>Just merge everyone's wishes and past SORs into the new SOR.
+				</div>
+			</div>
 		</div>
+
 		<h3 class="mb-1 py-2 text-2xl lg:text-4xl">Let's change this.</h3>
 		<p class="mb-7 py-2 text-lg lg:text-xl">
 			Apptitude makes product and tech-related info more accessible to civil servants. Use these

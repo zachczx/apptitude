@@ -123,13 +123,24 @@
 				to be done via LifeSG. Ugh, so much worse than the original OneService app.
 			</p>
 			<h2 class="mb-7">Road to hell is paved with good intentions</h2>
-			<p class="mb-12">
+			<p class="mb-7">
 				I don't think any public servant wakes up and says "let me think of ways to waste money and
 				make a bad product". If there is, fire that person! In my view, a lot of the time, decisions
 				or policies made are head scratchers. Maybe because they were made by people who don't hear
 				from the ones actually using or building these things. Or maybe they're unaware they're
 				doing the wrong things despite best intentions, and then they get promoted.
 			</p>
+			<p class="mb-7">
+				Unfortunately there's no test for knowledge before people are put in positions of power.
+			</p>
+			<div class="mockup-code mb-12 w-11/12 bg-gray-900 xl:w-full">
+				<pre data-prefix="$"><code>test tech-knowledge</code></pre>
+				<pre data-prefix=">"><code>Testing......</code></pre>
+				<pre data-prefix=">" class="text-red-500"><code>Error: tech-knowledge failed</code></pre>
+				<pre data-prefix=">" class="text-yellow-500"><code
+						>Rebuild your tech-knowledge dependencies</code
+					></pre>
+			</div>
 			<h2 class="mb-7">You're too harsh!</h2>
 			<p class="mb-12">
 				I'm not nice (though certainly not at Linus' level). I don't know a way to say the stuff
