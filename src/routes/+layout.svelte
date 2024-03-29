@@ -1,6 +1,6 @@
 <script>
 	import '../app.css';
-	import logo from '$lib/assets/green-logo.webp?enhanced&w=800;600;400';
+	import logo from '$lib/assets/green-logo.webp?enhanced&w=400;300;200';
 	import PageTransition from '$lib/Transition.svelte';
 	import TablerSquareRoundedPlusFilled from '$lib/assets/svg/TablerSquareRoundedPlusFilled.svelte';
 	import TablerChevronRight from '$lib/assets/svg/TablerChevronRight.svelte';
@@ -37,7 +37,7 @@
 </svelte:head>
 
 <div class="navbar relative mb-10 lg:mb-0">
-	<div class="navbar-start">
+	<div class="max-h-18 navbar-start">
 		<div class="dropdown">
 			<div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
 				<svg
@@ -85,14 +85,15 @@
 		<a href="/"
 			><enhanced:img
 				src={logo}
-				sizes="(min-width:1920px) 800px, (min-width:1600px) 600px, (min-width:1280px) 400px"
+				sizes="(min-width:1920px) 400px, (min-width:1600px) 300px, (min-width:1280px) 200px"
 				alt="Apptitude"
+				class="object-scale-down lg:ms-16"
 			/></a
 		>
 	</div>
 	<div class="navbar-center"></div>
 	<div class="navbar-end hidden pe-12 lg:flex">
-		<ul class="menu menu-horizontal gap-x-[2rem] pe-5 ps-1 pt-7 text-2xl font-medium">
+		<ul class="menu menu-horizontal gap-x-[2rem] pe-5 ps-1 text-2xl font-medium">
 			<!-- removed menu class -->
 			<li aria-current={matchUrl(data.url, '/learn') === 0 ? 'page' : undefined}>
 				<a class="hover:bg-base-100 hover:text-primary" href="/learn">Learn</a>

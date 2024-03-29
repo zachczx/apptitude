@@ -28,8 +28,9 @@
 			</h1>
 			<h2 class="mb-7">TL;DR</h2>
 			<p class="mb-7">
-				I made Apptitude to help my teammates know what competencies to learn, find out where to
-				learn them, and quickly get started to scrutinize tech stuff that I like to.
+				I wrote Apptitude to learn Svelte and at the same time figure a way to help my teammates
+				know what competencies to learn, easily grab resources, and quickly use the knowledge to
+				call out bad tech outcomes.
 			</p>
 			<div class="border-t-2 border-slate-400 text-center">
 				<button
@@ -76,10 +77,9 @@
 				<div class="mb-7 rounded-lg bg-base-300 p-3" transition:slide={{ delay: 0, duration: 500 }}>
 					<h2 class="mb-7">A longer explanation?</h2>
 					<p class="mb-7">
-						Apptitude is my attempt to start more dissatisfaction and rebellion against poor product
-						outcomes and decision making. Breaking groupthink, because disagreeing can be very
-						difficult. Giving people the mental tools/mindset to critique and understand good
-						decisions don't magically come with positions of power.
+						Apptitude is an attempt to start more dissatisfaction and rebel against poor product
+						outcomes and groupthink. My hypothesis is that people need the knowledge and safety to
+						critique, otherwise it's always safer to defer to people in high positions of power.
 					</p>
 					<p class="mb-7">
 						In my past job as a "tech policy officer" I came to realize WOG tech outcomes were poor.
@@ -89,20 +89,19 @@
 							class="text-primary">(here)</a
 						>. Products are slow, laggy, hard to use, super expensive.
 					</p>
-
 					<p class="mb-7">
-						Reflecting on my own journey and weaknesses, good decisions are mostly common sense, but
-						what sounds 'duh' often doesn't get chosen in the public service. Like this meme here
-						actually. Sometimes it's entrenched mindsets, but oftentimes it's simply not knowing
-						what the issue even is and what's the standard out in the world.But I try my best and
-						supplement those with what I hear from good people around, the good and bad I saw.
+						Occam's razor applies - the simplest solution is almost always the best. Reflecting on
+						my own journey and weaknesses, good decisions are mostly common sense, but that often
+						doesn't get chosen in the public service. Like this meme below. Sometimes it's
+						entrenched mindsets, but often people who make assessments don't know what the issue is
+						and what's standard out there.
 					</p>
+					<img src={bellCurveMeme} class="mb-7" alt="Geniuses and noobs" />
 					<p class="mb-7">
 						Hopefully with a better idea of the real world (this does include the imperfects in
 						tech, *cough* js runtimes and frameworks *cough*) and seeing a more complete set of
 						choices, we can all shift to the right (or left is fine too) parts of the curve.
 					</p>
-					<img src={bellCurveMeme} class="mb-7" alt="Geniuses and noobs" />
 				</div>
 			{/if}
 			<h2 class="mb-7 mt-7">What's in it for you?</h2>
