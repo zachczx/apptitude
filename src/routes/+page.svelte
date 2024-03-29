@@ -6,7 +6,7 @@
 	import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 	import TablerHelpCircleFilled from '$lib/assets/svg/TablerHelpCircleFilled.svelte';
 	import TablerChevronRight from '$lib/assets/svg/TablerChevronRight.svelte';
-	import TablerQuotes from '$lib/assets/svg/TablerQuotes.svelte';
+
 	import rocketb from '$lib/assets/rocket_b.webp?enhanced&w=1200;800;400';
 	import rocketc from '$lib/assets/rocket_c.webp?enhanced&w=1500;800;400';
 	import oopsBg from '$lib/assets/oops-bg.webp?enhanced&w=2060;1536;1280;1024';
@@ -204,12 +204,12 @@
 		<h1 class="mb-12 text-center text-5xl lg:text-6xl xl:text-7xl min-[1921px]:text-9xl">
 			<span
 				class="bg-gradient-to-r from-lime-300 via-green-400 to-teal-100 bg-clip-text text-transparent"
-				>Build digital dreams.<br />Not nightmares.</span
+				>Build digital dreams. Not nightmares.</span
 			>
 		</h1>
-		<p class="mb-7 py-2 text-lg lg:text-xl">
-			Apptitude wants to make product and tech-related knowledge more accessible to civil servants.
-			Do things right and do the right things, instead of creating more nightmarish products.
+		<p class="mb-7 py-2 text-center text-lg lg:text-2xl">
+			Get access to product and tech-related knowledge. Start learning, find your own mix of
+			business-product-technical knowledge, build good digital products.
 		</p>
 		<div class="join join-vertical mb-12 flex justify-center lg:join-horizontal lg:mb-8">
 			<a
@@ -223,82 +223,6 @@
 				>Quickstart Guides</a
 			>
 		</div>
-
-		<div class="card bg-base-300 text-base-content lg:bg-base-100">
-			<div class="card-body">
-				<h3 class="mb-5 text-xl lg:text-3xl">
-					Product owners don't know they're part of the problem
-				</h3>
-				<p class="text-lg lg:text-xl">
-					If these sound like you, you might be contributing to bad decisions & products:
-				</p>
-				<div class="grid grid-cols-1 gap-2 lg:grid-cols-2 xl:grid-cols-3">
-					<div class="card grid border-2 border-base-content bg-base-300 shadow-xl lg:bg-base-100">
-						<div class="card-body">
-							<TablerQuotes
-								class="absolute bottom-0 right-0 stroke-base-content"
-								width="3em"
-								height="3em"
-							/>IDK what engineers are saying.
-						</div>
-					</div>
-					<div class="card grid border-2 border-base-content bg-base-300 shadow-xl lg:bg-base-100">
-						<div class="card-body">
-							<TablerQuotes
-								class="absolute bottom-0 right-0 stroke-base-content"
-								width="3em"
-								height="3em"
-							/>Let's spend allocated $$, IDC about saving it.
-						</div>
-					</div>
-					<div class="card grid border-2 border-base-content bg-base-300 shadow-xl lg:bg-base-100">
-						<div class="card-body">
-							<TablerQuotes
-								class="absolute bottom-0 right-0 stroke-base-content"
-								width="3em"
-								height="3em"
-							/>Engineers and users should just suck it up.
-						</div>
-					</div>
-					<div class="card grid border-2 border-base-content bg-base-300 shadow-xl lg:bg-base-100">
-						<div class="card-body">
-							<TablerQuotes
-								class="absolute bottom-0 right-0 stroke-base-content"
-								width="3em"
-								height="3em"
-							/>My system is good, I just need more $$ for it.
-						</div>
-					</div>
-					<div class="card grid border-2 border-base-content bg-base-300 shadow-xl lg:bg-base-100">
-						<div class="card-body">
-							<TablerQuotes
-								class="absolute bottom-0 right-0 stroke-base-content"
-								width="3em"
-								height="3em"
-							/>Stop asking and just do what my Dir said.
-						</div>
-					</div>
-					<div class="card grid border-2 border-base-content bg-base-300 shadow-xl lg:bg-base-100">
-						<div class="card-body">
-							<TablerQuotes
-								class="absolute bottom-0 right-0 stroke-base-content"
-								width="3em"
-								height="3em"
-							/>New SOR = existing + every possible rqmt.
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="card mt-5 bg-base-300 text-base-content lg:bg-base-100">
-			<div class="card-body">
-				<h3 class="mb-5 text-xl lg:text-3xl">Let's change this.</h3>
-				<p class="text-lg lg:text-xl">
-					Supercharge your learning to make better product decisions, give users a good experience,
-					save taxpayers money.
-				</p>
-			</div>
-		</div>
 	</div>
 </div>
 
@@ -306,8 +230,6 @@
 	class="animation-div relative overflow-x-clip"
 	style="background: url({starBlackBg}), linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)); background-size: cover; background-position: center; background-blend-mode: overlay;"
 >
-	<!--<div class="animation-div relative" style="background-color: #07090a">-->
-	<div></div>
 	<div class="planet-div">
 		<enhanced:img
 			src={pixarEarth}
@@ -356,25 +278,25 @@
 			sizes="(min-width:1400px) 1500px, (max-width:1399px) 800px, (max-width:768px) 400px"
 		/>
 	</div>
-	<div class="tagline-intro popped text-2xl font-bold lg:text-5xl">
+	<div class="tagline-intro popped text-4xl font-bold lg:text-5xl">
 		<span class="text-slate-100">Launch your learning in...</span>
 	</div>
 
-	<div class="tagline-green2 popped text-3xl font-bold lg:text-6xl">
+	<div class="tagline-green2 popped text-4xl font-bold lg:text-6xl">
 		<span
 			class="bg-gradient-to-r from-green-400 via-emerald-300 to-lime-400 bg-clip-text text-transparent"
 		>
 			3.. 2.. 1.. Go!</span
 		>
 	</div>
-	<div class="tagline-green popped text-3xl font-bold lg:text-6xl">
+	<div class="tagline-green popped text-4xl font-bold lg:text-6xl">
 		<span
 			class="bg-gradient-to-r from-yellow-200 via-yellow-300 to-yellow-200 bg-clip-text text-transparent"
 		>
 			3.. 2.. 1.. Go!</span
 		>
 	</div>
-	<div class="tagline-darkgreen popped text-3xl font-bold lg:text-6xl">
+	<div class="tagline-darkgreen popped text-4xl font-bold lg:text-6xl">
 		<span
 			class="bg-gradient-to-r from-green-600 via-lime-600 to-emerald-600 bg-clip-text text-transparent"
 		>

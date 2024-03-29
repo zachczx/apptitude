@@ -8,6 +8,7 @@
 	import pandablanket from '$lib/assets/pandablanket.webp?enhanced&w=1000;700;400';
 	import pandayawn from '$lib/assets/pandayawn.webp?enhanced&w=1000;700;400';
 	import pandabutterfly from '$lib/assets/panda-butterfly.webp?enhanced&w=1000;700;400';
+	import TablerQuotes from '$lib/assets/svg/TablerQuotes.svelte';
 
 	let seeMore = true;
 </script>
@@ -88,6 +89,7 @@
 							class="text-primary">(here)</a
 						>. Products are slow, laggy, hard to use, super expensive.
 					</p>
+
 					<p class="mb-7">
 						Reflecting on my own journey and weaknesses, good decisions are mostly common sense, but
 						what sounds 'duh' often doesn't get chosen in the public service. Like this meme here
@@ -103,13 +105,73 @@
 					<img src={bellCurveMeme} class="mb-7" alt="Geniuses and noobs" />
 				</div>
 			{/if}
-			<h2 class="mb-7 mt-12">What's in it for you?</h2>
-			<p class="mb-12">
+			<h2 class="mb-7 mt-7">What's in it for you?</h2>
+			<p class="mb-7">
 				I do this so that I can feel like I did some good for society. If you asked just one extra
 				question that saves taxpayers some money or give users a better product, Apptitude would
 				have done some good for Singaporeans. (If this really does work out, maybe I should put some
 				ads or make this in patreon or something. /jk)
 			</p>
+			<p class="mb-7">
+				Seriously though, if these sound like you, you might be contributing to bad decisions &
+				products:
+			</p>
+			<div class="mb-12 grid grid-cols-1 gap-2 lg:grid-cols-2 xl:grid-cols-3">
+				<div class="card grid border-2 border-base-content bg-base-300 shadow-xl lg:bg-base-100">
+					<div class="card-body">
+						<TablerQuotes
+							class="absolute bottom-0 right-0 stroke-base-content"
+							width="3em"
+							height="3em"
+						/>IDK what engineers are saying.
+					</div>
+				</div>
+				<div class="card grid border-2 border-base-content bg-base-300 shadow-xl lg:bg-base-100">
+					<div class="card-body">
+						<TablerQuotes
+							class="absolute bottom-0 right-0 stroke-base-content"
+							width="3em"
+							height="3em"
+						/>Let's spend allocated $$, IDC about saving it.
+					</div>
+				</div>
+				<div class="card grid border-2 border-base-content bg-base-300 shadow-xl lg:bg-base-100">
+					<div class="card-body">
+						<TablerQuotes
+							class="absolute bottom-0 right-0 stroke-base-content"
+							width="3em"
+							height="3em"
+						/>Engineers and users should just suck it up.
+					</div>
+				</div>
+				<div class="card grid border-2 border-base-content bg-base-300 shadow-xl lg:bg-base-100">
+					<div class="card-body">
+						<TablerQuotes
+							class="absolute bottom-0 right-0 stroke-base-content"
+							width="3em"
+							height="3em"
+						/>My system is good, I just need more $$ for it.
+					</div>
+				</div>
+				<div class="card grid border-2 border-base-content bg-base-300 shadow-xl lg:bg-base-100">
+					<div class="card-body">
+						<TablerQuotes
+							class="absolute bottom-0 right-0 stroke-base-content"
+							width="3em"
+							height="3em"
+						/>Stop asking and just do what my Dir said.
+					</div>
+				</div>
+				<div class="card grid border-2 border-base-content bg-base-300 shadow-xl lg:bg-base-100">
+					<div class="card-body">
+						<TablerQuotes
+							class="absolute bottom-0 right-0 stroke-base-content"
+							width="3em"
+							height="3em"
+						/>New SOR = existing + every possible rqmt.
+					</div>
+				</div>
+			</div>
 			<h2 class="mb-7">What's a bad product?</h2>
 			<p class="mb-7">
 				I'll draw from personal experience. Take LifeSG. I used LifeSG in the delivery suite after

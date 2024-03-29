@@ -55,21 +55,29 @@
 				>
 			</div>
 			<nav class="opacity-1 menu dropdown-content z-50 w-48 rounded-lg bg-slate-900 p-0 text-xl">
-				<a class="px-1 py-1 hover:bg-slate-600 active:font-bold active:text-primary" href="/learn"
+				<a
+					class="border-b border-slate-600 p-3 hover:rounded-t-lg hover:bg-slate-600 active:font-bold active:text-primary"
+					href="/learn"
 					><TablerChevronRight class="inline align-middle" height="1rem" width="1rem" /> Learn</a
 				>
-				<a class="px-1 py-1 hover:bg-slate-600 active:font-bold active:text-primary" href="/cacheup"
+				<a
+					class="border-b border-slate-600 p-3 hover:bg-slate-600 active:font-bold active:text-primary"
+					href="/cacheup"
 					><TablerChevronRight class="inline align-middle" height="1rem" width="1rem" /> Cache Up!</a
 				>
 				<a
-					class="px-1 py-1 hover:bg-slate-600 active:font-bold active:text-primary"
+					class="border-b border-slate-600 p-3 hover:bg-slate-600 active:font-bold active:text-primary"
 					href="/techtrippin"
 					><TablerChevronRight class="inline align-middle" height="1rem" width="1rem" /> Tech Trippin'</a
 				>
-				<a class="px-1 py-1 hover:bg-slate-600 active:font-bold active:text-primary" href="/todo"
+				<a
+					class="border-b border-slate-600 p-3 hover:bg-slate-600 active:font-bold active:text-primary"
+					href="/todo"
 					><TablerChevronRight class="inline align-middle" height="1rem" width="1rem" /> To-Do List</a
 				>
-				<a class="px-1 py-1 hover:bg-slate-600 active:font-bold active:text-primary" href="/about"
+				<a
+					class="p-3 hover:rounded-b-lg hover:bg-slate-600 active:font-bold active:text-primary"
+					href="/about"
 					><TablerChevronRight class="inline align-middle" height="1rem" width="1rem" /> About</a
 				>
 			</nav>
