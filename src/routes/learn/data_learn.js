@@ -143,11 +143,11 @@ export const info = [
 					url: 'https://www.developer.tech.gov.sg/'
 				},
 				{
-					text: 'Our Products',
+					text: 'Our Products | Open Government Products',
 					url: 'https://www.open.gov.sg/products/'
 				},
 				{
-					text: 'Products and Services',
+					text: 'Products and Services | GovTech Singapore',
 					url: 'https://www.tech.gov.sg/products-and-services/'
 				}
 			]
@@ -210,7 +210,6 @@ export const info = [
 					text: 'UXPodcast',
 					url: 'https://uxpodcast.com/'
 				},
-
 				{
 					text: 'Transformation Fail - Silicon Valley Product Group',
 					url: 'https://www.svpg.com/transformation-fail/'
@@ -409,6 +408,10 @@ export const info = [
 				{
 					text: 'Attention Is All You Need | 31st Conference on Neural Information Processing Systems (NIPS 2017)',
 					url: 'https://proceedings.neurips.cc/paper_files/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf'
+				},
+				{
+					text: 'LMSYS Chatbot Arena Leaderboard',
+					url: 'https://huggingface.co/spaces/lmsys/chatbot-arena-leaderboard'
 				}
 			]
 		}
@@ -497,6 +500,10 @@ export const info = [
 				{
 					text: 'BugBytes - YouTube',
 					url: 'https://www.youtube.com/@bugbytes3923'
+				},
+				{
+					text: "Ask HN: Startup Devs -What's your biggest pain while managing cloud deployments?",
+					url: 'https://news.ycombinator.com/item?id=39836124'
 				}
 			]
 		}

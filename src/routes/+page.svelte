@@ -206,18 +206,25 @@
 				>Build digital dreams.<br />Not nightmares.</span
 			>
 		</h1>
+		<h3 class="mb-1 py-2 text-2xl lg:text-4xl">
+			Digital products in the public sector are often bad.
+		</h3>
+		<p class="mb-7 py-2 text-lg lg:text-xl">
+			We see slow, unusable, expensive, oft-delayed or pointless Govt systems/apps around us. Why
+			aren't product owners doing anything?
+		</p>
+		<h3 class="mb-1 py-2 text-2xl lg:text-4xl">
+			The root cause: they don't even know they're making bad decisions.
+		</h3>
 		<div class="mockup-code mb-7 w-11/12 bg-gray-900 xl:w-full">
 			<pre data-prefix="$"><code>test tech-knowledge</code></pre>
 			<pre data-prefix=">"><code>testing......</code></pre>
 			<pre data-prefix=">" class="text-red-500"><code>Error: tech-knowledge failed</code></pre>
 		</div>
-		<p class="mb-1 py-2 text-lg lg:text-xl">
-			Digital products in the public sector can and should be better.
-		</p>
+		<h3 class="mb-1 py-2 text-2xl lg:text-4xl">Let's change this.</h3>
 		<p class="mb-7 py-2 text-lg lg:text-xl">
-			Apptitude aims to remedy the root cause of low, unusable, expensive and oft-delayed Govt
-			systems and apps we see around us. Use the resources here to find out what goes into good
-			digital products for citizens.
+			Apptitude makes product and tech-related info more accessible to civil servants. Use these
+			resources to get more knowledgeable and in turn make better product decisions.
 		</p>
 		<div class="join join-vertical mb-12 flex justify-center lg:join-horizontal lg:mb-5">
 			<a
