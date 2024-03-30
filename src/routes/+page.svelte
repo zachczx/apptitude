@@ -24,7 +24,7 @@
 		/>
 	</figure>
 	<div
-		class="mx-3 self-center justify-self-center rounded-full px-3 pt-3 lg:z-10 lg:mx-12 lg:mt-12 xl:bg-black xl:p-[8rem]"
+		class="mx-3 self-center justify-self-center rounded-full px-3 pt-3 lg:z-10 lg:mx-12 lg:mt-12 xl:p-[8rem]"
 	>
 		<div class="avatar mb-8 flex justify-center px-4 text-center xl:hidden">
 			<div class="mask mask-squircle">
@@ -43,7 +43,8 @@
 			>
 		</h1>
 		<p class="mb-12 py-2 text-center text-lg lg:text-2xl">
-			Get access to product and tech insights. Build good digital products with them.
+			Apptitude supercharges you with product and tech insights. Remedy awful digital products in
+			the public sector, give citizens the user experience they deserve.
 		</p>
 		<div class="join join-vertical flex justify-center lg:join-horizontal">
 			<a
@@ -146,7 +147,7 @@
 			left: 0;
 			display: block;
 			position: absolute;
-			background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 20%);
+			background: linear-gradient(40deg, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 70%);
 		}
 
 		.overlay-reverse::before {

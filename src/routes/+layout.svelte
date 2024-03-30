@@ -1,6 +1,6 @@
 <script>
 	import '../app.css';
-	import logo from '$lib/assets/green-logo.webp?enhanced&w=400;300;200';
+	import logo from '$lib/assets/green-logo.webp?enhanced&w=300;200';
 	import PageTransition from '$lib/Transition.svelte';
 	import TablerSquareRoundedPlusFilled from '$lib/assets/svg/TablerSquareRoundedPlusFilled.svelte';
 	import TablerChevronRight from '$lib/assets/svg/TablerChevronRight.svelte';
@@ -36,7 +36,7 @@
 	<title>{pageName}</title>
 </svelte:head>
 
-<div class="navbar relative mb-10 lg:mb-0">
+<div class="navbar relative bg-base-300">
 	<div class="max-h-18 navbar-start">
 		<div class="dropdown">
 			<div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -85,14 +85,13 @@
 		<a href="/"
 			><enhanced:img
 				src={logo}
-				sizes="(min-width:1920px) 400px, (min-width:1600px) 300px, (min-width:1280px) 200px"
+				sizes="(min-width:1920px) 300px, (min-width:1600px) 300px, (min-width:1280px) 200px"
 				alt="Apptitude"
 				class="object-scale-down lg:ms-16"
 			/></a
 		>
 	</div>
-	<div class="navbar-center"></div>
-	<div class="navbar-end hidden pe-12 lg:flex">
+	<div class="navbar-center hidden lg:flex">
 		<ul class="menu menu-horizontal gap-x-[2rem] pe-5 ps-1 text-2xl font-medium">
 			<!-- removed menu class -->
 			<li aria-current={matchUrl(data.url, '/learn') === 0 ? 'page' : undefined}>
@@ -112,6 +111,7 @@
 			</li>
 		</ul>
 	</div>
+	<div class="navbar-end"></div>
 </div>
 
 {#if !viewTransition}
@@ -122,7 +122,7 @@
 	<slot />
 {/if}
 
-<footer class="footer footer-center gap-y-2 rounded bg-base-200 p-10 pt-10 text-base-content">
+<footer class="footer footer-center gap-y-2 rounded bg-base-200 p-3 pt-5 text-base-content">
 	<aside>
 		<p class="mb-2">Copyright © 2024 Zixian Chen. All rights reserved.</p>
 	</aside>
