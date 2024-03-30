@@ -85,11 +85,11 @@
 				</div>
 			</div>
 
-			<div class="grid grid-cols-1 justify-items-center gap-y-8 lg:mb-7 lg:gap-y-20">
+			<div class="grid grid-cols-1 justify-items-center gap-y-8 lg:mb-7 lg:gap-y-10">
 				{#each techtrippin as techtrippinItem, i}
-					<div id="tidbit-{i}" class="convo rounded-2xl bg-slate-700 p-2 xl:p-6">
-						<div>
-							<h2 class="pb-10 pt-3 text-center">{techtrippinItem.title}</h2>
+					<div id="tidbit-{i}" class="convo rounded-2xl bg-slate-700">
+						<h2 class="rounded-t-2xl bg-gray-950 py-5 text-center">{techtrippinItem.title}</h2>
+						<div class="p-2 xl:p-6">
 							<div class="chat chat-start">
 								<div class="avatar chat-image">
 									<div class="w-10 rounded-full lg:w-[200px]">

@@ -50,7 +50,7 @@
 			<a
 				href="/learn"
 				class="btn join-item border border-primary bg-lime-600 font-medium text-white hover:border hover:border-primary hover:bg-gradient-to-r hover:from-lime-500 hover:via-teal-500 hover:to-emerald-600 active:from-lime-600 active:via-teal-600 active:to-emerald-700 lg:text-2xl"
-				>Learn Basics <SvgChevronRight height="1.7rem" width="1.7rem" stroke="white" /></a
+				>Learn Basics</a
 			>
 			<a
 				href="/cacheup"

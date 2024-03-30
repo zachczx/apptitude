@@ -27,9 +27,16 @@ export const info = [
 			'What is on-premises?',
 			'What is virtualization, virtual machines, hypervisors, key management systems?'
 		],
-		issues: [],
+		issues: [
+			"The hardest part of building software is not coding, it's requirements",
+			'Requirements are usually specified by business owners who have no idea the complexity involved with every extra word included on the spec sheet',
+			'Trade-offs need to be made after considering tech stacks, cost, manpower, security, timeline, business risks, policy blockers',
+			'But none of these can be done with poor understanding of foundational technologies that make the web tick.',
+			'Business processes, service processes, policies can block technical and lead to unnecessary poor outcomes'
+		],
 		objectives: [
 			'Understand the Basics of Computer Science and Engineering',
+			'Figure out the building blocks necessary to build modern apps, services, systems, platforms',
 			'Comprehend the broad differences between programming languages',
 			'Grasp the Fundamentals of Internet, web technologies, network infrastructure',
 			'Know what constitutes modern, digital infrastructure',
@@ -79,6 +86,10 @@ export const info = [
 				{
 					text: 'Google IT Support Professional Certificate | Coursera',
 					url: 'https://www.coursera.org/professional-certificates/google-it-support'
+				},
+				{
+					text: "The hardest part of building software is not coding, it's requirements",
+					url: 'https://stackoverflow.blog/2023/12/29/the-hardest-part-of-building-software-is-not-coding-its-requirements/'
 				}
 			]
 		}
@@ -103,14 +114,15 @@ export const info = [
 			'Employee productivity can increase even with poor tooling - people can produce more work by working more hours or doing things manually',
 			'Organizations can just give employees better tools to produce quality work faster',
 			'Users need to articulate the business benefits from using tools',
-			'Those in charge of IT policy guardrails need to understand industry staples and why people use those tools to have meaningful conversations',
-			'It can be as innocuous as making designers iterate on design concepts with business owners over powerpoint/pdf, when everyone could just hop onto Figma',
-			'Employees can get frustrated when they need to use multiple apps, e.g. Teams for meeting bosses, Slack for chats with developers, having to find documents across different platforms'
+			'IT policy guardrails need to move with the times, not adopting industry staples can incur opportunity costs to expenditure on manpower, productivity, speed of delivery',
+			'Employees can get frustrated when they need to use multiple apps, e.g. Teams for meeting bosses, Slack for chats with developers, having to find documents across different platforms',
+			"However, don't ask employees to use software when it blatantly doesn't solve any problem, like forcing people to spend time logging tasks over Jira instead of doing real work"
 		],
 		objectives: [
 			'Know what the free world uses for work',
 			'Identify how efficient and simple processes can be',
-			'See the opportunity costs and trade-offs for not using them'
+			'See the opportunity costs and trade-offs for not using them',
+			"Notice when processes just don't make sense, e.g. designers iterate on design concepts with business owners over powerpoint/pdf, when everyone could just hop onto Figma"
 		],
 		resources: {
 			youtube: [
@@ -295,6 +307,10 @@ export const info = [
 				{
 					text: 'Transformation Theater - Silicon Valley Product Group',
 					url: 'https://www.svpg.com/transformation-theater/'
+				},
+				{
+					text: "The hardest part of building software is not coding, it's requirements",
+					url: 'https://stackoverflow.blog/2023/12/29/the-hardest-part-of-building-software-is-not-coding-its-requirements/'
 				}
 			]
 		}
@@ -488,6 +504,10 @@ export const info = [
 				{
 					text: 'Computer Science 101 I Stanford Online',
 					url: 'https://online.stanford.edu/courses/soe-ycscs101-computer-science-101'
+				},
+				{
+					text: 'How Long Does It Take to Become a Back End Developer?',
+					url: 'https://medium.com/bootdotdev/how-long-does-it-take-to-become-a-back-end-developer-226a4f1cece2'
 				},
 				{
 					text: 'Meta Back-End Developer Professional Certificate | Coursera',
