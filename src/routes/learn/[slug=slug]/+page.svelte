@@ -29,12 +29,12 @@
 <div
 	class="mx-1 grid grid-cols-1 place-content-start gap-4 rounded-lg bg-base-300 px-2 py-5 shadow-xl lg:mx-20 lg:grid-cols-2 lg:px-5"
 >
-	<div class="grid grid-cols-2 text-center font-bold lg:col-span-2">
-		<div class="justify-self-start hover:text-primary">
+	<div class="next-prev grid grid-cols-2 text-center font-bold lg:col-span-2">
+		<div class="justify-self-start text-lg hover:text-primary lg:text-xl">
 			<a href="/learn/{data.lastPost.slug}"
 				><svg
 					xmlns="http://www.w3.org/2000/svg"
-					class="icon icon-tabler icon-tabler-circle-chevron-left inline align-top"
+					class="icon icon-tabler icon-tabler-circle-chevron-left mb-1 inline"
 					width="24"
 					height="24"
 					viewBox="0 0 24 24"
@@ -49,11 +49,11 @@
 				> Previous</a
 			>
 		</div>
-		<div class="justify-self-end hover:text-primary">
+		<div class="justify-self-end text-lg hover:text-primary lg:text-xl">
 			<a href="/learn/{data.nextPost.slug}"
 				>Next <svg
 					xmlns="http://www.w3.org/2000/svg"
-					class="icon icon-tabler icon-tabler-circle-chevron-right inline align-top"
+					class="icon icon-tabler icon-tabler-circle-chevron-right mb-1 inline"
 					width="24"
 					height="24"
 					viewBox="0 0 24 24"
@@ -78,7 +78,7 @@
 		</h1>
 	</div>
 
-	<div class="rounded-lg bg-base-200 p-5 lg:col-span-2">
+	<div class="rounded-lg border border-slate-700 bg-base-200 p-5 hover:bg-base-100 lg:col-span-2">
 		<h3 class="mb-5">Topics</h3>
 		<p class="mb-7">
 			{#each data.post.topics as topic}
@@ -113,7 +113,8 @@
 			{/if}
 		</p>
 	</div>
-	<div class="rounded-lg bg-base-200 p-5">
+
+	<div class="rounded-lg border border-slate-700 bg-base-200 p-5 hover:bg-base-100">
 		<h3 class="mb-5">Find answers to...</h3>
 		<ul class="mb-7 list-disc ps-4">
 			{#each data.post.questions as question}
@@ -121,7 +122,7 @@
 			{/each}
 		</ul>
 	</div>
-	<div class="rounded-lg bg-base-200 p-5">
+	<div class="rounded-lg border border-slate-700 bg-base-200 p-5 hover:bg-base-100">
 		<h3 class="mb-5">Your Final Form</h3>
 		<ul class="list-disc ps-4">
 			{#each data.post.objectives as objective}
@@ -129,7 +130,27 @@
 			{/each}
 		</ul>
 	</div>
-	<div class="col-span-1 rounded-lg bg-base-200 p-5 lg:col-span-2">
+	<div
+		class="col-span-1 rounded-lg border border-slate-700 bg-base-200 p-5 hover:bg-base-100 lg:col-span-2"
+	>
+		<h3 class="mb-5">Key Issues</h3>
+		<div class="grid grid-cols-1 gap-x-3 gap-y-3 lg:grid-cols-4">
+			{#if data.post.issues == '' || !data.post.issues}
+				Sorry, this is work in progress
+			{:else}
+				{#each data.post.issues as issue}
+					<div class="card max-w-full bg-neutral text-neutral-content">
+						<div class="card-body items-center text-center">
+							{issue}
+						</div>
+					</div>
+				{/each}
+			{/if}
+		</div>
+	</div>
+	<div
+		class="col-span-1 rounded-lg border border-slate-700 bg-base-200 p-5 hover:bg-base-100 lg:col-span-2"
+	>
 		<h3 class="mb-5">Resources</h3>
 		<div class="grid">
 			<h4 class="mb-3">
@@ -164,23 +185,25 @@
 					/></svg
 				> Youtube
 			</h4>
-			{#if data.post.resources.youtube == ''}
-				Sorry, nothing here
-			{:else}
-				{#each data.post.resources.youtube as resource}
-					<div class="mb-5">
-						<iframe
-							width="560"
-							height="315"
-							src={resource}
-							title="YouTube video player"
-							frameborder="0"
-							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-							allowfullscreen
-						></iframe>
-					</div>
-				{/each}
-			{/if}
+			<div class="">
+				{#if data.post.resources.youtube == ''}
+					Sorry, nothing here
+				{:else}
+					{#each data.post.resources.youtube as resource}
+						<div class="mb-5">
+							<iframe
+								width="560"
+								height="315"
+								src={resource}
+								title="YouTube video player"
+								frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+								allowfullscreen
+							></iframe>
+						</div>
+					{/each}
+				{/if}
+			</div>
 		</div>
 	</div>
 </div>
@@ -189,5 +212,16 @@
 	li {
 		margin-bottom: 0.75rem;
 		padding-left: 0.75rem;
+	}
+
+	.next-prev {
+		view-transition-name: next-prev;
+	}
+
+	/* Mobile Youtube */
+	@media screen and (max-width: 767px) {
+		iframe[src*='youtube'] {
+			width: 100% !important;
+		}
 	}
 </style>

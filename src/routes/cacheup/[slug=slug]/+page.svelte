@@ -28,8 +28,8 @@
 	//for checkboxes
 	let boxDefinition = $state(false);
 	let boxGoals = $state(true);
-	let boxQuestions = $state(false);
-	let boxDealbreakers = $state(false);
+	let boxQuestions = $state(true);
+	let boxDealbreakers = $state(true);
 	let boxPossibleSolutions = $state(false);
 	let boxSuggestions = $state(false);
 	let toggleButtonValue = $state(false);
@@ -102,10 +102,11 @@
 		</div>
 	{/if}
 </div>
-<div class="mb-5 flex justify-end px-6 lg:px-20">
+<div class="mb-5 flex content-center items-start justify-end px-6 lg:px-24">
 	<label class="space-x-2">
-		<span class="align-top text-lg">Expand all</span>
-		<input type="checkbox" class="toggle" on:click={toggleButton} />
+		<input type="checkbox" class="toggle toggle-primary" on:click={toggleButton} /><span
+			class="align-top text-lg">Expand all</span
+		>
 	</label>
 </div>
 <div class="grid grid-cols-1 justify-items-center gap-x-8 gap-y-8 px-2 lg:px-20">
@@ -152,7 +153,7 @@
 	<div class="collapse bg-base-200">
 		<input type="checkbox" class="peer" bind:checked={boxGoals} />
 		<div
-			class="collapse-title flex justify-between bg-base-300 text-center peer-checked:bg-pink-800"
+			class="collapse-title flex justify-between bg-base-300 text-center peer-checked:bg-slate-900"
 		>
 			<div class="self-center"><img src={chevronDown} alt="Arrow down" /></div>
 			<h2 class="flex">
@@ -176,7 +177,7 @@
 			</h2>
 			<div class="self-center"><img src={chevronDown} alt="Arrow down" /></div>
 		</div>
-		<div class="collapse-content bg-gradient-to-b from-pink-800 to-rose-700">
+		<div class="collapse-content bg-gradient-to-b from-slate-900 to-slate-800">
 			<div class="card w-full bg-base-300 shadow-xl">
 				<div class="card-body">
 					<ol class="list-decimal divide-y-2 divide-slate-600">
@@ -192,7 +193,7 @@
 	<div class="collapse bg-base-200">
 		<input type="checkbox" class="peer" bind:checked={boxQuestions} />
 		<div
-			class="collapse-title flex justify-between bg-base-300 text-center peer-checked:bg-pink-800"
+			class="collapse-title flex justify-between bg-base-300 text-center peer-checked:bg-slate-900"
 		>
 			<div class="self-center"><img src={chevronDown} alt="Arrow down" /></div>
 			<h2 class="flex">
@@ -218,7 +219,7 @@
 			</h2>
 			<div class="self-center"><img src={chevronDown} alt="Arrow down" /></div>
 		</div>
-		<div class="collapse-content bg-gradient-to-b from-pink-800 to-rose-700">
+		<div class="collapse-content bg-gradient-to-b from-slate-900 to-slate-800">
 			<div class="card w-full bg-base-300 shadow-xl">
 				<div class="card-body">
 					<ol class="list-decimal divide-y-2 divide-slate-600">
@@ -241,7 +242,7 @@
 	<div class="collapse bg-base-200">
 		<input type="checkbox" class="peer" bind:checked={boxDealbreakers} />
 		<div
-			class="collapse-title flex justify-between bg-base-300 text-center peer-checked:bg-red-800"
+			class="collapse-title flex justify-between bg-base-300 text-center peer-checked:bg-slate-900"
 		>
 			<div class="self-center"><img src={chevronDown} alt="Arrow down" /></div>
 			<h2 class="flex">
@@ -263,7 +264,7 @@
 			</h2>
 			<div class="self-center"><img src={chevronDown} alt="Arrow down" /></div>
 		</div>
-		<div class="collapse-content bg-gradient-to-b from-red-800 to-orange-700">
+		<div class="collapse-content bg-gradient-to-b from-slate-900 to-slate-800">
 			<div class="card w-full bg-base-300 shadow-xl xl:col-span-2">
 				<div class="card-body">
 					<ol class="list-decimal divide-y-2 divide-slate-600">
@@ -319,7 +320,7 @@
 	<div class="collapse bg-base-200">
 		<input type="checkbox" class="peer" bind:checked={boxSuggestions} />
 		<div
-			class="collapse-title flex items-center justify-between bg-base-300 peer-checked:bg-slate-900"
+			class="collapse-title flex justify-between bg-base-300 text-center peer-checked:bg-slate-900"
 		>
 			<div class="self-center"><img src={chevronDown} alt="Arrow down" /></div>
 			<h2 class="flex">

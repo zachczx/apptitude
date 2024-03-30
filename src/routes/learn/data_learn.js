@@ -27,6 +27,7 @@ export const info = [
 			'What is on-premises?',
 			'What is virtualization, virtual machines, hypervisors, key management systems?'
 		],
+		issues: [],
 		objectives: [
 			'Understand the Basics of Computer Science and Engineering',
 			'Comprehend the broad differences between programming languages',
@@ -97,6 +98,7 @@ export const info = [
 			'Visualize and collaborate on Miro, Mural, Figma',
 			'Designing on Photoshop/Illustrator, Figma, Canva'
 		],
+		issues: [],
 		objectives: [
 			'Know what the free world uses for work',
 			'Identify how efficient and simple processes can be',
@@ -117,6 +119,8 @@ export const info = [
 		slug: 'wog',
 		topics: ['SG Tech Stack', 'GSIB', 'GCC', 'GDC', 'SG-Teams'],
 		questions: [
+			'',
+			'Trade offs between going Infrastructure-as-a-Service, Platform-as-a-Service, Software-as-a-Service',
 			'Mainstays in WOG networks, especially the endpoint device, network, and backend infrastructure',
 			'AI tools through Pair, Launchpad, AI Bots',
 			'Variants of M365 that GovTech deploys, across M365, SG-Teams, Sharepoint Online, ServiceNow ITSM',
@@ -127,6 +131,14 @@ export const info = [
 			"Don't dump money recreating stuff already developed",
 			'See how far we are behind everyone else',
 			'Rid ourselves of misguided sense of superiority and uniqueness'
+		],
+		issues: [
+			'If we think about the public sector as a single organization, it makes sense to use the same tech stack for efficiency, cost savings, knowledge management.',
+			'Too many people want to build their platforms/systems/tools without considering the long tail that comes with their own development. The ROI would be stacked in favor of central tools given the cost and effort advantages.',
+			"People don't know enough or don't bother to find out about the central tools on offer (or perhaps sometimes it's still work in progress). So they go do their own stuff, which then duplicates development work and wastes resources at the aggregate level.",
+			"Or sometimes people just think they've a superior product than what is already being offered centrally.",
+			'People in organizations think they have very unique requirements and processes that cannot fit off-the-shelf or central products, but these often are because of inflexibility (i.e. no process reengineering or thinking out of the box) or human stubbornness.',
+			"On the other hand, inefficiency and mismanagement at the central level will snowball, as every additional/unnecessary thing that's provisioned gets multiplied by every officer"
 		],
 		resources: {
 			youtube: [
@@ -181,6 +193,7 @@ export const info = [
 			'Feel it in your soul when a "product" just ain\'t it',
 			'Think user-first, Min/PS/DS last'
 		],
+		issues: ['Is building or buying tools/systems/platforms off the shelf more worth it'],
 		resources: {
 			youtube: [
 				'https://www.youtube.com/embed/0LNQxT9LvM0?si=KHzWpcisYehJbdHF',
@@ -234,6 +247,7 @@ export const info = [
 			'What about Lean/Kanban/Less?',
 			'How do I apply Agile/Scrum/Lean/Kanban in my team?'
 		],
+		issues: [],
 		objectives: [
 			'Feel even more lost navigating the world of "agile"',
 			'Get upset realizing you spent $4000 paying for a Certified Scrum Master / Product Owner',
@@ -303,6 +317,7 @@ export const info = [
 			'How can we design and implement a scalable data pipeline to ingest and process large volumes of structured and unstructured data from multiple sources?',
 			'What is a typical design of a cloud-native stack to derive business intelligence?'
 		],
+		issues: [],
 		objectives: [
 			'Know where we truly are amid (self created) hype on data science, transformation, AI',
 			"Know what's possible and whats not",
@@ -362,6 +377,7 @@ export const info = [
 			'How can AI contribute to more efficient and effective public service workflows?',
 			'What training or skills are necessary for public sector employees to work effectively with AI?'
 		],
+		issues: [],
 		objectives: [
 			'Sort through the AI hype from the keepers',
 			'Know what everyone not on LLMs is missing out',
@@ -439,6 +455,7 @@ export const info = [
 			'What are difficulties that developers face in my environment?',
 			'How hard is it to do <X>?'
 		],
+		issues: [],
 		objectives: [
 			'Know what the rest of the world does to solve computer engineering problems',
 			'Learn a useful life skill using logic to solve problems',
