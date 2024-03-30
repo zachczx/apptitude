@@ -98,7 +98,15 @@ export const info = [
 			'Visualize and collaborate on Miro, Mural, Figma',
 			'Designing on Photoshop/Illustrator, Figma, Canva'
 		],
-		issues: [],
+		issues: [
+			'Using modern productivity tools involves changing your workflows and accepting the risks (e.g. risks from storing your data in the cloud and having your data potentially used to improve AI products)',
+			'Employee productivity can increase even with poor tooling - people can produce more work by working more hours or doing things manually',
+			'Organizations can just give employees better tools to produce quality work faster',
+			'Users need to articulate the business benefits from using tools',
+			'Those in charge of IT policy guardrails need to understand industry staples and why people use those tools to have meaningful conversations',
+			'It can be as innocuous as making designers iterate on design concepts with business owners over powerpoint/pdf, when everyone could just hop onto Figma',
+			'Employees can get frustrated when they need to use multiple apps, e.g. Teams for meeting bosses, Slack for chats with developers, having to find documents across different platforms'
+		],
 		objectives: [
 			'Know what the free world uses for work',
 			'Identify how efficient and simple processes can be',
@@ -119,7 +127,6 @@ export const info = [
 		slug: 'wog',
 		topics: ['SG Tech Stack', 'GSIB', 'GCC', 'GDC', 'SG-Teams'],
 		questions: [
-			'',
 			'Trade offs between going Infrastructure-as-a-Service, Platform-as-a-Service, Software-as-a-Service',
 			'Mainstays in WOG networks, especially the endpoint device, network, and backend infrastructure',
 			'AI tools through Pair, Launchpad, AI Bots',

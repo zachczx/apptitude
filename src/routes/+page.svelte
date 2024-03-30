@@ -24,7 +24,7 @@
 		/>
 	</figure>
 	<div
-		class="mx-3 self-center justify-self-center rounded-2xl px-3 pt-3 lg:z-10 lg:mx-12 lg:mt-12 xl:bg-base-300 xl:p-8 xl:shadow-xl xl:shadow-black"
+		class="mx-3 self-center justify-self-center rounded-full px-3 pt-3 lg:z-10 lg:mx-12 lg:mt-12 xl:bg-black xl:p-[8rem]"
 	>
 		<div class="avatar mb-8 flex justify-center px-4 text-center xl:hidden">
 			<div class="mask mask-squircle">
@@ -36,17 +36,16 @@
 				/>
 			</div>
 		</div>
-		<h1 class="mb-12 text-center text-5xl lg:text-6xl xl:text-7xl min-[1921px]:text-9xl">
+		<h1 class="mb-4 text-center text-5xl lg:text-6xl xl:text-7xl min-[1921px]:text-8xl">
 			<span
 				class="bg-gradient-to-r from-lime-300 via-green-400 to-teal-100 bg-clip-text text-transparent"
-				>Build digital dreams. Not nightmares.</span
+				>Build digital dreams, not nightmares.</span
 			>
 		</h1>
-		<p class="mb-7 py-2 text-center text-lg lg:text-2xl">
-			Get access to product and tech-related knowledge. Find your own mix of
-			business-product-technical knowledge. Build good digital products.
+		<p class="mb-12 py-2 text-center text-lg lg:text-2xl">
+			Get access to product and tech insights. Build good digital products with them.
 		</p>
-		<div class="join join-vertical mb-12 flex justify-center lg:join-horizontal lg:mb-8">
+		<div class="join join-vertical flex justify-center lg:join-horizontal">
 			<a
 				href="/learn"
 				class="btn join-item border border-primary bg-lime-600 font-medium text-white hover:border hover:border-primary hover:bg-gradient-to-r hover:from-lime-500 hover:via-teal-500 hover:to-emerald-600 active:from-lime-600 active:via-teal-600 active:to-emerald-700 lg:text-2xl"

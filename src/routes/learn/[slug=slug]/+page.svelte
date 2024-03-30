@@ -123,7 +123,7 @@
 		</ul>
 	</div>
 	<div class="rounded-lg border border-slate-700 bg-base-200 p-5 hover:bg-base-100">
-		<h3 class="mb-5">Your Final Form</h3>
+		<h3 class="mb-5">Objectives</h3>
 		<ul class="list-disc ps-4">
 			{#each data.post.objectives as objective}
 				<li>{objective}</li>
@@ -133,14 +133,14 @@
 	<div
 		class="col-span-1 rounded-lg border border-slate-700 bg-base-200 p-5 hover:bg-base-100 lg:col-span-2"
 	>
-		<h3 class="mb-5">Key Issues</h3>
+		<h3 class="mb-5">Key Considerations</h3>
 		<div class="grid grid-cols-1 gap-x-3 gap-y-3 lg:grid-cols-4">
 			{#if data.post.issues == '' || !data.post.issues}
-				Sorry, this is work in progress
+				Haven't gotten to writing this yet.
 			{:else}
 				{#each data.post.issues as issue}
-					<div class="card max-w-full bg-neutral text-neutral-content">
-						<div class="card-body items-center text-center">
+					<div class="card grid max-w-full content-center bg-neutral text-neutral-content">
+						<div class="card-body text-center">
 							{issue}
 						</div>
 					</div>
