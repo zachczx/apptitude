@@ -1,13 +1,7 @@
 <script>
-	import TablerSquareRoundedPlusFilled from '$lib/assets/svg/TablerSquareRoundedPlusFilled.svelte';
-	import SvgChevronRight from '$lib/assets/svg/TablerChevronRight.svelte';
-
-	import TablerHelpCircleFilled from '$lib/assets/svg/TablerHelpCircleFilled.svelte';
-	import TablerChevronRight from '$lib/assets/svg/TablerChevronRight.svelte';
-
+	import TablerGhostFilled from '$lib/assets/svg/TablerGhostFilled.svelte';
 	import oopsBg from '$lib/assets/oops-bg.webp?enhanced&w=2060;1536;1280;1024';
 	import oops2Bg from '$lib/assets/oops2-bg.webp?enhanced&w=2060;1536;1280;1024';
-
 	import bellCurveMeme from '$lib/assets/product-bell-curve.webp';
 	import oops from '$lib/assets/oops.webp?enhanced&w=600;300';
 	import oops2 from '$lib/assets/oops2.webp?enhanced&w=600;300';
@@ -43,8 +37,10 @@
 			>
 		</h1>
 		<p class="mb-12 py-2 text-center text-lg lg:text-2xl">
-			Apptitude supercharges you with product and tech insights. Remedy awful digital products in
-			the public sector, give citizens the user experience they deserve.
+			<TablerGhostFilled class="mb-1 me-1 ms-1 inline fill-primary" />Supercharge your product and
+			tech insights. <TablerGhostFilled class="mb-1 me-1 ms-1 inline fill-primary" />Undo bad public
+			sector digital products. <TablerGhostFilled class="mb-1 me-1 ms-1 inline fill-primary" />Give
+			citizens and bosses good value.
 		</p>
 		<div class="join join-vertical flex justify-center lg:join-horizontal">
 			<a

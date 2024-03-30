@@ -266,7 +266,15 @@ export const info = [
 			'What about Lean/Kanban/Less?',
 			'How do I apply Agile/Scrum/Lean/Kanban in my team?'
 		],
-		issues: [],
+		issues: [
+			'Everyone says agile this, agile that as buzzwords to sound clever, without trying to define it or making sure others share that definition',
+			'Non-technical folks hear agile and they like the phrase, because it sounds smart, and they quote that often too even when everything about their work remains the same',
+			"Estimating requirements accurately at the beginning is an impossible task, but that's the expectation of most public service budgetary processes",
+			'Despite the obvious drawbacks, public sector organizations like the comforts of waterfall and continuously revert to waterfall practices',
+			'Predictability of scope, cost, timelines are key draws of waterfall approaches',
+			'Employees who get their organizations to sponsor huge sums to send them for Scrum, Kanban courses end up exactly the same after those courses, which begs the question what the point was in the first place',
+			"There's little point trying to implement Agile, Kanban when the structures, processes of the organizations actively resist alternative approaches to developing working software"
+		],
 		objectives: [
 			'Feel even more lost navigating the world of "agile"',
 			'Get upset realizing you spent $4000 paying for a Certified Scrum Master / Product Owner',
