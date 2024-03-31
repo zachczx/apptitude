@@ -1,5 +1,6 @@
 <script>
 	import TablerGhostFilled from '$lib/assets/svg/TablerGhostFilled.svelte';
+	import heroNew from '$lib/assets/hero-new.webp?enhanced&w=2060;1536;1280;1024';
 	import oopsBg from '$lib/assets/oops-bg.webp?enhanced&w=2060;1536;1280;1024';
 	import oops2Bg from '$lib/assets/oops2-bg.webp?enhanced&w=2060;1536;1280;1024';
 	import bellCurveMeme from '$lib/assets/product-bell-curve.webp';
@@ -9,9 +10,9 @@
 </script>
 
 <div class="hero grid min-h-dvh grid-cols-1 justify-items-center pb-12 lg:pb-[8rem] xl:grid-cols-2">
-	<figure class="overlay">
+	<figure>
 		<enhanced:img
-			src={oopsBg}
+			src={heroNew}
 			alt="Hero"
 			class="hero-img"
 			sizes="(min-width:2560px) 2060px, (min-width:1920px) 1536px, (min-width:1600px) 1280px, (min-width:1280px) 1024px"
@@ -36,7 +37,7 @@
 				>Build digital dreams, not nightmares.</span
 			>
 		</h1>
-		<p class="mb-12 py-2 text-center text-lg lg:text-2xl">
+		<p class="mb-14 py-2 text-center text-lg lg:text-2xl">
 			<TablerGhostFilled class="mb-1 me-1 ms-1 inline fill-primary" />Supercharge your product and
 			tech insights. <TablerGhostFilled class="mb-1 me-1 ms-1 inline fill-primary" />Undo bad public
 			sector digital products. <TablerGhostFilled class="mb-1 me-1 ms-1 inline fill-primary" />Give
@@ -54,61 +55,15 @@
 				>Quickstart Guides</a
 			>
 		</div>
+		<p class="mt-3 text-center text-xl">
+			<i><a href="/about" class="hover:text-primary">Wait, what's Apptitude?</a></i>
+		</p>
 	</div>
 </div>
 
 <RocketAnimation />
 
-<div
-	class="no-bg grid min-h-dvh w-full grid-cols-1 justify-items-center gap-x-16 px-5 pb-5 pt-20 lg:px-20 xl:relative xl:grid-cols-2"
->
-	<figure class="overlay-reverse">
-		<enhanced:img
-			src={oops2Bg}
-			alt="Hero"
-			class="ending-img"
-			sizes="(min-width:2560px) 2060px, (min-width:1920px) 1536px, (min-width:1600px) 1280px, (min-width:1280px) 1024px"
-		/>
-	</figure>
-	<div class="avatar self-center self-center xl:hidden">
-		<div class="mask mask-squircle">
-			<enhanced:img
-				src={oops2}
-				alt="Oops"
-				sizes="(min-width:1600px) 600px, (max-width:768px) 300px"
-			/>
-		</div>
-	</div>
-	<div
-		class="ending-text z-30 mt-4 self-center rounded-2xl xl:bg-base-300 xl:p-8 xl:shadow-2xl xl:shadow-slate-800"
-	>
-		<h1
-			class="mb-11 inline-block bg-gradient-to-r from-emerald-200 via-orange-200 to-pink-200 bg-clip-text py-3 text-transparent"
-		>
-			What's Apptitude?
-		</h1>
-		<p class="mb-7 text-xl">
-			I wrote Apptitude to learn Svelte and at the same time figure a way to help my teammates know
-			what competencies to learn, easily grab resources, and quickly use the knowledge to call out
-			bad tech outcomes.
-		</p>
-		<p class="mb-7 text-xl">
-			Apptitude is an attempt to start more dissatisfaction and rebel against poor product outcomes
-			and groupthink. My hypothesis is that people need the knowledge and safety to critique,
-			otherwise it's always safer to defer to people in high positions of power.
-		</p>
-		<p class="mb-7 text-xl">
-			Occam's razor applies - the simplest solution is almost always the best. But that often
-			doesn't get chosen in the public service. Like this meme here actually. Sometimes it's
-			entrenched mindsets, but often people who make assessments don't know what the issue is and
-			what's standard out there.
-		</p>
-		<img src={bellCurveMeme} class="mb-7" alt="Geniuses and noobs" />
-		<p class="mb-3 text-xl">
-			Hopefully we can all shift to the right (or left is fine too) parts of the curve.
-		</p>
-	</div>
-</div>
+<div class="h-[40rem] bg-black"></div>
 
 <style>
 	/*	@media (max-width: 1280px) {

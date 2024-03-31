@@ -9,12 +9,271 @@
 	import pandayawn from '$lib/assets/pandayawn.webp?enhanced&w=1000;700;400';
 	import pandabutterfly from '$lib/assets/panda-butterfly.webp?enhanced&w=1000;700;400';
 	import TablerQuotes from '$lib/assets/svg/TablerQuotes.svelte';
+	import unoptimised1 from '$lib/assets/unoptimised1.webp?enhanced&w=600;400';
+	import unoptimised2 from '$lib/assets/unoptimised2.webp?enhanced&w=600;400';
+	import unoptimised3 from '$lib/assets/unoptimised3.webp?enhanced&w=600;400';
+	import unoptimised4 from '$lib/assets/unoptimised4.webp?enhanced&w=600;400';
 
 	let seeMore = true;
 </script>
 
 <Breadcrumbs textCurrent={'About Apptitude'} />
+<div class="grid grid-cols-1 justify-items-center gap-x-8 gap-y-8 px-5 lg:grid-cols-12 lg:px-20">
+	<div class="col-span-12">
+		<div class="card bg-base-300 shadow-xl lg:card-side">
+			<figure>
+				<enhanced:img
+					src={oops3}
+					alt="Red pandas, because they're cute"
+					class="h-full"
+					sizes="(min-width:1920px) 1000px, (min-width:1200px) 700px, (min-width:768px) 400px"
+				/>
+			</figure>
+			<div class="card-body">
+				<h2 class="">TL;DR</h2>
+				<p>
+					I wrote Apptitude to learn Svelte and at the same time figure a way to help my teammates
+					know what competencies to learn, easily grab resources, and quickly use the knowledge to
+					call out bad tech outcomes.
+				</p>
+				<h2 class="">A longer explanation?</h2>
+				<p>
+					Apptitude is an attempt to start more dissatisfaction and rebel against poor product
+					outcomes and groupthink. My hypothesis is that people need the knowledge and safety to
+					critique, otherwise it's always safer to defer to people in high positions of power.
+				</p>
+				<p>
+					In my past job as a "tech policy officer" I came to realize WOG tech outcomes were poor.
+					Looking around, many of Govt's tech products weren't good or flat out didn't make sense,
+					especially for the crazy sums we spend <a
+						href="https://www.tech.gov.sg/media/media-releases/2023-05-24-government-projected-to-spend-on-ict-in-fy23"
+						class="text-primary">(here)</a
+					>. Products are slow, laggy, hard to use, super expensive.
+				</p>
+				<p>
+					Occam's razor applies - the simplest solution is almost always the best. Reflecting on my
+					own journey and weaknesses, good decisions are mostly common sense, but that often doesn't
+					get chosen in the public service. Like this meme below. Sometimes it's entrenched
+					mindsets, but often people who make assessments don't know what the issue is and what's
+					standard out there.
+				</p>
+			</div>
+		</div>
+	</div>
 
+	<div class="col-span-12">
+		<div class="card bg-base-300 shadow-xl lg:card-side">
+			<div class="card-body self-center">
+				<h2>What's a bad product to you?</h2>
+				<p>
+					I'll draw from personal experience. Take LifeSG. I used LifeSG in the delivery suite after
+					my wife gave birth. What a lifesaver! I downloaded the app (didn't mind it tbh),
+					registered my baby's name, didn't even have to go to ICA. After that I deleted the app.
+				</p>
+				<p>
+					I was annoyed some time later that I needed to use LifeSG to use my NS55 credits. The app
+					loaded slow on my Pixel, far slower than PayLah. And I couldn't even finish all my
+					credits, kena makan by Gahmen. To make it worse, my go-to app for reporting HDB estate
+					issues needed to be done via LifeSG. Ugh, so much worse than the original OneService app.
+				</p>
+			</div>
+			<figure>
+				<enhanced:img
+					src={pandayawn}
+					alt="Red pandas, because they're cute"
+					class="h-full"
+					sizes="(min-width:1920px) 1000px, (min-width:1200px) 700px, (min-width:768px) 400px"
+				/>
+			</figure>
+		</div>
+	</div>
+
+	<div class="col-span-6">
+		<div class="card bg-base-300 shadow-xl lg:card-side">
+			<figure>
+				<enhanced:img
+					src={pandablanket}
+					alt="Red pandas, because they're cute"
+					class="h-full object-cover"
+					sizes="(min-width:1920px) 1000px, (min-width:1200px) 700px, (min-width:768px) 400px"
+				/>
+			</figure>
+			<div class="card-body">
+				<h2>Road to hell is paved with good intentions</h2>
+				<p>
+					I don't think any public servant wakes up and says "let me think of ways to waste money
+					and make a bad product". If there is, fire that person! In my view, a lot of the time,
+					decisions or policies made are head scratchers. Maybe because they were made by people who
+					don't hear from the ones actually using or building these things. Or maybe they're unaware
+					they're doing the wrong things despite best intentions, and then they get promoted.
+				</p>
+				<p>
+					Unfortunately there's no test for knowledge before people are put in positions of power.
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="col-span-6">
+		<div class="card bg-base-300 shadow-xl lg:card-side">
+			<div class="card-body">
+				<h2>What's in it for you?</h2>
+				<p>
+					I do this so that I can feel like I did some good for society. If you asked just one extra
+					question that saves taxpayers some money or give users a better product, Apptitude would
+					have done some good for Singaporeans.
+				</p>
+				<p>
+					(If this really does work out, maybe I should put some ads or make this in patreon or
+					something. /jk)
+				</p>
+			</div>
+			<figure>
+				<enhanced:img
+					src={pandabutterfly}
+					alt="Red pandas, because they're cute"
+					sizes="(min-width:1920px) 1000px, (min-width:1200px) 700px, (min-width:768px) 400px"
+				/>
+			</figure>
+		</div>
+	</div>
+
+	<div class="col-span-12">
+		<div class="card bg-base-300 shadow-xl lg:card-side">
+			<figure>
+				<enhanced:img
+					src={unoptimised4}
+					alt="Red pandas, because they're cute"
+					class="object-cover"
+					sizes="(min-width:1920px) 600px, (min-width:1200px) 400px"
+				/>
+			</figure>
+			<div class="card-body">
+				<p>
+					Seriously though, if these sound like you, you might be contributing to bad decisions &
+					products:
+				</p>
+				<div class="mb-12 grid grid-cols-1 gap-2 lg:grid-cols-2 xl:grid-cols-3">
+					<div class="card grid border border-slate-800 bg-base-300 shadow-xl lg:bg-base-300">
+						<div class="card-body">
+							<TablerQuotes
+								class="absolute bottom-0 right-0 stroke-base-content"
+								width="3em"
+								height="3em"
+							/>IDK what engineers are saying.
+						</div>
+					</div>
+					<div class="card grid border border-slate-800 bg-base-300 shadow-xl lg:bg-base-300">
+						<div class="card-body">
+							<TablerQuotes
+								class="absolute bottom-0 right-0 stroke-base-content"
+								width="3em"
+								height="3em"
+							/>Let's spend allocated $$, IDC about saving it.
+						</div>
+					</div>
+					<div class="card grid border border-slate-800 bg-base-300 shadow-xl lg:bg-base-300">
+						<div class="card-body">
+							<TablerQuotes
+								class="absolute bottom-0 right-0 stroke-base-content"
+								width="3em"
+								height="3em"
+							/>Engineers and users should just suck it up.
+						</div>
+					</div>
+					<div class="card grid border border-slate-800 bg-base-300 shadow-xl lg:bg-base-300">
+						<div class="card-body">
+							<TablerQuotes
+								class="absolute bottom-0 right-0 stroke-base-content"
+								width="3em"
+								height="3em"
+							/>My system is good, I just need more $$ for it.
+						</div>
+					</div>
+					<div class="card grid border border-slate-800 bg-base-300 shadow-xl lg:bg-base-300">
+						<div class="card-body">
+							<TablerQuotes
+								class="absolute bottom-0 right-0 stroke-base-content"
+								width="3em"
+								height="3em"
+							/>Stop asking and just do what my Dir said.
+						</div>
+					</div>
+					<div class="card grid border border-slate-800 bg-base-300 shadow-xl lg:bg-base-300">
+						<div class="card-body">
+							<TablerQuotes
+								class="absolute bottom-0 right-0 stroke-base-content"
+								width="3em"
+								height="3em"
+							/>New SOR = existing + every possible rqmt.
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="col-span-12">
+		<div class="card bg-base-300 shadow-xl lg:card-side">
+			<figure>
+				<enhanced:img
+					src={unoptimised3}
+					alt="Red pandas, because they're cute"
+					class="h-full"
+					sizes="(min-width:1920px) 600px, (min-width:1200px) 400px"
+				/>
+			</figure>
+			<div class="card-body self-center">
+				<h2>You're too harsh!</h2>
+				<p>
+					I'm not nice (though certainly not at Linus' level). I don't know a way to say the stuff
+					here nicely. I'd personally prefer someone to just tell me if I'm screwing things up. If
+					you're doing good, share your wisdom with everyone else in a nicer way.
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="col-span-12">
+		<div class="card bg-base-300 shadow-xl lg:card-side">
+			<div class="card-body self-center">
+				<h2>You're an idiot too, you think this is a good product?</h2>
+				<p>
+					In any case Apptitude only costs me $13.28/yr (incl GST), for the domain name. I got to
+					learn Svelte through this, so it's not wasted effort. If you think this sucks, cool. It's
+					cheap enough to write off without second thought. (This also helped me learn Svelte5 and
+					Sveltekit.)
+				</p>
+			</div>
+			<figure>
+				<enhanced:img
+					src={unoptimised1}
+					alt="Red pandas, because they're cute"
+					class="h-full object-cover"
+					sizes="(min-width:1920px) 600px, (min-width:1200px) 400px"
+				/>
+			</figure>
+		</div>
+	</div>
+	<div class="col-span-12">
+		<div class="card w-full bg-base-300 shadow-xl lg:card-side">
+			<figure>
+				<enhanced:img
+					src={unoptimised2}
+					alt="Red pandas, because they're cute"
+					sizes="(min-width:1920px) 600px, (min-width:1200px) 400px"
+				/>
+			</figure>
+			<div class="card-body self-center">
+				<h2>I found Apptitude very useful!</h2>
+				<p>
+					I'd love to hear from you - <a
+						href="https://forms.gle/zhfhmSR4RSA6FJNf6"
+						class="hover:text-primary">via this Google form <TablerLink class="inline" /></a
+					>.
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
 <div class="grid grid-cols-1 justify-items-center gap-x-8 gap-y-8 px-5 lg:grid-cols-5 lg:px-20">
 	<!--<div class="avatar flex self-stretch px-12 lg:sticky lg:top-20 lg:col-span-2 lg:self-start">
 		<div class="animateImg rounded-full">-->
@@ -104,7 +363,7 @@
 					</p>
 				</div>
 			{/if}
-			<h2 class="mb-7 mt-7">What's in it for me?</h2>
+			<h2 class="mb-7 mt-7">What's in it for you?</h2>
 			<p class="mb-7">
 				I do this so that I can feel like I did some good for society. If you asked just one extra
 				question that saves taxpayers some money or give users a better product, Apptitude would

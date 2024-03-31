@@ -11,7 +11,6 @@
 	import { onNavigate } from '$app/navigation';
 
 	let viewTransition = $state('');
-
 	onNavigate((navigation) => {
 		if (!document.startViewTransition) {
 			viewTransition = false;
@@ -36,7 +35,7 @@
 	<title>{pageName}</title>
 </svelte:head>
 
-<div class="navbar relative bg-base-300">
+<div class="navbar {data.url === '/' ? 'absolute z-20' : ''}">
 	<div class="max-h-18 navbar-start">
 		<div class="dropdown">
 			<div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
