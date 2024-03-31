@@ -38,10 +38,12 @@
 			>
 		</h1>
 		<p class="mb-14 py-2 text-center text-lg lg:text-2xl">
-			<TablerGhostFilled class="mb-1 me-1 ms-1 inline fill-primary" />Supercharge your product and
-			tech insights. <TablerGhostFilled class="mb-1 me-1 ms-1 inline fill-primary" />Undo bad public
-			sector digital products. <TablerGhostFilled class="mb-1 me-1 ms-1 inline fill-primary" />Give
-			citizens and bosses good value.
+			<TablerGhostFilled class="mb-1 me-1 ms-1 inline fill-primary" />Supercharge your learning for
+			digital products & projects. <TablerGhostFilled
+				class="mb-1 me-1 ms-1 inline fill-primary"
+			/>Undo bad apps & systems public sector. <TablerGhostFilled
+				class="mb-1 me-1 ms-1 inline fill-primary"
+			/>Give citizens and bosses good value.
 		</p>
 		<div class="join join-vertical flex justify-center lg:join-horizontal">
 			<a
