@@ -104,7 +104,7 @@
 					</p>
 				</div>
 			{/if}
-			<h2 class="mb-7 mt-7">What's in it for you?</h2>
+			<h2 class="mb-7 mt-7">What's in it for me?</h2>
 			<p class="mb-7">
 				I do this so that I can feel like I did some good for society. If you asked just one extra
 				question that saves taxpayers some money or give users a better product, Apptitude would
@@ -115,8 +115,9 @@
 				Seriously though, if these sound like you, you might be contributing to bad decisions &
 				products:
 			</p>
+
 			<div class="mb-12 grid grid-cols-1 gap-2 lg:grid-cols-2 xl:grid-cols-3">
-				<div class="card grid border-2 border-base-content bg-base-300 shadow-xl lg:bg-base-100">
+				<div class="card grid border border-slate-800 bg-base-300 shadow-xl lg:bg-base-300">
 					<div class="card-body">
 						<TablerQuotes
 							class="absolute bottom-0 right-0 stroke-base-content"
@@ -125,7 +126,7 @@
 						/>IDK what engineers are saying.
 					</div>
 				</div>
-				<div class="card grid border-2 border-base-content bg-base-300 shadow-xl lg:bg-base-100">
+				<div class="card grid border border-slate-800 bg-base-300 shadow-xl lg:bg-base-300">
 					<div class="card-body">
 						<TablerQuotes
 							class="absolute bottom-0 right-0 stroke-base-content"
@@ -134,7 +135,7 @@
 						/>Let's spend allocated $$, IDC about saving it.
 					</div>
 				</div>
-				<div class="card grid border-2 border-base-content bg-base-300 shadow-xl lg:bg-base-100">
+				<div class="card grid border border-slate-800 bg-base-300 shadow-xl lg:bg-base-300">
 					<div class="card-body">
 						<TablerQuotes
 							class="absolute bottom-0 right-0 stroke-base-content"
@@ -143,7 +144,7 @@
 						/>Engineers and users should just suck it up.
 					</div>
 				</div>
-				<div class="card grid border-2 border-base-content bg-base-300 shadow-xl lg:bg-base-100">
+				<div class="card grid border border-slate-800 bg-base-300 shadow-xl lg:bg-base-300">
 					<div class="card-body">
 						<TablerQuotes
 							class="absolute bottom-0 right-0 stroke-base-content"
@@ -152,7 +153,7 @@
 						/>My system is good, I just need more $$ for it.
 					</div>
 				</div>
-				<div class="card grid border-2 border-base-content bg-base-300 shadow-xl lg:bg-base-100">
+				<div class="card grid border border-slate-800 bg-base-300 shadow-xl lg:bg-base-300">
 					<div class="card-body">
 						<TablerQuotes
 							class="absolute bottom-0 right-0 stroke-base-content"
@@ -161,7 +162,7 @@
 						/>Stop asking and just do what my Dir said.
 					</div>
 				</div>
-				<div class="card grid border-2 border-base-content bg-base-300 shadow-xl lg:bg-base-100">
+				<div class="card grid border border-slate-800 bg-base-300 shadow-xl lg:bg-base-300">
 					<div class="card-body">
 						<TablerQuotes
 							class="absolute bottom-0 right-0 stroke-base-content"
@@ -261,3 +262,16 @@
 		</div>
 	</div>
 </div>
+
+<style>
+	.embla {
+		overflow: hidden;
+	}
+	.embla__container {
+		display: flex;
+	}
+	.embla__slide {
+		flex: 0 0 100%;
+		min-width: 0;
+	}
+</style>
