@@ -21,12 +21,12 @@
 	<div
 		class="mx-3 self-center justify-self-center rounded-full px-3 pt-3 lg:z-10 lg:mx-12 lg:mt-12 xl:p-[8rem]"
 	>
-		<div class="avatar mb-8 flex justify-center px-4 text-center xl:hidden">
+		<div class="avatar mb-8 mt-16 flex justify-center px-4 text-center xl:mt-0 xl:hidden">
 			<div class="mask mask-squircle">
 				<enhanced:img
-					src={oops}
-					alt="Oops"
-					class="relative"
+					src={heroNew}
+					alt="Hero"
+					class="relative object-right"
 					sizes="(min-width:1000px) 600px, (min-width:768px) 300px"
 				/>
 			</div>
