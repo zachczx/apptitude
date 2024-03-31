@@ -41,9 +41,9 @@
 			<TablerGhostFilled class="mb-1 me-1 ms-1 inline fill-primary" />Supercharge your learning for
 			digital products & projects. <TablerGhostFilled
 				class="mb-1 me-1 ms-1 inline fill-primary"
-			/>Undo bad apps & systems public sector. <TablerGhostFilled
+			/>Improve how you run your tech products in the public service. <TablerGhostFilled
 				class="mb-1 me-1 ms-1 inline fill-primary"
-			/>Give citizens and bosses good value.
+			/>Get rid of crappy Govt apps & systems.
 		</p>
 		<div class="join join-vertical flex justify-center lg:join-horizontal">
 			<a
