@@ -21,13 +21,13 @@
 	onMount(() => {
 		let tlAbout = gsap.matchMedia();
 		tlAbout.add('(min-width: 1028px)', () => {
-			gsap.from('.', {
+			gsap.from('.elaboration-left', {
 				x: '-10vw',
 				duration: 2,
 				ease: 'expo.out',
 				autoAlpha: 0
 			});
-			gsap.from('.elaboration-right', {
+			gsap.from('.elaboration-left', {
 				x: '10vw',
 				duration: 2,
 				ease: 'expo.out',
