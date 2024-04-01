@@ -14,26 +14,15 @@
 	import unoptimised3 from '$lib/assets/unoptimised3.webp?enhanced&w=800;600;400';
 	import unoptimised4 from '$lib/assets/unoptimised4.webp?enhanced&w=800;600;400';
 	import unoptimised5 from '$lib/assets/unoptimised5.webp?enhanced&w=800;600;400';
+	import unoptimised6 from '$lib/assets/unoptimised6.webp?enhanced&w=800;600;400';
 
 	import { onMount } from 'svelte';
 	import { gsap } from 'gsap';
 	import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 	onMount(() => {
+		gsap.registerPlugin(ScrollTrigger);
 		let tlAbout = gsap.matchMedia();
-		tlAbout.add('(min-width: 1028px)', () => {
-			gsap.from('.elaboration-left', {
-				x: '-10vw',
-				duration: 2,
-				ease: 'expo.out',
-				autoAlpha: 0
-			});
-			gsap.from('.elaboration-left', {
-				x: '10vw',
-				duration: 2,
-				ease: 'expo.out',
-				autoAlpha: 0
-			});
-		});
+		tlAbout.add('(min-width: 1028px)', () => {});
 	});
 </script>
 
@@ -42,26 +31,26 @@
 <div
 	class="mb-7 grid grid-cols-1 justify-items-center gap-x-8 gap-y-8 px-5 lg:grid-cols-12 lg:px-20"
 >
-	<div class="space-y-5 self-center lg:col-span-8">
-		<h2 class="lg:text-5xl">What's Apptitude?</h2>
+	<div class="box-1 space-y-5 self-center lg:col-span-8">
+		<h2 class="border-b-2 border-base-content lg:text-5xl">What's Apptitude?</h2>
 		<p class="lg:text-2xl">
 			I wrote Apptitude to learn Svelte and at the same time figure a way to help my teammates know
 			what competencies to learn, easily grab resources, and quickly use the knowledge to call out
 			bad tech outcomes.
 		</p>
-		<p class="lg:text-2xl">
+		<p class=" lg:text-2xl">
 			Apptitude is an attempt to start more dissatisfaction and rebel against poor product outcomes
 			and groupthink. My hypothesis is that people need the knowledge and safety to critique,
 			otherwise it's always safer to defer to people in high positions of power.
 		</p>
 	</div>
-	<div class="lg:col-span-4">
+	<div class="pic-1 lg:col-span-4">
 		<figure class="lg:avatar">
 			<div class="lg:mask lg:mask-squircle">
 				<enhanced:img
 					src={oops3}
 					alt="Red pandas, because they're cute"
-					class="h-full"
+					class="duration-3000 h-full transition hover:scale-125"
 					sizes="(min-width:1920px) 800px, (min-width:1200px) 600px, (min-width:768px) 400px"
 				/>
 			</div>
@@ -71,20 +60,20 @@
 <div
 	class="mb-7 grid grid-cols-1 justify-items-center gap-x-8 gap-y-8 px-5 lg:grid-cols-12 lg:px-20"
 >
-	<div class="lg:col-span-4">
+	<div class="pic-2 lg:col-span-4">
 		<figure class="lg:avatar">
 			<div class="lg:mask lg:mask-squircle">
 				<enhanced:img
 					src={pandabutterfly}
 					alt="Red pandas, because they're cute"
-					class="h-full"
+					class="duration-3000 h-full transition hover:scale-125"
 					sizes="(min-width:1920px) 800px, (min-width:1200px) 600px, (min-width:768px) 400px"
 				/>
 			</div>
 		</figure>
 	</div>
-	<div class="space-y-5 self-center lg:col-span-8">
-		<h2 class="lg:text-5xl">How do you know there's a problem?</h2>
+	<div class="box-2 space-y-5 self-center lg:col-span-8">
+		<h2 class="border-b-2 border-base-content lg:text-5xl">How do you know there's a problem?</h2>
 		<p class="lg:text-2xl">
 			In my past job I heard many perspectives and I came to agree that WOG tech outcomes/ROI are
 			poor. Looking around, many of Govt's tech products weren't good or flat out didn't make sense,
@@ -104,8 +93,8 @@
 <div
 	class="mb-7 grid grid-cols-1 justify-items-center gap-x-8 gap-y-8 px-5 lg:grid-cols-12 lg:px-20"
 >
-	<div class="space-y-5 self-center lg:col-span-8">
-		<h2 class="lg:text-5xl">What's a bad product to you?</h2>
+	<div class="box-3 space-y-5 self-center lg:col-span-8">
+		<h2 class="border-b-2 border-base-content lg:text-5xl">What's a bad product to you?</h2>
 		<p class="lg:text-2xl">
 			A bad product is a combination of not solving any problems, slow, poor ROI.
 		</p>
@@ -121,13 +110,13 @@
 			be done via LifeSG. Ugh, so much worse than the original OneService app.
 		</p>
 	</div>
-	<div class="lg:col-span-4">
+	<div class="pic-3 lg:col-span-4">
 		<figure class="lg:avatar">
 			<div class="lg:mask lg:mask-squircle">
 				<enhanced:img
 					src={unoptimised1}
 					alt="Red pandas, because they're cute"
-					class="h-full object-cover"
+					class="duration-3000 h-full transition hover:scale-125"
 					sizes="(min-width:1920px) 800px, (min-width:1200px) 600px, (min-width:768px) 400px"
 				/>
 			</div>
@@ -137,20 +126,20 @@
 <div
 	class="mb-7 grid grid-cols-1 justify-items-center gap-x-8 gap-y-8 px-5 lg:grid-cols-12 lg:px-20"
 >
-	<div class="lg:col-span-4">
+	<div class="pic-4 lg:col-span-4">
 		<figure class="lg:avatar">
 			<div class="lg:mask lg:mask-squircle">
 				<enhanced:img
-					src={unoptimised3}
+					src={unoptimised6}
 					alt="Red pandas, because they're cute"
-					class="h-full"
+					class="duration-3000 h-full transition hover:scale-125"
 					sizes="(min-width:1920px) 800px, (min-width:1200px) 600px, (min-width:768px) 400px"
 				/>
 			</div>
 		</figure>
 	</div>
-	<div class="space-y-5 self-center lg:col-span-8">
-		<h2 class="lg:text-5xl">Road to hell is paved with good intentions</h2>
+	<div class="box-4 space-y-5 self-center lg:col-span-8">
+		<h2 class="border-b-2 border-base-content lg:text-5xl">Good intentions, bad execution</h2>
 		<p class="lg:text-2xl">
 			I don't think any public servant wakes up and says "let me think of ways to waste money and
 			make a bad product". If there is, fire that person! In my view, a lot of the time, decisions
@@ -166,8 +155,8 @@
 <div
 	class="mb-7 grid grid-cols-1 justify-items-center gap-x-8 gap-y-8 px-5 lg:grid-cols-12 lg:px-20"
 >
-	<div class="space-y-5 self-center lg:col-span-8">
-		<h2 class="lg:text-5xl">What's in it for you?</h2>
+	<div class="box-5 space-y-5 self-center lg:col-span-8">
+		<h2 class="border-b-2 border-base-content lg:text-5xl">What's in it for you?</h2>
 		<p class="lg:text-2xl">
 			I do this so that I can feel like I did some good for society. If you asked just one extra
 			question that saves taxpayers some money or give users a better product, Apptitude would have
@@ -178,13 +167,13 @@
 			something. /jk)
 		</p>
 	</div>
-	<div class="lg:col-span-4">
+	<div class="pic-5 lg:col-span-4">
 		<figure class="lg:avatar">
 			<div class="lg:mask lg:mask-squircle">
 				<enhanced:img
 					src={pandayawn}
 					alt="Red pandas, because they're cute"
-					class="h-full object-cover"
+					class="duration-3000 h-full transition hover:scale-125"
 					sizes="(min-width:1920px) 800px, (min-width:1200px) 600px, (min-width:768px) 400px"
 				/>
 			</div>
@@ -194,20 +183,20 @@
 <div
 	class="mb-7 grid grid-cols-1 justify-items-center gap-x-8 gap-y-8 px-5 lg:grid-cols-12 lg:px-20"
 >
-	<div class="lg:col-span-4">
+	<div class="pic-6 lg:col-span-4">
 		<figure class="lg:avatar">
 			<div class="lg:mask lg:mask-squircle">
 				<enhanced:img
 					src={unoptimised5}
 					alt="Red pandas, because they're cute"
-					class="h-full"
+					class="duration-3000 h-full transition hover:scale-125"
 					sizes="(min-width:1920px) 800px, (min-width:1200px) 600px, (min-width:768px) 400px"
 				/>
 			</div>
 		</figure>
 	</div>
-	<div class="space-y-5 self-center lg:col-span-8">
-		<h2 class="lg:text-5xl">Bad outcomes everywhere?</h2>
+	<div class="box-6 space-y-5 self-center lg:col-span-8">
+		<h2 class="border-b-2 border-base-content lg:text-5xl">Bad outcomes everywhere?</h2>
 		<p class="lg:text-2xl">
 			Seriously though, the comments below are very common in the public sector. Each of these is a
 			major red flag for shitty products.
@@ -226,21 +215,21 @@
 <div
 	class="mb-7 grid grid-cols-1 justify-items-center gap-x-8 gap-y-8 px-5 lg:grid-cols-12 lg:px-20"
 >
-	<div class="space-y-5 self-center lg:col-span-8">
-		<h2 class="lg:text-5xl">You're too harsh!</h2>
+	<div class="box-7 space-y-5 self-center lg:col-span-8">
+		<h2 class="border-b-2 border-base-content lg:text-5xl">You're too harsh!</h2>
 		<p class="lg:text-2xl">
 			I'm not nice (though certainly not at Linus' level). I don't know a way to say the stuff here
 			nicely. I'd personally prefer someone to just tell me if I'm screwing things up. If you're
 			doing good, share your wisdom with everyone else in a nicer way.
 		</p>
 	</div>
-	<div class="lg:col-span-4">
+	<div class="pic-7 lg:col-span-4">
 		<figure class="lg:avatar">
 			<div class="lg:mask lg:mask-squircle">
 				<enhanced:img
 					src={unoptimised4}
 					alt="Red pandas, because they're cute"
-					class="object-cover"
+					class="duration-3000 h-full transition hover:scale-125"
 					sizes="(min-width:1920px) 800px, (min-width:1200px) 600px, (min-width:768px) 400px"
 				/>
 			</div>
@@ -250,20 +239,22 @@
 <div
 	class="mb-7 grid grid-cols-1 justify-items-center gap-x-8 gap-y-8 px-5 lg:grid-cols-12 lg:px-20"
 >
-	<div class="lg:col-span-4">
+	<div class="pic-8 lg:col-span-4">
 		<figure class="lg:avatar">
 			<div class="lg:mask lg:mask-squircle">
 				<enhanced:img
 					src={unoptimised3}
 					alt="Red pandas, because they're cute"
-					class="h-full"
+					class="duration-3000 h-full transition hover:scale-125"
 					sizes="(min-width:1920px) 800px, (min-width:1200px) 600px, (min-width:768px) 400px"
 				/>
 			</div>
 		</figure>
 	</div>
-	<div class="space-y-5 self-center lg:col-span-8">
-		<h2 class="lg:text-5xl">You're an idiot too, you think this is a good product?</h2>
+	<div class="box-8 space-y-5 self-center lg:col-span-8">
+		<h2 class="border-b-2 border-base-content lg:text-5xl">
+			You're an idiot too, you think this is a good product?
+		</h2>
 		<p class="lg:text-2xl">
 			In any case Apptitude only costs me $13.28/yr (incl GST), for the domain name. I got to learn
 			Svelte through this, so it's not wasted effort. If you think this sucks, cool. It's cheap
@@ -274,8 +265,8 @@
 <div
 	class="mb-7 grid grid-cols-1 justify-items-center gap-x-8 gap-y-8 px-5 lg:grid-cols-12 lg:px-20"
 >
-	<div class="space-y-5 self-center lg:col-span-8">
-		<h2 class="lg:text-5xl">I found Apptitude very useful!</h2>
+	<div class="box-9 w-full space-y-5 self-center lg:col-span-8">
+		<h2 class="border-b-2 border-base-content lg:text-5xl">I found Apptitude very useful!</h2>
 		<p class="lg:text-2xl">
 			I'd love to hear from you - <a
 				href="https://forms.gle/zhfhmSR4RSA6FJNf6"
@@ -283,12 +274,13 @@
 			>.
 		</p>
 	</div>
-	<div class="lg:col-span-4">
+	<div class="pic-9 lg:col-span-4">
 		<figure class="lg:avatar">
 			<div class="lg:mask lg:mask-squircle">
 				<enhanced:img
 					src={unoptimised2}
 					alt="Red pandas, because they're cute"
+					class="duration-3000 h-full transition hover:scale-125"
 					sizes="(min-width:1920px) 800px, (min-width:1200px) 600px, (min-width:768px) 400px"
 				/>
 			</div>
