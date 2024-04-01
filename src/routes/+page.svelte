@@ -7,6 +7,7 @@
 	import oops from '$lib/assets/oops.webp?enhanced&w=600;300';
 	import oops2 from '$lib/assets/oops2.webp?enhanced&w=600;300';
 	import RocketAnimation from '$lib/RocketAnimation.svelte';
+	import pandaIcon from '$lib/assets/panda-icon.webp';
 </script>
 
 <div class="hero grid min-h-dvh grid-cols-1 justify-items-center pb-12 lg:pb-[8rem] xl:grid-cols-2">
@@ -34,17 +35,20 @@
 		<h1 class="mb-4 text-center text-5xl lg:text-6xl xl:text-7xl min-[1921px]:text-8xl">
 			<span
 				class="bg-gradient-to-r from-lime-300 via-green-400 to-teal-100 bg-clip-text text-transparent"
-				>Build digital dreams, not nightmares.</span
+				>Make better decisions as a tech product owner.</span
 			>
 		</h1>
-		<p class="mb-14 py-2 text-center text-lg lg:text-2xl">
-			<TablerGhostFilled class="mb-1 me-1 ms-1 inline fill-primary" />Supercharge your learning for
-			digital products & projects. <TablerGhostFilled
-				class="mb-1 me-1 ms-1 inline fill-primary"
-			/>Improve how you run your tech products in the public service. <TablerGhostFilled
-				class="mb-1 me-1 ms-1 inline fill-primary"
-			/>Get rid of crappy Govt apps & systems.
-		</p>
+		<div class="mb-14 grid grid-cols-3 py-2 text-start text-lg lg:text-xl">
+			<div class="border-r-2 border-base-content/50 py-3 pe-3 text-center">
+				<strong>Learn</strong> stuff a digital product owner needs
+			</div>
+			<div class="border-r-2 border-base-content/50 py-3 pe-3 ps-3 text-center">
+				<strong>Improve</strong> how you manage your products
+			</div>
+			<div class="py-3 ps-3 text-center">
+				<strong>Remove</strong> crappy, expensive products no one needs
+			</div>
+		</div>
 		<div class="join join-vertical flex justify-center lg:join-horizontal">
 			<a
 				href="/learn"
@@ -57,7 +61,7 @@
 				>Quickstart Guides</a
 			>
 		</div>
-		<p class="mt-3 text-center text-xl">
+		<p class="mt-3 text-center lg:text-xl">
 			<i><a href="/about" class="hover:text-primary">Wait, what's Apptitude?</a></i>
 		</p>
 	</div>

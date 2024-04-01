@@ -249,6 +249,10 @@ export const info = [
 				{
 					text: 'Transforming Product Culture with Lea Hickman',
 					url: 'https://www.mindtheproduct.com/transforming-product-culture-lea-hickman/'
+				},
+				{
+					text: 'The Anatomy of a Perfect Landing Page That Converts',
+					url: 'https://www.uxmatters.com/mt/archives/2023/07/the-anatomy-of-a-perfect-landing-page-that-converts.php'
 				}
 			]
 		}
