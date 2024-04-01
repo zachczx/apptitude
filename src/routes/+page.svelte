@@ -40,20 +40,23 @@
 		</h1>
 		<div class="mb-14 grid grid-cols-3 py-2 text-start text-lg lg:text-xl">
 			<div class="border-r-2 border-base-content/50 py-3 pe-3 text-center">
-				<strong>Learn</strong> stuff a digital product owner needs
+				<h2>Learn</h2>
+				what a product owner needs
 			</div>
 			<div class="border-r-2 border-base-content/50 py-3 pe-3 ps-3 text-center">
-				<strong>Improve</strong> how you manage your products
+				<h2>Improve</h2>
+				how you manage your products
 			</div>
 			<div class="py-3 ps-3 text-center">
-				<strong>Remove</strong> crappy, expensive products no one needs
+				<h2>Stop</h2>
+				crappy products no one needs
 			</div>
 		</div>
 		<div class="join join-vertical flex justify-center lg:join-horizontal">
 			<a
 				href="/learn"
 				class="btn join-item border border-primary bg-lime-600 font-medium text-white hover:border hover:border-primary hover:bg-gradient-to-r hover:from-lime-500 hover:via-teal-500 hover:to-emerald-600 active:from-lime-600 active:via-teal-600 active:to-emerald-700 lg:text-2xl"
-				>Learn Basics</a
+				>Learn the Basics <b>&#8594</b></a
 			>
 			<a
 				href="/cacheup"
