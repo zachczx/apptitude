@@ -14,6 +14,14 @@ export default {
 	},
 	plugins: [require('daisyui')],
 	daisyui: {
-		themes: ['dim']
+		themes: [
+			{
+				dim: {
+					...require('daisyui/src/theming/themes')['dim'],
+					'base-content': '#e0eaee',
+					'neutral-content': '#e0eaee'
+				}
+			}
+		]
 	}
 };
