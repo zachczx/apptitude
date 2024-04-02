@@ -31,12 +31,6 @@
 			onLeaveBack: (elements) => gsap.set(elements, { autoAlpha: 0 })
 		});
 
-		ScrollTrigger.batch('.footprint', {
-			start: 'bottom center',
-			onEnter: (elements) => gsap.to(elements, { autoAlpha: 1, stagger: 0.2 }),
-			onLeaveBack: (elements) => gsap.set(elements, { autoAlpha: 0 })
-		});
-
 		ScrollTrigger.batch('.headline', {
 			start: 'center center',
 			end: 'bottom top',
