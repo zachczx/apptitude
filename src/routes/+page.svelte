@@ -1,9 +1,12 @@
 <script>
 	import heroNew from '$lib/assets/hero-new.webp?enhanced&w=2060;1536;1280;1024';
+	import heroNewBackground from '$lib/assets/hero-new.webp?enhanced&w=800';
 	import heroNew2 from '$lib/assets/hero-new-2.webp?enhanced&w=2060;1536;1280;1024';
+	import heroNew2Background from '$lib/assets/hero-new-2.webp?enhanced&w=800';
 	import RocketAnimation from '$lib/RocketAnimation.svelte';
 	import { onMount } from 'svelte';
 	import { gsap } from 'gsap';
+	import HowThisWorks from '$lib/HowThisWorks.svelte';
 
 	onMount(() => {
 		let tl = gsap.matchMedia();
@@ -37,26 +40,46 @@
 	const currentBgNumber = Math.floor(Math.random() * 11);
 </script>
 
-<div class="hero grid min-h-dvh grid-cols-1 justify-items-center pb-12 lg:pb-[8rem] xl:grid-cols-2">
+<div
+	class="hero grid min-h-dvh grid-cols-1 content-center justify-items-center pb-12 xl:grid-cols-2"
+>
 	<figure>
 		{#if currentBgNumber % 2 == 0}
+			<enhanced:img
+				src={heroNewBackground}
+				alt="Hero"
+				class="hero-img -z-10"
+				fetchpriority="high"
+				loading="eager"
+			/>
 			<enhanced:img
 				src={heroNew}
 				alt="Hero"
 				class="hero-img"
+				fetchpriority="high"
+				loading="eager"
 				sizes="(min-width:2560px) 2060px, (min-width:1920px) 1536px, (min-width:1600px) 1280px, (min-width:1280px) 1024px"
 			/>
 		{:else}
 			<enhanced:img
+				src={heroNew2Background}
+				alt="Hero"
+				class="hero-img -z-10"
+				fetchpriority="high"
+				loading="eager"
+			/>
+			<enhanced:img
 				src={heroNew2}
 				alt="Hero"
 				class="hero-img"
+				fetchpriority="high"
+				loading="eager"
 				sizes="(min-width:2560px) 2060px, (min-width:1920px) 1536px, (min-width:1600px) 1280px, (min-width:1280px) 1024px"
 			/>
 		{/if}
 	</figure>
 	<div
-		class="mx-3 self-center justify-self-center rounded-full px-3 pt-3 lg:z-10 lg:mx-8 lg:mt-12 xl:p-[8rem]"
+		class="mx-3 self-center justify-self-center rounded-full px-3 pt-4 lg:z-10 lg:mx-8 xl:px-[3rem]"
 	>
 		<div class="avatar mb-8 mt-20 flex justify-center px-4 text-center xl:mt-0 xl:hidden">
 			<div class="mask mask-squircle">
@@ -77,20 +100,14 @@
 				{/if}
 			</div>
 		</div>
-		<h1 class="mb-14 text-center text-5xl lg:text-6xl xl:text-7xl min-[1921px]:text-8xl">
-			<span class="headline">Make</span>
-			<span
-				class="headline bg-gradient-to-r from-lime-300 via-green-400 to-teal-100 bg-clip-text text-transparent"
-			>
-				better decisions</span
-			>
-			<span class="headline">as a</span>
-			<span
-				class="headline bg-gradient-to-r from-lime-300 via-green-400 to-teal-100 bg-clip-text text-transparent"
-				>tech product owner.</span
-			>
+		<h1
+			class="mb-12 text-center text-5xl text-lime-400 lg:pt-20 lg:text-6xl xl:text-7xl min-[1921px]:text-8xl"
+		>
+			<span class="headline">I help </span>
+			<span class="headline"> tech product owners</span>
+			<span class="headline">make good decisions.</span>
 		</h1>
-		<div class="mb-14 grid grid-cols-3 py-2 text-start text-lg lg:text-xl">
+		<div class="mb-12 grid grid-cols-3 py-2 text-start text-lg lg:text-xl">
 			<div class="subheadline border-r-2 border-base-content/50 py-1 pe-3 text-center">
 				<h2>Learn</h2>
 				key digital product knowledge
@@ -130,7 +147,7 @@
 		</p>
 	</div>
 </div>
-
+<HowThisWorks />
 <RocketAnimation />
 
 <div class="h-[40rem] bg-black"></div>
