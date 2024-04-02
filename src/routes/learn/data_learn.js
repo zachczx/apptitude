@@ -212,7 +212,15 @@ export const info = [
 			'Feel it in your soul when a "product" just ain\'t it',
 			'Think user-first, Min/PS/DS last'
 		],
-		issues: ['Is building or buying tools/systems/platforms off the shelf more worth it'],
+		issues: [
+			"Many products/systems developed by Govt don't solve real & meaningful problems, are slow & laggy, huge wastes of money",
+			'Tech product owners are often appointed to the role without relevant skills or experience, and end up roleplaying their idea of what the job requires',
+			"People who manage products don't talk to users",
+			"Prescriptive rules in public service restrain engineering teams's ability to innovate, deliver fast",
+			"Project KPIs are usually an afterthought - KPIs are neither meaningful, ambitious, or a good indication of the product's value (e.g. 70% of users rate 4/5)",
+			"People always have want to develop something new, without thinking of the long tail that's involved with maintaining something you developed",
+			'No one is incentivized to terminate their projects/products even if poorly performing, because it means they lose MMF, lose funding, lose appraisal work achievements.'
+		],
 		resources: {
 			youtube: [
 				'https://www.youtube.com/embed/0LNQxT9LvM0?si=KHzWpcisYehJbdHF',
@@ -288,12 +296,13 @@ export const info = [
 		],
 		resources: {
 			youtube: [
+				'https://youtube.com/embed/1evfn3qTYGM',
 				'https://youtube.com/embed/5Ty-WC4gLto',
+				'https://youtube.com/embed/iVaFVa7HYj4',
 				'https://youtube.com/embed/J4ihLROXzPk?si=wfk8YSa3fePUtHxs',
 				'https://youtube.com/embed/OosYzkP-pLk?si=E7RqVQeN3L50b4sk',
 				'https://youtube.com/embed/vSnCeJEka_s?si=GNhjdQVV8rn9l4iH',
-				'https://youtube.com/embed/scEDHsr3APg',
-				'https://youtube.com/embed/1evfn3qTYGM'
+				'https://youtube.com/embed/scEDHsr3APg'
 			],
 			links: [
 				{
@@ -412,7 +421,16 @@ export const info = [
 			'How can AI contribute to more efficient and effective public service workflows?',
 			'What training or skills are necessary for public sector employees to work effectively with AI?'
 		],
-		issues: [],
+		issues: [
+			"The AI genie is out of the bottle, there's no return to life before it",
+			"Given the ongoing hype train for AI, it's tempting to use AI for the sake of it, but that'd would be a huge L",
+			'Focus needs to be on solving a meaningful problem, looking beyond the hype',
+			'AI user interfaces and workflows are not necessarily (and can often be contrary to) good UX',
+			'Fast pace of product and technological improvements challenges rigid/aged organizational structures - impossible to keep up if tons of red-tape is needed for chopping and changing',
+			'Generative AI is not the be-all and end-all, not everything needs to be an LLM-based chatbot',
+			'Simple applications of ML might be far more useful for everyday problems, as is straightforward improvements to how we organize info, design websites instead of pushing for a chatbot',
+			'Lock-in or sunk costs is an issue, e.g. sinking tons of money into deploying/finetuning your Llama2 something only to have it obsolete 12 months later'
+		],
 		objectives: [
 			'Sort through the AI hype from the keepers',
 			'Know what everyone not on LLMs is missing out',
@@ -423,12 +441,16 @@ export const info = [
 		],
 		resources: {
 			youtube: [
-				'https://youtube.com/embed/PeMlggyqz0Y?si=X1ZeR-qr01d_BnP-',
-				'https://youtube.com/embed/Mf1P3n6TqCc',
+				'https://youtube.com/embed/zjkBMFhNj_g',
 				'https://youtube.com/embed/5sLYAQS9sWQ',
-				'https://youtube.com/embed/5t1vTLU7s40?si=uEflOaOw_p1eyRoZ',
 				'https://youtube.com/embed/jvqFAi7vkBc',
+				'https://youtube.com/embed/Mf1P3n6TqCc',
+				'https://www.youtube.com/embed/qTogNUV3CAI',
+				'https://youtube.com/embed/Dbog8Yw3kEM',
+				'https://youtube.com/embed/PeMlggyqz0Y?si=X1ZeR-qr01d_BnP-',
+				'https://youtube.com/embed/5t1vTLU7s40?si=uEflOaOw_p1eyRoZ',
 				'https://youtube.com/embed/T-D1OfcDW1M?si=WZJLcElfcEh4-51c',
+				'https://youtube.com/embed/LsNHsfZFjlA',
 				'https://youtube.com/embed/oZPTBXnaSBI'
 			],
 			links: [
@@ -463,6 +485,15 @@ export const info = [
 				{
 					text: 'LMSYS Chatbot Arena Leaderboard',
 					url: 'https://huggingface.co/spaces/lmsys/chatbot-arena-leaderboard'
+				},
+				{
+					text: 'National AI Strategy | Smart Nation Singapore',
+					url: 'https://www.smartnation.gov.sg/nais/'
+				},
+
+				{
+					text: 'A pro-innovation approach to AI regulation: government response | Gov.uk',
+					url: 'https://www.gov.uk/government/consultations/ai-regulation-a-pro-innovation-approach-policy-proposals/outcome/a-pro-innovation-approach-to-ai-regulation-government-response'
 				}
 			]
 		}
@@ -490,7 +521,14 @@ export const info = [
 			'What are difficulties that developers face in my environment?',
 			'How hard is it to do <X>?'
 		],
-		issues: [],
+		issues: [
+			'Reports, guidelines, restrictions are written by people with no idea of how something works, and decisions that come out of these materials cannot be good',
+			'People with no understanding of what it takes to develop something cannot properly lead a product or project',
+			'Costings/estimates/proposals by vendors are supported by officers without second thought, even though it sounds ludicrous when you compare it with external experiences (e.g. personal)',
+			'No one is incentivized to improve developers\' lives, experience, productivity, because no one wants to bother with anything "technical"',
+			'Productivity of engineering/research talent is wasted explaining basic concepts to non-technical people so that they can write their reports/slides',
+			"Technical skills can very quickly become obsolete, so people who don't continuously keep up can also hinder innovation and give bad recommendations"
+		],
 		objectives: [
 			'Know what the rest of the world does to solve computer engineering problems',
 			'Learn a useful life skill using logic to solve problems',

@@ -83,14 +83,14 @@
 		<div class="mb-14 grid grid-cols-3 py-2 text-start text-lg lg:text-xl">
 			<div class="subheadline border-r-2 border-base-content/50 py-1 pe-3 text-center">
 				<h2>Learn</h2>
-				digital product requisite skills
+				key digital product knowledge
 			</div>
 			<div class="subheadline border-r-2 border-base-content/50 py-1 pe-3 ps-3 text-center">
 				<h2>Improve</h2>
-				how you manage your products
+				digital product management
 			</div>
 			<div class="subheadline py-1 ps-3 text-center">
-				<h2>Stop</h2>
+				<h2>Dump</h2>
 				crappy products nobody needs
 			</div>
 		</div>
@@ -116,7 +116,7 @@
 			>
 		</div>
 		<p class="mt-3 text-center lg:text-xl">
-			<i><a href="/about" class="hover:text-primary">Wait, what's Apptitude?</a></i>
+			<i><a href="/about" class="hover:text-primary">What's Apptitude?</a></i>
 		</p>
 	</div>
 </div>
@@ -185,6 +185,7 @@
 			position: absolute;
 			background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 20%);
 		}
+
 		.hero-img {
 			object-fit: cover;
 			object-position: 70% center;
@@ -193,6 +194,7 @@
 			position: absolute;
 			top: 0;
 			left: 0;
+			view-transition-name: hero-img;
 		}
 		.ending-img {
 			object-fit: cover;

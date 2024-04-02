@@ -133,7 +133,7 @@
 	<div
 		class="col-span-1 rounded-lg border border-slate-700 bg-base-200 p-5 hover:bg-base-100 lg:col-span-2"
 	>
-		<h3 class="mb-5">Thoughts</h3>
+		<h3 class="mb-5">Musings</h3>
 		<div class="grid grid-cols-1 gap-x-3 gap-y-3 lg:grid-cols-4">
 			{#if data.post.issues == '' || !data.post.issues}
 				Haven't gotten to writing this yet.

@@ -123,7 +123,9 @@
 
 <footer class="footer footer-center gap-y-2 rounded bg-base-200 p-3 pt-5 text-base-content">
 	<aside>
-		<p class="mb-2">Copyright © 2024 Zixian Chen. All rights reserved.</p>
+		<p class="mb-2 text-base">
+			Copyright © 2024 Zixian Chen. All rights reserved. Views expressed here are solely my own.
+		</p>
 	</aside>
 	<div class="grid grid-cols-1 md:grid-flow-col md:gap-4">
 		<div class="font-bold">My App Junkyard</div>
