@@ -63,39 +63,15 @@
 		</p>
 		<div class="relative">
 			<div class="jumbo:mt-20 absolute inset-x-3/4 -z-10">
-				<div class="set-b footprint rotate-[180deg]" style="background-image:url({paw});"></div>
-				<div
-					class="set-b footprint translate-x-16 rotate-[160deg]"
-					style="background-image:url({paw});"
-				></div>
-				<div
-					class="set-b footprint translate-x-2 rotate-[170deg]"
-					style="background-image:url({paw});"
-				></div>
-				<div
-					class="set-b footprint translate-x-20 rotate-[160deg]"
-					style="background-image:url({paw});"
-				></div>
-				<div
-					class="set-b footprint translate-x-4 rotate-[170deg]"
-					style="background-image:url({paw});"
-				></div>
-				<div
-					class="set-b footprint translate-x-20 rotate-[160deg]"
-					style="background-image:url({paw});"
-				></div>
-				<div
-					class="set-b footprint translate-x-6 rotate-[170deg]"
-					style="background-image:url({paw});"
-				></div>
-				<div
-					class="set-b footprint translate-x-24 rotate-[160deg]"
-					style="background-image:url({paw});"
-				></div>
-				<div
-					class="set-b footprint translate-x-6 rotate-[170deg]"
-					style="background-image:url({paw});"
-				></div>
+				<div class="set-b footprint rotate-[180deg]"></div>
+				<div class="set-b footprint translate-x-16 rotate-[160deg]"></div>
+				<div class="set-b footprint translate-x-2 rotate-[170deg]"></div>
+				<div class="set-b footprint translate-x-20 rotate-[160deg]"></div>
+				<div class="set-b footprint translate-x-4 rotate-[170deg]"></div>
+				<div class="set-b footprint translate-x-20 rotate-[160deg]"></div>
+				<div class="set-b footprint translate-x-6 rotate-[170deg]"></div>
+				<div class="set-b footprint translate-x-24 rotate-[160deg]"></div>
+				<div class="set-b footprint translate-x-6 rotate-[170deg]"></div>
 			</div>
 		</div>
 	</div>
@@ -147,39 +123,15 @@
 		</p>
 		<div class="relative">
 			<div class="jumbo:mt-20 absolute inset-x-1/4 -z-10">
-				<div class="set-a footprint rotate-[180deg]" style="background-image:url({paw});"></div>
-				<div
-					class="set-a footprint -translate-x-16 rotate-[200deg]"
-					style="background-image:url({paw});"
-				></div>
-				<div
-					class="set-a footprint -translate-x-2 rotate-[190deg]"
-					style="background-image:url({paw});"
-				></div>
-				<div
-					class="set-a footprint -translate-x-20 rotate-[200deg]"
-					style="background-image:url({paw});"
-				></div>
-				<div
-					class="set-a footprint -translate-x-4 rotate-[190deg]"
-					style="background-image:url({paw});"
-				></div>
-				<div
-					class="set-a footprint -translate-x-20 rotate-[200deg]"
-					style="background-image:url({paw});"
-				></div>
-				<div
-					class="set-a footprint -translate-x-6 rotate-[190deg]"
-					style="background-image:url({paw});"
-				></div>
-				<div
-					class="set-a footprint -translate-x-20 rotate-[200deg]"
-					style="background-image:url({paw});"
-				></div>
-				<div
-					class="set-a footprint -translate-x-6 rotate-[190deg]"
-					style="background-image:url({paw});"
-				></div>
+				<div class="set-a footprint rotate-[180deg]"></div>
+				<div class="set-a footprint -translate-x-16 rotate-[200deg]"></div>
+				<div class="set-a footprint -translate-x-2 rotate-[190deg]"></div>
+				<div class="set-a footprint -translate-x-20 rotate-[200deg]"></div>
+				<div class="set-a footprint -translate-x-4 rotate-[190deg]"></div>
+				<div class="set-a footprint -translate-x-20 rotate-[200deg]"></div>
+				<div class="set-a footprint -translate-x-6 rotate-[190deg]"></div>
+				<div class="set-a footprint -translate-x-20 rotate-[200deg]"></div>
+				<div class="set-a footprint -translate-x-6 rotate-[190deg]"></div>
 			</div>
 		</div>
 	</div>
@@ -205,39 +157,15 @@
 		</p>
 		<div class="relative">
 			<div class="jumbo:mt-20 absolute inset-x-3/4 -z-10">
-				<div class="set-b footprint rotate-[180deg]" style="background-image:url({paw});"></div>
-				<div
-					class="set-b footprint translate-x-16 rotate-[160deg]"
-					style="background-image:url({paw});"
-				></div>
-				<div
-					class="set-b footprint translate-x-2 rotate-[170deg]"
-					style="background-image:url({paw});"
-				></div>
-				<div
-					class="set-b footprint translate-x-20 rotate-[160deg]"
-					style="background-image:url({paw});"
-				></div>
-				<div
-					class="set-b footprint translate-x-4 rotate-[170deg]"
-					style="background-image:url({paw});"
-				></div>
-				<div
-					class="set-b footprint translate-x-20 rotate-[160deg]"
-					style="background-image:url({paw});"
-				></div>
-				<div
-					class="set-b footprint translate-x-6 rotate-[170deg]"
-					style="background-image:url({paw});"
-				></div>
-				<div
-					class="set-b footprint translate-x-24 rotate-[160deg]"
-					style="background-image:url({paw});"
-				></div>
-				<div
-					class="set-b footprint translate-x-6 rotate-[170deg]"
-					style="background-image:url({paw});"
-				></div>
+				<div class="set-b footprint rotate-[180deg]"></div>
+				<div class="set-b footprint translate-x-16 rotate-[160deg]"></div>
+				<div class="set-b footprint translate-x-2 rotate-[170deg]"></div>
+				<div class="set-b footprint translate-x-20 rotate-[160deg]"></div>
+				<div class="set-b footprint translate-x-4 rotate-[170deg]"></div>
+				<div class="set-b footprint translate-x-20 rotate-[160deg]"></div>
+				<div class="set-b footprint translate-x-6 rotate-[170deg]"></div>
+				<div class="set-b footprint translate-x-24 rotate-[160deg]"></div>
+				<div class="set-b footprint translate-x-6 rotate-[170deg]"></div>
 			</div>
 		</div>
 	</div>
@@ -285,39 +213,15 @@
 		</p>
 		<div class="relative">
 			<div class="jumbo:mt-20 absolute inset-x-1/4 -z-10">
-				<div class="set-a footprint rotate-[180deg]" style="background-image:url({paw});"></div>
-				<div
-					class="set-a footprint -translate-x-16 rotate-[200deg]"
-					style="background-image:url({paw});"
-				></div>
-				<div
-					class="set-a footprint -translate-x-2 rotate-[190deg]"
-					style="background-image:url({paw});"
-				></div>
-				<div
-					class="set-a footprint -translate-x-20 rotate-[200deg]"
-					style="background-image:url({paw});"
-				></div>
-				<div
-					class="set-a footprint -translate-x-4 rotate-[190deg]"
-					style="background-image:url({paw});"
-				></div>
-				<div
-					class="set-a footprint -translate-x-20 rotate-[200deg]"
-					style="background-image:url({paw});"
-				></div>
-				<div
-					class="set-a footprint -translate-x-6 rotate-[190deg]"
-					style="background-image:url({paw});"
-				></div>
-				<div
-					class="set-a footprint -translate-x-20 rotate-[200deg]"
-					style="background-image:url({paw});"
-				></div>
-				<div
-					class="set-a footprint -translate-x-6 rotate-[190deg]"
-					style="background-image:url({paw});"
-				></div>
+				<div class="set-a footprint rotate-[180deg]"></div>
+				<div class="set-a footprint -translate-x-16 rotate-[200deg]"></div>
+				<div class="set-a footprint -translate-x-2 rotate-[190deg]"></div>
+				<div class="set-a footprint -translate-x-20 rotate-[200deg]"></div>
+				<div class="set-a footprint -translate-x-4 rotate-[190deg]"></div>
+				<div class="set-a footprint -translate-x-20 rotate-[200deg]"></div>
+				<div class="set-a footprint -translate-x-6 rotate-[190deg]"></div>
+				<div class="set-a footprint -translate-x-20 rotate-[200deg]"></div>
+				<div class="set-a footprint -translate-x-6 rotate-[190deg]"></div>
 			</div>
 		</div>
 	</div>
@@ -338,39 +242,15 @@
 		</p>
 		<div class="relative">
 			<div class="jumbo:mt-20 absolute inset-x-3/4 -z-10">
-				<div class="set-b footprint rotate-[180deg]" style="background-image:url({paw});"></div>
-				<div
-					class="set-b footprint translate-x-16 rotate-[160deg]"
-					style="background-image:url({paw});"
-				></div>
-				<div
-					class="set-b footprint translate-x-2 rotate-[170deg]"
-					style="background-image:url({paw});"
-				></div>
-				<div
-					class="set-b footprint translate-x-20 rotate-[160deg]"
-					style="background-image:url({paw});"
-				></div>
-				<div
-					class="set-b footprint translate-x-4 rotate-[170deg]"
-					style="background-image:url({paw});"
-				></div>
-				<div
-					class="set-b footprint translate-x-20 rotate-[160deg]"
-					style="background-image:url({paw});"
-				></div>
-				<div
-					class="set-b footprint translate-x-6 rotate-[170deg]"
-					style="background-image:url({paw});"
-				></div>
-				<div
-					class="set-b footprint translate-x-24 rotate-[160deg]"
-					style="background-image:url({paw});"
-				></div>
-				<div
-					class="set-b footprint translate-x-6 rotate-[170deg]"
-					style="background-image:url({paw});"
-				></div>
+				<div class="set-b footprint rotate-[180deg]"></div>
+				<div class="set-b footprint translate-x-16 rotate-[160deg]"></div>
+				<div class="set-b footprint translate-x-2 rotate-[170deg]"></div>
+				<div class="set-b footprint translate-x-20 rotate-[160deg]"></div>
+				<div class="set-b footprint translate-x-4 rotate-[170deg]"></div>
+				<div class="set-b footprint translate-x-20 rotate-[160deg]"></div>
+				<div class="set-b footprint translate-x-6 rotate-[170deg]"></div>
+				<div class="set-b footprint translate-x-24 rotate-[160deg]"></div>
+				<div class="set-b footprint translate-x-6 rotate-[170deg]"></div>
 			</div>
 		</div>
 	</div>
@@ -418,39 +298,15 @@
 		</ul>
 		<div class="relative">
 			<div class="jumbo:mt-20 absolute inset-x-1/4 -z-10">
-				<div class="set-a footprint rotate-[180deg]" style="background-image:url({paw});"></div>
-				<div
-					class="set-a footprint -translate-x-16 rotate-[200deg]"
-					style="background-image:url({paw});"
-				></div>
-				<div
-					class="set-a footprint -translate-x-2 rotate-[190deg]"
-					style="background-image:url({paw});"
-				></div>
-				<div
-					class="set-a footprint -translate-x-20 rotate-[200deg]"
-					style="background-image:url({paw});"
-				></div>
-				<div
-					class="set-a footprint -translate-x-4 rotate-[190deg]"
-					style="background-image:url({paw});"
-				></div>
-				<div
-					class="set-a footprint -translate-x-20 rotate-[200deg]"
-					style="background-image:url({paw});"
-				></div>
-				<div
-					class="set-a footprint -translate-x-6 rotate-[190deg]"
-					style="background-image:url({paw});"
-				></div>
-				<div
-					class="set-a footprint -translate-x-20 rotate-[200deg]"
-					style="background-image:url({paw});"
-				></div>
-				<div
-					class="set-a footprint -translate-x-6 rotate-[190deg]"
-					style="background-image:url({paw});"
-				></div>
+				<div class="set-a footprint rotate-[180deg]"></div>
+				<div class="set-a footprint -translate-x-16 rotate-[200deg]"></div>
+				<div class="set-a footprint -translate-x-2 rotate-[190deg]"></div>
+				<div class="set-a footprint -translate-x-20 rotate-[200deg]"></div>
+				<div class="set-a footprint -translate-x-4 rotate-[190deg]"></div>
+				<div class="set-a footprint -translate-x-20 rotate-[200deg]"></div>
+				<div class="set-a footprint -translate-x-6 rotate-[190deg]"></div>
+				<div class="set-a footprint -translate-x-20 rotate-[200deg]"></div>
+				<div class="set-a footprint -translate-x-6 rotate-[190deg]"></div>
 			</div>
 		</div>
 	</div>
@@ -468,39 +324,15 @@
 		</p>
 		<div class="relative">
 			<div class="jumbo:mt-20 absolute inset-x-3/4 -z-10">
-				<div class="set-b footprint rotate-[180deg]" style="background-image:url({paw});"></div>
-				<div
-					class="set-b footprint translate-x-16 rotate-[160deg]"
-					style="background-image:url({paw});"
-				></div>
-				<div
-					class="set-b footprint translate-x-2 rotate-[170deg]"
-					style="background-image:url({paw});"
-				></div>
-				<div
-					class="set-b footprint translate-x-20 rotate-[160deg]"
-					style="background-image:url({paw});"
-				></div>
-				<div
-					class="set-b footprint translate-x-4 rotate-[170deg]"
-					style="background-image:url({paw});"
-				></div>
-				<div
-					class="set-b footprint translate-x-24 rotate-[160deg]"
-					style="background-image:url({paw});"
-				></div>
-				<div
-					class="set-b footprint translate-x-6 rotate-[170deg]"
-					style="background-image:url({paw});"
-				></div>
-				<div
-					class="set-b footprint translate-x-28 rotate-[160deg]"
-					style="background-image:url({paw});"
-				></div>
-				<div
-					class="set-b footprint translate-x-6 rotate-[170deg]"
-					style="background-image:url({paw});"
-				></div>
+				<div class="set-b footprint rotate-[180deg]"></div>
+				<div class="set-b footprint translate-x-16 rotate-[160deg]"></div>
+				<div class="set-b footprint translate-x-2 rotate-[170deg]"></div>
+				<div class="set-b footprint translate-x-20 rotate-[160deg]"></div>
+				<div class="set-b footprint translate-x-4 rotate-[170deg]"></div>
+				<div class="set-b footprint translate-x-24 rotate-[160deg]"></div>
+				<div class="set-b footprint translate-x-6 rotate-[170deg]"></div>
+				<div class="set-b footprint translate-x-28 rotate-[160deg]"></div>
+				<div class="set-b footprint translate-x-6 rotate-[170deg]"></div>
 			</div>
 		</div>
 	</div>
@@ -545,39 +377,15 @@
 		</p>
 		<div class="relative">
 			<div class="jumbo:mt-20 absolute inset-x-1/4 -z-10">
-				<div class="set-a footprint rotate-[180deg]" style="background-image:url({paw});"></div>
-				<div
-					class="set-a footprint -translate-x-16 rotate-[200deg]"
-					style="background-image:url({paw});"
-				></div>
-				<div
-					class="set-a footprint -translate-x-2 rotate-[190deg]"
-					style="background-image:url({paw});"
-				></div>
-				<div
-					class="set-a footprint -translate-x-20 rotate-[200deg]"
-					style="background-image:url({paw});"
-				></div>
-				<div
-					class="set-a footprint -translate-x-4 rotate-[190deg]"
-					style="background-image:url({paw});"
-				></div>
-				<div
-					class="set-a footprint -translate-x-20 rotate-[200deg]"
-					style="background-image:url({paw});"
-				></div>
-				<div
-					class="set-a footprint -translate-x-6 rotate-[190deg]"
-					style="background-image:url({paw});"
-				></div>
-				<div
-					class="set-a footprint -translate-x-20 rotate-[200deg]"
-					style="background-image:url({paw});"
-				></div>
-				<div
-					class="set-a footprint -translate-x-6 rotate-[190deg]"
-					style="background-image:url({paw});"
-				></div>
+				<div class="set-a footprint rotate-[180deg]"></div>
+				<div class="set-a footprint -translate-x-16 rotate-[200deg]"></div>
+				<div class="set-a footprint -translate-x-2 rotate-[190deg]"></div>
+				<div class="set-a footprint -translate-x-20 rotate-[200deg]"></div>
+				<div class="set-a footprint -translate-x-4 rotate-[190deg]"></div>
+				<div class="set-a footprint -translate-x-20 rotate-[200deg]"></div>
+				<div class="set-a footprint -translate-x-6 rotate-[190deg]"></div>
+				<div class="set-a footprint -translate-x-20 rotate-[200deg]"></div>
+				<div class="set-a footprint -translate-x-6 rotate-[190deg]"></div>
 			</div>
 		</div>
 	</div>
@@ -611,6 +419,7 @@
 <style>
 	@media (min-width: 1281px) {
 		.footprint {
+			background-image: url('/paw.svg');
 			height: 50px;
 			width: 50px;
 			background-size: contain;
