@@ -1,21 +1,15 @@
 <script>
-	import sgneopunk from '$lib/assets/sgneopunk.webp?enhanced&w=1714;640;400';
-	import { slide } from 'svelte/transition';
 	import Breadcrumbs from '$lib/Breadcrumbs.svelte';
 	import TablerLink from '$lib/assets/svg/TablerLink.svelte';
-	import bellCurveMeme from '$lib/assets/product-bell-curve.webp';
 	import oops3 from '$lib/assets/oops3.webp?enhanced&w=800;600;400';
-	import pandablanket from '$lib/assets/pandablanket.webp?enhanced&w=1000;700;400';
 	import pandayawn from '$lib/assets/pandayawn.webp?enhanced&w=800;600;400';
 	import pandabutterfly from '$lib/assets/panda-butterfly.webp?enhanced&w=800;600;400';
-	import TablerQuotes from '$lib/assets/svg/TablerQuotes.svelte';
 	import unoptimised1 from '$lib/assets/unoptimised1.webp?enhanced&w=800;600;400';
 	import unoptimised2 from '$lib/assets/unoptimised2.webp?enhanced&w=800;600;400';
 	import unoptimised3 from '$lib/assets/unoptimised3.webp?enhanced&w=800;600;400';
 	import unoptimised4 from '$lib/assets/unoptimised4.webp?enhanced&w=800;600;400';
 	import unoptimised5 from '$lib/assets/unoptimised5.webp?enhanced&w=800;600;400';
 	import unoptimised6 from '$lib/assets/unoptimised6.webp?enhanced&w=800;600;400';
-	import paw from '$lib/assets/svg/paw.svg';
 
 	import { onMount } from 'svelte';
 	import { gsap } from 'gsap';

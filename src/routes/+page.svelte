@@ -1,25 +1,16 @@
 <script>
-	import TablerGhostFilled from '$lib/assets/svg/TablerGhostFilled.svelte';
 	import heroNew from '$lib/assets/hero-new.webp?enhanced&w=2060;1536;1280;1024';
-	import oopsBg from '$lib/assets/oops-bg.webp?enhanced&w=2060;1536;1280;1024';
-	import oops2Bg from '$lib/assets/oops2-bg.webp?enhanced&w=2060;1536;1280;1024';
-	import bellCurveMeme from '$lib/assets/product-bell-curve.webp';
-	import oops from '$lib/assets/oops.webp?enhanced&w=600;300';
-	import oops2 from '$lib/assets/oops2.webp?enhanced&w=600;300';
+	import heroNew2 from '$lib/assets/hero-new-2.webp?enhanced&w=2060;1536;1280;1024';
 	import RocketAnimation from '$lib/RocketAnimation.svelte';
-	import pandaIcon from '$lib/assets/panda-icon.webp';
-
 	import { onMount } from 'svelte';
 	import { gsap } from 'gsap';
-	import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
+
 	onMount(() => {
 		let tl = gsap.matchMedia();
 		const headlineVar = document.getElementsByClassName('headline');
-		console.log(headlineVar);
 
 		tl.add('(min-width: 1028px)', () => {
 			for (let i = 0; i < headlineVar.length; i++) {
-				console.log(headlineVar.length);
 				let delay = i * 0.2;
 				gsap.from(headlineVar[i], {
 					autoAlpha: 0,
@@ -43,28 +34,47 @@
 			});
 		});
 	});
+	const currentBgNumber = Math.floor(Math.random() * 11);
 </script>
 
 <div class="hero grid min-h-dvh grid-cols-1 justify-items-center pb-12 lg:pb-[8rem] xl:grid-cols-2">
 	<figure>
-		<enhanced:img
-			src={heroNew}
-			alt="Hero"
-			class="hero-img"
-			sizes="(min-width:2560px) 2060px, (min-width:1920px) 1536px, (min-width:1600px) 1280px, (min-width:1280px) 1024px"
-		/>
+		{#if currentBgNumber % 2 == 0}
+			<enhanced:img
+				src={heroNew}
+				alt="Hero"
+				class="hero-img"
+				sizes="(min-width:2560px) 2060px, (min-width:1920px) 1536px, (min-width:1600px) 1280px, (min-width:1280px) 1024px"
+			/>
+		{:else}
+			<enhanced:img
+				src={heroNew2}
+				alt="Hero"
+				class="hero-img"
+				sizes="(min-width:2560px) 2060px, (min-width:1920px) 1536px, (min-width:1600px) 1280px, (min-width:1280px) 1024px"
+			/>
+		{/if}
 	</figure>
 	<div
 		class="mx-3 self-center justify-self-center rounded-full px-3 pt-3 lg:z-10 lg:mx-8 lg:mt-12 xl:p-[8rem]"
 	>
-		<div class="avatar mb-8 mt-16 flex justify-center px-4 text-center xl:mt-0 xl:hidden">
+		<div class="avatar mb-8 mt-20 flex justify-center px-4 text-center xl:mt-0 xl:hidden">
 			<div class="mask mask-squircle">
-				<enhanced:img
-					src={heroNew}
-					alt="Hero"
-					class="relative object-right"
-					sizes="(min-width:1000px) 600px, (min-width:768px) 300px"
-				/>
+				{#if currentBgNumber % 2 == 0}
+					<enhanced:img
+						src={heroNew}
+						alt="Hero"
+						class="relative object-right"
+						sizes="(min-width:1000px) 600px, (min-width:768px) 500px, 300px"
+					/>
+				{:else}
+					<enhanced:img
+						src={heroNew2}
+						alt="Hero"
+						class="relative object-right"
+						sizes="(min-width:1000px) 600px, (min-width:768px) 500px, 300px"
+					/>
+				{/if}
 			</div>
 		</div>
 		<h1 class="mb-14 text-center text-5xl lg:text-6xl xl:text-7xl min-[1921px]:text-8xl">
@@ -194,8 +204,8 @@
 			position: absolute;
 			top: 0;
 			left: 0;
-			view-transition-name: hero-img;
 		}
+
 		.ending-img {
 			object-fit: cover;
 			object-position: 20% center;
