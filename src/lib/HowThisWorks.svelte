@@ -25,12 +25,14 @@
 
 		<div class="card col-span-3 row-span-1 bg-base-100">
 			<div class="card-body grid grid h-48 content-center">
-				<h2>Realizing you lack competencies is the first step towards product-owning greatness.</h2>
+				<h2 class="font-medium">
+					Realizing you lack competencies is the first step towards product-owning greatness.
+				</h2>
 			</div>
 		</div>
 		<div class="card col-span-1 row-span-1 bg-base-100">
 			<div class="card-body grid h-48 content-center">
-				<h2>Let's get you on the journey!</h2>
+				<h2 class="font-medium">Let's get you learning!</h2>
 			</div>
 		</div>
 		<div
@@ -38,11 +40,6 @@
 			style="background-image:url({pandaScientist}); background-size: cover; background-position:top center;"
 		></div>
 		<div class="card col-span-2 row-span-1 bg-base-100">
-			<enhanced:img
-				src={pandaExperiment}
-				alt="Experimentation"
-				class="rounded-t-xl object-cover object-top"
-			/>
 			<div class="card-body grid content-start space-y-2">
 				<h2
 					class="mb-4 inline-block border-b border-b-base-content bg-gradient-to-r from-emerald-200 via-orange-200 to-pink-200 bg-clip-text py-3 pb-3 text-transparent"
@@ -59,6 +56,9 @@
 				</p>
 			</div>
 		</div>
+		<div class="col-span-1 row-span-1">
+			<enhanced:img src={pandaReading} alt="Panda reading" class="h-full rounded-xl object-cover" />
+		</div>
 		<div class="card col-span-2 row-span-1 bg-base-100">
 			<div class="card-body relative grid content-start space-y-2 overflow-hidden">
 				<h2
@@ -68,21 +68,6 @@
 				</h2>
 				<p>Do personal projects, try stuff beyond tutorial copy-pasting or Coursera Labs.</p>
 			</div>
-			<enhanced:img
-				src={pandaExperiment2}
-				alt="Experimentation"
-				class="rounded-b-xl object-cover"
-			/>
-		</div>
-		<div class="col-span-1 row-span-1">
-			<enhanced:img
-				src={pandaSuperhero}
-				alt="Panda Superhero"
-				class="h-full rounded-xl object-cover"
-			/>
-		</div>
-		<div class="col-span-1 row-span-1">
-			<enhanced:img src={pandaReading} alt="Panda reading" class="h-full rounded-xl object-cover" />
 		</div>
 		<div class="card col-span-3 row-span-1 w-full bg-base-100">
 			<div class="card-body grid content-start space-y-2">
@@ -98,7 +83,13 @@
 				</p>
 			</div>
 		</div>
-
+		<div class="col-span-1 row-span-1">
+			<enhanced:img
+				src={pandaSuperhero}
+				alt="Panda Superhero"
+				class="h-full rounded-xl object-cover"
+			/>
+		</div>
 		<div class="card col-span-3 row-span-1 w-full bg-base-100">
 			<div class="card-body grid content-start space-y-2">
 				<h2
@@ -111,6 +102,9 @@
 				</p>
 				<p>Never again will you need to say "I don't know and can only trust you on this".</p>
 			</div>
+		</div>
+		<div class="col-span-1 row-span-1">
+			<enhanced:img src={pandaNo} alt="No!" class="h-full rounded-xl object-cover" />
 		</div>
 		<div class="card col-span-3 row-span-1 w-full bg-base-100">
 			<div class="card-body grid content-start space-y-2">
@@ -126,9 +120,7 @@
 				</p>
 			</div>
 		</div>
-		<div class="col-span-1 row-span-1">
-			<enhanced:img src={pandaNo} alt="Feels good" class="h-full rounded-xl object-cover" />
-		</div>
+
 		<div class="card col-span-2 row-span-1 w-full bg-base-100">
 			<div class="card-body grid content-center justify-center space-y-2">
 				<h2
