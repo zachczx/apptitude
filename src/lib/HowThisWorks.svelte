@@ -1,81 +1,151 @@
 <script>
-	import undrawTutorialVideo from '$lib/assets/undraw_Tutorial_video_re_wepc.png?enhanced';
-	import undrawPowerful from '$lib/assets/undraw_Powerful_re_frhr.png?enhanced';
-	import undrawThrow from '$lib/assets/undraw_Throw_away_re_x60k.png?enhanced';
-	import undrawAnalysis from '$lib/assets/undraw_Detailed_analysis_re_tk6j.png?enhanced';
+	import pandaScientist from '$lib/assets/panda-scientist.webp';
+	import pandaSuperhero from '$lib/assets/panda-superhero.webp?enhanced&w=800';
+	import pandaBirds from '$lib/assets/panda-birds.webp?enhanced';
+	import pandaExperiment from '$lib/assets/panda-experiment.webp?enhanced';
+	import pandaExperiment2 from '$lib/assets/panda-experiment2.webp?enhanced';
+	import pandaNo from '$lib/assets/panda-no.webp?enhanced';
+	import pandaReading from '$lib/assets/panda-reading.webp?enhanced';
 </script>
 
-<div class="min50h grid justify-items-center gap-x-7 gap-y-5 px-1 pb-12 pt-12 lg:px-5">
-	<h1 class="py-5 text-primary">How this works</h1>
+<div class="bg-gray-900 px-3 pt-12 lg:px-10 lg:py-20">
+	<h1 class="py-12 text-center text-5xl text-primary lg:text-6xl xl:text-7xl min-[1921px]:text-8xl">
+		How this works
+	</h1>
+	<div class="grid gap-x-4 gap-y-4 lg:grid-cols-7">
+		<div class="card bg-base-100 lg:col-span-1 lg:row-span-1">
+			<div class="card-body grid h-48 content-center">
+				<h2
+					class="inline-block bg-gradient-to-r from-emerald-200 via-orange-200 to-pink-200 bg-clip-text py-3 text-transparent"
+				>
+					Hello, tech product owner!
+				</h2>
+			</div>
+		</div>
 
-	<div class="columns-2 space-y-6 xl:columns-4">
-		<div class="card w-full bg-base-100 shadow-xl">
-			<figure><enhanced:img src={undrawTutorialVideo} alt="Learn" /></figure>
+		<div class="card col-span-3 row-span-1 bg-base-100">
+			<div class="card-body grid grid h-48 content-center">
+				<h2>Realizing you lack competencies is the first step towards product-owning greatness.</h2>
+			</div>
+		</div>
+		<div class="card col-span-1 row-span-1 bg-base-100">
+			<div class="card-body grid h-48 content-center">
+				<h2>Let's get you on the journey!</h2>
+			</div>
+		</div>
+		<div
+			class="card col-span-2 row-span-2 bg-base-100 p-5"
+			style="background-image:url({pandaScientist}); background-size: cover; background-position:top center;"
+		></div>
+		<div class="card col-span-2 row-span-1 bg-base-100">
+			<enhanced:img
+				src={pandaExperiment}
+				alt="Experimentation"
+				class="rounded-t-xl object-cover object-top"
+			/>
 			<div class="card-body grid content-start space-y-2">
-				<h2 class="mb-4 border-b border-b-base-content pb-3">Learn foundational tech knowledge</h2>
+				<h2
+					class="mb-4 inline-block border-b border-b-base-content bg-gradient-to-r from-emerald-200 via-orange-200 to-pink-200 bg-clip-text py-3 pb-3 text-transparent"
+				>
+					Step 1a: Learn Foundations
+				</h2>
 				<p>
-					Build a solid foundation of tech knowledge with curated resources across a wide range of
-					tech topics.
+					With my curated resources across a wide range of tech topics, you'll learn at your own
+					pace. Whether that's cloud computing, product management, AI.
 				</p>
-				<p>I'll tell you what I think you should learn.</p>
 				<p>
-					The time's all yours to explore a wide range of topics like cloud, products, AI, spread
-					across websites, Youtube videos, and free online courses.
+					The resources are spread across websites, YouTube videos, and free online courses, giving
+					you flexibility and convenience.
 				</p>
 			</div>
 		</div>
-		<div class="card w-full bg-base-100 shadow-xl">
-			<figure><enhanced:img src={undrawAnalysis} alt="Learn" /></figure>
+		<div class="card col-span-2 row-span-1 bg-base-100">
+			<div class="card-body relative grid content-start space-y-2 overflow-hidden">
+				<h2
+					class="mb-4 inline-block border-b border-b-base-content bg-gradient-to-r from-emerald-200 via-orange-200 to-pink-200 bg-clip-text py-3 pb-3 text-transparent"
+				>
+					Step 1b: Apply Knowledge
+				</h2>
+				<p>Do personal projects, try stuff beyond tutorial copy-pasting or Coursera Labs.</p>
+			</div>
+			<enhanced:img
+				src={pandaExperiment2}
+				alt="Experimentation"
+				class="rounded-b-xl object-cover"
+			/>
+		</div>
+		<div class="col-span-1 row-span-1">
+			<enhanced:img
+				src={pandaSuperhero}
+				alt="Panda Superhero"
+				class="h-full rounded-xl object-cover"
+			/>
+		</div>
+		<div class="col-span-1 row-span-1">
+			<enhanced:img src={pandaReading} alt="Panda reading" class="h-full rounded-xl object-cover" />
+		</div>
+		<div class="card col-span-3 row-span-1 w-full bg-base-100">
 			<div class="card-body grid content-start space-y-2">
-				<h2 class="mb-4 border-b border-b-base-content pb-3">
-					Supplement with ready-made questions to fill knowledge gaps
+				<h2
+					class="mb-4 inline-block border-b border-b-base-content bg-gradient-to-r from-emerald-200 via-orange-200 to-pink-200 bg-clip-text py-3 pb-3 text-transparent"
+				>
+					Step 2: Use My Cheatsheets To Revise
 				</h2>
 				<p>You won't be able to learn everything by yourself in a short time. Or maybe never.</p>
 				<p>
-					Get a boost by referring to my own notes comprising key questions that needed to be but
-					weren't answered while watching awful products & projects imploded.
+					Get a boost by referring to my "Cache Up!" cheatsheets comprising key questions that
+					needed to be but weren't answered while watching awful products & projects imploded.
 				</p>
 			</div>
 		</div>
-		<div class="card w-full bg-base-100 shadow-xl">
-			<figure><enhanced:img src={undrawPowerful} alt="Learn" /></figure>
+
+		<div class="card col-span-3 row-span-1 w-full bg-base-100">
 			<div class="card-body grid content-start space-y-2">
-				<h2 class="mb-4 border-b border-b-base-content pb-3">
-					Improve your management of products and teams
+				<h2
+					class="mb-4 inline-block border-b border-b-base-content bg-gradient-to-r from-emerald-200 via-orange-200 to-pink-200 bg-clip-text py-3 pb-3 text-transparent"
+				>
+					Step 3: Better Manage Products & Teams
 				</h2>
 				<p>
-					Lead and govern your products and teams better with all your new knowledge superpowers! No
-					one gets to smoke you anymore.
+					Lead your products & teams better with all your new knowledge! No one fools you anymore.
 				</p>
-				<p>
-					Make decisions from an informed position. Take nothing for granted by processing staff
-					recommendations with a skeptical eye.
-				</p>
-				<p>You will never need to say "I can only trust you on this".</p>
+				<p>Never again will you need to say "I don't know and can only trust you on this".</p>
 			</div>
 		</div>
-		<div class="card w-full bg-base-100 shadow-xl">
-			<figure><enhanced:img src={undrawThrow} alt="Learn" /></figure>
+		<div class="card col-span-3 row-span-1 w-full bg-base-100">
 			<div class="card-body grid content-start space-y-2">
-				<h2 class="mb-4 border-b border-b-base-content pb-3">
-					Say "No!" to ineffective products & projects
+				<h2
+					class="mb-4 inline-block border-b border-b-base-content bg-gradient-to-r from-emerald-200 via-orange-200 to-pink-200 bg-clip-text py-3 pb-3 text-transparent"
+				>
+					Step 4: Say "No!" to Shitty Products
 				</h2>
 				<p>
 					Use your upgraded judgement and trust that you're 10x better than you were. Gain
-					confidence in your judgement to terminate useless products. stop underperforming projects.
-				</p>
-				<p>
-					Even if you're not rewarded commensurately, you can always feel happy that you contributed
-					to public good.
+					confidence in your judgement to terminate useless products. Stop underperforming projects
+					in their tracks.
 				</p>
 			</div>
+		</div>
+		<div class="col-span-1 row-span-1">
+			<enhanced:img src={pandaNo} alt="Feels good" class="h-full rounded-xl object-cover" />
+		</div>
+		<div class="card col-span-2 row-span-1 w-full bg-base-100">
+			<div class="card-body grid content-center justify-center space-y-2">
+				<h2
+					class="inline-block bg-gradient-to-r from-emerald-200 via-orange-200 to-pink-200 bg-clip-text py-3 text-transparent"
+				>
+					Now that's truly Tech for Public Good
+				</h2>
+			</div>
+		</div>
+		<div class="col-span-3 row-span-1 lg:col-span-1">
+			<enhanced:img src={pandaBirds} alt="Feels good" class="h-full rounded-xl object-cover" />
 		</div>
 	</div>
 </div>
 
 <style>
 	.min50h {
-		min-height: 50dvh;
-		background: black;
+		min-height: 20vh;
 	}
 </style>
