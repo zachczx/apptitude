@@ -1,19 +1,22 @@
 <script>
 	import pandaScientist from '$lib/assets/panda-scientist.webp';
-	import pandaSuperhero from '$lib/assets/panda-superhero.webp?enhanced&w=800';
+	import pandaSuperhero from '$lib/assets/panda-superhero.webp?enhanced';
 	import pandaBirds from '$lib/assets/panda-birds.webp?enhanced';
 	import pandaExperiment from '$lib/assets/panda-experiment.webp?enhanced';
 	import pandaExperiment2 from '$lib/assets/panda-experiment2.webp?enhanced';
 	import pandaNo from '$lib/assets/panda-no.webp?enhanced';
 	import pandaReading from '$lib/assets/panda-reading.webp?enhanced';
+	import pandaLabGoggles from '$lib/assets/panda-lab-goggles.webp?enhanced&w=300';
 </script>
 
-<div class="bg-gray-900 px-3 pt-12 lg:px-10 lg:py-20">
-	<h1 class="py-12 text-center text-5xl text-primary lg:text-6xl xl:text-7xl min-[1921px]:text-8xl">
-		How this works
+<div class="bg-gray-900 px-3 lg:px-10 lg:py-20">
+	<h1
+		class="pb-12 pt-2 text-center text-5xl text-lime-400 lg:text-6xl xl:text-7xl min-[1921px]:text-8xl"
+	>
+		How Apptitude Helps You
 	</h1>
 	<div class="grid gap-x-4 gap-y-4 lg:grid-cols-7">
-		<div class="card bg-base-100 lg:col-span-1 lg:row-span-1">
+		<div class="card col-span-3 bg-base-100 lg:col-span-1 lg:row-span-1">
 			<div class="card-body grid h-48 content-center">
 				<h2
 					class="inline-block bg-gradient-to-r from-emerald-200 via-orange-200 to-pink-200 bg-clip-text py-3 text-transparent"
@@ -25,14 +28,15 @@
 
 		<div class="card col-span-3 row-span-1 bg-base-100">
 			<div class="card-body grid grid h-48 content-center">
-				<h2 class="font-medium">
-					Realizing you lack competencies is the first step towards product-owning greatness.
-				</h2>
+				<h3 class="font-medium">
+					Understanding your knowledge gaps is the most important step towards product-owning
+					greatness.
+				</h3>
 			</div>
 		</div>
 		<div class="card col-span-1 row-span-1 bg-base-100">
 			<div class="card-body grid h-48 content-center">
-				<h2 class="font-medium">Let's get you learning!</h2>
+				<h3 class="font-medium">Let's get you learning!</h3>
 			</div>
 		</div>
 		<div
@@ -59,7 +63,7 @@
 		<div class="col-span-1 row-span-1">
 			<enhanced:img src={pandaReading} alt="Panda reading" class="h-full rounded-xl object-cover" />
 		</div>
-		<div class="card col-span-2 row-span-1 bg-base-100">
+		<div class="card col-span-3 row-span-1 bg-base-100 lg:col-span-2">
 			<div class="card-body relative grid content-start space-y-2 overflow-hidden">
 				<h2
 					class="mb-4 inline-block border-b border-b-base-content bg-gradient-to-r from-emerald-200 via-orange-200 to-pink-200 bg-clip-text py-3 pb-3 text-transparent"
@@ -67,6 +71,11 @@
 					Step 1b: Apply Knowledge
 				</h2>
 				<p>Do personal projects, try stuff beyond tutorial copy-pasting or Coursera Labs.</p>
+				<enhanced:img
+					src={pandaLabGoggles}
+					alt="Take notes!"
+					class="absolute right-0 transition duration-500 ease-in-out hover:-translate-y-8 motion-reduce:transition-none"
+				/>
 			</div>
 		</div>
 		<div class="card col-span-3 row-span-1 w-full bg-base-100">
@@ -83,7 +92,7 @@
 				</p>
 			</div>
 		</div>
-		<div class="col-span-1 row-span-1">
+		<div class="col-span-3 row-span-1 lg:col-span-1">
 			<enhanced:img
 				src={pandaSuperhero}
 				alt="Panda Superhero"
@@ -103,7 +112,7 @@
 				<p>Never again will you need to say "I don't know and can only trust you on this".</p>
 			</div>
 		</div>
-		<div class="col-span-1 row-span-1">
+		<div class="col-span-3 row-span-1 lg:col-span-1">
 			<enhanced:img src={pandaNo} alt="No!" class="h-full rounded-xl object-cover" />
 		</div>
 		<div class="card col-span-3 row-span-1 w-full bg-base-100">
@@ -121,7 +130,7 @@
 			</div>
 		</div>
 
-		<div class="card col-span-2 row-span-1 w-full bg-base-100">
+		<div class="card col-span-3 row-span-1 w-full bg-base-100 lg:col-span-2">
 			<div class="card-body grid content-center justify-center space-y-2">
 				<h2
 					class="inline-block bg-gradient-to-r from-emerald-200 via-orange-200 to-pink-200 bg-clip-text py-3 text-transparent"

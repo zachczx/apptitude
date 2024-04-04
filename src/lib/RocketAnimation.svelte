@@ -227,9 +227,7 @@
 	</div>
 
 	<div class="tagline-green2 popped text-4xl font-bold lg:text-6xl">
-		<span
-			class="bg-gradient-to-r from-green-400 via-emerald-300 to-lime-400 bg-clip-text text-transparent"
-		>
+		<span class="bg-gradient-to-r from-lime-400 to-lime-400 bg-clip-text text-transparent">
 			3.. 2.. 1.. Go!</span
 		>
 	</div>
@@ -248,6 +246,7 @@
 		>
 	</div>
 </div>
+<div class="h-[20rem] bg-black"></div>
 
 <style>
 	.animation-div {
