@@ -25,7 +25,7 @@
 			</div>
 		</div>
 
-		<div class="card col-span-3 row-span-1 bg-base-100">
+		<div class="card col-span-3 row-span-1 bg-base-100 lg:col-span-2">
 			<div class="card-body grid h-48 grid-cols-3 content-center items-center">
 				<div class="col-span-2">
 					<h3 class="font-medium">Go on a learning journey to upskill and git gud!</h3>
