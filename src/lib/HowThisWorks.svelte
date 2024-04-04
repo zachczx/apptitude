@@ -137,12 +137,12 @@
 					class="mb-4 inline-block border-b border-b-base-content bg-gradient-to-r from-emerald-200 via-orange-200 to-pink-200 bg-clip-text py-3 pb-3 text-transparent"
 				>
 					Step 4: Say "No!" to Shitty Products
-					<p>
-						Use your upgraded judgement and trust that you're 10x better than you were. Gain
-						confidence in your judgement to terminate useless products. Stop underperforming
-						projects in their tracks.
-					</p>
 				</h2>
+				<p>
+					Use your upgraded judgement and trust that you're 10x better than you were. Gain
+					confidence in your judgement to terminate useless products. Stop underperforming projects
+					in their tracks.
+				</p>
 			</div>
 		</div>
 
