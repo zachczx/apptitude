@@ -7,7 +7,7 @@
 	import { onMount } from 'svelte';
 	import { gsap } from 'gsap';
 	import HowThisWorks from '$lib/HowThisWorks.svelte';
-	import pandaAnnoyed from '$lib/assets/panda-annoyed.webp?enhanced';
+	import pandaAnnoyed from '$lib/assets/panda-annoyed.webp?enhanced&w=600;500;300';
 
 	let { data } = $props();
 	console.log(data);
@@ -104,12 +104,10 @@
 				{/if}
 			</div>
 		</div>
-		<h1
-			class="mb-12 text-center text-5xl text-lime-400 lg:pt-20 lg:text-6xl xl:text-7xl min-[1921px]:text-8xl"
-		>
+		<h1 class="mb-12 text-center text-5xl lg:pt-20 lg:text-6xl xl:text-7xl min-[1921px]:text-8xl">
 			<span class="headline">I help </span>
 			<span class="headline"> tech product owners</span>
-			<span class="headline">make good decisions.</span>
+			<span class="headline text-lime-400">make good decisions.</span>
 		</h1>
 		<div class="mb-12 grid grid-cols-3 py-2 text-start text-lg lg:text-xl">
 			<div class="subheadline border-r-2 border-base-content/50 py-1 pe-3 text-center">
@@ -158,7 +156,13 @@
 
 <div class="grid min-h-[200px] gap-x-5 bg-black bg-gray-900 lg:grid-cols-2">
 	<div class="avatar my-5 justify-self-end px-10">
-		<div class="mask mask-squircle"><enhanced:img src={pandaAnnoyed} alt="Annoyed panda" /></div>
+		<div class="mask mask-squircle">
+			<enhanced:img
+				src={pandaAnnoyed}
+				alt="Annoyed panda"
+				sizes="(min-width:1000px) 600px, (min-width:768px) 500px, 300px"
+			/>
+		</div>
 	</div>
 	<div class="grid grid-rows-2 justify-self-start">
 		<div class="content-end text-center lg:text-start"><h1>What are you waiting for?</h1></div>

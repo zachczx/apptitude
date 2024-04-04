@@ -1,7 +1,7 @@
 <script>
 	import pandaScientist from '$lib/assets/panda-scientist.webp';
 	import pandaSuperhero from '$lib/assets/panda-superhero.webp?enhanced';
-	import pandaBirds from '$lib/assets/panda-birds.webp?enhanced';
+	import pandaBirds from '$lib/assets/panda-birds.webp?enhanced&w=300';
 	import pandaNo from '$lib/assets/panda-no.webp?enhanced';
 	import pandaReading from '$lib/assets/panda-reading.webp?enhanced';
 	import pandaLabGoggles from '$lib/assets/panda-lab-goggles.webp?enhanced&w=300';
@@ -59,7 +59,12 @@
 			</div>
 		</div>
 		<div class="col-span-1 row-span-1">
-			<enhanced:img src={pandaReading} alt="Panda reading" class="h-full rounded-xl object-cover" />
+			<enhanced:img
+				src={pandaReading}
+				alt="Panda reading"
+				class="h-full rounded-xl object-cover"
+				sizes="(min-width:1000px) 500px, 300px"
+			/>
 		</div>
 		<div class="card col-span-3 row-span-1 bg-base-100 lg:col-span-2">
 			<div class="card-body relative grid content-start space-y-2 overflow-hidden">
@@ -95,6 +100,7 @@
 				src={pandaSuperhero}
 				alt="Panda Superhero"
 				class="h-full rounded-xl object-cover"
+				sizes="(min-width:1000px) 500px, 300px"
 			/>
 		</div>
 		<div class="card col-span-3 row-span-1 w-full bg-base-100">
@@ -138,7 +144,12 @@
 			</div>
 		</div>
 		<div class="col-span-3 row-span-1 lg:col-span-1">
-			<enhanced:img src={pandaBirds} alt="Feels good" class="h-full rounded-xl object-cover" />
+			<enhanced:img
+				src={pandaBirds}
+				alt="Feels good"
+				class="h-full rounded-xl object-cover"
+				sizes="(min-width:1000px) 500px, 300px"
+			/>
 		</div>
 	</div>
 </div>
