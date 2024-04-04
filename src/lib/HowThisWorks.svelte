@@ -41,7 +41,7 @@
 			</div>
 		</div>
 		<div
-			class="card col-span-2 row-span-2 bg-base-100 p-5"
+			class="card bg-base-100 p-5 lg:col-span-2 lg:row-span-2"
 			style="background-image:url({pandaScientist}); background-size: cover; background-position:top center;"
 		></div>
 		<div class="card col-span-2 row-span-1 bg-base-300">
