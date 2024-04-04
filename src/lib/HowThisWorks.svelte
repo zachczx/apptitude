@@ -2,8 +2,6 @@
 	import pandaScientist from '$lib/assets/panda-scientist.webp';
 	import pandaSuperhero from '$lib/assets/panda-superhero.webp?enhanced';
 	import pandaBirds from '$lib/assets/panda-birds.webp?enhanced';
-	import pandaExperiment from '$lib/assets/panda-experiment.webp?enhanced';
-	import pandaExperiment2 from '$lib/assets/panda-experiment2.webp?enhanced';
 	import pandaNo from '$lib/assets/panda-no.webp?enhanced';
 	import pandaReading from '$lib/assets/panda-reading.webp?enhanced';
 	import pandaLabGoggles from '$lib/assets/panda-lab-goggles.webp?enhanced&w=300';
@@ -11,7 +9,7 @@
 
 <div class="bg-gray-900 px-3 lg:px-10 lg:py-20">
 	<h1
-		class="pb-12 pt-2 text-center text-5xl text-lime-400 lg:text-6xl xl:text-7xl min-[1921px]:text-8xl"
+		class="pb-12 pt-10 text-center text-5xl text-lime-400 lg:pt-5 lg:text-6xl xl:text-7xl min-[1921px]:text-8xl"
 	>
 		How Apptitude Helps You
 	</h1>

@@ -79,8 +79,8 @@
 				<enhanced:img
 					src={oops3}
 					alt="Red pandas, because they're cute"
-					class="h-full transition duration-3000 hover:scale-125"
-					sizes="(min-width:1920px) 800px, (min-width:1200px) 600px, (min-width:768px) 400px"
+					class="lg:transition lg:duration-3000 lg:hover:scale-125"
+					sizes="(min-width:1920px) 800px, (min-width:1200px) 600px, 400px"
 				/>
 			</div>
 		</figure>
@@ -95,8 +95,8 @@
 				<enhanced:img
 					src={pandabutterfly}
 					alt="Red pandas, because they're cute"
-					class="h-full transition duration-3000 hover:scale-125"
-					sizes="(min-width:1920px) 800px, (min-width:1200px) 600px, (min-width:768px) 400px"
+					class="transition duration-3000 hover:scale-125"
+					sizes="(min-width:1920px) 800px, (min-width:1200px) 600px, 400px"
 				/>
 			</div>
 		</figure>
@@ -173,8 +173,8 @@
 				<enhanced:img
 					src={unoptimised1}
 					alt="Red pandas, because they're cute"
-					class="h-full transition duration-3000 hover:scale-125"
-					sizes="(min-width:1920px) 800px, (min-width:1200px) 600px, (min-width:768px) 400px"
+					class="transition duration-3000 hover:scale-125"
+					sizes="(min-width:1920px) 800px, (min-width:1200px) 600px, 400px"
 				/>
 			</div>
 		</figure>
@@ -189,8 +189,8 @@
 				<enhanced:img
 					src={unoptimised6}
 					alt="Red pandas, because they're cute"
-					class="h-full transition duration-3000 hover:scale-125"
-					sizes="(min-width:1920px) 800px, (min-width:1200px) 600px, (min-width:768px) 400px"
+					class="transition duration-3000 hover:scale-125"
+					sizes="(min-width:1920px) 800px, (min-width:1200px) 600px,400px"
 				/>
 			</div>
 		</figure>
@@ -258,8 +258,8 @@
 				<enhanced:img
 					src={pandayawn}
 					alt="Red pandas, because they're cute"
-					class="h-full transition duration-3000 hover:scale-125"
-					sizes="(min-width:1920px) 800px, (min-width:1200px) 600px, (min-width:768px) 400px"
+					class="transition duration-3000 hover:scale-125"
+					sizes="(min-width:1920px) 800px, (min-width:1200px) 600px,400px"
 				/>
 			</div>
 		</figure>
@@ -272,8 +272,8 @@
 				<enhanced:img
 					src={unoptimised5}
 					alt="Red pandas, because they're cute"
-					class="h-full transition duration-3000 hover:scale-125"
-					sizes="(min-width:1920px) 800px, (min-width:1200px) 600px, (min-width:768px) 400px"
+					class="transition duration-3000 hover:scale-125"
+					sizes="(min-width:1920px) 800px, (min-width:1200px) 600px,400px"
 				/>
 			</div>
 		</figure>
@@ -340,8 +340,8 @@
 				<enhanced:img
 					src={unoptimised4}
 					alt="Red pandas, because they're cute"
-					class="h-full transition duration-3000 hover:scale-125"
-					sizes="(min-width:1920px) 800px, (min-width:1200px) 600px, (min-width:768px) 400px"
+					class="transition duration-3000 hover:scale-125"
+					sizes="(min-width:1920px) 800px, (min-width:1200px) 600px,400px"
 				/>
 			</div>
 		</figure>
@@ -356,8 +356,8 @@
 				<enhanced:img
 					src={unoptimised3}
 					alt="Red pandas, because they're cute"
-					class="h-full transition duration-3000 hover:scale-125"
-					sizes="(min-width:1920px) 800px, (min-width:1200px) 600px, (min-width:768px) 400px"
+					class="transition duration-3000 hover:scale-125"
+					sizes="(min-width:1920px) 800px, (min-width:1200px) 600px,400px"
 				/>
 			</div>
 		</figure>
@@ -408,8 +408,8 @@
 				<enhanced:img
 					src={unoptimised2}
 					alt="Red pandas, because they're cute"
-					class="h-full transition duration-3000 hover:scale-125"
-					sizes="(min-width:1920px) 800px, (min-width:1200px) 600px, (min-width:768px) 400px"
+					class="transition duration-3000 hover:scale-125"
+					sizes="(min-width:1920px) 800px, (min-width:1200px) 600px,400px"
 				/>
 			</div>
 		</figure>
