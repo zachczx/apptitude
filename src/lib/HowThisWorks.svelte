@@ -1,10 +1,10 @@
 <script>
 	import pandaScientist from '$lib/assets/panda-scientist.webp';
-	import pandaSuperhero from '$lib/assets/panda-superhero.webp?enhanced';
-	import pandaBirds from '$lib/assets/panda-birds.webp?enhanced&w=300';
+	import pandaSuperhero from '$lib/assets/panda-superhero.webp?enhanced&w=600';
+	import pandaBirds from '$lib/assets/panda-birds.webp?enhanced&w=400';
 	import pandaNo from '$lib/assets/panda-no.webp?enhanced';
 	import pandaReading from '$lib/assets/panda-reading.webp?enhanced';
-	import pandaLabGoggles from '$lib/assets/panda-lab-goggles.webp?enhanced&w=300';
+	import pandaLabGoggles from '$lib/assets/panda-lab-goggles.webp?enhanced&w=400';
 </script>
 
 <div class="bg-gray-900 px-3 lg:px-10 lg:py-20">
@@ -34,14 +34,14 @@
 		</div>
 		<div class="card col-span-1 row-span-1 bg-base-100">
 			<div class="card-body grid h-48 content-center">
-				<h3 class="font-medium">Let's get you learning!</h3>
+				<h3 class="font-medium">Let's get you started on learning!</h3>
 			</div>
 		</div>
 		<div
 			class="card col-span-2 row-span-2 bg-base-100 p-5"
 			style="background-image:url({pandaScientist}); background-size: cover; background-position:top center;"
 		></div>
-		<div class="card col-span-2 row-span-1 bg-base-100">
+		<div class="card col-span-2 row-span-1 bg-base-300">
 			<div class="card-body grid content-start space-y-2">
 				<h2
 					class="mb-4 inline-block border-b border-b-base-content bg-gradient-to-r from-emerald-200 via-orange-200 to-pink-200 bg-clip-text py-3 pb-3 text-transparent"
@@ -66,7 +66,7 @@
 				sizes="(min-width:1000px) 500px, 300px"
 			/>
 		</div>
-		<div class="card col-span-3 row-span-1 bg-base-100 lg:col-span-2">
+		<div class="card col-span-3 row-span-1 bg-base-300 lg:col-span-2">
 			<div class="card-body relative grid content-start space-y-2 overflow-hidden">
 				<h2
 					class="mb-4 inline-block border-b border-b-base-content bg-gradient-to-r from-emerald-200 via-orange-200 to-pink-200 bg-clip-text py-3 pb-3 text-transparent"
@@ -81,7 +81,7 @@
 				/>
 			</div>
 		</div>
-		<div class="card col-span-3 row-span-1 w-full bg-base-100">
+		<div class="card col-span-3 row-span-1 w-full bg-base-300">
 			<div class="card-body grid content-start space-y-2">
 				<h2
 					class="mb-4 inline-block border-b border-b-base-content bg-gradient-to-r from-emerald-200 via-orange-200 to-pink-200 bg-clip-text py-3 pb-3 text-transparent"
@@ -103,7 +103,7 @@
 				sizes="(min-width:1000px) 500px, 300px"
 			/>
 		</div>
-		<div class="card col-span-3 row-span-1 w-full bg-base-100">
+		<div class="card col-span-3 row-span-1 w-full bg-base-300">
 			<div class="card-body grid content-start space-y-2">
 				<h2
 					class="mb-4 inline-block border-b border-b-base-content bg-gradient-to-r from-emerald-200 via-orange-200 to-pink-200 bg-clip-text py-3 pb-3 text-transparent"
@@ -119,7 +119,7 @@
 		<div class="col-span-3 row-span-1 lg:col-span-1">
 			<enhanced:img src={pandaNo} alt="No!" class="h-full rounded-xl object-cover" />
 		</div>
-		<div class="card col-span-3 row-span-1 w-full bg-base-100">
+		<div class="card col-span-3 row-span-1 w-full bg-base-300">
 			<div class="card-body grid content-start space-y-2">
 				<h2
 					class="mb-4 inline-block border-b border-b-base-content bg-gradient-to-r from-emerald-200 via-orange-200 to-pink-200 bg-clip-text py-3 pb-3 text-transparent"
@@ -147,7 +147,7 @@
 			<enhanced:img
 				src={pandaBirds}
 				alt="Feels good"
-				class="h-full rounded-xl object-cover"
+				class="rounded-xl"
 				sizes="(min-width:1000px) 500px, 300px"
 			/>
 		</div>
