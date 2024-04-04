@@ -5,6 +5,7 @@
 	import pandaNo from '$lib/assets/panda-no.webp?enhanced';
 	import pandaReading from '$lib/assets/panda-reading.webp?enhanced';
 	import pandaLabGoggles from '$lib/assets/panda-lab-goggles.webp?enhanced&w=400';
+	import swoleDoge from '$lib/assets/swole-doge.webp?enhanced&w=200';
 </script>
 
 <div class="bg-gray-900 px-3 lg:px-10 lg:py-20">
@@ -25,16 +26,18 @@
 		</div>
 
 		<div class="card col-span-3 row-span-1 bg-base-100">
-			<div class="card-body grid grid h-48 content-center">
-				<h3 class="font-medium">
-					Understanding your knowledge gaps is the most important step towards product-owning
-					greatness.
-				</h3>
+			<div class="card-body grid h-48 grid-cols-3 content-center items-center">
+				<div class="col-span-2">
+					<h3 class="font-medium">Go on a learning journey to upskill and git gud!</h3>
+				</div>
+				<div>
+					<enhanced:img src={swoleDoge} alt="Swole Doge" class="" />
+				</div>
 			</div>
 		</div>
-		<div class="card col-span-1 row-span-1 bg-base-100">
+		<div class="card col-span-2 row-span-1 bg-base-100">
 			<div class="card-body grid h-48 content-center">
-				<h3 class="font-medium">Let's get you started on learning!</h3>
+				<h3 class="font-medium">Here are the steps I want to sell you.</h3>
 			</div>
 		</div>
 		<div
