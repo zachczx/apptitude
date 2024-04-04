@@ -3,8 +3,6 @@
 	import twentyFiveDev from '$lib/assets/25yodev.webp?enhanced&w=200;150;70';
 	import Breadcrumbs from '$lib/Breadcrumbs.svelte';
 	import TablerHelpCircleFilled from '$lib/assets/svg/TablerHelpCircleFilled.svelte';
-	import { slide } from 'svelte/transition';
-	import { quintOut } from 'svelte/easing';
 
 	let showMore = $state(false);
 	let currentItem = $state(0);
@@ -58,25 +56,26 @@
 					</div>
 					<div id="sidebar" class="col-span-1 hidden lg:contents">
 						<div class="rounded-xl bg-base-300 p-5">
-							<ul class="divide-y-2 divide-slate-600">
+							<h2 class="text-center">Menu</h2>
+							<ol class="divide-y-2 divide-slate-600">
 								{#each techtrippin as sidebarItem, index}
 									<button
 										onclick={() => {
 											currentItem = index;
-										}}><li class="py-3 text-start">{sidebarItem.title}</li></button
+										}}
+										class="w-full"
+										><li class="ms-5 list-decimal py-3 ps-5 text-start">
+											{sidebarItem.title}
+										</li></button
 									>
 								{/each}
-							</ul>
+							</ol>
 						</div>
 					</div>
 				</div>
 				<div id="content" class="col-span-2">
 					{#key currentItem}
-						<div
-							data-id="Item-{currentItem}"
-							class="rounded-2xl bg-base-300"
-							transition:slide={{ duration: 700, easing: quintOut }}
-						>
+						<div data-id="Item-{currentItem}" class="rounded-2xl bg-base-300">
 							<h2 class="rounded-t-2xl bg-gray-950 py-5 text-center">
 								{techtrippin[currentItem].title}
 							</h2>

@@ -44,7 +44,7 @@
 			class="card bg-base-100 p-5 lg:col-span-2 lg:row-span-2"
 			style="background-image:url({pandaScientist}); background-size: cover; background-position:top center;"
 		></div>
-		<div class="card col-span-2 row-span-1 bg-base-300">
+		<div class="card col-span-2 row-span-1 bg-gradient-to-t from-lime-950 from-60% to-lime-800">
 			<div class="card-body grid content-start space-y-2">
 				<h2
 					class="mb-4 inline-block border-b border-b-base-content bg-gradient-to-r from-emerald-200 via-orange-200 to-pink-200 bg-clip-text py-3 pb-3 text-transparent"
@@ -70,7 +70,9 @@
 			/>
 		</div>
 		<div class="card col-span-3 row-span-1 bg-base-300 lg:col-span-2">
-			<div class="card-body relative grid content-start space-y-2 overflow-hidden">
+			<div
+				class="card-body relative grid content-start space-y-2 overflow-hidden rounded-2xl bg-gradient-to-t from-lime-950 from-60% to-lime-800"
+			>
 				<h2
 					class="mb-4 inline-block border-b border-b-base-content bg-gradient-to-r from-emerald-200 via-orange-200 to-pink-200 bg-clip-text py-3 pb-3 text-transparent"
 				>
@@ -84,7 +86,9 @@
 				/>
 			</div>
 		</div>
-		<div class="card col-span-3 row-span-1 w-full bg-base-300">
+		<div
+			class="card col-span-3 row-span-1 w-full bg-gradient-to-t from-lime-950 from-60% to-lime-800"
+		>
 			<div class="card-body grid content-start space-y-2">
 				<h2
 					class="mb-4 inline-block border-b border-b-base-content bg-gradient-to-r from-emerald-200 via-orange-200 to-pink-200 bg-clip-text py-3 pb-3 text-transparent"
@@ -102,13 +106,16 @@
 			<enhanced:img
 				src={pandaSuperhero}
 				alt="Panda Superhero"
-				class="h-full rounded-xl object-cover"
+				class="h-full rounded-2xl object-cover"
 				sizes="(min-width:1000px) 500px, 300px"
 			/>
 		</div>
-		<div class="card col-span-3 row-span-1 w-full bg-base-300">
+		<div
+			class="card col-span-3 row-span-1 w-full bg-gradient-to-t from-lime-950 from-60% to-lime-800"
+		>
 			<div class="card-body grid content-start space-y-2">
 				<h2
+					src={pandaLabGoggles}
 					class="mb-4 inline-block border-b border-b-base-content bg-gradient-to-r from-emerald-200 via-orange-200 to-pink-200 bg-clip-text py-3 pb-3 text-transparent"
 				>
 					Step 3: Better Manage Products & Teams
@@ -122,22 +129,26 @@
 		<div class="col-span-3 row-span-1 lg:col-span-1">
 			<enhanced:img src={pandaNo} alt="No!" class="h-full rounded-xl object-cover" />
 		</div>
-		<div class="card col-span-3 row-span-1 w-full bg-base-300">
+		<div
+			class="card col-span-3 row-span-1 w-full bg-gradient-to-t from-lime-950 from-60% to-lime-800"
+		>
 			<div class="card-body grid content-start space-y-2">
 				<h2
 					class="mb-4 inline-block border-b border-b-base-content bg-gradient-to-r from-emerald-200 via-orange-200 to-pink-200 bg-clip-text py-3 pb-3 text-transparent"
 				>
 					Step 4: Say "No!" to Shitty Products
+					<p>
+						Use your upgraded judgement and trust that you're 10x better than you were. Gain
+						confidence in your judgement to terminate useless products. Stop underperforming
+						projects in their tracks.
+					</p>
 				</h2>
-				<p>
-					Use your upgraded judgement and trust that you're 10x better than you were. Gain
-					confidence in your judgement to terminate useless products. Stop underperforming projects
-					in their tracks.
-				</p>
 			</div>
 		</div>
 
-		<div class="card col-span-3 row-span-1 w-full bg-base-100 lg:col-span-2">
+		<div
+			class="card col-span-3 row-span-1 w-full bg-gradient-to-t from-lime-950 from-60% to-lime-800 lg:col-span-2"
+		>
 			<div class="card-body grid content-center justify-center space-y-2">
 				<h2
 					class="inline-block bg-gradient-to-r from-emerald-200 via-orange-200 to-pink-200 bg-clip-text py-3 text-transparent"
