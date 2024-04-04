@@ -3,55 +3,11 @@
 	import twentyFiveDev from '$lib/assets/25yodev.webp?enhanced&w=200;150;70';
 	import Breadcrumbs from '$lib/Breadcrumbs.svelte';
 	import TablerHelpCircleFilled from '$lib/assets/svg/TablerHelpCircleFilled.svelte';
-
-	import { onMount } from 'svelte';
-	import { gsap } from 'gsap';
-	import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
+	import { slide } from 'svelte/transition';
+	import { quintOut } from 'svelte/easing';
 
 	let showMore = $state(false);
-
-	onMount(() => {
-		gsap.registerPlugin(ScrollTrigger);
-		const convoVar = document.getElementsByClassName('convo');
-		console.log(convoVar);
-
-		let tl = gsap.matchMedia();
-		tl.add('(min-width: 1024px)', () => {
-			for (let convoEach of convoVar) {
-				gsap.to(convoEach, {
-					scrollTrigger: {
-						trigger: convoEach,
-						start: '-100% top',
-						end: 'bottom 30%',
-						toggleActions: 'play reverse play reverse',
-						scrub: false,
-						markers: false
-					},
-					backgroundColor: '#20252E',
-					duration: 0.3
-				});
-			}
-		});
-	});
-
-	////////////////////////////////////////
-	/*
-	import { animate, scroll } from 'motion';
-
-	onMount(() => {
-		const convoVar = document.getElementsByClassName('convo');
-		for (const convoEach of convoVar) {
-			scroll(
-				animate(convoEach, {
-					scale: [0.9, 1],
-
-					backgroundColor: ['#2A303C', '#20252E']
-				}),
-				{ target: convoEach, offset: ['start end', 'end end'] }
-			);
-		}
-	});
-	*/
+	let currentItem = $state(0);
 </script>
 
 <Breadcrumbs textCurrent={"Tech Trippin'"} />
@@ -85,63 +41,61 @@
 				</div>
 			</div>
 
-			<div class="grid grid-cols-1 justify-items-center gap-y-8 lg:mb-7 lg:gap-y-10">
-				{#each techtrippin as techtrippinItem, i}
-					<div id="tidbit-{i}" class="convo rounded-2xl bg-slate-700">
-						<h2 class="rounded-t-2xl bg-gray-950 py-5 text-center">{techtrippinItem.title}</h2>
-						<div class="p-2 xl:p-6">
-							<div class="chat chat-start">
-								<div class="avatar chat-image">
-									<div class="w-10 rounded-full lg:w-[200px]">
-										<img alt="Person" src={techtrippinItem.icon} />
-									</div>
-								</div>
-								<div class="chat-header ms-5 self-end pb-1 font-medium lg:text-xl">
-									{techtrippinItem.name}
-								</div>
-								<div
-									class="chat-bubble bg-gradient-to-r from-red-950 to-rose-950 p-2 text-xl lg:p-6"
-								>
-									{techtrippinItem.prompt}
-								</div>
-							</div>
-							<div class="chat chat-end">
-								<div class="avatar chat-image">
-									<div class="w-10 rounded-full lg:w-[200px]">
-										<enhanced:img
-											alt="Soy Dev"
-											src={twentyFiveDev}
-											sizes="(min-width:1920px) 200px, (min-width:1080px) 150px, (min-width:768px) 70px"
-										/>
-									</div>
-								</div>
-
-								<div class="chat-header me-5 self-end pb-1 font-medium lg:text-xl">
-									Chad Staffer
-								</div>
-								<div
-									class="chat-bubble self-start bg-gradient-to-r from-slate-900 via-base-300 to-slate-900 p-2 text-xl lg:p-6"
-								>
-									{techtrippinItem.response}
-								</div>
-							</div>
-							{#if techtrippinItem.prompt2 && techtrippinItem.response2}
+			<div
+				class="grid grid-cols-1 justify-items-center gap-y-8 lg:mb-7 lg:grid-cols-3 lg:gap-x-5 lg:gap-y-10"
+			>
+				<div id="navigation">
+					<div id="dropdown" class="w-full lg:hidden">
+						<select
+							bind:value={currentItem}
+							class="select select-bordered w-full bg-base-300 text-lg"
+						>
+							<option disabled selected>Select an item</option>
+							{#each techtrippin as sidebarItem, index}
+								<option value={index}>{sidebarItem.title}</option>
+							{/each}
+						</select>
+					</div>
+					<div id="sidebar" class="col-span-1 hidden lg:contents">
+						<div class="rounded-xl bg-base-300 p-5">
+							<ul class="divide-y-2 divide-slate-600">
+								{#each techtrippin as sidebarItem, index}
+									<button
+										onclick={() => {
+											currentItem = index;
+										}}><li class="py-3 text-start">{sidebarItem.title}</li></button
+									>
+								{/each}
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div id="content" class="col-span-2">
+					{#key currentItem}
+						<div
+							data-id="Item-{currentItem}"
+							class="rounded-2xl bg-base-300"
+							transition:slide={{ duration: 700, easing: quintOut }}
+						>
+							<h2 class="rounded-t-2xl bg-gray-950 py-5 text-center">
+								{techtrippin[currentItem].title}
+							</h2>
+							<div class="p-2 xl:p-6">
 								<div class="chat chat-start">
 									<div class="avatar chat-image">
 										<div class="w-10 rounded-full lg:w-[200px]">
-											<img alt="Person" src={techtrippinItem.icon} />
+											<img alt="Person" src={techtrippin[currentItem].icon} />
 										</div>
 									</div>
 									<div class="chat-header ms-5 self-end pb-1 font-medium lg:text-xl">
-										{techtrippinItem.name}
+										{techtrippin[currentItem].name}
 									</div>
 									<div
 										class="chat-bubble bg-gradient-to-r from-red-950 to-rose-950 p-2 text-xl lg:p-6"
 									>
-										{techtrippinItem.prompt2}
+										{techtrippin[currentItem].prompt}
 									</div>
 								</div>
-
 								<div class="chat chat-end">
 									<div class="avatar chat-image">
 										<div class="w-10 rounded-full lg:w-[200px]">
@@ -153,18 +107,57 @@
 										</div>
 									</div>
 
-									<div class="chat-header me-5 self-end pb-1 font-medium lg:text-xl">Me</div>
+									<div class="chat-header me-5 self-end pb-1 font-medium lg:text-xl">
+										Chad Staffer
+									</div>
 									<div
 										class="chat-bubble self-start bg-gradient-to-r from-slate-900 via-base-300 to-slate-900 p-2 text-xl lg:p-6"
 									>
-										{techtrippinItem.response2}
+										{techtrippin[currentItem].response}
 									</div>
 								</div>
-							{/if}
+								{#if techtrippin[currentItem].prompt2 && techtrippin[currentItem].response2}
+									<div class="chat chat-start">
+										<div class="avatar chat-image">
+											<div class="w-10 rounded-full lg:w-[200px]">
+												<img alt="Person" src={techtrippin[currentItem].icon} />
+											</div>
+										</div>
+										<div class="chat-header ms-5 self-end pb-1 font-medium lg:text-xl">
+											{techtrippin[currentItem].name}
+										</div>
+										<div
+											class="chat-bubble bg-gradient-to-r from-red-950 to-rose-950 p-2 text-xl lg:p-6"
+										>
+											{techtrippin[currentItem].prompt2}
+										</div>
+									</div>
+
+									<div class="chat chat-end">
+										<div class="avatar chat-image">
+											<div class="w-10 rounded-full lg:w-[200px]">
+												<enhanced:img
+													alt="Soy Dev"
+													src={twentyFiveDev}
+													sizes="(min-width:1920px) 200px, (min-width:1080px) 150px, (min-width:768px) 70px"
+												/>
+											</div>
+										</div>
+
+										<div class="chat-header me-5 self-end pb-1 font-medium lg:text-xl">Me</div>
+										<div
+											class="chat-bubble self-start bg-gradient-to-r from-slate-900 via-base-300 to-slate-900 p-2 text-xl lg:p-6"
+										>
+											{techtrippin[currentItem].response2}
+										</div>
+									</div>
+								{/if}
+							</div>
 						</div>
-					</div>
-				{/each}
+					{/key}
+				</div>
 			</div>
+			<!-- end new -->
 		</div>
 	</div>
 </div>
