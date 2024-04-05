@@ -118,7 +118,6 @@
 			</figure>
 			<div class="card-body grid content-start space-y-2">
 				<h2
-					src={pandaLabGoggles}
 					class="mb-4 inline-block border-b border-b-base-content bg-gradient-to-r from-emerald-200 via-orange-200 to-pink-200 bg-clip-text py-3 pb-3 text-transparent"
 				>
 					Step 3: Better Manage Products & Teams
@@ -170,9 +169,3 @@
 		</div>
 	</div>
 </div>
-
-<style>
-	.min50h {
-		min-height: 20vh;
-	}
-</style>

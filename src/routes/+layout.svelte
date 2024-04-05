@@ -202,19 +202,7 @@
 		.navbar {
 			view-transition-name: navbar;
 		}
-		/*
-		li[aria-current='page']::before {
-			--size: 8px;
-			content: '';
-			width: 0;
-			height: 0;
-			position: absolute;
-			top: -8px;
-			left: calc(50% - var(--size));
-			border: var(--size) solid #9fe88d;
-			border-top: var(--size) solid var(--color-theme-1);
-			view-transition-name: active-page;
-		}*/
+
 		li[aria-current='page'] {
 			color: #9fe88d;
 		}

@@ -9,9 +9,6 @@
 	import HowThisWorks from '$lib/HowThisWorks.svelte';
 	import pandaAnnoyed from '$lib/assets/panda-annoyed.webp?enhanced&w=600;500;300';
 
-	let { data } = $props();
-	console.log(data);
-
 	onMount(() => {
 		let tl = gsap.matchMedia();
 		const headlineVar = document.getElementsByClassName('headline');
