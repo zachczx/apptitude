@@ -34,7 +34,7 @@
 				y: '-15vh'
 			});
 			gsap.from('.tagline-intro', {
-				autoAlpha: 0
+				autoAlpha: 1
 			});
 			gsap.from('.tagline-green', {
 				autoAlpha: 0
@@ -102,7 +102,7 @@
 				y: '10vh',
 				x: '-30vw',
 				scale: 2,
-				autoAlpha: 0.8
+				autoAlpha: 1
 			});
 			gsap.to('.tagline-green2', {
 				scrollTrigger: {
@@ -223,7 +223,7 @@
 		/>
 	</div>
 	<div class="tagline-intro popped text-4xl font-bold lg:text-5xl">
-		<span class="text-slate-100">Launch your learning in...</span>
+		<span class="text-yellow-300">Launch your learning in...</span>
 	</div>
 
 	<div class="tagline-green2 popped text-4xl font-bold lg:text-6xl">
