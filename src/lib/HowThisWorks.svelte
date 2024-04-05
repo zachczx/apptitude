@@ -1,10 +1,10 @@
 <script>
 	import pandaScientist from '$lib/assets/panda-scientist.webp';
-	import pandaSuperhero from '$lib/assets/panda-superhero.webp?enhanced&w=600';
+	import pandaSuperhero from '$lib/assets/panda-superhero.webp?enhanced&w=400';
 	import pandaBirds from '$lib/assets/panda-birds.webp?enhanced&w=400';
-	import pandaNo from '$lib/assets/panda-no.webp?enhanced';
+	import pandaNo from '$lib/assets/panda-no.webp?enhanced&w=400';
 	import pandaReading from '$lib/assets/panda-reading.webp?enhanced';
-	import pandaLabGoggles from '$lib/assets/panda-lab-goggles.webp?enhanced&w=400';
+	import pandaLabGoggles from '$lib/assets/panda-lab-goggles.webp?enhanced&w=200';
 	import swoleDoge from '$lib/assets/swole-doge.webp?enhanced&w=200';
 </script>
 
@@ -15,7 +15,9 @@
 		How Apptitude Helps You
 	</h1>
 	<div class="grid gap-x-4 gap-y-4 lg:grid-cols-7">
-		<div class="card col-span-3 bg-base-100 lg:col-span-1 lg:row-span-1">
+		<div
+			class="card col-span-3 border border-gray-700 bg-base-100 shadow-md shadow-gray-950 lg:col-span-1 lg:row-span-1"
+		>
 			<div class="card-body grid h-48 content-center">
 				<h2
 					class="inline-block bg-gradient-to-r from-emerald-200 via-orange-200 to-pink-200 bg-clip-text py-3 text-transparent"
@@ -25,7 +27,9 @@
 			</div>
 		</div>
 
-		<div class="card col-span-3 row-span-1 bg-base-100 lg:col-span-2">
+		<div
+			class="card col-span-3 row-span-1 border border-gray-700 bg-base-100 shadow-md shadow-gray-950 lg:col-span-4"
+		>
 			<div class="card-body grid h-48 grid-cols-3 content-center items-center">
 				<div class="col-span-2">
 					<h3 class="font-medium">Go on a learning journey to upskill and git gud!</h3>
@@ -35,16 +39,14 @@
 				</div>
 			</div>
 		</div>
-		<div class="card col-span-2 row-span-1 bg-base-100">
-			<div class="card-body grid h-48 content-center">
-				<h3 class="font-medium">Here are the steps I want to sell you.</h3>
-			</div>
-		</div>
+
 		<div
 			class="card bg-base-100 p-5 lg:col-span-2 lg:row-span-2"
 			style="background-image:url({pandaScientist}); background-size: cover; background-position:top center;"
 		></div>
-		<div class="card col-span-2 row-span-1 bg-gradient-to-t from-lime-950 from-60% to-lime-800">
+		<div
+			class="card col-span-2 row-span-1 border border-gray-700 bg-base-100 shadow-md shadow-gray-950"
+		>
 			<div class="card-body grid content-start space-y-2">
 				<h2
 					class="mb-4 inline-block border-b border-b-base-content bg-gradient-to-r from-emerald-200 via-orange-200 to-pink-200 bg-clip-text py-3 pb-3 text-transparent"
@@ -69,10 +71,10 @@
 				sizes="(min-width:1000px) 500px, 300px"
 			/>
 		</div>
-		<div class="card col-span-3 row-span-1 bg-base-300 lg:col-span-2">
-			<div
-				class="card-body relative grid content-start space-y-2 overflow-hidden rounded-2xl bg-gradient-to-t from-lime-950 from-60% to-lime-800"
-			>
+		<div
+			class="card col-span-3 row-span-1 border border-gray-700 bg-base-100 shadow-md shadow-gray-950 lg:col-span-2"
+		>
+			<div class="card-body relative grid content-start space-y-2 overflow-hidden rounded-2xl">
 				<h2
 					class="mb-4 inline-block border-b border-b-base-content bg-gradient-to-r from-emerald-200 via-orange-200 to-pink-200 bg-clip-text py-3 pb-3 text-transparent"
 				>
@@ -87,7 +89,7 @@
 			</div>
 		</div>
 		<div
-			class="card col-span-3 row-span-1 w-full bg-gradient-to-t from-lime-950 from-60% to-lime-800"
+			class="card col-span-3 row-span-1 w-full border border-gray-700 bg-base-100 shadow-md shadow-gray-950"
 		>
 			<div class="card-body grid content-start space-y-2">
 				<h2
@@ -97,22 +99,23 @@
 				</h2>
 				<p>You won't be able to learn everything by yourself in a short time. Or maybe never.</p>
 				<p>
-					Get a boost by referring to my "Cache Up!" cheatsheets comprising key questions that
-					needed to be but weren't answered while watching awful products & projects imploded.
+					Get a boost by referring to my "Cache Up!" cheatsheets, which give you the essentials I've
+					curated from looking at mine and other people's projects.
 				</p>
+				<p>The good and the bad.</p>
 			</div>
 		</div>
-		<div class="col-span-3 row-span-1 lg:col-span-1">
-			<enhanced:img
-				src={pandaSuperhero}
-				alt="Panda Superhero"
-				class="h-full rounded-2xl object-cover"
-				sizes="(min-width:1000px) 500px, 300px"
-			/>
-		</div>
 		<div
-			class="card col-span-3 row-span-1 w-full bg-gradient-to-t from-lime-950 from-60% to-lime-800"
+			class="card card-side col-span-3 row-span-1 w-full border border-gray-700 bg-base-100 shadow-md shadow-gray-950 lg:col-span-4"
 		>
+			<figure>
+				<enhanced:img
+					src={pandaSuperhero}
+					alt="Panda Superhero"
+					class="h-full rounded-2xl object-cover"
+					sizes="(min-width:1000px) 500px, 300px"
+				/>
+			</figure>
 			<div class="card-body grid content-start space-y-2">
 				<h2
 					src={pandaLabGoggles}
@@ -126,12 +129,12 @@
 				<p>Never again will you need to say "I don't know and can only trust you on this".</p>
 			</div>
 		</div>
-		<div class="col-span-3 row-span-1 lg:col-span-1">
-			<enhanced:img src={pandaNo} alt="No!" class="h-full rounded-xl object-cover" />
-		</div>
 		<div
-			class="card col-span-3 row-span-1 w-full bg-gradient-to-t from-lime-950 from-60% to-lime-800"
+			class="card card-side col-span-3 row-span-1 w-full border border-gray-700 bg-base-100 shadow-md shadow-gray-950 lg:col-span-4"
 		>
+			<figure>
+				<enhanced:img src={pandaNo} alt="No!" class="h-full rounded-xl object-cover" />
+			</figure>
 			<div class="card-body grid content-start space-y-2">
 				<h2
 					class="mb-4 inline-block border-b border-b-base-content bg-gradient-to-r from-emerald-200 via-orange-200 to-pink-200 bg-clip-text py-3 pb-3 text-transparent"
@@ -147,7 +150,7 @@
 		</div>
 
 		<div
-			class="card col-span-3 row-span-1 w-full bg-gradient-to-t from-lime-950 from-60% to-lime-800 lg:col-span-2"
+			class="card col-span-3 row-span-1 w-full border border-gray-700 bg-base-100 shadow-md shadow-gray-950 lg:col-span-2"
 		>
 			<div class="card-body grid content-center justify-center space-y-2">
 				<h2
