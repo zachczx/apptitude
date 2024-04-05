@@ -18,7 +18,7 @@
 	{#each info as item}
 		{#if item.name}
 			<div
-				class="card w-full bg-base-300 from-40% to-70% shadow-xl hover:bg-gradient-to-r hover:from-gray-700 hover:to-slate-700"
+				class="card w-full border border-gray-700 bg-base-300 from-40% to-70% shadow-lg shadow-gray-950 hover:bg-gradient-to-r hover:from-gray-700 hover:to-slate-700"
 			>
 				<div class="card-body grid grid-cols-1 place-content-start">
 					<h2

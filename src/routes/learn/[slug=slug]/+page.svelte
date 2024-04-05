@@ -82,7 +82,7 @@
 		<h3 class="mb-5">Topics</h3>
 		<p class="mb-7">
 			{#each data.post.topics as topic}
-				<a
+				<button
 					class="hover:border-1 group btn btn-outline btn-xs me-2 mt-1 hover:border hover:border-neutral hover:bg-teal-400 hover:text-white"
 					onclick={(e) => {
 						updateItem(topic);
@@ -96,7 +96,7 @@
 						class="-me-2.5 inline fill-base-content pb-0.5 group-hover:fill-white"
 						height="2em"
 						width="2em"
-					/></a
+					/></button
 				>
 			{/each}
 			{#if goTodo}

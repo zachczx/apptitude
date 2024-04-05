@@ -3,6 +3,7 @@
 	import twentyFiveDev from '$lib/assets/25yodev.webp?enhanced&w=200;150;70';
 	import Breadcrumbs from '$lib/Breadcrumbs.svelte';
 	import TablerHelpCircleFilled from '$lib/assets/svg/TablerHelpCircleFilled.svelte';
+	import { fly } from 'svelte/transition';
 
 	let showMore = $state(false);
 	let currentItem = $state(0);
@@ -26,10 +27,10 @@
 			<div class="collapse collapse-arrow mb-10 bg-base-300">
 				<input type="checkbox" name="my-accordion-2" bind:checked={showMore} />
 				<div class="collapse-title">
-					<h2><TablerHelpCircleFilled class="me-3 inline" />What's this?</h2>
+					<h2><TablerHelpCircleFilled class="mb-1 me-3 inline" />What's this?</h2>
 				</div>
-				<div class="collapse-content bg-base-200">
-					<p class="mb-7 mt-5">
+				<div class="collapse-content bg-base-300">
+					<p class="mb-7 border-t-2 border-t-gray-700 pt-5">
 						This is a collection of illogical or unproductive comments I encountered during work.
 						I'm not trying to shame anyone here, but I hope writing these gives you some affirmation
 						to speak out against similar comments in your own work, and do robust debates/challenges
@@ -44,20 +45,20 @@
 			>
 				<div id="navigation">
 					<div id="dropdown" class="w-full lg:hidden">
+						<label class="ms-1 font-medium">Select an item:</label>
 						<select
 							bind:value={currentItem}
 							class="select select-bordered w-full bg-base-300 text-lg"
 						>
-							<option disabled selected>Select an item</option>
 							{#each techtrippin as sidebarItem, index}
 								<option value={index}>{sidebarItem.title}</option>
 							{/each}
 						</select>
 					</div>
-					<div id="sidebar" class="col-span-1 hidden lg:contents">
-						<div class="rounded-xl bg-base-300 p-5">
-							<h2 class="text-center">Menu</h2>
-							<ol class="divide-y-2 divide-slate-600">
+					<div id="sidebar" class="z-20 col-span-1 hidden lg:contents">
+						<div class="rounded-xl bg-base-300">
+							<h2 class="rounded-t-xl bg-gray-950 p-5 text-center">Menu</h2>
+							<ol class="divide-y-2 divide-slate-600 px-5">
 								{#each techtrippin as sidebarItem, index}
 									<button
 										onclick={() => {
@@ -75,7 +76,12 @@
 				</div>
 				<div id="content" class="col-span-2">
 					{#key currentItem}
-						<div data-id="Item-{currentItem}" class="rounded-2xl bg-base-300">
+						<div
+							data-id="Item-{currentItem}"
+							class=" z-10 rounded-2xl bg-base-300"
+							in:fly={{ duration: 300, x: -40 }}
+							out:fly={{ duration: 0 }}
+						>
 							<h2 class="rounded-t-2xl bg-gray-950 py-5 text-center">
 								{techtrippin[currentItem].title}
 							</h2>

@@ -63,7 +63,7 @@
 				</p>
 			</div>
 		</div>
-		<div class="col-span-1 row-span-1">
+		<div class="col-span-3 row-span-1 lg:col-span-1">
 			<enhanced:img
 				src={pandaReading}
 				alt="Panda reading"
@@ -81,11 +81,17 @@
 					Step 1b: Apply Knowledge
 				</h2>
 				<p>Do personal projects, try stuff beyond tutorial copy-pasting or Coursera Labs.</p>
-				<enhanced:img
-					src={pandaLabGoggles}
-					alt="Take notes!"
-					class="absolute right-0 transition duration-500 ease-in-out hover:-translate-y-8 motion-reduce:transition-none"
-				/>
+				<div class="group hidden motion-reduce:transition-none lg:contents">
+					<enhanced:img
+						src={pandaLabGoggles}
+						alt="Take notes!"
+						class="absolute right-0 blur-xl brightness-0 transition duration-500 ease-in-out group-hover:-translate-y-3"
+					/><enhanced:img
+						src={pandaLabGoggles}
+						alt="Take notes!"
+						class="absolute right-0 transition duration-500 ease-in-out group-hover:-translate-y-4 group-hover:scale-[1.1]"
+					/>
+				</div>
 			</div>
 		</div>
 		<div
