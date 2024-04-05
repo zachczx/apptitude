@@ -35,7 +35,7 @@
 	<title>{pageName}</title>
 </svelte:head>
 
-<div class="navbar {data.url === '/' ? 'absolute z-20' : ''}">
+<div class="navbar-view-transition navbar {data.url === '/' ? 'absolute z-20' : ''}">
 	<div class="max-h-18 navbar-start">
 		<div class="dropdown">
 			<div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -90,8 +90,8 @@
 			/></a
 		>
 	</div>
-	<div class="navbar-center hidden lg:flex">
-		<ul class="menu menu-horizontal gap-x-[2rem] pe-5 ps-1 text-2xl font-medium">
+	<div class="navbar hidden justify-start lg:flex">
+		<ul class="menu menu-horizontal gap-x-5 pe-5 ps-1 text-2xl font-medium">
 			<!-- removed menu class -->
 			<li aria-current={matchUrl(data.url, '/learn') === 0 ? 'page' : undefined}>
 				<a class="hover:bg-base-100 hover:text-primary" href="/learn">Learn</a>
@@ -110,7 +110,6 @@
 			</li>
 		</ul>
 	</div>
-	<div class="navbar-end"></div>
 </div>
 
 {#if !viewTransition}
@@ -200,8 +199,8 @@
 				300ms cubic-bezier(0.4, 0, 0.2, 1) both slide-from-right;
 		}
 
-		.navbar {
-			view-transition-name: navbar;
+		.navbar-view-transition {
+			view-transition-name: navbar-view-transition;
 		}
 
 		li[aria-current='page'] {

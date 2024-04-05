@@ -45,15 +45,17 @@
 			>
 				<div id="navigation">
 					<div id="dropdown" class="w-full lg:hidden">
-						<label class="ms-1 font-medium">Select an item:</label>
-						<select
-							bind:value={currentItem}
-							class="select select-bordered w-full bg-base-300 text-lg"
-						>
-							{#each techtrippin as sidebarItem, index}
-								<option value={index}>{sidebarItem.title}</option>
-							{/each}
-						</select>
+						<label class="ms-1 font-medium"
+							>Select an item:
+							<select
+								bind:value={currentItem}
+								class="select select-bordered w-full bg-base-300 text-lg"
+							>
+								{#each techtrippin as sidebarItem, index}
+									<option value={index}>{sidebarItem.title}</option>
+								{/each}
+							</select>
+						</label>
 					</div>
 					<div id="sidebar" class="z-20 col-span-1 hidden lg:contents">
 						<div class="rounded-xl bg-base-300">
@@ -65,7 +67,7 @@
 											currentItem = index;
 										}}
 										class="w-full"
-										><li class="ms-5 list-decimal py-3 ps-5 text-start">
+										><li class="ms-5 list-decimal py-3 ps-5 text-start hover:text-primary">
 											{sidebarItem.title}
 										</li></button
 									>
@@ -162,7 +164,6 @@
 					{/key}
 				</div>
 			</div>
-			<!-- end new -->
 		</div>
 	</div>
 </div>
