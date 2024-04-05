@@ -43,14 +43,7 @@ export const info = [
 			'Explore cloud computing, cloud storage, virtualization and cloud infrastructure management tools'
 		],
 		resources: {
-			youtube: [
-				'https://youtube.com/embed/zN8YNNHcaZc?si=Tj2S7qrsec51DKrJ',
-				'https://youtube.com/embed/zOjov-2OZ0E?si=pQnCP85QMk1MNHIh',
-				'https://www.youtube.com/embed/6hPMdpk9qA4?si=3eIaOho9EkNWTPjM',
-				'https://youtube.com/embed/Uq5w1lnKzlk?si=e3CDZfWZr56kjZb9',
-				'https://youtube.com/embed/LTH9m4HkeYY?si=-SCEzZABqeWnriup'
-			],
-			links: [
+			courses: [
 				{
 					text: "CS50's Understanding Technology | Harvard University",
 					url: 'https://pll.harvard.edu/course/cs50s-understanding-technology-0'
@@ -58,14 +51,6 @@ export const info = [
 				{
 					text: 'How Computers Work (UOL) | Coursera',
 					url: 'https://www.coursera.org/learn/how-computers-work'
-				},
-				{
-					text: 'How the Web Works: A Primer for Newcomers to Web Development (or anyone, really)',
-					url: 'https://www.freecodecamp.org/news/how-the-web-works-a-primer-for-newcomers-to-web-development-or-anyone-really-b4584e63585c/'
-				},
-				{
-					text: 'What is SSL (Secure Sockets Layer)? | Cloudflare',
-					url: 'https://www.cloudflare.com/en-gb/learning/ssl/what-is-ssl/'
 				},
 				{
 					text: 'Computational Thinking for Problem Solving Course (UPenn) | Coursera',
@@ -86,10 +71,36 @@ export const info = [
 				{
 					text: 'Google IT Support Professional Certificate | Coursera',
 					url: 'https://www.coursera.org/professional-certificates/google-it-support'
+				}
+			],
+			youtube: [
+				'https://youtube.com/embed/mCq8-xTH7jA',
+				'https://youtube.com/embed/rRSD128KWIM',
+				'https://youtube.com/embed/-uleG_Vecis',
+				'https://youtube.com/embed/erEgovG9WBs',
+				'https://youtube.com/embed/vqs_0W-MSB0',
+				'https://youtube.com/embed/lkIFF4maKMU',
+				'https://youtube.com/embed/zN8YNNHcaZc?si=Tj2S7qrsec51DKrJ',
+				'https://youtube.com/embed/zOjov-2OZ0E?si=pQnCP85QMk1MNHIh',
+				'https://www.youtube.com/embed/6hPMdpk9qA4?si=3eIaOho9EkNWTPjM',
+				'https://youtube.com/embed/3C_22eBWpjg'
+			],
+			links: [
+				{
+					text: 'How the Web Works: A Primer for Newcomers to Web Development (or anyone, really)',
+					url: 'https://www.freecodecamp.org/news/how-the-web-works-a-primer-for-newcomers-to-web-development-or-anyone-really-b4584e63585c/'
+				},
+				{
+					text: 'What is SSL (Secure Sockets Layer)? | Cloudflare',
+					url: 'https://www.cloudflare.com/en-gb/learning/ssl/what-is-ssl/'
 				},
 				{
 					text: "The hardest part of building software is not coding, it's requirements",
 					url: 'https://stackoverflow.blog/2023/12/29/the-hardest-part-of-building-software-is-not-coding-its-requirements/'
+				},
+				{
+					text: 'Introducing How Computers Work',
+					url: 'https://www.youtube.com/watch?v=OAx_6-wdslM&list=PLzdnOPI1iJNcsRwJhvksEo1tJqjIqWbN-'
 				}
 			]
 		}
@@ -125,12 +136,62 @@ export const info = [
 			"Notice when processes just don't make sense, e.g. designers iterate on design concepts with business owners over powerpoint/pdf, when everyone could just hop onto Figma"
 		],
 		resources: {
+			courses: [
+				{
+					text: 'Microsoft 365 Fundamentals Specialization | Coursera',
+					url: 'https://www.coursera.org/specializations/microsoft-365-fundamentals'
+				},
+				{
+					text: 'From Excel to Power BI | Coursera',
+					url: 'https://www.coursera.org/learn/from-excel-to-power-bi'
+				},
+				{
+					text: 'AWS Fundamentals Specialization | Coursera',
+					url: 'https://www.coursera.org/specializations/aws-fundamentals'
+				},
+				{
+					text: 'Agile with Atlassian Jira | Coursera',
+					url: 'https://www.coursera.org/learn/agile-atlassian-jira'
+				},
+				{
+					text: 'AWS Cloud Practitioner Essentials | Coursera',
+					url: 'https://www.coursera.org/learn/aws-cloud-practitioner-essentials'
+				},
+				{
+					text: 'Google Cloud Platform Fundamentals: Core Infrastructure | Coursera',
+					url: 'https://www.coursera.org/learn/gcp-fundamentals'
+				},
+				{
+					text: 'Introduction to Microsoft Azure Cloud Services | Coursera',
+					url: 'https://www.coursera.org/learn/microsoft-azure-cloud-services'
+				},
+				{
+					text: 'Microsoft Azure Fundamentals AZ-900 Exam Prep Specialization | Coursera',
+					url: 'https://www.coursera.org/specializations/microsoft-azure-fundamentals-az-900'
+				}
+			],
 			youtube: [
+				'https://youtube.com/embed/Uq5w1lnKzlk?si=e3CDZfWZr56kjZb9',
+				'https://youtube.com/embed/LTH9m4HkeYY?si=-SCEzZABqeWnriup',
+				'https://www.youtube.com/embed/JIbIYCM48to',
 				'https://www.youtube.com/embed/Uq5w1lnKzlk?si=TDvoQNQel3EjCY3_',
 				'https://www.youtube.com/embed/II-6dDzc-80?si=S_tQl9gngez_DKj3',
-				'https://www.youtube.com/embed/ohtDFXNAUns?si=Fjc4NOyi1-Zdx5p4'
+				'https://www.youtube.com/embed/ohtDFXNAUns?si=Fjc4NOyi1-Zdx5p4',
+				'https://www.youtube.com/embed/1pW_sk-2y40',
+				'https://www.youtube.com/embed/dYtdv--qd_U',
+				'https://www.youtube.com/embed/5p3QzaS33GA',
+				'https://www.youtube.com/embed/uHF8s4mEOig'
 			],
-			links: []
+			links: [
+				{
+					text: 'Agile Tutorials - Atlassian Agile Coach',
+					url: 'https://www.atlassian.com/agile/tutorials'
+				},
+				{
+					text: 'Photoshop for Complete Beginners | Lesson 1 - Youtube',
+					url: 'https://www.youtube.com/watch?v=xTzvQkOll2U&list=PLLlSBGLVsEPIFGSGw2zJ2K43V5vxMMMTE'
+				}
+			]
 		}
 	},
 	{
@@ -222,6 +283,12 @@ export const info = [
 			'No one is incentivized to terminate their projects/products even if poorly performing, because it means they lose MMF, lose funding, lose appraisal work achievements.'
 		],
 		resources: {
+			courses: [
+				{
+					text: 'Google UX Design Professional Certificate | Coursera',
+					url: 'https://www.coursera.org/professional-certificates/google-ux-design'
+				}
+			],
 			youtube: [
 				'https://www.youtube.com/embed/0LNQxT9LvM0?si=KHzWpcisYehJbdHF',
 				'https://www.youtube.com/embed/C27RVio2rOs?si=rKY_2K-n0lC6vk54',
@@ -233,10 +300,6 @@ export const info = [
 				{
 					text: 'Y Combinator - YouTube',
 					url: 'https://www.youtube.com/c/ycombinator'
-				},
-				{
-					text: 'Google UX Design Professional Certificate | Coursera',
-					url: 'https://www.coursera.org/professional-certificates/google-ux-design'
 				},
 				{
 					text: '99% Invisible',
@@ -295,6 +358,16 @@ export const info = [
 			'Feel confident rejecting "daily standups" from ScrumMaster-wannabes'
 		],
 		resources: {
+			courses: [
+				{
+					text: 'Professional Scrum Master™ Training | Scrum.org',
+					url: 'https://www.scrum.org/courses/professional-scrum-master-training'
+				},
+				{
+					text: 'Scrum Master Certifications | Scrum Alliance',
+					url: 'https://www.scrumalliance.org/get-certified/scrum-master-track'
+				}
+			],
 			youtube: [
 				'https://youtube.com/embed/1evfn3qTYGM',
 				'https://youtube.com/embed/5Ty-WC4gLto',
@@ -314,12 +387,12 @@ export const info = [
 					url: 'https://agilemanifesto.org/principles.html'
 				},
 				{
-					text: 'Scrum Training Series - YouTube',
-					url: 'https://youtube.com/playlist?list=PLD2BMPY5WcfAYTEYXW0NGxodOi1PLC1XN&si=b_ym-Jy4_UOeS1Iv'
+					text: "Stevey's Google Platforms Rant",
+					url: 'https://gist.github.com/chitchcock/1281611'
 				},
 				{
-					text: 'Google Project Management: Professional Certificate | Coursera',
-					url: 'https://www.coursera.org/professional-certificates/google-project-management'
+					text: 'Scrum Training Series - YouTube',
+					url: 'https://youtube.com/playlist?list=PLD2BMPY5WcfAYTEYXW0NGxodOi1PLC1XN&si=b_ym-Jy4_UOeS1Iv'
 				},
 				{
 					text: 'Agile Project Management with Scrum and Kanban - YouTube',
@@ -332,6 +405,10 @@ export const info = [
 				{
 					text: "The hardest part of building software is not coding, it's requirements",
 					url: 'https://stackoverflow.blog/2023/12/29/the-hardest-part-of-building-software-is-not-coding-its-requirements/'
+				},
+				{
+					text: "Diane Hirsh Theriault's LinkedIn Post",
+					url: 'https://www.linkedin.com/posts/dhtheriault_my-hot-take-google-does-not-have-one-single-activity-7153269568893775872-9xzp/'
 				}
 			]
 		}
@@ -369,11 +446,7 @@ export const info = [
 			'Learn about modern cloud-based stacks that let you build a scalable data pipeline'
 		],
 		resources: {
-			youtube: [
-				'https://youtube.com/embed/yZvFH7B6gKI?si=knmkZUMf5A21sLXs',
-				'https://youtube.com/embed/-bSkREem8dM?si=i6lRT55iMs30lOLS'
-			],
-			links: [
+			courses: [
 				{
 					text: 'Foundations: Data, Data, Everywhere Course (Google) | Coursera',
 					url: 'https://www.coursera.org/learn/foundations-data'
@@ -386,6 +459,24 @@ export const info = [
 					text: 'IBM Data Science Professional Certificate | Coursera',
 					url: 'https://www.coursera.org/professional-certificates/ibm-data-science'
 				},
+				{
+					text: 'CS109 Data Science | Harvard',
+					url: 'https://cs109.github.io/2015/pages/videos.html'
+				},
+				{
+					text: 'Python for Data Science and Machine Learning Bootcamp | Udemy',
+					url: 'https://www.udemy.com/course/python-for-data-science-and-machine-learning-bootcamp/?couponCode=LETSLEARNNOW'
+				},
+				{
+					text: 'Meta Database Engineer Professional Certificate | Coursera',
+					url: 'https://www.coursera.org/professional-certificates/meta-database-engineer'
+				}
+			],
+			youtube: [
+				'https://youtube.com/embed/yZvFH7B6gKI?si=knmkZUMf5A21sLXs',
+				'https://youtube.com/embed/-bSkREem8dM?si=i6lRT55iMs30lOLS'
+			],
+			links: [
 				{
 					text: 'Intro to Data Visualization with R & ggplot2 | Google Data Analytics Certificate',
 					url: 'https://www.youtube.com/watch?v=ZPw0dmGuyyE&list=PLTZYG7bZ1u6rcPlcX75pMkjsYY_HTL7aZ'
@@ -440,6 +531,20 @@ export const info = [
 			'Know which LLMs are good, how good, for what'
 		],
 		resources: {
+			courses: [
+				{
+					text: 'Introduction to Generative AI',
+					url: 'https://www.cloudskillsboost.google/course_templates/536'
+				},
+				{
+					text: 'AI For Everyone Course (DeepLearning.AI) | Coursera',
+					url: 'https://www.coursera.org/learn/ai-for-everyone'
+				},
+				{
+					text: 'Deep Learning Specialization - DeepLearning.AI',
+					url: 'https://www.deeplearning.ai/courses/deep-learning-specialization/'
+				}
+			],
 			youtube: [
 				'https://youtube.com/embed/zjkBMFhNj_g',
 				'https://youtube.com/embed/5sLYAQS9sWQ',
@@ -451,7 +556,8 @@ export const info = [
 				'https://youtube.com/embed/5t1vTLU7s40?si=uEflOaOw_p1eyRoZ',
 				'https://youtube.com/embed/T-D1OfcDW1M?si=WZJLcElfcEh4-51c',
 				'https://youtube.com/embed/LsNHsfZFjlA',
-				'https://youtube.com/embed/oZPTBXnaSBI'
+				'https://youtube.com/embed/oZPTBXnaSBI',
+				'https://youtube.com/embed/lXLBTBBil2U'
 			],
 			links: [
 				{
@@ -537,12 +643,7 @@ export const info = [
 			'Scrutinize billable man effort, fees, proposed work by vendors'
 		],
 		resources: {
-			youtube: [
-				'https://youtube.com/embed/pEfrdAtAmqk?si=XbNLZmktdg7oQCis',
-				'https://youtube.com/embed/-uleG_Vecis?si=R0MCXM6csXiGXyjD',
-				'https://youtube.com/embed/aXOChLn5ZdQ?si=-KXtJPY2mI3pRlIv'
-			],
-			links: [
+			courses: [
 				{
 					text: 'CS50: Introduction to Computer Science | Harvard University',
 					url: 'https://pll.harvard.edu/course/cs50-introduction-computer-science'
@@ -556,10 +657,6 @@ export const info = [
 					url: 'https://online.stanford.edu/courses/soe-ycscs101-computer-science-101'
 				},
 				{
-					text: 'How Long Does It Take to Become a Back End Developer?',
-					url: 'https://medium.com/bootdotdev/how-long-does-it-take-to-become-a-back-end-developer-226a4f1cece2'
-				},
-				{
 					text: 'Meta Back-End Developer Professional Certificate | Coursera',
 					url: 'https://www.coursera.org/professional-certificates/meta-back-end-developer'
 				},
@@ -570,7 +667,23 @@ export const info = [
 				{
 					text: 'Introduction to Computer Science and Programming in Python | Electrical Engineering and Computer Science | MIT OpenCourseWare',
 					url: 'https://ocw.mit.edu/courses/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/'
+				}
+			],
+			youtube: [
+				'https://youtube.com/embed/pEfrdAtAmqk?si=XbNLZmktdg7oQCis',
+				'https://youtube.com/embed/-uleG_Vecis?si=R0MCXM6csXiGXyjD',
+				'https://youtube.com/embed/erEgovG9WBs',
+				'https://youtube.com/embed/lkIFF4maKMU',
+				'https://youtube.com/embed/aXOChLn5ZdQ?si=-KXtJPY2mI3pRlIv',
+				'https://youtube.com/embed/E8cM12jRH7k',
+				'https://youtube.com/embed/ijQvgERWKjA'
+			],
+			links: [
+				{
+					text: 'How Long Does It Take to Become a Back End Developer?',
+					url: 'https://medium.com/bootdotdev/how-long-does-it-take-to-become-a-back-end-developer-226a4f1cece2'
 				},
+
 				{
 					text: 'W3Schools Online Web Tutorials',
 					url: 'https://www.w3schools.com/'

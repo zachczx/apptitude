@@ -155,18 +155,32 @@
 		</div>
 	</div>
 	<div
+		class="rounded-lg border border-slate-700 bg-base-200 p-5 shadow-md shadow-gray-900 hover:bg-base-100 lg:col-span-2"
+	>
+		<h3 class="mb-5">Courses to Learn From</h3>
+		{#if data.post.resources.courses == '' || !data.post.resources.courses}
+			Sorry, nothing here
+		{:else}
+			<ul class="list-disc ps-4">
+				{#each data.post.resources.courses as course}
+					<li><a href={course.url} class="hover:text-primary">{course.text}</a></li>
+				{/each}
+			</ul>
+		{/if}
+	</div>
+	<div
 		class="col-span-1 rounded-lg border border-slate-700 bg-base-200 p-5 shadow-md shadow-gray-900 hover:bg-base-100 lg:col-span-2"
 	>
-		<h3 class="mb-5">Read up more</h3>
+		<h3 class="mb-5">Read Up More Yourself</h3>
 
 		{#if data.post.resources.links == ''}
 			Sorry, nothing here
 		{:else}
-			{#each data.post.resources.links as link}
-				<ul class="list-disc ps-4">
+			<ul class="list-disc ps-4">
+				{#each data.post.resources.links as link}
 					<li><a href={link.url} class="hover:text-primary">{link.text}</a></li>
-				</ul>
-			{/each}
+				{/each}
+			</ul>
 		{/if}
 	</div>
 	<div
