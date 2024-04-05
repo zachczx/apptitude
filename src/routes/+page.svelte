@@ -147,11 +147,8 @@
 	</div>
 </div>
 <HowThisWorks />
-<div class="hidden lg:contents">
-	<RocketAnimation />
-</div>
 
-<div class="grid min-h-[200px] gap-x-5 bg-black bg-gray-900 lg:grid-cols-2">
+<div class="grid min-h-[200px] gap-x-5 bg-gray-800 lg:grid-cols-2">
 	<div class="avatar my-5 justify-self-end px-10">
 		<div class="mask mask-squircle">
 			<enhanced:img
@@ -193,6 +190,9 @@
 		</div>
 	</div>
 </div>
+<div class="hidden lg:contents">
+	<RocketAnimation />
+</div>
 
 <style>
 	/*	@media (max-width: 1280px) {
@@ -230,8 +230,7 @@
 	@media (max-width: 1280px) {
 		.overlay::before,
 		.overlay-reverse::before,
-		.hero-img,
-		.ending-img {
+		.hero-img {
 			max-height: 0px;
 		}
 	}
@@ -263,16 +262,6 @@
 		.hero-img {
 			object-fit: cover;
 			object-position: 70% center;
-			width: 100%;
-			height: 100%;
-			position: absolute;
-			top: 0;
-			left: 0;
-		}
-
-		.ending-img {
-			object-fit: cover;
-			object-position: 20% center;
 			width: 100%;
 			height: 100%;
 			position: absolute;

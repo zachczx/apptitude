@@ -246,7 +246,7 @@
 		>
 	</div>
 </div>
-<div class="h-[20rem] bg-black"></div>
+<div class="h-[40rem] bg-black"></div>
 
 <style>
 	.animation-div {

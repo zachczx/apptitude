@@ -124,12 +124,13 @@
 <footer class="footer footer-center gap-y-2 rounded bg-base-200 p-3 pt-5 text-base-content">
 	<aside>
 		<p class="mb-2 text-base">
-			Copyright © 2024 Zixian Chen. All rights reserved. Views expressed here are solely my own.
+			Copyright © 2024 Zixian Chen. All rights reserved. All views expressed here are solely mine
+			(Zixian).
 		</p>
 	</aside>
 	<div class="grid grid-cols-1 md:grid-flow-col md:gap-4">
 		<div class="font-bold">My App Junkyard</div>
-		<div>
+		<div class="z-10">
 			<a href="https://titude.app/" class="hover:text-primary"
 				><TablerSquareRoundedPlusFilled class="mb-1 me-1 ms-2 inline fill-primary" />Apptitude</a
 			>
@@ -147,7 +148,7 @@
 	</div>
 	<div class="grid grid-cols-1 md:grid-flow-col md:gap-4">
 		<div class="font-bold">Socials</div>
-		<div>
+		<div class="z-10">
 			<a href="https://www.linkedin.com/in/zixianchen/" class="hover:text-primary"
 				><TablerSquareRoundedPlusFilled class="mb-1 me-1 ms-2 inline fill-primary" /> LinkedIn</a
 			>

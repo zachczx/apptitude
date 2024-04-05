@@ -27,7 +27,7 @@
 
 <Breadcrumbs urlMiddle="learn" textMiddle="Learn" textCurrent={data.post.name} />
 <div
-	class="mx-1 grid grid-cols-1 place-content-start gap-4 rounded-lg bg-base-300 px-2 py-5 shadow-xl lg:mx-20 lg:grid-cols-2 lg:px-5"
+	class="mx-1 grid grid-cols-1 place-content-start gap-4 rounded-lg border border-gray-800 bg-base-300 px-2 py-5 shadow-xl shadow-gray-950 lg:mx-20 lg:grid-cols-2 lg:px-5"
 >
 	<div class="next-prev grid grid-cols-2 text-center font-bold lg:col-span-2">
 		<div class="justify-self-start text-lg hover:text-primary lg:text-xl">
@@ -78,7 +78,9 @@
 		</h1>
 	</div>
 
-	<div class="rounded-lg border border-slate-700 bg-base-200 p-5 hover:bg-base-100 lg:col-span-2">
+	<div
+		class="rounded-lg border border-slate-700 bg-base-200 p-5 shadow-md shadow-gray-900 hover:bg-base-100 lg:col-span-2"
+	>
 		<h3 class="mb-5">Topics</h3>
 		<p class="mb-7">
 			{#each data.post.topics as topic}
@@ -114,7 +116,9 @@
 		</p>
 	</div>
 
-	<div class="rounded-lg border border-slate-700 bg-base-200 p-5 hover:bg-base-100">
+	<div
+		class="rounded-lg border border-slate-700 bg-base-200 p-5 shadow-md shadow-gray-900 hover:bg-base-100"
+	>
 		<h3 class="mb-5">Find answers to...</h3>
 		<ul class="mb-7 list-disc ps-4">
 			{#each data.post.questions as question}
@@ -122,7 +126,9 @@
 			{/each}
 		</ul>
 	</div>
-	<div class="rounded-lg border border-slate-700 bg-base-200 p-5 hover:bg-base-100">
+	<div
+		class="rounded-lg border border-slate-700 bg-base-200 p-5 shadow-md shadow-gray-900 hover:bg-base-100"
+	>
 		<h3 class="mb-5">Objectives</h3>
 		<ul class="list-disc ps-4">
 			{#each data.post.objectives as objective}
@@ -131,7 +137,7 @@
 		</ul>
 	</div>
 	<div
-		class="col-span-1 rounded-lg border border-slate-700 bg-base-200 p-5 hover:bg-base-100 lg:col-span-2"
+		class="col-span-1 rounded-lg border border-slate-700 bg-base-200 p-5 shadow-md shadow-gray-900 hover:bg-base-100 lg:col-span-2"
 	>
 		<h3 class="mb-5">Musings</h3>
 		<div class="grid grid-cols-1 gap-x-3 gap-y-3 lg:grid-cols-4">
@@ -149,7 +155,7 @@
 		</div>
 	</div>
 	<div
-		class="col-span-1 rounded-lg border border-slate-700 bg-base-200 p-5 hover:bg-base-100 lg:col-span-2"
+		class="col-span-1 rounded-lg border border-slate-700 bg-base-200 p-5 shadow-md shadow-gray-900 hover:bg-base-100 lg:col-span-2"
 	>
 		<h3 class="mb-5">Read up more</h3>
 
@@ -163,7 +169,9 @@
 			{/each}
 		{/if}
 	</div>
-	<div class="rounded-lg border border-slate-700 bg-base-200 p-5 hover:bg-base-100 lg:col-span-2">
+	<div
+		class="rounded-lg border border-slate-700 bg-base-200 p-5 shadow-md shadow-gray-900 hover:bg-base-100 lg:col-span-2"
+	>
 		<h3 class="mb-5">
 			Watch on Youtube
 
