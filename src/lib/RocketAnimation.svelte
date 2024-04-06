@@ -179,6 +179,7 @@
 			src={pixarEarth}
 			class="planet"
 			alt="Planet"
+			fetchpriority="low"
 			sizes="(min-width:1400px) 1200px, (max-width:1399px) 600px, (max-width:768px) 400px"
 		/>
 	</div>
@@ -187,6 +188,7 @@
 			src={cloud1}
 			class="cloud"
 			alt="Cloud"
+			fetchpriority="low"
 			sizes="(min-width:1400px) 700px, (max-width:1399px) 500px, (max-width:768px) 200px"
 		/>
 	</div>
@@ -195,6 +197,7 @@
 			src={cloud2}
 			class="cloud"
 			alt="Cloud"
+			fetchpriority="low"
 			sizes="(min-width:1400px) 700px, (max-width:1399px) 500px, (max-width:768px) 200px"
 		/>
 	</div>
@@ -203,6 +206,7 @@
 			src={cloud3}
 			class="cloud"
 			alt="Cloud"
+			fetchpriority="low"
 			sizes="(min-width:1400px) 700px, (max-width:1399px) 500px, (max-width:768px) 200px"
 		/>
 	</div>
@@ -211,6 +215,7 @@
 			src={rocketb}
 			class="rocketb"
 			alt="Rocket"
+			fetchpriority="low"
 			sizes="(min-width:1400px) 1200px, (max-width:1399px) 800px, (max-width:768px) 400px"
 		/>
 	</div>
@@ -219,6 +224,7 @@
 			src={rocketc}
 			class="rocketc"
 			alt="Rocket"
+			fetchpriority="low"
 			sizes="(min-width:1400px) 1500px, (max-width:1399px) 800px, (max-width:768px) 400px"
 		/>
 	</div>

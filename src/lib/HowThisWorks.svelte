@@ -1,9 +1,9 @@
 <script>
-	import pandaScientist from '$lib/assets/panda-scientist.webp';
+	import pandaScientist800 from '$lib/assets/panda-scientist-800.webp';
 	import pandaSuperhero from '$lib/assets/panda-superhero.webp?enhanced&w=400';
 	import pandaBirds from '$lib/assets/panda-birds.webp?enhanced&w=400';
 	import pandaNo from '$lib/assets/panda-no.webp?enhanced&w=400';
-	import pandaReading from '$lib/assets/panda-reading.webp?enhanced';
+	import pandaReading from '$lib/assets/panda-reading.webp?enhanced&w=400';
 	import pandaLabGoggles from '$lib/assets/panda-lab-goggles.webp?enhanced&w=200';
 	import swoleDoge from '$lib/assets/swole-doge.webp?enhanced&w=200';
 </script>
@@ -35,17 +35,17 @@
 					<h3 class="font-medium">Go on a learning journey to upskill and git gud!</h3>
 				</div>
 				<div>
-					<enhanced:img src={swoleDoge} alt="Swole Doge" class="" />
+					<enhanced:img src={swoleDoge} alt="Swole Doge" class="" fetchpriority="low" />
 				</div>
 			</div>
 		</div>
 
 		<div
 			class="card bg-base-100 p-5 lg:col-span-2 lg:row-span-2"
-			style="background-image:url({pandaScientist}); background-size: cover; background-position:top center;"
+			style="background-image:url({pandaScientist800}); background-size: cover; background-position:top center;"
 		></div>
 		<div
-			class="card col-span-2 row-span-1 border border-gray-700 bg-base-100 shadow-md shadow-gray-950"
+			class="card card-side col-span-3 row-span-1 border border-gray-700 bg-base-100 shadow-md shadow-gray-950"
 		>
 			<div class="card-body grid content-start space-y-2">
 				<h2
@@ -62,15 +62,17 @@
 					you flexibility and convenience.
 				</p>
 			</div>
+			<figure>
+				<enhanced:img
+					src={pandaReading}
+					alt="Panda reading"
+					class="h-full rounded-xl object-cover"
+					fetchpriority="low"
+					sizes="(min-width:1000px) 500px, 300px"
+				/>
+			</figure>
 		</div>
-		<div class="col-span-3 row-span-1 lg:col-span-1">
-			<enhanced:img
-				src={pandaReading}
-				alt="Panda reading"
-				class="h-full rounded-xl object-cover"
-				sizes="(min-width:1000px) 500px, 300px"
-			/>
-		</div>
+
 		<div
 			class="card col-span-3 row-span-1 border border-gray-700 bg-base-100 shadow-md shadow-gray-950 lg:col-span-2"
 		>
@@ -85,10 +87,12 @@
 					<enhanced:img
 						src={pandaLabGoggles}
 						alt="Take notes!"
+						fetchpriority="low"
 						class="absolute right-0 blur-xl brightness-0 transition duration-500 ease-in-out group-hover:-translate-y-3"
 					/><enhanced:img
 						src={pandaLabGoggles}
 						alt="Take notes!"
+						fetchpriority="low"
 						class="absolute right-0 transition duration-500 ease-in-out group-hover:-translate-y-4 group-hover:scale-[1.1]"
 					/>
 				</div>
@@ -119,6 +123,7 @@
 					src={pandaSuperhero}
 					alt="Panda Superhero"
 					class="h-full rounded-2xl object-cover"
+					fetchpriority="low"
 					sizes="(min-width:1000px) 500px, 300px"
 				/>
 			</figure>
@@ -138,7 +143,12 @@
 			class="card card-side col-span-3 row-span-1 w-full border border-gray-700 bg-base-100 shadow-md shadow-gray-950 lg:col-span-4"
 		>
 			<figure>
-				<enhanced:img src={pandaNo} alt="No!" class="h-full rounded-xl object-cover" />
+				<enhanced:img
+					src={pandaNo}
+					fetchpriority="low"
+					alt="No!"
+					class="h-full rounded-xl object-cover"
+				/>
 			</figure>
 			<div class="card-body grid content-start space-y-2">
 				<h2
@@ -170,6 +180,7 @@
 				src={pandaBirds}
 				alt="Feels good"
 				class="rounded-xl"
+				fetchpriority="low"
 				sizes="(min-width:1000px) 500px, 300px"
 			/>
 		</div>

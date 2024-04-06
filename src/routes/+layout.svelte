@@ -86,6 +86,7 @@
 				src={logo}
 				sizes="(min-width:1920px) 300px, (min-width:1600px) 300px, (min-width:1280px) 200px"
 				alt="Apptitude"
+				fetchpriority="high"
 				class="object-scale-down lg:ms-16"
 			/></a
 		>

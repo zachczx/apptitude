@@ -154,6 +154,7 @@
 			<enhanced:img
 				src={pandaAnnoyed}
 				alt="Annoyed panda"
+				fetchpriority="low"
 				sizes="(min-width:1000px) 600px, (min-width:768px) 500px, 300px"
 			/>
 		</div>
