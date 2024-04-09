@@ -322,6 +322,10 @@ export const info = [
 					url: 'https://www.mindtheproduct.com/transforming-product-culture-lea-hickman/'
 				},
 				{
+					text: 'The ultimate guide to proper use of animation in UX',
+					url: 'https://uxdesign.cc/the-ultimate-guide-to-proper-use-of-animation-in-ux-10bd98614fa9'
+				},
+				{
 					text: 'The Anatomy of a Perfect Landing Page That Converts',
 					url: 'https://www.uxmatters.com/mt/archives/2023/07/the-anatomy-of-a-perfect-landing-page-that-converts.php'
 				}
