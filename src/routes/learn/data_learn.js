@@ -310,6 +310,10 @@ export const info = [
 					url: 'https://www.youtube.com/@allin'
 				},
 				{
+					text: 'Articles - Discover everything you need to know about building for the modern web | Web.dev',
+					url: 'https://web.dev/articles'
+				},
+				{
 					text: 'UXPodcast',
 					url: 'https://uxpodcast.com/'
 				},
