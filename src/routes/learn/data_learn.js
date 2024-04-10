@@ -719,6 +719,10 @@ export const info = [
 				{
 					text: "Ask HN: Startup Devs -What's your biggest pain while managing cloud deployments?",
 					url: 'https://news.ycombinator.com/item?id=39836124'
+				},
+				{
+					text: 'Forkful Open Source Coding Cookbook',
+					url: 'https://forkful.ai/en/'
 				}
 			]
 		}
