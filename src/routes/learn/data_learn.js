@@ -459,20 +459,28 @@ export const info = [
 			'ETL',
 		],
 		questions: [
+			'What is data science, data analytics, data exploitation?',
+			'What is a database, data warehouse, data lake?',
+			'How is data produced, where is it produced, how is it ingested?',
+			'What is end-to-end data observability and monitoring?',
+			'What is Extract, Transform, Load (ETL)? What is traditional vs modern ETL?',
+			'What is Extract, Load, Transform (ELT)? How does it differ from ETL?',
 			'How mature is the organization in the collection, manipulation, exploitation of data?',
-			'What are our business needs for data',
+			'Where are the data silos in our organization and how did they come to be?',
+			'What are our business needs for data (e.g. latency, scale, security)?',
 			'What does the data tell us about our current business performance?',
 			'How can we improve our customer experience based on the data?',
-			'What is ETL?',
 			'How can we design and implement a scalable data pipeline to ingest and process large volumes of structured and unstructured data from multiple sources?',
 			'What is a typical design of a cloud-native stack to derive business intelligence?',
 		],
-		issues: [],
+		issues: ['Stop creating a new data lake to succeed previous data lakes and warehouses!'],
 		objectives: [
 			'Know where we truly are amid (self created) hype on data science, transformation, AI',
-			"Know what's possible and whats not",
+			"Know what's possible to ingest, ETL, exploit data, vs whats not in the organization",
 			'Understand the link between business needs, data collection, analysis, storytelling, arriving at actionable insights',
 			'Learn about modern cloud-based stacks that let you build a scalable data pipeline',
+			'Get exposed to efficiency, cost optimization, ROI for designing and implementing data architectures',
+			'Understand the needs and implementation of data governance and data security',
 		],
 		resources: {
 			courses: [
@@ -506,6 +514,18 @@ export const info = [
 				'https://youtube.com/embed/-bSkREem8dM?si=i6lRT55iMs30lOLS',
 			],
 			links: [
+				{
+					text: 'What is ETL (Extract Transform Load)?',
+					url: 'https://aws.amazon.com/what-is/etl/',
+				},
+				{
+					text: 'What Is A Kafka Data Pipeline? Architecture & Examples 2024',
+					url: 'https://estuary.dev/kafka-data-pipeline/',
+				},
+				{
+					text: "Monitoring vs Observability vs Telemetry: What's The Difference?",
+					url: 'https://www.splunk.com/en_us/blog/learn/observability-vs-monitoring-vs-telemetry.html',
+				},
 				{
 					text: 'Intro to Data Visualization with R & ggplot2 | Google Data Analytics Certificate',
 					url: 'https://www.youtube.com/watch?v=ZPw0dmGuyyE&list=PLTZYG7bZ1u6rcPlcX75pMkjsYY_HTL7aZ',
@@ -597,10 +617,10 @@ export const info = [
 				'https://youtube.com/embed/PeMlggyqz0Y?si=X1ZeR-qr01d_BnP-',
 				'https://youtube.com/embed/5t1vTLU7s40?si=uEflOaOw_p1eyRoZ',
 				'https://youtube.com/embed/T-D1OfcDW1M?si=WZJLcElfcEh4-51c',
+				'https://youtube.com/embed/lXLBTBBil2U',
 				'https://youtube.com/embed/Z0jqIk7MUfE',
 				'https://youtube.com/embed/LsNHsfZFjlA',
 				'https://youtube.com/embed/oZPTBXnaSBI',
-				'https://youtube.com/embed/lXLBTBBil2U',
 			],
 			links: [
 				{
@@ -618,6 +638,10 @@ export const info = [
 				{
 					text: 'AI Explained - Youtube',
 					url: 'https://www.youtube.com/@aiexplained-official',
+				},
+				{
+					text: 'LLM Embeddings — Explained Simply',
+					url: 'https://pub.aimind.so/llm-embeddings-explained-simply-f7536d3d0e4b',
 				},
 				{
 					text: 'LLM Visualization',
@@ -639,10 +663,13 @@ export const info = [
 					text: 'National AI Strategy | Smart Nation Singapore',
 					url: 'https://www.smartnation.gov.sg/nais/',
 				},
-
 				{
 					text: 'A pro-innovation approach to AI regulation: government response | Gov.uk',
 					url: 'https://www.gov.uk/government/consultations/ai-regulation-a-pro-innovation-approach-policy-proposals/outcome/a-pro-innovation-approach-to-ai-regulation-government-response',
+				},
+				{
+					text: 'Agents in Artificial Intelligence',
+					url: 'https://www.geeksforgeeks.org/agents-artificial-intelligence/',
 				},
 			],
 		},
