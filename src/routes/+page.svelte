@@ -21,7 +21,7 @@
 					'--myBlur': '20px',
 					duration: 0.5,
 					delay: delay,
-					ease: 'sine.out'
+					ease: 'sine.out',
 				});
 			}
 
@@ -29,12 +29,12 @@
 				autoAlpha: 0.4,
 				y: -20,
 				duration: 0.5,
-				ease: 'sine.out'
+				ease: 'sine.out',
 			});
 			gsap.to('.button-shine', {
 				'--moveRight': '30rem',
 				duration: 2,
-				delay: 2
+				delay: 2,
 			});
 		});
 	});
@@ -42,8 +42,7 @@
 </script>
 
 <div
-	class="hero grid min-h-dvh grid-cols-1 content-center justify-items-center pb-12 xl:grid-cols-2"
->
+	class="hero grid min-h-dvh grid-cols-1 content-center justify-items-center pb-12 xl:grid-cols-2">
 	<figure>
 		{#if currentBgNumber % 2 == 0}
 			<enhanced:img
@@ -51,37 +50,32 @@
 				alt="Hero"
 				class="hero-img -z-10"
 				fetchpriority="high"
-				loading="eager"
-			/>
+				loading="eager" />
 			<enhanced:img
 				src={heroNew}
 				alt="Hero"
 				class="hero-img"
 				fetchpriority="high"
 				loading="eager"
-				sizes="(min-width:2560px) 2060px, (min-width:1920px) 1536px, (min-width:1600px) 1280px, (min-width:1280px) 1024px"
-			/>
+				sizes="(min-width:2560px) 2060px, (min-width:1920px) 1536px, (min-width:1600px) 1280px, (min-width:1280px) 1024px" />
 		{:else}
 			<enhanced:img
 				src={heroNew2Background}
 				alt="Hero"
 				class="hero-img -z-10"
 				fetchpriority="high"
-				loading="eager"
-			/>
+				loading="eager" />
 			<enhanced:img
 				src={heroNew2}
 				alt="Hero"
 				class="hero-img"
 				fetchpriority="high"
 				loading="eager"
-				sizes="(min-width:2560px) 2060px, (min-width:1920px) 1536px, (min-width:1600px) 1280px, (min-width:1280px) 1024px"
-			/>
+				sizes="(min-width:2560px) 2060px, (min-width:1920px) 1536px, (min-width:1600px) 1280px, (min-width:1280px) 1024px" />
 		{/if}
 	</figure>
 	<div
-		class="mx-3 self-center justify-self-center rounded-full px-3 pt-4 lg:z-10 lg:mx-8 xl:px-[3rem]"
-	>
+		class="mx-3 self-center justify-self-center rounded-full px-3 pt-4 lg:z-10 lg:mx-8 xl:px-[3rem]">
 		<div class="avatar mb-8 mt-20 flex justify-center px-4 text-center xl:mt-0 xl:hidden">
 			<div class="mask mask-squircle">
 				{#if currentBgNumber % 2 == 0}
@@ -89,15 +83,13 @@
 						src={heroNew}
 						alt="Hero"
 						class="relative object-right"
-						sizes="(min-width:1000px) 600px, (min-width:768px) 500px, 300px"
-					/>
+						sizes="(min-width:1000px) 600px, (min-width:768px) 500px, 300px" />
 				{:else}
 					<enhanced:img
 						src={heroNew2}
 						alt="Hero"
 						class="relative object-right"
-						sizes="(min-width:1000px) 600px, (min-width:768px) 500px, 300px"
-					/>
+						sizes="(min-width:1000px) 600px, (min-width:768px) 500px, 300px" />
 				{/if}
 			</div>
 		</div>
@@ -131,15 +123,12 @@
 					viewBox="0 0 24 24"
 					><path
 						class="fill-white stroke-white"
-						d="m13.692 17.308l-.707-.72l4.088-4.088H5v-1h12.073l-4.088-4.088l.707-.72L19 12z"
-					/></svg
-				></a
-			>
+						d="m13.692 17.308l-.707-.72l4.088-4.088H5v-1h12.073l-4.088-4.088l.707-.72L19 12z" /></svg
+				></a>
 			<a
 				href="/cacheup"
 				class="btn join-item border border-primary bg-base-100 from-red-500 via-orange-500 to-pink-500 font-medium text-primary hover:border hover:border-primary hover:bg-gradient-to-r hover:from-teal-500 hover:to-lime-500 hover:text-white active:from-red-700 active:via-orange-700 active:to-pink-700 lg:text-2xl"
-				>Quickstart Guides</a
-			>
+				>Quickstart Guides</a>
 		</div>
 		<p class="mt-3 text-center lg:text-xl">
 			<i><a href="/about" class="hover:text-primary">What's Apptitude?</a></i>
@@ -155,8 +144,7 @@
 				src={pandaAnnoyed}
 				alt="Annoyed panda"
 				fetchpriority="low"
-				sizes="(min-width:1000px) 600px, (min-width:768px) 500px, 300px"
-			/>
+				sizes="(min-width:1000px) 600px, (min-width:768px) 500px, 300px" />
 		</div>
 	</div>
 	<div class="grid grid-rows-2 justify-self-start">
@@ -172,22 +160,18 @@
 					viewBox="0 0 24 24"
 					><path
 						class="fill-white stroke-white"
-						d="m13.692 17.308l-.707-.72l4.088-4.088H5v-1h12.073l-4.088-4.088l.707-.72L19 12z"
-					/></svg
-				></a
-			>
+						d="m13.692 17.308l-.707-.72l4.088-4.088H5v-1h12.073l-4.088-4.088l.707-.72L19 12z" /></svg
+				></a>
 			<a
 				class="hide-small group relative rounded-lg px-6 py-3 text-3xl font-bold text-white lg:text-5xl"
-				href="/learn"
-			>
+				href="/learn">
 				<span
 					class="ease absolute inset-0 h-full w-full -translate-x-2 -translate-y-4 transform rounded bg-lime-600 transition duration-300 group-hover:translate-x-0 group-hover:translate-y-0 lg:-translate-x-4 lg:-translate-y-3"
 				></span>
 				<span
 					class="ease absolute inset-0 h-full w-full translate-x-2 translate-y-2 transform rounded bg-teal-800 mix-blend-screen transition duration-300 group-hover:translate-x-0 group-hover:translate-y-0 lg:translate-x-4 lg:translate-y-3"
 				></span>
-				<span class="relative p-5 font-medium">Start Learning Now! </span></a
-			>
+				<span class="relative p-5 font-medium">Start Learning Now! </span></a>
 		</div>
 	</div>
 </div>
