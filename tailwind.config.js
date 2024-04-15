@@ -5,12 +5,12 @@ export default {
 		extend: {
 			transitionDuration: {
 				2000: '2000ms',
-				3000: '3000ms'
+				3000: '3000ms',
 			},
 			screens: {
-				jumbo: '1921px'
-			}
-		}
+				jumbo: '1921px',
+			},
+		},
 	},
 	plugins: [require('daisyui')],
 	daisyui: {
@@ -19,9 +19,9 @@ export default {
 				dim: {
 					...require('daisyui/src/theming/themes')['dim'],
 					'base-content': '#e0eaee',
-					'neutral-content': '#e0eaee'
-				}
-			}
-		]
-	}
+					'neutral-content': '#e0eaee',
+				},
+			},
+		],
+	},
 };

@@ -5,8 +5,7 @@
 <div class="grid justify-items-center gap-y-5">
 	<div class="mb-5 text-center lg:mb-7">
 		<h1
-			class="inline-block bg-gradient-to-r from-emerald-200 via-orange-200 to-pink-200 bg-clip-text py-3 text-transparent"
-		>
+			class="inline-block bg-gradient-to-r from-emerald-200 via-orange-200 to-pink-200 bg-clip-text py-3 text-transparent">
 			Work in progress
 		</h1>
 		<div>

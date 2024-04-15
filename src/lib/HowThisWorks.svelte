@@ -10,7 +10,7 @@
 
 <div class="bg-gray-900 px-3 lg:px-10 lg:py-20">
 	<h1
-		class="pb-12 pt-10 text-center text-5xl text-lime-400 lg:pt-5 lg:text-6xl xl:text-7xl min-[1921px]:text-8xl">
+		class="pb-20 pt-10 text-center text-5xl text-lime-400 lg:pt-5 lg:text-6xl xl:text-7xl min-[1921px]:text-8xl">
 		How Apptitude Helps You
 	</h1>
 	<div class="grid gap-x-4 gap-y-4 lg:grid-cols-7">

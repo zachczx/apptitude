@@ -22,36 +22,29 @@
 						stroke-linecap="round"
 						stroke-linejoin="round"
 						stroke-width="2"
-						d="M4 6h16M4 12h8m-8 6h16"
-					/></svg
-				>
+						d="M4 6h16M4 12h8m-8 6h16" /></svg>
 			</div>
 			<nav class="opacity-1 menu dropdown-content z-50 w-48 rounded-lg bg-slate-900 p-0 text-xl">
 				<a
 					class="border-b border-slate-600 p-3 hover:rounded-t-lg hover:bg-slate-600 active:font-bold active:text-primary"
 					href="/learn"
-					><TablerChevronRight class="inline align-middle" height="1rem" width="1rem" /> Learn</a
-				>
+					><TablerChevronRight class="inline align-middle" height="1rem" width="1rem" /> Learn</a>
 				<a
 					class="border-b border-slate-600 p-3 hover:bg-slate-600 active:font-bold active:text-primary"
 					href="/cacheup"
-					><TablerChevronRight class="inline align-middle" height="1rem" width="1rem" /> Cache Up!</a
-				>
+					><TablerChevronRight class="inline align-middle" height="1rem" width="1rem" /> Cache Up!</a>
 				<a
 					class="border-b border-slate-600 p-3 hover:bg-slate-600 active:font-bold active:text-primary"
 					href="/techtrippin"
-					><TablerChevronRight class="inline align-middle" height="1rem" width="1rem" /> Tech Trippin'</a
-				>
+					><TablerChevronRight class="inline align-middle" height="1rem" width="1rem" /> Tech Trippin'</a>
 				<a
 					class="border-b border-slate-600 p-3 hover:bg-slate-600 active:font-bold active:text-primary"
 					href="/todo"
-					><TablerChevronRight class="inline align-middle" height="1rem" width="1rem" /> To-Do List</a
-				>
+					><TablerChevronRight class="inline align-middle" height="1rem" width="1rem" /> To-Do List</a>
 				<a
 					class="p-3 hover:rounded-b-lg hover:bg-slate-600 active:font-bold active:text-primary"
 					href="/about"
-					><TablerChevronRight class="inline align-middle" height="1rem" width="1rem" /> About</a
-				>
+					><TablerChevronRight class="inline align-middle" height="1rem" width="1rem" /> About</a>
 			</nav>
 		</div>
 		<a href="/"
@@ -59,9 +52,7 @@
 				src={logo}
 				sizes="(min-width:1920px) 300px, (min-width:1600px) 300px, (min-width:1280px) 200px"
 				alt="Apptitude"
-				class="object-scale-down lg:ms-16"
-			/></a
-		>
+				class="object-scale-down lg:ms-16" /></a>
 	</div>
 	<div class="navbar-center hidden lg:flex">
 		<ul class="menu menu-horizontal gap-x-[2rem] pe-5 ps-1 text-2xl font-medium">

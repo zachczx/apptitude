@@ -22,7 +22,7 @@
 		ScrollTrigger.batch('.footprint', {
 			start: 'top center',
 			onEnter: (elements) => gsap.to(elements, { autoAlpha: 1, stagger: 0.2 }),
-			onLeaveBack: (elements) => gsap.set(elements, { autoAlpha: 0 })
+			onLeaveBack: (elements) => gsap.set(elements, { autoAlpha: 0 }),
 		});
 
 		ScrollTrigger.batch('.headline', {
@@ -35,7 +35,7 @@
 			onEnterBack: (elements) =>
 				gsap.to(elements, { color: '#9FE88D', borderColor: '#9FE88D', duration: 0 }),
 			onLeaveBack: (elements) =>
-				gsap.set(elements, { color: '#B2CCD6', borderColor: '#B2CCD6', duration: 0 })
+				gsap.set(elements, { color: '#B2CCD6', borderColor: '#B2CCD6', duration: 0 }),
 		});
 	});
 </script>
@@ -43,8 +43,7 @@
 <Breadcrumbs textCurrent={'About Apptitude'} />
 
 <div
-	class="mb-7 grid grid-cols-1 justify-items-center gap-x-8 gap-y-8 px-5 lg:grid-cols-12 lg:px-20"
->
+	class="mb-7 grid grid-cols-1 justify-items-center gap-x-8 gap-y-8 px-5 lg:grid-cols-12 lg:px-20">
 	<div class="box space-y-5 self-center lg:col-span-8">
 		<h2 class="headline border-b-2 border-base-content pb-2 lg:text-5xl">
 			<span class="headline bg-base-100">What's Apptitude?</span>
@@ -80,15 +79,13 @@
 					src={oops3}
 					alt="Red pandas, because they're cute"
 					class="lg:transition lg:duration-3000 lg:hover:scale-125"
-					sizes="(min-width:1920px) 800px, (min-width:1200px) 600px, 400px"
-				/>
+					sizes="(min-width:1920px) 800px, (min-width:1200px) 600px, 400px" />
 			</div>
 		</figure>
 	</div>
 </div>
 <div
-	class="mb-7 grid grid-cols-1 justify-items-center gap-x-8 gap-y-0 px-5 lg:grid-cols-12 lg:px-20"
->
+	class="mb-7 grid grid-cols-1 justify-items-center gap-x-8 gap-y-0 px-5 lg:grid-cols-12 lg:px-20">
 	<div class="pic-2 lg:col-span-4">
 		<figure class="lg:avatar">
 			<div class="lg:mask lg:mask-squircle">
@@ -96,8 +93,7 @@
 					src={pandabutterfly}
 					alt="Red pandas, because they're cute"
 					class="transition duration-3000 hover:scale-125"
-					sizes="(min-width:1920px) 800px, (min-width:1200px) 600px, 400px"
-				/>
+					sizes="(min-width:1920px) 800px, (min-width:1200px) 600px, 400px" />
 			</div>
 		</figure>
 	</div>
@@ -174,15 +170,13 @@
 					src={unoptimised1}
 					alt="Red pandas, because they're cute"
 					class="transition duration-3000 hover:scale-125"
-					sizes="(min-width:1920px) 800px, (min-width:1200px) 600px, 400px"
-				/>
+					sizes="(min-width:1920px) 800px, (min-width:1200px) 600px, 400px" />
 			</div>
 		</figure>
 	</div>
 </div>
 <div
-	class="mb-7 grid grid-cols-1 justify-items-center gap-x-8 gap-y-8 px-5 lg:grid-cols-12 lg:px-20"
->
+	class="mb-7 grid grid-cols-1 justify-items-center gap-x-8 gap-y-8 px-5 lg:grid-cols-12 lg:px-20">
 	<div class="pic-4 lg:col-span-4">
 		<figure class="lg:avatar">
 			<div class="lg:mask lg:mask-squircle">
@@ -190,8 +184,7 @@
 					src={unoptimised6}
 					alt="Red pandas, because they're cute"
 					class="transition duration-3000 hover:scale-125"
-					sizes="(min-width:1920px) 800px, (min-width:1200px) 600px,400px"
-				/>
+					sizes="(min-width:1920px) 800px, (min-width:1200px) 600px,400px" />
 			</div>
 		</figure>
 	</div>
@@ -259,8 +252,7 @@
 					src={pandayawn}
 					alt="Red pandas, because they're cute"
 					class="transition duration-3000 hover:scale-125"
-					sizes="(min-width:1920px) 800px, (min-width:1200px) 600px,400px"
-				/>
+					sizes="(min-width:1920px) 800px, (min-width:1200px) 600px,400px" />
 			</div>
 		</figure>
 	</div>
@@ -273,8 +265,7 @@
 					src={unoptimised5}
 					alt="Red pandas, because they're cute"
 					class="transition duration-3000 hover:scale-125"
-					sizes="(min-width:1920px) 800px, (min-width:1200px) 600px,400px"
-				/>
+					sizes="(min-width:1920px) 800px, (min-width:1200px) 600px,400px" />
 			</div>
 		</figure>
 	</div>
@@ -341,15 +332,13 @@
 					src={unoptimised4}
 					alt="Red pandas, because they're cute"
 					class="transition duration-3000 hover:scale-125"
-					sizes="(min-width:1920px) 800px, (min-width:1200px) 600px,400px"
-				/>
+					sizes="(min-width:1920px) 800px, (min-width:1200px) 600px,400px" />
 			</div>
 		</figure>
 	</div>
 </div>
 <div
-	class="mb-7 grid grid-cols-1 justify-items-center gap-x-8 gap-y-8 px-5 lg:grid-cols-12 lg:px-20"
->
+	class="mb-7 grid grid-cols-1 justify-items-center gap-x-8 gap-y-8 px-5 lg:grid-cols-12 lg:px-20">
 	<div class="pic-8 lg:col-span-4">
 		<figure class="lg:avatar">
 			<div class="lg:mask lg:mask-squircle">
@@ -357,8 +346,7 @@
 					src={unoptimised3}
 					alt="Red pandas, because they're cute"
 					class="transition duration-3000 hover:scale-125"
-					sizes="(min-width:1920px) 800px, (min-width:1200px) 600px,400px"
-				/>
+					sizes="(min-width:1920px) 800px, (min-width:1200px) 600px,400px" />
 			</div>
 		</figure>
 	</div>
@@ -409,8 +397,7 @@
 					src={unoptimised2}
 					alt="Red pandas, because they're cute"
 					class="transition duration-3000 hover:scale-125"
-					sizes="(min-width:1920px) 800px, (min-width:1200px) 600px,400px"
-				/>
+					sizes="(min-width:1920px) 800px, (min-width:1200px) 600px,400px" />
 			</div>
 		</figure>
 	</div>

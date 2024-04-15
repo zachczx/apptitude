@@ -13,15 +13,13 @@
 <div class="mx-2 mb-10 grid-cols-1 rounded-lg py-5 lg:mx-20 lg:mb-20">
 	<div class="text-center">
 		<h1
-			class="inline-block bg-gradient-to-r from-emerald-200 via-orange-200 to-pink-200 bg-clip-text py-3 text-transparent"
-		>
+			class="inline-block bg-gradient-to-r from-emerald-200 via-orange-200 to-pink-200 bg-clip-text py-3 text-transparent">
 			Tech Trippin'
 		</h1>
 		<div class="mb-10">
 			<i
 				>Going through real world examples of tech jargon-gibberish and calling out what makes
-				absolutely no sense.</i
-			>
+				absolutely no sense.</i>
 		</div>
 		<div class="rounded-lg bg-base-100 p-1 text-start text-lg lg:p-0">
 			<div class="collapse collapse-arrow mb-10 bg-base-300">
@@ -29,7 +27,7 @@
 				<div class="collapse-title">
 					<h2><TablerHelpCircleFilled class="mb-1 me-3 inline" />What's this?</h2>
 				</div>
-				<div class="collapse-content bg-base-300">
+				<div class="collapse-content bg-base-300 px-5">
 					<p class="mb-7 border-t-2 border-t-gray-700 pt-5">
 						This is a collection of illogical or unproductive comments I encountered during work.
 						I'm not trying to shame anyone here, but I hope writing these gives you some affirmation
@@ -41,16 +39,14 @@
 			</div>
 
 			<div
-				class="grid grid-cols-1 justify-items-center gap-y-8 lg:mb-7 lg:grid-cols-3 lg:gap-x-5 lg:gap-y-10"
-			>
+				class="grid grid-cols-1 justify-items-center gap-y-8 lg:mb-7 lg:grid-cols-3 lg:gap-x-5 lg:gap-y-10">
 				<div id="navigation">
 					<div id="dropdown" class="w-full lg:hidden">
 						<label class="ms-1 font-medium"
 							>Select an item:
 							<select
 								bind:value={currentItem}
-								class="select select-bordered w-full bg-base-300 text-lg"
-							>
+								class="select select-bordered w-full bg-base-300 text-lg">
 								{#each techtrippin as sidebarItem, index}
 									<option value={index}>{sidebarItem.title}</option>
 								{/each}
@@ -69,8 +65,7 @@
 										class="w-full"
 										><li class="ms-5 list-decimal py-3 ps-5 text-start hover:text-primary">
 											{sidebarItem.title}
-										</li></button
-									>
+										</li></button>
 								{/each}
 							</ol>
 						</div>
@@ -82,8 +77,7 @@
 							data-id="Item-{currentItem}"
 							class=" z-10 rounded-2xl bg-base-300"
 							in:fly={{ duration: 300, x: -40 }}
-							out:fly={{ duration: 0 }}
-						>
+							out:fly={{ duration: 0 }}>
 							<h2 class="rounded-t-2xl bg-gray-950 py-5 text-center">
 								{techtrippin[currentItem].title}
 							</h2>
@@ -98,8 +92,7 @@
 										{techtrippin[currentItem].name}
 									</div>
 									<div
-										class="chat-bubble bg-gradient-to-r from-red-950 to-rose-950 p-2 text-xl lg:p-6"
-									>
+										class="chat-bubble bg-gradient-to-r from-red-950 to-rose-950 p-2 text-xl lg:p-6">
 										{techtrippin[currentItem].prompt}
 									</div>
 								</div>
@@ -109,8 +102,7 @@
 											<enhanced:img
 												alt="Soy Dev"
 												src={twentyFiveDev}
-												sizes="(min-width:1920px) 200px, (min-width:1080px) 150px, (min-width:768px) 70px"
-											/>
+												sizes="(min-width:1920px) 200px, (min-width:1080px) 150px, (min-width:768px) 70px" />
 										</div>
 									</div>
 
@@ -118,8 +110,7 @@
 										Chad Staffer
 									</div>
 									<div
-										class="chat-bubble self-start bg-gradient-to-r from-slate-900 via-base-300 to-slate-900 p-2 text-xl lg:p-6"
-									>
+										class="chat-bubble self-start bg-gradient-to-r from-slate-900 via-base-300 to-slate-900 p-2 text-xl lg:p-6">
 										{techtrippin[currentItem].response}
 									</div>
 								</div>
@@ -134,8 +125,7 @@
 											{techtrippin[currentItem].name}
 										</div>
 										<div
-											class="chat-bubble bg-gradient-to-r from-red-950 to-rose-950 p-2 text-xl lg:p-6"
-										>
+											class="chat-bubble bg-gradient-to-r from-red-950 to-rose-950 p-2 text-xl lg:p-6">
 											{techtrippin[currentItem].prompt2}
 										</div>
 									</div>
@@ -146,15 +136,13 @@
 												<enhanced:img
 													alt="Soy Dev"
 													src={twentyFiveDev}
-													sizes="(min-width:1920px) 200px, (min-width:1080px) 150px, (min-width:768px) 70px"
-												/>
+													sizes="(min-width:1920px) 200px, (min-width:1080px) 150px, (min-width:768px) 70px" />
 											</div>
 										</div>
 
 										<div class="chat-header me-5 self-end pb-1 font-medium lg:text-xl">Me</div>
 										<div
-											class="chat-bubble self-start bg-gradient-to-r from-slate-900 via-base-300 to-slate-900 p-2 text-xl lg:p-6"
-										>
+											class="chat-bubble self-start bg-gradient-to-r from-slate-900 via-base-300 to-slate-900 p-2 text-xl lg:p-6">
 											{techtrippin[currentItem].response2}
 										</div>
 									</div>

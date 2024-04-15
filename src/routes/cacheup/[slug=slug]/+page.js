@@ -22,7 +22,7 @@ export function load({ params }) {
 		//		}
 		//		const lastPost = cacheup.find((post) => post.id === lastPostId);
 		return {
-			post
+			post,
 			//			nextPost,
 			//			lastPost
 		};

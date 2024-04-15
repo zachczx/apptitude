@@ -23,7 +23,7 @@ export function load({ params }) {
 		return {
 			post,
 			nextPost,
-			lastPost
+			lastPost,
 		};
 	} catch (e) {
 		error(404, `Could not find ${params.slug}`);

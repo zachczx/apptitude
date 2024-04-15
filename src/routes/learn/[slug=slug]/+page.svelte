@@ -27,8 +27,7 @@
 
 <Breadcrumbs urlMiddle="learn" textMiddle="Learn" textCurrent={data.post.name} />
 <div
-	class="grid grid-cols-1 place-content-start gap-4 rounded-lg border border-gray-800 bg-base-300 px-2 py-5 shadow-xl shadow-gray-950 lg:mx-20 lg:grid-cols-2 lg:px-5"
->
+	class="grid grid-cols-1 place-content-start gap-4 rounded-lg border border-gray-800 bg-base-300 px-2 py-5 shadow-xl shadow-gray-950 lg:mx-20 lg:grid-cols-2 lg:px-5">
 	<div class="next-prev grid grid-cols-2 text-center font-bold lg:col-span-2">
 		<div class="justify-self-start text-lg hover:text-primary lg:text-xl">
 			<a href="/learn/{data.lastPost.slug}"
@@ -44,10 +43,7 @@
 					stroke-linecap="round"
 					stroke-linejoin="round"
 					><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M13 15l-3 -3l3 -3" /><path
-						d="M21 12a9 9 0 1 0 -18 0a9 9 0 0 0 18 0z"
-					/></svg
-				> Previous</a
-			>
+						d="M21 12a9 9 0 1 0 -18 0a9 9 0 0 0 18 0z" /></svg> Previous</a>
 		</div>
 		<div class="justify-self-end text-lg hover:text-primary lg:text-xl">
 			<a href="/learn/{data.nextPost.slug}"
@@ -63,24 +59,20 @@
 					stroke-linecap="round"
 					stroke-linejoin="round"
 					><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M11 9l3 3l-3 3" /><path
-						d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0z"
-					/></svg
-				></a
-			>
+						d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0z" /></svg
+				></a>
 		</div>
 	</div>
 	<div class="text-center lg:col-span-2">
 		<figure><img src="" alt="" /></figure>
 		<h1
-			class="mb-3 inline-block bg-gradient-to-r from-emerald-200 via-blue-300 to-teal-300 bg-clip-text text-transparent"
-		>
+			class="mb-3 inline-block bg-gradient-to-r from-emerald-200 via-blue-300 to-teal-300 bg-clip-text text-transparent">
 			Let's talk: {data.post.name}
 		</h1>
 	</div>
 
 	<div
-		class="rounded-lg border border-slate-700 bg-base-200 p-5 shadow-md shadow-gray-900 hover:bg-base-100 lg:col-span-2"
-	>
+		class="rounded-lg border border-slate-700 bg-base-200 p-5 shadow-md shadow-gray-900 hover:bg-base-100 lg:col-span-2">
 		<h3 class="mb-5">Topics</h3>
 		<p class="mb-7">
 			{#each data.post.topics as topic}
@@ -97,9 +89,7 @@
 					<TablerSquareRoundedPlusFilled
 						class="-me-2.5 inline fill-base-content pb-0.5 group-hover:fill-white"
 						height="2em"
-						width="2em"
-					/></button
-				>
+						width="2em" /></button>
 			{/each}
 			{#if goTodo}
 				<a
@@ -109,16 +99,13 @@
 					><TablerSquareRoundedChevronsRightFilled
 						class="mb-1 inline fill-primary"
 						width="1.5rem"
-						height="1.5rem"
-					/> Track these as To-Dos</a
-				>
+						height="1.5rem" /> Track these as To-Dos</a>
 			{/if}
 		</p>
 	</div>
 
 	<div
-		class="rounded-lg border border-slate-700 bg-base-200 p-5 shadow-md shadow-gray-900 hover:bg-base-100"
-	>
+		class="rounded-lg border border-slate-700 bg-base-200 p-5 shadow-md shadow-gray-900 hover:bg-base-100">
 		<h3 class="mb-5">Find answers to...</h3>
 		<ul class="mb-7 list-disc ps-4">
 			{#each data.post.questions as question}
@@ -127,8 +114,7 @@
 		</ul>
 	</div>
 	<div
-		class="rounded-lg border border-slate-700 bg-base-200 p-5 shadow-md shadow-gray-900 hover:bg-base-100"
-	>
+		class="rounded-lg border border-slate-700 bg-base-200 p-5 shadow-md shadow-gray-900 hover:bg-base-100">
 		<h3 class="mb-5">Objectives</h3>
 		<ul class="list-disc ps-4">
 			{#each data.post.objectives as objective}
@@ -137,8 +123,7 @@
 		</ul>
 	</div>
 	<div
-		class="col-span-1 rounded-lg border border-slate-700 bg-base-200 p-5 shadow-md shadow-gray-900 hover:bg-base-100 lg:col-span-2"
-	>
+		class="col-span-1 rounded-lg border border-slate-700 bg-base-200 p-5 shadow-md shadow-gray-900 hover:bg-base-100 lg:col-span-2">
 		<h3 class="mb-5">Musings</h3>
 		<div class="grid grid-cols-1 gap-x-3 gap-y-3 lg:grid-cols-4">
 			{#if data.post.issues == '' || !data.post.issues}
@@ -155,8 +140,7 @@
 		</div>
 	</div>
 	<div
-		class="rounded-lg border border-slate-700 bg-base-200 p-5 shadow-md shadow-gray-900 hover:bg-base-100 lg:col-span-2"
-	>
+		class="rounded-lg border border-slate-700 bg-base-200 p-5 shadow-md shadow-gray-900 hover:bg-base-100 lg:col-span-2">
 		<h3 class="mb-5">Courses to Learn From</h3>
 		{#if data.post.resources.courses == '' || !data.post.resources.courses}
 			Sorry, nothing here
@@ -169,8 +153,7 @@
 		{/if}
 	</div>
 	<div
-		class="col-span-1 rounded-lg border border-slate-700 bg-base-200 p-5 shadow-md shadow-gray-900 hover:bg-base-100 lg:col-span-2"
-	>
+		class="col-span-1 rounded-lg border border-slate-700 bg-base-200 p-5 shadow-md shadow-gray-900 hover:bg-base-100 lg:col-span-2">
 		<h3 class="mb-5">Read Up More Yourself</h3>
 
 		{#if data.post.resources.links == ''}
@@ -184,8 +167,7 @@
 		{/if}
 	</div>
 	<div
-		class="rounded-lg border border-slate-700 bg-base-200 p-5 shadow-md shadow-gray-900 hover:bg-base-100 lg:col-span-2"
-	>
+		class="rounded-lg border border-slate-700 bg-base-200 p-5 shadow-md shadow-gray-900 hover:bg-base-100 lg:col-span-2">
 		<h3 class="mb-5">
 			Watch on Youtube
 
@@ -203,9 +185,7 @@
 				><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path
 					d="M18 3a5 5 0 0 1 5 5v8a5 5 0 0 1 -5 5h-12a5 5 0 0 1 -5 -5v-8a5 5 0 0 1 5 -5zm-9 6v6a1 1 0 0 0 1.514 .857l5 -3a1 1 0 0 0 0 -1.714l-5 -3a1 1 0 0 0 -1.514 .857z"
 					stroke-width="0"
-					fill="currentColor"
-				/></svg
-			>
+					fill="currentColor" /></svg>
 		</h3>
 		{#if data.post.resources.youtube == ''}
 			Sorry, nothing here
@@ -219,8 +199,7 @@
 						title="YouTube video player"
 						frameborder="0"
 						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-						allowfullscreen
-					></iframe>
+						allowfullscreen></iframe>
 				</div>
 			{/each}
 		{/if}

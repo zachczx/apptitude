@@ -3,7 +3,7 @@
 	import { newitem } from './todo_store.js';
 	let todos = $state([
 		{ text: 'Sample item 1', done: true },
-		{ text: 'Sample item 2', done: false }
+		{ text: 'Sample item 2', done: false },
 	]);
 
 	////////////////////////////////////
@@ -80,8 +80,7 @@
 <div class="grid grid-cols-1 content-start justify-items-center gap-y-3">
 	<div class="mb-10 text-center lg:mb-20">
 		<h1
-			class="inline-block bg-gradient-to-r from-emerald-200 via-orange-200 to-pink-200 bg-clip-text py-3 text-transparent"
-		>
+			class="inline-block bg-gradient-to-r from-emerald-200 via-orange-200 to-pink-200 bg-clip-text py-3 text-transparent">
 			To-Dos
 		</h1>
 		<div><i>Track what you gotta do.</i></div>
@@ -93,8 +92,7 @@
 			type="text"
 			value={storeLearnButton.length > 0 ? storeLearnButton : ''}
 			id="add-new"
-			class="input input-bordered input-primary w-72"
-		/>
+			class="input input-bordered input-primary w-72" />
 		<button on:click={addTodoButton} type="submit" class="btn btn-primary">+</button>
 	</div>
 	<div class="filters">
@@ -104,24 +102,21 @@
 			value="filter-all"
 			onclick={() => {
 				filter = 'all';
-			}}>All</button
-		>
+			}}>All</button>
 		<button
 			class="btn btn-accent"
 			id="filter-completed"
 			value="filter-completed"
 			onclick={() => {
 				filter = 'completed';
-			}}>Completed</button
-		>
+			}}>Completed</button>
 		<button
 			class="btn btn-info"
 			id="filter-pending"
 			value="filter-pending"
 			onclick={() => {
 				filter = 'pending';
-			}}>Pending</button
-		>
+			}}>Pending</button>
 	</div>
 	<div class="wrapper">
 		{#each filteredTodos as item, i}
@@ -130,23 +125,20 @@
 					type="text"
 					value={item.text}
 					oninput={(e) => editTodo(i, e.target.value, item.done)}
-					class="input input-bordered input-secondary w-96"
-				/>
+					class="input input-bordered input-secondary w-96" />
 				<input
 					type="checkbox"
 					bind:checked={item.done}
 					on:click={toggleTodo}
 					data-index={i}
-					class="checkbox-secondary checkbox checkbox-lg hover:outline-double hover:outline-red-300"
-				/>
+					class="checkbox-secondary checkbox checkbox-lg hover:outline-double hover:outline-red-300" />
 			</div>
 		{/each}
 	</div>
 	<div>
 		{outputRemaining()}
 		<i
-			>{#if todoCount > 1}tasks{:else}task{/if} remaining.</i
-		>
+			>{#if todoCount > 1}tasks{:else}task{/if} remaining.</i>
 	</div>
 </div>
 

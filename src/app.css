@@ -32,7 +32,7 @@ html {
 	}
 
 	h3 {
-		@apply text-xl lg:text-2xl;
+		@apply text-2xl lg:text-3xl;
 		font-weight: 600;
 	}
 
@@ -43,6 +43,6 @@ html {
 	}
 
 	p {
-		@apply lg:text-lg xl:text-lg;
+		@apply lg:text-lg xl:text-xl;
 	}
 }
