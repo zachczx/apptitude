@@ -175,9 +175,11 @@
 		</div>
 	</div>
 </div>
+
+<!--
 <div class="hidden lg:contents">
 	<RocketAnimation />
-</div>
+</div>-->
 
 <style>
 	/*	@media (max-width: 1280px) {
