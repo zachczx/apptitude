@@ -8,6 +8,7 @@
 	import userJourneyMap from '$lib/assets/user-journey-map.webp';
 	import piggyBank from '$lib/assets/piggy-bank.webp?enhanced&w=300';
 	import product from '$lib/assets/product.webp?enhanced&w=300';
+	import problem from '$lib/assets/problem.webp?enhanced&w=500';
 
 	let showMore = $state(false);
 </script>
@@ -55,7 +56,7 @@
 			class="group card max-h-[50rem] w-full overflow-hidden border border-gray-700 bg-base-300 shadow-xl hover:bg-gradient-to-tr hover:from-base-300 hover:via-base-200 hover:to-gray-700 lg:col-span-1 lg:row-span-2">
 			<a href="/cacheup/problems"
 				><div class="card-body grid">
-					<div class="space-y-5 self-center">
+					<div class="mb-10 space-y-5 self-center lg:mb-20">
 						<h1 class="text-primary">Problem statement</h1>
 
 						<p>
@@ -66,7 +67,7 @@
 							help, user pain points.
 						</p>
 					</div>
-
+					<!--
 					<div class="group relative flex w-full justify-center self-center">
 						<div
 							class="duration-400 absolute h-96 w-full translate-x-3 translate-y-12 -rotate-[6deg] rounded-2xl bg-teal-200 transition ease-in group-hover:translate-y-10 group-hover:-rotate-[8deg]">
@@ -81,12 +82,20 @@
 							style="background:url({problemStatement}); background-size: contain; background-position: right"
 							class="box-shadow absolute h-96 w-full translate-y-20 rounded-2xl transition duration-200 ease-in-out group-hover:translate-y-16">
 						</div>
+					</div>-->
+					<div class="h-[29rem] w-full rounded-2xl bg-base-content">
+						<div class="flex justify-center">
+							<enhanced:img
+								src={problem}
+								alt="$$$"
+								class="rounded-2xl lg:-mb-14 lg:-translate-y-14" />
+						</div>
 					</div>
 				</div>
 			</a>
 		</div>
 		<div
-			class="group card w-10/12 border border-gray-700 bg-base-300 shadow-xl hover:bg-gradient-to-tr hover:from-base-300 hover:via-base-200 hover:to-gray-700 lg:col-span-2 lg:row-span-1">
+			class="group card border border-gray-700 bg-base-300 shadow-xl hover:bg-gradient-to-tr hover:from-base-300 hover:via-base-200 hover:to-gray-700 lg:col-span-2 lg:row-span-1 lg:w-10/12">
 			<a href="/cacheup/product">
 				<div class="card-body grid">
 					<div class="w-full rounded-2xl bg-base-content">
