@@ -91,6 +91,7 @@ export const cacheup = [
 		],
 		definitions: [
 			'Product-market fit is how much product satisfies strong market demand, i.e., target customers truly need and want the product.',
+			'First Round Capital calls product-market fit "a state of widespread demand for a product that satisfies a critical need and crucially can be delivered repeatably and efficiently to each customer".',
 			'A North Star Metric is a single, primary metric that best captures the core value that a product delivers to customers.',
 			'A minimum viable product (MVP) is a product development strategy used to quickly get a basic version of a product into the market for initial testing and validation from real users.',
 			"XY Problem - often in customer service - is where someone seeks help for a solution (X) they have chosen as a way to solve a different problem (Y). Helping with X won't help solve actual problem if it's not a good approach in the first place.",

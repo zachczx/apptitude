@@ -116,6 +116,7 @@ export const info = [
 					text: 'Introducing How Computers Work',
 					url: 'https://www.youtube.com/watch?v=OAx_6-wdslM&list=PLzdnOPI1iJNcsRwJhvksEo1tJqjIqWbN-',
 				},
+				{ text: 'Load Balancing', url: 'https://samwho.dev/load-balancing/' },
 			],
 		},
 	},
@@ -264,31 +265,38 @@ export const info = [
 		name: 'Products',
 		slug: 'products',
 		topics: [
+			'product-market fit',
 			'product management',
 			'UX',
 			'product strategy',
 			'execution',
 			'project management',
 			'startups',
+			'pivot',
 		],
 		questions: [
+			'What is product-market fit?',
+			'How do you find product-market fit?',
 			'How do you identify and prioritize product features?',
 			'What metrics do you use to measure product success?',
 			'What is a north star metric for a product?',
+			'What is a pivot?',
 			'What is UX?',
 			'How do you conduct user research, design, prototype, validation?',
 			'What are the key principles of designing a user-centric product?',
 			'How do you define and communicate the product vision?',
-			'How do you find product market fit?',
+			'What are the typical funding rounds for startups and companies trying to raise funds?',
 		],
 		objectives: [
 			'Know what goes into a good product',
 			'Spot solutions in search of a problem',
 			'Feel it in your soul when a "product" just ain\'t it',
 			'Think user-first, Min/PS/DS last',
+			'Be aware of how startups and industry get funding, and what metrics/trajectories they prioritize',
 		],
 		issues: [
 			"Many products/systems developed by Govt don't solve real & meaningful problems, are slow & laggy, huge wastes of money",
+			"Product-market fit simply isn't thought about, most certainly not efficiency and working at scale (see: $1 vending machine that dispenses $100 doesn't have product-market fit)",
 			'Tech product owners are often appointed to the role without relevant skills or experience, and end up roleplaying their idea of what the job requires',
 			"People who manage products don't talk to users",
 			"Prescriptive rules in public service restrain engineering teams's ability to innovate, deliver fast",
@@ -304,8 +312,9 @@ export const info = [
 				},
 			],
 			youtube: [
-				'https://www.youtube.com/embed/0LNQxT9LvM0?si=KHzWpcisYehJbdHF',
 				'https://www.youtube.com/embed/C27RVio2rOs?si=rKY_2K-n0lC6vk54',
+				'https://www.youtube.com/embed/0LNQxT9LvM0?si=KHzWpcisYehJbdHF',
+				'https://www.youtube.com/embed/yc1Uwhfxacs',
 				'https://www.youtube.com/embed/QRZ_l7cVzzU?si=sh3L1sWZzBhLb2dy',
 				'https://www.youtube.com/embed/aOGMymXPgrk',
 				'https://www.youtube.com/embed/YP_QghPLG-8',
@@ -322,6 +331,16 @@ export const info = [
 				{
 					text: 'Y Combinator - YouTube',
 					url: 'https://www.youtube.com/c/ycombinator',
+				},
+				{
+					text: "Lenny's Podcast - YouTube",
+					url: 'https://www.youtube.com/@LennysPodcast',
+				},
+
+				{ text: 'Product-Market Fit | First Round Capital', url: 'https://pmf.firstround.com/' },
+				{
+					text: 'Paths to PMF with Todd Jackson',
+					url: 'https://review.firstround.com/series/product-market-fit/',
 				},
 				{
 					text: '99% Invisible',
@@ -419,6 +438,10 @@ export const info = [
 				{
 					text: "Stevey's Google Platforms Rant",
 					url: 'https://gist.github.com/chitchcock/1281611',
+				},
+				{
+					text: 'DIB Guide: Detecting Agile BS',
+					url: 'https://media.defense.gov/2018/Oct/09/2002049591/-1/-1/0/DIB_DETECTING_AGILE_BS_2018.10.05.PDF',
 				},
 				{
 					text: 'Scrum Training Series - YouTube',
