@@ -4,7 +4,6 @@
 	import pandaBirds from '$lib/assets/panda-birds.webp?enhanced&w=600';
 	import pandaNo from '$lib/assets/panda-no.webp?enhanced&w=400';
 	import pandaReading2 from '$lib/assets/panda-reading2.webp?enhanced&w=500';
-	import pandaLabGoggles from '$lib/assets/panda-lab-goggles.webp?enhanced&w=200';
 	import swoleDoge from '$lib/assets/swole-doge.webp?enhanced&w=200';
 </script>
 
@@ -55,6 +54,102 @@
 					The resources are spread across websites, YouTube videos, and free online courses, giving
 					you flexibility and convenience.
 				</p>
+				<div class="flex space-x-3 pt-8">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="4rem"
+						height="4rem"
+						viewBox="0 0 24 24"
+						fill="none"
+						stroke="currentColor"
+						stroke-width="2"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						class="icon icon-tabler icons-tabler-outline icon-tabler-article"
+						><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path
+							d="M3 4m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z" /><path
+							d="M7 8h10" /><path d="M7 12h10" /><path d="M7 16h10" /></svg>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="4rem"
+						height="4rem"
+						viewBox="0 0 24 24"
+						fill="none"
+						stroke="currentColor"
+						stroke-width="2"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						class="icon icon-tabler icons-tabler-outline icon-tabler-brand-youtube"
+						><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path
+							d="M2 8a4 4 0 0 1 4 -4h12a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-12a4 4 0 0 1 -4 -4v-8z" /><path
+							d="M10 9l5 3l-5 3z" /></svg>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="4rem"
+						height="4rem"
+						viewBox="0 0 24 24"
+						fill="none"
+						stroke="currentColor"
+						stroke-width="2"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						class="icon icon-tabler icons-tabler-outline icon-tabler-world-www"
+						><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path
+							d="M19.5 7a9 9 0 0 0 -7.5 -4a8.991 8.991 0 0 0 -7.484 4" /><path
+							d="M11.5 3a16.989 16.989 0 0 0 -1.826 4" /><path
+							d="M12.5 3a16.989 16.989 0 0 1 1.828 4" /><path
+							d="M19.5 17a9 9 0 0 1 -7.5 4a8.991 8.991 0 0 1 -7.484 -4" /><path
+							d="M11.5 21a16.989 16.989 0 0 1 -1.826 -4" /><path
+							d="M12.5 21a16.989 16.989 0 0 0 1.828 -4" /><path
+							d="M2 10l1 4l1.5 -4l1.5 4l1 -4" /><path d="M17 10l1 4l1.5 -4l1.5 4l1 -4" /><path
+							d="M9.5 10l1 4l1.5 -4l1.5 4l1 -4" /></svg>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="4rem"
+						height="4rem"
+						viewBox="0 0 24 24"
+						fill="none"
+						stroke="currentColor"
+						stroke-width="2"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						class="icon icon-tabler icons-tabler-outline icon-tabler-certificate"
+						><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path
+							d="M15 15m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path
+							d="M13 17.5v4.5l2 -1.5l2 1.5v-4.5" /><path
+							d="M10 19h-5a2 2 0 0 1 -2 -2v-10c0 -1.1 .9 -2 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -1 1.73" /><path
+							d="M6 9l12 0" /><path d="M6 12l3 0" /><path d="M6 15l2 0" /></svg>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="4rem"
+						height="4rem"
+						viewBox="0 0 24 24"
+						fill="none"
+						stroke="currentColor"
+						stroke-width="2"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						class="icon icon-tabler icons-tabler-outline icon-tabler-brand-google"
+						><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path
+							d="M20.945 11a9 9 0 1 1 -3.284 -5.997l-2.655 2.392a5.5 5.5 0 1 0 2.119 6.605h-4.125v-3h7.945z" /></svg>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="4rem"
+						height="4rem"
+						viewBox="0 0 24 24"
+						fill="none"
+						stroke="currentColor"
+						stroke-width="2"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						class="icon icon-tabler icons-tabler-outline icon-tabler-brand-aws"
+						><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path
+							d="M17 18.5a15.198 15.198 0 0 1 -7.37 1.44a14.62 14.62 0 0 1 -6.63 -2.94" /><path
+							d="M19.5 21c.907 -1.411 1.451 -3.323 1.5 -5c-1.197 -.773 -2.577 -.935 -4 -1" /><path
+							d="M3 11v-4.5a1.5 1.5 0 0 1 3 0v4.5" /><path d="M3 9h3" /><path
+							d="M9 5l1.2 6l1.8 -4l1.8 4l1.2 -6" /><path
+							d="M18 10.25c0 .414 .336 .75 .75 .75h1.25a1 1 0 0 0 1 -1v-1a1 1 0 0 0 -1 -1h-1a1 1 0 0 1 -1 -1v-1a1 1 0 0 1 1 -1h1.25a.75 .75 0 0 1 .75 .75" /></svg>
+				</div>
 			</div>
 			<figure>
 				<enhanced:img
@@ -74,17 +169,6 @@
 					Step 1b: Apply Knowledge
 				</h2>
 				<p>Do personal projects, try stuff beyond tutorial copy-pasting or Coursera Labs.</p>
-				<div class="group hidden motion-reduce:transition-none lg:contents">
-					<enhanced:img
-						src={pandaLabGoggles}
-						alt="Take notes!"
-						fetchpriority="low"
-						class="absolute right-0 blur-xl brightness-0 transition duration-500 ease-in-out group-hover:-translate-y-3" /><enhanced:img
-						src={pandaLabGoggles}
-						alt="Take notes!"
-						fetchpriority="low"
-						class="absolute right-0 transition duration-500 ease-in-out group-hover:-translate-y-4 group-hover:scale-[1.1]" />
-				</div>
 			</div>
 		</div>
 		<div

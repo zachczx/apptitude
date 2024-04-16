@@ -80,7 +80,7 @@
 	}
 </script>
 
-<Breadcrumbs urlMiddle="cacheup" textMiddle={'Cache Up!'} textCurrent={data.post.name} />
+<Breadcrumbs urlMiddle="cacheup" textMiddle={'Cache-Up Guides'} textCurrent={data.post.name} />
 <div class="mb-10 text-center lg:mb-10">
 	<h1
 		class="mb-10 inline-block bg-gradient-to-r from-emerald-200 via-orange-200 to-pink-200 bg-clip-text py-3 text-transparent">

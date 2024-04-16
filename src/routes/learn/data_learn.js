@@ -116,6 +116,10 @@ export const info = [
 					text: 'Introducing How Computers Work',
 					url: 'https://www.youtube.com/watch?v=OAx_6-wdslM&list=PLzdnOPI1iJNcsRwJhvksEo1tJqjIqWbN-',
 				},
+				{
+					text: 'Cloud Security: A Primer for Policymakers',
+					url: 'https://carnegieendowment.org/2020/08/31/cloud-security-primer-for-policymakers-pub-82597',
+				},
 				{ text: 'Load Balancing', url: 'https://samwho.dev/load-balancing/' },
 			],
 		},
@@ -310,6 +314,15 @@ export const info = [
 					text: 'Google UX Design Professional Certificate | Coursera',
 					url: 'https://www.coursera.org/professional-certificates/google-ux-design',
 				},
+				{
+					text: 'Product Management Course: Singapore',
+					url: 'https://generalassemb.ly/education/product-management/singapore',
+				},
+				{
+					text: 'Become a Product Manager | Learn the Skills & Get the Job',
+					url: 'https://www.udemy.com/course/become-a-product-manager-learn-the-skills-get-a-job/',
+				},
+				{ text: '', url: '' },
 			],
 			youtube: [
 				'https://www.youtube.com/embed/C27RVio2rOs?si=rKY_2K-n0lC6vk54',
@@ -342,6 +355,21 @@ export const info = [
 					text: 'Paths to PMF with Todd Jackson',
 					url: 'https://review.firstround.com/series/product-market-fit/',
 				},
+				{ text: 'Product Coalition', url: 'https://productcoalition.com/' },
+				{
+					text: 'Ruthless Prioritization',
+					url: 'https://blackboxofpm.com/ruthless-prioritization-e4256e3520a9',
+				},
+				{ text: 'Shape Up | Base Camp', url: 'https://basecamp.com/shapeup/0.3-chapter-01' },
+				{
+					text: 'Intercom on Product Management',
+					url: 'https://marketing.intercomcdn.com/assets/pm-book/v3/Intercom_on_Product_Management.pdf',
+				},
+				{ text: 'Gitlab Product Handbook', url: 'https://handbook.gitlab.com/handbook/product/' },
+				{
+					text: 'Managing and Developing Product Managers',
+					url: 'https://blackboxofpm.com/managing-and-developing-product-managers-2f9a3963fab6',
+				},
 				{
 					text: '99% Invisible',
 					url: 'https://99percentinvisible.org/',
@@ -359,9 +387,23 @@ export const info = [
 					url: 'https://uxpodcast.com/',
 				},
 				{
+					text: 'Product Metrics: What You Need to Know - Qualtrics',
+					url: 'https://www.qualtrics.com/au/experience-management/product/product-metrics/',
+				},
+
+				{
+					text: 'Product Metrics Guide - Amplitude',
+					url: 'https://amplitude.com/blog/product-metrics-guide',
+				},
+				{
+					text: 'Why Product Metrics Matter',
+					url: 'https://www.productplan.com/learn/product-metrics-matter/',
+				},
+				{
 					text: 'Transformation Fail - Silicon Valley Product Group',
 					url: 'https://www.svpg.com/transformation-fail/',
 				},
+				{ text: 'Pmarca', url: 'https://pmarchive.com/' },
 				{
 					text: 'Transforming Product Culture with Lea Hickman',
 					url: 'https://www.mindtheproduct.com/transforming-product-culture-lea-hickman/',
@@ -554,6 +596,22 @@ export const info = [
 					text: 'Intro to Data Visualization with R & ggplot2 | Google Data Analytics Certificate',
 					url: 'https://www.youtube.com/watch?v=ZPw0dmGuyyE&list=PLTZYG7bZ1u6rcPlcX75pMkjsYY_HTL7aZ',
 				},
+				{
+					text: 'End-to-end Data Science Life Cycle',
+					url: 'https://towardsdatascience.com/stoend-to-end-data-science-life-cycle-6387523b5afc',
+				},
+				{
+					text: "Don't Trust Data Scientists to Set Performance Metrics",
+					url: 'https://towardsdatascience.com/dont-trust-data-scientists-to-set-performance-metrics-908bcd80bac6',
+				},
+				{
+					text: 'The Unspoken Rules of Visualisation',
+					url: 'https://datajournalism.com/read/longreads/the-unspoken-rules-of-visualisation',
+				},
+				{
+					text: 'Build Recommendation Engine with Collaborative Filtering',
+					url: 'https://realpython.com/build-recommendation-engine-collaborative-filtering/#:~:text=Collaborative%20filtering%20is%20a%20family,type%20of%20collaborative%20filtering%20approach.',
+				},
 			],
 		},
 	},
@@ -630,6 +688,14 @@ export const info = [
 					text: 'Deep Learning Specialization - DeepLearning.AI',
 					url: 'https://www.deeplearning.ai/courses/deep-learning-specialization/',
 				},
+				{
+					text: 'Machine Learning Problem Framing | Google',
+					url: 'https://developers.google.com/machine-learning/problem-framing',
+				},
+				{
+					text: 'Machine Learning Crash Course | Google',
+					url: 'https://developers.google.com/machine-learning/crash-course/ml-intro',
+				},
 			],
 			youtube: [
 				'https://youtube.com/embed/zjkBMFhNj_g',
@@ -680,6 +746,14 @@ export const info = [
 					url: 'https://proceedings.neurips.cc/paper_files/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf',
 				},
 				{
+					text: 'Visual Interactive Guide to the Basics of Neural Networks',
+					url: 'http://jalammar.github.io/visual-interactive-guide-basics-neural-networks/',
+				},
+				{
+					text: 'Introduction to Natural Language Processing for Text',
+					url: 'https://towardsdatascience.com/introduction-to-natural-language-processing-for-text-df845750fb63',
+				},
+				{
 					text: 'LMSYS Chatbot Arena Leaderboard',
 					url: 'https://huggingface.co/spaces/lmsys/chatbot-arena-leaderboard',
 				},
@@ -694,6 +768,10 @@ export const info = [
 				{
 					text: 'Agents in Artificial Intelligence',
 					url: 'https://www.geeksforgeeks.org/agents-artificial-intelligence/',
+				},
+				{
+					text: 'Amenity Detection and Beyond: New Frontiers of Computer Vision at Airbnb',
+					url: 'https://medium.com/airbnb-engineering/amenity-detection-and-beyond-new-frontiers-of-computer-vision-at-airbnb-144a4441b72e',
 				},
 			],
 		},

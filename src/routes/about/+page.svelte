@@ -41,6 +41,15 @@
 </script>
 
 <Breadcrumbs textCurrent={'About Apptitude'} />
+<div class="mx-2 text-center lg:mx-20 lg:mb-20">
+	<h1
+		class="inline-block bg-gradient-to-r from-emerald-200 via-orange-200 to-pink-200 bg-clip-text py-3 text-center text-transparent">
+		About
+	</h1>
+	<div>
+		<i>I'm here because the internet told me to be myself. Don't blame the internet.</i>
+	</div>
+</div>
 
 <div
 	class="mb-7 grid grid-cols-1 justify-items-center gap-x-8 gap-y-8 px-5 lg:grid-cols-12 lg:px-20">

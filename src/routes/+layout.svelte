@@ -59,7 +59,7 @@
 				<a
 					class="border-b border-slate-600 p-3 hover:bg-slate-600 active:font-bold active:text-primary"
 					href="/cacheup"
-					><TablerChevronRight class="inline align-middle" height="1rem" width="1rem" /> Cache Up!</a>
+					><TablerChevronRight class="inline align-middle" height="1rem" width="1rem" /> Cache-Up Guides</a>
 				<a
 					class="border-b border-slate-600 p-3 hover:bg-slate-600 active:font-bold active:text-primary"
 					href="/techtrippin"
@@ -90,7 +90,7 @@
 				<a class="hover:bg-base-100 hover:text-primary" href="/learn">Learn</a>
 			</li>
 			<li aria-current={matchUrl(data.url, '/cacheup') === 0 ? 'page' : undefined}>
-				<a class="hover:bg-base-100 hover:text-primary" href="/cacheup">Cache Up!</a>
+				<a class="hover:bg-base-100 hover:text-primary" href="/cacheup">Cache-Up Guides</a>
 			</li>
 			<li aria-current={matchUrl(data.url, '/techtrippin') === 0 ? 'page' : undefined}>
 				<a class="hover:bg-base-100 hover:text-primary" href="/techtrippin">Tech Trippin'</a>
