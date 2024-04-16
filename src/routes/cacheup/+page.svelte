@@ -128,11 +128,12 @@
 				<div
 					class="group card h-auto w-full border border-gray-700 bg-base-300 shadow-xl hover:bg-gradient-to-tr hover:from-base-300 hover:via-base-200 hover:to-gray-700 lg:col-span-1 lg:row-span-2">
 					<div class="card-body space-y-5">
-						<div class="flex justify-center">
+						<div class="flex justify-end">
 							<enhanced:img
 								src={safeKeyboard}
 								alt="Put your keyboard in the safe - best in class for security~!"
-								class="rounded-2xl lg:-mb-14 lg:-translate-y-14" />
+								class="rounded-2xl lg:-mb-14 lg:-translate-y-14"
+								style="transform: scaleY(-1) rotate(180deg);" />
 						</div>
 						<h1 class="mb-3 text-primary">Security</h1>
 

@@ -136,8 +136,8 @@ export const info = [
 			'Ticketing using Jira, Zendesk',
 			'Project management on Jira, Asana, Trello, Monday.com',
 			'Knowledge management on Confluence, Notion',
-			'Visualize and collaborate on Miro, Mural, Figma',
-			'Designing on Photoshop/Illustrator, Figma, Canva',
+			'Visualize and collaborate on Miro, Mural, FigJam',
+			'Designing on Photoshop, Illustrator, Figma, Canva, Affinity',
 		],
 		issues: [
 			'Using modern productivity tools involves changing your workflows and accepting the risks (e.g. risks from storing your data in the cloud and having your data potentially used to improve AI products)',
