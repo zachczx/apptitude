@@ -7,6 +7,7 @@
 	import safeKeyboard from '$lib/assets/safe-keyboard.webp?enhanced&w=300';
 	import userJourneyMap from '$lib/assets/user-journey-map.webp';
 	import piggyBank from '$lib/assets/piggy-bank.webp?enhanced&w=300';
+	import product from '$lib/assets/product.webp?enhanced&w=300';
 
 	let showMore = $state(false);
 </script>
@@ -68,13 +69,13 @@
 
 					<div class="group relative flex w-full justify-center self-center">
 						<div
-							class="duration-400 absolute h-96 w-full translate-x-3 translate-y-12 -rotate-[6deg] rounded-2xl bg-rose-400 transition ease-in group-hover:translate-y-10 group-hover:-rotate-[8deg]">
+							class="duration-400 absolute h-96 w-full translate-x-3 translate-y-12 -rotate-[6deg] rounded-2xl bg-teal-200 transition ease-in group-hover:translate-y-10 group-hover:-rotate-[8deg]">
 						</div>
 						<div
-							class="box-shadow duration-400 absolute h-96 w-full translate-x-2 translate-y-14 -rotate-[4deg] rounded-2xl bg-yellow-400 transition ease-out group-hover:translate-y-12 group-hover:-rotate-[6deg]">
+							class="box-shadow duration-400 absolute h-96 w-full translate-x-2 translate-y-14 -rotate-[4deg] rounded-2xl bg-pink-200 transition ease-out group-hover:translate-y-12 group-hover:-rotate-[6deg]">
 						</div>
 						<div
-							class="box-shadow absolute h-96 w-full translate-x-1 translate-y-16 -rotate-[2deg] rounded-2xl bg-indigo-400 transition duration-200 ease-out group-hover:translate-y-14 group-hover:-rotate-[4deg]">
+							class="box-shadow absolute h-96 w-full translate-x-1 translate-y-16 -rotate-[2deg] rounded-2xl bg-yellow-200 transition duration-200 ease-out group-hover:translate-y-14 group-hover:-rotate-[4deg]">
 						</div>
 						<div
 							style="background:url({problemStatement}); background-size: contain; background-position: right"
@@ -87,13 +88,16 @@
 		<div
 			class="group card w-10/12 border border-gray-700 bg-base-300 shadow-xl hover:bg-gradient-to-tr hover:from-base-300 hover:via-base-200 hover:to-gray-700 lg:col-span-2 lg:row-span-1">
 			<a href="/cacheup/product">
-				<div
-					class="ms-10 mt-5 h-[30rem] w-full items-center rounded-2xl"
-					style="background:url({userJourneyMap}); background-size: cover;">
-					.
-				</div>
-				<div class="card-body mt-5 grid">
-					<div class="space-y-5">
+				<div class="card-body grid">
+					<div class="w-full rounded-2xl bg-base-content">
+						<div class="flex justify-end">
+							<enhanced:img
+								src={product}
+								alt="$$$"
+								class="rounded-2xl lg:-mb-14 lg:-translate-y-14" />
+						</div>
+					</div>
+					<div class="mt-5 space-y-5">
 						<h1 class="text-primary">Product</h1>
 						<p><i>Feel like you're shipping useless features?</i></p>
 						<p>
