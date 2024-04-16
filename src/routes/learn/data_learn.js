@@ -770,6 +770,10 @@ export const info = [
 					url: 'https://www.geeksforgeeks.org/agents-artificial-intelligence/',
 				},
 				{
+					text: 'AI agents: types, benefits, and examples',
+					url: 'https://yellow.ai/blog/ai-agents/',
+				},
+				{
 					text: 'Amenity Detection and Beyond: New Frontiers of Computer Vision at Airbnb',
 					url: 'https://medium.com/airbnb-engineering/amenity-detection-and-beyond-new-frontiers-of-computer-vision-at-airbnb-144a4441b72e',
 				},

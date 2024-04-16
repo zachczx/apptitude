@@ -3,9 +3,10 @@
 	import { cacheup } from './data_cacheup';
 	import TablerHelpCircleFilled from '$lib/assets/svg/TablerHelpCircleFilled.svelte';
 	import problemStatement from '$lib/assets/user-journey-problem-statement.webp';
-	import userJourneySentiments from '$lib/assets/user-journey-sentiments.webp?enhanced&w=1000';
+	import userJourneySentiments from '$lib/assets/user-journey-sentiments.webp';
 	import safeKeyboard from '$lib/assets/safe-keyboard.webp?enhanced&w=300';
-	import awsBill from '$lib/assets/aws-bill.webp?enhanced&w=600';
+	import userJourneyMap from '$lib/assets/user-journey-map.webp';
+	import piggyBank from '$lib/assets/piggy-bank.webp?enhanced&w=300';
 
 	let showMore = $state(false);
 </script>
@@ -75,19 +76,24 @@
 						<div
 							class="box-shadow absolute h-96 w-full translate-x-1 translate-y-16 -rotate-[2deg] rounded-2xl bg-indigo-400 transition duration-200 ease-out group-hover:translate-y-14 group-hover:-rotate-[4deg]">
 						</div>
-						<img
-							src={problemStatement}
-							alt="Prob"
-							class="box-shadow translate-y-20 rounded-2xl transition duration-200 ease-in-out group-hover:translate-y-16" />
+						<div
+							style="background:url({problemStatement}); background-size: contain; background-position: right"
+							class="box-shadow absolute h-96 w-full translate-y-20 rounded-2xl transition duration-200 ease-in-out group-hover:translate-y-16">
+						</div>
 					</div>
 				</div>
 			</a>
 		</div>
 		<div
-			class="group card w-full border border-gray-700 bg-base-300 shadow-xl hover:bg-gradient-to-tr hover:from-base-300 hover:via-base-200 hover:to-gray-700 lg:col-span-2 lg:row-span-1">
+			class="group card w-10/12 border border-gray-700 bg-base-300 shadow-xl hover:bg-gradient-to-tr hover:from-base-300 hover:via-base-200 hover:to-gray-700 lg:col-span-2 lg:row-span-1">
 			<a href="/cacheup/product">
-				<div class="card-body grid lg:grid-cols-2">
-					<div class="space-y-5 lg:self-center">
+				<div
+					class="ms-10 mt-5 h-[30rem] w-full items-center rounded-2xl"
+					style="background:url({userJourneyMap}); background-size: cover;">
+					.
+				</div>
+				<div class="card-body mt-5 grid">
+					<div class="space-y-5">
 						<h1 class="text-primary">Product</h1>
 						<p><i>Feel like you're shipping useless features?</i></p>
 						<p>
@@ -95,45 +101,41 @@
 							metrics.
 						</p>
 					</div>
-					<div class="flex items-center py-5">
-						<enhanced:img
-							src={userJourneySentiments}
-							alt="Map"
-							class="scale-[1.1] rounded-2xl transition duration-500 ease-in-out hover:-rotate-[0deg] lg:translate-x-5 lg:-rotate-[4deg]" />
-					</div>
 				</div>
 			</a>
 		</div>
-		<div
-			class="group card w-full overflow-hidden border border-gray-700 bg-base-300 pb-5 shadow-xl hover:bg-gradient-to-tr hover:from-base-300 hover:via-base-200 hover:to-gray-700 lg:col-span-1 lg:row-span-1">
-			<a href="/cacheup/cost"
-				><div class="card-body space-y-5">
+		<a href="/cacheup/cost">
+			<div
+				class="group card grid w-full overflow-hidden border border-gray-700 bg-base-300 shadow-xl hover:bg-gradient-to-tr hover:from-base-300 hover:via-base-200 hover:to-gray-700 lg:col-span-1 lg:row-span-1">
+				<div class="card-body space-y-5">
 					<h1 class="text-primary">Cost</h1>
 					<p><i>We're not sure what we're building, but we know we'll need a bigger budget?</i></p>
-					<p>
+					<p class="pb-5">
 						Vague requirements over hundreds of pages a spec sheet, cost evaluations based on
 						inflation figures, vendors quoting an arm and a leg to change a hero banner.
 					</p>
+					<div class="w-full rounded-2xl bg-base-content">
+						<div class="flex">
+							<enhanced:img
+								src={piggyBank}
+								alt="$$$"
+								class="rounded-2xl lg:-mb-14 lg:-translate-y-14" />
+						</div>
+					</div>
 				</div>
-				<div class="mt-6 flex h-48 justify-center rounded-2xl px-4">
-					<enhanced:img
-						src={awsBill}
-						alt="AWS bill can shock you"
-						class="rounded-2xl object-cover" />
-				</div>
-			</a>
-		</div>
+			</div></a>
 		<div>
 			<a href="/cacheup/security">
 				<div
 					class="group card h-auto w-full border border-gray-700 bg-base-300 shadow-xl hover:bg-gradient-to-tr hover:from-base-300 hover:via-base-200 hover:to-gray-700 lg:col-span-1 lg:row-span-2">
 					<div class="card-body space-y-5">
-						<div class="flex justify-end">
-							<enhanced:img
-								src={safeKeyboard}
-								alt="Put your keyboard in the safe - best in class for security~!"
-								class="rounded-2xl lg:-mb-14 lg:-translate-y-14"
-								style="transform: scaleY(-1) rotate(180deg);" />
+						<div class="w-full rounded-2xl bg-base-content">
+							<div class="flex justify-end">
+								<enhanced:img
+									src={safeKeyboard}
+									alt="Put your keyboard in the safe - best in class for security~!"
+									class="rounded-2xl lg:-mb-14 lg:-translate-y-14" />
+							</div>
 						</div>
 						<h1 class="mb-3 text-primary">Security</h1>
 

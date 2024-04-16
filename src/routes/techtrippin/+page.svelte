@@ -10,7 +10,7 @@
 </script>
 
 <Breadcrumbs textCurrent={"Tech Trippin'"} />
-<div class="mx-2 mb-10 grid-cols-1 rounded-lg pb-5 lg:mx-20 lg:mb-20">
+<div class="mx-2 mb-2 grid-cols-1 rounded-lg pb-5 lg:mx-20 lg:mb-20">
 	<div class="text-center">
 		<h1
 			class="inline-block bg-gradient-to-r from-emerald-200 via-orange-200 to-pink-200 bg-clip-text py-3 text-transparent">
@@ -54,8 +54,10 @@
 						</label>
 					</div>
 					<div id="sidebar" class="z-20 col-span-1 hidden lg:contents">
-						<div class="rounded-xl bg-base-300">
-							<h2 class="rounded-t-xl bg-gray-950 p-5 text-center">Menu</h2>
+						<div class="rounded-2xl bg-base-300">
+							<h2 class="mx-5 rounded-t-2xl border-b-2 bg-base-300 px-5 pb-3 pt-5 text-center">
+								Menu
+							</h2>
 							<ol class="divide-y-2 divide-slate-600 px-5">
 								{#each techtrippin as sidebarItem, index}
 									<button
@@ -75,13 +77,13 @@
 					{#key currentItem}
 						<div
 							data-id="Item-{currentItem}"
-							class=" z-10 rounded-2xl bg-base-300"
+							class="z-10 rounded-2xl bg-base-300"
 							in:fly={{ duration: 300, x: -40 }}
 							out:fly={{ duration: 0 }}>
-							<h2 class="rounded-t-2xl bg-gray-950 py-5 text-center">
+							<h2 class="mx-5 rounded-t-2xl border-b-2 bg-base-300 px-5 pb-3 pt-5 text-center">
 								{techtrippin[currentItem].title}
 							</h2>
-							<div class="p-2 xl:p-6">
+							<div class="space-y-10 p-2 xl:p-6">
 								<div class="chat chat-start">
 									<div class="avatar chat-image">
 										<div class="w-10 rounded-full lg:w-[200px]">

@@ -47,7 +47,7 @@
 		About
 	</h1>
 	<div>
-		<i>I'm here because the internet told me to be myself. Don't blame the internet.</i>
+		<i>If you need an opinion, I have plenty to spare.</i>
 	</div>
 </div>
 
