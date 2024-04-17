@@ -207,6 +207,11 @@ export const info = [
 					url: 'https://www.atlassian.com/agile/tutorials',
 				},
 				{
+					text: 'Figma for Beginners tutorial (4 parts)',
+					url: 'https://help.figma.com/hc/en-us/sections/4405269443991-Figma-for-Beginners-tutorial-4-parts',
+				},
+
+				{
 					text: 'Photoshop for Complete Beginners | Lesson 1 - Youtube',
 					url: 'https://www.youtube.com/watch?v=xTzvQkOll2U&list=PLLlSBGLVsEPIFGSGw2zJ2K43V5vxMMMTE',
 				},
@@ -271,7 +276,6 @@ export const info = [
 		topics: [
 			'product-market fit',
 			'product management',
-			'UX',
 			'product strategy',
 			'execution',
 			'project management',
@@ -285,11 +289,11 @@ export const info = [
 			'What metrics do you use to measure product success?',
 			'What is a north star metric for a product?',
 			'What is a pivot?',
-			'What is UX?',
-			'How do you conduct user research, design, prototype, validation?',
-			'What are the key principles of designing a user-centric product?',
 			'How do you define and communicate the product vision?',
 			'What are the typical funding rounds for startups and companies trying to raise funds?',
+			'What is the difference between a product manager vs a project manager?',
+			'What is the difference between a feature team vs a product team?',
+			'',
 		],
 		objectives: [
 			'Know what goes into a good product',
@@ -297,6 +301,8 @@ export const info = [
 			'Feel it in your soul when a "product" just ain\'t it',
 			'Think user-first, Min/PS/DS last',
 			'Be aware of how startups and industry get funding, and what metrics/trajectories they prioritize',
+			"We don't often need product managers, but know when you need one, and know when you don't have one.",
+			'Be mindful of the transformation and product management theatre',
 		],
 		issues: [
 			"Many products/systems developed by Govt don't solve real & meaningful problems, are slow & laggy, huge wastes of money",
@@ -311,18 +317,13 @@ export const info = [
 		resources: {
 			courses: [
 				{
-					text: 'Google UX Design Professional Certificate | Coursera',
-					url: 'https://www.coursera.org/professional-certificates/google-ux-design',
-				},
-				{
-					text: 'Product Management Course: Singapore',
+					text: 'Product Management Course: Singapore (caveat emptor)',
 					url: 'https://generalassemb.ly/education/product-management/singapore',
 				},
 				{
 					text: 'Become a Product Manager | Learn the Skills & Get the Job',
 					url: 'https://www.udemy.com/course/become-a-product-manager-learn-the-skills-get-a-job/',
 				},
-				{ text: '', url: '' },
 			],
 			youtube: [
 				'https://www.youtube.com/embed/C27RVio2rOs?si=rKY_2K-n0lC6vk54',
@@ -335,12 +336,12 @@ export const info = [
 				'https://www.youtube.com/embed/h-KVGHoQ_98',
 				'https://www.youtube.com/embed/6DTK9yDP6p0?si=niskiu1FnnDNhiOQ',
 				'https://www.youtube.com/embed/oWZbWzAyHAE?si=aFy0z0ePzrlUTvSD',
-				'https://www.youtube.com/embed/NepFo4zXyK4',
-				'https://www.youtube.com/embed/wIuVvCuiJhU',
-				'https://www.youtube.com/embed/yNDgFK2Jj1E',
-				'https://www.youtube.com/embed/yUvGHNzqG7M',
 			],
 			links: [
+				{
+					text: 'Product Management – Start Here',
+					url: 'https://www.svpg.com/product-management-start-here/',
+				},
 				{
 					text: 'Y Combinator - YouTube',
 					url: 'https://www.youtube.com/c/ycombinator',
@@ -371,20 +372,8 @@ export const info = [
 					url: 'https://blackboxofpm.com/managing-and-developing-product-managers-2f9a3963fab6',
 				},
 				{
-					text: '99% Invisible',
-					url: 'https://99percentinvisible.org/',
-				},
-				{
 					text: 'All-In Podcast - YouTube',
 					url: 'https://www.youtube.com/@allin',
-				},
-				{
-					text: 'Articles - Discover everything you need to know about building for the modern web | Web.dev',
-					url: 'https://web.dev/articles',
-				},
-				{
-					text: 'UXPodcast',
-					url: 'https://uxpodcast.com/',
 				},
 				{
 					text: 'Product Metrics: What You Need to Know - Qualtrics',
@@ -400,6 +389,14 @@ export const info = [
 					url: 'https://www.productplan.com/learn/product-metrics-matter/',
 				},
 				{
+					text: 'Product Management Theater - Silicon Valley Product Group',
+					url: 'https://www.svpg.com/product-management-theater/',
+				},
+				{
+					text: 'Coaching Tools - The Assessment',
+					url: 'https://www.svpg.com/coaching-tools-the-assessment/',
+				},
+				{
 					text: 'Transformation Fail - Silicon Valley Product Group',
 					url: 'https://www.svpg.com/transformation-fail/',
 				},
@@ -407,6 +404,150 @@ export const info = [
 				{
 					text: 'Transforming Product Culture with Lea Hickman',
 					url: 'https://www.mindtheproduct.com/transforming-product-culture-lea-hickman/',
+				},
+			],
+		},
+	},
+	{
+		id: 5,
+		name: 'User Experience',
+		slug: 'ux',
+		topics: [
+			'ux',
+			'empathy',
+			'problem',
+			'pain point',
+			'accessibility',
+			'usability',
+			'interaction',
+			'motion',
+			'visual',
+			'lo-fi',
+			'wireframe',
+			'stories',
+			'journey',
+		],
+		questions: [
+			'What is UX?',
+			'How does UX differ from UI?',
+			'How do you conduct user research, design, prototype, validation, testing?',
+			'What are the key principles of user-centric products?',
+			'What are UX design processes and methodologies?',
+			'Why should we incorporate design for users with disabilities and how can I make design inclusive?',
+			"What's the relationship between visual/interaction design and user experience?",
+			'What are visually appealing and usable interfaces?',
+			'What are interaction design patterns and how do people design intuitive and natural interactions?',
+			'What are industry standard tools for UX design (esp Figma)?',
+		],
+		objectives: [
+			"UX is not UI, it's all aspects of the end-user's interaction with the company, its services, and its products.",
+			'Understand user needs, behaviors, and motivations',
+			'Learn methods for user research (e.g. interviews, surveys, usability testing)',
+			'Study principles of good UX design (e.g. usability, accessibility, desirability)',
+			'Grasp key usability principles (learnability, efficiency, memorability, error prevention, satisfaction)',
+			'Explore UX design processes and methodologies',
+			'See usable, intuitive, and appealing in action, especially for web products',
+			'Know the basics of using Figma (no exporting to PDF and sending over email plzzz), Adobe XD, Sketch, etc',
+		],
+		issues: [
+			'Products which offer poor experience still hang in there, because users are often captured audience (think NS Portal and fact that it was always down on weekends)',
+			'People who manage products in Govt seldom talk to actual users',
+			'UX is neither about doing usability testing nor is it copywriting',
+			'There is product management theatre in the public sector',
+			"Good design doesn't mean doing bright colors, flashy animations, layouts. In fact, predictable layout is good, like for websites.",
+		],
+		resources: {
+			courses: [
+				{
+					text: 'Google UX Design Professional Certificate | Coursera',
+					url: 'https://www.coursera.org/professional-certificates/google-ux-design',
+				},
+				{ text: 'Nielsen Norman Group Courses', url: 'https://www.nngroup.com/courses/' },
+				{
+					text: 'DesignerUp Product Design (UX/UI) Course',
+					url: 'https://designerup.co/product-design-ui-ux-course',
+				},
+				{
+					text: 'Kickass UX',
+					url: 'https://www.kickassux.com/',
+				},
+				{
+					text: 'Uxcel',
+					url: 'https://uxcel.com/',
+				},
+			],
+			youtube: [
+				'https://www.youtube.com/embed/2QQQtiFwXjU',
+				'https://www.youtube.com/embed/8PM6KxV8GRc',
+				'https://www.youtube.com/embed/NepFo4zXyK4',
+				'https://www.youtube.com/embed/wIuVvCuiJhU',
+				'https://www.youtube.com/embed/yNDgFK2Jj1E',
+				'https://www.youtube.com/embed/4eAM6ASs76U',
+				'https://www.youtube.com/embed/yUvGHNzqG7M',
+				'https://www.youtube.com/embed/9ElrcTtAxzA',
+
+				'https://www.youtube.com/embed/Hx02SaL_IH0',
+				'https://www.youtube.com/embed/L22lDu3QX2c',
+				'https://www.youtube.com/embed/hlI6xGfBjkQ',
+				'https://www.youtube.com/embed/C-UeBdtopdA',
+				'https://www.youtube.com/embed/UWwNIMHFdW4',
+			],
+			links: [
+				{
+					text: 'The Definition of User Experience (UX)',
+					url: 'https://www.nngroup.com/articles/definition-user-experience/',
+				},
+				{
+					text: 'Articles | Nielsen Norman Group',
+					url: 'https://www.nngroup.com/articles/',
+				},
+				{
+					text: 'UXPodcast',
+					url: 'https://uxpodcast.com/',
+				},
+				{
+					text: 'Design Systems for Developers',
+					url: 'https://storybook.js.org/tutorials/design-systems-for-developers/',
+				},
+				{
+					text: '99% Invisible',
+					url: 'https://99percentinvisible.org/',
+				},
+				{
+					text: 'DesignOps at Airbnb',
+					url: 'https://airbnb.design/designops-airbnb/',
+				},
+				{
+					text: 'Material Design | Google',
+					url: 'https://m3.material.io/',
+				},
+				{
+					text: 'Design Systems: A design systems publication by Figma',
+					url: 'https://www.designsystems.com/',
+				},
+				{
+					text: 'UX Department | The GitLab Handbook',
+					url: 'https://handbook.gitlab.com/handbook/product/ux/',
+				},
+				{
+					text: 'Resource library | Figma',
+					url: 'https://www.figma.com/resource-library/',
+				},
+				{
+					text: 'Articles - Discover everything you need to know about building for the modern web | Web.dev',
+					url: 'https://web.dev/articles',
+				},
+				{
+					text: 'Design Tools Database',
+					url: 'https://uxtools.co/tools/design',
+				},
+				{
+					text: 'The Gestalt Principles for User Interface Design',
+					url: 'https://www.youtube.com/watch?v=DwR0SZTBMTU&list=PLJOFJ3Ok_iduObD_9dHwiYp804oZwpHze',
+				},
+				{
+					text: 'Usability 101: Introduction to Usability',
+					url: 'https://www.nngroup.com/articles/usability-101-introduction-to-usability/',
 				},
 				{
 					text: 'The ultimate guide to proper use of animation in UX',
@@ -416,14 +557,22 @@ export const info = [
 					text: 'The Anatomy of a Perfect Landing Page That Converts',
 					url: 'https://www.uxmatters.com/mt/archives/2023/07/the-anatomy-of-a-perfect-landing-page-that-converts.php',
 				},
+				{
+					text: 'UX Case Study: How YouTube keeps you watching and addicted',
+					url: 'https://www.thedesignership.com/blog/how-youtube-keeps-you-watching-addicted',
+				},
+				{
+					text: 'A LIST of free tools to help you start in UXTools & apps (r/UXDesign)',
+					url: 'https://www.reddit.com/r/UXDesign/comments/z64rl2/a_list_of_free_tools_to_help_you_start_in_ux/',
+				},
 			],
 		},
 	},
 	{
-		id: 5,
+		id: 6,
 		name: 'Methodologies',
 		slug: 'methodologies',
-		topics: ['agile', 'waterfall', 'scrum', 'lean', 'kanban'],
+		topics: ['agile', 'waterfall', 'scrum', 'lean', 'kanban', 'safe'],
 		questions: [
 			'What is Agile?',
 			"Is Scrum what you do when you're Agile?",
@@ -494,8 +643,8 @@ export const info = [
 					url: 'https://www.youtube.com/playlist?list=PL32pD389V8xt_znF-pvOl7OP_xNfnkGgq',
 				},
 				{
-					text: 'Transformation Theater - Silicon Valley Product Group',
-					url: 'https://www.svpg.com/transformation-theater/',
+					text: 'Scaled Agile Framework (SAFe)',
+					url: 'https://scaledagile.com/what-is-safe/',
 				},
 				{
 					text: "The hardest part of building software is not coding, it's requirements",
@@ -509,7 +658,7 @@ export const info = [
 		},
 	},
 	{
-		id: 6,
+		id: 7,
 		name: 'Data',
 		slug: 'data',
 		topics: [
@@ -616,7 +765,7 @@ export const info = [
 		},
 	},
 	{
-		id: 7,
+		id: 8,
 		name: 'AI',
 		slug: 'ai',
 		topics: [
@@ -781,7 +930,7 @@ export const info = [
 		},
 	},
 	{
-		id: 8,
+		id: 9,
 		name: 'Technical',
 		slug: 'technical',
 		topics: [

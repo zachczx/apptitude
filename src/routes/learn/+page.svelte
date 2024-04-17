@@ -2,6 +2,7 @@
 	import { info } from './data_learn.js';
 	import Breadcrumbs from '$lib/Breadcrumbs.svelte';
 	import TablerHelpCircleFilled from '$lib/assets/svg/TablerHelpCircleFilled.svelte';
+	import TablerChevronDown from '$lib/assets/svg/TablerChevronDown.svelte';
 	let showMore = $state(true);
 </script>
 
@@ -38,41 +39,58 @@
 	class="grid grid-cols-1 justify-items-center gap-x-8 gap-y-8 px-5 lg:grid-cols-2 lg:px-20 xl:grid-cols-4">
 	{#each info as item}
 		{#if item.name}
-			<div
-				class="card w-full border border-gray-700 bg-base-300 shadow-lg shadow-gray-900 hover:bg-gradient-to-tr hover:from-base-300 hover:via-base-200 hover:to-gray-700">
-				<div class="card-body grid grid-cols-1 place-content-start">
-					<h2
-						class="mb-7 inline-block bg-gradient-to-r from-emerald-200 via-blue-300 to-teal-600 bg-clip-text text-transparent hover:text-primary">
-						<a href="/learn/{item.slug}">{item.name}</a>
-					</h2>
-					<h3 class="hover:text-primary"><a href="/learn/{item.slug}">Topics</a></h3>
-					<p class="mb-7 hover:text-primary">
-						{#each item.topics as topic}
-							<a
-								href="/learn/{item.slug}"
-								class="btn btn-outline btn-xs me-2 mt-1 hover:bg-base-300 hover:text-primary"
-								>{topic}</a>
-						{/each}
-					</p>
-
-					<div class="collapse collapse-plus bg-base-200">
-						<input type="radio" name="accordion-{item.name}-1" />
-						<div class="collapse-title">
-							<h3>Find answers to...</h3>
-						</div>
-						<div class="collapse-content">
-							<ul class="mb-7 list-disc ps-4">
-								{#each item.questions as question, index}
-									{#if index < 3}
-										<li class="hover:text-primary">
-											<a href="/learn/{item.slug}">{question}</a>
-										</li>
-									{/if}
-								{/each}
-								<a href="/learn/{item.slug}" class="hover:text-primary">...</a>
-							</ul>
+			<a href="/learn/{item.slug}" class="w-full">
+				<div
+					class="card h-full border border-gray-700 bg-base-300 shadow-md shadow-gray-800 hover:bg-gradient-to-tr hover:from-base-300 hover:via-base-200 hover:to-gray-700">
+					<div class="card-body grid grid-cols-1 content-start space-y-5 px-5">
+						<h2
+							class="inline-block bg-gradient-to-r from-emerald-200 via-blue-300 to-teal-600 bg-clip-text text-transparent hover:text-primary">
+							{item.name}
+						</h2>
+						<div class="w-full">
+							{#each item.topics as topic}
+								<button
+									class="btn btn-outline btn-xs me-2 mt-1 hover:bg-base-300 hover:text-primary"
+									>{topic}</button>
+							{/each}
 						</div>
 					</div>
+				</div>
+			</a>
+		{/if}
+	{/each}
+</div>
+
+<!-- 
+
+					<div class="collapse border">
+						<input type="checkbox" class="peer" />
+						<div class="collapse-title flex justify-between pe-3">
+							<h3 class="">Learn</h3>
+							<div class="my-auto ml-auto items-end">
+								<TablerChevronDown width="1.5rem" height="1.5rem" class="" />
+							</div>
+						</div>
+						<div class="collapse-content">
+							<div class="card w-full xl:col-span-1">
+								<div class="card-body p-2">
+									<ul class="list-decimal space-y-3 pt-3">
+										{#each item.questions as question, index}
+											{#if index < 3}
+												<li class="hover:text-primary">
+													<a href="/learn/{item.slug}">{question}</a>
+												</li>
+											{/if}
+										{/each}
+									</ul>
+									<a href="/learn/{item.slug}" class="hover:text-primary">...</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					
+
 					<div class="collapse collapse-plus bg-base-200">
 						<input type="radio" name="accordion-{item.name}-2" />
 						<div class="collapse-title text-xl font-medium">
@@ -90,13 +108,4 @@
 								<a href="/learn/{item.slug}" class="hover:text-primary">...</a>
 							</ul>
 						</div>
-					</div>
-					<a
-						href="/learn/{item.slug}"
-						class="btn btn-primary btn-sm hover:bg-lime-500 active:bg-lime-700 active:text-base-content"
-						>Read more&nbsp;&nbsp;&#x2192;</a>
-				</div>
-			</div>
-		{/if}
-	{/each}
-</div>
+					</div> -->

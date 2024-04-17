@@ -71,8 +71,7 @@
 		</h1>
 	</div>
 
-	<div
-		class="rounded-lg border border-slate-700 bg-base-200 p-5 shadow-md shadow-gray-900 hover:bg-base-100 lg:col-span-2">
+	<div class="rounded-lg border border-slate-700 bg-base-200 p-5 hover:bg-base-100 lg:col-span-2">
 		<h3 class="mb-5">Topics</h3>
 		<p class="mb-7">
 			{#each data.post.topics as topic}
@@ -104,8 +103,7 @@
 		</p>
 	</div>
 
-	<div
-		class="rounded-lg border border-slate-700 bg-base-200 p-5 shadow-md shadow-gray-900 hover:bg-base-100">
+	<div class="rounded-lg border border-slate-700 bg-base-200 p-5 hover:bg-base-100">
 		<h3 class="mb-5">Find answers to...</h3>
 		<ul class="mb-7 list-disc ps-4">
 			{#each data.post.questions as question}
@@ -113,8 +111,7 @@
 			{/each}
 		</ul>
 	</div>
-	<div
-		class="rounded-lg border border-slate-700 bg-base-200 p-5 shadow-md shadow-gray-900 hover:bg-base-100">
+	<div class="rounded-lg border border-slate-700 bg-base-200 p-5 hover:bg-base-100">
 		<h3 class="mb-5">Objectives</h3>
 		<ul class="list-disc ps-4">
 			{#each data.post.objectives as objective}
@@ -123,8 +120,8 @@
 		</ul>
 	</div>
 	<div
-		class="col-span-1 rounded-lg border border-slate-700 bg-base-200 p-5 shadow-md shadow-gray-900 hover:bg-base-100 lg:col-span-2">
-		<h3 class="mb-5">Musings</h3>
+		class="col-span-1 rounded-lg border border-slate-700 bg-base-200 p-5 hover:bg-base-100 lg:col-span-2">
+		<h3 class="mb-5">My Observations</h3>
 		<div class="grid grid-cols-1 gap-x-3 gap-y-3 lg:grid-cols-4">
 			{#if data.post.issues == '' || !data.post.issues}
 				Haven't gotten to writing this yet.
@@ -139,9 +136,8 @@
 			{/if}
 		</div>
 	</div>
-	<div
-		class="rounded-lg border border-slate-700 bg-base-200 p-5 shadow-md shadow-gray-900 hover:bg-base-100 lg:col-span-2">
-		<h3 class="mb-5">Courses to Learn From</h3>
+	<div class="rounded-lg border border-slate-700 bg-base-200 p-5 hover:bg-base-100 lg:col-span-2">
+		<h3 class="mb-5">Courses</h3>
 		{#if data.post.resources.courses == '' || !data.post.resources.courses}
 			Sorry, nothing here
 		{:else}
@@ -153,8 +149,8 @@
 		{/if}
 	</div>
 	<div
-		class="col-span-1 rounded-lg border border-slate-700 bg-base-200 p-5 shadow-md shadow-gray-900 hover:bg-base-100 lg:col-span-2">
-		<h3 class="mb-5">Read Up More Yourself</h3>
+		class="col-span-1 rounded-lg border border-slate-700 bg-base-200 p-5 hover:bg-base-100 lg:col-span-2">
+		<h3 class="mb-5">Readings</h3>
 
 		{#if data.post.resources.links == ''}
 			Sorry, nothing here
@@ -166,8 +162,7 @@
 			</ul>
 		{/if}
 	</div>
-	<div
-		class="rounded-lg border border-slate-700 bg-base-200 p-5 shadow-md shadow-gray-900 hover:bg-base-100 lg:col-span-2">
+	<div class="rounded-lg border border-slate-700 bg-base-200 p-5 hover:bg-base-100 lg:col-span-2">
 		<h3 class="mb-5">
 			Watch on Youtube
 
