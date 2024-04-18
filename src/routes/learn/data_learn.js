@@ -340,6 +340,10 @@ export const info = [
 					text: 'Become a Product Manager | Learn the Skills & Get the Job',
 					url: 'https://www.udemy.com/course/become-a-product-manager-learn-the-skills-get-a-job/',
 				},
+				{
+					text: 'Google Project Management: Professional Certificate | Coursera',
+					url: 'https://www.coursera.org/professional-certificates/google-project-management',
+				},
 			],
 			youtube: [
 				'https://www.youtube.com/embed/C27RVio2rOs?si=rKY_2K-n0lC6vk54',
