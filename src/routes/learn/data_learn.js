@@ -309,7 +309,7 @@ export const info = [
 			'What are the typical funding rounds for startups and companies trying to raise funds?',
 			'What is the difference between a product manager vs a project manager?',
 			'What is the difference between a feature team vs a product team?',
-			'',
+			'Who are product leaders? What do they do and what is product leadership?',
 		],
 		objectives: [
 			'Know what goes into a good product',
@@ -356,6 +356,7 @@ export const info = [
 				'https://www.youtube.com/embed/h-KVGHoQ_98',
 				'https://www.youtube.com/embed/6DTK9yDP6p0?si=niskiu1FnnDNhiOQ',
 				'https://www.youtube.com/embed/oWZbWzAyHAE?si=aFy0z0ePzrlUTvSD',
+				'https://www.youtube.com/embed/FCxkT8ULrVg',
 			],
 			links: [
 				{
@@ -399,10 +400,15 @@ export const info = [
 					text: 'Product Metrics: What You Need to Know - Qualtrics',
 					url: 'https://www.qualtrics.com/au/experience-management/product/product-metrics/',
 				},
-
 				{
 					text: 'Product Metrics Guide - Amplitude',
 					url: 'https://amplitude.com/blog/product-metrics-guide',
+				},
+				{ text: "Brandon Chu's Medium Blog", url: 'https://medium.com/@brandonmchu' },
+				{ text: 'Stratechery', url: 'https://stratechery.com/' },
+				{
+					text: 'Intro to Responsive Product Portfolio Management White Paper',
+					url: 'https://dragonboat.io/wp-content/uploads/2021/02/responsive-ppm-intro-whitepaper.pdf',
 				},
 				{
 					text: 'Why Product Metrics Matter',

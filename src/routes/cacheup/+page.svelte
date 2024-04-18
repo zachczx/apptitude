@@ -57,12 +57,12 @@
 			<a href="/cacheup/problems"
 				><div class="card-body grid">
 					<div class="mb-10 space-y-5 self-center lg:mb-20">
-						<h1 class="text-primary">Problem statement</h1>
+						<h1 class="text-primary">Problem Statements</h1>
 
 						<p>
 							<i>Doubt your product works well? Never heard from your users?</i>
 						</p>
-						<p class="">
+						<p>
 							Investigate issues with identifying the problem you're solving, who you're trying to
 							help, user pain points.
 						</p>
