@@ -2,8 +2,10 @@
 	import { info } from './data_learn.js';
 	import Breadcrumbs from '$lib/Breadcrumbs.svelte';
 	import TablerHelpCircleFilled from '$lib/assets/svg/TablerHelpCircleFilled.svelte';
-	import TablerChevronDown from '$lib/assets/svg/TablerChevronDown.svelte';
+	import TablerStarFilled from '$lib/assets/svg/TablerStarFilled.svelte';
 	let showMore = $state(true);
+	let { data } = $props();
+	console.log(data.beginner);
 </script>
 
 <Breadcrumbs textCurrent={'Learn'} />
@@ -35,30 +37,94 @@
 		</div>
 	</div>
 </div>
-<div
-	class="grid grid-cols-1 justify-items-center gap-x-8 gap-y-8 px-5 lg:grid-cols-2 lg:px-20 xl:grid-cols-4">
-	{#each info as item}
-		{#if item.name}
-			<a href="/learn/{item.slug}" class="w-full">
-				<div
-					class="card h-full border border-gray-700 bg-base-300 shadow-md shadow-gray-800 hover:bg-gradient-to-tr hover:from-base-300 hover:via-base-200 hover:to-gray-700">
-					<div class="card-body grid grid-cols-1 content-start space-y-5 px-5">
-						<h2
-							class="inline-block bg-gradient-to-r from-emerald-200 via-blue-300 to-teal-600 bg-clip-text text-transparent hover:text-primary">
-							{item.name}
-						</h2>
-						<div class="w-full">
-							{#each item.topics as topic}
-								<button
-									class="btn btn-outline btn-xs me-2 mt-1 hover:bg-base-300 hover:text-primary"
-									>{topic}</button>
-							{/each}
+<div class="space-y-10 px-5 lg:px-20">
+	<div class="space-y-3">
+		<h2 class="space-x-5">
+			<span class="ps-1">Beginner</span>
+			<span><TablerStarFilled class="mb-1 inline" /></span>
+		</h2>
+		<div class="grid grid-cols-1 justify-items-center gap-3 lg:grid-cols-2 xl:grid-cols-4">
+			{#each data.beginner as item}
+				<a href="/learn/{item.slug}" class="w-full">
+					<div
+						class="card h-full border border-gray-700 bg-base-300 shadow-md shadow-gray-800 hover:bg-gradient-to-tr hover:from-base-300 hover:via-base-200 hover:to-gray-700">
+						<div class="card-body grid grid-cols-1 content-start space-y-5 px-5">
+							<h2
+								class="inline-block bg-gradient-to-r from-emerald-200 via-blue-300 to-teal-600 bg-clip-text text-transparent hover:text-primary">
+								{item.name}
+							</h2>
+							<div class="w-full">
+								{#each item.topics as topic}
+									<span
+										class="btn btn-outline btn-xs me-2 mt-1 hover:bg-base-300 hover:text-primary"
+										>{topic}</span>
+								{/each}
+							</div>
 						</div>
 					</div>
-				</div>
-			</a>
-		{/if}
-	{/each}
+				</a>
+			{/each}
+		</div>
+	</div>
+
+	<div class="space-y-3">
+		<h2 class="space-x-5">
+			<span class="ps-1">Intermediate</span>
+			<span><TablerStarFilled class="mb-1 inline" /><TablerStarFilled class="mb-1 inline" /></span>
+		</h2>
+		<div class="grid grid-cols-1 justify-items-center gap-3 lg:grid-cols-2 xl:grid-cols-4">
+			{#each data.intermediate as item}
+				<a href="/learn/{item.slug}" class="w-full">
+					<div
+						class="card h-full border border-gray-700 bg-base-300 shadow-md shadow-gray-800 hover:bg-gradient-to-tr hover:from-base-300 hover:via-base-200 hover:to-gray-700">
+						<div class="card-body grid grid-cols-1 content-start space-y-5 px-5">
+							<h2
+								class="inline-block bg-gradient-to-r from-emerald-200 via-blue-300 to-teal-600 bg-clip-text text-transparent hover:text-primary">
+								{item.name}
+							</h2>
+							<div class="w-full">
+								{#each item.topics as topic}
+									<span
+										class="btn btn-outline btn-xs me-2 mt-1 hover:bg-base-300 hover:text-primary"
+										>{topic}</span>
+								{/each}
+							</div>
+						</div>
+					</div>
+				</a>
+			{/each}
+		</div>
+	</div>
+	<div class="space-y-3">
+		<h2 class="space-x-5">
+			<span class="ps-1">Advanced</span>
+			<span
+				><TablerStarFilled class="mb-1 inline" /><TablerStarFilled
+					class="mb-1 inline" /><TablerStarFilled class="mb-1 inline" /></span>
+		</h2>
+		<div class="grid grid-cols-1 justify-items-center gap-3 lg:grid-cols-2 xl:grid-cols-4">
+			{#each data.advanced as item}
+				<a href="/learn/{item.slug}" class="w-full">
+					<div
+						class="card h-full border border-gray-700 bg-base-300 shadow-md shadow-gray-800 hover:bg-gradient-to-tr hover:from-base-300 hover:via-base-200 hover:to-gray-700">
+						<div class="card-body grid grid-cols-1 content-start space-y-5 px-5">
+							<h2
+								class="inline-block bg-gradient-to-r from-emerald-200 via-blue-300 to-teal-600 bg-clip-text text-transparent hover:text-primary">
+								{item.name}
+							</h2>
+							<div class="w-full">
+								{#each item.topics as topic}
+									<span
+										class="btn btn-outline btn-xs me-2 mt-1 hover:bg-base-300 hover:text-primary"
+										>{topic}</span>
+								{/each}
+							</div>
+						</div>
+					</div>
+				</a>
+			{/each}
+		</div>
+	</div>
 </div>
 
 <!-- 

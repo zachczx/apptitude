@@ -252,6 +252,12 @@ export const info = [
 				'https://www.youtube.com/embed/l8qmHxzCTfE',
 				'https://www.youtube.com/embed/E3lum6GcjQo',
 				'https://www.youtube.com/embed/k0XR6qv6W-w',
+				'https://www.youtube.com/embed/yu6au1hSIZQ',
+				'https://www.youtube.com/embed/xIUiBQnMvLs?si=X3ARFrRqM1mS9X6b',
+				'https://www.youtube.com/embed/Z5U17iqHhXg',
+				'https://www.youtube.com/embed/OKtNwnbWQBQ',
+				'https://www.youtube.com/embed/FriAm2BnqqA',
+				'https://www.youtube.com/embed/OOVbuBuuOqE',
 			],
 			links: [
 				{
@@ -265,6 +271,16 @@ export const info = [
 				{
 					text: 'Products and Services | GovTech Singapore',
 					url: 'https://www.tech.gov.sg/products-and-services/',
+				},
+				{
+					text: 'Open Government Products | Medium',
+					url: 'https://medium.com/open-government-products',
+				},
+				{ text: 'Hack for Public Good 2024', url: 'https://hack.gov.sg/' },
+				{ text: 'GovTech Medium Blogs', url: 'https://www.tech.gov.sg/media/blogs/listing' },
+				{
+					text: 'Govtech Data Science & Artifical Intelligence Division Medium Blog',
+					url: 'https://medium.com/dsaid-govtech',
 				},
 			],
 		},
