@@ -2,6 +2,7 @@ export const info = [
 	{
 		id: 1,
 		name: 'Basics',
+		intro: 'The world of computing, Internet, modern software development, and the cloud.',
 		slug: 'basics',
 		topics: [
 			'computing',
@@ -127,6 +128,8 @@ export const info = [
 	{
 		id: 2,
 		name: 'Apps',
+		intro:
+			'Know what the free world uses for work. See how much more efficient and better work can be.',
 		slug: 'apps',
 		topics: ['SaaS', 'apps', 'applications', 'AWS', 'Azure', 'GCP', 'M365', 'Workspace'],
 		questions: [
@@ -221,6 +224,8 @@ export const info = [
 	{
 		id: 3,
 		name: 'Central Tools',
+		intro:
+			'Great things have been built centrally by top tier people, stop recreating old grounds and get with the times.',
 		slug: 'wog',
 		topics: ['SG Tech Stack', 'GSIB', 'GCC', 'GDC', 'SG-Teams'],
 		questions: [
@@ -288,6 +293,7 @@ export const info = [
 	{
 		id: 4,
 		name: 'Products',
+		intro: 'Make good products, listen to customers, solve user problems.',
 		slug: 'products',
 		topics: [
 			'product-market fit',
@@ -437,6 +443,7 @@ export const info = [
 	{
 		id: 5,
 		name: 'User Experience',
+		intro: 'If you want people to actually use your app, try not making it suck.',
 		slug: 'ux',
 		topics: [
 			'ux',
@@ -597,6 +604,7 @@ export const info = [
 	{
 		id: 6,
 		name: 'Methodologies',
+		intro: "Agile or fragile? This will become your project's survival guide.",
 		slug: 'methodologies',
 		topics: ['agile', 'waterfall', 'scrum', 'lean', 'kanban', 'safe'],
 		questions: [
@@ -686,6 +694,7 @@ export const info = [
 	{
 		id: 7,
 		name: 'Data',
+		intro: 'Rolling a dice for decisions only works in Monopoly',
 		slug: 'data',
 		topics: [
 			'database',
@@ -799,6 +808,7 @@ export const info = [
 	{
 		id: 8,
 		name: 'AI',
+		intro: 'AI is the extra brain cells you wish you were born with.',
 		slug: 'ai',
 		topics: [
 			'AI',
@@ -964,6 +974,8 @@ export const info = [
 	{
 		id: 9,
 		name: 'Technical',
+		intro:
+			'Befriend the machines, learn to speak their language before they achieve world domination.',
 		slug: 'technical',
 		topics: [
 			'programming',

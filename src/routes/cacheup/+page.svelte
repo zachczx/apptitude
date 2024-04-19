@@ -2,10 +2,7 @@
 	import Breadcrumbs from '$lib/Breadcrumbs.svelte';
 	import { cacheup } from './data_cacheup';
 	import TablerHelpCircleFilled from '$lib/assets/svg/TablerHelpCircleFilled.svelte';
-	import problemStatement from '$lib/assets/user-journey-problem-statement.webp';
-	import userJourneySentiments from '$lib/assets/user-journey-sentiments.webp';
 	import safeKeyboard from '$lib/assets/safe-keyboard.webp?enhanced&w=300';
-	import userJourneyMap from '$lib/assets/user-journey-map.webp';
 	import piggyBank from '$lib/assets/piggy-bank.webp?enhanced&w=300';
 	import product from '$lib/assets/product.webp?enhanced&w=300';
 	import problem from '$lib/assets/problem.webp?enhanced&w=500';

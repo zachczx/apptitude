@@ -38,10 +38,13 @@
 	</div>
 </div>
 <div class="space-y-10 px-2 pt-7 lg:px-20">
-	<div class="space-y-3">
+	<div class="space-y-7">
 		<h2 class="space-x-5">
-			<span class="ps-1 text-primary">Beginner</span>
-			<span><TablerStarFilled class="mb-1 inline fill-primary" /></span>
+			<span
+				><TablerStarFilled class="mb-1 inline fill-base-content" /><TablerStarFilled
+					class="mb-1 inline fill-gray-600" /><TablerStarFilled
+					class="mb-1 inline fill-gray-600" /></span>
+			<span class="ps-2">Beginner</span>
 		</h2>
 		<div class="grid grid-cols-1 justify-items-center gap-3 lg:grid-cols-2 xl:grid-cols-4">
 			{#each data.beginner as item}
@@ -52,6 +55,7 @@
 							<h2 class="hover:text-primary">
 								{item.name}
 							</h2>
+							<p class="text-lg"><i>{item.intro}</i></p>
 							<div class="w-full">
 								{#each item.topics as topic}
 									<span
@@ -68,10 +72,11 @@
 
 	<div class="space-y-3">
 		<h2 class="space-x-5">
-			<span class="ps-1 text-primary">Intermediate</span>
 			<span
-				><TablerStarFilled class="mb-1 inline fill-primary" /><TablerStarFilled
-					class="mb-1 inline fill-primary" /></span>
+				><TablerStarFilled class="mb-1 inline fill-base-content" /><TablerStarFilled
+					class="mb-1 inline fill-base-content" /><TablerStarFilled
+					class="mb-1 inline fill-gray-600" /></span>
+			<span class="ps-2">Intermediate</span>
 		</h2>
 		<div class="grid grid-cols-1 justify-items-center gap-3 lg:grid-cols-2 xl:grid-cols-4">
 			{#each data.intermediate as item}
@@ -82,6 +87,7 @@
 							<h2 class="hover:text-primary">
 								{item.name}
 							</h2>
+							<p class="text-lg"><i>{item.intro}</i></p>
 							<div class="w-full">
 								{#each item.topics as topic}
 									<span
@@ -97,11 +103,11 @@
 	</div>
 	<div class="space-y-3">
 		<h2 class="space-x-5">
-			<span class="ps-1 text-primary">Advanced</span>
 			<span
-				><TablerStarFilled class="mb-1 inline fill-primary" /><TablerStarFilled
-					class="mb-1 inline fill-primary" /><TablerStarFilled
-					class="mb-1 inline fill-primary" /></span>
+				><TablerStarFilled class="mb-1 inline fill-base-content" /><TablerStarFilled
+					class="mb-1 inline fill-base-content" /><TablerStarFilled
+					class="mb-1 inline fill-base-content" /></span
+			><span class="ps-2">Advanced</span>
 		</h2>
 		<div class="grid grid-cols-1 justify-items-center gap-3 lg:grid-cols-2 xl:grid-cols-4">
 			{#each data.advanced as item}
@@ -112,6 +118,7 @@
 							<h2 class="hover:text-primary">
 								{item.name}
 							</h2>
+							<p class="text-lg"><i>{item.intro}</i></p>
 							<div class="w-full">
 								{#each item.topics as topic}
 									<span
