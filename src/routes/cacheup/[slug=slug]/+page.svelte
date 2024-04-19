@@ -13,9 +13,11 @@
 		console.log(seeMoreVar);
 	}
 
+	/* use these in onmount for prerendered pages
 	const showValue = $page.url.searchParams.get('show');
+	console.log(showValue); */
+
 	let currentItem = $state(0);
-	console.log(showValue);
 
 	//for byline
 	let currentBylineNumber = $state(0);
