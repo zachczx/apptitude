@@ -29,7 +29,7 @@
 <Breadcrumbs urlMiddle="cacheup" textMiddle={'Cache-Up Guides'} textCurrent={data.post.name} />
 
 <div
-	class="grid grid-cols-1 place-content-start gap-4 rounded-lg border border-gray-800 bg-base-300 px-2 py-5 shadow-xl shadow-gray-950 lg:mx-20 lg:grid-cols-2 lg:px-5">
+	class="grid grid-cols-1 place-content-start gap-4 rounded-lg border border-gray-800 bg-base-300 px-2 py-5 shadow-xl shadow-gray-900 lg:mx-20 lg:grid-cols-2 lg:px-5">
 	<div class="next-prev grid grid-cols-2 text-center font-bold lg:col-span-2">
 		<div class="justify-self-start text-lg hover:text-primary lg:text-xl">
 			<a href="/cacheup/{data.lastPost.slug}"
@@ -68,8 +68,8 @@
 	<div class="text-center lg:col-span-2">
 		<figure><img src="" alt="" /></figure>
 		<h1
-			class="mb-3 inline-block bg-gradient-to-r from-emerald-200 via-blue-300 to-teal-300 bg-clip-text text-transparent">
-			Let's talk: {data.post.name}
+			class="inline-block bg-gradient-to-r from-emerald-200 via-orange-200 to-pink-200 bg-clip-text py-3 text-transparent">
+			{data.post.name}
 		</h1>
 		{#if data.post.bylines[0].text != ''}
 			<div class="grid-cols-auto grid place-items-center">
