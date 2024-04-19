@@ -970,11 +970,13 @@ export const info = [
 			'languages',
 			'development',
 			'algorithms',
+			'cli',
 			'data',
+			'databases',
 			'structures',
 			'engineering',
 			'cybersecurity',
-			'CI/CD',
+			'ci/cd',
 			'git',
 		],
 		questions: [
@@ -993,6 +995,7 @@ export const info = [
 			"Technical skills can very quickly become obsolete, so people who don't continuously keep up can also hinder innovation and give bad recommendations",
 		],
 		objectives: [
+			'Learn about frontend, backend, fullstack development',
 			'Know what the rest of the world does to solve computer engineering problems',
 			'Learn a useful life skill using logic to solve problems',
 			'Understand whether what you have around you is good or trash',
@@ -1037,10 +1040,17 @@ export const info = [
 			],
 			links: [
 				{
+					text: 'Front-End Development: The Complete Guide',
+					url: 'https://cloudinary.com/guides/front-end-development/front-end-development-the-complete-guide',
+				},
+				{
+					text: 'How to Become a Backend Developer in 2024 | A Step-by-Step Guide',
+					url: 'https://www.geeksforgeeks.org/back-end-developer-roadmap/',
+				},
+				{
 					text: 'How Long Does It Take to Become a Back End Developer?',
 					url: 'https://medium.com/bootdotdev/how-long-does-it-take-to-become-a-back-end-developer-226a4f1cece2',
 				},
-
 				{
 					text: 'W3Schools Online Web Tutorials',
 					url: 'https://www.w3schools.com/',
@@ -1072,6 +1082,30 @@ export const info = [
 				{
 					text: 'Forkful Open Source Coding Cookbook',
 					url: 'https://forkful.ai/en/',
+				},
+				{
+					text: 'Developer Tools on AWS',
+					url: 'https://aws.amazon.com/products/developer-tools/',
+				},
+				{
+					text: 'C++ Language',
+					url: 'https://cplusplus.com/doc/tutorial/',
+				},
+				{
+					text: 'Zig vs Rust: A Comprehensive Comparison for Modern Developers',
+					url: 'https://medium.com/@priyanka.navgire11/zig-vs-rust-a-comprehensive-comparison-for-modern-developers-5a50f7650e98',
+				},
+				{
+					text: 'Django Tutorial | W3Schools',
+					url: 'https://www.w3schools.com/django/',
+				},
+				{
+					text: 'Python Tutorial | W3Schools',
+					url: 'https://www.w3schools.com/python/',
+				},
+				{
+					text: 'AWS Cloud Databases',
+					url: 'https://aws.amazon.com/products/databases/',
 				},
 			],
 		},
