@@ -3,7 +3,7 @@
 	import Breadcrumbs from '$lib/Breadcrumbs.svelte';
 	import TablerHelpCircleFilled from '$lib/assets/svg/TablerHelpCircleFilled.svelte';
 	import TablerStarFilled from '$lib/assets/svg/TablerStarFilled.svelte';
-	let showMore = $state(true);
+	let showMore = $state(false);
 	let { data } = $props();
 	console.log(data.beginner);
 </script>
@@ -16,7 +16,7 @@
 	</h1>
 	<div><i>Find your own path upsizing your Bytes into Megabytes.</i></div>
 </div>
-<div class="mb-10 space-y-5 px-3 lg:px-20">
+<div class="mb-10 space-y-5 px-2 lg:px-20">
 	<div class="collapse collapse-arrow mb-10 bg-base-300">
 		<input type="checkbox" name="my-accordion-2" bind:checked={showMore} />
 		<div class="collapse-title">
@@ -37,11 +37,11 @@
 		</div>
 	</div>
 </div>
-<div class="space-y-10 px-5 lg:px-20">
+<div class="space-y-10 px-2 pt-7 lg:px-20">
 	<div class="space-y-3">
 		<h2 class="space-x-5">
-			<span class="ps-1">Beginner</span>
-			<span><TablerStarFilled class="mb-1 inline" /></span>
+			<span class="ps-1 text-primary">Beginner</span>
+			<span><TablerStarFilled class="mb-1 inline fill-primary" /></span>
 		</h2>
 		<div class="grid grid-cols-1 justify-items-center gap-3 lg:grid-cols-2 xl:grid-cols-4">
 			{#each data.beginner as item}
@@ -49,8 +49,7 @@
 					<div
 						class="card h-full border border-gray-700 bg-base-300 shadow-md shadow-gray-800 hover:bg-gradient-to-tr hover:from-base-300 hover:via-base-200 hover:to-gray-700">
 						<div class="card-body grid grid-cols-1 content-start space-y-5 px-5">
-							<h2
-								class="inline-block bg-gradient-to-r from-emerald-200 via-blue-300 to-teal-600 bg-clip-text text-transparent hover:text-primary">
+							<h2 class="hover:text-primary">
 								{item.name}
 							</h2>
 							<div class="w-full">
@@ -69,8 +68,10 @@
 
 	<div class="space-y-3">
 		<h2 class="space-x-5">
-			<span class="ps-1">Intermediate</span>
-			<span><TablerStarFilled class="mb-1 inline" /><TablerStarFilled class="mb-1 inline" /></span>
+			<span class="ps-1 text-primary">Intermediate</span>
+			<span
+				><TablerStarFilled class="mb-1 inline fill-primary" /><TablerStarFilled
+					class="mb-1 inline fill-primary" /></span>
 		</h2>
 		<div class="grid grid-cols-1 justify-items-center gap-3 lg:grid-cols-2 xl:grid-cols-4">
 			{#each data.intermediate as item}
@@ -78,8 +79,7 @@
 					<div
 						class="card h-full border border-gray-700 bg-base-300 shadow-md shadow-gray-800 hover:bg-gradient-to-tr hover:from-base-300 hover:via-base-200 hover:to-gray-700">
 						<div class="card-body grid grid-cols-1 content-start space-y-5 px-5">
-							<h2
-								class="inline-block bg-gradient-to-r from-emerald-200 via-blue-300 to-teal-600 bg-clip-text text-transparent hover:text-primary">
+							<h2 class="hover:text-primary">
 								{item.name}
 							</h2>
 							<div class="w-full">
@@ -97,10 +97,11 @@
 	</div>
 	<div class="space-y-3">
 		<h2 class="space-x-5">
-			<span class="ps-1">Advanced</span>
+			<span class="ps-1 text-primary">Advanced</span>
 			<span
-				><TablerStarFilled class="mb-1 inline" /><TablerStarFilled
-					class="mb-1 inline" /><TablerStarFilled class="mb-1 inline" /></span>
+				><TablerStarFilled class="mb-1 inline fill-primary" /><TablerStarFilled
+					class="mb-1 inline fill-primary" /><TablerStarFilled
+					class="mb-1 inline fill-primary" /></span>
 		</h2>
 		<div class="grid grid-cols-1 justify-items-center gap-3 lg:grid-cols-2 xl:grid-cols-4">
 			{#each data.advanced as item}
@@ -108,8 +109,7 @@
 					<div
 						class="card h-full border border-gray-700 bg-base-300 shadow-md shadow-gray-800 hover:bg-gradient-to-tr hover:from-base-300 hover:via-base-200 hover:to-gray-700">
 						<div class="card-body grid grid-cols-1 content-start space-y-5 px-5">
-							<h2
-								class="inline-block bg-gradient-to-r from-emerald-200 via-blue-300 to-teal-600 bg-clip-text text-transparent hover:text-primary">
+							<h2 class="hover:text-primary">
 								{item.name}
 							</h2>
 							<div class="w-full">

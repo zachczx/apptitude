@@ -13,7 +13,7 @@
 		class="pb-20 pt-10 text-center text-5xl text-lime-400 lg:pt-5 lg:text-6xl xl:text-7xl min-[1921px]:text-8xl">
 		How Apptitude Helps You
 	</h1>
-	<div class="grid grid-cols-1 gap-x-5 gap-y-10 lg:grid-cols-7">
+	<div class="grid grid-cols-1 gap-3 lg:grid-cols-7 lg:gap-7">
 		<div
 			class="card col-span-3 border border-gray-700 bg-base-100 shadow-md shadow-gray-950 transition duration-500 ease-in-out hover:bg-gray-700 lg:col-span-1 lg:row-span-1">
 			<div class="card-body grid h-48 content-center">

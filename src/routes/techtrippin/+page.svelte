@@ -3,6 +3,7 @@
 	import twentyFiveDev from '$lib/assets/25yodev.webp?enhanced&w=200;150;70';
 	import Breadcrumbs from '$lib/Breadcrumbs.svelte';
 	import TablerHelpCircleFilled from '$lib/assets/svg/TablerHelpCircleFilled.svelte';
+	import TablerMessage from '$lib/assets/svg/TablerMessage.svelte';
 	import { fly } from 'svelte/transition';
 
 	let showMore = $state(false);
@@ -39,14 +40,12 @@
 			</div>
 
 			<div
-				class="grid grid-cols-1 justify-items-center gap-y-8 lg:mb-7 lg:grid-cols-3 lg:gap-x-5 lg:gap-y-10">
+				class="grid grid-cols-1 justify-items-center gap-y-8 rounded-2xl border border-gray-700 bg-base-300 lg:mb-7 lg:grid-cols-3 lg:gap-x-5 lg:gap-y-10">
 				<div id="navigation">
 					<div id="dropdown" class="w-full lg:hidden">
 						<label class="ms-1 font-medium"
 							>Select an item:
-							<select
-								bind:value={currentItem}
-								class="select select-bordered w-full bg-base-300 text-lg">
+							<select bind:value={currentItem} class="select select-bordered w-full text-lg">
 								{#each techtrippin as sidebarItem, index}
 									<option value={index}>{sidebarItem.title}</option>
 								{/each}
@@ -54,19 +53,16 @@
 						</label>
 					</div>
 					<div id="sidebar" class="z-20 col-span-1 hidden lg:contents">
-						<div class="rounded-2xl bg-base-300">
-							<h2 class="mx-5 rounded-t-2xl border-b-2 bg-base-300 px-5 pb-3 pt-5 text-center">
-								Menu
-							</h2>
-							<ol class="divide-y-2 divide-slate-600 px-5">
+						<div class="h-full rounded-l-2xl bg-[#191D24] py-3">
+							<ol class="divide-y-2 divide-slate-700 px-5">
 								{#each techtrippin as sidebarItem, index}
 									<button
 										onclick={() => {
 											currentItem = index;
 										}}
 										class="w-full"
-										><li class="ms-5 list-decimal py-3 ps-5 text-start hover:text-primary">
-											{sidebarItem.title}
+										><li class="py-3 ps-5 text-start text-xl hover:text-primary">
+											<TablerMessage class="mb-1 me-3 inline" />{sidebarItem.title}
 										</li></button>
 								{/each}
 							</ol>
@@ -77,10 +73,10 @@
 					{#key currentItem}
 						<div
 							data-id="Item-{currentItem}"
-							class="z-10 rounded-2xl bg-base-300"
+							class="z-10 rounded-2xl"
 							in:fly={{ duration: 300, x: -40 }}
 							out:fly={{ duration: 0 }}>
-							<h2 class="mx-5 rounded-t-2xl border-b-2 bg-base-300 px-5 pb-3 pt-5 text-center">
+							<h2 class="mx-5 rounded-t-2xl border-b-2 px-5 pb-3 pt-5">
 								{techtrippin[currentItem].title}
 							</h2>
 							<div class="space-y-10 p-2 xl:p-6">
