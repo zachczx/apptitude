@@ -67,7 +67,7 @@
 		<figure><img src="" alt="" /></figure>
 		<h1
 			class="mb-3 inline-block bg-gradient-to-r from-emerald-200 via-blue-300 to-teal-300 bg-clip-text text-transparent">
-			Let's talk: {data.post.name}
+			Learn: {data.post.name}
 		</h1>
 	</div>
 

@@ -54,14 +54,14 @@
 					</div>
 					<div id="sidebar" class="z-20 col-span-1 hidden lg:contents">
 						<div class="h-full rounded-l-2xl bg-[#191D24] py-3">
-							<ol class="divide-y-2 divide-slate-700 px-5">
+							<ol class="divide-y-2 divide-slate-800">
 								{#each techtrippin as sidebarItem, index}
 									<button
 										onclick={() => {
 											currentItem = index;
 										}}
-										class="w-full"
-										><li class="py-3 ps-5 text-start text-xl hover:text-primary">
+										class="w-full px-5"
+										><li class="py-7 ps-5 text-start text-xl hover:text-primary">
 											<TablerMessage class="mb-1 me-3 inline" />{sidebarItem.title}
 										</li></button>
 								{/each}
