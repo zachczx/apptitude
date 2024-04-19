@@ -18,7 +18,7 @@
 			class="card col-span-3 border border-gray-700 bg-base-100 shadow-md shadow-gray-950 transition duration-500 ease-in-out hover:bg-gray-700 lg:col-span-1 lg:row-span-1">
 			<div class="card-body grid h-48 content-center">
 				<h2
-					class="inline-block bg-gradient-to-r from-emerald-200 via-orange-200 to-pink-200 bg-clip-text py-3 text-transparent">
+					class="inline-block bg-gradient-to-r from-emerald-200 via-lime-200 to-teal-300 bg-clip-text py-3 text-transparent">
 					Hello, tech product owner!
 				</h2>
 			</div>
@@ -44,7 +44,7 @@
 			class="card card-side col-span-3 row-span-1 border border-gray-700 bg-base-100 shadow-md shadow-gray-950 transition duration-500 ease-in-out hover:bg-gray-700">
 			<div class="card-body grid content-start space-y-2">
 				<h2
-					class="mb-4 inline-block border-b border-b-base-content bg-gradient-to-r from-emerald-200 via-orange-200 to-pink-200 bg-clip-text py-3 pb-3 text-transparent">
+					class="mb-4 inline-block border-b border-b-base-content bg-gradient-to-r from-emerald-200 via-lime-200 to-teal-300 bg-clip-text py-3 pb-3 text-transparent">
 					Step 1a: Learn Foundations
 				</h2>
 				<p>
@@ -66,7 +66,7 @@
 						stroke-width="2"
 						stroke-linecap="round"
 						stroke-linejoin="round"
-						class="icon icon-tabler icons-tabler-outline icon-tabler-article inline"
+						class="icon icon-tabler icons-tabler-outline icon-tabler-article inline transition duration-500 ease-in hover:stroke-primary"
 						><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path
 							d="M3 4m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z" /><path
 							d="M7 8h10" /><path d="M7 12h10" /><path d="M7 16h10" /></svg>
@@ -80,7 +80,7 @@
 						stroke-width="2"
 						stroke-linecap="round"
 						stroke-linejoin="round"
-						class="icon icon-tabler icons-tabler-outline icon-tabler-brand-youtube inline"
+						class="icon icon-tabler icons-tabler-outline icon-tabler-brand-youtube inline transition duration-500 ease-in hover:stroke-primary"
 						><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path
 							d="M2 8a4 4 0 0 1 4 -4h12a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-12a4 4 0 0 1 -4 -4v-8z" /><path
 							d="M10 9l5 3l-5 3z" /></svg>
@@ -94,7 +94,7 @@
 						stroke-width="2"
 						stroke-linecap="round"
 						stroke-linejoin="round"
-						class="icon icon-tabler icons-tabler-outline icon-tabler-world-www inline"
+						class="icon icon-tabler icons-tabler-outline icon-tabler-world-www inline transition duration-500 ease-in hover:stroke-primary"
 						><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path
 							d="M19.5 7a9 9 0 0 0 -7.5 -4a8.991 8.991 0 0 0 -7.484 4" /><path
 							d="M11.5 3a16.989 16.989 0 0 0 -1.826 4" /><path
@@ -114,7 +114,7 @@
 						stroke-width="2"
 						stroke-linecap="round"
 						stroke-linejoin="round"
-						class="icon icon-tabler icons-tabler-outline icon-tabler-certificate inline"
+						class="icon icon-tabler icons-tabler-outline icon-tabler-certificate inline transition duration-500 ease-in hover:stroke-primary"
 						><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path
 							d="M15 15m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path
 							d="M13 17.5v4.5l2 -1.5l2 1.5v-4.5" /><path
@@ -130,7 +130,7 @@
 						stroke-width="2"
 						stroke-linecap="round"
 						stroke-linejoin="round"
-						class="icon icon-tabler icons-tabler-outline icon-tabler-brand-google inline"
+						class="icon icon-tabler icons-tabler-outline icon-tabler-brand-google inline transition duration-500 ease-in hover:stroke-primary"
 						><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path
 							d="M20.945 11a9 9 0 1 1 -3.284 -5.997l-2.655 2.392a5.5 5.5 0 1 0 2.119 6.605h-4.125v-3h7.945z" /></svg>
 					<svg
@@ -143,7 +143,7 @@
 						stroke-width="2"
 						stroke-linecap="round"
 						stroke-linejoin="round"
-						class="icon icon-tabler icons-tabler-outline icon-tabler-brand-aws inline"
+						class="icon icon-tabler icons-tabler-outline icon-tabler-brand-aws inline transition duration-500 ease-in hover:stroke-primary"
 						><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path
 							d="M17 18.5a15.198 15.198 0 0 1 -7.37 1.44a14.62 14.62 0 0 1 -6.63 -2.94" /><path
 							d="M19.5 21c.907 -1.411 1.451 -3.323 1.5 -5c-1.197 -.773 -2.577 -.935 -4 -1" /><path
@@ -166,7 +166,7 @@
 			class="card col-span-3 row-span-1 overflow-hidden border border-gray-700 bg-base-100 shadow-md shadow-gray-950 transition duration-500 ease-in-out hover:bg-gray-700 lg:col-span-2">
 			<div class="card-body grid content-start space-y-2 rounded-2xl">
 				<h2
-					class="mb-4 inline-block border-b border-b-base-content bg-gradient-to-r from-emerald-200 via-orange-200 to-pink-200 bg-clip-text py-3 pb-3 text-transparent">
+					class="mb-4 inline-block border-b border-b-base-content bg-gradient-to-r from-emerald-200 via-lime-200 to-teal-300 bg-clip-text py-3 pb-3 text-transparent">
 					Step 1b: Apply Knowledge
 				</h2>
 				<p>Do personal projects, try stuff beyond tutorial copy-pasting or Coursera Labs.</p>
@@ -179,7 +179,7 @@
 			class="card col-span-3 row-span-1 w-full border border-gray-700 bg-base-100 shadow-md shadow-gray-950 transition duration-500 ease-in-out hover:bg-gray-700">
 			<div class="card-body grid content-start space-y-2">
 				<h2
-					class="mb-4 inline-block border-b border-b-base-content bg-gradient-to-r from-emerald-200 via-orange-200 to-pink-200 bg-clip-text py-3 pb-3 text-transparent">
+					class="mb-4 inline-block border-b border-b-base-content bg-gradient-to-r from-emerald-200 via-lime-200 to-teal-300 bg-clip-text py-3 pb-3 text-transparent">
 					Step 2: Use My Cheatsheets To Revise
 				</h2>
 				<p>You won't be able to learn everything by yourself in a short time. Or maybe never.</p>
@@ -203,7 +203,7 @@
 			<div
 				class=" card-body grid content-start space-y-2 transition duration-500 ease-in-out hover:bg-gray-700">
 				<h2
-					class="mb-4 inline-block border-b border-b-base-content bg-gradient-to-r from-emerald-200 via-orange-200 to-pink-200 bg-clip-text py-3 pb-3 text-transparent">
+					class="mb-4 inline-block border-b border-b-base-content bg-gradient-to-r from-emerald-200 via-lime-200 to-teal-300 bg-clip-text py-3 pb-3 text-transparent">
 					Step 3: Better Manage Products & Teams
 				</h2>
 				<p>
@@ -224,7 +224,7 @@
 			<div
 				class="card-body grid content-start space-y-2 transition duration-500 ease-in-out hover:bg-gray-700">
 				<h2
-					class="mb-4 inline-block border-b border-b-base-content bg-gradient-to-r from-emerald-200 via-orange-200 to-pink-200 bg-clip-text py-3 pb-3 text-transparent">
+					class="mb-4 inline-block border-b border-b-base-content bg-gradient-to-r from-emerald-200 via-lime-200 to-teal-300 bg-clip-text py-3 pb-3 text-transparent">
 					Step 4: Say "No!" to Shitty Products
 				</h2>
 				<p>
@@ -239,7 +239,7 @@
 			class="card col-span-3 row-span-1 w-full border border-gray-700 bg-base-100 shadow-md shadow-gray-950 transition duration-500 ease-in-out hover:bg-gray-700 lg:col-span-2">
 			<div class="card-body grid content-center justify-center space-y-2">
 				<h2
-					class="inline-block bg-gradient-to-r from-emerald-200 via-orange-200 to-pink-200 bg-clip-text py-3 text-transparent">
+					class="inline-block bg-gradient-to-r from-emerald-200 via-lime-200 to-teal-300 bg-clip-text py-3 text-transparent">
 					Now that's truly Tech for Public Good
 				</h2>
 			</div>
