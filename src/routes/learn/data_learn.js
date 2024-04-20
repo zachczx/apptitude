@@ -2,15 +2,23 @@ export const info = [
 	{
 		id: 1,
 		name: 'Basics',
-		intro: 'The world of computing, Internet, modern software development, and the cloud.',
+		intro: 'The world of computing and modern software development.',
 		slug: 'basics',
 		topics: [
 			'computing',
-			'internet',
-			'http',
-			'https',
+			'binary',
+			'cpu',
+			'kernel',
+			'open source',
+			'linux',
+			'assembly',
+			'algorithms',
+			'runtime',
+			'compiler',
+			'gpu',
+			'memory',
 			'networking',
-			'cloud',
+			'internet',
 			'development',
 			'software',
 			'apps',
@@ -22,21 +30,13 @@ export const info = [
 			'What are containers, docker, Kubernetes?',
 			'What are lower and higher level languages?',
 			'What languages work best for prototyping, speed/performance, large teams/apps, web interactivity, data science, scaling up?',
-			'How does the Internet work?',
-			'What is HTML, CSS, Javascript, Web Assembly?',
-			'What are web/javascript frameworks like React JS, Angular JS, Solid JS, Vue JS, Next JS, Node JS, Astro, Svelte',
-			'What are routers, servers, packets, DNS?',
-			'How does a website get displayed on my computer?',
-			'What are HTTP, HTTP 2, HTTP 3, SSL, GET, POST, PUT, DELETE?',
-			'What are static and dynamic websites?',
-			'What are the differences between frontend and backend development/developers?',
-			'How does my webapp fetch, create, update and delete data?',
 			'What is the cloud, compute, storage?',
 			'What is on-premises?',
 			'What is virtualization, virtual machines, hypervisors, key management systems?',
-			'What are APIs/services, monoliths, microservices, ',
+			'What are APIs/services, monoliths, microservices?',
 			'What are the advantages and disadvantages of monolithic vs microservice architectures?',
 			'What are low code, no code, and WYSIWYG tools?',
+			'How do you solve problems with computers and code?',
 		],
 		issues: [
 			"The hardest part of building software is not coding, it's requirements",
@@ -49,13 +49,11 @@ export const info = [
 		],
 		objectives: [
 			'Understand the Basics of Computer Science and Engineering',
-			'Learn how the Internet works and how code turns into products we see and use on the web',
 			'Figure out the building blocks necessary to build modern apps, services, systems, platforms',
 			'Comprehend the broad differences between programming languages',
-			'Grasp the Fundamentals of Internet, web technologies, network infrastructure',
 			'Know what constitutes modern, digital infrastructure',
 			'Explore cloud computing, cloud storage, virtualization and cloud infrastructure management tools',
-			'Learn how reasonable people think about the best tools for which use-cases, e.g. Astro for static websites instead of React bloat',
+			'Learn how reasonable people think about the best tools for which use-cases, e.g. Rust instead of Python',
 		],
 		resources: {
 			courses: [
@@ -79,10 +77,7 @@ export const info = [
 					text: 'Programming for Everybody (Getting Started with Python) | Coursera',
 					url: 'https://www.coursera.org/learn/python',
 				},
-				{
-					text: 'AWS Fundamentals Specialization [3 courses] (AWS) | Coursera',
-					url: 'https://www.coursera.org/specializations/aws-fundamentals',
-				},
+
 				{
 					text: 'Google IT Support Professional Certificate | Coursera',
 					url: 'https://www.coursera.org/professional-certificates/google-it-support',
@@ -92,23 +87,17 @@ export const info = [
 				'https://youtube.com/embed/mCq8-xTH7jA',
 				'https://youtube.com/embed/rRSD128KWIM',
 				'https://youtube.com/embed/-uleG_Vecis',
-				'https://youtube.com/embed/erEgovG9WBs',
 				'https://youtube.com/embed/vqs_0W-MSB0',
-				'https://youtube.com/embed/lkIFF4maKMU',
-				'https://youtube.com/embed/zN8YNNHcaZc?si=Tj2S7qrsec51DKrJ',
-				'https://youtube.com/embed/zOjov-2OZ0E?si=pQnCP85QMk1MNHIh',
-				'https://www.youtube.com/embed/6hPMdpk9qA4?si=3eIaOho9EkNWTPjM',
-				'https://youtube.com/embed/3C_22eBWpjg',
+				'https://youtube.com/embed/LN0ucKNX0hc',
+				'https://youtube.com/embed/gI-qXk7XojA',
+				'https://youtube.com/embed/M5BZou6C01w',
+				'https://youtube.com/embed/rL8X2mlNHPM',
+				'https://youtube.com/embed/1GSjbWt0c9M',
+				'https://youtube.com/embed/FZGugFqdr60',
+				'https://youtube.com/embed/guvsH5OFizE',
+				'https://youtube.com/embed/OtDxDvCpPL4',
 			],
 			links: [
-				{
-					text: 'How the Web Works: A Primer for Newcomers to Web Development (or anyone, really)',
-					url: 'https://www.freecodecamp.org/news/how-the-web-works-a-primer-for-newcomers-to-web-development-or-anyone-really-b4584e63585c/',
-				},
-				{
-					text: 'What is SSL (Secure Sockets Layer)? | Cloudflare',
-					url: 'https://www.cloudflare.com/en-gb/learning/ssl/what-is-ssl/',
-				},
 				{
 					text: "The hardest part of building software is not coding, it's requirements",
 					url: 'https://stackoverflow.blog/2023/12/29/the-hardest-part-of-building-software-is-not-coding-its-requirements/',
@@ -117,16 +106,103 @@ export const info = [
 					text: 'Introducing How Computers Work',
 					url: 'https://www.youtube.com/watch?v=OAx_6-wdslM&list=PLzdnOPI1iJNcsRwJhvksEo1tJqjIqWbN-',
 				},
+				{ text: 'Computers', url: 'https://www.explainthatstuff.com/howcomputerswork.html' },
 				{
-					text: 'Cloud Security: A Primer for Policymakers',
-					url: 'https://carnegieendowment.org/2020/08/31/cloud-security-primer-for-policymakers-pub-82597',
+					text: 'So how do computers actually work?',
+					url: 'https://medium.com/@SchezHugo/so-how-do-computers-actually-work-911bd3681dbd',
 				},
-				{ text: 'Load Balancing', url: 'https://samwho.dev/load-balancing/' },
+				{
+					text: 'Computer Science | CrashCourse Youtube Playlist',
+					url: 'https://www.youtube.com/playlist?list=PL8dPuuaLjXtNlUrzyH5r6jN9ulIgZBpdo',
+				},
 			],
 		},
 	},
 	{
 		id: 2,
+		name: 'Basics (The Web)',
+		intro: 'The web and the cloud.',
+		slug: 'basics-web',
+		topics: ['internet', 'http', 'https', 'cloud', 'ssl', 'html', 'css', 'javascript', 'php'],
+		questions: [
+			'How does the Internet work?',
+			'What is HTML, CSS, Javascript, Web Assembly?',
+			'What are web/javascript frameworks like React JS, Angular JS, Solid JS, Vue JS, Next JS, Node JS, Astro, Svelte',
+			'What are routers, servers, packets, DNS?',
+			'How does a website get displayed on my computer?',
+			'What are HTTP, HTTP 2, HTTP 3, SSL, GET, POST, PUT, DELETE?',
+			'What are static and dynamic websites?',
+			'What are the differences between frontend and backend development/developers?',
+			'How does my webapp fetch, create, update and delete data?',
+			'What is the cloud, compute, storage?',
+			'What are low code, no code, and WYSIWYG tools like Wix, Webflow?',
+		],
+		issues: [''],
+		objectives: [
+			'Learn how the Internet works and how code turns into products we see and use on the web',
+			'Comprehend the broad differences between programming languages and web frameworks',
+			'Grasp the Fundamentals of Internet, web technologies, network infrastructure',
+			'Know what constitutes modern, digital web infrastructure',
+			'Explore cloud computing, cloud storage, virtualization and cloud infrastructure management tools',
+			'Learn how reasonable people think about the best tools for which use-cases, e.g. Astro for static websites instead of React bloat',
+		],
+		resources: {
+			courses: [
+				{
+					text: 'AWS Fundamentals Specialization [3 courses] (AWS) | Coursera',
+					url: 'https://www.coursera.org/specializations/aws-fundamentals',
+				},
+			],
+			youtube: [
+				'https://youtube.com/embed/erEgovG9WBs',
+				'https://youtube.com/embed/lkIFF4maKMU',
+				'https://youtube.com/embed/zN8YNNHcaZc?si=Tj2S7qrsec51DKrJ',
+				'https://www.youtube.com/embed/6hPMdpk9qA4?si=3eIaOho9EkNWTPjM',
+				'https://youtube.com/embed/3C_22eBWpjg',
+			],
+			links: [
+				{
+					text: 'Web mechanics | MDN Web Docs',
+					url: 'https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics',
+				},
+				{
+					text: 'How the Web Works: A Primer for Newcomers to Web Development (or anyone, really)',
+					url: 'https://www.freecodecamp.org/news/how-the-web-works-a-primer-for-newcomers-to-web-development-or-anyone-really-b4584e63585c/',
+				},
+				{
+					text: 'How does the Internet work? | Cloudflare',
+					url: 'https://www.cloudflare.com/en-gb/learning/network-layer/how-does-the-internet-work/',
+				},
+				{
+					text: 'Learn web development | MDN Web Docs',
+					url: 'https://developer.mozilla.org/en-US/docs/Learn',
+				},
+				{ text: 'Learn Web Development | Web.dev', url: 'https://web.dev/learn' },
+
+				{
+					text: 'Javascript | MDN Web Docs',
+					url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
+				},
+
+				{
+					text: 'Document Object Model (DOM) | MDN Web Docs',
+					url: 'https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model',
+				},
+				{ text: 'Load Balancing', url: 'https://samwho.dev/load-balancing/' },
+				{
+					text: 'What is SSL (Secure Sockets Layer)? | Cloudflare',
+					url: 'https://www.cloudflare.com/en-gb/learning/ssl/what-is-ssl/',
+				},
+				{
+					text: 'Cloud Security: A Primer for Policymakers',
+					url: 'https://carnegieendowment.org/2020/08/31/cloud-security-primer-for-policymakers-pub-82597',
+				},
+				{ text: 'Learn CSS | Web.dev', url: 'https://web.dev/learn/css' },
+			],
+		},
+	},
+	{
+		id: 3,
 		name: 'Apps',
 		intro:
 			'Know what the free world uses for work. See how much more efficient and better work can be.',
@@ -222,7 +298,7 @@ export const info = [
 		},
 	},
 	{
-		id: 3,
+		id: 4,
 		name: 'Central Tools',
 		intro:
 			'Great things have been built centrally by top tier people, stop recreating old grounds and get with the times.',
@@ -291,7 +367,7 @@ export const info = [
 		},
 	},
 	{
-		id: 4,
+		id: 5,
 		name: 'Products',
 		intro: 'Make good products, listen to customers, solve user problems.',
 		slug: 'products',
@@ -441,7 +517,7 @@ export const info = [
 		},
 	},
 	{
-		id: 5,
+		id: 6,
 		name: 'User Experience',
 		intro: 'If you want people to actually use your app, try not making it suck.',
 		slug: 'ux',
@@ -602,7 +678,7 @@ export const info = [
 		},
 	},
 	{
-		id: 6,
+		id: 7,
 		name: 'Methodologies',
 		intro: "Agile or fragile? This will become your project's survival guide.",
 		slug: 'methodologies',
@@ -692,7 +768,7 @@ export const info = [
 		},
 	},
 	{
-		id: 7,
+		id: 8,
 		name: 'Data',
 		intro: 'Rolling a dice for decisions only works in Monopoly.',
 		slug: 'data',
@@ -765,6 +841,7 @@ export const info = [
 				'https://youtube.com/embed/wSct_cbqzpM',
 				'https://youtube.com/embed/sPyZALF1tPc',
 				'https://youtube.com/embed/e5RLjJvTt_w',
+				'https://youtube.com/embed/DuDz6B4cqVc',
 				'https://youtube.com/embed/W0Lhv7VNkxk',
 				'https://youtube.com/embed/yZvFH7B6gKI?si=knmkZUMf5A21sLXs',
 				'https://youtube.com/embed/-bSkREem8dM?si=i6lRT55iMs30lOLS',
@@ -806,7 +883,7 @@ export const info = [
 		},
 	},
 	{
-		id: 8,
+		id: 9,
 		name: 'AI',
 		intro: 'AI is the extra brain cells you wish you were born with.',
 		slug: 'ai',
@@ -972,7 +1049,7 @@ export const info = [
 		},
 	},
 	{
-		id: 9,
+		id: 10,
 		name: 'Technical',
 		intro:
 			'Befriend the machines, learn to speak their language before they achieve world domination.',
@@ -1049,6 +1126,7 @@ export const info = [
 				'https://youtube.com/embed/aXOChLn5ZdQ?si=-KXtJPY2mI3pRlIv',
 				'https://youtube.com/embed/E8cM12jRH7k',
 				'https://youtube.com/embed/ijQvgERWKjA',
+				'https://youtube.com/embed/zOjov-2OZ0E?si=pQnCP85QMk1MNHIh',
 			],
 			links: [
 				{

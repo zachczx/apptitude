@@ -5,7 +5,6 @@
 	import TablerStarFilled from '$lib/assets/svg/TablerStarFilled.svelte';
 	let showMore = $state(false);
 	let { data } = $props();
-	console.log(data.beginner);
 </script>
 
 <Breadcrumbs textCurrent={'Learn'} />
