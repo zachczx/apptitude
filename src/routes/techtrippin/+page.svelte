@@ -1,5 +1,5 @@
 <script>
-	import { techtrippin } from './data_techtrippin';
+	import { techtrippin } from './data_techtrippin.js';
 	import twentyFiveDev from '$lib/assets/25yodev.webp?enhanced&w=200;150;70';
 	import Breadcrumbs from '$lib/Breadcrumbs.svelte';
 	import TablerHelpCircleFilled from '$lib/assets/svg/TablerHelpCircleFilled.svelte';
