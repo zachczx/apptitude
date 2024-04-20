@@ -27,7 +27,7 @@
 
 <Breadcrumbs urlMiddle="learn" textMiddle="Learn" textCurrent={data.post.name} />
 <div
-	class="grid grid-cols-1 place-content-start gap-4 rounded-lg border border-gray-800 bg-base-300 px-2 py-5 shadow-xl shadow-gray-900 lg:mx-20 lg:grid-cols-2 lg:px-5">
+	class="grid grid-cols-1 place-content-start gap-4 rounded-2xl border border-gray-800 bg-base-300 px-2 py-5 shadow-xl shadow-gray-900 lg:mx-20 lg:grid-cols-2 lg:px-5">
 	<div class="next-prev grid grid-cols-2 text-center font-bold lg:col-span-2">
 		<div class="justify-self-start text-lg hover:text-primary lg:text-xl">
 			<a href="/learn/{data.lastPost.slug}"
@@ -71,7 +71,7 @@
 		</h1>
 	</div>
 
-	<div class="rounded-lg border border-slate-700 bg-base-200 p-5 hover:bg-base-100 lg:col-span-2">
+	<div class="rounded-2xl border border-slate-700 bg-base-200 p-5 hover:bg-base-100 lg:col-span-2">
 		<h3 class="mb-5">Topics</h3>
 		<p class="mb-7">
 			{#each data.post.topics as topic}
@@ -103,7 +103,7 @@
 		</p>
 	</div>
 
-	<div class="rounded-lg border border-slate-700 bg-base-200 p-5 hover:bg-base-100">
+	<div class="rounded-2xl border border-slate-700 bg-base-200 p-5 hover:bg-base-100">
 		<h3 class="mb-5">Find answers to...</h3>
 		<ul class="mb-7 list-disc ps-4">
 			{#each data.post.questions as question}
@@ -111,7 +111,7 @@
 			{/each}
 		</ul>
 	</div>
-	<div class="rounded-lg border border-slate-700 bg-base-200 p-5 hover:bg-base-100">
+	<div class="rounded-2xl border border-slate-700 bg-base-200 p-5 hover:bg-base-100">
 		<h3 class="mb-5">Objectives</h3>
 		<ul class="list-disc ps-4">
 			{#each data.post.objectives as objective}
@@ -120,7 +120,7 @@
 		</ul>
 	</div>
 	<div
-		class="col-span-1 rounded-lg border border-slate-700 bg-base-200 p-5 hover:bg-base-100 lg:col-span-2">
+		class="col-span-1 rounded-2xl border border-slate-700 bg-base-200 p-5 hover:bg-base-100 lg:col-span-2">
 		<h3 class="mb-5">My Observations</h3>
 		<div class="grid grid-cols-1 gap-x-3 gap-y-3 lg:grid-cols-4">
 			{#if data.post.issues == '' || !data.post.issues}
@@ -136,7 +136,7 @@
 			{/if}
 		</div>
 	</div>
-	<div class="rounded-lg border border-slate-700 bg-base-200 p-5 hover:bg-base-100 lg:col-span-2">
+	<div class="rounded-2xl border border-slate-700 bg-base-200 p-5 hover:bg-base-100 lg:col-span-2">
 		<h3 class="mb-5">Courses</h3>
 		{#if data.post.resources.courses == '' || !data.post.resources.courses}
 			Sorry, nothing here
@@ -149,7 +149,7 @@
 		{/if}
 	</div>
 	<div
-		class="col-span-1 rounded-lg border border-slate-700 bg-base-200 p-5 hover:bg-base-100 lg:col-span-2">
+		class="col-span-1 rounded-2xl border border-slate-700 bg-base-200 p-5 hover:bg-base-100 lg:col-span-2">
 		<h3 class="mb-5">Readings</h3>
 
 		{#if data.post.resources.links == ''}
@@ -162,7 +162,7 @@
 			</ul>
 		{/if}
 	</div>
-	<div class="rounded-lg border border-slate-700 bg-base-200 p-5 hover:bg-base-100 lg:col-span-2">
+	<div class="rounded-2xl border border-slate-700 bg-base-200 p-5 hover:bg-base-100 lg:col-span-2">
 		<h3 class="mb-5">
 			Watch on Youtube
 

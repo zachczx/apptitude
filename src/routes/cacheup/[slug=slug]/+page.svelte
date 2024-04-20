@@ -29,7 +29,7 @@
 <Breadcrumbs urlMiddle="cacheup" textMiddle={'Cache-Up Guides'} textCurrent={data.post.name} />
 
 <div
-	class="grid grid-cols-1 place-content-start gap-4 rounded-lg border border-gray-800 bg-base-300 px-2 py-5 shadow-xl shadow-gray-900 lg:mx-20 lg:grid-cols-2 lg:px-5">
+	class="grid grid-cols-1 place-content-start gap-4 rounded-2xl border border-gray-800 bg-base-300 px-2 py-5 shadow-xl shadow-gray-900 lg:mx-20 lg:grid-cols-2 lg:px-5">
 	<div class="next-prev grid grid-cols-2 text-center font-bold lg:col-span-2">
 		<div class="justify-self-start text-lg hover:text-primary lg:text-xl">
 			<a href="/cacheup/{data.lastPost.slug}"
@@ -66,7 +66,6 @@
 		</div>
 	</div>
 	<div class="text-center lg:col-span-2">
-		<figure><img src="" alt="" /></figure>
 		<h1
 			class="inline-block bg-gradient-to-r from-emerald-200 via-orange-200 to-pink-200 bg-clip-text py-3 text-transparent">
 			{data.post.name}
@@ -87,7 +86,7 @@
 		{/if}
 	</div>
 
-	<div class="rounded-lg border border-slate-700 bg-base-200 p-5 hover:bg-base-100">
+	<div class="rounded-2xl border border-slate-700 bg-base-200 p-5 hover:bg-base-100">
 		<h3 class="mb-5">
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
@@ -115,7 +114,7 @@
 		</div>
 	</div>
 
-	<div class="rounded-lg border border-slate-700 bg-base-200 p-5 hover:bg-base-100">
+	<div class="rounded-2xl border border-slate-700 bg-base-200 p-5 hover:bg-base-100">
 		<h3 class="mb-5">
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
@@ -143,7 +142,7 @@
 		</div>
 	</div>
 
-	<div class="rounded-lg border border-slate-700 bg-base-200 p-5 hover:bg-base-100">
+	<div class="rounded-2xl border border-slate-700 bg-base-200 p-5 hover:bg-base-100">
 		<h3 class="mb-5">
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
@@ -174,7 +173,7 @@
 		</div>
 	</div>
 
-	<div class="rounded-lg border border-slate-700 bg-base-200 p-5 hover:bg-base-100">
+	<div class="rounded-2xl border border-slate-700 bg-base-200 p-5 hover:bg-base-100">
 		<h3 class="mb-5">
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
@@ -200,7 +199,7 @@
 		</div>
 	</div>
 
-	<div class="rounded-lg border border-slate-700 bg-base-200 p-5 hover:bg-base-100">
+	<div class="rounded-2xl border border-slate-700 bg-base-200 p-5 hover:bg-base-100">
 		<h3 class="mb-5">
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
@@ -228,7 +227,7 @@
 		</div>
 	</div>
 
-	<div class="rounded-lg border border-slate-700 bg-base-200 p-5 hover:bg-base-100">
+	<div class="rounded-2xl border border-slate-700 bg-base-200 p-5 hover:bg-base-100">
 		<h3 class="mb-5">
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
