@@ -37,29 +37,30 @@
 		</div>
 	</div>
 </div>
-<div class="space-y-10 px-2 pt-7 lg:px-20">
-	<div class="space-y-7">
-		<h2 class="space-x-5">
-			<span
-				><TablerStarFilled class="mb-1 inline fill-base-content" /><TablerStarFilled
-					class="mb-1 inline fill-gray-600" /><TablerStarFilled
-					class="mb-1 inline fill-gray-600" /></span>
-			<span class="ps-2">Beginner</span>
-		</h2>
+<div class="mx-2 space-y-10 pt-7 lg:mx-20">
+	<div class="space-y-7 rounded-2xl bg-base-300 p-3 lg:p-5">
+		<div class="group space-y-3 ps-1">
+			<h2>
+				<TablerStarFilled
+					class="mb-1 inline fill-base-content group-hover:fill-primary" /><TablerStarFilled
+					class="mb-1 inline fill-gray-600" /><TablerStarFilled class="mb-1 inline fill-gray-600" />
+			</h2>
+			<h2>Beginner</h2>
+		</div>
 		<div class="grid grid-cols-1 justify-items-center gap-3 lg:grid-cols-2 xl:grid-cols-4">
 			{#each data.beginner as item}
 				<a href="/learn/{item.slug}" class="w-full">
 					<div
-						class="card h-full border border-gray-700 bg-base-300 shadow-md shadow-gray-800 hover:bg-gradient-to-tr hover:from-base-300 hover:via-base-200 hover:to-gray-700">
+						class="card h-full border border-gray-700 bg-base-200 shadow-md shadow-gray-800 hover:bg-gradient-to-tr hover:from-base-300 hover:via-base-200 hover:to-gray-700">
 						<div class="card-body grid grid-cols-1 content-start space-y-5 px-5">
-							<h2 class="hover:text-primary">
+							<h3 class="hover:text-primary">
 								{item.name}
-							</h2>
+							</h3>
 							<p class="text-lg"><i>{item.intro}</i></p>
 							<div class="w-full">
 								{#each item.topics as topic}
 									<span
-										class="btn btn-outline btn-xs me-2 mt-1 hover:bg-base-300 hover:text-primary"
+										class="btn btn-outline btn-sm me-2 mt-1 hover:bg-base-300 hover:text-primary"
 										>{topic}</span>
 								{/each}
 							</div>
@@ -70,28 +71,30 @@
 		</div>
 	</div>
 
-	<div class="space-y-3">
-		<h2 class="space-x-5">
-			<span
-				><TablerStarFilled class="mb-1 inline fill-base-content" /><TablerStarFilled
-					class="mb-1 inline fill-base-content" /><TablerStarFilled
-					class="mb-1 inline fill-gray-600" /></span>
-			<span class="ps-2">Intermediate</span>
-		</h2>
+	<div class="space-y-7 rounded-2xl bg-base-300 p-3 lg:p-5">
+		<div class="group space-y-3 ps-1">
+			<h2>
+				<TablerStarFilled
+					class="mb-1 inline fill-base-content group-hover:fill-primary" /><TablerStarFilled
+					class="mb-1 inline fill-base-content group-hover:fill-primary" /><TablerStarFilled
+					class="mb-1 inline fill-gray-600" />
+			</h2>
+			<h2>Intermediate</h2>
+		</div>
 		<div class="grid grid-cols-1 justify-items-center gap-3 lg:grid-cols-2 xl:grid-cols-4">
 			{#each data.intermediate as item}
 				<a href="/learn/{item.slug}" class="w-full">
 					<div
-						class="card h-full border border-gray-700 bg-base-300 shadow-md shadow-gray-800 hover:bg-gradient-to-tr hover:from-base-300 hover:via-base-200 hover:to-gray-700">
+						class="card h-full border border-gray-700 bg-base-200 shadow-md shadow-gray-800 hover:bg-gradient-to-tr hover:from-base-300 hover:via-base-200 hover:to-gray-700">
 						<div class="card-body grid grid-cols-1 content-start space-y-5 px-5">
-							<h2 class="hover:text-primary">
+							<h3 class="hover:text-primary">
 								{item.name}
-							</h2>
+							</h3>
 							<p class="text-lg"><i>{item.intro}</i></p>
 							<div class="w-full">
 								{#each item.topics as topic}
 									<span
-										class="btn btn-outline btn-xs me-2 mt-1 hover:bg-base-300 hover:text-primary"
+										class="btn btn-outline btn-sm me-2 mt-1 hover:bg-base-300 hover:text-primary"
 										>{topic}</span>
 								{/each}
 							</div>
@@ -101,28 +104,30 @@
 			{/each}
 		</div>
 	</div>
-	<div class="space-y-3">
-		<h2 class="space-x-5">
-			<span
-				><TablerStarFilled class="mb-1 inline fill-base-content" /><TablerStarFilled
-					class="mb-1 inline fill-base-content" /><TablerStarFilled
-					class="mb-1 inline fill-base-content" /></span
-			><span class="ps-2">Advanced</span>
-		</h2>
+	<div class="space-y-7 rounded-2xl bg-base-300 p-3 lg:p-5">
+		<div class="group space-y-3 ps-1">
+			<h2>
+				<TablerStarFilled
+					class="mb-1 inline fill-base-content group-hover:fill-primary" /><TablerStarFilled
+					class="mb-1 inline fill-base-content group-hover:fill-primary" /><TablerStarFilled
+					class="mb-1 inline fill-base-content group-hover:fill-primary" />
+			</h2>
+			<h2>Advanced</h2>
+		</div>
 		<div class="grid grid-cols-1 justify-items-center gap-3 lg:grid-cols-2 xl:grid-cols-4">
 			{#each data.advanced as item}
 				<a href="/learn/{item.slug}" class="w-full">
 					<div
-						class="card h-full border border-gray-700 bg-base-300 shadow-md shadow-gray-800 hover:bg-gradient-to-tr hover:from-base-300 hover:via-base-200 hover:to-gray-700">
+						class="card h-full border border-gray-700 bg-base-200 shadow-md shadow-gray-800 hover:bg-gradient-to-tr hover:from-base-300 hover:via-base-200 hover:to-gray-700">
 						<div class="card-body grid grid-cols-1 content-start space-y-5 px-5">
-							<h2 class="hover:text-primary">
+							<h3 class="hover:text-primary">
 								{item.name}
-							</h2>
+							</h3>
 							<p class="text-lg"><i>{item.intro}</i></p>
 							<div class="w-full">
 								{#each item.topics as topic}
 									<span
-										class="btn btn-outline btn-xs me-2 mt-1 hover:bg-base-300 hover:text-primary"
+										class="btn btn-outline btn-sm me-2 mt-1 hover:bg-base-300 hover:text-primary"
 										>{topic}</span>
 								{/each}
 							</div>

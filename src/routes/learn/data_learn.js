@@ -694,7 +694,7 @@ export const info = [
 	{
 		id: 7,
 		name: 'Data',
-		intro: 'Rolling a dice for decisions only works in Monopoly',
+		intro: 'Rolling a dice for decisions only works in Monopoly.',
 		slug: 'data',
 		topics: [
 			'database',
