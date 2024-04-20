@@ -79,7 +79,7 @@
 			><enhanced:img
 				src={logo}
 				sizes="(min-width:1920px) 300px, (min-width:1600px) 300px, (min-width:1280px) 200px"
-				alt="Apptitude"
+				alt="Apptitude logo"
 				fetchpriority="high"
 				class="object-scale-down lg:ms-16" /></a>
 	</div>
@@ -116,7 +116,8 @@
 <footer class="footer footer-center gap-y-2 rounded bg-base-200 p-3 pt-5 text-base-content">
 	<aside>
 		<p class="mb-2 text-base">
-			Copyright © 2024 Zixian Chen. All rights reserved. All views expressed here are solely mine.
+			Copyright © 2024 Zixian Chen. All rights reserved. All views expressed on Apptitude are
+			solely mine.
 		</p>
 	</aside>
 	<div class="grid grid-cols-1 md:grid-flow-col md:gap-4">
