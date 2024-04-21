@@ -42,9 +42,8 @@
 			<div
 				class="grid grid-cols-1 justify-items-center gap-y-8 rounded-2xl border border-gray-700 bg-base-300 lg:mb-7 lg:grid-cols-3 lg:gap-x-5 lg:gap-y-10">
 				<div id="navigation">
-					<div id="dropdown" class="w-full lg:hidden">
-						<label class="ms-1 font-medium"
-							>Select an item:
+					<div id="dropdown" class="mx-auto mt-3 flex w-11/12 lg:hidden">
+						<label class="ms-1 font-medium">
 							<select bind:value={currentItem} class="select select-bordered w-full text-lg">
 								{#each techtrippin as sidebarItem, index}
 									<option value={index}>{sidebarItem.title}</option>

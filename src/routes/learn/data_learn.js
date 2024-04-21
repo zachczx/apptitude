@@ -192,6 +192,10 @@ export const info = [
 					text: 'Document Object Model (DOM) | MDN Web Docs',
 					url: 'https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model',
 				},
+				{
+					text: 'What is PHP, The Best Guide to Understand Its Concepts',
+					url: 'https://www.simplilearn.com/tutorials/php-tutorial/what-is-php',
+				},
 				{ text: 'Load Balancing', url: 'https://samwho.dev/load-balancing/' },
 				{
 					text: 'What is SSL (Secure Sockets Layer)? | Cloudflare',
@@ -910,7 +914,7 @@ export const info = [
 	},
 	{
 		id: 9,
-		name: 'AI',
+		name: 'AI (Basics)',
 		intro: 'AI is the extra brain cells you wish you were born with.',
 		slug: 'ai',
 		topics: [
@@ -919,7 +923,6 @@ export const info = [
 			'vectors',
 			'training',
 			'inference',
-			'transformers',
 			'deep learning',
 			'machine learning',
 			'LLM',
@@ -928,46 +931,30 @@ export const info = [
 			'natural language processing',
 			'computer vision',
 			'prompting',
-			'pretraining',
 		],
 		questions: [
 			'What are the foundational principles and technologies behind AI and LLMs?',
 			'What are the differences between closed and open source LLMs',
-			'What is the value chain for AI/LLMs and how do they come together? AI value chain - GPU Chips, Foundational Models, Compute (Training, Inference) + Storage + Data Infrastructure, Application',
-			'How are the various options for training/learning, deploying, & performing inference for AI/LLMs/vision models',
-			'How does the industry and leading minds think about learning/inference, effectiveness, size of model, speed/throughput, efficiency, power needs/consumption?',
-			'What is the immediate and medium term future for LLMs, and where are the next leaps & improvements going to be at?',
 			'How can AI and LLMs be leveraged to enhance public service delivery?',
-			'What part of the AI value chain do we as a product/project/policy team go for?',
 			'Should we buy vs build vs adopt?',
 			'Should we go with GovTech/OGP products, build ourselves, or approach a vendor?',
 			'If we build, how can we avoid irreversible decisions that lock us into (soon to be) obsolete paths?',
-			'What ethical considerations should guide the use of AI in public sectors?',
-			'How can we ensure the privacy and security of data used by AI systems?',
-			'What are the key challenges in integrating AI technologies into existing IT infrastructure?',
 			'How can AI contribute to more efficient and effective public service workflows?',
 			'What training or skills are necessary for public sector employees to work effectively with AI?',
 		],
 		issues: [
 			"The AI genie is out of the bottle, there's no return to life before it",
-			'Obsolescence cycle is extremely fast, so we must avoid significant sunk costs and irreversible decisions',
 			"Given the ongoing hype train for AI, it's tempting to use AI for the sake of it, but that'd would be a huge L",
 			'Focus on solving a meaningful problem, not the hype',
 			'Long tail of training/finetuning yourself, building UIs, and maintaining is too much investment',
 			'AI user interfaces and workflows are not necessarily (and can often be contrary to) good UX',
-			'Fast pace of product and technological improvements challenges rigid/aged organizational structures - impossible to keep up if tons of red-tape is needed for chopping and changing',
-			'Generative AI is not the be-all and end-all, not everything needs to be an LLM-based chatbot',
 			'Simple applications of ML might be far more useful for everyday problems, as is straightforward improvements to how we organize info, design websites instead of pushing for a chatbot',
-			'Lock-in or sunk costs is an issue, e.g. sinking tons of money into deploying/finetuning your Llama2 something only to have it obsolete 12 months later',
 		],
 		objectives: [
 			'Sort through the AI hype from the keepers',
 			'Understand what it takes to conceptualize, develop, & deploy AI products, e.g. compute infrastructure, toolchain',
 			'Know what everyone not on LLMs is missing out',
-			'See the opportunities and challenges across the AI value chain - GPU Chips, Foundational Models, Compute (Training, Inference) + Storage + Data Infrastructure, Application.',
-			'Understand the different techniques and methods to enhance your business processes with AI',
 			'Spot opportunities to do things much faster and easier with LLMs',
-			'Know which LLMs are good, how good, for what',
 		],
 		resources: {
 			courses: [
@@ -980,31 +967,21 @@ export const info = [
 					url: 'https://www.coursera.org/learn/ai-for-everyone',
 				},
 				{
-					text: 'Deep Learning Specialization - DeepLearning.AI',
-					url: 'https://www.deeplearning.ai/courses/deep-learning-specialization/',
-				},
-				{
-					text: 'Machine Learning Problem Framing | Google',
-					url: 'https://developers.google.com/machine-learning/problem-framing',
-				},
-				{
 					text: 'Machine Learning Crash Course | Google',
 					url: 'https://developers.google.com/machine-learning/crash-course/ml-intro',
 				},
 			],
 			youtube: [
 				'https://youtube.com/embed/zjkBMFhNj_g',
-				'https://youtube.com/embed/5sLYAQS9sWQ',
-				'https://youtube.com/embed/jvqFAi7vkBc',
-				'https://youtube.com/embed/Mf1P3n6TqCc',
-				'https://www.youtube.com/embed/qTogNUV3CAI',
-				'https://youtube.com/embed/Dbog8Yw3kEM',
-				'https://youtube.com/embed/bc6uFV9CJGg',
 				'https://youtube.com/embed/PeMlggyqz0Y?si=X1ZeR-qr01d_BnP-',
-				'https://youtube.com/embed/5t1vTLU7s40?si=uEflOaOw_p1eyRoZ',
+				'https://youtube.com/embed/5sLYAQS9sWQ',
+				'https://youtube.com/embed/G8T1O81W96Y',
 				'https://youtube.com/embed/T-D1OfcDW1M?si=WZJLcElfcEh4-51c',
 				'https://youtube.com/embed/lXLBTBBil2U',
-				'https://youtube.com/embed/Z0jqIk7MUfE',
+				'https://youtube.com/embed/yTAMrHVG1ew',
+				'https://youtube.com/embed/i2qSxMVeVLI',
+				'https://youtube.com/embed/fG3IE9dkyKY',
+				'https://youtube.com/embed/sFztPP9qPRc',
 				'https://youtube.com/embed/LsNHsfZFjlA',
 				'https://youtube.com/embed/oZPTBXnaSBI',
 			],
@@ -1017,10 +994,7 @@ export const info = [
 					text: 'AI For Everyone Course (DeepLearning.AI) | Coursera',
 					url: 'https://www.coursera.org/learn/ai-for-everyone',
 				},
-				{
-					text: 'Deep Learning Specialization - DeepLearning.AI',
-					url: 'https://www.deeplearning.ai/courses/deep-learning-specialization/',
-				},
+
 				{
 					text: 'AI Explained - Youtube',
 					url: 'https://www.youtube.com/@aiexplained-official',
@@ -1029,9 +1003,101 @@ export const info = [
 					text: 'LLM Embeddings — Explained Simply',
 					url: 'https://pub.aimind.so/llm-embeddings-explained-simply-f7536d3d0e4b',
 				},
+
+				{
+					text: 'Visual Interactive Guide to the Basics of Neural Networks',
+					url: 'http://jalammar.github.io/visual-interactive-guide-basics-neural-networks/',
+				},
+				{
+					text: 'Introduction to Natural Language Processing for Text',
+					url: 'https://towardsdatascience.com/introduction-to-natural-language-processing-for-text-df845750fb63',
+				},
+
+				{
+					text: 'National AI Strategy | Smart Nation Singapore',
+					url: 'https://www.smartnation.gov.sg/nais/',
+				},
+				{
+					text: 'A pro-innovation approach to AI regulation: government response | Gov.uk',
+					url: 'https://www.gov.uk/government/consultations/ai-regulation-a-pro-innovation-approach-policy-proposals/outcome/a-pro-innovation-approach-to-ai-regulation-government-response',
+				},
+				{
+					text: 'AI agents: types, benefits, and examples',
+					url: 'https://yellow.ai/blog/ai-agents/',
+				},
+			],
+		},
+	},
+	{
+		id: 10,
+		name: 'AI (Advanced)',
+		intro: 'AI is the extra brain cells you wish you were born with.',
+		slug: 'ai-advanced',
+		topics: [
+			'AI',
+			'embeddings',
+			'vectors',
+			'training',
+			'inference',
+			'transformers',
+			'deep learning',
+			'machine learning',
+			'neural networks',
+			'natural language processing',
+			'computer vision',
+			'pretraining',
+		],
+		questions: [
+			'What is the value chain for AI/LLMs and how do they come together? AI value chain - GPU Chips, Foundational Models, Compute (Training, Inference) + Storage + Data Infrastructure, Application',
+			'How are the various options for training/learning, deploying, & performing inference for AI/LLMs/vision models',
+			'How does the industry and leading minds think about learning/inference, effectiveness, size of model, speed/throughput, efficiency, power needs/consumption?',
+			'What part of the AI value chain do we as a product/project/policy team go for?',
+			'How can we ensure the privacy and security of data used by AI systems?',
+			'What are the key challenges in integrating AI technologies into existing IT infrastructure?',
+			'What is the immediate and medium term future for LLMs, and where are the next leaps & improvements going to be at?',
+			'What ethical considerations should guide the use of AI in public sectors?',
+		],
+		issues: [
+			'Obsolescence cycle is extremely fast, so we must avoid significant sunk costs and irreversible decisions',
+			'Fast pace of product and technological improvements challenges rigid/aged organizational structures - impossible to keep up if tons of red-tape is needed for chopping and changing',
+			'Generative AI is not the be-all and end-all, not everything needs to be an LLM-based chatbot',
+			'Lock-in or sunk costs is an issue, e.g. sinking tons of money into deploying/finetuning your Llama2 something only to have it obsolete 12 months later',
+		],
+		objectives: [
+			'See the opportunities and challenges across the AI value chain - GPU Chips, Foundational Models, Compute (Training, Inference) + Storage + Data Infrastructure, Application.',
+			'Understand the different techniques and methods to enhance your business processes with AI',
+			'Know which LLMs are good, how good, for what',
+		],
+		resources: {
+			courses: [
+				{
+					text: 'Machine Learning Problem Framing | Google',
+					url: 'https://developers.google.com/machine-learning/problem-framing',
+				},
+				{
+					text: 'Deep Learning Specialization - DeepLearning.AI',
+					url: 'https://www.deeplearning.ai/courses/deep-learning-specialization/',
+				},
+			],
+			youtube: [
+				'https://youtube.com/embed/jvqFAi7vkBc',
+				'https://youtube.com/embed/Mf1P3n6TqCc',
+				'https://www.youtube.com/embed/qTogNUV3CAI',
+				'https://youtube.com/embed/5t1vTLU7s40?si=uEflOaOw_p1eyRoZ',
+				'https://youtube.com/embed/bc6uFV9CJGg',
+				'https://youtube.com/embed/cdiD-9MMpb0',
+				'https://youtube.com/embed/Z0jqIk7MUfE',
+				'https://youtube.com/embed/Dbog8Yw3kEM',
+				'https://youtube.com/embed/yTAMrHVG1ew?si=P-UQWIr2LRn6O-H3&t=165',
+			],
+			links: [
 				{
 					text: 'LLM Visualization',
 					url: 'https://bbycroft.net/llm',
+				},
+				{
+					text: 'Introduction to Diffusion Models for Machine Learning',
+					url: 'https://www.assemblyai.com/blog/diffusion-models-for-machine-learning-introduction/',
 				},
 				{
 					text: "Chamath Palihapitiya podcast chat with Groq's Jonathan Ross",
@@ -1042,42 +1108,55 @@ export const info = [
 					url: 'https://proceedings.neurips.cc/paper_files/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf',
 				},
 				{
-					text: 'Visual Interactive Guide to the Basics of Neural Networks',
-					url: 'http://jalammar.github.io/visual-interactive-guide-basics-neural-networks/',
-				},
-				{
-					text: 'Introduction to Natural Language Processing for Text',
-					url: 'https://towardsdatascience.com/introduction-to-natural-language-processing-for-text-df845750fb63',
-				},
-				{
-					text: 'LMSYS Chatbot Arena Leaderboard',
-					url: 'https://huggingface.co/spaces/lmsys/chatbot-arena-leaderboard',
-				},
-				{
-					text: 'National AI Strategy | Smart Nation Singapore',
-					url: 'https://www.smartnation.gov.sg/nais/',
-				},
-				{
-					text: 'A pro-innovation approach to AI regulation: government response | Gov.uk',
-					url: 'https://www.gov.uk/government/consultations/ai-regulation-a-pro-innovation-approach-policy-proposals/outcome/a-pro-innovation-approach-to-ai-regulation-government-response',
+					text: 'Amenity Detection and Beyond: New Frontiers of Computer Vision at Airbnb',
+					url: 'https://medium.com/airbnb-engineering/amenity-detection-and-beyond-new-frontiers-of-computer-vision-at-airbnb-144a4441b72e',
 				},
 				{
 					text: 'Agents in Artificial Intelligence',
 					url: 'https://www.geeksforgeeks.org/agents-artificial-intelligence/',
 				},
 				{
-					text: 'AI agents: types, benefits, and examples',
-					url: 'https://yellow.ai/blog/ai-agents/',
+					text: 'LMSYS Chatbot Arena Leaderboard',
+					url: 'https://huggingface.co/spaces/lmsys/chatbot-arena-leaderboard',
 				},
 				{
-					text: 'Amenity Detection and Beyond: New Frontiers of Computer Vision at Airbnb',
-					url: 'https://medium.com/airbnb-engineering/amenity-detection-and-beyond-new-frontiers-of-computer-vision-at-airbnb-144a4441b72e',
+					text: 'Introducing Meta Llama 3: The most capable openly available LLM to date',
+					url: 'https://ai.meta.com/blog/meta-llama-3/',
+				},
+
+				{
+					text: 'Why Nvidia’s AI Supremacy is Only Temporary | HN',
+					url: 'https://news.ycombinator.com/item?id=37467585',
+				},
+				{
+					text: 'Why Nvidia’s AI Supremacy is Only Temporary',
+					url: 'https://petewarden.com/2023/09/10/why-nvidias-ai-supremacy-is-only-temporary/',
+				},
+				{
+					text: 'A Gentle Introduction to Diffusion',
+					url: 'https://wandb.ai/byyoung3/ml-news/reports/A-Gentle-Introduction-to-Diffusion---Vmlldzo2MzgxNjc3',
+				},
+				{
+					text: 'Understanding and Mitigating Bias in Large Language Models (LLMs)',
+					url: 'https://www.datacamp.com/blog/understanding-and-mitigating-bias-in-large-language-models-llms',
+				},
+				{
+					text: 'How Do Machines ‘Grok’ Data?',
+					url: 'https://www.quantamagazine.org/how-do-machines-grok-data-20240412/',
+				},
+				{
+					text: "	New GitHub Copilot research finds 'downward pressure on code quality' | HackerNews",
+					url: 'https://news.ycombinator.com/item?id=39168105',
+				},
+				{
+					text: 'Unlock Your LLM Coding Potential with StarCoder2',
+					url: 'https://developer.nvidia.com/blog/unlock-your-llm-coding-potential-with-starcoder2/',
 				},
 			],
 		},
 	},
 	{
-		id: 10,
+		id: 11,
 		name: 'Technical',
 		intro:
 			'Befriend the machines, learn to speak their language before they achieve world domination.',

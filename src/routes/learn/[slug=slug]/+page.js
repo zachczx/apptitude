@@ -5,7 +5,7 @@ export function load({ params }) {
 	try {
 		const post = info.find((post) => post.slug === params.slug);
 		let nextPostId, lastPostId;
-		// if it's the max number, cap at 8
+		// if it's the max number
 		if (post.id >= info.length) {
 			nextPostId = 1;
 		} else {

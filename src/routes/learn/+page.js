@@ -8,13 +8,13 @@ export function load() {
 	});
 
 	const intermediate = info.filter((item) => {
-		if (item.id >= 5 && item.id <= 8) {
+		if (item.id >= 5 && item.id <= 9) {
 			return item;
 		}
 	});
 
 	const advanced = info.filter((item) => {
-		if (item.id >= 9) {
+		if (item.id >= 10) {
 			return item;
 		}
 	});
