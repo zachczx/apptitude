@@ -128,7 +128,7 @@
 			{:else}
 				{#each data.post.issues as issue}
 					<div class="card grid max-w-full content-center bg-neutral text-neutral-content">
-						<div class="card-body text-center">
+						<div class="card-body text-center lg:text-lg xl:text-xl">
 							{issue}
 						</div>
 					</div>

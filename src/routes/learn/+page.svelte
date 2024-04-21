@@ -38,10 +38,11 @@
 </div>
 <div class="mx-2 space-y-10 pt-7 lg:mx-20">
 	<div class="space-y-7 rounded-2xl bg-base-300 p-3 lg:p-5">
-		<div class="group space-y-3 ps-1">
+		<div class="space-y-3 ps-1">
 			<h2>
-				<TablerStarFilled
-					class="mb-1 inline fill-base-content group-hover:fill-primary" /><TablerStarFilled
+				<TablerStarFilled class="mb-1 inline fill-base-content" /><TablerStarFilled
+					class="mb-1 inline fill-gray-600" /><TablerStarFilled
+					class="mb-1 inline fill-gray-600" /><TablerStarFilled
 					class="mb-1 inline fill-gray-600" /><TablerStarFilled class="mb-1 inline fill-gray-600" />
 			</h2>
 			<h2>Beginner</h2>
@@ -71,12 +72,12 @@
 	</div>
 
 	<div class="space-y-7 rounded-2xl bg-base-300 p-3 lg:p-5">
-		<div class="group space-y-3 ps-1">
+		<div class="space-y-3 ps-1">
 			<h2>
-				<TablerStarFilled
-					class="mb-1 inline fill-base-content group-hover:fill-primary" /><TablerStarFilled
-					class="mb-1 inline fill-base-content group-hover:fill-primary" /><TablerStarFilled
-					class="mb-1 inline fill-gray-600" />
+				<TablerStarFilled class="mb-1 inline fill-base-content" /><TablerStarFilled
+					class="mb-1 inline fill-base-content" /><TablerStarFilled
+					class="mb-1 inline fill-base-content" /><TablerStarFilled
+					class="mb-1 inline fill-gray-600" /><TablerStarFilled class="mb-1 inline fill-gray-600" />
 			</h2>
 			<h2>Intermediate</h2>
 		</div>
@@ -104,12 +105,13 @@
 		</div>
 	</div>
 	<div class="space-y-7 rounded-2xl bg-base-300 p-3 lg:p-5">
-		<div class="group space-y-3 ps-1">
+		<div class="space-y-3 ps-1">
 			<h2>
-				<TablerStarFilled
-					class="mb-1 inline fill-base-content group-hover:fill-primary" /><TablerStarFilled
-					class="mb-1 inline fill-base-content group-hover:fill-primary" /><TablerStarFilled
-					class="mb-1 inline fill-base-content group-hover:fill-primary" />
+				<TablerStarFilled class="mb-1 inline fill-base-content" /><TablerStarFilled
+					class="mb-1 inline fill-base-content" /><TablerStarFilled
+					class="mb-1 inline fill-base-content" /><TablerStarFilled
+					class="mb-1 inline fill-base-content" /><TablerStarFilled
+					class="mb-1 inline fill-base-content" />
 			</h2>
 			<h2>Advanced</h2>
 		</div>

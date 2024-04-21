@@ -206,9 +206,9 @@ export const info = [
 					url: 'https://carnegieendowment.org/2020/08/31/cloud-security-primer-for-policymakers-pub-82597',
 				},
 				{ text: 'Learn CSS | Web.dev', url: 'https://web.dev/learn/css' },
-				{ text: 'Webflow', url: 'https://webflow.com/' },
-				{ text: 'Weebly', url: 'https://www.weebly.com/' },
-				{ text: 'Wix', url: 'https://www.wix.com/' },
+				{ text: 'Webflow (Website Builder)', url: 'https://webflow.com/' },
+				{ text: 'Weebly (Website Builder)', url: 'https://www.weebly.com/' },
+				{ text: 'Wix (Website Builder)', url: 'https://www.wix.com/' },
 				{
 					text: '10+ Must Use Static Site Generator 2024',
 					url: 'https://dev.to/themeselection/static-site-generator-1fp4',
@@ -940,6 +940,7 @@ export const info = [
 			'Should we go with GovTech/OGP products, build ourselves, or approach a vendor?',
 			'If we build, how can we avoid irreversible decisions that lock us into (soon to be) obsolete paths?',
 			'How can AI contribute to more efficient and effective public service workflows?',
+			'What are AI agents and what are the benefits/costs of agentic workflows?',
 			'What training or skills are necessary for public sector employees to work effectively with AI?',
 		],
 		issues: [
@@ -977,6 +978,7 @@ export const info = [
 				'https://youtube.com/embed/5sLYAQS9sWQ',
 				'https://youtube.com/embed/G8T1O81W96Y',
 				'https://youtube.com/embed/T-D1OfcDW1M?si=WZJLcElfcEh4-51c',
+				'https://youtube.com/embed/sal78ACtGTc',
 				'https://youtube.com/embed/lXLBTBBil2U',
 				'https://youtube.com/embed/yTAMrHVG1ew',
 				'https://youtube.com/embed/i2qSxMVeVLI',

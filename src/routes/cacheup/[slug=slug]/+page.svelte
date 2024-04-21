@@ -105,7 +105,7 @@
 					d="M9 17h6" /><path d="M9 13h6" /></svg
 			>Definitions
 		</h3>
-		<div class="">
+		<div>
 			<ol class="list-disc ps-4">
 				{#each data.post.definitions as definition}
 					<li>{definition}</li>

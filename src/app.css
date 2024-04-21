@@ -42,7 +42,8 @@ html {
 		font-style: italic;
 	}
 
-	p {
+	p,
+	li {
 		@apply lg:text-lg xl:text-xl;
 	}
 }
