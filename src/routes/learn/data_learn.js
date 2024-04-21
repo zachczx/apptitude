@@ -137,7 +137,11 @@ export const info = [
 			'What is the cloud, compute, storage?',
 			'What are low code, no code, and WYSIWYG tools like Wix, Webflow?',
 		],
-		issues: [''],
+		issues: [
+			'Webdev moves very fast',
+			'Webdev does not need to be expensive',
+			'Most of the web is GET/POST/PUT/DELETE',
+		],
 		objectives: [
 			'Learn how the Internet works and how code turns into products we see and use on the web',
 			'Comprehend the broad differences between programming languages and web frameworks',
@@ -198,6 +202,27 @@ export const info = [
 					url: 'https://carnegieendowment.org/2020/08/31/cloud-security-primer-for-policymakers-pub-82597',
 				},
 				{ text: 'Learn CSS | Web.dev', url: 'https://web.dev/learn/css' },
+				{ text: 'Webflow', url: 'https://webflow.com/' },
+				{ text: 'Weebly', url: 'https://www.weebly.com/' },
+				{ text: 'Wix', url: 'https://www.wix.com/' },
+				{
+					text: '10+ Must Use Static Site Generator 2024',
+					url: 'https://dev.to/themeselection/static-site-generator-1fp4',
+				},
+				{ text: 'Hugo overview', url: 'https://www.sanity.io/glossary/hugo' },
+				{ text: 'Wagtail', url: 'https://wagtail.org/' },
+				{
+					text: 'A comparison between Wagtail CMS and WordPress',
+					url: 'https://kalob-taulien.medium.com/wagtail-cms-a-comparison-between-wagtail-cms-and-wordpress-b36853476749',
+				},
+				{
+					text: 'Ask HN: What web development stack do you prefer in 2024?',
+					url: 'https://news.ycombinator.com/item?id=39105013',
+				},
+				{
+					text: 'Ask HN: What CMS are you using in 2022?',
+					url: 'https://news.ycombinator.com/item?id=32062615',
+				},
 			],
 		},
 	},
@@ -373,10 +398,11 @@ export const info = [
 		slug: 'products',
 		topics: [
 			'product-market fit',
-			'product management',
-			'product strategy',
+			'management',
+			'leadership',
+			'strategy',
+			'management',
 			'execution',
-			'project management',
 			'startups',
 			'pivot',
 		],
@@ -519,7 +545,7 @@ export const info = [
 	{
 		id: 6,
 		name: 'User Experience',
-		intro: 'If you want people to actually use your app, try not making it suck.',
+		intro: 'If you want people to actually use your app, try to make it not suck.',
 		slug: 'ux',
 		topics: [
 			'ux',
@@ -906,6 +932,7 @@ export const info = [
 		],
 		questions: [
 			'What are the foundational principles and technologies behind AI and LLMs?',
+			'What are the differences between closed and open source LLMs',
 			'What is the value chain for AI/LLMs and how do they come together? AI value chain - GPU Chips, Foundational Models, Compute (Training, Inference) + Storage + Data Infrastructure, Application',
 			'How are the various options for training/learning, deploying, & performing inference for AI/LLMs/vision models',
 			'How does the industry and leading minds think about learning/inference, effectiveness, size of model, speed/throughput, efficiency, power needs/consumption?',
@@ -972,6 +999,7 @@ export const info = [
 				'https://youtube.com/embed/Mf1P3n6TqCc',
 				'https://www.youtube.com/embed/qTogNUV3CAI',
 				'https://youtube.com/embed/Dbog8Yw3kEM',
+				'https://youtube.com/embed/bc6uFV9CJGg',
 				'https://youtube.com/embed/PeMlggyqz0Y?si=X1ZeR-qr01d_BnP-',
 				'https://youtube.com/embed/5t1vTLU7s40?si=uEflOaOw_p1eyRoZ',
 				'https://youtube.com/embed/T-D1OfcDW1M?si=WZJLcElfcEh4-51c',
@@ -1196,6 +1224,10 @@ export const info = [
 				{
 					text: 'AWS Cloud Databases',
 					url: 'https://aws.amazon.com/products/databases/',
+				},
+				{
+					text: 'Ask HN: What web development stack do you prefer in 2024?',
+					url: 'https://news.ycombinator.com/item?id=39105013',
 				},
 			],
 		},
