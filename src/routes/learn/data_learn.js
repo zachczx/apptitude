@@ -469,6 +469,7 @@ export const info = [
 				'https://www.youtube.com/embed/6DTK9yDP6p0?si=niskiu1FnnDNhiOQ',
 				'https://www.youtube.com/embed/oWZbWzAyHAE?si=aFy0z0ePzrlUTvSD',
 				'https://www.youtube.com/embed/FCxkT8ULrVg',
+				'https://www.youtube.com/embed/yr_sz6fRy-w',
 			],
 			links: [
 				{
@@ -988,6 +989,10 @@ export const info = [
 				'https://youtube.com/embed/oZPTBXnaSBI',
 			],
 			links: [
+				{
+					text: 'The AI Index Report: Measuring trends in AI',
+					url: 'https://aiindex.stanford.edu/report/',
+				},
 				{
 					text: 'Introduction to Generative AI',
 					url: 'https://www.cloudskillsboost.google/course_templates/536',
