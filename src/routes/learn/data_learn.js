@@ -1263,6 +1263,7 @@ export const info = [
 					text: 'GeeksforGeeks | A computer science portal for geeks',
 					url: 'https://www.geeksforgeeks.org/',
 				},
+				{ text: 'The Odin Project - All Paths', url: 'https://www.theodinproject.com/paths' },
 				{
 					text: 'Kevin Powell - YouTube',
 					url: 'https://www.youtube.com/@KevinPowell',
