@@ -240,7 +240,7 @@ export const cacheup = [
 			'What are the CAPEX and OPEX for X?',
 		],
 		dealbreakers: [
-			'People say "Sounds about right" (no shit, Sherlock).',
+			'People say "Sounds about right" when talking about cost items & full-time engineers (no shit, Sherlock).',
 			'$100M is ok because the previous project was $90M and after factoring in inflation it sounds about right.',
 			'The TAM is negligible and users are sticking around because of compliance reasons.',
 			'We need to build ourselves because we have unique requirements',

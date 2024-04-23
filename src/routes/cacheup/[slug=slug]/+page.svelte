@@ -6,13 +6,7 @@
 	import { fade, fly } from 'svelte/transition';
 	const slug = $page.params.slug;
 	let { data } = $props();
-	console.log(data.lastPost, data.nextPost);
 
-	let seeMoreVar = $state(false);
-	function seeMore() {
-		seeMoreVar = !seeMoreVar;
-		console.log(seeMoreVar);
-	}
 	//for byline
 	let currentBylineNumber = $state(0);
 	let bylineTotal = data.post.bylines.length - 1;

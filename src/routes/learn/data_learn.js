@@ -461,6 +461,7 @@ export const info = [
 				},
 			],
 			youtube: [
+				'https://www.youtube.com/embed/XmRNIGqzuRI',
 				'https://www.youtube.com/embed/C27RVio2rOs?si=rKY_2K-n0lC6vk54',
 				'https://www.youtube.com/embed/0LNQxT9LvM0?si=KHzWpcisYehJbdHF',
 				'https://www.youtube.com/embed/yc1Uwhfxacs',
