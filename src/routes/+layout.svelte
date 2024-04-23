@@ -38,7 +38,7 @@
 <div class="navbar-view-transition navbar {data.url === '/' ? 'absolute z-20' : ''}">
 	<div class="max-h-18 navbar-start">
 		<div class="dropdown">
-			<div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+			<div tabindex="0" role="button" class="btn btn-ghost -ms-3 lg:hidden">
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
 					class="h-5 w-5"
@@ -51,7 +51,7 @@
 						stroke-width="2"
 						d="M4 6h16M4 12h8m-8 6h16" /></svg>
 			</div>
-			<nav class="opacity-1 menu dropdown-content z-50 w-48 rounded-lg bg-slate-900 p-0 text-xl">
+			<nav class="opacity-1 menu dropdown-content z-50 w-48 rounded-lg bg-gray-900 p-0 text-xl">
 				<a
 					class="border-b border-slate-600 p-3 hover:rounded-t-lg hover:bg-slate-600 active:font-bold active:text-primary"
 					href="/learn"
@@ -59,7 +59,7 @@
 				<a
 					class="border-b border-slate-600 p-3 hover:bg-slate-600 active:font-bold active:text-primary"
 					href="/cacheup"
-					><TablerChevronRight class="inline align-middle" height="1rem" width="1rem" /> Cache-Up Guides</a>
+					><TablerChevronRight class="inline align-middle" height="1rem" width="1rem" /> Guides</a>
 				<a
 					class="border-b border-slate-600 p-3 hover:bg-slate-600 active:font-bold active:text-primary"
 					href="/techtrippin"

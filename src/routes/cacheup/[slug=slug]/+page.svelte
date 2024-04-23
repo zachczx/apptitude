@@ -26,10 +26,10 @@
 	}, 10000);
 </script>
 
-<Breadcrumbs urlMiddle="cacheup" textMiddle={'Cache-Up Guides'} textCurrent={data.post.name} />
+<Breadcrumbs urlMiddle="cacheup" textMiddle={'Guides'} textCurrent={data.post.name} />
 
 <div
-	class="grid grid-cols-1 place-content-start gap-4 rounded-2xl border border-gray-800 bg-base-300 px-2 py-5 shadow-xl shadow-gray-900 lg:mx-20 lg:grid-cols-2 lg:px-5">
+	class="grid grid-cols-1 place-content-start gap-4 rounded-2xl px-2 px-3 py-5 lg:mx-20 lg:grid-cols-2 lg:border lg:border-gray-800 lg:bg-base-300 lg:px-5 lg:shadow-xl lg:shadow-gray-900">
 	<div class="next-prev grid grid-cols-2 text-center font-bold lg:col-span-2">
 		<div class="justify-self-start text-lg hover:text-primary lg:text-xl">
 			<a href="/cacheup/{data.lastPost.slug}"

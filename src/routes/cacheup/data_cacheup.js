@@ -95,7 +95,7 @@ export const cacheup = [
 			'A North Star Metric is a single, primary metric that best captures the core value that a product delivers to customers.',
 			'A minimum viable product (MVP) is a product development strategy used to quickly get a basic version of a product into the market for initial testing and validation from real users.',
 			"XY Problem - often in customer service - is where someone seeks help for a solution (X) they have chosen as a way to solve a different problem (Y). Helping with X won't help solve actual problem if it's not a good approach in the first place.",
-			"Product managers define the 'What' by setting the product strategy and roadmap. Project managers enable the 'How' by executing that roadmap through a series of projects.",
+			'Project management is plan-driven (timelines, people tasked, execution plans), product management is user-driven (user adoption, customer satisfaction, business impact).',
 		],
 		goals: [
 			'Make products that solve real problems for users',

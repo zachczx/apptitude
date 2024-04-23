@@ -41,7 +41,7 @@
 </script>
 
 <Breadcrumbs textCurrent={'About Apptitude'} />
-<div class="mx-2 text-center lg:mx-20 lg:mb-20">
+<div class="mx-2 mb-10 text-center lg:mx-20 lg:mb-20">
 	<h1
 		class="inline-block bg-gradient-to-r from-emerald-200 via-orange-200 to-pink-200 bg-clip-text py-3 text-center text-transparent">
 		About
@@ -52,7 +52,7 @@
 </div>
 
 <div
-	class="mb-7 grid grid-cols-1 justify-items-center gap-x-8 gap-y-8 px-5 lg:grid-cols-12 lg:px-20">
+	class="mb-7 grid grid-cols-1 justify-items-center gap-x-8 gap-y-8 px-3 lg:grid-cols-12 lg:px-20">
 	<div class="box space-y-5 self-center lg:col-span-8">
 		<h2 class="headline border-b-2 border-base-content pb-2 lg:text-5xl">
 			<span class="headline bg-base-100">What's Apptitude?</span>
@@ -94,7 +94,7 @@
 	</div>
 </div>
 <div
-	class="mb-7 grid grid-cols-1 justify-items-center gap-x-8 gap-y-0 px-5 lg:grid-cols-12 lg:px-20">
+	class="mb-7 grid grid-cols-1 justify-items-center gap-x-8 gap-y-0 px-3 lg:grid-cols-12 lg:px-20">
 	<div class="pic-2 lg:col-span-4">
 		<figure class="lg:avatar">
 			<div class="lg:mask lg:mask-squircle">
@@ -139,7 +139,7 @@
 		</div>
 	</div>
 </div>
-<div class="mb-7 grid grid-cols-1 justify-items-center gap-x-8 px-5 lg:grid-cols-12 lg:px-20">
+<div class="mb-7 grid grid-cols-1 justify-items-center gap-x-8 px-3 lg:grid-cols-12 lg:px-20">
 	<div class="box self-center lg:col-span-8">
 		<h2 class="headline border-b-2 border-base-content pb-2 lg:text-5xl">
 			<span class=" bg-base-100">What's a bad product to you?</span>
@@ -185,7 +185,7 @@
 	</div>
 </div>
 <div
-	class="mb-7 grid grid-cols-1 justify-items-center gap-x-8 gap-y-8 px-5 lg:grid-cols-12 lg:px-20">
+	class="mb-7 grid grid-cols-1 justify-items-center gap-x-8 gap-y-8 px-3 lg:grid-cols-12 lg:px-20">
 	<div class="pic-4 lg:col-span-4">
 		<figure class="lg:avatar">
 			<div class="lg:mask lg:mask-squircle">
@@ -226,7 +226,7 @@
 		</div>
 	</div>
 </div>
-<div class="mb-7 grid grid-cols-1 justify-items-center gap-x-8 px-5 lg:grid-cols-12 lg:px-20">
+<div class="mb-7 grid grid-cols-1 justify-items-center gap-x-8 px-3 lg:grid-cols-12 lg:px-20">
 	<div class="box self-center lg:col-span-8">
 		<h2 class="headline border-b-2 border-base-content pb-2 lg:text-5xl">
 			<span class="bg-base-100">What's in it for you?</span>
@@ -266,7 +266,7 @@
 		</figure>
 	</div>
 </div>
-<div class="mb-7 grid grid-cols-1 justify-items-center gap-x-8 px-5 lg:grid-cols-12 lg:px-20">
+<div class="mb-7 grid grid-cols-1 justify-items-center gap-x-8 px-3 lg:grid-cols-12 lg:px-20">
 	<div class="pic-6 lg:col-span-4">
 		<figure class="lg:avatar">
 			<div class="lg:mask lg:mask-squircle">
@@ -286,7 +286,7 @@
 			Seriously though, the comments below are very common in the public sector. Each of these is a
 			major red flag for shitty products.
 		</p>
-		<ul class="ms-8 list-disc bg-base-100 py-5 text-xl">
+		<ul class="ms-8 list-disc bg-base-100 py-5">
 			<li>IDK what engineers are saying.</li>
 			<li>Let's spend allocated $$, IDC about saving it.</li>
 			<li>Engineers and users should just suck it up.</li>
@@ -310,7 +310,7 @@
 	</div>
 </div>
 
-<div class="mb-7 grid grid-cols-1 justify-items-center gap-x-8 px-5 lg:grid-cols-12 lg:px-20">
+<div class="mb-7 grid grid-cols-1 justify-items-center gap-x-8 px-3 lg:grid-cols-12 lg:px-20">
 	<div class="box self-center lg:col-span-8">
 		<h2 class="headline border-b-2 border-base-content pb-2 lg:text-5xl">
 			<span class="bg-base-100">You're too harsh!</span>
@@ -347,7 +347,7 @@
 	</div>
 </div>
 <div
-	class="mb-7 grid grid-cols-1 justify-items-center gap-x-8 gap-y-8 px-5 lg:grid-cols-12 lg:px-20">
+	class="mb-7 grid grid-cols-1 justify-items-center gap-x-8 gap-y-8 px-3 lg:grid-cols-12 lg:px-20">
 	<div class="pic-8 lg:col-span-4">
 		<figure class="lg:avatar">
 			<div class="lg:mask lg:mask-squircle">
@@ -387,7 +387,7 @@
 		</div>
 	</div>
 </div>
-<div class="mb-12 grid grid-cols-1 justify-items-center gap-x-8 px-5 lg:grid-cols-12 lg:px-20">
+<div class="mb-12 grid grid-cols-1 justify-items-center gap-x-8 px-3 lg:grid-cols-12 lg:px-20">
 	<div class="box mb-8 w-full self-center lg:col-span-8">
 		<h2 class="headline border-b-2 border-base-content pb-2 lg:text-5xl">
 			<span class="bg-base-100">I found Apptitude very useful!</span>

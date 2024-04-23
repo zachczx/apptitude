@@ -11,7 +11,7 @@
 </script>
 
 <Breadcrumbs textCurrent={"Tech Trippin'"} />
-<div class="mx-2 mb-2 grid-cols-1 rounded-lg pb-5 lg:mx-20 lg:mb-20">
+<div class="mb-2 grid-cols-1 rounded-lg px-2 pb-5 lg:mx-20 lg:mb-20">
 	<div class="text-center">
 		<h1
 			class="inline-block bg-gradient-to-r from-emerald-200 via-orange-200 to-pink-200 bg-clip-text py-3 text-transparent">

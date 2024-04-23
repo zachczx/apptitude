@@ -48,7 +48,7 @@
 	</div>
 </div>
 <div class="flex justify-center">
-	<div class="grid grid-cols-1 gap-3 px-3 lg:grid-cols-3 lg:grid-rows-2 lg:gap-7 lg:px-20">
+	<div class="grid grid-cols-1 gap-3 px-2 lg:grid-cols-3 lg:grid-rows-2 lg:gap-7 lg:px-20">
 		<div
 			class="group card max-h-[50rem] w-full overflow-hidden border border-gray-700 bg-base-300 shadow-xl hover:bg-gradient-to-tr hover:from-base-300 hover:via-base-200 hover:to-gray-700 lg:col-span-1 lg:row-span-2">
 			<a href="/cacheup/problems"

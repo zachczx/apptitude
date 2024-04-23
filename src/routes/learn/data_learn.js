@@ -402,6 +402,7 @@ export const info = [
 		slug: 'products',
 		topics: [
 			'product-market fit',
+			'project',
 			'management',
 			'leadership',
 			'strategy',
@@ -411,6 +412,7 @@ export const info = [
 			'pivot',
 		],
 		questions: [
+			"What's difference between project and product management?",
 			'What is product-market fit?',
 			'How do you find product-market fit?',
 			'How do you identify and prioritize product features?',
@@ -424,6 +426,7 @@ export const info = [
 			'Who are product leaders? What do they do and what is product leadership?',
 		],
 		objectives: [
+			'Spot project management and product management',
 			'Know what goes into a good product',
 			'Spot solutions in search of a problem',
 			'Feel it in your soul when a "product" just ain\'t it',
@@ -475,6 +478,10 @@ export const info = [
 				{
 					text: 'Product Management – Start Here',
 					url: 'https://www.svpg.com/product-management-start-here/',
+				},
+				{
+					text: 'Product Thinking, Project Thinking | @shreyas',
+					url: 'https://twitter.com/shreyas/status/1471650411341750273',
 				},
 				{
 					text: 'Y Combinator - YouTube',
@@ -554,9 +561,13 @@ export const info = [
 		slug: 'ux',
 		topics: [
 			'ux',
+			'human-centered design',
+			'design thinking',
+			'contextual inquiry',
+			'interview',
 			'empathy',
 			'problem',
-			'pain point',
+			'pain-point',
 			'accessibility',
 			'usability',
 			'interaction',
