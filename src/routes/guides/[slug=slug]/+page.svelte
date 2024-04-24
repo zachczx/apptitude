@@ -20,13 +20,13 @@
 	}, 10000);
 </script>
 
-<Breadcrumbs urlMiddle="cacheup" textMiddle={'Guides'} textCurrent={data.post.name} />
+<Breadcrumbs urlMiddle="guides" textMiddle={'Guides'} textCurrent={data.post.name} />
 
 <div
 	class="grid grid-cols-1 place-content-start gap-4 rounded-2xl px-2 px-3 py-5 lg:mx-20 lg:grid-cols-2 lg:border lg:border-gray-800 lg:bg-base-300 lg:px-5 lg:shadow-xl lg:shadow-gray-900">
 	<div class="next-prev grid grid-cols-2 text-center font-bold lg:col-span-2">
 		<div class="justify-self-start text-lg hover:text-primary lg:text-xl">
-			<a href="/cacheup/{data.lastPost.slug}"
+			<a href="/guides/{data.lastPost.slug}"
 				><svg
 					xmlns="http://www.w3.org/2000/svg"
 					class="icon icon-tabler icon-tabler-circle-chevron-left mb-1 inline"
@@ -42,7 +42,7 @@
 						d="M21 12a9 9 0 1 0 -18 0a9 9 0 0 0 18 0z" /></svg> Previous</a>
 		</div>
 		<div class="justify-self-end text-lg hover:text-primary lg:text-xl">
-			<a href="/cacheup/{data.nextPost.slug}"
+			<a href="/guides/{data.nextPost.slug}"
 				>Next <svg
 					xmlns="http://www.w3.org/2000/svg"
 					class="icon icon-tabler icon-tabler-circle-chevron-right mb-1 inline"

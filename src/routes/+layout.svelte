@@ -5,7 +5,7 @@
 	import TablerSquareRoundedPlusFilled from '$lib/assets/svg/TablerSquareRoundedPlusFilled.svelte';
 	import TablerChevronRight from '$lib/assets/svg/TablerChevronRight.svelte';
 	let { data } = $props();
-	import { cacheup } from './cacheup/data_cacheup.js';
+	import { guides } from './guides/data_guides.js';
 	import { info } from './learn/data_learn.js';
 	let pageName = $state('Apptitude');
 	import { onNavigate } from '$app/navigation';
@@ -58,7 +58,7 @@
 					><TablerChevronRight class="inline align-middle" height="1rem" width="1rem" /> Learn</a>
 				<a
 					class="border-b border-slate-600 p-3 hover:bg-slate-600 active:font-bold active:text-primary"
-					href="/cacheup"
+					href="/guides"
 					><TablerChevronRight class="inline align-middle" height="1rem" width="1rem" /> Guides</a>
 				<a
 					class="border-b border-slate-600 p-3 hover:bg-slate-600 active:font-bold active:text-primary"
@@ -89,8 +89,8 @@
 			<li aria-current={matchUrl(data.url, '/learn') === 0 ? 'page' : undefined}>
 				<a class="hover:bg-base-100 hover:text-primary" href="/learn">Learn</a>
 			</li>
-			<li aria-current={matchUrl(data.url, '/cacheup') === 0 ? 'page' : undefined}>
-				<a class="hover:bg-base-100 hover:text-primary" href="/cacheup">Cache-Up Guides</a>
+			<li aria-current={matchUrl(data.url, '/guides') === 0 ? 'page' : undefined}>
+				<a class="hover:bg-base-100 hover:text-primary" href="/guides">Guides</a>
 			</li>
 			<li aria-current={matchUrl(data.url, '/techtrippin') === 0 ? 'page' : undefined}>
 				<a class="hover:bg-base-100 hover:text-primary" href="/techtrippin">Tech Trippin'</a>

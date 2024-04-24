@@ -8,7 +8,7 @@ import SethGodin from '$lib/assets/profileheads/SethGodin.webp';
 import LeaHickman from '$lib/assets/profileheads/LeaHickman.webp';
 import TeresaTorres from '$lib/assets/profileheads/TeresaTorres.webp';
 
-export const cacheup = [
+export const guides = [
 	{
 		id: 1,
 		name: 'Problem Statements',

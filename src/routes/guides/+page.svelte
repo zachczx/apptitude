@@ -1,6 +1,6 @@
 <script>
 	import Breadcrumbs from '$lib/Breadcrumbs.svelte';
-	import { cacheup } from './data_cacheup';
+	import { guides } from './data_guides';
 	import TablerHelpCircleFilled from '$lib/assets/svg/TablerHelpCircleFilled.svelte';
 	import safeKeyboard from '$lib/assets/safe-keyboard.webp?enhanced&w=300';
 	import piggyBank from '$lib/assets/piggy-bank.webp?enhanced&w=300';
@@ -10,11 +10,11 @@
 	let showMore = $state(false);
 </script>
 
-<Breadcrumbs textCurrent="Cache-Up Guides" />
+<Breadcrumbs textCurrent="Guides" />
 <div class="mb-10 text-center">
 	<h1
 		class="inline-block bg-gradient-to-r from-emerald-200 via-orange-200 to-pink-200 bg-clip-text py-3 text-transparent">
-		Cache-Up Guides
+		Guides to Cache Up!
 	</h1>
 	<div class="px-3">
 		<i>Rebooting your obsolescence - migrating from Windows XP to actually current tech skills.</i>
@@ -51,7 +51,7 @@
 	<div class="grid grid-cols-1 gap-3 px-2 lg:grid-cols-3 lg:grid-rows-2 lg:gap-7 lg:px-20">
 		<div
 			class="group card max-h-[50rem] w-full overflow-hidden border border-gray-700 bg-base-300 shadow-xl hover:bg-gradient-to-tr hover:from-base-300 hover:via-base-200 hover:to-gray-700 lg:col-span-1 lg:row-span-2">
-			<a href="/cacheup/problems"
+			<a href="/guides/problems"
 				><div class="card-body grid">
 					<div class="mb-10 space-y-5 self-center lg:mb-20">
 						<h1 class="text-primary">Problem Statements</h1>
@@ -93,7 +93,7 @@
 		</div>
 		<div
 			class="group card border border-gray-700 bg-base-300 shadow-xl hover:bg-gradient-to-tr hover:from-base-300 hover:via-base-200 hover:to-gray-700 lg:col-span-2 lg:row-span-1 lg:w-10/12">
-			<a href="/cacheup/product">
+			<a href="/guides/product">
 				<div class="card-body grid">
 					<div class="w-full rounded-2xl bg-base-content">
 						<div class="flex justify-end">
@@ -114,7 +114,7 @@
 				</div>
 			</a>
 		</div>
-		<a href="/cacheup/cost">
+		<a href="/guides/cost">
 			<div
 				class="group card grid w-full overflow-hidden border border-gray-700 bg-base-300 shadow-xl hover:bg-gradient-to-tr hover:from-base-300 hover:via-base-200 hover:to-gray-700 lg:col-span-1 lg:row-span-1">
 				<div class="card-body space-y-5">
@@ -135,7 +135,7 @@
 				</div>
 			</div></a>
 		<div>
-			<a href="/cacheup/security">
+			<a href="/guides/security">
 				<div
 					class="group card h-auto w-full border border-gray-700 bg-base-300 shadow-xl hover:bg-gradient-to-tr hover:from-base-300 hover:via-base-200 hover:to-gray-700 lg:col-span-1 lg:row-span-2">
 					<div class="card-body space-y-5">
