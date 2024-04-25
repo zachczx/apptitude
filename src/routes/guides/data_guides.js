@@ -267,31 +267,49 @@ export const guides = [
 			"Developer resources are the most precious they're not your pptx/docx machines!",
 		],
 	},
-	//{
-	//	id: 5,
-	//	name: "Structures and processes",
-	//	slug: "structure",
-	//  bylines: [
-	//{
-	//	text: "As transformation to the product model involves moving from output to outcomes, the problem here is that the transformation effort hides behind output (activities) rather than outcomes (results).",
-	//	icon: LeaHickman
-	//}
-	//],
-	//	definitions: [],
-	//	goals: [],
-	//  questions: [],
-	//"Has this undergone business process reengineering?",
-	//"Explain what agile/velocity means to you and what are examples of agility/velocity?",
-	//"What are real world figures for developers or business owners when it comes to adding new features for business needs?",
-	//"Why is on boarding of developers/services still manual?,"
-	//"How long does it take to on-board a new service or API or platform?,"
-	//"(perennial claims about implementing microservices architecture)",
-	//"What are the steps to get approval for this idea?",
-	//"Why can't we just get all these people into a room and decide?",
-	//"Why are you coming with an \"all or nothing\" or fait accompli plan? (usually when process of seeking further funding is tedious, so it's all tied up in one big bang)",
-	//  dealbreakers: [],
-	//  solutions: [],
-	//  suggestions: [],
-	//	screening: [],
-	//},
+	{
+		id: 5,
+		name: '',
+		tagline: '',
+		slug: '',
+		bylines: [
+			{
+				text: '8/10 public-sector IT projects take longer than expected, compared with just more than half of projects in the private sector. Cost overruns occur in nearly 1/2 public-sector projects, as opposed to about 1/3 in the private sector.',
+				icon: KerstinBalka,
+			},
+		],
+		definitions: [],
+		goals: [],
+		questions: [],
+		dealbreakers: [],
+		solutions: [],
+		suggestions: [],
+	},
+	/* 	{
+		id: 5,
+		name: "Structures and processes",
+		slug: "structure",
+	  bylines: [
+	{
+		text: "As transformation to the product model involves moving from output to outcomes, the problem here is that the transformation effort hides behind output (activities) rather than outcomes (results).",
+		icon: LeaHickman
+	}
+	],
+		definitions: [],
+		goals: [],
+	  questions: [],
+	"Has this undergone business process reengineering?",
+	"Explain what agile/velocity means to you and what are examples of agility/velocity?",
+	"What are real world figures for developers or business owners when it comes to adding new features for business needs?",
+	"Why is on boarding of developers/services still manual?,"
+	"How long does it take to on-board a new service or API or platform?,"
+	"(perennial claims about implementing microservices architecture)",
+	"What are the steps to get approval for this idea?",
+	"Why can't we just get all these people into a room and decide?",
+	"Why are you coming with an \"all or nothing\" or fait accompli plan? (usually when process of seeking further funding is tedious, so it's all tied up in one big bang)",
+	  dealbreakers: [],
+	  solutions: [],
+	  suggestions: [],
+		screening: [],
+	}, */
 ];

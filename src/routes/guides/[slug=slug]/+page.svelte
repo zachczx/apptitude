@@ -65,7 +65,7 @@
 			{data.post.name}
 		</h1>
 		{#if data.post.bylines[0].text != ''}
-			<div class="grid-cols-auto grid place-items-center">
+			<div class="flex text-start">
 				{#key currentBylineNumber}
 					<div class="chat chat-start" in:fade={{ duration: 1000 }}>
 						<div class="avatar chat-image">
@@ -73,7 +73,9 @@
 								<img src={data.post.bylines[currentBylineNumber].icon} alt="Author" />
 							</div>
 						</div>
-						<div class="chat-bubble"><i>{data.post.bylines[currentBylineNumber].text}</i></div>
+						<div class="chat-bubble border border-slate-700 bg-lime-950">
+							<i>{data.post.bylines[currentBylineNumber].text}</i>
+						</div>
 					</div>
 				{/key}
 			</div>
@@ -192,7 +194,7 @@
 			</ol>
 		</div>
 	</div>
-
+	<!--
 	<div class="rounded-2xl border border-slate-700 bg-base-200 p-5 hover:bg-base-100">
 		<h3 class="mb-5">
 			<svg
@@ -246,7 +248,7 @@
 				{/each}
 			</ol>
 		</div>
-	</div>
+	</div>-->
 </div>
 
 <style>
