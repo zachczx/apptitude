@@ -4,7 +4,7 @@ import { guides } from '../data_guides.js';
 export function load({ params }) {
 	try {
 		const post = guides.find((post) => post.slug === params.slug);
-		let nextPostId, lastPostId;
+		/* 		let nextPostId, lastPostId;
 
 		// if it's the max number, cap at 8
 		if (post.id >= guides.length) {
@@ -21,11 +21,11 @@ export function load({ params }) {
 			lastPostId = post.id - 1;
 		}
 		const lastPost = guides.find((post) => post.id === lastPostId);
-
+ */
 		return {
 			post,
-			nextPost,
-			lastPost,
+			/* 			nextPost,
+			lastPost, */
 		};
 	} catch (e) {
 		error(404, `Could not find ${params.slug}`);

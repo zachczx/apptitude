@@ -6,6 +6,7 @@
 	import piggyBank from '$lib/assets/piggy-bank.webp?enhanced&w=300';
 	import product from '$lib/assets/product.webp?enhanced&w=300';
 	import problem from '$lib/assets/problem.webp?enhanced&w=500';
+	import magnifyingGlass from '$lib/assets/magnifying-glass.webp?enhanced&w=400';
 
 	let showMore = $state(false);
 </script>
@@ -91,8 +92,33 @@
 				</div>
 			</a>
 		</div>
+		<div>
+			<a href="/guides/research">
+				<div
+					class="group card h-auto w-full border border-gray-700 bg-base-300 shadow-xl hover:bg-gradient-to-tr hover:from-base-300 hover:via-base-200 hover:to-gray-700 lg:col-span-1 lg:row-span-2">
+					<div class="card-body space-y-5">
+						<div class="w-full rounded-2xl bg-base-content">
+							<div class="flex justify-end">
+								<enhanced:img
+									src={magnifyingGlass}
+									alt="User research: Avoiding those awkward 'Hey, does anyone like our product?' moments."
+									class="rounded-2xl lg:-mb-14 lg:-translate-y-20 lg:translate-x-5" />
+							</div>
+						</div>
+						<h1 class="mb-3 text-primary">Research</h1>
+
+						<p class="">
+							<i
+								>Skipping user research is like designing a car without realizing humans need to sit
+								in it.</i>
+						</p>
+						<p class=""></p>
+					</div>
+				</div>
+			</a>
+		</div>
 		<div
-			class="group card border border-gray-700 bg-base-300 shadow-xl hover:bg-gradient-to-tr hover:from-base-300 hover:via-base-200 hover:to-gray-700 lg:col-span-2 lg:row-span-1 lg:w-10/12">
+			class="group card border border-gray-700 bg-base-300 shadow-xl hover:bg-gradient-to-tr hover:from-base-300 hover:via-base-200 hover:to-gray-700 lg:col-span-1 lg:row-span-1">
 			<a href="/guides/product">
 				<div class="card-body grid">
 					<div class="w-full rounded-2xl bg-base-content">
@@ -114,6 +140,7 @@
 				</div>
 			</a>
 		</div>
+
 		<a href="/guides/cost">
 			<div
 				class="group card grid w-full overflow-hidden border border-gray-700 bg-base-300 shadow-xl hover:bg-gradient-to-tr hover:from-base-300 hover:via-base-200 hover:to-gray-700 lg:col-span-1 lg:row-span-1">

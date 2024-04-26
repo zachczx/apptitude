@@ -24,41 +24,6 @@
 
 <div
 	class="grid grid-cols-1 place-content-start gap-4 rounded-2xl px-2 px-3 py-5 lg:mx-20 lg:grid-cols-2 lg:border lg:border-gray-800 lg:bg-base-300 lg:px-5 lg:shadow-xl lg:shadow-gray-900">
-	<div class="next-prev grid grid-cols-2 text-center font-bold lg:col-span-2">
-		<div class="justify-self-start text-lg hover:text-primary lg:text-xl">
-			<a href="/guides/{data.lastPost.slug}"
-				><svg
-					xmlns="http://www.w3.org/2000/svg"
-					class="icon icon-tabler icon-tabler-circle-chevron-left mb-1 inline"
-					width="24"
-					height="24"
-					viewBox="0 0 24 24"
-					stroke-width="1.5"
-					stroke="currentColor"
-					fill="none"
-					stroke-linecap="round"
-					stroke-linejoin="round"
-					><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M13 15l-3 -3l3 -3" /><path
-						d="M21 12a9 9 0 1 0 -18 0a9 9 0 0 0 18 0z" /></svg> Previous</a>
-		</div>
-		<div class="justify-self-end text-lg hover:text-primary lg:text-xl">
-			<a href="/guides/{data.nextPost.slug}"
-				>Next <svg
-					xmlns="http://www.w3.org/2000/svg"
-					class="icon icon-tabler icon-tabler-circle-chevron-right mb-1 inline"
-					width="24"
-					height="24"
-					viewBox="0 0 24 24"
-					stroke-width="1.5"
-					stroke="currentColor"
-					fill="none"
-					stroke-linecap="round"
-					stroke-linejoin="round"
-					><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M11 9l3 3l-3 3" /><path
-						d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0z" /></svg
-				></a>
-		</div>
-	</div>
 	<div class="text-center lg:col-span-2">
 		<h1
 			class="inline-block bg-gradient-to-r from-emerald-200 via-orange-200 to-pink-200 bg-clip-text py-3 text-transparent">

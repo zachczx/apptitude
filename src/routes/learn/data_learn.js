@@ -698,6 +698,10 @@ export const info = [
 					url: 'https://www.youtube.com/watch?v=DwR0SZTBMTU&list=PLJOFJ3Ok_iduObD_9dHwiYp804oZwpHze',
 				},
 				{
+					text: 'Using "How Might We" Questions to Ideate on the Right Problems',
+					url: 'https://www.nngroup.com/articles/how-might-we-questions/',
+				},
+				{
 					text: 'How many participants for a UX interview?',
 					url: 'https://www.nngroup.com/articles/interview-sample-size/',
 				},
