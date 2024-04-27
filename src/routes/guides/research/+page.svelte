@@ -1,7 +1,6 @@
 <script>
 	import interviewSampleSize from '$lib/assets/interview_sample_sizes.png?enhanced&w=300';
 	import Breadcrumbs from '$lib/Breadcrumbs.svelte';
-	import circleCheck from '$lib/assets/svg/circle-check.svg';
 </script>
 
 <Breadcrumbs urlMiddle="guides" textMiddle={'Guides'} textCurrent={'Research'} />
