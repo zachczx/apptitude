@@ -1,6 +1,7 @@
 <script>
 	import interviewSampleSize from '$lib/assets/interview_sample_sizes.png?enhanced&w=300';
 	import Breadcrumbs from '$lib/Breadcrumbs.svelte';
+	import TablerInfoCircle from '$lib/assets/svg/TablerInfoCircle.svelte';
 </script>
 
 <Breadcrumbs urlMiddle="guides" textMiddle={'Guides'} textCurrent={'Research'} />
@@ -13,7 +14,7 @@
 		</h1>
 	</div>
 
-	<div class="rounded-2xl border border-slate-700 bg-base-200 px-3 py-5 hover:bg-base-100 lg:px-5">
+	<div class=" rounded-2xl border border-slate-700 bg-base-200 px-3 py-5 hover:bg-base-100 lg:px-5">
 		<h3 class="inline text-emerald-200">
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
@@ -42,7 +43,49 @@
 				</li>
 				<li class="text-lg">
 					<span class="block pb-3">Plan should have:</span>
-					<ol class="plus list-disc space-y-3 ps-10">
+					<div class="cols-auto-cols grid gap-3 text-center lg:grid-cols-3">
+						<div
+							class="grid h-full w-full place-items-center rounded-2xl border border-gray-400 p-5">
+							<span class="text-lg">Project background</span>
+						</div>
+						<div
+							class="grid h-full w-full place-items-center rounded-2xl border border-gray-400 p-5">
+							<span
+								class="tooltip tooltip-info text-lg"
+								data-tip="Clarify specific ideas to learn or outcomes to achieve">
+								Establish research goals <TablerInfoCircle class="inline h-8 pb-3" />
+							</span>
+						</div>
+						<div
+							class="grid h-full w-full place-items-center rounded-2xl border border-gray-400 p-5">
+							<span class="text-lg">Do interviews, fly on wall, or surveys</span>
+						</div>
+						<div
+							class="grid h-full w-full place-items-center rounded-2xl border border-gray-400 p-5">
+							<span class="text-lg">Identify who's affected by design</span>
+						</div>
+
+						<div
+							class="grid h-full w-full place-items-center rounded-2xl border border-gray-400 p-5">
+							<span class="text-lg">Define deliverables for research</span>
+						</div>
+						<div
+							class="grid h-full w-full place-items-center rounded-2xl border border-gray-400 p-5">
+							<span class="text-lg">Ensure quality of research data</span>
+						</div>
+
+						<div
+							class="grid h-full w-full place-items-center rounded-2xl border border-gray-400 p-5">
+							<span
+								class="tooltip tooltip-info text-lg"
+								data-tip="Time on task, Use of navigation vs. search,
+								User error rates, Drop-off rates, Conversion rates, System Usability Scale, Net
+								Promoter Score">
+								Determine KPIs to measure in study <TablerInfoCircle class="inline h-8 pb-3" />
+							</span>
+						</div>
+					</div>
+					<!-- 					<ol class="plus list-disc space-y-3 ps-10">
 						<li>Project background</li>
 						<li>
 							Establish overarching research goals (clarify specific ideas to learn or outcomes to
@@ -64,26 +107,51 @@
 							error rates, Drop-off rates, Conversion rates, System Usability Scale, Net Promoter
 							Score
 						</li>
-					</ol>
+					</ol> -->
 				</li>
 				<li class="text-lg">
 					<span class="mb-3 block">Recruit a diverse participant pool</span>
-					<ol class="plus list-disc space-y-3 ps-10">
-						<li>
-							Develop a set of criteria that will ensure you select interviewees who are best suited
-							to meet objectives of your interview.
-						</li>
-						<li>Find people from existing user base, online, hallway testing</li>
-						<li>
-							Get 5-8 people per user group/persona you are studying, but reduce this if you have
-							budget/timeline constraints (this is only the start after all)
-						</li>
-						<enhanced:img
-							src={interviewSampleSize}
-							alt="Interview sample size"
-							class="my-3 rounded-lg" />
-						<li>Consider giving incentives</li>
-					</ol>
+					<div class="cols-auto-cols grid gap-3 text-center lg:grid-cols-2">
+						<div
+							class="grid h-full w-full place-items-center rounded-2xl border border-gray-400 p-5">
+							<span class="text-lg">Develop criteria to select interviewees</span>
+						</div>
+						<div
+							class="grid h-full w-full place-items-center rounded-2xl border border-gray-400 p-5">
+							<span class="text-lg"
+								>Find people from existing user base, online, hallway testing</span>
+						</div>
+						<div
+							class="grid h-full w-full place-items-center rounded-2xl border border-gray-400 p-5">
+							<span
+								class="tooltip tooltip-info text-lg"
+								data-tip="Reduce this if you have budget/timeline constraints (this is only the start after all)"
+								>Get 5-8 people per user group/persona you are studying
+								<TablerInfoCircle class="inline h-8 pb-3" />
+							</span>
+						</div>
+						<div
+							class="grid h-full w-full place-items-center rounded-2xl border border-gray-400 p-5">
+							<span class="text-lg">Consider giving incentives</span>
+						</div>
+
+						<!-- 						<ol class="plus list-disc space-y-3 ps-10">
+							<li>
+								Develop a set of criteria that will ensure you select interviewees who are best
+								suited to meet objectives of your interview.
+							</li>
+							<li>Find people from existing user base, online, hallway testing</li>
+							<li>
+								Get 5-8 people per user group/persona you are studying, but reduce this if you have
+								budget/timeline constraints (this is only the start after all)
+							</li>
+							<enhanced:img
+								src={interviewSampleSize}
+								alt="Interview sample size"
+								class="my-3 rounded-lg" />
+							<li>Consider giving incentives</li>
+						</ol> -->
+					</div>
 				</li>
 			</ul>
 		</div>
@@ -308,7 +376,7 @@
 			</ul>
 		</div>
 	</div>
-	<div class="rounded-2xl border border-slate-700 bg-base-200 p-5 hover:bg-base-100 lg:col-span-2">
+	<div class="rounded-2xl border border-slate-700 bg-base-200 p-5 hover:bg-base-100">
 		<h3
 			class="mb-5 inline-block bg-gradient-to-r from-emerald-200 via-lime-200 to-teal-300 bg-clip-text text-transparent">
 			Sources
@@ -326,8 +394,11 @@
 
 <style>
 	.plus li,
-	.tick li,
 	.list-decimal li {
+		padding-left: 0.6em;
+	}
+
+	.tick li {
 		padding-left: 0.6em;
 	}
 	.plus li::marker {
