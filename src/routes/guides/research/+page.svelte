@@ -45,11 +45,11 @@
 					<span class="block pb-3">Plan should have:</span>
 					<div class="cols-auto-cols grid gap-3 text-center lg:grid-cols-3">
 						<div
-							class="grid h-full w-full place-items-center rounded-2xl border border-gray-400 p-5">
+							class="grid h-full w-full place-items-center rounded-2xl border border-gray-400 p-2">
 							<span class="text-lg">Project background</span>
 						</div>
 						<div
-							class="grid h-full w-full place-items-center rounded-2xl border border-gray-400 p-5">
+							class="grid h-full w-full place-items-center rounded-2xl border border-gray-400 p-2">
 							<span
 								class="tooltip tooltip-info text-lg"
 								data-tip="Clarify specific ideas to learn or outcomes to achieve">
@@ -57,25 +57,25 @@
 							</span>
 						</div>
 						<div
-							class="grid h-full w-full place-items-center rounded-2xl border border-gray-400 p-5">
+							class="grid h-full w-full place-items-center rounded-2xl border border-gray-400 p-2">
 							<span class="text-lg">Do interviews, fly on wall, or surveys</span>
 						</div>
 						<div
-							class="grid h-full w-full place-items-center rounded-2xl border border-gray-400 p-5">
+							class="grid h-full w-full place-items-center rounded-2xl border border-gray-400 p-2">
 							<span class="text-lg">Identify who's affected by design</span>
 						</div>
 
 						<div
-							class="grid h-full w-full place-items-center rounded-2xl border border-gray-400 p-5">
+							class="grid h-full w-full place-items-center rounded-2xl border border-gray-400 p-2">
 							<span class="text-lg">Define deliverables for research</span>
 						</div>
 						<div
-							class="grid h-full w-full place-items-center rounded-2xl border border-gray-400 p-5">
+							class="grid h-full w-full place-items-center rounded-2xl border border-gray-400 p-2">
 							<span class="text-lg">Ensure quality of research data</span>
 						</div>
 
 						<div
-							class="grid h-full w-full place-items-center rounded-2xl border border-gray-400 p-5">
+							class="grid h-full w-full place-items-center rounded-2xl border border-gray-400 p-2">
 							<span
 								class="tooltip tooltip-info text-lg"
 								data-tip="Time on task, Use of navigation vs. search,
@@ -113,16 +113,16 @@
 					<span class="mb-3 block">Recruit a diverse participant pool</span>
 					<div class="cols-auto-cols grid gap-3 text-center lg:grid-cols-2">
 						<div
-							class="grid h-full w-full place-items-center rounded-2xl border border-gray-400 p-5">
+							class="grid h-full w-full place-items-center rounded-2xl border border-gray-400 p-2">
 							<span class="text-lg">Develop criteria to select interviewees</span>
 						</div>
 						<div
-							class="grid h-full w-full place-items-center rounded-2xl border border-gray-400 p-5">
+							class="grid h-full w-full place-items-center rounded-2xl border border-gray-400 p-2">
 							<span class="text-lg"
 								>Find people from existing user base, online, hallway testing</span>
 						</div>
 						<div
-							class="grid h-full w-full place-items-center rounded-2xl border border-gray-400 p-5">
+							class="grid h-full w-full place-items-center rounded-2xl border border-gray-400 p-2">
 							<span
 								class="tooltip tooltip-info text-lg"
 								data-tip="Reduce this if you have budget/timeline constraints (this is only the start after all)"
@@ -131,7 +131,7 @@
 							</span>
 						</div>
 						<div
-							class="grid h-full w-full place-items-center rounded-2xl border border-gray-400 p-5">
+							class="grid h-full w-full place-items-center rounded-2xl border border-gray-400 p-2">
 							<span class="text-lg">Consider giving incentives</span>
 						</div>
 
