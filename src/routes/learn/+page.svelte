@@ -40,12 +40,15 @@
 	<div class="space-y-7 rounded-2xl bg-base-300 p-3 lg:p-5">
 		<div class="space-y-3 ps-1">
 			<h2>
-				<TablerStarFilled class="mb-1 inline fill-base-content" /><TablerStarFilled
+				<TablerStarFilled class="mb-1 inline fill-lime-200" /><TablerStarFilled
 					class="mb-1 inline fill-gray-600" /><TablerStarFilled
 					class="mb-1 inline fill-gray-600" /><TablerStarFilled
 					class="mb-1 inline fill-gray-600" /><TablerStarFilled class="mb-1 inline fill-gray-600" />
 			</h2>
-			<h2>Beginner</h2>
+			<h2
+				class="inline-block bg-gradient-to-r from-emerald-200 via-lime-200 to-teal-300 bg-clip-text text-transparent">
+				Beginner
+			</h2>
 		</div>
 		<div class="grid grid-cols-1 justify-items-center gap-3 lg:grid-cols-2 xl:grid-cols-4">
 			{#each data.beginner as item}
@@ -74,12 +77,15 @@
 	<div class="space-y-7 rounded-2xl bg-base-300 p-3 lg:p-5">
 		<div class="space-y-3 ps-1">
 			<h2>
-				<TablerStarFilled class="mb-1 inline fill-base-content" /><TablerStarFilled
-					class="mb-1 inline fill-base-content" /><TablerStarFilled
-					class="mb-1 inline fill-base-content" /><TablerStarFilled
+				<TablerStarFilled class="mb-1 inline fill-lime-200 " /><TablerStarFilled
+					class="mb-1 inline fill-lime-200" /><TablerStarFilled
+					class="mb-1 inline fill-lime-200" /><TablerStarFilled
 					class="mb-1 inline fill-gray-600" /><TablerStarFilled class="mb-1 inline fill-gray-600" />
 			</h2>
-			<h2>Intermediate</h2>
+			<h2
+				class="inline-block bg-gradient-to-r from-emerald-200 via-lime-200 to-teal-300 bg-clip-text text-transparent">
+				Intermediate
+			</h2>
 		</div>
 		<div class="grid grid-cols-1 justify-items-center gap-3 lg:grid-cols-2 xl:grid-cols-4">
 			{#each data.intermediate as item}
@@ -107,13 +113,15 @@
 	<div class="space-y-7 rounded-2xl bg-base-300 p-3 lg:p-5">
 		<div class="space-y-3 ps-1">
 			<h2>
-				<TablerStarFilled class="mb-1 inline fill-base-content" /><TablerStarFilled
-					class="mb-1 inline fill-base-content" /><TablerStarFilled
-					class="mb-1 inline fill-base-content" /><TablerStarFilled
-					class="mb-1 inline fill-base-content" /><TablerStarFilled
-					class="mb-1 inline fill-base-content" />
+				<TablerStarFilled class="mb-1 inline fill-lime-200" /><TablerStarFilled
+					class="mb-1 inline fill-lime-200" /><TablerStarFilled
+					class="mb-1 inline fill-lime-200" /><TablerStarFilled
+					class="mb-1 inline fill-lime-200" /><TablerStarFilled class="mb-1 inline fill-lime-200" />
 			</h2>
-			<h2>Advanced</h2>
+			<h2
+				class="inline-block bg-gradient-to-r from-emerald-200 via-lime-200 to-teal-300 bg-clip-text text-transparent">
+				Advanced
+			</h2>
 		</div>
 		<div class="grid grid-cols-1 justify-items-center gap-3 lg:grid-cols-2 xl:grid-cols-4">
 			{#each data.advanced as item}

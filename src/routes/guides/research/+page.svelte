@@ -14,7 +14,7 @@
 	</div>
 
 	<div class="rounded-2xl border border-slate-700 bg-base-200 p-5 hover:bg-base-100">
-		<h3 class="mb-5 text-lime-100">
+		<h3 class="inline text-emerald-200">
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
 				width="1em"
@@ -29,8 +29,11 @@
 				><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path
 					d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" /><path
 					d="M12 6l-3.293 3.293a1 1 0 0 0 0 1.414l.543 .543c.69 .69 1.81 .69 2.5 0l1 -1a3.182 3.182 0 0 1 4.5 0l2.25 2.25" /><path
-					d="M12.5 15.5l2 2" /><path d="M15 13l2 2" /></svg
-			>Empathize
+					d="M12.5 15.5l2 2" /><path d="M15 13l2 2" /></svg>
+		</h3>
+		<h3
+			class="mb-5 inline-block bg-gradient-to-r from-emerald-200 via-lime-200 to-teal-300 bg-clip-text text-transparent">
+			Empathize
 		</h3>
 		<div class="px-5">
 			<ul class="list-disc space-y-10">
@@ -89,7 +92,7 @@
 		</div>
 	</div>
 	<div class="rounded-2xl border border-slate-700 bg-base-200 p-5 hover:bg-base-100">
-		<h3 class="mb-5 text-lime-100">
+		<h3 class="inline text-emerald-200">
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
 				width="1em"
@@ -103,8 +106,11 @@
 				class="icon icon-tabler icons-tabler-outline icon-tabler-notebook mb-1 me-3 inline"
 				><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path
 					d="M6 4h11a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-11a1 1 0 0 1 -1 -1v-14a1 1 0 0 1 1 -1m3 0v18" /><path
-					d="M13 8l2 0" /><path d="M13 12l2 0" /></svg
-			>Define
+					d="M13 8l2 0" /><path d="M13 12l2 0" /></svg>
+		</h3>
+		<h3
+			class="mb-5 inline-block bg-gradient-to-r from-emerald-200 via-lime-200 to-teal-300 bg-clip-text text-transparent">
+			Define
 		</h3>
 		<div class="px-5">
 			<ul class="list-disc space-y-10">
@@ -157,7 +163,7 @@
 		</div>
 	</div>
 	<div class="rounded-2xl border border-slate-700 bg-base-200 p-5 hover:bg-base-100">
-		<h3 class="mb-5 text-lime-100">
+		<h3 class="inline text-emerald-200">
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
 				width="1em"
@@ -172,8 +178,11 @@
 				><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path
 					d="M3 12h1m8 -9v1m8 8h1m-15.4 -6.4l.7 .7m12.1 -.7l-.7 .7" /><path
 					d="M9 16a5 5 0 1 1 6 0a3.5 3.5 0 0 0 -1 3a2 2 0 0 1 -4 0a3.5 3.5 0 0 0 -1 -3" /><path
-					d="M9.7 17l4.6 0" /></svg
-			>Ideate
+					d="M9.7 17l4.6 0" /></svg>
+		</h3>
+		<h3
+			class="mb-5 inline-block bg-gradient-to-r from-emerald-200 via-lime-200 to-teal-300 bg-clip-text text-transparent">
+			Ideate
 		</h3>
 		<div class="px-5">
 			<ul class="list-disc space-y-10">
@@ -217,7 +226,7 @@
 		</div>
 	</div>
 	<div class="rounded-2xl border border-slate-700 bg-base-200 p-5 hover:bg-base-100">
-		<h3 class="mb-5 text-lime-100">
+		<h3 class="inline text-emerald-200">
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
 				width="1em"
@@ -231,8 +240,11 @@
 				class="icon icon-tabler icons-tabler-outline icon-tabler-flask mb-1 me-3 inline"
 				><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M9 3l6 0" /><path
 					d="M10 9l4 0" /><path
-					d="M10 3v6l-4 11a.7 .7 0 0 0 .5 1h11a.7 .7 0 0 0 .5 -1l-4 -11v-6" /></svg
-			>Prototype & Test
+					d="M10 3v6l-4 11a.7 .7 0 0 0 .5 1h11a.7 .7 0 0 0 .5 -1l-4 -11v-6" /></svg>
+		</h3>
+		<h3
+			class="mb-5 inline-block bg-gradient-to-r from-emerald-200 via-lime-200 to-teal-300 bg-clip-text text-transparent">
+			Prototype & Test
 		</h3>
 		<div class="px-5">
 			<ul class="list-disc space-y-10">

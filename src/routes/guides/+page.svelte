@@ -55,7 +55,10 @@
 			<a href="/guides/problems"
 				><div class="card-body grid">
 					<div class="mb-10 space-y-5 self-center lg:mb-20">
-						<h1 class="text-primary">Problem Statements</h1>
+						<h1
+							class="inline-block bg-gradient-to-r from-emerald-200 via-lime-200 to-teal-300 bg-clip-text text-transparent">
+							Problem Statements
+						</h1>
 
 						<p>
 							<i>Doubt your product works well? Never heard from your users?</i>
@@ -105,7 +108,10 @@
 									class="rounded-2xl lg:-mb-14 lg:-translate-y-20 lg:translate-x-5" />
 							</div>
 						</div>
-						<h1 class="mb-3 text-primary">Research</h1>
+						<h1
+							class="mb-3 inline-block bg-gradient-to-r from-emerald-200 via-lime-200 to-teal-300 bg-clip-text text-transparent">
+							Research
+						</h1>
 
 						<p class="">
 							<i
@@ -130,7 +136,10 @@
 						</div>
 					</div>
 					<div class="mt-5 space-y-5">
-						<h1 class="text-primary">Product</h1>
+						<h1
+							class="inline-block bg-gradient-to-r from-emerald-200 via-lime-200 to-teal-300 bg-clip-text text-transparent">
+							Product
+						</h1>
 						<p><i>Feel like you're shipping useless features?</i></p>
 						<p>
 							Think about product-market fit, demand for your product, go-to market, success
@@ -145,7 +154,10 @@
 			<div
 				class="group card grid w-full overflow-hidden border border-gray-700 bg-base-300 shadow-xl hover:bg-gradient-to-tr hover:from-base-300 hover:via-base-200 hover:to-gray-700 lg:col-span-1 lg:row-span-1">
 				<div class="card-body space-y-5">
-					<h1 class="text-primary">Cost</h1>
+					<h1
+						class="inline-block bg-gradient-to-r from-emerald-200 via-lime-200 to-teal-300 bg-clip-text text-transparent">
+						Cost
+					</h1>
 					<p><i>We're not sure what we're building, but we know we'll need a bigger budget?</i></p>
 					<p class="pb-5">
 						Vague requirements over hundreds of pages a spec sheet, cost evaluations based on
@@ -174,7 +186,10 @@
 									class="rounded-2xl lg:-mb-14 lg:-translate-y-14" />
 							</div>
 						</div>
-						<h1 class="mb-3 text-primary">Security</h1>
+						<h1
+							class="mb-3 inline-block bg-gradient-to-r from-emerald-200 via-lime-200 to-teal-300 bg-clip-text text-transparent">
+							Security
+						</h1>
 
 						<p class="">
 							<i>Cyber security so tight, even the 1s and 0s can't escape</i>
