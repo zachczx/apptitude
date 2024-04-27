@@ -37,9 +37,8 @@ html {
 	}
 
 	h4 {
-		@apply text-lg lg:text-xl;
-		font-weight: 500;
-		font-style: italic;
+		@apply text-xl lg:text-2xl;
+		font-weight: 550;
 	}
 
 	p,
