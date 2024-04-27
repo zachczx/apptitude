@@ -37,8 +37,8 @@
 
 <div class="navbar-view-transition navbar {data.url === '/' ? 'absolute z-20' : ''}">
 	<div class="max-h-18">
-		<div class="dropdown">
-			<div tabindex="0" role="button" class="btn btn-ghost -ms-3 lg:hidden">
+		<div class="dropdown lg:hidden">
+			<div tabindex="0" role="button" class="btn btn-ghost -ms-3">
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
 					class="h-5 w-5"
@@ -81,10 +81,10 @@
 				sizes="(min-width:1920px) 300px, (min-width:1600px) 300px, (min-width:1280px) 200px"
 				alt="Apptitude logo"
 				fetchpriority="high"
-				class="object-scale-down" /></a>
+				class="lg:ms-16" /></a>
 	</div>
 	<div class="navbar hidden justify-start lg:flex">
-		<ul class="menu menu-horizontal gap-x-5 ps-8 font-medium">
+		<ul class="menu menu-horizontal gap-x-5 ps-20 font-medium">
 			<!-- removed menu class -->
 			<li aria-current={matchUrl(data.url, '/learn') === 0 ? 'page' : undefined}>
 				<a class="text-xl hover:bg-base-100 hover:text-primary" href="/learn">Learn</a>
