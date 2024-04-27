@@ -1,6 +1,7 @@
 <script>
 	import interviewSampleSize from '$lib/assets/interview_sample_sizes.png?enhanced&w=300';
 	import Breadcrumbs from '$lib/Breadcrumbs.svelte';
+	import circleCheck from '$lib/assets/svg/circle-check.svg';
 </script>
 
 <Breadcrumbs urlMiddle="guides" textMiddle={'Guides'} textCurrent={'Research'} />
@@ -13,7 +14,7 @@
 		</h1>
 	</div>
 
-	<div class="rounded-2xl border border-slate-700 bg-base-200 p-5 hover:bg-base-100">
+	<div class="rounded-2xl border border-slate-700 bg-base-200 px-3 py-5 hover:bg-base-100 lg:px-5">
 		<h3 class="inline text-emerald-200">
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
@@ -37,12 +38,12 @@
 		</h3>
 		<div class="px-5">
 			<ul class="list-disc space-y-10">
-				<li>
+				<li class="text-lg">
 					Conduct user research to uncover genuine pain points and user needs that are not met
 				</li>
-				<li>
+				<li class="text-lg">
 					<span class="block pb-3">Plan should have:</span>
-					<ol class="list-disc space-y-3 ps-10">
+					<ol class="plus list-disc space-y-3 ps-10">
 						<li>Project background</li>
 						<li>
 							Establish overarching research goals (clarify specific ideas to learn or outcomes to
@@ -50,31 +51,28 @@
 						</li>
 						<li>
 							<span class="block pb-3">Decide what to conduct:</span>
-							<ol class="list-disc space-y-3 ps-10">
-								<li>
-									User interviews (thick data that shows contextual relationships between data
-									points)
-								</li>
+							<ol class="tick list-disc space-y-3 ps-10">
+								<li>User interviews (shows contextual relationships between data points)</li>
 								<li>Fly on the wall (observe without interferring)</li>
 								<li>Quantitative surveys (big data that gives spread of numbers)</li>
 							</ol>
 						</li>
-						<li>Identify who's affected by the design</li>
-						<li>Define the deliverables that the research should yield</li>
-						<li>Ensure the quality of the research data</li>
+						<li>Identify who's affected by design</li>
+						<li>Define deliverables that research should yield</li>
+						<li>Ensure quality of research data</li>
 						<li>
-							Determine the KPIs to measure in study (Time on task, Use of navigation vs. search,
-							User error rates, Drop-off rates, Conversion rates, System Usability Scale, Net
-							Promoter Score
+							Determine KPIs to measure in study (Time on task, Use of navigation vs. search, User
+							error rates, Drop-off rates, Conversion rates, System Usability Scale, Net Promoter
+							Score
 						</li>
 					</ol>
 				</li>
-				<li>
+				<li class="text-lg">
 					<span class="mb-3 block">Recruit a diverse participant pool</span>
-					<ol class="list-disc space-y-3 ps-10">
+					<ol class="plus list-disc space-y-3 ps-10">
 						<li>
 							Develop a set of criteria that will ensure you select interviewees who are best suited
-							to meet the objectives of your interview.
+							to meet objectives of your interview.
 						</li>
 						<li>Find people from existing user base, online, hallway testing</li>
 						<li>
@@ -114,15 +112,15 @@
 		</h3>
 		<div class="px-5">
 			<ul class="list-disc space-y-10">
-				<li>
-					Analyze the research from the empathize phase to identify and prioritize key user problems
-					that need solving, explaining the rationale behind these priorities.
+				<li class="text-lg">
+					Analyze research from empathize phase to identify and prioritize key user problems that
+					need solving, explaining rationale behind these priorities.
 				</li>
-				<li>
+				<li class="text-lg">
 					<span class="block pb-3">User stories:</span>
-					<ol class="list-disc space-y-3 ps-10">
+					<ol class="plus list-disc space-y-3 ps-10">
 						<li>
-							Create one-sentence narratives from a persona’s viewpoint that define who the user is,
+							Create one-sentence narratives from a persona’s viewpoint that define who user is,
 							what they want to accomplish, and why.
 						</li>
 						<li>
@@ -131,21 +129,20 @@
 						</li>
 					</ol>
 				</li>
-				<li>
+				<li class="text-lg">
 					<span class="block pb-3">User journeys:</span>
-					<ol class="list-disc space-y-3 ps-10">
+					<ol class="plus list-disc space-y-3 ps-10">
 						<li>
-							Map out the sequence of experiences a user undergoes in attempting to achieve their
-							goal.
+							Map out sequence of experiences a user undergoes in attempting to achieve their goal.
 						</li>
 					</ol>
 				</li>
-				<li>
+				<li class="text-lg">
 					<span class="block pb-3"
 						>Formulate a clear problem statement and develop a value proposition:</span>
-					<ol class="list-disc space-y-3 ps-10">
+					<ol class="plus list-disc space-y-3 ps-10">
 						<li>
-							Summarize who the user is, what they need from the design, and why, using a structured
+							Summarize who user is, what they need from design, and why, using a structured
 							template:
 							<span class="ms-8 mt-3 block"
 								><u>[Name of user persona]</u> is a <u>[type of user]</u> who needs
@@ -154,7 +151,7 @@
 								<u>[benefits of user experience]</u>.</span>
 						</li>
 						<li>
-							Ensure the design caters to various user types by crafting problem statements for each
+							Ensure design caters to various user types by crafting problem statements for each
 							user persona, thus aligning product development with diverse user needs.
 						</li>
 					</ol>
@@ -186,19 +183,19 @@
 		</h3>
 		<div class="px-5">
 			<ul class="list-disc space-y-10">
-				<li>Generate numerous design solutions without judging their quality.</li>
-				<li>
+				<li class="text-lg">Generate numerous design solutions without judging their quality.</li>
+				<li class="text-lg">
 					Engage in collaborative brainstorming with diverse team members from marketing,
 					engineering, product management, and other relevant stakeholders.
 				</li>
-				<li>
+				<li class="text-lg">
 					Use user and competitive research to refine ideas and develop user flows to demonstrate
-					interactions with the solution.
+					interactions with solution.
 				</li>
-				<li>
+				<li class="text-lg">
 					<span class="block pb-3">Employ techniques like:</span>
-					<ol class="list-disc space-y-3 ps-10">
-						<li>Transforming the problem statement into "How might we" questions.</li>
+					<ol class="plus list-disc space-y-3 ps-10">
+						<li>Transforming problem statement into "How might we" questions.</li>
 						<li>
 							Rapid sketching by dividing a sheet into squares and sketching ideas within timed
 							intervals.
@@ -208,17 +205,16 @@
 							weaknesses.
 						</li>
 						<li>
-							Applying the SCAMPER method to innovate through substituting, combining, adapting,
+							Applying SCAMPER method to innovate through substituting, combining, adapting,
 							modifying, putting to another use, eliminating, and rearranging elements.
 						</li>
 					</ol>
 				</li>
-				<li>
-					Organize collaboration by defining participant roles, deciding on the location (physical
-					or virtual), clarifying collaboration goals, and determining the tools and processes to be
-					used.
+				<li class="text-lg">
+					Organize collaboration by defining participant roles, deciding on location (physical or
+					virtual), clarifying collaboration goals, and determining tools and processes to be used.
 				</li>
-				<li>
+				<li class="text-lg">
 					Assess ideas based on feasibility within budget and schedule constraints and alignment
 					with design standards.
 				</li>
@@ -248,64 +244,64 @@
 		</h3>
 		<div class="px-5">
 			<ul class="list-disc space-y-10">
-				<li>
+				<li class="text-lg">
 					<span class="block pb-3">
 						Create an initial model of a product that showcases its features and allows for testing:
 					</span>
-					<ol class="list-disc space-y-3 ps-10">
+					<ol class="plus list-disc space-y-3 ps-10">
 						<li>
-							Develop a sitemap to organize the product by defining its hierarchy and sequence,
+							Develop a sitemap to organize product by defining its hierarchy and sequence,
 							illustrating topics' importance and navigational flow.
 						</li>
 						<li>
 							Produce wireframes, both paper-based and digital (using tools like Figma or Adobe XD),
-							to visually represent the product's layout and interface.
+							to visually represent product's layout and interface.
 						</li>
 						<li>
-							Construct low-fidelity prototypes to provide a basic interactive model of the product,
+							Construct low-fidelity prototypes to provide a basic interactive model of product,
 							allowing for initial user interaction feedback.
 						</li>
 						<li>
-							Advance to high-fidelity prototypes that closely mimic the final product with detailed
+							Advance to high-fidelity prototypes that closely mimic final product with detailed
 							components and interactivity for thorough testing.
 						</li>
 					</ol>
 				</li>
-				<li>
+				<li class="text-lg">
 					<span class="block pb-3"
-						>Integrate testing throughout the prototyping phase to refine the design continuously
-						based on user feedback:</span>
-					<ol class="list-disc space-y-3 ps-10">
+						>Integrate testing throughout prototyping phase to refine design continuously based on
+						user feedback:</span>
+					<ol class="plus list-disc space-y-3 ps-10">
 						<li>Begin with simple sketches or sitemaps to gather initial feedback.</li>
 						<li>Progress to more detailed paper prototypes for another testing round.</li>
 						<li>
 							Further iterate to a high-fidelity, interactive model for additional user testing.
 						</li>
 						<li>
-							Potentially test multiple prototypes or the same prototype across different devices to
+							Potentially test multiple prototypes or same prototype across different devices to
 							optimize user experience.
 						</li>
 					</ol>
 				</li>
 
-				<li>
+				<li class="text-lg">
 					<span class="block pb-3"
-						>Establish a comprehensive testing plan to refine the prototype effectively:</span>
-					<ol class="list-disc space-y-3 ps-10">
+						>Establish a comprehensive testing plan to refine prototype effectively:</span>
+					<ol class="plus list-disc space-y-3 ps-10">
 						<li>
-							Determine who will participate in the tests, from informal feedback circles to target
+							Determine who will participate in tests, from informal feedback circles to target
 							users.
 						</li>
 						<li>
-							Define what types of tests will be conducted, considering both the prototype's stage
-							and the testing environment.
+							Define what types of tests will be conducted, considering both prototype's stage and
+							testing environment.
 						</li>
 						<li>
 							Clarify why tests are conducted, primarily to validate earlier design decisions and
 							uncover usability issues.
 						</li>
 						<li>
-							Outline how participants will interact with the prototype and how information will be
+							Outline how participants will interact with prototype and how information will be
 							collected during tests, ensuring inclusivity and accessibility.
 						</li>
 					</ol>
@@ -313,4 +309,41 @@
 			</ul>
 		</div>
 	</div>
+	<div class="rounded-2xl border border-slate-700 bg-base-200 p-5 hover:bg-base-100 lg:col-span-2">
+		<h3
+			class="mb-5 inline-block bg-gradient-to-r from-emerald-200 via-lime-200 to-teal-300 bg-clip-text text-transparent">
+			Sources
+		</h3>
+		<ol class="list-decimal space-y-3 px-5">
+			<li>
+				<a href="https://grow.google/certificates/ux-design/">Google UX Design Certificate</a>
+			</li>
+			<li>
+				<a href="https://www.nngroup.com/articles/interview-sample-size/">Nielsen Norman Group</a>
+			</li>
+		</ol>
+	</div>
 </div>
+
+<style>
+	.plus li,
+	.tick li,
+	.list-decimal li {
+		padding-left: 0.6em;
+	}
+	.plus li::marker {
+		content: '+';
+		font-size: 0.8em;
+		color: rgb(217 249 157);
+		padding-block-end: 2em;
+	}
+	.tick li::marker {
+		content: '✔';
+		font-size: 0.8em;
+		color: rgb(217 249 157);
+		padding-block-end: 2em;
+	}
+	.list-disc li::marker {
+		color: rgb(217 249 157);
+	}
+</style>

@@ -72,7 +72,10 @@
 	</div>
 
 	<div class="rounded-2xl border border-slate-700 bg-base-200 p-5 hover:bg-base-100 lg:col-span-2">
-		<h3 class="mb-5">Topics</h3>
+		<h3
+			class="mb-5 inline-block bg-gradient-to-r from-emerald-200 via-lime-200 to-teal-300 bg-clip-text text-transparent">
+			Topics
+		</h3>
 		<p class="mb-7">
 			{#each data.post.topics as topic}
 				<button
@@ -104,7 +107,10 @@
 	</div>
 
 	<div class="rounded-2xl border border-slate-700 bg-base-200 p-5 hover:bg-base-100">
-		<h3 class="mb-5">Find answers to...</h3>
+		<h3
+			class="mb-5 inline-block bg-gradient-to-r from-emerald-200 via-lime-200 to-teal-300 bg-clip-text text-transparent">
+			Find answers to...
+		</h3>
 		<ul class="mb-7 list-disc ps-4">
 			{#each data.post.questions as question}
 				<li>{question}</li>
@@ -112,7 +118,10 @@
 		</ul>
 	</div>
 	<div class="rounded-2xl border border-slate-700 bg-base-200 p-5 hover:bg-base-100">
-		<h3 class="mb-5">Objectives</h3>
+		<h3
+			class="mb-5 inline-block bg-gradient-to-r from-emerald-200 via-lime-200 to-teal-300 bg-clip-text text-transparent">
+			Objectives
+		</h3>
 		<ul class="list-disc ps-4">
 			{#each data.post.objectives as objective}
 				<li>{objective}</li>
@@ -121,7 +130,10 @@
 	</div>
 	<div
 		class="col-span-1 rounded-2xl border border-slate-700 bg-base-200 p-5 hover:bg-base-100 lg:col-span-2">
-		<h3 class="mb-5">My Observations</h3>
+		<h3
+			class="mb-5 inline-block bg-gradient-to-r from-emerald-200 via-lime-200 to-teal-300 bg-clip-text text-transparent">
+			My Observations
+		</h3>
 		<div class="grid grid-cols-1 gap-x-3 gap-y-3 lg:grid-cols-4">
 			{#if data.post.issues == '' || !data.post.issues}
 				Haven't gotten to writing this yet.
@@ -137,7 +149,10 @@
 		</div>
 	</div>
 	<div class="rounded-2xl border border-slate-700 bg-base-200 p-5 hover:bg-base-100 lg:col-span-2">
-		<h3 class="mb-5">Courses</h3>
+		<h3
+			class="mb-5 inline-block bg-gradient-to-r from-emerald-200 via-lime-200 to-teal-300 bg-clip-text text-transparent">
+			Courses
+		</h3>
 		{#if data.post.resources.courses == '' || !data.post.resources.courses}
 			Sorry, nothing here
 		{:else}
@@ -150,7 +165,10 @@
 	</div>
 	<div
 		class="col-span-1 rounded-2xl border border-slate-700 bg-base-200 p-5 hover:bg-base-100 lg:col-span-2">
-		<h3 class="mb-5">Readings</h3>
+		<h3
+			class="mb-5 inline-block bg-gradient-to-r from-emerald-200 via-lime-200 to-teal-300 bg-clip-text text-transparent">
+			Readings
+		</h3>
 
 		{#if data.post.resources.links == ''}
 			Sorry, nothing here
@@ -163,7 +181,8 @@
 		{/if}
 	</div>
 	<div class="rounded-2xl border border-slate-700 bg-base-200 p-5 hover:bg-base-100 lg:col-span-2">
-		<h3 class="mb-5">
+		<h3
+			class="mb-5 inline-block bg-gradient-to-r from-emerald-200 via-lime-200 to-teal-300 bg-clip-text text-transparent">
 			Watch on Youtube
 
 			<svg
@@ -204,7 +223,7 @@
 <style>
 	li {
 		margin-bottom: 0.75rem;
-		padding-left: 0.75rem;
+		padding-left: 0.1rem;
 	}
 
 	.next-prev {
@@ -216,5 +235,9 @@
 		iframe[src*='youtube'] {
 			width: 100% !important;
 		}
+	}
+
+	.list-disc li::marker {
+		color: rgb(217 249 157);
 	}
 </style>
