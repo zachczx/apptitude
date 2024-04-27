@@ -36,7 +36,7 @@
 </svelte:head>
 
 <div class="navbar-view-transition navbar {data.url === '/' ? 'absolute z-20' : ''}">
-	<div class="max-h-18 navbar-start">
+	<div class="max-h-18">
 		<div class="dropdown">
 			<div tabindex="0" role="button" class="btn btn-ghost -ms-3 lg:hidden">
 				<svg
@@ -81,25 +81,26 @@
 				sizes="(min-width:1920px) 300px, (min-width:1600px) 300px, (min-width:1280px) 200px"
 				alt="Apptitude logo"
 				fetchpriority="high"
-				class="object-scale-down lg:ms-16" /></a>
+				class="object-scale-down" /></a>
 	</div>
 	<div class="navbar hidden justify-start lg:flex">
-		<ul class="menu menu-horizontal gap-x-5 pe-5 ps-1 text-2xl font-medium">
+		<ul class="menu menu-horizontal gap-x-5 ps-8 font-medium">
 			<!-- removed menu class -->
 			<li aria-current={matchUrl(data.url, '/learn') === 0 ? 'page' : undefined}>
-				<a class="hover:bg-base-100 hover:text-primary" href="/learn">Learn</a>
+				<a class="text-xl hover:bg-base-100 hover:text-primary" href="/learn">Learn</a>
 			</li>
 			<li aria-current={matchUrl(data.url, '/guides') === 0 ? 'page' : undefined}>
-				<a class="hover:bg-base-100 hover:text-primary" href="/guides">Guides</a>
+				<a class="text-xl hover:bg-base-100 hover:text-primary" href="/guides">Guides</a>
 			</li>
 			<li aria-current={matchUrl(data.url, '/techtrippin') === 0 ? 'page' : undefined}>
-				<a class="hover:bg-base-100 hover:text-primary" href="/techtrippin">Tech Trippin'</a>
+				<a class="text-xl hover:bg-base-100 hover:text-primary" href="/techtrippin"
+					>Tech Trippin'</a>
 			</li>
 			<!--<li aria-current={matchUrl(data.url, '/todo') === 0 ? 'page' : undefined}>
 				<a class="hover:bg-base-100 hover:text-primary" href="/todo">To-Dos</a>
 			</li>-->
 			<li aria-current={matchUrl(data.url, '/about') === 0 ? 'page' : undefined}>
-				<a class="hover:bg-base-100 hover:text-primary" href="/about">About</a>
+				<a class="text-xl hover:bg-base-100 hover:text-primary" href="/about">About</a>
 			</li>
 		</ul>
 	</div>

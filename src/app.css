@@ -43,6 +43,6 @@ html {
 
 	p,
 	li {
-		@apply lg:text-lg xl:text-xl;
+		@apply text-base lg:text-base xl:text-base;
 	}
 }

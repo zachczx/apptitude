@@ -33,7 +33,7 @@
 			>Empathize
 		</h3>
 		<div class="px-5">
-			<ul class="list-disc space-y-7">
+			<ul class="list-disc space-y-10">
 				<li>
 					Conduct user research to uncover genuine pain points and user needs that are not met
 				</li>
@@ -46,9 +46,15 @@
 							achieve)
 						</li>
 						<li>
-							Figure out what to conduct (Do user interviews (thick data that shows contextual
-							relationships between data points), fly on the wall (observe without interference),
-							quantitative surveys (big data that gives spread of numbers)
+							<span class="block pb-3">Decide what to conduct:</span>
+							<ol class="list-disc space-y-3 ps-10">
+								<li>
+									User interviews (thick data that shows contextual relationships between data
+									points)
+								</li>
+								<li>Fly on the wall (observe without interferring)</li>
+								<li>Quantitative surveys (big data that gives spread of numbers)</li>
+							</ol>
 						</li>
 						<li>Identify who's affected by the design</li>
 						<li>Define the deliverables that the research should yield</li>
@@ -83,9 +89,25 @@
 		</div>
 	</div>
 	<div class="rounded-2xl border border-slate-700 bg-base-200 p-5 hover:bg-base-100">
-		<h3 class="mb-5 text-lime-100">Define</h3>
+		<h3 class="mb-5 text-lime-100">
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				width="1em"
+				height="1em"
+				viewBox="0 0 24 24"
+				fill="none"
+				stroke="currentColor"
+				stroke-width="2"
+				stroke-linecap="round"
+				stroke-linejoin="round"
+				class="icon icon-tabler icons-tabler-outline icon-tabler-notebook mb-1 me-3 inline"
+				><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path
+					d="M6 4h11a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-11a1 1 0 0 1 -1 -1v-14a1 1 0 0 1 1 -1m3 0v18" /><path
+					d="M13 8l2 0" /><path d="M13 12l2 0" /></svg
+			>Define
+		</h3>
 		<div class="px-5">
-			<ul class="list-disc space-y-7">
+			<ul class="list-disc space-y-10">
 				<li>
 					Analyze the research from the empathize phase to identify and prioritize key user problems
 					that need solving, explaining the rationale behind these priorities.
@@ -113,7 +135,7 @@
 					</ol>
 				</li>
 				<li>
-					<span class="pb-3"
+					<span class="block pb-3"
 						>Formulate a clear problem statement and develop a value proposition:</span>
 					<ol class="list-disc space-y-3 ps-10">
 						<li>
@@ -135,9 +157,26 @@
 		</div>
 	</div>
 	<div class="rounded-2xl border border-slate-700 bg-base-200 p-5 hover:bg-base-100">
-		<h3 class="mb-5 text-lime-100">Ideate</h3>
+		<h3 class="mb-5 text-lime-100">
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				width="1em"
+				height="1em"
+				viewBox="0 0 24 24"
+				fill="none"
+				stroke="currentColor"
+				stroke-width="2"
+				stroke-linecap="round"
+				stroke-linejoin="round"
+				class="icon icon-tabler icons-tabler-outline icon-tabler-bulb mb-1 me-3 inline"
+				><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path
+					d="M3 12h1m8 -9v1m8 8h1m-15.4 -6.4l.7 .7m12.1 -.7l-.7 .7" /><path
+					d="M9 16a5 5 0 1 1 6 0a3.5 3.5 0 0 0 -1 3a2 2 0 0 1 -4 0a3.5 3.5 0 0 0 -1 -3" /><path
+					d="M9.7 17l4.6 0" /></svg
+			>Ideate
+		</h3>
 		<div class="px-5">
-			<ul class="list-disc space-y-7">
+			<ul class="list-disc space-y-10">
 				<li>Generate numerous design solutions without judging their quality.</li>
 				<li>
 					Engage in collaborative brainstorming with diverse team members from marketing,
@@ -178,9 +217,25 @@
 		</div>
 	</div>
 	<div class="rounded-2xl border border-slate-700 bg-base-200 p-5 hover:bg-base-100">
-		<h3 class="mb-5 text-lime-100">Prototype/Test</h3>
+		<h3 class="mb-5 text-lime-100">
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				width="1em"
+				height="1em"
+				viewBox="0 0 24 24"
+				fill="none"
+				stroke="currentColor"
+				stroke-width="2"
+				stroke-linecap="round"
+				stroke-linejoin="round"
+				class="icon icon-tabler icons-tabler-outline icon-tabler-flask mb-1 me-3 inline"
+				><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M9 3l6 0" /><path
+					d="M10 9l4 0" /><path
+					d="M10 3v6l-4 11a.7 .7 0 0 0 .5 1h11a.7 .7 0 0 0 .5 -1l-4 -11v-6" /></svg
+			>Prototype & Test
+		</h3>
 		<div class="px-5">
-			<ul class="list-disc space-y-7">
+			<ul class="list-disc space-y-10">
 				<li>
 					<span class="block pb-3">
 						Create an initial model of a product that showcases its features and allows for testing:

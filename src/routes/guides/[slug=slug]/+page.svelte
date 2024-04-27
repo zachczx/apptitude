@@ -30,7 +30,7 @@
 			{data.post.name}
 		</h1>
 		{#if data.post.bylines[0].text != ''}
-			<div class="flex text-start">
+			<div class="flex justify-center">
 				{#key currentBylineNumber}
 					<div class="chat chat-start" in:fade={{ duration: 1000 }}>
 						<div class="avatar chat-image">
