@@ -48,7 +48,7 @@
 	</div>
 
 	<div class="rounded-2xl border border-slate-700 bg-base-200 p-5 hover:bg-base-100">
-		<h3 class="mb-5">
+		<h2 class="inline text-lime-200">
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
 				width="1em"
@@ -63,9 +63,12 @@
 				><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path
 					d="M14 3v4a1 1 0 0 0 1 1h4" /><path
 					d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" /><path
-					d="M9 17h6" /><path d="M9 13h6" /></svg
-			>Definitions
-		</h3>
+					d="M9 17h6" /><path d="M9 13h6" /></svg>
+		</h2>
+		<h2
+			class="mb-5 inline-block bg-gradient-to-r from-lime-200 to-teal-200 bg-clip-text text-transparent">
+			Definitions
+		</h2>
 		<div>
 			<ol class="list-disc ps-4">
 				{#each data.post.definitions as definition}
@@ -76,7 +79,7 @@
 	</div>
 
 	<div class="rounded-2xl border border-slate-700 bg-base-200 p-5 hover:bg-base-100">
-		<h3 class="mb-5">
+		<h2 class="inline text-lime-200">
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
 				width="1em"
@@ -91,9 +94,12 @@
 				><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path
 					d="M12 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M12 7a5 5 0 1 0 5 5" /><path
 					d="M13 3.055a9 9 0 1 0 7.941 7.945" /><path d="M15 6v3h3l3 -3h-3v-3z" /><path
-					d="M15 9l-3 3" /></svg
-			>Goals
-		</h3>
+					d="M15 9l-3 3" /></svg>
+		</h2>
+		<h2
+			class="mb-5 inline-block bg-gradient-to-r from-lime-200 to-teal-200 bg-clip-text text-transparent">
+			Goals
+		</h2>
 		<div class="">
 			<ol class="list-disc ps-4">
 				{#each data.post.goals as goal}
@@ -104,7 +110,7 @@
 	</div>
 
 	<div class="rounded-2xl border border-slate-700 bg-base-200 p-5 hover:bg-base-100">
-		<h3 class="mb-5">
+		<h2 class="inline text-lime-200">
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
 				width="1em"
@@ -122,9 +128,12 @@
 					d="M14 3.223a9.003 9.003 0 0 1 0 17.554" /><path
 					d="M4.579 17.093a8.961 8.961 0 0 1 -1.227 -2.592" /><path
 					d="M3.124 10.5c.16 -.95 .468 -1.85 .9 -2.675l.169 -.305" /><path
-					d="M6.907 4.579a8.954 8.954 0 0 1 3.093 -1.356" /></svg
-			>Questions
-		</h3>
+					d="M6.907 4.579a8.954 8.954 0 0 1 3.093 -1.356" /></svg>
+		</h2>
+		<h2
+			class="mb-5 inline-block bg-gradient-to-r from-lime-200 to-teal-200 bg-clip-text text-transparent">
+			Questions
+		</h2>
 		<div class="">
 			<ol class="list-disc ps-4">
 				{#each data.post.questions as question}
@@ -135,7 +144,7 @@
 	</div>
 
 	<div class="rounded-2xl border border-slate-700 bg-base-200 p-5 hover:bg-base-100">
-		<h3 class="mb-5">
+		<h2 class="inline text-lime-200">
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
 				width="1em"
@@ -148,9 +157,12 @@
 				stroke-linejoin="round"
 				class="icon icon-tabler icons-tabler-outline icon-tabler-circle-x mb-1 me-3 inline"
 				><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path
-					d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /><path d="M10 10l4 4m0 -4l-4 4" /></svg
-			>Dealbreakers
-		</h3>
+					d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /><path d="M10 10l4 4m0 -4l-4 4" /></svg>
+		</h2>
+		<h2
+			class="mb-5 inline-block bg-gradient-to-r from-lime-200 to-teal-200 bg-clip-text text-transparent">
+			Dealbreakers
+		</h2>
 		<div class="">
 			<ol class="list-disc ps-4">
 				{#each data.post.dealbreakers as dealbreaker}

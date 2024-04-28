@@ -75,9 +75,12 @@
 							class="z-10 rounded-2xl"
 							in:fly={{ duration: 300, x: -40 }}
 							out:fly={{ duration: 0 }}>
-							<h2 class="mx-5 rounded-t-2xl border-b-2 px-5 pb-3 pt-5">
-								{techtrippin[currentItem].title}
-							</h2>
+							<div class="mx-5 rounded-t-2xl border-b-2 px-5 pb-3 pt-5">
+								<h2
+									class="inline-block bg-gradient-to-r from-emerald-200 via-lime-200 to-teal-300 bg-clip-text text-transparent">
+									{techtrippin[currentItem].title}
+								</h2>
+							</div>
 							<div class="space-y-10 p-2 xl:p-6">
 								<div class="chat chat-start">
 									<div class="avatar chat-image">

@@ -72,10 +72,10 @@
 	</div>
 
 	<div class="rounded-2xl border border-slate-700 bg-base-200 p-5 hover:bg-base-100 lg:col-span-2">
-		<h3
+		<h2
 			class="mb-5 inline-block bg-gradient-to-r from-emerald-200 via-lime-200 to-teal-300 bg-clip-text text-transparent">
 			Topics
-		</h3>
+		</h2>
 		<p class="mb-7">
 			{#each data.post.topics as topic}
 				<button
@@ -107,10 +107,10 @@
 	</div>
 
 	<div class="rounded-2xl border border-slate-700 bg-base-200 p-5 hover:bg-base-100">
-		<h3
+		<h2
 			class="mb-5 inline-block bg-gradient-to-r from-emerald-200 via-lime-200 to-teal-300 bg-clip-text text-transparent">
 			Find answers to...
-		</h3>
+		</h2>
 		<ul class="mb-7 list-disc ps-4">
 			{#each data.post.questions as question}
 				<li>{question}</li>
@@ -118,10 +118,10 @@
 		</ul>
 	</div>
 	<div class="rounded-2xl border border-slate-700 bg-base-200 p-5 hover:bg-base-100">
-		<h3
+		<h2
 			class="mb-5 inline-block bg-gradient-to-r from-emerald-200 via-lime-200 to-teal-300 bg-clip-text text-transparent">
 			Objectives
-		</h3>
+		</h2>
 		<ul class="list-disc ps-4">
 			{#each data.post.objectives as objective}
 				<li>{objective}</li>
@@ -130,17 +130,17 @@
 	</div>
 	<div
 		class="col-span-1 rounded-2xl border border-slate-700 bg-base-200 p-5 hover:bg-base-100 lg:col-span-2">
-		<h3
+		<h2
 			class="mb-5 inline-block bg-gradient-to-r from-emerald-200 via-lime-200 to-teal-300 bg-clip-text text-transparent">
 			My Observations
-		</h3>
+		</h2>
 		<div class="grid grid-cols-1 gap-x-3 gap-y-3 lg:grid-cols-4">
 			{#if data.post.issues == '' || !data.post.issues}
 				Haven't gotten to writing this yet.
 			{:else}
 				{#each data.post.issues as issue}
 					<div class="card grid max-w-full content-center bg-neutral text-neutral-content">
-						<div class="card-body text-center lg:text-lg xl:text-xl">
+						<div class="card-body text-center">
 							{issue}
 						</div>
 					</div>
@@ -149,10 +149,10 @@
 		</div>
 	</div>
 	<div class="rounded-2xl border border-slate-700 bg-base-200 p-5 hover:bg-base-100 lg:col-span-2">
-		<h3
+		<h2
 			class="mb-5 inline-block bg-gradient-to-r from-emerald-200 via-lime-200 to-teal-300 bg-clip-text text-transparent">
 			Courses
-		</h3>
+		</h2>
 		{#if data.post.resources.courses == '' || !data.post.resources.courses}
 			Sorry, nothing here
 		{:else}
@@ -165,10 +165,10 @@
 	</div>
 	<div
 		class="col-span-1 rounded-2xl border border-slate-700 bg-base-200 p-5 hover:bg-base-100 lg:col-span-2">
-		<h3
+		<h2
 			class="mb-5 inline-block bg-gradient-to-r from-emerald-200 via-lime-200 to-teal-300 bg-clip-text text-transparent">
 			Readings
-		</h3>
+		</h2>
 
 		{#if data.post.resources.links == ''}
 			Sorry, nothing here
@@ -181,7 +181,7 @@
 		{/if}
 	</div>
 	<div class="rounded-2xl border border-slate-700 bg-base-200 p-5 hover:bg-base-100 lg:col-span-2">
-		<h3
+		<h2
 			class="mb-5 inline-block bg-gradient-to-r from-emerald-200 via-lime-200 to-teal-300 bg-clip-text text-transparent">
 			Watch on Youtube
 
@@ -200,7 +200,7 @@
 					d="M18 3a5 5 0 0 1 5 5v8a5 5 0 0 1 -5 5h-12a5 5 0 0 1 -5 -5v-8a5 5 0 0 1 5 -5zm-9 6v6a1 1 0 0 0 1.514 .857l5 -3a1 1 0 0 0 0 -1.714l-5 -3a1 1 0 0 0 -1.514 .857z"
 					stroke-width="0"
 					fill="currentColor" /></svg>
-		</h3>
+		</h2>
 		{#if data.post.resources.youtube == ''}
 			Sorry, nothing here
 		{:else}

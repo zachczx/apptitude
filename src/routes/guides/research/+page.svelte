@@ -14,8 +14,8 @@
 		</h1>
 	</div>
 
-	<div class=" rounded-2xl border border-slate-700 bg-base-200 px-3 py-5 hover:bg-base-100 lg:px-5">
-		<h3 class="inline text-emerald-200">
+	<div class="rounded-2xl border border-slate-700 bg-base-200 px-3 py-5 hover:bg-base-100 lg:px-5">
+		<h2 class="inline text-emerald-200">
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
 				width="1em"
@@ -31,61 +31,19 @@
 					d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" /><path
 					d="M12 6l-3.293 3.293a1 1 0 0 0 0 1.414l.543 .543c.69 .69 1.81 .69 2.5 0l1 -1a3.182 3.182 0 0 1 4.5 0l2.25 2.25" /><path
 					d="M12.5 15.5l2 2" /><path d="M15 13l2 2" /></svg>
-		</h3>
-		<h3
-			class="mb-5 inline-block bg-gradient-to-r from-emerald-200 via-lime-200 to-teal-300 bg-clip-text text-transparent">
+		</h2>
+		<h2
+			class="mb-5 inline-block bg-gradient-to-r from-lime-200 to-teal-200 bg-clip-text text-transparent">
 			Empathize
-		</h3>
+		</h2>
 		<div class="px-5">
-			<ul class="list-disc space-y-10">
+			<ul class="list-disc space-y-5">
 				<li class="text-lg">
 					Conduct user research to uncover genuine pain points and user needs that are not met
 				</li>
-				<h4 class="border-b-2 border-lime-100 text-lime-100">Plan user research</h4>
+				<h4 class="border-b-2 border-lime-100 pt-6 text-lime-200">Plan user research</h4>
 				<li class="text-lg">
 					<span class="block pb-3">Plan should have:</span>
-					<!-- <div class="cols-auto-cols grid gap-3 text-center lg:grid-cols-3">
-						<div
-							class="grid h-full w-full place-items-center rounded-2xl border border-gray-400 p-2">
-							<span class="text-lg">Project background</span>
-						</div>
-						<div
-							class="grid h-full w-full place-items-center rounded-2xl border border-gray-400 p-2">
-							<span
-								class="tooltip tooltip-info text-lg"
-								data-tip="Clarify specific ideas to learn or outcomes to achieve">
-								Establish research goals <TablerInfoCircle class="inline h-8 pb-3" />
-							</span>
-						</div>
-						<div
-							class="grid h-full w-full place-items-center rounded-2xl border border-gray-400 p-2">
-							<span class="text-lg">Do interviews, fly on wall, or surveys</span>
-						</div>
-						<div
-							class="grid h-full w-full place-items-center rounded-2xl border border-gray-400 p-2">
-							<span class="text-lg">Identify who's affected by design</span>
-						</div>
-
-						<div
-							class="grid h-full w-full place-items-center rounded-2xl border border-gray-400 p-2">
-							<span class="text-lg">Define deliverables for research</span>
-						</div>
-						<div
-							class="grid h-full w-full place-items-center rounded-2xl border border-gray-400 p-2">
-							<span class="text-lg">Ensure quality of research data</span>
-						</div>
-
-						<div
-							class="grid h-full w-full place-items-center rounded-2xl border border-gray-400 p-2">
-							<span
-								class="tooltip tooltip-info text-lg"
-								data-tip="Time on task, Use of navigation vs. search,
-								User error rates, Drop-off rates, Conversion rates, System Usability Scale, Net
-								Promoter Score">
-								Determine KPIs to measure in study <TablerInfoCircle class="inline h-8 pb-3" />
-							</span>
-						</div>
-					</div> -->
 					<ol class="plus list-disc space-y-3 ps-10">
 						<li>Project background</li>
 						<li>
@@ -110,32 +68,9 @@
 						</li>
 					</ol>
 				</li>
-				<h4 class="border-b-2 border-lime-100 text-lime-100">Recruitment of Participants</h4>
+				<h4 class="border-b-2 border-lime-100 pt-6 text-lime-200">Recruitment of Participants</h4>
 				<li class="text-lg">
 					<span class="mb-3 block">Recruit a diverse participant pool</span>
-					<!-- <div class="cols-auto-cols grid gap-3 text-center lg:grid-cols-2">
-						<div
-							class="grid h-full w-full place-items-center rounded-2xl border border-gray-400 p-2">
-							<span class="text-lg">Develop criteria to select interviewees</span>
-						</div>
-						<div
-							class="grid h-full w-full place-items-center rounded-2xl border border-gray-400 p-2">
-							<span class="text-lg"
-								>Find people from existing user base, online, hallway testing</span>
-						</div>
-						<div
-							class="grid h-full w-full place-items-center rounded-2xl border border-gray-400 p-2">
-							<span
-								class="tooltip tooltip-info text-lg"
-								data-tip="Reduce this if you have budget/timeline constraints (this is only the start after all)"
-								>Get 5-8 people per user group/persona you are studying
-								<TablerInfoCircle class="inline h-8 pb-3" />
-							</span>
-						</div>
-						<div
-							class="grid h-full w-full place-items-center rounded-2xl border border-gray-400 p-2">
-							<span class="text-lg">Consider giving incentives</span>
-						</div> -->
 
 					<ol class="plus list-disc space-y-3 ps-10">
 						<li>
@@ -154,13 +89,21 @@
 						<li>Consider giving incentives</li>
 					</ol>
 				</li>
-				<h4 class="border-b-2 border-lime-100 text-lime-100">Conduct Interviews</h4>
+				<h4 class="border-b-2 border-lime-100 pt-6 text-lime-200">Conduct Interviews</h4>
 				<li class="text-lg">
-					<span class="mb-3 block">Conduct interviews</span>
+					<span class="mb-3 block">Prepare for interviews</span>
 
 					<ol class="plus list-disc space-y-3 ps-10">
 						<li>Script interview questions</li>
 						<li>Collect supplies (e.g. laptop, printed questions, markers)</li>
+						<li>Email interviewees for 1-1 interviews as far as possible</li>
+						<li>Book conducive spaces and travel to their location if it's best</li>
+						<li>Remind them of interviews</li>
+					</ol>
+				</li>
+				<li class="text-lg">
+					<span class="mb-3 block">Conduct interviews</span>
+					<ol class="plus list-disc space-y-3 ps-10">
 						<li>Thank users for coming, gather basic details, ask permission to record</li>
 						<li>
 							Speak clearly & concisely, remain professional. Be active listener - nod, make
@@ -182,7 +125,7 @@
 		</div>
 	</div>
 	<div class="rounded-2xl border border-slate-700 bg-base-200 p-5 hover:bg-base-100">
-		<h3 class="inline text-emerald-200">
+		<h2 class="inline text-emerald-200">
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
 				width="1em"
@@ -197,19 +140,19 @@
 				><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path
 					d="M6 4h11a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-11a1 1 0 0 1 -1 -1v-14a1 1 0 0 1 1 -1m3 0v18" /><path
 					d="M13 8l2 0" /><path d="M13 12l2 0" /></svg>
-		</h3>
-		<h3
-			class="mb-5 inline-block bg-gradient-to-r from-emerald-200 via-lime-200 to-teal-300 bg-clip-text text-transparent">
+		</h2>
+		<h2
+			class="mb-5 inline-block bg-gradient-to-r from-lime-200 to-teal-200 bg-clip-text text-transparent">
 			Define
-		</h3>
+		</h2>
 		<div class="px-2">
-			<ul class="list-disc space-y-10">
+			<ul class="list-disc space-y-5">
 				<li class="text-lg">
 					Analyze research from empathize phase to identify and prioritize key user problems that
 					need solving, explaining rationale behind these priorities.
 				</li>
 
-				<h4 class="border-b-2 border-lime-100 text-lime-100">User Story</h4>
+				<h4 class="border-b-2 border-lime-100 pt-6 text-lime-200">Write User Stories</h4>
 				<li class="text-lg">
 					<span class="block pb-3"
 						>User stories are “checklists” to ensure we address and solve key problems they might
@@ -227,11 +170,14 @@
 						</li>
 					</ol>
 				</li>
-				<li class="text-lg">
-					User story: As <u>[type of user]</u>, I want to <u>[action]</u> so that
-					<u>[benefit]</u>.
+				<li
+					class="list-none rounded-2xl border border-lime-200 p-5 text-center text-xl font-bold tracking-wider">
+					As <span class="text-lime-200"><u>[type of user]</u></span>, I want to
+					<span class="text-lime-200"><u>[action]</u></span>
+					so that
+					<span class="text-lime-200"><u>[benefit]</u></span>.
 				</li>
-				<h4 class="border-b-2 border-lime-100 text-lime-100">User Journey</h4>
+				<h4 class="border-b-2 border-lime-100 pt-6 text-lime-200">Draw User Journeys</h4>
 				<li class="text-lg">
 					<span class="block pb-3">Write user journeys for your users:</span>
 					<ol class="plus list-disc space-y-3 ps-10">
@@ -248,7 +194,7 @@
 						</li>
 					</ol>
 				</li>
-				<h4 class="border-b-2 border-lime-100 text-lime-100">Problem Statement</h4>
+				<h4 class="border-b-2 border-lime-100 pt-6 text-lime-200">Problem Statement</h4>
 				<li class="text-lg">
 					<span class="block pb-3"
 						>Formulate clear problem statement and develop value proposition:</span>
@@ -261,17 +207,20 @@
 						</li>
 					</ol>
 				</li>
-				<li class="text-lg">
-					Problem statement: <u>[Name of user persona]</u> is a <u>[type of user]</u> who needs
-					<u>[type of user experience]</u>
+				<li
+					class="list-none rounded-2xl border border-lime-200 p-5 text-center text-xl font-bold tracking-wider">
+					<span class="text-lime-200"><u>[Name of user persona]</u></span> is a
+					<span class="text-lime-200"><u>[type of user]</u></span>
+					who needs
+					<span class="text-lime-200"><u>[type of user experience]</u></span>
 					because
-					<u>[benefits of user experience]</u>.
+					<span class="text-lime-200"><u>[benefits of user experience]</u></span>.
 				</li>
 			</ul>
 		</div>
 	</div>
 	<div class="rounded-2xl border border-slate-700 bg-base-200 p-5 hover:bg-base-100">
-		<h3 class="inline text-emerald-200">
+		<h2 class="inline text-emerald-200">
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
 				width="1em"
@@ -287,11 +236,11 @@
 					d="M3 12h1m8 -9v1m8 8h1m-15.4 -6.4l.7 .7m12.1 -.7l-.7 .7" /><path
 					d="M9 16a5 5 0 1 1 6 0a3.5 3.5 0 0 0 -1 3a2 2 0 0 1 -4 0a3.5 3.5 0 0 0 -1 -3" /><path
 					d="M9.7 17l4.6 0" /></svg>
-		</h3>
-		<h3
-			class="mb-5 inline-block bg-gradient-to-r from-emerald-200 via-lime-200 to-teal-300 bg-clip-text text-transparent">
+		</h2>
+		<h2
+			class="mb-5 inline-block bg-gradient-to-r from-lime-200 to-teal-200 bg-clip-text text-transparent">
 			Ideate
-		</h3>
+		</h2>
 		<div class="px-5">
 			<ul class="list-disc space-y-10">
 				<li class="text-lg">
@@ -337,7 +286,7 @@
 		</div>
 	</div>
 	<div class="rounded-2xl border border-slate-700 bg-base-200 p-5 hover:bg-base-100">
-		<h3 class="inline text-emerald-200">
+		<h2 class="inline text-emerald-200">
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
 				width="1em"
@@ -352,11 +301,11 @@
 				><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M9 3l6 0" /><path
 					d="M10 9l4 0" /><path
 					d="M10 3v6l-4 11a.7 .7 0 0 0 .5 1h11a.7 .7 0 0 0 .5 -1l-4 -11v-6" /></svg>
-		</h3>
-		<h3
-			class="mb-5 inline-block bg-gradient-to-r from-emerald-200 via-lime-200 to-teal-300 bg-clip-text text-transparent">
+		</h2>
+		<h2
+			class="mb-5 inline-block bg-gradient-to-r from-lime-200 to-teal-200 bg-clip-text text-transparent">
 			Prototype & Test
-		</h3>
+		</h2>
 		<div class="px-5">
 			<ul class="list-disc space-y-10">
 				<li class="text-lg">
@@ -425,10 +374,10 @@
 		</div>
 	</div>
 	<div class="rounded-2xl border border-slate-700 bg-base-200 p-5 hover:bg-base-100">
-		<h3
+		<h2
 			class="mb-5 inline-block bg-gradient-to-r from-emerald-200 via-lime-200 to-teal-300 bg-clip-text text-transparent">
 			Sources
-		</h3>
+		</h2>
 		<ol class="list-decimal space-y-3 px-5">
 			<li>
 				<a href="https://grow.google/certificates/ux-design/">Google UX Design Certificate</a>
