@@ -170,8 +170,7 @@
 						</li>
 					</ol>
 				</li>
-				<li
-					class="list-none rounded-2xl border border-lime-200 p-5 text-center text-xl font-bold tracking-wider">
+				<li class="list-none rounded-2xl border p-5 text-center text-xl font-bold tracking-wider">
 					As <span class="text-lime-200"><u>[type of user]</u></span>, I want to
 					<span class="text-lime-200"><u>[action]</u></span>
 					so that
@@ -207,8 +206,7 @@
 						</li>
 					</ol>
 				</li>
-				<li
-					class="list-none rounded-2xl border border-lime-200 p-5 text-center text-xl font-bold tracking-wider">
+				<li class="list-none rounded-2xl border p-5 text-center text-xl font-bold tracking-wider">
 					<span class="text-lime-200"><u>[Name of user persona]</u></span> is a
 					<span class="text-lime-200"><u>[type of user]</u></span>
 					who needs
@@ -404,16 +402,16 @@
 	.plus li::marker {
 		content: '+';
 		font-size: 0.8em;
-		color: rgb(217 249 157);
+		/* color: rgb(217 249 157); */
 		padding-block-end: 2em;
 	}
 	.tick li::marker {
 		content: '✔';
 		font-size: 0.8em;
-		color: rgb(217 249 157);
+		/* color: rgb(217 249 157); */
 		padding-block-end: 2em;
 	}
 	.list-disc li::marker {
-		color: rgb(217 249 157);
+		/* color: rgb(217 249 157); */
 	}
 </style>

@@ -712,6 +712,15 @@ export const info = [
 					url: 'https://www.nngroup.com/articles/usability-101-introduction-to-usability/',
 				},
 				{
+					text: 'Legibility, Readability, and Comprehension: Making Users Read Your Words',
+					url: 'https://www.nngroup.com/articles/legibility-readability-comprehension/',
+				},
+				{
+					text: '7 Things To Remember When Selecting Fonts For Your Design',
+					url: 'https://uxplanet.org/7-things-to-remember-when-selecting-fonts-for-your-design-ec1e592266c5',
+				},
+
+				{
 					text: 'The ultimate guide to proper use of animation in UX',
 					url: 'https://uxdesign.cc/the-ultimate-guide-to-proper-use-of-animation-in-ux-10bd98614fa9',
 				},
