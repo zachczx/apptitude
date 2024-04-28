@@ -43,7 +43,7 @@
 				</li>
 				<li class="text-lg">
 					<span class="block pb-3">Plan should have:</span>
-					<div class="cols-auto-cols grid gap-3 text-center lg:grid-cols-3">
+					<!-- <div class="cols-auto-cols grid gap-3 text-center lg:grid-cols-3">
 						<div
 							class="grid h-full w-full place-items-center rounded-2xl border border-gray-400 p-2">
 							<span class="text-lg">Project background</span>
@@ -84,8 +84,8 @@
 								Determine KPIs to measure in study <TablerInfoCircle class="inline h-8 pb-3" />
 							</span>
 						</div>
-					</div>
-					<!-- 					<ol class="plus list-disc space-y-3 ps-10">
+					</div> -->
+					<ol class="plus list-disc space-y-3 ps-10">
 						<li>Project background</li>
 						<li>
 							Establish overarching research goals (clarify specific ideas to learn or outcomes to
@@ -107,11 +107,11 @@
 							error rates, Drop-off rates, Conversion rates, System Usability Scale, Net Promoter
 							Score
 						</li>
-					</ol> -->
+					</ol>
 				</li>
 				<li class="text-lg">
 					<span class="mb-3 block">Recruit a diverse participant pool</span>
-					<div class="cols-auto-cols grid gap-3 text-center lg:grid-cols-2">
+					<!-- <div class="cols-auto-cols grid gap-3 text-center lg:grid-cols-2">
 						<div
 							class="grid h-full w-full place-items-center rounded-2xl border border-gray-400 p-2">
 							<span class="text-lg">Develop criteria to select interviewees</span>
@@ -133,25 +133,48 @@
 						<div
 							class="grid h-full w-full place-items-center rounded-2xl border border-gray-400 p-2">
 							<span class="text-lg">Consider giving incentives</span>
-						</div>
+						</div> -->
 
-						<!-- 						<ol class="plus list-disc space-y-3 ps-10">
-							<li>
-								Develop a set of criteria that will ensure you select interviewees who are best
-								suited to meet objectives of your interview.
-							</li>
-							<li>Find people from existing user base, online, hallway testing</li>
-							<li>
-								Get 5-8 people per user group/persona you are studying, but reduce this if you have
-								budget/timeline constraints (this is only the start after all)
-							</li>
-							<enhanced:img
-								src={interviewSampleSize}
-								alt="Interview sample size"
-								class="my-3 rounded-lg" />
-							<li>Consider giving incentives</li>
-						</ol> -->
-					</div>
+					<ol class="plus list-disc space-y-3 ps-10">
+						<li>
+							Develop a set of criteria that will ensure you select interviewees who are best suited
+							to meet objectives of your interview.
+						</li>
+						<li>Find people from existing user base, online, hallway testing</li>
+						<li>
+							Get 5-8 people per user group/persona you are studying, but reduce this if you have
+							budget/timeline constraints (this is only the start after all)
+						</li>
+						<enhanced:img
+							src={interviewSampleSize}
+							alt="Interview sample size"
+							class="my-3 rounded-lg" />
+						<li>Consider giving incentives</li>
+					</ol>
+				</li>
+
+				<li class="text-lg">
+					<span class="mb-3 block">Conduct interviews</span>
+
+					<ol class="plus list-disc space-y-3 ps-10">
+						<li>Script interview questions</li>
+						<li>Collect supplies (e.g. laptop, printed questions, markers)</li>
+						<li>Thank users for coming, gather basic details, ask permission to record</li>
+						<li>
+							Speak clearly & concisely, remain professional. Be active listener - nod, make
+							appropriate eye contact, write notes
+						</li>
+						<li>Ask open-ended questions, start with “why” questions.</li>
+						<li>
+							If given short “yes” or “no” answer, ask neutral follow-up question to get them to
+							share more.
+						</li>
+						<li>
+							Take notes, highlight compelling quotes, write down observations about participants,
+							record interviews
+						</li>
+						<li>Thank participants after we're done</li>
+					</ol>
 				</li>
 			</ul>
 		</div>
@@ -184,44 +207,59 @@
 					need solving, explaining rationale behind these priorities.
 				</li>
 				<li class="text-lg">
-					<span class="block pb-3">User stories:</span>
+					<span class="block pb-3"
+						>User stories are “checklists” to ensure we address and solve key problems they might
+						face with product.</span>
 					<ol class="plus list-disc space-y-3 ps-10">
+						<li>User stories concisely capture user needs</li>
+						<li>User stories prioritize design goals</li>
+						<li>User stories foster user-centric empathy</li>
+						<li>User stories justify decisions by showcasing user benefits</li>
+						<li>Craft user stories to be succinct yet impactful</li>
+						<li>User stories should have clear action and benefit</li>
 						<li>
 							Create one-sentence narratives from a persona’s viewpoint that define who user is,
 							what they want to accomplish, and why.
 						</li>
-						<li>
-							As <u>[type of user]</u>, I want to <u>[action]</u> so that
-							<u>[benefit]</u>.
-						</li>
 					</ol>
 				</li>
 				<li class="text-lg">
-					<span class="block pb-3">User journeys:</span>
+					User story: As <u>[type of user]</u>, I want to <u>[action]</u> so that
+					<u>[benefit]</u>.
+				</li>
+				<li class="text-lg">
+					<span class="block pb-3">Write user journeys for your users:</span>
 					<ol class="plus list-disc space-y-3 ps-10">
 						<li>
-							Map out sequence of experiences a user undergoes in attempting to achieve their goal.
+							Draw sequence of experiences a user undergoes in attempting to achieve their goal.
+						</li>
+						<li>
+							Think about user pain points. Are they because of financial, product, process,
+							customer support pains?
+						</li>
+						<li>
+							After you define pain points, answer Who, What, When, Where, Why, and How to solve
+							problems.
 						</li>
 					</ol>
 				</li>
 				<li class="text-lg">
 					<span class="block pb-3"
-						>Formulate a clear problem statement and develop a value proposition:</span>
+						>Formulate clear problem statement and develop value proposition:</span>
 					<ol class="plus list-disc space-y-3 ps-10">
-						<li>
-							Summarize who user is, what they need from design, and why, using a structured
-							template:
-							<span class="ms-8 mt-3 block"
-								><u>[Name of user persona]</u> is a <u>[type of user]</u> who needs
-								<u>[type of user experience]</u>
-								because
-								<u>[benefits of user experience]</u>.</span>
-						</li>
+						<li>Summarize who user is, what they need from design, and why</li>
+
 						<li>
 							Ensure design caters to various user types by crafting problem statements for each
 							user persona, thus aligning product development with diverse user needs.
 						</li>
 					</ol>
+				</li>
+				<li class="text-lg">
+					Problem statement: <u>[Name of user persona]</u> is a <u>[type of user]</u> who needs
+					<u>[type of user experience]</u>
+					because
+					<u>[benefits of user experience]</u>.
 				</li>
 			</ul>
 		</div>
@@ -250,6 +288,10 @@
 		</h3>
 		<div class="px-5">
 			<ul class="list-disc space-y-10">
+				<li class="text-lg">
+					Create hypothesis statements on what solution might be. Use either "If/Then" format or "We
+					believe..."
+				</li>
 				<li class="text-lg">Generate numerous design solutions without judging their quality.</li>
 				<li class="text-lg">
 					Engage in collaborative brainstorming with diverse team members from marketing,
