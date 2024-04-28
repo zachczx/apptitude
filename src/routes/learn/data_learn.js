@@ -554,6 +554,10 @@ export const info = [
 					text: 'Transforming Product Culture with Lea Hickman',
 					url: 'https://www.mindtheproduct.com/transforming-product-culture-lea-hickman/',
 				},
+				{
+					text: 'What defines a top 1% Product Designer? | r/UXDesign',
+					url: 'https://www.reddit.com/r/UXDesign/comments/1ccdafz/what_defines_a_top_1_product_designer/?share_id=HjPbW3ZG-3QOz1n-RgZDW',
+				},
 			],
 		},
 	},
@@ -735,6 +739,10 @@ export const info = [
 				{
 					text: 'A LIST of free tools to help you start in UXTools & apps (r/UXDesign)',
 					url: 'https://www.reddit.com/r/UXDesign/comments/z64rl2/a_list_of_free_tools_to_help_you_start_in_ux/',
+				},
+				{
+					text: 'What is not talked enough about in the topic of Information architecture | r/UXDesign',
+					url: 'https://www.reddit.com/r/UXDesign/comments/1cdk001/what_is_not_talked_enough_about_in_the_topic_of/?share_id=ma_P0v_wsyb0aEnj5RiAG',
 				},
 			],
 		},
@@ -1262,6 +1270,10 @@ export const info = [
 					text: 'Introduction to Computer Science and Programming in Python | Electrical Engineering and Computer Science | MIT OpenCourseWare',
 					url: 'https://ocw.mit.edu/courses/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/',
 				},
+				{
+					text: 'Scrimba',
+					url: 'https://scrimba.com/',
+				},
 			],
 			youtube: [
 				'https://youtube.com/embed/pEfrdAtAmqk?si=XbNLZmktdg7oQCis',
@@ -1295,8 +1307,20 @@ export const info = [
 					url: 'https://www.geeksforgeeks.org/',
 				},
 				{
-					text: 'Full Stack JavaScript | The Odin Project ',
+					text: 'Full Stack JavaScript | The Odin Project',
 					url: 'https://www.theodinproject.com/paths/full-stack-javascript',
+				},
+				{
+					text: 'Deep Dive Into Modern Web Development',
+					url: 'https://fullstackopen.com/en/',
+				},
+				{
+					text: 'Full Stack Developer | Step by step guide to becoming a modern full stack developer in 2024',
+					url: 'https://roadmap.sh/full-stack',
+				},
+				{
+					text: 'Full Stack Web Development for Beginners (Full Course on HTML, CSS, JavaScript, Node.js, MongoDB)',
+					url: 'https://www.youtube.com/watch?app=desktop&v=nu_pCVPKzTk',
 				},
 				{
 					text: 'Kevin Powell - YouTube',
