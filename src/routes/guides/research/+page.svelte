@@ -41,6 +41,7 @@
 				<li class="text-lg">
 					Conduct user research to uncover genuine pain points and user needs that are not met
 				</li>
+				<h4 class="border-b-2 border-lime-100 text-lime-100">Plan user research</h4>
 				<li class="text-lg">
 					<span class="block pb-3">Plan should have:</span>
 					<!-- <div class="cols-auto-cols grid gap-3 text-center lg:grid-cols-3">
@@ -109,6 +110,7 @@
 						</li>
 					</ol>
 				</li>
+				<h4 class="border-b-2 border-lime-100 text-lime-100">Recruitment of Participants</h4>
 				<li class="text-lg">
 					<span class="mb-3 block">Recruit a diverse participant pool</span>
 					<!-- <div class="cols-auto-cols grid gap-3 text-center lg:grid-cols-2">
@@ -152,7 +154,7 @@
 						<li>Consider giving incentives</li>
 					</ol>
 				</li>
-
+				<h4 class="border-b-2 border-lime-100 text-lime-100">Conduct Interviews</h4>
 				<li class="text-lg">
 					<span class="mb-3 block">Conduct interviews</span>
 
@@ -200,12 +202,14 @@
 			class="mb-5 inline-block bg-gradient-to-r from-emerald-200 via-lime-200 to-teal-300 bg-clip-text text-transparent">
 			Define
 		</h3>
-		<div class="px-5">
+		<div class="px-2">
 			<ul class="list-disc space-y-10">
 				<li class="text-lg">
 					Analyze research from empathize phase to identify and prioritize key user problems that
 					need solving, explaining rationale behind these priorities.
 				</li>
+
+				<h4 class="border-b-2 border-lime-100 text-lime-100">User Story</h4>
 				<li class="text-lg">
 					<span class="block pb-3"
 						>User stories are “checklists” to ensure we address and solve key problems they might
@@ -227,6 +231,7 @@
 					User story: As <u>[type of user]</u>, I want to <u>[action]</u> so that
 					<u>[benefit]</u>.
 				</li>
+				<h4 class="border-b-2 border-lime-100 text-lime-100">User Journey</h4>
 				<li class="text-lg">
 					<span class="block pb-3">Write user journeys for your users:</span>
 					<ol class="plus list-disc space-y-3 ps-10">
@@ -243,6 +248,7 @@
 						</li>
 					</ol>
 				</li>
+				<h4 class="border-b-2 border-lime-100 text-lime-100">Problem Statement</h4>
 				<li class="text-lg">
 					<span class="block pb-3"
 						>Formulate clear problem statement and develop value proposition:</span>
@@ -435,6 +441,9 @@
 </div>
 
 <style>
+	li {
+		margin-left: 1em;
+	}
 	.plus li,
 	.list-decimal li {
 		padding-left: 0.6em;
