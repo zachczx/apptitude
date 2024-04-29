@@ -744,6 +744,15 @@ export const info = [
 					text: 'What is not talked enough about in the topic of Information architecture | r/UXDesign',
 					url: 'https://www.reddit.com/r/UXDesign/comments/1cdk001/what_is_not_talked_enough_about_in_the_topic_of/?share_id=ma_P0v_wsyb0aEnj5RiAG',
 				},
+				{
+					text: 'https://www.w3.org/WAI/test-evaluate/preliminary/#video',
+					url: 'https://www.w3.org/WAI/test-evaluate/preliminary/#video',
+				},
+				{ text: 'Usability | Digital.gov', url: 'https://digital.gov/topics/usability/' },
+				{
+					text: 'Buttons | Material Design',
+					url: 'https://m3.material.io/components/buttons/overview',
+				},
 			],
 		},
 	},

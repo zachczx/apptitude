@@ -41,7 +41,7 @@
 				<li class="text-lg">
 					Conduct user research to uncover genuine pain points and user needs that are not met
 				</li>
-				<h4 class="border-b-2 border-lime-100 pt-6 text-lime-100">Plan user research</h4>
+				<h4 class="border-b-2 border-lime-100 pt-6">Plan user research</h4>
 				<li class="text-lg">
 					<span class="block pb-3">Plan should have:</span>
 					<ol class="plus list-disc space-y-3 ps-10">
@@ -68,7 +68,7 @@
 						</li>
 					</ol>
 				</li>
-				<h4 class="border-b-2 border-lime-100 pt-6 text-lime-100">Recruitment of Participants</h4>
+				<h4 class="border-b-2 border-lime-100 pt-6">Recruitment of Participants</h4>
 				<li class="text-lg">
 					<span class="mb-3 block">Recruit a diverse participant pool</span>
 
@@ -89,7 +89,7 @@
 						<li>Consider giving incentives</li>
 					</ol>
 				</li>
-				<h4 class="border-b-2 border-lime-100 pt-6 text-lime-100">Conduct Interviews</h4>
+				<h4 class="border-b-2 border-lime-100 pt-6">Conduct Interviews</h4>
 				<li class="text-lg">
 					<span class="mb-3 block">Prepare for interviews</span>
 
@@ -152,7 +152,7 @@
 					need solving, explaining rationale behind these priorities.
 				</li>
 
-				<h4 class="border-b-2 border-lime-100 pt-6 text-lime-100">Write User Stories</h4>
+				<h4 class="border-b-2 border-lime-100 pt-6">Write User Stories</h4>
 				<li class="text-lg">
 					<span class="block pb-3"
 						>User stories are “checklists” to ensure we address and solve key problems they might
@@ -176,7 +176,7 @@
 					so that
 					<span class="text-lime-200"><u>[benefit]</u></span>.
 				</li>
-				<h4 class="border-b-2 border-lime-100 pt-6 text-lime-100">Draw User Journeys</h4>
+				<h4 class="border-b-2 border-lime-100 pt-6">Draw User Journeys</h4>
 				<li class="text-lg">
 					<span class="block pb-3">Write user journeys for your users:</span>
 					<ol class="plus list-disc space-y-3 ps-10">
@@ -193,7 +193,7 @@
 						</li>
 					</ol>
 				</li>
-				<h4 class="border-b-2 border-lime-100 pt-6 text-lime-100">Problem Statement</h4>
+				<h4 class="border-b-2 border-lime-100 pt-6">Problem Statement</h4>
 				<li class="text-lg">
 					<span class="block pb-3"
 						>Formulate clear problem statement and develop value proposition:</span>
@@ -241,7 +241,7 @@
 		</h2>
 		<div class="px-5">
 			<ul class="list-disc space-y-5">
-				<h4 class="border-b-2 border-lime-100 pt-6 text-lime-100">Develop Hypotheses</h4>
+				<h4 class="border-b-2 border-lime-100 pt-6">Develop Hypotheses</h4>
 				<li class="text-lg">Create hypothesis statements on what solution might be.</li>
 				<li class="text-lg">
 					Use "How Might We". Good HMW accommodates many solutions, but keep focused on these
@@ -255,16 +255,22 @@
 						</li>
 					</ul>
 				</li>
-				<li class="list-none rounded-2xl border p-5 text-center text-xl font-bold tracking-wider">
-					We believe that <span class="text-lime-200"><u>[action]</u></span> will
-					<span class="text-lime-200"><u>[outcome]</u></span>
-					.
+				<li class="text-lg">
+					Or use it in a we believe format:
+					<ul class="mt-3 space-y-3">
+						<li
+							class="list-none rounded-2xl border p-5 text-center text-xl font-bold tracking-wider">
+							We believe that <span class="text-lime-200"><u>[action]</u></span> will
+							<span class="text-lime-200"><u>[outcome]</u></span>
+							.
+						</li>
+					</ul>
 				</li>
 				<li class="text-lg">
 					Ensure hypothesis statements establish what user can do/achieve, what desired outcome that
 					we call successful
 				</li>
-				<h4 class="border-b-2 border-lime-100 pt-6 text-lime-100">Come Up With Design Solutions</h4>
+				<h4 class="border-b-2 border-lime-100 pt-6">Come Up With Design Solutions</h4>
 				<li class="text-lg">
 					<span class="block pb-3">Generate many ideas without judging quality.</span>
 					<ol class="plus list-disc space-y-3 ps-10">
@@ -282,7 +288,7 @@
 						</li>
 					</ol>
 				</li>
-				<h4 class="border-b-2 border-lime-100 pt-6 text-lime-100">Assess Feasibility</h4>
+				<h4 class="border-b-2 border-lime-100 pt-6">Assess Feasibility</h4>
 
 				<li class="text-lg">
 					Assess ideas based on feasibility within budget and schedule constraints and alignment
@@ -316,7 +322,8 @@
 			Prototype & Test
 		</h2>
 		<div class="px-5">
-			<ul class="list-disc space-y-10">
+			<ul class="list-disc space-y-5">
+				<h4 class="border-b-2 border-lime-100 pt-6">Prototype</h4>
 				<li class="text-lg">
 					<span class="block pb-3">
 						Create an initial model of a product that showcases its features and allows for testing:
@@ -340,6 +347,7 @@
 						</li>
 					</ol>
 				</li>
+				<h4 class="border-b-2 border-lime-100 pt-6">Test</h4>
 				<li class="text-lg">
 					<span class="block pb-3"
 						>Integrate testing throughout prototyping phase to refine design continuously based on
