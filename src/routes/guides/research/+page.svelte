@@ -41,7 +41,7 @@
 				<li class="text-lg">
 					Conduct user research to uncover genuine pain points and user needs that are not met
 				</li>
-				<h4 class="border-b-2 border-lime-100 pt-6 text-lime-200">Plan user research</h4>
+				<h4 class="border-b-2 border-lime-100 pt-6 text-lime-100">Plan user research</h4>
 				<li class="text-lg">
 					<span class="block pb-3">Plan should have:</span>
 					<ol class="plus list-disc space-y-3 ps-10">
@@ -68,7 +68,7 @@
 						</li>
 					</ol>
 				</li>
-				<h4 class="border-b-2 border-lime-100 pt-6 text-lime-200">Recruitment of Participants</h4>
+				<h4 class="border-b-2 border-lime-100 pt-6 text-lime-100">Recruitment of Participants</h4>
 				<li class="text-lg">
 					<span class="mb-3 block">Recruit a diverse participant pool</span>
 
@@ -89,7 +89,7 @@
 						<li>Consider giving incentives</li>
 					</ol>
 				</li>
-				<h4 class="border-b-2 border-lime-100 pt-6 text-lime-200">Conduct Interviews</h4>
+				<h4 class="border-b-2 border-lime-100 pt-6 text-lime-100">Conduct Interviews</h4>
 				<li class="text-lg">
 					<span class="mb-3 block">Prepare for interviews</span>
 
@@ -152,7 +152,7 @@
 					need solving, explaining rationale behind these priorities.
 				</li>
 
-				<h4 class="border-b-2 border-lime-100 pt-6 text-lime-200">Write User Stories</h4>
+				<h4 class="border-b-2 border-lime-100 pt-6 text-lime-100">Write User Stories</h4>
 				<li class="text-lg">
 					<span class="block pb-3"
 						>User stories are “checklists” to ensure we address and solve key problems they might
@@ -176,7 +176,7 @@
 					so that
 					<span class="text-lime-200"><u>[benefit]</u></span>.
 				</li>
-				<h4 class="border-b-2 border-lime-100 pt-6 text-lime-200">Draw User Journeys</h4>
+				<h4 class="border-b-2 border-lime-100 pt-6 text-lime-100">Draw User Journeys</h4>
 				<li class="text-lg">
 					<span class="block pb-3">Write user journeys for your users:</span>
 					<ol class="plus list-disc space-y-3 ps-10">
@@ -193,7 +193,7 @@
 						</li>
 					</ol>
 				</li>
-				<h4 class="border-b-2 border-lime-100 pt-6 text-lime-200">Problem Statement</h4>
+				<h4 class="border-b-2 border-lime-100 pt-6 text-lime-100">Problem Statement</h4>
 				<li class="text-lg">
 					<span class="block pb-3"
 						>Formulate clear problem statement and develop value proposition:</span>
@@ -240,45 +240,56 @@
 			Ideate
 		</h2>
 		<div class="px-5">
-			<ul class="list-disc space-y-10">
+			<ul class="list-disc space-y-5">
+				<h4 class="border-b-2 border-lime-100 pt-6 text-lime-100">Develop Hypotheses</h4>
+				<li class="text-lg">Create hypothesis statements on what solution might be.</li>
 				<li class="text-lg">
-					Create hypothesis statements on what solution might be. Use either "If/Then" format or "We
-					believe..."
+					Use "How Might We". Good HMW accommodates many solutions, but keep focused on these
+					solutions.
+					<ul class="mt-3 space-y-3">
+						<li
+							class="list-none rounded-2xl border p-5 text-center text-xl font-bold tracking-wider">
+							If <span class="text-lime-200"><u>[action]</u></span>, then
+							<span class="text-lime-200"><u>[outcome]</u></span>
+							.
+						</li>
+					</ul>
 				</li>
-				<li class="text-lg">Generate numerous design solutions without judging their quality.</li>
-				<li class="text-lg">
-					Engage in collaborative brainstorming with diverse team members from marketing,
-					engineering, product management, and other relevant stakeholders.
+				<li class="list-none rounded-2xl border p-5 text-center text-xl font-bold tracking-wider">
+					We believe that <span class="text-lime-200"><u>[action]</u></span> will
+					<span class="text-lime-200"><u>[outcome]</u></span>
+					.
 				</li>
 				<li class="text-lg">
-					Use user and competitive research to refine ideas and develop user flows to demonstrate
-					interactions with solution.
+					Ensure hypothesis statements establish what user can do/achieve, what desired outcome that
+					we call successful
 				</li>
+				<h4 class="border-b-2 border-lime-100 pt-6 text-lime-100">Come Up With Design Solutions</h4>
 				<li class="text-lg">
-					<span class="block pb-3">Employ techniques like:</span>
+					<span class="block pb-3">Generate many ideas without judging quality.</span>
 					<ol class="plus list-disc space-y-3 ps-10">
-						<li>Transforming problem statement into "How might we" questions.</li>
+						<li>Transform problem statement into "How might we" questions.</li>
 						<li>
-							Rapid sketching by dividing a sheet into squares and sketching ideas within timed
-							intervals.
+							Rapid sketching: Divide a sheet into squares (8), sketch ideas anything (even crazy
+							stuff), keep to timed intervals.
 						</li>
 						<li>
-							Conducting competitive audits to analyze competitors’ products and their strengths and
-							weaknesses.
+							Do competitive audits to analyze competitors' products, strengths, & weaknesses.
 						</li>
 						<li>
-							Applying SCAMPER method to innovate through substituting, combining, adapting,
-							modifying, putting to another use, eliminating, and rearranging elements.
+							Applying SCAMPER method: Substitute, combine, adapt, modify, put to another use,
+							eliminate, & rearrange elements.
 						</li>
 					</ol>
 				</li>
-				<li class="text-lg">
-					Organize collaboration by defining participant roles, deciding on location (physical or
-					virtual), clarifying collaboration goals, and determining tools and processes to be used.
-				</li>
+				<h4 class="border-b-2 border-lime-100 pt-6 text-lime-100">Assess Feasibility</h4>
+
 				<li class="text-lg">
 					Assess ideas based on feasibility within budget and schedule constraints and alignment
 					with design standards.
+				</li>
+				<li class="text-lg">
+					Determine if design idea has value - what does it do and why should users care?
 				</li>
 			</ul>
 		</div>
