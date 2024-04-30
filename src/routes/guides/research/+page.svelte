@@ -9,7 +9,7 @@
 	class="grid grid-cols-1 place-content-start gap-4 rounded-2xl px-2 px-3 py-5 lg:mx-20 lg:grid-cols-2 lg:border lg:border-gray-800 lg:bg-base-300 lg:px-5 lg:shadow-xl lg:shadow-gray-900">
 	<div class="text-center lg:col-span-2">
 		<h1
-			class="inline-block bg-gradient-to-r from-emerald-200 via-orange-200 to-pink-200 bg-clip-text py-3 text-transparent">
+			class="inline-block bg-gradient-to-r from-emerald-200 via-lime-200 to-teal-300 bg-clip-text py-3 text-transparent">
 			Research
 		</h1>
 	</div>

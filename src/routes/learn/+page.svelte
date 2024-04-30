@@ -10,7 +10,7 @@
 <Breadcrumbs textCurrent={'Learn'} />
 <div class="mb-10 text-center lg:mb-10">
 	<h1
-		class="inline-block bg-gradient-to-r from-emerald-200 via-orange-200 to-pink-200 bg-clip-text py-3 text-transparent">
+		class="inline-block bg-gradient-to-r from-emerald-200 via-lime-200 to-teal-300 bg-clip-text py-3 text-transparent">
 		Learn Bytes, Reap Career Delights
 	</h1>
 	<div><i>Find your own path upsizing your Bytes into Megabytes.</i></div>

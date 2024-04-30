@@ -14,7 +14,7 @@
 <Breadcrumbs textCurrent="Guides" />
 <div class="mb-10 text-center">
 	<h1
-		class="inline-block bg-gradient-to-r from-emerald-200 via-orange-200 to-pink-200 bg-clip-text py-3 text-transparent">
+		class="inline-block bg-gradient-to-r from-emerald-200 via-lime-200 to-teal-300 bg-clip-text py-3 text-transparent">
 		Guides to Cache Up!
 	</h1>
 	<div class="px-3">
