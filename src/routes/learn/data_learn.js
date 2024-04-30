@@ -482,6 +482,14 @@ export const info = [
 				},
 				{ text: 'Usability | Digital.gov', url: 'https://digital.gov/topics/usability/' },
 				{
+					text: 'Usability 101: Introduction to Usability',
+					url: 'https://www.nngroup.com/articles/usability-101-introduction-to-usability/',
+				},
+				{
+					text: 'The A to Z of UX — A is for Accessibility: 12 tips for designing an inclusive user experience',
+					url: 'https://uxdesign.cc/the-a-to-z-of-ux-a-is-for-accessibility-12-top-tips-for-designing-an-inclusive-user-experience-667eedaf5bca',
+				},
+				{
 					text: '99% Invisible',
 					url: 'https://99percentinvisible.org/',
 				},
@@ -489,10 +497,7 @@ export const info = [
 					text: 'Design Systems: A design systems publication by Figma',
 					url: 'https://www.designsystems.com/',
 				},
-				{
-					text: 'Usability 101: Introduction to Usability',
-					url: 'https://www.nngroup.com/articles/usability-101-introduction-to-usability/',
-				},
+
 				{
 					text: 'UX Case Study: How YouTube keeps you watching and addicted',
 					url: 'https://www.thedesignership.com/blog/how-youtube-keeps-you-watching-addicted',
@@ -782,7 +787,6 @@ export const info = [
 					text: 'How many participants for a UX interview?',
 					url: 'https://www.nngroup.com/articles/interview-sample-size/',
 				},
-
 				{
 					text: 'Legibility, Readability, and Comprehension: Making Users Read Your Words',
 					url: 'https://www.nngroup.com/articles/legibility-readability-comprehension/',
@@ -798,6 +802,14 @@ export const info = [
 				{
 					text: 'Emphasis: Setting up the focal point of your design',
 					url: 'https://www.interaction-design.org/literature/article/emphasis-setting-up-the-focal-point-of-your-design',
+				},
+				{
+					text: 'Mockplus- Design, prototype and deliver your digital future',
+					url: 'https://www.mockplus.com/blog/post/ui-visual-hierarchy',
+				},
+				{
+					text: 'Visual Hierarchy | Interaction Design Foundation',
+					url: 'https://www.interaction-design.org/literature/topics/visual-hierarchy',
 				},
 				{
 					text: 'The ultimate guide to proper use of animation in UX',

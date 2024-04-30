@@ -93,7 +93,7 @@
 			value={storeLearnButton.length > 0 ? storeLearnButton : ''}
 			id="add-new"
 			class="input input-bordered input-primary w-72" />
-		<button on:click={addTodoButton} type="submit" class="btn btn-primary">+</button>
+		<button onclick={addTodoButton} type="submit" class="btn btn-primary">+</button>
 	</div>
 	<div class="filters">
 		<button
@@ -129,7 +129,7 @@
 				<input
 					type="checkbox"
 					bind:checked={item.done}
-					on:click={toggleTodo}
+					onclick={toggleTodo}
 					data-index={i}
 					class="checkbox-secondary checkbox checkbox-lg hover:outline-double hover:outline-red-300" />
 			</div>
