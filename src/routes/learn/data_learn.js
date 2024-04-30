@@ -398,6 +398,110 @@ export const info = [
 	},
 	{
 		id: 5,
+		name: 'User Experience (Basics)',
+		intro: 'If you want people to actually use your app, try to make it not suck.',
+		slug: 'ux',
+		topics: [
+			'ux',
+			'human-centered design',
+			'design thinking',
+			'contextual inquiry',
+			'interview',
+			'empathy',
+			'problem',
+			'pain-point',
+			'accessibility',
+			'usability',
+			'interaction',
+			'motion',
+			'visual',
+			'lo-fi',
+			'wireframe',
+			'stories',
+			'journey',
+		],
+		questions: [
+			'What is UX?',
+			'How does UX differ from UI?',
+			'How do you conduct user research, design, prototype, validation, testing?',
+			'What are the key principles of user-centric products?',
+			'What are UX design processes and methodologies?',
+			'Why should we incorporate design for users with disabilities and how can I make design inclusive?',
+			"What's the relationship between visual/interaction design and user experience?",
+			'What are visually appealing and usable interfaces?',
+			'What are interaction design patterns and how do people design intuitive and natural interactions?',
+			'What are industry standard tools for UX design (esp Figma)?',
+		],
+		objectives: [
+			"UX is not UI, it's all aspects of the end-user's interaction with the company, its services, and its products.",
+			'Understand user needs, behaviors, and motivations',
+			'Learn methods for user research (e.g. interviews, surveys, usability testing)',
+			'Study principles of good UX design (e.g. usability, accessibility, desirability)',
+			'Grasp key usability principles (learnability, efficiency, memorability, error prevention, satisfaction)',
+			'Explore UX design processes and methodologies',
+			'See usable, intuitive, and appealing in action, especially for web products',
+			'Know the basics of using Figma (no exporting to PDF and sending over email plzzz), Adobe XD, Sketch, etc',
+		],
+		issues: [
+			'Products which offer poor experience still hang in there, because users are often captured audience (think NS Portal and fact that it was always down on weekends)',
+			'People who manage products in Govt seldom talk to actual users',
+			'UX is neither about doing usability testing nor is it copywriting',
+			'There is product management theatre in the public sector',
+			"Good design doesn't mean doing bright colors, flashy animations, layouts. In fact, predictable layout is good, like for websites.",
+		],
+		resources: {
+			courses: [
+				{
+					text: 'Google UX Design Professional Certificate | Coursera',
+					url: 'https://www.coursera.org/professional-certificates/google-ux-design',
+				},
+			],
+			youtube: [
+				'https://www.youtube.com/embed/2QQQtiFwXjU',
+				'https://www.youtube.com/embed/8PM6KxV8GRc',
+				'https://www.youtube.com/embed/wIuVvCuiJhU',
+				'https://www.youtube.com/embed/yNDgFK2Jj1E',
+				'https://www.youtube.com/embed/4eAM6ASs76U',
+			],
+			links: [
+				{
+					text: 'The Definition of User Experience (UX)',
+					url: 'https://www.nngroup.com/articles/definition-user-experience/',
+				},
+				{
+					text: 'Articles | Nielsen Norman Group',
+					url: 'https://www.nngroup.com/articles/',
+				},
+				{
+					text: 'UXPodcast',
+					url: 'https://uxpodcast.com/',
+				},
+				{
+					text: 'UX Department | The GitLab Handbook',
+					url: 'https://handbook.gitlab.com/handbook/product/ux/',
+				},
+				{ text: 'Usability | Digital.gov', url: 'https://digital.gov/topics/usability/' },
+				{
+					text: '99% Invisible',
+					url: 'https://99percentinvisible.org/',
+				},
+				{
+					text: 'Design Systems: A design systems publication by Figma',
+					url: 'https://www.designsystems.com/',
+				},
+				{
+					text: 'Usability 101: Introduction to Usability',
+					url: 'https://www.nngroup.com/articles/usability-101-introduction-to-usability/',
+				},
+				{
+					text: 'UX Case Study: How YouTube keeps you watching and addicted',
+					url: 'https://www.thedesignership.com/blog/how-youtube-keeps-you-watching-addicted',
+				},
+			],
+		},
+	},
+	{
+		id: 6,
 		name: 'Products',
 		intro: 'Make good products, listen to customers, solve user problems.',
 		slug: 'products',
@@ -561,11 +665,12 @@ export const info = [
 			],
 		},
 	},
+
 	{
-		id: 6,
-		name: 'User Experience',
+		id: 7,
+		name: 'User Experience (Advanced)',
 		intro: 'If you want people to actually use your app, try to make it not suck.',
-		slug: 'ux',
+		slug: 'ux-advanced',
 		topics: [
 			'ux',
 			'human-centered design',
@@ -616,10 +721,6 @@ export const info = [
 		],
 		resources: {
 			courses: [
-				{
-					text: 'Google UX Design Professional Certificate | Coursera',
-					url: 'https://www.coursera.org/professional-certificates/google-ux-design',
-				},
 				{ text: 'Nielsen Norman Group Courses', url: 'https://www.nngroup.com/courses/' },
 				{
 					text: 'DesignerUp Product Design (UX/UI) Course',
@@ -635,15 +736,9 @@ export const info = [
 				},
 			],
 			youtube: [
-				'https://www.youtube.com/embed/2QQQtiFwXjU',
-				'https://www.youtube.com/embed/8PM6KxV8GRc',
 				'https://www.youtube.com/embed/NepFo4zXyK4',
-				'https://www.youtube.com/embed/wIuVvCuiJhU',
-				'https://www.youtube.com/embed/yNDgFK2Jj1E',
-				'https://www.youtube.com/embed/4eAM6ASs76U',
 				'https://www.youtube.com/embed/yUvGHNzqG7M',
 				'https://www.youtube.com/embed/9ElrcTtAxzA',
-
 				'https://www.youtube.com/embed/Hx02SaL_IH0',
 				'https://www.youtube.com/embed/L22lDu3QX2c',
 				'https://www.youtube.com/embed/hlI6xGfBjkQ',
@@ -652,24 +747,8 @@ export const info = [
 			],
 			links: [
 				{
-					text: 'The Definition of User Experience (UX)',
-					url: 'https://www.nngroup.com/articles/definition-user-experience/',
-				},
-				{
-					text: 'Articles | Nielsen Norman Group',
-					url: 'https://www.nngroup.com/articles/',
-				},
-				{
-					text: 'UXPodcast',
-					url: 'https://uxpodcast.com/',
-				},
-				{
 					text: 'Design Systems for Developers',
 					url: 'https://storybook.js.org/tutorials/design-systems-for-developers/',
-				},
-				{
-					text: '99% Invisible',
-					url: 'https://99percentinvisible.org/',
 				},
 				{
 					text: 'DesignOps at Airbnb',
@@ -678,14 +757,6 @@ export const info = [
 				{
 					text: 'Material Design | Google',
 					url: 'https://m3.material.io/',
-				},
-				{
-					text: 'Design Systems: A design systems publication by Figma',
-					url: 'https://www.designsystems.com/',
-				},
-				{
-					text: 'UX Department | The GitLab Handbook',
-					url: 'https://handbook.gitlab.com/handbook/product/ux/',
 				},
 				{
 					text: 'Resource library | Figma',
@@ -711,19 +782,23 @@ export const info = [
 					text: 'How many participants for a UX interview?',
 					url: 'https://www.nngroup.com/articles/interview-sample-size/',
 				},
-				{
-					text: 'Usability 101: Introduction to Usability',
-					url: 'https://www.nngroup.com/articles/usability-101-introduction-to-usability/',
-				},
+
 				{
 					text: 'Legibility, Readability, and Comprehension: Making Users Read Your Words',
 					url: 'https://www.nngroup.com/articles/legibility-readability-comprehension/',
 				},
 				{
+					text: 'Breaking Down the Principles of Design (With Infographic)',
+					url: 'https://www.toptal.com/designers/gui/principles-of-design-infographic',
+				},
+				{
 					text: '7 Things To Remember When Selecting Fonts For Your Design',
 					url: 'https://uxplanet.org/7-things-to-remember-when-selecting-fonts-for-your-design-ec1e592266c5',
 				},
-
+				{
+					text: 'Emphasis: Setting up the focal point of your design',
+					url: 'https://www.interaction-design.org/literature/article/emphasis-setting-up-the-focal-point-of-your-design',
+				},
 				{
 					text: 'The ultimate guide to proper use of animation in UX',
 					url: 'https://uxdesign.cc/the-ultimate-guide-to-proper-use-of-animation-in-ux-10bd98614fa9',
@@ -731,10 +806,6 @@ export const info = [
 				{
 					text: 'The Anatomy of a Perfect Landing Page That Converts',
 					url: 'https://www.uxmatters.com/mt/archives/2023/07/the-anatomy-of-a-perfect-landing-page-that-converts.php',
-				},
-				{
-					text: 'UX Case Study: How YouTube keeps you watching and addicted',
-					url: 'https://www.thedesignership.com/blog/how-youtube-keeps-you-watching-addicted',
 				},
 				{
 					text: 'A LIST of free tools to help you start in UXTools & apps (r/UXDesign)',
@@ -748,7 +819,6 @@ export const info = [
 					text: 'https://www.w3.org/WAI/test-evaluate/preliminary/#video',
 					url: 'https://www.w3.org/WAI/test-evaluate/preliminary/#video',
 				},
-				{ text: 'Usability | Digital.gov', url: 'https://digital.gov/topics/usability/' },
 				{
 					text: 'Buttons | Material Design',
 					url: 'https://m3.material.io/components/buttons/overview',
@@ -757,7 +827,7 @@ export const info = [
 		},
 	},
 	{
-		id: 7,
+		id: 8,
 		name: 'Methodologies',
 		intro: "Agile or fragile? This will become your project's survival guide.",
 		slug: 'methodologies',
@@ -847,7 +917,7 @@ export const info = [
 		},
 	},
 	{
-		id: 8,
+		id: 9,
 		name: 'Data',
 		intro: 'Rolling a dice for decisions only works in Monopoly.',
 		slug: 'data',
@@ -962,7 +1032,7 @@ export const info = [
 		},
 	},
 	{
-		id: 9,
+		id: 10,
 		name: 'AI (Basics)',
 		intro: 'AI is the extra brain cells you wish you were born with.',
 		slug: 'ai',
@@ -1084,7 +1154,7 @@ export const info = [
 		},
 	},
 	{
-		id: 10,
+		id: 11,
 		name: 'AI (Advanced)',
 		intro: 'AI is the extra brain cells you wish you were born with.',
 		slug: 'ai-advanced',
@@ -1211,7 +1281,7 @@ export const info = [
 		},
 	},
 	{
-		id: 11,
+		id: 12,
 		name: 'Technical',
 		intro:
 			'Befriend the machines, learn to speak their language before they achieve world domination.',

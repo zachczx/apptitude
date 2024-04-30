@@ -29,19 +29,19 @@
 		</div>
 		<div class="collapse-content space-y-5 bg-base-300 px-5">
 			<h3 class="border-t-2 border-t-gray-700 pt-5">About</h3>
-			<p class="text-xl">
+			<p>
 				This section offers a series of quickstart guides to "cache up" (thanks to Gemini for the
 				clever pun), complete with definitions, probing questions, things to watch out for, and
 				recommended strategies.
 			</p>
-			<p class="pb-3 text-xl">
+			<p>
 				Use these insights to enrich your discussions and decisions with stakeholders, be it
 				approval forums, meetings, daily standups, strategy brainstorming sessions, and even routine
 				email proposals. My goal here is to give you the cheatsheets to give you the bare minimum
 				heuristic tools to critique and make the products under your care better.
 			</p>
 			<h3>Start with Something</h3>
-			<p class="text-xl">
+			<p>
 				Go with the issue below that gives you the most frustration in your work. And if you can't
 				decide, start with <b>Problem Statements</b>.
 			</p>

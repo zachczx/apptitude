@@ -27,7 +27,7 @@
 				courses, Youtube channels, Youtube videos, articles, blog posts, cloud provider
 				documentation, etc.
 			</p>
-			<p class="pb-3 text-xl">
+			<p class="pb-3">
 				Treat this as a start to get you going rather than something with a defined endpoint. It's
 				impossible to be exhaustive, with each topic having tons of knowledge and materials yet to
 				be covered. Information also gets outdated really fast with each day - a new release, a new
