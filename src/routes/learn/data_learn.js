@@ -462,6 +462,8 @@ export const info = [
 				'https://www.youtube.com/embed/wIuVvCuiJhU',
 				'https://www.youtube.com/embed/yNDgFK2Jj1E',
 				'https://www.youtube.com/embed/4eAM6ASs76U',
+				'https://www.youtube.com/embed/NJbTER11-kQ',
+				'https://www.youtube.com/embed/S6maF4tICPs',
 			],
 			links: [
 				{
@@ -749,6 +751,7 @@ export const info = [
 				'https://www.youtube.com/embed/hlI6xGfBjkQ',
 				'https://www.youtube.com/embed/C-UeBdtopdA',
 				'https://www.youtube.com/embed/UWwNIMHFdW4',
+				'https://www.youtube.com/embed/DBHBmeNhYrY',
 			],
 			links: [
 				{
@@ -810,6 +813,10 @@ export const info = [
 				{
 					text: 'Visual Hierarchy | Interaction Design Foundation',
 					url: 'https://www.interaction-design.org/literature/topics/visual-hierarchy',
+				},
+				{
+					text: 'Golden Ratio. Bring Balance in UI Design.',
+					url: 'https://uxplanet.org/golden-ratio-bring-balance-in-ui-design-765c954f0ff9',
 				},
 				{
 					text: 'The ultimate guide to proper use of animation in UX',
