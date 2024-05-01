@@ -8,6 +8,7 @@
 	import { gsap } from 'gsap';
 	import HowThisWorks from '$lib/HowThisWorks.svelte';
 	import pandaAnnoyed from '$lib/assets/panda-annoyed.webp?enhanced&w=600;500;300';
+	// import LandingQuotes from '$lib/LandingQuotes.svelte';
 
 	onMount(() => {
 		let tl = gsap.matchMedia();
@@ -94,9 +95,11 @@
 			</div>
 		</div>
 		<h1 class="mb-12 text-center text-5xl lg:pt-20 lg:text-6xl xl:text-7xl min-[1921px]:text-8xl">
-			<span class="headline">I help </span>
-			<span class="headline"> tech product owners</span>
-			<span class="headline text-lime-400">make good decisions.</span>
+			<span class="headline">Stop feeling like an imposter,</span>
+			<span class="headline"> get better at</span>
+			<span
+				class="headline inline-block bg-gradient-to-r from-emerald-200 via-lime-200 to-teal-300 bg-clip-text pb-5 text-transparent"
+				>tech products & projects.</span>
 		</h1>
 		<div class="mb-12 grid grid-cols-3 py-2 text-start text-lg lg:text-xl">
 			<div class="subheadline border-r-2 border-base-content/50 py-1 pe-3 text-center">
@@ -135,6 +138,7 @@
 		</p>
 	</div>
 </div>
+<!--<LandingQuotes />-->
 <HowThisWorks />
 
 <div class="grid min-h-[200px] gap-x-5 bg-gray-800 lg:grid-cols-2">

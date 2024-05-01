@@ -9,10 +9,12 @@
 </script>
 
 <div class="bg-gray-900 px-3 py-10 lg:px-10 lg:py-20">
-	<h1
-		class="pb-20 pt-10 text-center text-5xl text-lime-400 lg:pt-5 lg:text-6xl xl:text-7xl min-[1921px]:text-8xl">
-		How Apptitude Helps You
-	</h1>
+	<div class="flex justify-center">
+		<h1
+			class="inline-block bg-gradient-to-r from-emerald-200 via-lime-200 to-teal-300 bg-clip-text pb-20 pt-10 text-5xl text-transparent lg:pt-5 lg:text-6xl xl:text-7xl min-[1921px]:text-8xl">
+			How Apptitude Helps You
+		</h1>
+	</div>
 	<div class="grid grid-cols-1 gap-3 lg:grid-cols-7 lg:gap-7">
 		<div
 			class="card col-span-3 border border-gray-700 bg-base-100 shadow-md shadow-gray-950 transition duration-500 ease-in-out hover:bg-gray-700 lg:col-span-1 lg:row-span-1">
