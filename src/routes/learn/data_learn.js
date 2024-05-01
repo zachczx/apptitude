@@ -183,7 +183,6 @@ export const info = [
 					url: 'https://developer.mozilla.org/en-US/docs/Learn',
 				},
 				{ text: 'Learn Web Development | Web.dev', url: 'https://web.dev/learn' },
-
 				{
 					text: 'Javascript | MDN Web Docs',
 					url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
@@ -667,7 +666,11 @@ export const info = [
 				},
 				{
 					text: 'What defines a top 1% Product Designer? | r/UXDesign',
-					url: 'https://www.reddit.com/r/UXDesign/comments/1ccdafz/what_defines_a_top_1_product_designer/?share_id=HjPbW3ZG-3QOz1n-RgZDW',
+					url: 'https://www.reddit.com/r/UXDesign/comments/1ccdafz/what_defines_a_top_1_product_designer/',
+				},
+				{
+					text: "I stopped feeling sorry for y'all | r/UXDesign",
+					url: 'https://www.reddit.com/r/UXDesign/comments/1cgv2zh/i_stopped_feeling_sorry_for_yall/',
 				},
 			],
 		},
@@ -1459,6 +1462,10 @@ export const info = [
 				{
 					text: 'Ask HN: What web development stack do you prefer in 2024?',
 					url: 'https://news.ycombinator.com/item?id=39105013',
+				},
+				{
+					text: 'How web bloat impacts users with slow devices',
+					url: 'https://danluu.com/slow-device/',
 				},
 			],
 		},
