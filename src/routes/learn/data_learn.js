@@ -459,6 +459,7 @@ export const info = [
 				'https://www.youtube.com/embed/4eAM6ASs76U',
 				'https://www.youtube.com/embed/NJbTER11-kQ',
 				'https://www.youtube.com/embed/S6maF4tICPs',
+				'https://www.youtube.com/embed/VQhHX5zpC-U',
 			],
 			links: [
 				{
@@ -816,6 +817,18 @@ export const info = [
 				{
 					text: 'The Anatomy of a Perfect Landing Page That Converts',
 					url: 'https://www.uxmatters.com/mt/archives/2023/07/the-anatomy-of-a-perfect-landing-page-that-converts.php',
+				},
+				{
+					text: 'Improve Your Designs With The Principles Of Similarity And Proximity (Part 1)',
+					url: 'https://www.smashingmagazine.com/2016/05/improve-your-designs-with-principles-similarity-proximity-part-1/',
+				},
+				{
+					text: 'Improve Your Designs With The Principles Of Closure And Figure-Ground (Part 2)',
+					url: 'https://www.smashingmagazine.com/2016/05/improve-your-designs-with-the-principles-of-closure-and-figure-ground-part-2/',
+				},
+				{
+					text: "Ways to Improve Your Website's User Experience",
+					url: 'https://blog.shift4shop.com/improve-website-user-experience',
 				},
 				{
 					text: 'A LIST of free tools to help you start in UXTools & apps (r/UXDesign)',
