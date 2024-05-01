@@ -116,7 +116,7 @@
 			<a
 				href="/learn"
 				class="button-shine btn join-item relative overflow-hidden border border-primary bg-lime-600 font-medium text-white hover:border hover:border-primary hover:bg-gradient-to-r hover:from-lime-500 hover:via-teal-500 hover:to-emerald-600 active:from-lime-600 active:via-teal-600 active:to-emerald-700 lg:text-2xl"
-				>Learn the Basics <svg
+				>Learn Basics <svg
 					xmlns="http://www.w3.org/2000/svg"
 					width="32"
 					height="32"
@@ -128,7 +128,7 @@
 			<a
 				href="/cacheup"
 				class="bg-grey-900 btn join-item border border-primary from-red-500 via-orange-500 to-pink-500 font-medium text-primary hover:border hover:border-primary hover:bg-gradient-to-r hover:from-teal-500 hover:to-lime-500 hover:text-white active:from-red-700 active:via-orange-700 active:to-pink-700 lg:text-2xl"
-				>Skip to Quickstart Guides</a>
+				>Skip to Guides</a>
 		</div>
 		<p class="mt-3 text-center lg:text-xl">
 			<i><a href="/about" class="hover:text-primary">What's Apptitude?</a></i>
