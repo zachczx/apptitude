@@ -5,7 +5,7 @@
 <div class="space-y-14 bg-gray-900 px-5 py-10 lg:px-10 lg:py-20">
 	<div class="pb-10 text-center">
 		<h1
-			class="inline-block bg-gradient-to-r from-emerald-200 via-lime-200 to-teal-300 bg-clip-text pt-10 text-5xl text-transparent lg:pt-5 lg:text-6xl xl:text-7xl min-[1921px]:text-8xl">
+			class="inline-block bg-gradient-to-r from-emerald-200 via-lime-200 to-teal-300 bg-clip-text pt-10 text-transparent lg:pt-5 xl:text-7xl min-[1921px]:text-8xl">
 			What's the problem?
 		</h1>
 	</div>
