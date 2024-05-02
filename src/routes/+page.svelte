@@ -8,7 +8,7 @@
 	import { gsap } from 'gsap';
 	import HowThisWorks from '$lib/HowThisWorks.svelte';
 	import pandaAnnoyed from '$lib/assets/panda-annoyed.webp?enhanced&w=600;500;300';
-	// import LandingQuotes from '$lib/LandingQuotes.svelte';
+	import LandingQuotes from '$lib/LandingQuotes.svelte';
 
 	onMount(() => {
 		let tl = gsap.matchMedia();
@@ -138,7 +138,7 @@
 		</p>
 	</div>
 </div>
-<!--<LandingQuotes />-->
+<LandingQuotes />
 <HowThisWorks />
 
 <div class="grid min-h-[200px] gap-x-5 bg-gray-800 lg:grid-cols-2">

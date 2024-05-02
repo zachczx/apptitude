@@ -27,8 +27,9 @@ html {
 	}
 
 	h2 {
-		@apply text-3xl lg:text-4xl;
+		@apply text-4xl lg:text-5xl;
 		font-weight: 700;
+		padding-bottom: 0.3rem;
 	}
 
 	h3 {
@@ -44,5 +45,14 @@ html {
 	p,
 	li {
 		@apply text-base lg:text-base xl:text-base;
+	}
+
+	p > a {
+		text-decoration: underline;
+		text-underline-offset: 0.3rem;
+		&:hover {
+			color: rgb(163 230 53);
+		}
+		font-weight: 500;
 	}
 }

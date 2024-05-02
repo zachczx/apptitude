@@ -3,16 +3,16 @@
 	export let urlMiddle, textMiddle, textCurrent;
 </script>
 
-<div class="nav-breadcrumb mb-10 px-3 text-xl font-medium lg:px-20">
+<div class="nav-breadcrumb mb-10 px-3 font-medium lg:px-20">
 	<ul class="flex">
-		<li><a href="/" class="text-primary">Home</a></li>
+		<li class="text-xl"><a href="/" class="text-primary">Home</a></li>
 		{#if urlMiddle && textMiddle}
-			<li>
+			<li class="text-xl">
 				<a href="/{urlMiddle}" class="text-primary"
 					><SvgChevronRight class="mx-2 inline" />{textMiddle}</a>
 			</li>
 		{/if}
-		<li><SvgChevronRight class="mx-2 inline" />{textCurrent}</li>
+		<li class="text-xl"><SvgChevronRight class="mx-2 inline" />{textCurrent}</li>
 	</ul>
 </div>
 

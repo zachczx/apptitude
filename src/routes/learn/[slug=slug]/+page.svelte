@@ -158,7 +158,9 @@
 		{:else}
 			<ul class="list-disc ps-4">
 				{#each data.post.resources.courses as course}
-					<li><a href={course.url} class="hover:text-primary">{course.text}</a></li>
+					<li>
+						<a href={course.url} class="font-medium underline hover:text-primary">{course.text}</a>
+					</li>
 				{/each}
 			</ul>
 		{/if}
@@ -175,7 +177,9 @@
 		{:else}
 			<ul class="list-disc ps-4">
 				{#each data.post.resources.links as link}
-					<li><a href={link.url} class="hover:text-primary">{link.text}</a></li>
+					<li>
+						<a href={link.url} class="font-medium underline hover:text-primary">{link.text}</a>
+					</li>
 				{/each}
 			</ul>
 		{/if}

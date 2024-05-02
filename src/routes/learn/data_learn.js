@@ -106,7 +106,10 @@ export const info = [
 					text: 'Introducing How Computers Work',
 					url: 'https://www.youtube.com/watch?v=OAx_6-wdslM&list=PLzdnOPI1iJNcsRwJhvksEo1tJqjIqWbN-',
 				},
-				{ text: 'Computers', url: 'https://www.explainthatstuff.com/howcomputerswork.html' },
+				{
+					text: 'Computers | Explain That Stuff',
+					url: 'https://www.explainthatstuff.com/howcomputerswork.html',
+				},
 				{
 					text: 'So how do computers actually work?',
 					url: 'https://medium.com/@SchezHugo/so-how-do-computers-actually-work-911bd3681dbd',

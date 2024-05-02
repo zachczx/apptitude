@@ -9,10 +9,10 @@
 </script>
 
 <div class="bg-gray-900 px-3 py-10 lg:px-10 lg:py-20">
-	<div class="flex justify-center">
+	<div class="text-center">
 		<h1
 			class="inline-block bg-gradient-to-r from-emerald-200 via-lime-200 to-teal-300 bg-clip-text pb-20 pt-10 text-5xl text-transparent lg:pt-5 lg:text-6xl xl:text-7xl min-[1921px]:text-8xl">
-			How Apptitude Helps You
+			How Apptitude Tries to Helps You
 		</h1>
 	</div>
 	<div class="grid grid-cols-1 gap-3 lg:grid-cols-7 lg:gap-7">
@@ -21,7 +21,7 @@
 			<div class="card-body grid h-48 content-center">
 				<h2
 					class="inline-block bg-gradient-to-r from-emerald-200 via-lime-200 to-teal-300 bg-clip-text py-3 text-transparent">
-					Hello, tech product owner!
+					Hello!
 				</h2>
 			</div>
 		</div>
@@ -256,3 +256,9 @@
 		</div>
 	</div>
 </div>
+
+<style>
+	div > p {
+		@apply text-xl;
+	}
+</style>

@@ -111,12 +111,15 @@
 			<span class="bg-base-100">How do you know there's a problem?</span>
 		</h2>
 		<p class="bg-base-100 pt-5 lg:text-xl">
-			In my past job I heard many perspectives and I came to agree that WOG tech outcomes/ROI are
-			poor. Looking around, many of Govt's tech products weren't good or flat out didn't make sense,
-			especially for the crazy sums we spend <a
+			Reading "Recoding America", everything inside resonates with my experience working on several
+			tech projects. And honestly, I feel Govt's tech products aren't that good or flat out didn't
+			make sense, especially for the large sums we spend (<a
 				href="https://www.tech.gov.sg/media/media-releases/2023-05-24-government-projected-to-spend-on-ict-in-fy23"
-				class="text-primary">(here)</a
-			>. Products are slow, laggy, hard to use, super expensive.
+				>here</a
+			>).
+		</p>
+		<p class="bg-base-100 pt-5 lg:text-xl">
+			Products can be slow, laggy, hard to use, super expensive.
 		</p>
 		<p class="bg-base-100 py-5 lg:text-xl">
 			Occam's razor applies - the simplest solution is almost always the best. Reflecting on my own
@@ -145,18 +148,17 @@
 			<span class=" bg-base-100">What's a bad product to you?</span>
 		</h2>
 		<p class="z-10 bg-base-100 pt-5 lg:text-xl">
-			A bad product is a combination of not solving any problems, slow, poor ROI.
+			To me, a bad product doesn't solve a real problem. It doesn't solve a meaningful problem. It
+			might not have a unique selling point.
 		</p>
 		<p class="z-10 bg-base-100 pt-5 lg:text-xl">
-			I'll draw from personal experience. Take LifeSG. I used LifeSG in the delivery suite after my
-			wife gave birth. What a lifesaver! I downloaded the app (didn't mind it tbh), registered my
-			baby's name, didn't even have to go to ICA. After that I deleted the app.
+			It might offer a bad user experience, is hardly usable, is inaccessible to segments of the
+			population.
 		</p>
-		<p class="z-10 bg-base-100 py-5 lg:text-xl">
-			I was annoyed some time later that I needed to use LifeSG to use my NS55 credits. The app
-			loaded slow on my Pixel, far slower than PayLah. And I couldn't even finish all my credits,
-			kena makan by Gahmen. To make it worse, my go-to app for reporting HDB estate issues needed to
-			be done via LifeSG. Ugh, so much worse than the original OneService app.
+		<p class="z-10 bg-base-100 pt-5 lg:text-xl">
+			It is costly relative to the value they bring, with costs that don't make sense vis-a-vis
+			competitors/alternatives. This is made worse when we are stuck in situations when legacy,
+			procurement, incompetent top-down reasons lock us/users into shitty products.
 		</p>
 		<div class="relative">
 			<div class="absolute inset-x-3/4 -z-10 jumbo:mt-20">
