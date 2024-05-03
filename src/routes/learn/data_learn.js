@@ -230,6 +230,10 @@ export const info = [
 					text: 'Ask HN: What CMS are you using in 2022?',
 					url: 'https://news.ycombinator.com/item?id=32062615',
 				},
+				{
+					text: 'Google made me ruin a perfectly good website (2023) | Hacker News',
+					url: 'https://news.ycombinator.com/item?id=40184673',
+				},
 			],
 		},
 	},
@@ -750,6 +754,7 @@ export const info = [
 				'https://www.youtube.com/embed/C-UeBdtopdA',
 				'https://www.youtube.com/embed/UWwNIMHFdW4',
 				'https://www.youtube.com/embed/DBHBmeNhYrY',
+				'https://www.youtube.com/embed/rHeWoBPdNT4',
 			],
 			links: [
 				{
@@ -825,6 +830,10 @@ export const info = [
 					url: 'https://www.uxmatters.com/mt/archives/2023/07/the-anatomy-of-a-perfect-landing-page-that-converts.php',
 				},
 				{
+					text: '16 little UI design rules that make a big impact',
+					url: 'https://www.adhamdannaway.com/blog/ui-design/16-ui-design-rules',
+				},
+				{
 					text: 'Improve Your Designs With The Principles Of Similarity And Proximity (Part 1)',
 					url: 'https://www.smashingmagazine.com/2016/05/improve-your-designs-with-principles-similarity-proximity-part-1/',
 				},
@@ -873,9 +882,9 @@ export const info = [
 	},
 	{
 		id: 8,
-		name: 'Methodologies',
+		name: 'Methods',
 		intro: "Agile or fragile? This will become your project's survival guide.",
-		slug: 'methodologies',
+		slug: 'methods',
 		topics: ['agile', 'waterfall', 'scrum', 'lean', 'kanban', 'safe'],
 		questions: [
 			'What is Agile?',
