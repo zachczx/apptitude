@@ -123,7 +123,7 @@ export const info = [
 	},
 	{
 		id: 2,
-		name: 'Basics (The Web)',
+		name: 'Basics (Web)',
 		intro: 'The web and the cloud.',
 		slug: 'basics-web',
 		topics: ['internet', 'http', 'https', 'cloud', 'ssl', 'html', 'css', 'javascript', 'php'],
@@ -400,7 +400,7 @@ export const info = [
 	},
 	{
 		id: 5,
-		name: 'User Experience (Basics)',
+		name: 'UX (Basics)',
 		intro: 'If you want people to actually use your app, try to make it not suck.',
 		slug: 'ux',
 		topics: [
@@ -502,7 +502,10 @@ export const info = [
 					text: 'Design Systems: A design systems publication by Figma',
 					url: 'https://www.designsystems.com/',
 				},
-
+				{
+					text: 'Design principles | Interaction Design Foundation',
+					url: 'https://www.interaction-design.org/literature/topics/design-principles',
+				},
 				{
 					text: 'UX Case Study: How YouTube keeps you watching and addicted',
 					url: 'https://www.thedesignership.com/blog/how-youtube-keeps-you-watching-addicted',
@@ -682,7 +685,7 @@ export const info = [
 
 	{
 		id: 7,
-		name: 'User Experience (Advanced)',
+		name: 'UX (Advanced)',
 		intro: 'If you want people to actually use your app, try to make it not suck.',
 		slug: 'ux-advanced',
 		topics: [
@@ -828,6 +831,22 @@ export const info = [
 				{
 					text: 'Improve Your Designs With The Principles Of Closure And Figure-Ground (Part 2)',
 					url: 'https://www.smashingmagazine.com/2016/05/improve-your-designs-with-the-principles-of-closure-and-figure-ground-part-2/',
+				},
+				{
+					text: 'The 4 Golden Rules of UI Design',
+					url: 'https://xd.adobe.com/ideas/process/ui-design/4-golden-rules-ui-design/',
+				},
+				{
+					text: 'The Rules for Modern Navigation',
+					url: 'https://uxbooth.com/articles/the-rules-for-modern-navigation/',
+				},
+				{
+					text: 'Navigation design: Almost everything you need to know',
+					url: 'https://www.justinmind.com/blog/navigation-design-almost-everything-you-need-to-know/',
+				},
+				{
+					text: 'UX Design Glossary: How to Use Affordances in User Interfaces',
+					url: 'https://uxplanet.org/ux-design-glossary-how-to-use-affordances-in-user-interfaces-393c8e9686e4',
 				},
 				{
 					text: "Ways to Improve Your Website's User Experience",
