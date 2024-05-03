@@ -1,32 +1,50 @@
 <script>
 	import recodingAmericaCover from '$lib/assets/recoding-america-cover.jpg?enhanced&w=300';
+
+	import { onMount } from 'svelte';
+	import { gsap } from 'gsap';
+	import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
+	onMount(() => {
+		gsap.registerPlugin(ScrollTrigger);
+		let tl = gsap.matchMedia();
+		tl.add('(min-width: 1028px)', () => {
+			gsap.from('.book', {
+				scrollTrigger: {
+					trigger: '.book',
+					start: 'center bottom',
+					scrub: false,
+					markers: false,
+				},
+				y: '100',
+				duration: 1,
+			});
+		});
+	});
 </script>
 
-<div class="space-y-14 bg-base-300 px-5 py-10 lg:px-10 lg:py-20">
-	<div class="pb-10 text-center">
+<div class="space-y-14 bg-base-300 px-5 py-10 lg:px-20 lg:py-20">
+	<div class="pb-5 text-center">
 		<h1
 			class="inline-block bg-gradient-to-r from-emerald-200 via-lime-200 to-teal-300 bg-clip-text pt-10 text-transparent lg:pt-5 xl:text-7xl min-[1921px]:text-8xl">
 			What's the problem?
 		</h1>
 	</div>
-	<div class="flex justify-center pb-10">
-		<enhanced:img src={recodingAmericaCover} alt="Recoding America" class="" />
+	<div class="flex justify-center pb-5">
+		<enhanced:img src={recodingAmericaCover} alt="Recoding America" class="book" />
 	</div>
 	<div class="space-y-4">
 		<h2
 			class="inline-block bg-gradient-to-r from-emerald-200 via-lime-200 to-teal-300 bg-clip-text text-transparent">
-			Maybe government tech outcomes suck?
+			There are problems with tech outcomes in Govt.
 		</h2>
 		<p class="text-xl">
 			I was recommended a book recently. <a
 				href="https://www.amazon.com/Recoding-America-Government-Failing-Digital-ebook/dp/B0B8644ZGY"
 				class="link-underline">"Recoding America"</a
-			>. I read it, it's a great book, exactly as every reviewer praised. The person who made the
+			>. I read it. It's a great book, exactly as every reviewer praised. The person who made the
 			recommendation was spot on. Most of the stuff written there are things that I'd heard here and
-			there, but not structured in prose form. The book's fantastic! You could just change the
-			names, agencies, systems to Singaporean ones, and the book would read fine. Maybe the case
-			studies won't be as dire, but surely the spirit of the critiques would still be alarmingly
-			familiar.
+			there working in the public sector. You could change the names, agencies, systems to
+			Singaporean ones, and it would still make sense.
 		</p>
 		<p class="text-xl">
 			It's true that across government tech, we have policy people writing tech policies without
@@ -35,7 +53,9 @@
 			people thinking they know everything based on non-tech experience, staffers feeling like
 			imposters.
 		</p>
-		<p class="text-xl">I copied some paragraphs as I read, see if they sound familiar.</p>
+		<p class="text-xl">
+			To demonstrate my point, here are extracts from the book. They are very familiar.
+		</p>
 	</div>
 	<div class="grid grid-cols-1 gap-8 lg:grid-cols-3 lg:gap-14 lg:px-20">
 		<div class="space-y-7">
@@ -79,7 +99,7 @@
 			</blockquote>
 		</div>
 		<div class="space-y-7">
-			<h3>Systems Chugging to Implement Complex Policies</h3>
+			<h3>Policy Complexity</h3>
 			<blockquote class="leading-8">
 				None of the modernized states were able to avoid accruing backlogs, and few of them seemed
 				to do much better than average in terms of scaling to meet demand. The problem is that the
@@ -93,28 +113,24 @@
 			</blockquote>
 		</div>
 		<div class="space-y-7">
-			<h3>Legacy Digital Infra</h3>
+			<h3>Legacy Infra</h3>
 			<blockquote class="leading-8">
 				... and because tech investments must always be pitched as adding some new capability to the
 				system (rarely just renovating what already exists), each piece of the system gets built in
-				different technology paradigms from different eras. But every new piece depends on
-				everything that came before, so each successive layer is constrained by the limitations of
-				the earlier technologies. The system is not so much updated as it is tacked on to. Over
-				time, new functionality is added, but the system never sheds the core limitations of the
-				foundational technologies. At the same time, it becomes enormously complex and fragile.
-				Updates require caution, as any change in one layer can have unforeseen consequences in the
-				others. <span class="font-medium text-primary"
+				different technology paradigms from different eras... The system is not so much updated as
+				it is tacked on to. Over time, new functionality is added, but the system never sheds the
+				core limitations of the foundational technologies. At the same time, it becomes enormously
+				complex and fragile... <span class="font-medium text-primary"
 					>It becomes harder and harder to support the technologies in the lower, older layers,
 					while the more recent layers require constant updates and patches. The paint cracks.</span>
 			</blockquote>
 		</div>
 		<div class="space-y-7">
-			<h3>Ritualistic Adherence to Outdated Guidelines</h3>
+			<h3>Decision Making</h3>
 			<blockquote class="leading-8">
 				Arguments about what is or isn’t required happen all the time, but they are much less likely
 				to lead to a suffocatingly risk-averse answer when the people involved in the argument
-				understand the domain. Here, aside from the tech team, <span
-					class="font-medium text-primary"
+				understand the domain... <span class="font-medium text-primary"
 					>it is highly unlikely that anyone else in the debate — likely to be dozens of people in
 					dozens of different roles — had any basis on which to judge whether an ESB was a good
 					thing or a bad thing in this context.</span>
@@ -127,7 +143,7 @@
 			</blockquote>
 		</div>
 		<div class="space-y-7">
-			<h3>Govt Writing Requirements</h3>
+			<h3>Scope of Requirements</h3>
 			<blockquote class="leading-8">
 				<span class="font-medium text-primary"
 					>Government’s obsession with requirements — voluminous, detailed requirements that can
@@ -140,38 +156,31 @@
 			<blockquote class="leading-8">
 				<span class="font-medium text-primary"
 					>But the goal in government seems to be to drain the job of software development of any
-					opportunity to exercise judgment.</span> (To be clear, as we’ll see later, this goal is seldom
-				if ever achieved.) This is a terrible way to manage most things, but it’s particularly destructive
-				when hardly any of the people writing the work plan have much basis for their decisions either.
+					opportunity to exercise judgment</span
+				>... it’s particularly destructive when hardly any of the people writing the work plan have
+				much basis for their decisions either.
 			</blockquote>
 		</div>
 
 		<div class="space-y-7">
 			<h3>Build vs Buy</h3>
 			<blockquote class="leading-8">
-				Government can, and should, buy commodity software products from companies to handle its
-				basic internal needs, which are not all that different from the needs of the private sector:
-				communication tools, HR and payroll systems, and so on. Indeed, <span
-					class="font-medium text-primary"
-					>government procurement teams have a terrible habit of contracting for bespoke software
-					when they could buy commercial products—partly because we tell these teams to collect
-					every possible requirement they can think of, which encourages and even calcifies arcane
-					practices within the departments they serve.</span>
+				<span class="font-medium text-primary"
+					>Government procurement teams have a terrible habit of contracting for bespoke software
+					when they could buy commercial products</span> — partly because we tell these teams to collect
+				every possible requirement they can think of, which encourages and even calcifies arcane practices
+				within the departments they serve.
 			</blockquote>
 		</div>
 		<div class="space-y-7">
-			<h3>Tech Competencies, Capabilities</h3>
+			<h3>Owning and Building Products</h3>
 			<blockquote class="leading-8">
-				Though government should buy commodity products for commodity functions, when it’s not
-				accounting or payroll but your agency’s mission, the technology needs to be your product. It
-				can’t just be a project that was contracted for, developed, tested, and declared “done.” You
-				need to own the code, and you need to be able to change it to meet your needs. This doesn’t
-				mean that you can’t use contractors at all—in government, you will almost certainly use
-				them. <span class="font-medium text-primary"
-					>It means that you must have the core competencies to support a living, ever-adapting
-					system. Government knows how to acquire technology. What we need to acquire are
-					capabilities.
-				</span>
+				It can’t just be a project that was contracted for, developed, tested, and declared “done.”
+				You need to own the code, and you need to be able to change it to meet your needs... <span
+					class="font-medium text-primary"
+					>you must have the core competencies to support a living, ever-adapting system.</span>
+				Government knows how to acquire technology.
+				<span class="font-medium text-primary">What we need to acquire are capabilities.</span>
 			</blockquote>
 		</div>
 	</div>
@@ -181,8 +190,11 @@
 			Chip Away At This By Improving Tech Knowledge
 		</h2>
 		<p class="text-xl">
-			This is far too big a problem to solve by any one thing. You can create GovTech, reform other
-			engineering agencies (doesn't seem like it), but cultures and people are far more entrenched.
+			This is far too big a problem to solve by any one thing. You can create GovTech (<a
+				href="https://www.youtube.com/watch?v=MfGD-cG6nOA"
+				>and indeed this was partly why GovTech was created</a
+			>), reform other engineering agencies (doesn't seem like it), but cultures and people are far
+			more entrenched.
 		</p>
 		<p class="text-xl">
 			But I can point you to stuff I think you need to manage tech products & projects better -
