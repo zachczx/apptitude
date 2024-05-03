@@ -227,7 +227,7 @@
 				class="card-body grid content-start space-y-2 transition duration-500 ease-in-out hover:bg-gray-700">
 				<h2
 					class="mb-4 inline-block border-b border-b-base-content bg-gradient-to-r from-emerald-200 via-lime-200 to-teal-300 bg-clip-text py-3 pb-3 text-transparent">
-					Step 4: Say "No!" to Shitty Products
+					Step 4: Say "No!" to Shitty Products & Rules
 				</h2>
 				<p>
 					Use your upgraded judgement and trust that you're 10x better than you were. Gain
