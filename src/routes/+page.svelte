@@ -219,14 +219,14 @@
 		}
 	}
 	@media (max-width: 1280px) {
-		.overlay::before,
-		.overlay-reverse::before,
+		/* .overlay::before,
+		.overlay-reverse::before, */
 		.hero-img {
 			max-height: 0px;
 		}
 	}
 	@media (min-width: 1281px) {
-		.overlay::before {
+		/* .overlay::before {
 			content: '';
 			z-index: 2;
 			width: 100%;
@@ -248,7 +248,7 @@
 			display: block;
 			position: absolute;
 			background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 20%);
-		}
+		} */
 
 		.hero-img {
 			object-fit: cover;
