@@ -877,6 +877,51 @@ export const info = [
 					text: 'Buttons | Material Design',
 					url: 'https://m3.material.io/components/buttons/overview',
 				},
+				{
+					text: '10 Best Design Systems and How to Learn (and Steal) From Them',
+					url: 'https://designerup.co/blog/10-best-design-systems-and-how-to-learn-and-steal-from-them/',
+				},
+				{
+					text: 'Components, styles, and shared library best practices',
+					url: 'https://www.figma.com/best-practices/components-styles-and-shared-libraries/',
+				},
+				{
+					text: 'Google Material Design 3',
+					url: 'https://m3.material.io/',
+				},
+				{
+					text: 'Shopify Polaris Design System',
+					url: 'https://polaris.shopify.com/',
+				},
+				{
+					text: 'Apple Human Interface Design System',
+					url: 'https://developer.apple.com/design/',
+				},
+				{
+					text: 'Microsoft Fluent 2 Design System',
+					url: 'https://fluent2.microsoft.design/#/',
+				},
+				{
+					text: 'Airbnb Design System',
+					url: 'https://airbnb.design/building-a-visual-language/',
+				},
+				{
+					text: 'U.S. Web Design System (USWDS)',
+					url: 'https://designsystem.digital.gov/',
+				},
+				{ text: 'Design Systems for Figma', url: 'https://www.designsystemsforfigma.com/' },
+				{
+					text: 'Salesforce Design Kit',
+					url: 'https://www.figma.com/@salesforce',
+				},
+				{
+					text: 'Atlassian Design Kit',
+					url: 'https://www.figma.com/@atlassian',
+				},
+				{
+					text: 'Uber Design Kit',
+					url: 'https://www.figma.com/@uber',
+				},
 			],
 		},
 	},
