@@ -862,6 +862,18 @@ export const info = [
 					url: 'https://blog.shift4shop.com/improve-website-user-experience',
 				},
 				{
+					text: 'The Role of Animation and Motion in UX',
+					url: 'https://www.nngroup.com/articles/animation-purpose-ux/',
+				},
+				{
+					text: 'Creating Usability with Motion: The UX in Motion Manifesto',
+					url: 'https://medium.com/ux-in-motion/creating-usability-with-motion-the-ux-in-motion-manifesto-a87a4584ddc',
+				},
+				{
+					text: 'Gestures | Material Design 3',
+					url: 'https://m3.material.io/foundations/interaction/gestures',
+				},
+				{
 					text: 'A LIST of free tools to help you start in UXTools & apps (r/UXDesign)',
 					url: 'https://www.reddit.com/r/UXDesign/comments/z64rl2/a_list_of_free_tools_to_help_you_start_in_ux/',
 				},
