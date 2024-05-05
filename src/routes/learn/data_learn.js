@@ -898,6 +898,18 @@ export const info = [
 					url: 'https://www.figma.com/best-practices/components-styles-and-shared-libraries/',
 				},
 				{
+					text: 'Sound Advice: A Quick Guide to Designing UX Sounds',
+					url: 'https://www.toptal.com/designers/ux/ux-sounds-guide',
+				},
+				{
+					text: '10 Usability Heuristics for User Interface Design',
+					url: 'https://www.nngroup.com/articles/ten-usability-heuristics/',
+				},
+				{
+					text: 'Best Practices For Video',
+					url: 'https://uxplanet.org/best-practices-for-video-e279efcfe7eb',
+				},
+				{
 					text: 'Google Material Design 3',
 					url: 'https://m3.material.io/',
 				},
