@@ -870,6 +870,10 @@ export const info = [
 					url: 'https://medium.com/ux-in-motion/creating-usability-with-motion-the-ux-in-motion-manifesto-a87a4584ddc',
 				},
 				{
+					text: 'UX Process: How do you know when your design is done? A simple 14-point checklist',
+					url: 'https://medium.com/@andreas.johansson.dev/ux-process-how-do-you-know-when-your-design-is-done-a-simple-14-point-checklist-21b747e82954',
+				},
+				{
 					text: 'Gestures | Material Design 3',
 					url: 'https://m3.material.io/foundations/interaction/gestures',
 				},
