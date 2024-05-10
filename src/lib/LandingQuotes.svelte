@@ -30,7 +30,10 @@
 		</h1>
 	</div>
 	<div class="flex justify-center pb-5">
-		<enhanced:img src={recodingAmericaCover} alt="Recoding America" class="book" />
+		<enhanced:img
+			src={recodingAmericaCover}
+			alt="Recoding America"
+			class="book drop-shadow-[0_1rem_1rem_rgba(255,255,255,0.1)]" />
 	</div>
 	<div class="space-y-4">
 		<h2

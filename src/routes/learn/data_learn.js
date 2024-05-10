@@ -404,7 +404,7 @@ export const info = [
 	},
 	{
 		id: 5,
-		name: 'UX (Basics)',
+		name: 'UX (I)',
 		intro: 'If you want people to actually use your app, try to make it not suck.',
 		slug: 'ux',
 		topics: [
@@ -519,11 +519,10 @@ export const info = [
 	},
 	{
 		id: 6,
-		name: 'Products',
+		name: 'Products (I)',
 		intro: 'Make good products, listen to customers, solve user problems.',
 		slug: 'products',
 		topics: [
-			'product-market fit',
 			'project',
 			'management',
 			'leadership',
@@ -585,24 +584,12 @@ export const info = [
 			youtube: [
 				'https://www.youtube.com/embed/XmRNIGqzuRI',
 				'https://www.youtube.com/embed/C27RVio2rOs?si=rKY_2K-n0lC6vk54',
-				'https://www.youtube.com/embed/0LNQxT9LvM0?si=KHzWpcisYehJbdHF',
-				'https://www.youtube.com/embed/fEvKo90qBns?si=bsb5008mqkuhft0F',
-				'https://www.youtube.com/embed/yc1Uwhfxacs',
 				'https://www.youtube.com/embed/QRZ_l7cVzzU?si=sh3L1sWZzBhLb2dy',
-				'https://www.youtube.com/embed/aOGMymXPgrk',
 				'https://www.youtube.com/embed/h-KVGHoQ_98',
 				'https://www.youtube.com/embed/YP_QghPLG-8',
-				'https://www.youtube.com/embed/ZoKLofsp8u0',
-				'https://www.youtube.com/embed/6DTK9yDP6p0?si=niskiu1FnnDNhiOQ',
-				'https://www.youtube.com/embed/oWZbWzAyHAE?si=aFy0z0ePzrlUTvSD',
-				'https://www.youtube.com/embed/FCxkT8ULrVg',
-				'https://www.youtube.com/embed/yr_sz6fRy-w',
+				'https://www.youtube.com/embed/fEvKo90qBns?si=bsb5008mqkuhft0F',
 			],
 			links: [
-				{
-					text: 'Product Management – Start Here',
-					url: 'https://www.svpg.com/product-management-start-here/',
-				},
 				{
 					text: 'Product Thinking, Project Thinking | @shreyas',
 					url: 'https://twitter.com/shreyas/status/1471650411341750273',
@@ -615,7 +602,106 @@ export const info = [
 					text: "Lenny's Podcast - YouTube",
 					url: 'https://www.youtube.com/@LennysPodcast',
 				},
-
+				{
+					text: 'All-In Podcast - YouTube',
+					url: 'https://www.youtube.com/@allin',
+				},
+				{
+					text: 'Product Management Theater - Silicon Valley Product Group',
+					url: 'https://www.svpg.com/product-management-theater/',
+				},
+				{
+					text: 'Transforming Product Culture with Lea Hickman',
+					url: 'https://www.mindtheproduct.com/transforming-product-culture-lea-hickman/',
+				},
+				{
+					text: 'Transformation Fail - Silicon Valley Product Group',
+					url: 'https://www.svpg.com/transformation-fail/',
+				},
+			],
+		},
+	},
+	{
+		id: 7,
+		name: 'Products (II)',
+		intro: 'Make good products, listen to customers, solve user problems.',
+		slug: 'products-advanced',
+		topics: [
+			'product-market fit',
+			'project',
+			'management',
+			'leadership',
+			'strategy',
+			'management',
+			'execution',
+			'startups',
+			'pivot',
+		],
+		questions: [
+			"What's difference between project and product management?",
+			'What is product-market fit?',
+			'How do you find product-market fit?',
+			'How do you identify and prioritize product features?',
+			'What metrics do you use to measure product success?',
+			'What is a north star metric for a product?',
+			'What is a pivot?',
+			'How do you define and communicate the product vision?',
+			'What are the typical funding rounds for startups and companies trying to raise funds?',
+			'What is the difference between a product manager vs a project manager?',
+			'What is the difference between a feature team vs a product team?',
+			'Who are product leaders? What do they do and what is product leadership?',
+		],
+		objectives: [
+			'Spot project management and product management',
+			'Know what goes into a good product',
+			'Spot solutions in search of a problem',
+			'Feel it in your soul when a "product" just ain\'t it',
+			'Think user-first, Min/PS/DS last',
+			'Be aware of how startups and industry get funding, and what metrics/trajectories they prioritize',
+			"We don't often need product managers, but know when you need one, and know when you don't have one.",
+			'Be mindful of the transformation and product management theatre',
+		],
+		issues: [
+			"Many products/systems developed by Govt don't solve real & meaningful problems, are slow & laggy, huge wastes of money",
+			"Product-market fit simply isn't thought about, most certainly not efficiency and working at scale (see: $1 vending machine that dispenses $100 doesn't have product-market fit)",
+			'Tech product owners are often appointed to the role without relevant skills or experience, and end up roleplaying their idea of what the job requires',
+			"People who manage products don't talk to users",
+			"Prescriptive rules in public service restrain engineering teams's ability to innovate, deliver fast",
+			"Project KPIs are usually an afterthought - KPIs are neither meaningful, ambitious, or a good indication of the product's value (e.g. 70% of users rate 4/5)",
+			"People always have want to develop something new, without thinking of the long tail that's involved with maintaining something you developed",
+			'No one is incentivized to terminate their projects/products even if poorly performing, because it means they lose MMF, lose funding, lose appraisal work achievements.',
+		],
+		resources: {
+			courses: [
+				{
+					text: 'Product Management Course: Singapore (caveat emptor)',
+					url: 'https://generalassemb.ly/education/product-management/singapore',
+				},
+				{
+					text: 'Become a Product Manager | Learn the Skills & Get the Job',
+					url: 'https://www.udemy.com/course/become-a-product-manager-learn-the-skills-get-a-job/',
+				},
+				{
+					text: 'Google Project Management: Professional Certificate | Coursera',
+					url: 'https://www.coursera.org/professional-certificates/google-project-management',
+				},
+			],
+			youtube: [
+				'https://www.youtube.com/embed/0LNQxT9LvM0?si=KHzWpcisYehJbdHF',
+				'https://www.youtube.com/embed/yc1Uwhfxacs',
+				'https://www.youtube.com/embed/aOGMymXPgrk',
+				'https://www.youtube.com/embed/ZoKLofsp8u0',
+				'https://www.youtube.com/embed/6DTK9yDP6p0?si=niskiu1FnnDNhiOQ',
+				'https://www.youtube.com/embed/oWZbWzAyHAE?si=aFy0z0ePzrlUTvSD',
+				'https://www.youtube.com/embed/FCxkT8ULrVg',
+				'https://www.youtube.com/embed/yr_sz6fRy-w',
+				'https://www.youtube.com/embed/6Uc-EiQ2xnU',
+			],
+			links: [
+				{
+					text: 'Product Management – Start Here',
+					url: 'https://www.svpg.com/product-management-start-here/',
+				},
 				{ text: 'Product-Market Fit | First Round Capital', url: 'https://pmf.firstround.com/' },
 				{
 					text: 'Paths to PMF with Todd Jackson',
@@ -636,10 +722,7 @@ export const info = [
 					text: 'Managing and Developing Product Managers',
 					url: 'https://blackboxofpm.com/managing-and-developing-product-managers-2f9a3963fab6',
 				},
-				{
-					text: 'All-In Podcast - YouTube',
-					url: 'https://www.youtube.com/@allin',
-				},
+
 				{
 					text: 'Product Metrics: What You Need to Know - Qualtrics',
 					url: 'https://www.qualtrics.com/au/experience-management/product/product-metrics/',
@@ -658,23 +741,14 @@ export const info = [
 					text: 'Why Product Metrics Matter',
 					url: 'https://www.productplan.com/learn/product-metrics-matter/',
 				},
-				{
-					text: 'Product Management Theater - Silicon Valley Product Group',
-					url: 'https://www.svpg.com/product-management-theater/',
-				},
+
 				{
 					text: 'Coaching Tools - The Assessment',
 					url: 'https://www.svpg.com/coaching-tools-the-assessment/',
 				},
-				{
-					text: 'Transformation Fail - Silicon Valley Product Group',
-					url: 'https://www.svpg.com/transformation-fail/',
-				},
+
 				{ text: 'Pmarca', url: 'https://pmarchive.com/' },
-				{
-					text: 'Transforming Product Culture with Lea Hickman',
-					url: 'https://www.mindtheproduct.com/transforming-product-culture-lea-hickman/',
-				},
+
 				{
 					text: 'What defines a top 1% Product Designer? | r/UXDesign',
 					url: 'https://www.reddit.com/r/UXDesign/comments/1ccdafz/what_defines_a_top_1_product_designer/',
@@ -688,8 +762,8 @@ export const info = [
 	},
 
 	{
-		id: 7,
-		name: 'UX (Advanced)',
+		id: 8,
+		name: 'UX (II)',
 		intro: 'If you want people to actually use your app, try to make it not suck.',
 		slug: 'ux-advanced',
 		topics: [
@@ -954,7 +1028,7 @@ export const info = [
 		},
 	},
 	{
-		id: 8,
+		id: 9,
 		name: 'Methods',
 		intro: "Agile or fragile? This will become your project's survival guide.",
 		slug: 'methods',
@@ -1044,7 +1118,7 @@ export const info = [
 		},
 	},
 	{
-		id: 9,
+		id: 10,
 		name: 'Data',
 		intro: 'Rolling a dice for decisions only works in Monopoly.',
 		slug: 'data',
@@ -1159,8 +1233,8 @@ export const info = [
 		},
 	},
 	{
-		id: 10,
-		name: 'AI (Basics)',
+		id: 11,
+		name: 'AI (I)',
 		intro: 'AI is the extra brain cells you wish you were born with.',
 		slug: 'ai',
 		topics: [
@@ -1281,8 +1355,8 @@ export const info = [
 		},
 	},
 	{
-		id: 11,
-		name: 'AI (Advanced)',
+		id: 12,
+		name: 'AI (II)',
 		intro: 'AI is the extra brain cells you wish you were born with.',
 		slug: 'ai-advanced',
 		topics: [
@@ -1408,7 +1482,7 @@ export const info = [
 		},
 	},
 	{
-		id: 12,
+		id: 13,
 		name: 'Technical',
 		intro:
 			'Befriend the machines, learn to speak their language before they achieve world domination.',
