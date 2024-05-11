@@ -514,6 +514,14 @@ export const info = [
 					text: 'UX Case Study: How YouTube keeps you watching and addicted',
 					url: 'https://www.thedesignership.com/blog/how-youtube-keeps-you-watching-addicted',
 				},
+				{
+					text: 'The Beginner’s Guide to Information Architecture in UX',
+					url: 'https://xd.adobe.com/ideas/process/information-architecture/introductory-guide-to-information-architecture/',
+				},
+				{
+					text: 'Information Architecture. Basics for Designers.',
+					url: 'https://uxplanet.org/information-architecture-basics-for-designers-b5d43df62e20',
+				},
 			],
 		},
 	},
@@ -986,6 +994,38 @@ export const info = [
 				{
 					text: 'Best Practices For Video',
 					url: 'https://uxplanet.org/best-practices-for-video-e279efcfe7eb',
+				},
+				{
+					text: 'How to create a UX Sitemap: a simple guideline',
+					url: 'https://uxdesign.cc/how-to-create-a-ux-sitemap-a-simple-guideline-8786c16f85c1',
+				},
+				{
+					text: 'Sitemaps & Information Architecture (IA)',
+					url: 'https://xd.adobe.com/ideas/process/information-architecture/sitemap-and-information-architecture/',
+				},
+				{
+					text: '5 Visual Sitemap Examples for Website Designs',
+					url: 'https://xd.adobe.com/ideas/process/information-architecture/visual-sitemap-examples-website-designs/',
+				},
+				{
+					text: 'Responsive Design (RD) | Interaction Design Foundation',
+					url: 'https://www.interaction-design.org/literature/topics/responsive-design#:~:text=Responsive%20design%20is%20a%20graphic,ensure%20content%20consistency%20across%20devices.',
+				},
+				{
+					text: '11 powerful examples of responsive web design',
+					url: 'https://www.invisionapp.com/inside-design/examples-responsive-web-design/',
+				},
+				{
+					text: 'Navigation design: Almost everything you need to know',
+					url: 'https://www.justinmind.com/blog/navigation-design-almost-everything-you-need-to-know/',
+				},
+				{
+					text: '5 UI Patterns: Navigation That Makes Good UX Sense',
+					url: 'https://uxplanet.org/5-ui-patterns-navigation-that-makes-good-ux-sense-92a65df7485d',
+				},
+				{
+					text: 'Responsive design techniques | Microsoft Build',
+					url: 'https://learn.microsoft.com/en-us/windows/apps/design/layout/responsive-design',
 				},
 				{
 					text: 'Google Material Design 3',
