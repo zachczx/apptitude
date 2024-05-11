@@ -593,6 +593,7 @@ export const info = [
 				'https://www.youtube.com/embed/XmRNIGqzuRI',
 				'https://www.youtube.com/embed/C27RVio2rOs?si=rKY_2K-n0lC6vk54',
 				'https://www.youtube.com/embed/QRZ_l7cVzzU?si=sh3L1sWZzBhLb2dy',
+				'https://www.youtube.com/embed/T3VRz18ntjQ',
 				'https://www.youtube.com/embed/h-KVGHoQ_98',
 				'https://www.youtube.com/embed/YP_QghPLG-8',
 				'https://www.youtube.com/embed/fEvKo90qBns?si=bsb5008mqkuhft0F',
