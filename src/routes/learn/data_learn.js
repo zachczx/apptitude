@@ -977,6 +977,10 @@ export const info = [
 					url: 'https://m3.material.io/components/buttons/overview',
 				},
 				{
+					text: 'Ask a UXpert: How to Develop an Effective, Multi-Device UX Strategy',
+					url: 'https://xd.adobe.com/ideas/principles/web-design/ux-design-strategy-for-multiple-devices/',
+				},
+				{
 					text: '10 Best Design Systems and How to Learn (and Steal) From Them',
 					url: 'https://designerup.co/blog/10-best-design-systems-and-how-to-learn-and-steal-from-them/',
 				},

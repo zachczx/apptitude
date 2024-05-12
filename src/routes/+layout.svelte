@@ -106,13 +106,15 @@
 	</div>
 </div>
 
-{#if !viewTransition}
+<!-- {#if !viewTransition}
 	<PageTransition url={data.url}>
 		<slot />
 	</PageTransition>
 {:else}
 	<slot />
-{/if}
+{/if} -->
+
+<slot />
 
 <footer class="footer footer-center gap-y-2 rounded bg-base-200 p-3 pt-5 text-base-content">
 	<aside>
