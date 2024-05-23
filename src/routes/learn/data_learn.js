@@ -478,9 +478,38 @@ export const info = [
 					url: 'https://www.nngroup.com/articles/ux-basics-study-guide/',
 				},
 				{
-					text: 'Articles | Nielsen Norman Group',
-					url: 'https://www.nngroup.com/articles/',
+					text: 'When to Use Which User-Experience Research Methods',
+					url: 'https://www.nngroup.com/articles/which-ux-research-methods/',
 				},
+				{
+					text: 'User Stories: As a [UX Designer] I want to [embrace Agile] so that [I can make my projects user-centered] | Interaction Design Foundation',
+					url: 'https://www.interaction-design.org/literature/article/user-stories-as-a-ux-designer-i-want-to-embrace-agile-so-that-i-can-make-my-projects-user-centered',
+				},
+				{
+					text: 'Are You Solving the Right Problem?',
+					url: 'https://hbr.org/2012/09/are-you-solving-the-right-problem',
+				},
+				{
+					text: 'User Need Statements: The ‘Define’ Stage in Design Thinking',
+					url: 'https://www.nngroup.com/articles/user-need-statements/',
+				},
+				{
+					text: 'Design Problem Statements: What They Are and How to Frame Them',
+					url: 'https://www.toptal.com/designers/product-design/design-problem-statement',
+				},
+				{
+					text: 'Design Thinking Defined | Ideo Design Thinking',
+					url: 'https://designthinking.ideo.com/',
+				},
+				{
+					text: '',
+					url: '',
+				},
+				{
+					text: '',
+					url: '',
+				},
+
 				{
 					text: 'UXPodcast',
 					url: 'https://uxpodcast.com/',
@@ -1033,6 +1062,10 @@ export const info = [
 					url: 'https://learn.microsoft.com/en-us/windows/apps/design/layout/responsive-design',
 				},
 				{
+					text: 'Object-Oriented UX',
+					url: 'https://alistapart.com/article/object-oriented-ux/',
+				},
+				{
 					text: 'Google Material Design 3',
 					url: 'https://m3.material.io/',
 				},
@@ -1068,6 +1101,10 @@ export const info = [
 				{
 					text: 'Uber Design Kit',
 					url: 'https://www.figma.com/@uber',
+				},
+				{
+					text: 'Articles | Nielsen Norman Group',
+					url: 'https://www.nngroup.com/articles/',
 				},
 			],
 		},
