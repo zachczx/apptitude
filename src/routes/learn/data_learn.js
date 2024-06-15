@@ -796,6 +796,10 @@ export const info = [
 					text: "I stopped feeling sorry for y'all | r/UXDesign",
 					url: 'https://www.reddit.com/r/UXDesign/comments/1cgv2zh/i_stopped_feeling_sorry_for_yall/',
 				},
+				{
+					text: 'How Amazon blew Alexa’s shot to dominate AI, according to more than a dozen employees who worked on it',
+					url: 'https://fortune.com/2024/06/12/amazon-insiders-why-new-alexa-llm-generative-ai-conversational-chatbot-missing-in-action/',
+				},
 			],
 		},
 	},
@@ -868,6 +872,7 @@ export const info = [
 				'https://www.youtube.com/embed/UWwNIMHFdW4',
 				'https://www.youtube.com/embed/DBHBmeNhYrY',
 				'https://www.youtube.com/embed/rHeWoBPdNT4',
+				'https://www.youtube.com/embed/vqXLGX0szIQ',
 			],
 			links: [
 				{
@@ -957,6 +962,10 @@ export const info = [
 				{
 					text: 'The 4 Golden Rules of UI Design',
 					url: 'https://xd.adobe.com/ideas/process/ui-design/4-golden-rules-ui-design/',
+				},
+				{
+					text: 'The Principles of Design and Their Importance',
+					url: 'https://www.toptal.com/designers/ui/principles-of-design',
 				},
 				{
 					text: 'The Rules for Modern Navigation',

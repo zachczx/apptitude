@@ -128,11 +128,13 @@
 		<div class="z-10">
 			<a href="https://titude.app/" class="hover:text-primary"
 				><TablerSquareRoundedPlusFilled class="mb-1 me-1 ms-2 inline fill-primary" />Apptitude</a>
-			<a href="https://app.zixian.dev/rank/" class="hover:text-primary"
-				><TablerSquareRoundedPlusFilled class="mb-1 me-1 ms-2 inline fill-primary" />Rank a Mate</a>
+			<a href="https://appraize.zixian.dev/" class="hover:text-primary"
+				><TablerSquareRoundedPlusFilled class="mb-1 me-1 ms-2 inline fill-primary" />Appraize</a>
 			<a href="https://app.zixian.dev/eatyourmeds/" class="hover:text-primary"
 				><TablerSquareRoundedPlusFilled class="mb-1 me-1 ms-2 inline fill-primary" />Eat Your
 				Medicine</a>
+			<a href="https://app.zixian.dev/rank/" class="hover:text-primary"
+				><TablerSquareRoundedPlusFilled class="mb-1 me-1 ms-2 inline fill-primary" />Rank a Mate</a>
 			<a href="https://btonomics.com/" class="hover:text-primary"
 				><TablerSquareRoundedPlusFilled class="mb-1 me-1 ms-2 inline fill-primary" />Btonomics</a>
 		</div>
