@@ -94,7 +94,7 @@
 				{/if}
 			</div>
 		</div>
-		<h1 class="mb-12 text-center text-5xl lg:pt-20 lg:text-6xl xl:text-7xl min-[1921px]:text-8xl">
+		<h1 class="mb-12 text-center text-5xl lg:pt-20 lg:text-6xl xl:text-6xl min-[1921px]:text-8xl">
 			<span class="headline">Stop feeling like an imposter,</span>
 			<span class="headline"> get better at</span>
 			<span
