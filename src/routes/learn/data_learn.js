@@ -656,6 +656,10 @@ export const info = [
 					text: 'Transformation Fail - Silicon Valley Product Group',
 					url: 'https://www.svpg.com/transformation-fail/',
 				},
+				{
+					text: 'A Management Maturity Model for Performance',
+					url: 'https://infrequently.org/2022/05/performance-management-maturity/',
+				},
 			],
 		},
 	},
@@ -727,6 +731,7 @@ export const info = [
 			youtube: [
 				'https://www.youtube.com/embed/0LNQxT9LvM0?si=KHzWpcisYehJbdHF',
 				'https://www.youtube.com/embed/yc1Uwhfxacs',
+				'https://www.youtube.com/embed/UA_gYKaXHS0',
 				'https://www.youtube.com/embed/aOGMymXPgrk',
 				'https://www.youtube.com/embed/ZoKLofsp8u0',
 				'https://www.youtube.com/embed/6DTK9yDP6p0?si=niskiu1FnnDNhiOQ',
@@ -1115,6 +1120,10 @@ export const info = [
 				{
 					text: 'Articles | Nielsen Norman Group',
 					url: 'https://www.nngroup.com/articles/',
+				},
+				{
+					text: 'https://medium.com/theymakedesign/web-app-design-examples-vol-233-Web%20App%20Design%20Examples:%20Consistent%20&%20Stylish%20%E2%80%94%20vol.%20233',
+					url: 'https://medium.com/theymakedesign/web-app-design-examples-vol-233-946b304e8b11',
 				},
 			],
 		},
