@@ -21,10 +21,10 @@
 		--pagefind-ui-border-radius: 8px;
 		--pagefind-ui-image-border-radius: 8px;
 		--pagefind-ui-image-box-ratio: 3 / 2;
-		--pagefind-ui-font: 'Nunito Sans', sans-serif;
+		--pagefind-ui-font: 'Roboto', sans-serif;
 
 		& mark {
-			background-color: #f4bf50;
+			background-color: #f0ff00;
 			padding: 0.1em 0.5em 0.1em 0.5em;
 		}
 	}
