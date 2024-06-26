@@ -47,7 +47,6 @@
 		color: #d6d6d6;
 	}
 	.pagefind-ui__search-input {
-		max-width: 1000px;
 		border: #d6d6d6 solid 1px !important;
 	}
 
@@ -57,14 +56,6 @@
 	.pagefind-ui__search-input::placeholder {
 		color: #d6d6d6 !important;
 		opacity: 0.7 !important;
-	}
-	.pagefind-ui__search-clear {
-		display: none !important;
-		opacity: 0 !important;
-		visibility: hidden;
-		font-weight: bold;
-		/* 
-		font-size: 1.2em !important; */
 	}
 }
 

@@ -19,6 +19,6 @@
 	});
 </script>
 
-<div class="flex min-h-[30rem] w-full justify-center py-8">
-	<div id="search" class="w-11/12"></div>
+<div class="flex min-h-[30rem] w-full justify-center px-6 py-8">
+	<div id="search" class="w-full lg:w-3/6"></div>
 </div>
