@@ -9,8 +9,16 @@
 		// @ts-expect-error - Pagefind will be present at runtime
 		const pagefind = await import('/pagefind/pagefind.js');
 		pagefind.init();
-		let search = new PagefindUI({ element: '#search', showSubResults: true });
+		let search = new PagefindUI({
+			element: '#search',
+			showSubResults: true,
+			showImages: false,
+			resetStyles: true,
+			autofocus: true,
+		});
 	});
 </script>
 
-<div id="search"></div>
+<div class="flex min-h-[30rem] w-full justify-center py-8">
+	<div id="search" class="w-11/12"></div>
+</div>
