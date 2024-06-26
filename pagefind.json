@@ -1,5 +1,5 @@
 {
-	"site": ".svelte-kit/cloudflare",
+	"site": "build",
 	"vite_plugin_pagefind": {
 		"assets_dir": "static",
 		"build_command": "npm run build",
