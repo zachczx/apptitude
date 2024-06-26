@@ -4,11 +4,5 @@ import { defineConfig } from 'vite';
 import pagefind from 'vite-plugin-pagefind';
 
 export default defineConfig({
-	plugins: [enhancedImages(), sveltekit()],
-	/* 	, pagefind() build: {
-		rollupOptions: {
-			external: ['/pagefind/pagefind.js', '/pagefind/pagefind-ui.js'],
-		},
-	},
-	assetsInclude: 'pagefind.js', */
+	plugins: [pagefind(), enhancedImages(), sveltekit()],
 });

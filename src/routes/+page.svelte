@@ -129,7 +129,7 @@
 						d="m13.692 17.308l-.707-.72l4.088-4.088H5v-1h12.073l-4.088-4.088l.707-.72L19 12z" /></svg
 				></a>
 			<a
-				href="/cacheup"
+				href="/guides"
 				class="bg-grey-900 btn join-item border border-primary from-red-500 via-orange-500 to-pink-500 font-medium text-primary hover:border hover:border-primary hover:bg-gradient-to-r hover:from-teal-500 hover:to-lime-500 hover:text-white active:from-red-700 active:via-orange-700 active:to-pink-700 lg:text-2xl"
 				>Skip to Guides</a>
 		</div>

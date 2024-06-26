@@ -10,3 +10,5 @@ vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 *.old2
 *.old
+/ignoreoldfiles
+/static/pagefind
