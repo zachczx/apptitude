@@ -3,8 +3,8 @@
 	onMount(async () => {
 		// @ts-expect-error - Pagefind will be present at runtime
 		const pagefind = await import('/pagefind/pagefind.js');
-		let init = await pagefind.init();
-		await new PagefindUI({
+		pagefind.init();
+		new PagefindUI({
 			element: '#search',
 			showSubResults: true,
 			showImages: false,
