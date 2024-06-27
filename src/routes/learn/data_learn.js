@@ -167,6 +167,7 @@ export const info = [
 				'https://www.youtube.com/embed/6hPMdpk9qA4?si=3eIaOho9EkNWTPjM',
 				'https://youtube.com/embed/3C_22eBWpjg',
 				'https://youtube.com/embed/Cd9aRtwj9xA',
+				'https://youtube.com/embed/DQwJuG8itAUXgGay',
 			],
 			links: [
 				{
@@ -501,15 +502,6 @@ export const info = [
 					text: 'Design Thinking Defined | Ideo Design Thinking',
 					url: 'https://designthinking.ideo.com/',
 				},
-				{
-					text: '',
-					url: '',
-				},
-				{
-					text: '',
-					url: '',
-				},
-
 				{
 					text: 'UXPodcast',
 					url: 'https://uxpodcast.com/',
@@ -1665,6 +1657,8 @@ export const info = [
 				'https://youtube.com/embed/E8cM12jRH7k',
 				'https://youtube.com/embed/ijQvgERWKjA',
 				'https://youtube.com/embed/zOjov-2OZ0E?si=pQnCP85QMk1MNHIh',
+				'https://youtube.com/embed/3RIaH0NnG64',
+				'https://youtube.com/embed/J6yiNbiiCzA',
 			],
 			links: [
 				{
