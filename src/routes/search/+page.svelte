@@ -9,7 +9,7 @@
 		// @ts-expect-error - Pagefind will be present at runtime
 		const pagefind = await import('/pagefind/pagefind.js');
 		pagefind.init();
-		let search = new PagefindUI({
+		new PagefindUI({
 			element: '#search',
 			showSubResults: true,
 			showImages: false,
