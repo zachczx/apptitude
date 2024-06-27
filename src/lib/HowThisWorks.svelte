@@ -8,7 +8,7 @@
 	import vscodePython from '$lib/assets/vscode-python.webp?enhanced&w=600';
 </script>
 
-<div class="bg-gray-900 px-3 py-10 lg:px-10 lg:py-20">
+<div class="bg-gray-900 px-3 py-10 lg:px-10 lg:py-[10rem]">
 	<div class="text-center">
 		<h1
 			class="inline-block bg-gradient-to-r from-emerald-200 via-lime-200 to-teal-300 bg-clip-text pb-20 pt-10 text-transparent lg:pt-5 xl:text-7xl min-[1921px]:text-8xl">

@@ -1,39 +1,24 @@
 <script>
 	import recodingAmericaCover from '$lib/assets/recoding-america-cover.jpg?enhanced&w=300';
-
-	import { onMount } from 'svelte';
-	import { gsap } from 'gsap';
-	import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
-	onMount(() => {
-		gsap.registerPlugin(ScrollTrigger);
-		let tl = gsap.matchMedia();
-		tl.add('(min-width: 1028px)', () => {
-			gsap.from('.book', {
-				scrollTrigger: {
-					trigger: '.book',
-					start: 'center bottom',
-					scrub: false,
-					markers: false,
-				},
-				y: '100',
-				duration: 1,
-			});
-		});
-	});
+	import Breadcrumbs from '$lib/Breadcrumbs.svelte';
 </script>
 
-<div class="space-y-14 bg-base-300 px-5 py-10 lg:px-20 lg:py-20">
-	<div class="pb-5 text-center">
-		<h1
-			class="inline-block bg-gradient-to-r from-emerald-200 via-lime-200 to-teal-300 bg-clip-text pt-10 text-transparent lg:pt-5 xl:text-7xl min-[1921px]:text-8xl">
-			What's the problem?
-		</h1>
+<Breadcrumbs urlMiddle="about" textMiddle="About" textCurrent={"What's the Problem?"} />
+<div class="mx-2 mb-2 text-center lg:mx-20 lg:mb-10">
+	<h1
+		class="inline-block bg-gradient-to-r from-emerald-200 via-lime-200 to-teal-300 bg-clip-text py-3 text-center text-transparent">
+		What's the problem?
+	</h1>
+	<div>
+		<i>If you need an opinion, I have plenty to spare.</i>
 	</div>
+</div>
+<div class="space-y-14 px-5 py-10 lg:px-20">
 	<div class="flex justify-center pb-5">
 		<enhanced:img
 			src={recodingAmericaCover}
 			alt="Recoding America"
-			class="book drop-shadow-[0_1rem_1rem_rgba(255,255,255,0.1)]" />
+			class="drop-shadow-[0_1rem_1rem_rgba(255,255,255,0.1)]" />
 	</div>
 	<div class="space-y-4">
 		<h2

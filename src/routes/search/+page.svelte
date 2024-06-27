@@ -24,5 +24,7 @@
 </svelte:head>
 
 <div class="flex min-h-[30rem] w-full justify-center px-6 py-8">
-	<div id="search" class="w-full lg:w-3/6"></div>
+	<div id="search" class="w-full lg:w-3/6">
+		<span class="loading loading-spinner loading-md text-base-content"></span>
+	</div>
 </div>

@@ -8,7 +8,6 @@
 	import { gsap } from 'gsap';
 	import HowThisWorks from '$lib/HowThisWorks.svelte';
 	import pandaAnnoyed from '$lib/assets/panda-annoyed.webp?enhanced&w=600;500;300';
-	import LandingQuotes from '$lib/LandingQuotes.svelte';
 
 	onMount(() => {
 		let tl = gsap.matchMedia();
@@ -39,13 +38,12 @@
 			});
 		});
 	});
-	const currentBgNumber = Math.floor(Math.random() * 11);
+	// const currentBgNumber = Math.floor(Math.random() * 11);
 </script>
 
-<div
-	class="hero grid min-h-dvh grid-cols-1 content-center justify-items-center pb-12 xl:grid-cols-2">
+<div class="hero grid min-h-dvh grid-cols-1 content-center justify-items-center xl:grid-cols-2">
 	<figure>
-		{#if currentBgNumber % 2 == 0}
+		<!-- {#if currentBgNumber % 2 == 0}
 			<enhanced:img
 				src={heroNewBackground}
 				alt="Hero"
@@ -59,42 +57,40 @@
 				fetchpriority="high"
 				loading="eager"
 				sizes="(min-width:2560px) 2060px, (min-width:1920px) 1536px, (min-width:1600px) 1280px, (min-width:1280px) 1024px" />
-		{:else}
-			<enhanced:img
-				src={heroNew2Background}
-				alt="Hero"
-				class="hero-img -z-10"
-				fetchpriority="high"
-				loading="eager" />
-			<enhanced:img
-				src={heroNew2}
-				alt="Hero"
-				class="hero-img"
-				fetchpriority="high"
-				loading="eager"
-				sizes="(min-width:2560px) 2060px, (min-width:1920px) 1536px, (min-width:1600px) 1280px, (min-width:1280px) 1024px" />
-		{/if}
+		{:else}{/if} -->
+		<enhanced:img
+			src={heroNew2Background}
+			alt="Hero"
+			class="hero-img -z-10"
+			fetchpriority="high"
+			loading="eager" />
+		<enhanced:img
+			src={heroNew2}
+			alt="Hero"
+			class="hero-img"
+			fetchpriority="high"
+			loading="eager"
+			sizes="(min-width:2560px) 2060px, (min-width:1920px) 1536px, (min-width:1600px) 1280px, (min-width:1280px) 1024px" />
 	</figure>
 	<div
 		class="mx-3 self-center justify-self-center rounded-full px-3 pt-4 lg:z-10 lg:mx-8 xl:px-[3rem]">
 		<div class="avatar mb-8 mt-20 flex justify-center px-4 text-center xl:mt-0 xl:hidden">
 			<div class="mask mask-squircle">
-				{#if currentBgNumber % 2 == 0}
+				<!-- {#if currentBgNumber % 2 == 0}
 					<enhanced:img
 						src={heroNew}
 						alt="Hero"
 						class="relative object-right"
 						sizes="(min-width:1000px) 600px, (min-width:768px) 500px, 300px" />
-				{:else}
-					<enhanced:img
-						src={heroNew2}
-						alt="Hero"
-						class="relative object-right"
-						sizes="(min-width:1000px) 600px, (min-width:768px) 500px, 300px" />
-				{/if}
+				{:else}{/if} -->
+				<enhanced:img
+					src={heroNew2}
+					alt="Hero"
+					class="relative object-right"
+					sizes="(min-width:1000px) 600px, (min-width:768px) 500px, 300px" />
 			</div>
 		</div>
-		<h1 class="mb-12 text-center text-5xl lg:pt-20 lg:text-6xl xl:text-6xl min-[1921px]:text-8xl">
+		<h1 class="mb-12 text-center text-5xl lg:pt-20 lg:text-6xl min-[1921px]:text-7xl">
 			<span class="headline">Stop feeling like an imposter,</span>
 			<span class="headline"> get better at</span>
 			<span
@@ -138,10 +134,10 @@
 		</p>
 	</div>
 </div>
-<LandingQuotes />
+
 <HowThisWorks />
 
-<div class="grid min-h-[200px] gap-x-5 bg-gray-800 lg:grid-cols-2">
+<div class="grid min-h-[200px] gap-x-5 bg-gray-800 py-[4rem] lg:grid-cols-2">
 	<div class="avatar my-5 justify-self-end px-10">
 		<div class="mask mask-squircle">
 			<enhanced:img

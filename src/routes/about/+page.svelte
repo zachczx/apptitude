@@ -111,9 +111,11 @@
 			<span class="bg-base-100">How do you know there's a problem?</span>
 		</h2>
 		<p class="bg-base-100 pt-5 lg:text-xl">
-			Reading "Recoding America", everything inside resonates with my experience working on several
-			tech projects. And honestly, I feel Govt's tech products aren't that good or flat out didn't
-			make sense, especially for the large sums we spend (<a
+			<a href="/about/problem/"
+				>Reading "Recoding America", everything inside resonates with my experience working on
+				several tech projects.</a>
+			And honestly, I feel Govt's tech products aren't that good or flat out didn't make sense, especially
+			for the large sums we spend (<a
 				href="https://www.tech.gov.sg/media/media-releases/2023-05-24-government-projected-to-spend-on-ict-in-fy23"
 				>here</a
 			>).
