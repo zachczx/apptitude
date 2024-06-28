@@ -1065,6 +1065,10 @@ export const info = [
 					url: 'https://uxplanet.org/5-ui-patterns-navigation-that-makes-good-ux-sense-92a65df7485d',
 				},
 				{
+					text: 'UX Design Tips: Navigation Menus (Navbar)',
+					url: 'https://www.digidop.fr/en/blog/advice-ux-design-menus-navigation-navbar',
+				},
+				{
 					text: 'Responsive design techniques | Microsoft Build',
 					url: 'https://learn.microsoft.com/en-us/windows/apps/design/layout/responsive-design',
 				},
