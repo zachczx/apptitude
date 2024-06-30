@@ -55,7 +55,7 @@
 				class="object-scale-down lg:ms-16" /></a>
 	</div>
 	<div class="navbar-center hidden lg:flex">
-		<ul class="menu menu-horizontal gap-x-[2rem] pe-5 ps-1 text-2xl font-medium">
+		<ul class="menu menu-horizontal gap-x-[2rem] pe-5 ps-1 text-2xl">
 			<!-- removed menu class -->
 			<li aria-current={matchUrl(comparisonUrl, '/learn') === 0 ? 'page' : undefined}>
 				<a class="hover:bg-base-100 hover:text-primary" href="/learn">Learn</a>

@@ -30,7 +30,7 @@
 			class="card col-span-3 row-span-1 border border-gray-700 bg-base-100 shadow-md shadow-gray-950 transition duration-500 ease-in-out hover:bg-gray-700 lg:col-span-4">
 			<div class="card-body grid h-48 grid-cols-3 content-center items-center">
 				<div class="col-span-2">
-					<h3 class="font-medium">Go on a learning journey to upskill and git gud!</h3>
+					<h3 class="font-normal">Go on a learning journey to upskill and git gud!</h3>
 				</div>
 				<div>
 					<enhanced:img src={swoleDoge} alt="Swole Doge" class="" fetchpriority="low" />

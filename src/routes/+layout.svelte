@@ -84,7 +84,7 @@
 				class="lg:ms-16" /></a>
 	</div>
 	<div class="navbar hidden justify-start lg:flex">
-		<ul class="menu menu-horizontal gap-x-5 ps-20 font-medium">
+		<ul class="menu menu-horizontal gap-x-5 ps-20">
 			<!-- removed menu class -->
 			<li aria-current={matchUrl(data.url, '/learn') === 0 ? 'page' : undefined}>
 				<a class="text-xl hover:bg-base-100 hover:text-primary" href="/learn">Learn</a>

@@ -114,7 +114,7 @@
 		<div class="join join-vertical flex justify-center lg:join-horizontal">
 			<a
 				href="/learn"
-				class="button-shine btn join-item relative overflow-hidden border border-primary bg-lime-600 font-medium text-white hover:border hover:border-primary hover:bg-gradient-to-r hover:from-lime-500 hover:via-teal-500 hover:to-emerald-600 active:from-lime-600 active:via-teal-600 active:to-emerald-700 lg:text-2xl"
+				class="button-shine btn join-item relative overflow-hidden border border-primary bg-lime-600 font-bold text-white hover:border hover:border-primary hover:bg-gradient-to-r hover:from-lime-500 hover:via-teal-500 hover:to-emerald-600 active:from-lime-600 active:via-teal-600 active:to-emerald-700 lg:text-2xl"
 				>Learn Basics <svg
 					xmlns="http://www.w3.org/2000/svg"
 					width="32"
@@ -126,7 +126,7 @@
 				></a>
 			<a
 				href="/guides"
-				class="bg-grey-900 btn join-item border border-primary from-red-500 via-orange-500 to-pink-500 font-medium text-primary hover:border hover:border-primary hover:bg-gradient-to-r hover:from-teal-500 hover:to-lime-500 hover:text-white active:from-red-700 active:via-orange-700 active:to-pink-700 lg:text-2xl"
+				class="bg-grey-900 btn join-item border border-primary from-red-500 via-orange-500 to-pink-500 font-bold text-primary hover:border hover:border-primary hover:bg-gradient-to-r hover:from-teal-500 hover:to-lime-500 hover:text-white active:from-red-700 active:via-orange-700 active:to-pink-700 lg:text-2xl"
 				>Skip to Guides</a>
 		</div>
 		<p class="mt-3 text-center lg:text-xl">
@@ -148,11 +148,11 @@
 		</div>
 	</div>
 	<div class="grid grid-rows-2 justify-self-start">
-		<div class="content-end text-center lg:text-start"><h1>What are you waiting for?</h1></div>
+		<div class="content-end text-center lg:text-start"><h2>What are you waiting for?</h2></div>
 		<div class="z-50 pt-5 text-center lg:ps-5 lg:pt-10 lg:text-start">
 			<a
 				href="/learn"
-				class="btn relative overflow-hidden border border-primary bg-lime-600 font-medium text-white hover:border hover:border-primary hover:bg-gradient-to-r hover:from-lime-500 hover:via-teal-500 hover:to-emerald-600 active:from-lime-600 active:via-teal-600 active:to-emerald-700 lg:hidden lg:text-2xl"
+				class="btn relative overflow-hidden border border-primary bg-lime-600 font-bold text-white hover:border hover:border-primary hover:bg-gradient-to-r hover:from-lime-500 hover:via-teal-500 hover:to-emerald-600 active:from-lime-600 active:via-teal-600 active:to-emerald-700 lg:hidden lg:text-2xl"
 				>Learn the Basics <svg
 					xmlns="http://www.w3.org/2000/svg"
 					width="32"
@@ -171,7 +171,7 @@
 				<span
 					class="ease absolute inset-0 h-full w-full translate-x-2 translate-y-2 transform rounded bg-teal-800 mix-blend-screen transition duration-300 group-hover:translate-x-0 group-hover:translate-y-0 lg:translate-x-4 lg:translate-y-3"
 				></span>
-				<span class="relative p-5 font-medium">Start Learning Now! </span></a>
+				<span class="relative p-5 font-bold">Start Learning Now! </span></a>
 		</div>
 	</div>
 </div>

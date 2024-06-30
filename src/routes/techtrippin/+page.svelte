@@ -43,7 +43,7 @@
 				class="grid grid-cols-1 justify-items-center gap-y-8 rounded-2xl border border-gray-700 bg-base-300 lg:mb-7 lg:grid-cols-3 lg:gap-x-5 lg:gap-y-10">
 				<div id="navigation">
 					<div id="dropdown" class="mx-auto mt-3 flex w-11/12 lg:hidden">
-						<label class="ms-1 font-medium">
+						<label class="ms-1">
 							<select bind:value={currentItem} class="select select-bordered w-full text-lg">
 								{#each techtrippin as sidebarItem, index}
 									<option value={index}>{sidebarItem.title}</option>
@@ -88,7 +88,7 @@
 											<img alt="Person" src={techtrippin[currentItem].icon} />
 										</div>
 									</div>
-									<div class="chat-header ms-5 self-end pb-1 font-medium lg:text-xl">
+									<div class="chat-header ms-5 self-end pb-1 font-bold lg:text-xl">
 										{techtrippin[currentItem].name}
 									</div>
 									<div
@@ -106,7 +106,7 @@
 										</div>
 									</div>
 
-									<div class="chat-header me-5 self-end pb-1 font-medium lg:text-xl">
+									<div class="chat-header me-5 self-end pb-1 font-bold lg:text-xl">
 										Chad Staffer
 									</div>
 									<div
@@ -121,7 +121,7 @@
 												<img alt="Person" src={techtrippin[currentItem].icon} />
 											</div>
 										</div>
-										<div class="chat-header ms-5 self-end pb-1 font-medium lg:text-xl">
+										<div class="chat-header ms-5 self-end pb-1 font-bold lg:text-xl">
 											{techtrippin[currentItem].name}
 										</div>
 										<div
@@ -140,7 +140,7 @@
 											</div>
 										</div>
 
-										<div class="chat-header me-5 self-end pb-1 font-medium lg:text-xl">Me</div>
+										<div class="chat-header me-5 self-end pb-1 font-bold lg:text-xl">Me</div>
 										<div
 											class="chat-bubble self-start bg-gradient-to-r from-slate-900 via-base-300 to-slate-900 p-2 text-xl lg:p-6">
 											{techtrippin[currentItem].response2}

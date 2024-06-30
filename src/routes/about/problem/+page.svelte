@@ -50,13 +50,13 @@
 			<h3>Structures, Culture</h3>
 			<blockquote class="leading-8">
 				Blaming software that fails gets us little in the way of fixing the problems that government
-				faces. <span class="font-medium text-primary"
+				faces. <span class="text-primary"
 					>More helpful is to understand the structures and culture that created the software,
 					because they determine not just how the software works but how the whole system operates.</span>
 			</blockquote>
 			<blockquote class="leading-8">
 				Formally, the tech implementers are not charged with building services that meet users’
-				needs or achieve policy goals. <span class="font-medium text-primary"
+				needs or achieve policy goals. <span class="text-primary"
 					>Their job is simply to meet a predetermined list of requirements. These are often
 					exceedingly specific, but nowhere in government documents will you find a requirement that
 					the service actually works for the people who are supposed to use it.</span>
@@ -73,13 +73,13 @@
 				presume to know how to change this, though I desperately wish I did. What I do know is that
 				the perverse effects of glorifying process are far greater in technology, for the simple
 				reason that there are so few people in government who understand tech. <span
-					class="font-medium text-primary">
+					class="text-primary">
 					Rigid, overly specific interpretations of law and policy are hard to avoid when those
 					doing the interpretation can’t evaluate the work for themselves.
 				</span>
 			</blockquote>
 			<blockquote class="leading-8">
-				<span class="font-medium text-primary"
+				<span class="text-primary"
 					>Policy people tend to see those who implement the policy decisions they make as being far
 					below them in the pecking order, perhaps even at the bottom of it.</span> OMB was the pinnacle
 				of that pecking order. In other words, No, thank you, that’s lowbrow stuff. That’s not the kind
@@ -91,7 +91,7 @@
 			<blockquote class="leading-8">
 				None of the modernized states were able to avoid accruing backlogs, and few of them seemed
 				to do much better than average in terms of scaling to meet demand. The problem is that the
-				<span class="font-medium text-primary"
+				<span class="text-primary"
 					>modernization projects all sought to “add functionality” — more layers of paint — or just
 					to move to more modern infrastructure, particularly to the cloud. None of them targeted
 					serving clients better or scaling to meet demand.</span> If the people running the systems
@@ -108,7 +108,7 @@
 				different technology paradigms from different eras... The system is not so much updated as
 				it is tacked on to. Over time, new functionality is added, but the system never sheds the
 				core limitations of the foundational technologies. At the same time, it becomes enormously
-				complex and fragile... <span class="font-medium text-primary"
+				complex and fragile... <span class="text-primary"
 					>It becomes harder and harder to support the technologies in the lower, older layers,
 					while the more recent layers require constant updates and patches. The paint cracks.</span>
 			</blockquote>
@@ -118,13 +118,13 @@
 			<blockquote class="leading-8">
 				Arguments about what is or isn’t required happen all the time, but they are much less likely
 				to lead to a suffocatingly risk-averse answer when the people involved in the argument
-				understand the domain... <span class="font-medium text-primary"
+				understand the domain... <span class="text-primary"
 					>it is highly unlikely that anyone else in the debate — likely to be dozens of people in
 					dozens of different roles — had any basis on which to judge whether an ESB was a good
 					thing or a bad thing in this context.</span>
 				Thus, to nix the ESB, dozens of people in dozens of different roles would all have had to agree
 				to jeopardize their jobs over a recommendation they didn’t understand.
-				<span class="font-medium text-primary"
+				<span class="text-primary"
 					>These discussions tend to function as a vetocracy, in which it takes all thumbs up in
 					order to accept the risk, and only one thumbs-down to stick with the less-risky option.
 					The ESB stays.</span>
@@ -133,7 +133,7 @@
 		<div class="space-y-7">
 			<h3>Scope of Requirements</h3>
 			<blockquote class="leading-8">
-				<span class="font-medium text-primary"
+				<span class="text-primary"
 					>Government’s obsession with requirements — voluminous, detailed requirements that can
 					take so long to compile the software is obsolete before it’s even bid out—stems from a
 					delusion that it’s possible to make a work plan so specific that it requires no further
@@ -142,7 +142,7 @@
 				choose the best tool or platform for the job?
 			</blockquote>
 			<blockquote class="leading-8">
-				<span class="font-medium text-primary"
+				<span class="text-primary"
 					>But the goal in government seems to be to drain the job of software development of any
 					opportunity to exercise judgment</span
 				>... it’s particularly destructive when hardly any of the people writing the work plan have
@@ -153,7 +153,7 @@
 		<div class="space-y-7">
 			<h3>Build vs Buy</h3>
 			<blockquote class="leading-8">
-				<span class="font-medium text-primary"
+				<span class="text-primary"
 					>Government procurement teams have a terrible habit of contracting for bespoke software
 					when they could buy commercial products</span> — partly because we tell these teams to collect
 				every possible requirement they can think of, which encourages and even calcifies arcane practices
@@ -165,10 +165,10 @@
 			<blockquote class="leading-8">
 				It can’t just be a project that was contracted for, developed, tested, and declared “done.”
 				You need to own the code, and you need to be able to change it to meet your needs... <span
-					class="font-medium text-primary"
+					class="text-primary"
 					>you must have the core competencies to support a living, ever-adapting system.</span>
 				Government knows how to acquire technology.
-				<span class="font-medium text-primary">What we need to acquire are capabilities.</span>
+				<span class="text-primary">What we need to acquire are capabilities.</span>
 			</blockquote>
 		</div>
 	</div>

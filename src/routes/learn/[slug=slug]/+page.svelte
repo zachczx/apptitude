@@ -96,7 +96,7 @@
 			{#if goTodo}
 				<a
 					href="/todo"
-					class="ms-5 text-base font-medium text-primary"
+					class="ms-5 text-base font-bold text-primary"
 					in:slide={{ axis: 'x', duration: 700, delay: 50, easing: elasticOut }}
 					><TablerSquareRoundedChevronsRightFilled
 						class="mb-1 inline fill-primary"
@@ -159,7 +159,7 @@
 			<ul class="list-disc ps-4">
 				{#each data.post.resources.courses as course}
 					<li>
-						<a href={course.url} class="font-medium underline hover:text-primary">{course.text}</a>
+						<a href={course.url} class="underline hover:text-primary">{course.text}</a>
 					</li>
 				{/each}
 			</ul>
@@ -178,7 +178,7 @@
 			<ul class="list-disc ps-4">
 				{#each data.post.resources.links as link}
 					<li>
-						<a href={link.url} class="font-medium underline hover:text-primary">{link.text}</a>
+						<a href={link.url} class="underline hover:text-primary">{link.text}</a>
 					</li>
 				{/each}
 			</ul>
