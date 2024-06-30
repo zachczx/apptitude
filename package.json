@@ -35,6 +35,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@fontsource/roboto": "^5.0.13",
 		"@sveltejs/adapter-cloudflare": "^4.4.1",
 		"@sveltejs/enhanced-img": "^0.3.0",
 		"gsap": "^3.12.5",

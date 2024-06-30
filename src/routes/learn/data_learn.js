@@ -167,7 +167,6 @@ export const info = [
 				'https://www.youtube.com/embed/6hPMdpk9qA4?si=3eIaOho9EkNWTPjM',
 				'https://youtube.com/embed/3C_22eBWpjg',
 				'https://youtube.com/embed/Cd9aRtwj9xA',
-				'https://youtube.com/embed/DQwJuG8itAUXgGay',
 			],
 			links: [
 				{
