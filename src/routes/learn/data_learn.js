@@ -202,6 +202,10 @@ export const info = [
 				},
 				{ text: 'Load Balancing', url: 'https://samwho.dev/load-balancing/' },
 				{
+					text: 'Queueing: An interactive study of queueing strategies',
+					url: 'https://encore.dev/blog/queueing',
+				},
+				{
 					text: 'What is SSL (Secure Sockets Layer)? | Cloudflare',
 					url: 'https://www.cloudflare.com/en-gb/learning/ssl/what-is-ssl/',
 				},
@@ -1757,6 +1761,15 @@ export const info = [
 				{
 					text: 'How web bloat impacts users with slow devices',
 					url: 'https://danluu.com/slow-device/',
+				},
+				{
+					text: 'Queueing: An interactive study of queueing strategies',
+					url: 'https://encore.dev/blog/queueing',
+				},
+				{ text: 'Load Balancing', url: 'https://samwho.dev/load-balancing/' },
+				{
+					text: 'Retries: An interactive study of common retry methods',
+					url: 'https://encore.dev/blog/retries',
 				},
 			],
 		},
