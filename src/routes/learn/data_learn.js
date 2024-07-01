@@ -161,6 +161,7 @@ export const info = [
 				},
 			],
 			youtube: [
+				'https://youtube.com/embed/a_1cV7hg5G8',
 				'https://youtube.com/embed/erEgovG9WBs',
 				'https://youtube.com/embed/lkIFF4maKMU',
 				'https://youtube.com/embed/zN8YNNHcaZc?si=Tj2S7qrsec51DKrJ',
@@ -1658,6 +1659,7 @@ export const info = [
 			youtube: [
 				'https://youtube.com/embed/pEfrdAtAmqk?si=XbNLZmktdg7oQCis',
 				'https://youtube.com/embed/-uleG_Vecis?si=R0MCXM6csXiGXyjD',
+				'https://youtube.com/embed/wIyHSOugGGw',
 				'https://youtube.com/embed/erEgovG9WBs',
 				'https://youtube.com/embed/lkIFF4maKMU',
 				'https://youtube.com/embed/aXOChLn5ZdQ?si=-KXtJPY2mI3pRlIv',
