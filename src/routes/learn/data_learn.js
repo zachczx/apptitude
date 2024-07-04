@@ -191,7 +191,10 @@ export const info = [
 					text: 'Javascript | MDN Web Docs',
 					url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
 				},
-
+				{
+					text: "The Website vs. Web App Dichotomy Doesn't Exist",
+					url: 'https://jakelazaroff.com/words/the-website-vs-web-app-dichotomy-doesnt-exist/',
+				},
 				{
 					text: 'Document Object Model (DOM) | MDN Web Docs',
 					url: 'https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model',
@@ -617,6 +620,7 @@ export const info = [
 			youtube: [
 				'https://www.youtube.com/embed/XmRNIGqzuRI',
 				'https://www.youtube.com/embed/C27RVio2rOs?si=rKY_2K-n0lC6vk54',
+				'https://www.youtube.com/embed/Pg72m3CjuK4?si=aEfAca3W0v2MlTP1',
 				'https://www.youtube.com/embed/QRZ_l7cVzzU?si=sh3L1sWZzBhLb2dy',
 				'https://www.youtube.com/embed/T3VRz18ntjQ',
 				'https://www.youtube.com/embed/h-KVGHoQ_98',
@@ -647,6 +651,10 @@ export const info = [
 				{
 					text: 'Transforming Product Culture with Lea Hickman',
 					url: 'https://www.mindtheproduct.com/transforming-product-culture-lea-hickman/',
+				},
+				{
+					text: 'The Product Strategy Stack',
+					url: 'https://www.reforge.com/blog/the-product-strategy-stack',
 				},
 				{
 					text: 'Transformation Fail - Silicon Valley Product Group',
@@ -747,6 +755,11 @@ export const info = [
 					text: 'Paths to PMF with Todd Jackson',
 					url: 'https://review.firstround.com/series/product-market-fit/',
 				},
+
+				{
+					text: 'The Arc Product-Market Fit Framework',
+					url: 'https://www.sequoiacap.com/article/pmf-framework/',
+				},
 				{ text: 'Product Coalition', url: 'https://productcoalition.com/' },
 				{
 					text: 'Ruthless Prioritization',
@@ -762,7 +775,6 @@ export const info = [
 					text: 'Managing and Developing Product Managers',
 					url: 'https://blackboxofpm.com/managing-and-developing-product-managers-2f9a3963fab6',
 				},
-
 				{
 					text: 'Product Metrics: What You Need to Know - Qualtrics',
 					url: 'https://www.qualtrics.com/au/experience-management/product/product-metrics/',
@@ -781,14 +793,16 @@ export const info = [
 					text: 'Why Product Metrics Matter',
 					url: 'https://www.productplan.com/learn/product-metrics-matter/',
 				},
-
+				{
+					text: 'Product Strategy is Really About Offense vs. Defense',
+					url: 'https://www.reforge.com/blog/product-strategy-framework-offense-vs-defense',
+				},
 				{
 					text: 'Coaching Tools - The Assessment',
 					url: 'https://www.svpg.com/coaching-tools-the-assessment/',
 				},
-
 				{ text: 'Pmarca', url: 'https://pmarchive.com/' },
-
+				{ text: 'Guides | Reforge', url: 'https://www.reforge.com/guides' },
 				{
 					text: 'What defines a top 1% Product Designer? | r/UXDesign',
 					url: 'https://www.reddit.com/r/UXDesign/comments/1ccdafz/what_defines_a_top_1_product_designer/',
