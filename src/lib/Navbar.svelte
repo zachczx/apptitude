@@ -8,7 +8,7 @@
 	export let comparisonUrl;
 </script>
 
-<div class="navbar relative bg-base-300">
+<nav class="navbar relative bg-base-300" data-pagefind-ignore>
 	<div class="max-h-18 navbar-start">
 		<div class="dropdown">
 			<div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -75,4 +75,4 @@
 		</ul>
 	</div>
 	<div class="navbar-end"></div>
-</div>
+</nav>

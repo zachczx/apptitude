@@ -6,10 +6,15 @@
 		pagefind.init();
 		new PagefindUI({
 			element: '#search',
-			showSubResults: true,
+			showSubResults: false,
 			showImages: false,
 			resetStyles: true,
 			autofocus: true,
+			processResult: (result) => {
+				const url = result.url.replace('.html', '');
+				result.url = url;
+				return result;
+			},
 		});
 	});
 </script>

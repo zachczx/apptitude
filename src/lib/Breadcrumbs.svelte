@@ -3,7 +3,7 @@
 	export let urlMiddle, textMiddle, textCurrent;
 </script>
 
-<div class="nav-breadcrumb mb-10 px-3 lg:px-20">
+<div class="nav-breadcrumb mb-10 px-3 lg:px-20" data-pagefind-ignore>
 	<ul class="flex">
 		<li class="text-xl"><a href="/" class="text-primary">Home</a></li>
 		{#if urlMiddle && textMiddle}
