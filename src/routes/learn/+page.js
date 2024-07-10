@@ -1,4 +1,4 @@
-import { info } from './data_learn.js';
+import { info } from './data_learn';
 
 export function load() {
 	const beginner = info.filter((item) => {

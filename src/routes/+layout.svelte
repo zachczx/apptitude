@@ -5,8 +5,8 @@
 	import TablerSquareRoundedPlusFilled from '$lib/assets/svg/TablerSquareRoundedPlusFilled.svelte';
 	import TablerChevronRight from '$lib/assets/svg/TablerChevronRight.svelte';
 	let { data } = $props();
-	import { guides } from './guides/data_guides.js';
-	import { info } from './learn/data_learn.js';
+	import { guides } from './guides/data_guides';
+	import { info } from './learn/data_learn';
 	let pageName = $state('Apptitude');
 	import { onNavigate } from '$app/navigation';
 
@@ -35,7 +35,7 @@
 	<title>{pageName}</title>
 </svelte:head>
 
-<div class="navbar-view-transition navbar {data.url === '/' ? 'absolute z-20' : ''}">
+<nav class="navbar-view-transition navbar {data.url === '/' ? 'absolute z-20' : ''}">
 	<div class="max-h-18">
 		<div class="dropdown lg:hidden">
 			<div tabindex="0" role="button" class="btn btn-ghost -ms-3">
@@ -121,18 +121,10 @@
 					d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" /><path d="M21 21l-6 -6" /></svg>
 		</a>
 	</div>
-</div>
-
-<!-- {#if !viewTransition}
-	<PageTransition url={data.url}>
-		<slot />
-	</PageTransition>
-{:else}
+</nav>
+<main>
 	<slot />
-{/if} -->
-
-<slot />
-
+</main>
 <footer class="footer footer-center gap-y-2 rounded bg-base-200 p-3 pt-5 text-base-content">
 	<aside>
 		<p class="mb-2 text-base">

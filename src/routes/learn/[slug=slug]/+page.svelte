@@ -4,7 +4,7 @@
 	import TablerLink from '$lib/assets/svg/TablerLink.svelte';
 	const slug = $page.params.slug;
 	let { data } = $props();
-	import { newitem } from '../../todo/todo_store.js';
+	import { newitem } from '../../todo/todo_store';
 	import TablerSquareRoundedPlusFilled from '$lib/assets/svg/TablerSquareRoundedPlusFilled.svelte';
 	import { slide } from 'svelte/transition';
 	import { elasticOut } from 'svelte/easing';

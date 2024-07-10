@@ -1,5 +1,5 @@
 <script>
-	import { info } from './data_learn.js';
+	import { info } from './data_learn';
 	import Breadcrumbs from '$lib/Breadcrumbs.svelte';
 	import TablerHelpCircleFilled from '$lib/assets/svg/TablerHelpCircleFilled.svelte';
 	import TablerStarFilled from '$lib/assets/svg/TablerStarFilled.svelte';

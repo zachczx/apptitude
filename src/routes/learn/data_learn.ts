@@ -1,4 +1,20 @@
-export const info = [
+interface LearnData {
+	id: number;
+	name: string;
+	intro: string;
+	slug: string;
+	topics: string[];
+	questions: string[];
+	issues: string[];
+	objectives: string[];
+	resources: {
+		courses: [{ text: string; url: string }];
+		youtube: string[];
+		links: [{ text: string; url: string }];
+	};
+}
+
+export const info: LearnData[] = [
 	{
 		id: 1,
 		name: 'Basics',
@@ -86,9 +102,10 @@ export const info = [
 			youtube: [
 				'https://youtube.com/embed/mCq8-xTH7jA',
 				'https://youtube.com/embed/rRSD128KWIM',
+				'https://youtube.com/embed/LN0ucKNX0hc',
 				'https://youtube.com/embed/-uleG_Vecis',
 				'https://youtube.com/embed/vqs_0W-MSB0',
-				'https://youtube.com/embed/LN0ucKNX0hc',
+
 				'https://youtube.com/embed/gI-qXk7XojA',
 				'https://youtube.com/embed/M5BZou6C01w',
 				'https://youtube.com/embed/rL8X2mlNHPM',
@@ -96,6 +113,7 @@ export const info = [
 				'https://youtube.com/embed/FZGugFqdr60',
 				'https://youtube.com/embed/guvsH5OFizE',
 				'https://youtube.com/embed/OtDxDvCpPL4',
+				'https://youtube.com/embed/LKCVKw9CzFo',
 			],
 			links: [
 				{
@@ -1683,6 +1701,9 @@ export const info = [
 				'https://youtube.com/embed/3RIaH0NnG64',
 				'https://youtube.com/embed/J6yiNbiiCzA',
 				'https://youtube.com/embed/je4CGd5IKt0',
+				'https://youtube.com/embed/W18o_qlWBtM',
+				'https://youtube.com/embed/d72aFePfXGU',
+				'https://youtube.com/embed/AIs9mQaerZE',
 			],
 			links: [
 				{

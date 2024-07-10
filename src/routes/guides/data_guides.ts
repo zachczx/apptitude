@@ -8,7 +8,21 @@ import SethGodin from '$lib/assets/profileheads/SethGodin.webp';
 import LeaHickman from '$lib/assets/profileheads/LeaHickman.webp';
 import TeresaTorres from '$lib/assets/profileheads/TeresaTorres.webp';
 
-export const guides = [
+interface GuidesData {
+	id: number;
+	name: string;
+	tagline: string;
+	slug: string;
+	bylines: { [index: number]: { text: string; icon: string } };
+	definitions: string[];
+	goals: string[];
+	questions: string[];
+	dealbreakers: string[];
+	solutions: string[];
+	suggestions: string[];
+}
+
+export const guides: GuidesData[] = [
 	{
 		id: 1,
 		name: 'Problem Statements',
