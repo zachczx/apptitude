@@ -6,7 +6,6 @@
 		pagefind.init();
 		new PagefindUI({
 			element: '#search',
-			showSubResults: false,
 			showImages: false,
 			resetStyles: true,
 			autofocus: true,
