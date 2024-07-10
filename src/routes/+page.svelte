@@ -91,8 +91,7 @@
 			</div>
 		</div>
 		<h1 class="mb-12 text-center text-5xl lg:pt-20 lg:text-6xl min-[1921px]:text-7xl">
-			<span class="headline">Stop feeling like an imposter,</span>
-			<span class="headline"> get better at</span>
+			<span class="headline">Get better at</span>
 			<span
 				class="headline inline-block bg-gradient-to-r from-emerald-200 via-lime-200 to-teal-300 bg-clip-text pb-5 text-transparent"
 				>tech products & projects.</span>
@@ -107,8 +106,8 @@
 				digital product management
 			</div>
 			<div class="subheadline py-1 ps-3 text-center">
-				<h2>Dump</h2>
-				crappy products nobody needs
+				<h2>Drop</h2>
+				poor & unnecessary products
 			</div>
 		</div>
 		<div class="join join-vertical flex justify-center lg:join-horizontal">
