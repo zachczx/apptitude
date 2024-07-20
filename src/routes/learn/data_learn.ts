@@ -1154,8 +1154,12 @@ export const info: LearnData[] = [
 					url: 'https://www.nngroup.com/articles/',
 				},
 				{
-					text: 'https://medium.com/theymakedesign/web-app-design-examples-vol-233-Web%20App%20Design%20Examples:%20Consistent%20&%20Stylish%20%E2%80%94%20vol.%20233',
+					text: 'Web App Design Examples: Consistent & Stylish — vol. 233',
 					url: 'https://medium.com/theymakedesign/web-app-design-examples-vol-233-946b304e8b11',
+				},
+				{
+					text: 'Neumorphism: why it’s all the hype in UI design',
+					url: 'https://www.justinmind.com/ui-design/neumorphism',
 				},
 			],
 		},
