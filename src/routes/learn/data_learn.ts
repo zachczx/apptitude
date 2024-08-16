@@ -762,6 +762,7 @@ export const info: LearnData[] = [
 				'https://www.youtube.com/embed/yr_sz6fRy-w',
 				'https://www.youtube.com/embed/6Uc-EiQ2xnU',
 				'https://www.youtube.com/embed/YCIF9948uts?si=vYu5TVLBICY7Ll8W',
+				'https://www.youtube.com/embed/Acj6hrfZeVg',
 			],
 			links: [
 				{
@@ -907,6 +908,7 @@ export const info: LearnData[] = [
 				'https://www.youtube.com/embed/rHeWoBPdNT4',
 				'https://www.youtube.com/embed/vqXLGX0szIQ',
 				'https://www.youtube.com/embed/WgXU7XAZYmQ',
+				'https://www.youtube.com/embed/OgwlV-vQNYk',
 			],
 			links: [
 				{
@@ -1153,6 +1155,18 @@ export const info: LearnData[] = [
 				{
 					text: 'Articles | Nielsen Norman Group',
 					url: 'https://www.nngroup.com/articles/',
+				},
+				{
+					text: 'Loading Feedback | Pencil & Paper',
+					url: 'https://www.pencilandpaper.io/articles/ux-pattern-analysis-loading-feedback',
+				},
+				{
+					text: 'Skeleton Screens 101',
+					url: 'https://www.nngroup.com/articles/skeleton-screens/',
+				},
+				{
+					text: 'Let Your Users Wait | UX Magazine',
+					url: 'https://uxmag.com/articles/let-your-users-wait',
 				},
 				{
 					text: 'Web App Design Examples: Consistent & Stylish — vol. 233',

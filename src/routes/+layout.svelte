@@ -139,6 +139,9 @@
 				><TablerSquareRoundedPlusFilled class="mb-1 me-1 ms-2 inline fill-primary" />Apptitude</a>
 			<a href="https://appraize.zixian.dev/" class="hover:text-primary"
 				><TablerSquareRoundedPlusFilled class="mb-1 me-1 ms-2 inline fill-primary" />Appraize</a>
+			<a href="https://abbreviation.zixian.dev/" class="hover:text-primary"
+				><TablerSquareRoundedPlusFilled
+					class="mb-1 me-1 ms-2 inline fill-primary" />Abbreviation</a>
 			<a href="https://app.zixian.dev/eatyourmeds/" class="hover:text-primary"
 				><TablerSquareRoundedPlusFilled class="mb-1 me-1 ms-2 inline fill-primary" />Eat Your
 				Medicine</a>
