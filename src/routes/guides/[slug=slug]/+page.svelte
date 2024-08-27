@@ -93,7 +93,7 @@
 					{/key}
 				</div>
 			{/if}
-			<section id="definition" class="contents-observer">
+			<section id="definitions" class="contents-observer">
 				<h2>1. Definitions</h2>
 				<div>
 					<ol class="list-disc space-y-4 ps-4">
