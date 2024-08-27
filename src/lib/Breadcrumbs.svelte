@@ -1,6 +1,8 @@
-<script>
+<script lang="ts">
 	import SvgChevronRight from '$lib/assets/svg/TablerChevronRight.svelte';
-	export let urlMiddle, textMiddle, textCurrent;
+	export let urlMiddle = '';
+	export let textMiddle = '';
+	export let textCurrent = '';
 </script>
 
 <div class="nav-breadcrumb mb-10 px-3 lg:px-20" data-pagefind-ignore>

@@ -4,7 +4,9 @@
 	import TablerInfoCircle from '$lib/assets/svg/TablerInfoCircle.svelte';
 </script>
 
-<Breadcrumbs urlMiddle="guides" textMiddle={'Guides'} textCurrent={'Research'} />
+<div class="mt-20">
+	<Breadcrumbs urlMiddle="guides" textMiddle={'Guides'} textCurrent={'Research'} />
+</div>
 <div
 	class="grid grid-cols-1 place-content-start gap-4 rounded-2xl px-2 px-3 py-5 lg:mx-20 lg:grid-cols-2 lg:border lg:border-gray-800 lg:bg-base-300 lg:px-5 lg:shadow-xl lg:shadow-gray-900">
 	<div class="text-center lg:col-span-2">

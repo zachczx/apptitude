@@ -4,6 +4,7 @@
 
 :root {
 	font-family: 'Roboto', sans-serif;
+	text-decoration-skip-ink: none;
 	line-height: 1.2;
 
 	.pagefind-ui {

@@ -81,7 +81,7 @@
 				sizes="(min-width:1920px) 300px, (min-width:1600px) 300px, (min-width:1280px) 200px"
 				alt="Apptitude logo"
 				fetchpriority="high"
-				class="lg:ms-16" /></a>
+				class="lg:ms-[4.3rem]" /></a>
 	</div>
 	<div class="navbar hidden justify-start lg:flex">
 		<ul class="menu menu-horizontal gap-x-5 ps-20">
@@ -105,7 +105,7 @@
 		</ul>
 	</div>
 	<div class="navbar-end">
-		<a href="/search"
+		<a href="/search" class="lg:me-[4.3rem]"
 			><svg
 				xmlns="http://www.w3.org/2000/svg"
 				width="2em"

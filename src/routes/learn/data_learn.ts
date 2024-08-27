@@ -1631,6 +1631,14 @@ export const info: LearnData[] = [
 					text: 'Unlock Your LLM Coding Potential with StarCoder2',
 					url: 'https://developer.nvidia.com/blog/unlock-your-llm-coding-potential-with-starcoder2/',
 				},
+				{
+					text: "There's An AI For That",
+					url: 'https://theresanaiforthat.com/',
+				},
+				{
+					text: 'Futurepedia - Find the Best AI Tools & Software',
+					url: 'https://www.futurepedia.io/',
+				},
 			],
 		},
 	},
@@ -1725,6 +1733,7 @@ export const info: LearnData[] = [
 				'https://youtube.com/embed/d72aFePfXGU',
 				'https://youtube.com/embed/AIs9mQaerZE',
 				'https://youtube.com/embed/Z8KZCYbjEng',
+				'https://youtube.com/embed/dGAgxozNWFE',
 			],
 			links: [
 				{

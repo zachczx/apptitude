@@ -12,13 +12,13 @@ export default {
 			},
 		},
 	},
-	plugins: [require('daisyui')],
+	plugins: [require('daisyui'), require('@tailwindcss/typography')],
 	daisyui: {
 		themes: [
 			{
 				dim: {
 					...require('daisyui/src/theming/themes')['dim'],
-					'base-content': '#e0eaee',
+					// 'base-content': '#e0eaee',
 					'neutral-content': '#e0eaee',
 				},
 			},
