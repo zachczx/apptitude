@@ -40,7 +40,7 @@
 	<div class="space-y-7 rounded-2xl bg-base-300 p-3 lg:p-5">
 		<div class="space-y-3 ps-1">
 			<h2>
-				<TablerStarFilled class="mb-1 inline fill-lime-200" /><TablerStarFilled
+				<TablerStarFilled class="mb-1 inline fill-primary" /><TablerStarFilled
 					class="mb-1 inline fill-gray-600" /><TablerStarFilled
 					class="mb-1 inline fill-gray-600" /><TablerStarFilled
 					class="mb-1 inline fill-gray-600" /><TablerStarFilled class="mb-1 inline fill-gray-600" />
@@ -77,9 +77,9 @@
 	<div class="space-y-7 rounded-2xl bg-base-300 p-3 lg:p-5">
 		<div class="space-y-3 ps-1">
 			<h2>
-				<TablerStarFilled class="mb-1 inline fill-lime-200 " /><TablerStarFilled
-					class="mb-1 inline fill-lime-200" /><TablerStarFilled
-					class="mb-1 inline fill-lime-200" /><TablerStarFilled
+				<TablerStarFilled class="mb-1 inline fill-primary" /><TablerStarFilled
+					class="mb-1 inline fill-primary" /><TablerStarFilled
+					class="mb-1 inline fill-primary" /><TablerStarFilled
 					class="mb-1 inline fill-gray-600" /><TablerStarFilled class="mb-1 inline fill-gray-600" />
 			</h2>
 			<h2
@@ -113,10 +113,10 @@
 	<div class="space-y-7 rounded-2xl bg-base-300 p-3 lg:p-5">
 		<div class="space-y-3 ps-1">
 			<h2>
-				<TablerStarFilled class="mb-1 inline fill-lime-200" /><TablerStarFilled
-					class="mb-1 inline fill-lime-200" /><TablerStarFilled
-					class="mb-1 inline fill-lime-200" /><TablerStarFilled
-					class="mb-1 inline fill-lime-200" /><TablerStarFilled class="mb-1 inline fill-lime-200" />
+				<TablerStarFilled class="mb-1 inline fill-primary" /><TablerStarFilled
+					class="mb-1 inline fill-primary" /><TablerStarFilled
+					class="mb-1 inline fill-primary" /><TablerStarFilled
+					class="mb-1 inline fill-primary" /><TablerStarFilled class="mb-1 inline fill-primary" />
 			</h2>
 			<h2
 				class="inline-block bg-gradient-to-r from-emerald-200 via-lime-200 to-teal-300 bg-clip-text text-transparent">
