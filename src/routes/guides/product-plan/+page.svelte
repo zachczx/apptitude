@@ -25,9 +25,12 @@
 	];
 	let currentSection: any = $state();
 	let textCurrent = 'Product Plan 101';
-	const path = data.url.split('/');
-	const category = path[1];
-	const page = path[2];
+	let path: any = $derived(data.url.split('/'));
+	let category: any = $derived(path[1]);
+	let page: any = $derived(path[2]);
+	$inspect('path: ', path);
+	$inspect('category: ', category);
+	$inspect('page: ', page);
 
 	onMount(() => {
 		let contentsCollection = document.getElementsByClassName(

@@ -32,9 +32,12 @@
 	];
 	let currentSection: any = $state();
 	let textCurrent = data.post.name;
-	const path = data.url.split('/');
-	const category = path[1];
-	const page = path[2];
+	let path: any = $derived(data.url.split('/'));
+	let category: any = $derived(path[1]);
+	let page: any = $derived(path[2]);
+	$inspect('path: ', path);
+	$inspect('category: ', category);
+	$inspect('page: ', page);
 
 	onMount(() => {
 		let contentsCollection = document.getElementsByClassName(
@@ -77,7 +80,7 @@
 								<img src={data.post.bylines[currentBylineNumber].icon} alt="Author" />
 							</div>
 						</div>
-						<div class="chat-bubble border border-slate-700 bg-lime-950">
+						<div class="chat-bubble border border-primary-content bg-primary-content/50">
 							<i>{data.post.bylines[currentBylineNumber].text}</i>
 						</div>
 					</div>
