@@ -4,7 +4,7 @@
 	export let currentSection;
 </script>
 
-<ul class="menu sticky top-0 w-full px-4" data-pagefind-ignore>
+<ul class="view-transition-navtoc menu sticky top-0 w-full px-4" data-pagefind-ignore>
 	<li class="text-xl font-bold"><a href={urlSelf}>Contents</a></li>
 	<ul id="placeholder">
 		{#each contents as section}
@@ -14,3 +14,9 @@
 		{/each}
 	</ul>
 </ul>
+
+<style>
+	.view-transition-navtoc {
+		view-transition-name: view-transition-navtoc;
+	}
+</style>

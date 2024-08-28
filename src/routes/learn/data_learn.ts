@@ -644,6 +644,7 @@ export const info: LearnData[] = [
 				'https://www.youtube.com/embed/h-KVGHoQ_98',
 				'https://www.youtube.com/embed/YP_QghPLG-8',
 				'https://www.youtube.com/embed/fEvKo90qBns?si=bsb5008mqkuhft0F',
+				'https://www.youtube.com/embed/qbZQjprTnrU',
 			],
 			links: [
 				{

@@ -5,10 +5,10 @@
 	export let textCurrent = '';
 </script>
 
-<div class="nav-breadcrumb" data-pagefind-ignore>
+<div class="view-transition-newcrumbs" data-pagefind-ignore>
 	<ul class="flex">
 		<li class="text-lg">
-			<a href="/" class="text-primary"
+			<a href="/"
 				><svg
 					id="carbon:home"
 					xmlns="http://www.w3.org/2000/svg"
@@ -23,7 +23,7 @@
 		</li>
 		{#if urlMiddle && textMiddle}
 			<li class="text-lg">
-				<a href="/{urlMiddle}" class="text-primary"
+				<a href="/{urlMiddle}"
 					><SvgChevronRight class="mx-2 inline" />
 					<svg
 						id="carbon:category"
@@ -58,7 +58,7 @@
 </div>
 
 <style>
-	.nav-breadcrumb {
-		view-transition-name: nav-breadcrumb;
+	.view-transition-newcrumbs {
+		view-transition-name: view-transition-newcrumbs;
 	}
 </style>
