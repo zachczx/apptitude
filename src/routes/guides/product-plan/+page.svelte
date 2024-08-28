@@ -28,9 +28,6 @@
 	let path: any = $derived(data.url.split('/'));
 	let category: any = $derived(path[1]);
 	let page: any = $derived(path[2]);
-	$inspect('path: ', path);
-	$inspect('category: ', category);
-	$inspect('page: ', page);
 
 	onMount(() => {
 		let contentsCollection = document.getElementsByClassName(
