@@ -40,6 +40,10 @@
 	});
 </script>
 
+<svelte:head>
+	<title>Apptitude - About</title>
+</svelte:head>
+
 <Breadcrumbs textCurrent={'About Apptitude'} />
 <div class="mx-2 mb-10 text-center lg:mx-20 lg:mb-20">
 	<h1

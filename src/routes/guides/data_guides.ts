@@ -133,6 +133,7 @@ export const guides: GuidesData[] = [
 			'What is the development/iteration timeline for your product?',
 			'How will you measure the success of your product?',
 			'Are you replacing/refactoring for the sake of it? (common when trying to rewrite existing/legacy services in latest framework)',
+			'What were the surprises you had while coming up with this plan/prototype/product?',
 		],
 		dealbreakers: [
 			'Product is a suboptimal solution (read: XY problem)',

@@ -54,6 +54,10 @@
 	});
 </script>
 
+<svelte:head>
+	<title>Apptitude - Tech Trippin'</title>
+</svelte:head>
+
 <ContentWrapper urlSelf={data.url} {page} {textMiddle} {category} {currentSection} {contents}>
 	<section class="mb-12 space-y-12">
 		<div>

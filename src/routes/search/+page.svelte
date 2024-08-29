@@ -23,6 +23,7 @@
 </script>
 
 <svelte:head>
+	<title>Apptitude - Search</title>
 	<link href="/pagefind/pagefind-ui.css" rel="stylesheet" />
 </svelte:head>
 

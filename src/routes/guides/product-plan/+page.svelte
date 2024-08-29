@@ -6,6 +6,7 @@
 	import GuideSplitEqual from '$lib/GuideSplitEqual.svelte';
 	import GuideSplitLongContent from '$lib/GuideSplitLongContent.svelte';
 	import GuideExample from '$lib/GuideExample.svelte';
+	import product from '$lib/assets/product.webp?enhanced&w=300';
 	import NewCrumbs from '$lib/NewCrumbs.svelte';
 	import { type Contents } from '$lib/Types';
 	import { onMount } from 'svelte';
@@ -55,6 +56,10 @@
 	});
 </script>
 
+<svelte:head>
+	<title>Apptitude - Product Plan 101</title>
+</svelte:head>
+
 <ContentWrapper
 	urlSelf={data.url}
 	{page}
@@ -63,6 +68,13 @@
 	{contents}
 	{currentSection}
 	{textCurrent}>
+	<div class="mb-12">
+		<div class="w-full rounded-2xl bg-base-content">
+			<div class="flex justify-end">
+				<enhanced:img src={product} alt="$$$" class="rounded-2xl lg:-mb-14 lg:-translate-y-14" />
+			</div>
+		</div>
+	</div>
 	<h1
 		class="inline-block bg-gradient-to-r from-emerald-200 via-lime-200 to-teal-300 bg-clip-text pb-8 text-transparent">
 		Product Plan 101

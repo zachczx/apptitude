@@ -68,6 +68,10 @@
 	});
 </script>
 
+<svelte:head>
+	<title>Apptitude - {textCurrent}</title>
+</svelte:head>
+
 <ContentWrapper
 	urlSelf={data.url}
 	{page}

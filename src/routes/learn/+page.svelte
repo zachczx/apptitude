@@ -13,6 +13,10 @@
 	let textMiddle: string = 'Learn';
 </script>
 
+<svelte:head>
+	<title>Apptitude - Learn</title>
+</svelte:head>
+
 <ContentWrapper urlSelf={data.url} {page} {textMiddle} {category} {currentSection}>
 	<section class="mb-12 space-y-12">
 		<div>

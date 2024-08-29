@@ -5,6 +5,10 @@
 	import GuideExample from '$lib/GuideExample.svelte';
 	import NewCrumbs from '$lib/NewCrumbs.svelte';
 	import { type Contents } from '$lib/Types';
+	import safeKeyboard from '$lib/assets/safe-keyboard.webp?enhanced&w=300';
+	import piggyBank from '$lib/assets/piggy-bank.webp?enhanced&w=300';
+	import problem from '$lib/assets/problem.webp?enhanced&w=300';
+	import product from '$lib/assets/product.webp?enhanced&w=300';
 	import { onMount } from 'svelte';
 	import NavToc from '$lib/NavToc.svelte';
 	import { fade } from 'svelte/transition';
@@ -61,6 +65,10 @@
 	});
 </script>
 
+<svelte:head>
+	<title>Apptitude - {textCurrent}</title>
+</svelte:head>
+
 <ContentWrapper
 	urlSelf={data.url}
 	{page}
@@ -69,6 +77,27 @@
 	{contents}
 	{currentSection}
 	{textCurrent}>
+	<div class="mb-12">
+		<div class="w-full rounded-2xl bg-base-content">
+			<div class="flex max-h-72 justify-end">
+				{#if page === 'problems'}
+					<enhanced:img src={problem} alt="$$$" class="rounded-2xl lg:-mb-14 lg:-translate-y-14" />
+				{:else if page === 'product'}
+					<enhanced:img src={product} alt="$$$" class="rounded-2xl lg:-mb-14 lg:-translate-y-14" />
+				{:else if page === 'security'}
+					<enhanced:img
+						src={safeKeyboard}
+						alt="Put your keyboard in the safe - best in class for security~!"
+						class="rounded-2xl lg:-mb-14 lg:-translate-y-14" />
+				{:else if page === 'cost'}
+					<enhanced:img
+						src={piggyBank}
+						alt="$$$"
+						class="rounded-2xl lg:-mb-14 lg:-translate-y-14" />
+				{/if}
+			</div>
+		</div>
+	</div>
 	<h1
 		class="inline-block bg-gradient-to-r from-emerald-200 via-lime-200 to-teal-300 bg-clip-text pb-8 text-transparent">
 		{data.post.name}

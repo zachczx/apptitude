@@ -2,7 +2,7 @@
 	import interviewSampleSize from '$lib/assets/interview_sample_sizes.png?enhanced&w=300';
 	import Breadcrumbs from '$lib/Breadcrumbs.svelte';
 	import TablerInfoCircle from '$lib/assets/svg/TablerInfoCircle.svelte';
-
+	import magnifyingGlass from '$lib/assets/magnifying-glass.webp?enhanced&w=400';
 	import CarbonCheckmarkFilled from '$lib/assets/svg/CarbonCheckmarkFilled.svelte';
 	import CarbonCloseFilled from '$lib/assets/svg/CarbonCloseFilled.svelte';
 	import GuideSplitContent from '$lib/GuideSplitContent.svelte';
@@ -55,6 +55,10 @@
 	});
 </script>
 
+<svelte:head>
+	<title>Apptitude - Research</title>
+</svelte:head>
+
 <ContentWrapper
 	urlSelf={data.url}
 	{page}
@@ -63,6 +67,16 @@
 	{contents}
 	{currentSection}
 	{textCurrent}>
+	<div class="mb-12">
+		<div class="w-full rounded-2xl bg-base-content">
+			<div class="flex max-h-72 justify-end">
+				<enhanced:img
+					src={magnifyingGlass}
+					alt="User research: Avoiding those awkward 'Hey, does anyone like our product?' moments."
+					class="rounded-2xl lg:-mb-14 lg:-translate-y-20 lg:translate-x-5" />
+			</div>
+		</div>
+	</div>
 	<h1
 		class="inline-block bg-gradient-to-r from-emerald-200 via-lime-200 to-teal-300 bg-clip-text pb-8 text-transparent">
 		Research
