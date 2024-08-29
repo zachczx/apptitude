@@ -285,7 +285,7 @@
 			{/if}
 		</a>
 	</li>
-	<li class="lg:px-2 xl:px-4">
+	<li class="border-b-2 border-b-base-100 pb-4 lg:px-2 xl:px-4">
 		<a href="/guides/security" class={page === 'security' ? 'text-primary' : undefined}
 			><summary
 				><svg
@@ -304,6 +304,12 @@
 					class="inline scale-125 text-primary hover:bg-gradient-to-tr hover:from-base-300 hover:via-base-200 hover:to-gray-700" />
 			{/if}
 		</a>
+	</li>
+	<li
+		class="pt-4 text-xl font-bold lg:px-2 xl:px-4 {category === 'techtrippin'
+			? 'text-primary'
+			: undefined}">
+		<a href="/techtrippin">Tech Trippin'</a>
 	</li>
 	<li class="border-b-2 border-b-base-100 pb-4 lg:px-2 xl:px-4">
 		<a href="/techtrippin" class={category === 'techtrippin' ? 'text-primary' : undefined}
@@ -324,6 +330,12 @@
 					class="inline scale-125 text-primary hover:bg-gradient-to-tr hover:from-base-300 hover:via-base-200 hover:to-gray-700" />
 			{/if}
 		</a>
+	</li>
+	<li
+		class="pt-4 text-xl font-bold lg:px-2 xl:px-4 {category === 'about'
+			? 'text-primary'
+			: undefined}">
+		<a href="/about">About</a>
 	</li>
 </ul>
 
