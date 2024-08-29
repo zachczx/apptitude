@@ -92,7 +92,7 @@ export const techtrippin = [
 		icon: techLead,
 	},
 	{
-		id: 8,
+		id: 9,
 		title: 'When the Blind Lead the Blind... Right Off a Tech Cliff',
 		name: 'Tech Program Manager',
 		prompt:

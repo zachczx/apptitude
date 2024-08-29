@@ -5,9 +5,9 @@
 	export let textCurrent = '';
 </script>
 
-<div class="view-transition-newcrumbs" data-pagefind-ignore>
-	<ul class="flex">
-		<li class="text-lg">
+<div data-pagefind-ignore>
+	<ul class="flex flex-wrap">
+		<li class="text-md" style="view-transition-name: view-transition-text-home">
 			<a href="/"
 				><svg
 					id="carbon:home"
@@ -22,9 +22,11 @@
 				Home</a>
 		</li>
 		{#if urlMiddle && textMiddle}
-			<li class="text-lg">
-				<a href="/{urlMiddle}"
-					><SvgChevronRight class="mx-2 inline" />
+			<li style="view-transition-name: view-transition-bullet-one">
+				<SvgChevronRight class="mx-2 inline" />
+			</li>
+			<li class="text-md" style="view-transition-name: view-transition-text-middle">
+				<a href="/{urlMiddle}">
 					<svg
 						id="carbon:category"
 						xmlns="http://www.w3.org/2000/svg"
@@ -38,27 +40,29 @@
 					{textMiddle}</a>
 			</li>
 		{/if}
-		<li class="text-lg">
-			<SvgChevronRight class="mx-2 inline" />
-			<svg
-				id="carbon:document"
-				xmlns="http://www.w3.org/2000/svg"
-				width="1em"
-				height="1em"
-				class="mb-1 me-1 inline"
-				viewBox="0 0 32 32"
-				><path
-					fill="currentColor"
-					d="m25.7 9.3l-7-7c-.2-.2-.4-.3-.7-.3H8c-1.1 0-2 .9-2 2v24c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V10c0-.3-.1-.5-.3-.7M18 4.4l5.6 5.6H18zM24 28H8V4h8v6c0 1.1.9 2 2 2h6z" /><path
-					fill="currentColor"
-					d="M10 22h12v2H10zm0-6h12v2H10z" /></svg>
-			{textCurrent}
-		</li>
+		{#if textCurrent}
+			<li style="view-transition-name: view-transition-bullet-two">
+				<SvgChevronRight class="mx-2 inline" />
+			</li>
+			<li class="text-md">
+				<svg
+					id="carbon:document"
+					xmlns="http://www.w3.org/2000/svg"
+					width="1em"
+					height="1em"
+					class="mb-1 me-1 inline"
+					style="view-transition-name: view-transition-paper-icon"
+					viewBox="0 0 32 32"
+					><path
+						fill="currentColor"
+						d="m25.7 9.3l-7-7c-.2-.2-.4-.3-.7-.3H8c-1.1 0-2 .9-2 2v24c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V10c0-.3-.1-.5-.3-.7M18 4.4l5.6 5.6H18zM24 28H8V4h8v6c0 1.1.9 2 2 2h6z" /><path
+						fill="currentColor"
+						d="M10 22h12v2H10zm0-6h12v2H10z" /></svg>
+				<span style="view-transition-name: view-transition-text-current">{textCurrent}</span>
+			</li>
+		{/if}
 	</ul>
 </div>
 
 <style>
-	.view-transition-newcrumbs {
-		view-transition-name: view-transition-newcrumbs;
-	}
 </style>

@@ -11,6 +11,7 @@
 	import { onMount } from 'svelte';
 	import NavToc from '$lib/NavToc.svelte';
 	import ContentWrapper from '$lib/ContentWrapper.svelte';
+	import GuideExampleLong from '$lib/GuideExampleLong.svelte';
 	let { data } = $props();
 
 	//Props needed for PageWrapper component
@@ -28,6 +29,7 @@
 	let path: any = $derived(data.url.split('/'));
 	let category: any = $derived(path[1]);
 	let page: any = $derived(path[2]);
+	let textMiddle = 'Guides';
 
 	onMount(() => {
 		let contentsCollection = document.getElementsByClassName(
@@ -53,14 +55,21 @@
 	});
 </script>
 
-<ContentWrapper urlSelf={data.url} {page} {category} {contents} {currentSection} {textCurrent}>
+<ContentWrapper
+	urlSelf={data.url}
+	{page}
+	{category}
+	{textMiddle}
+	{contents}
+	{currentSection}
+	{textCurrent}>
 	<h1
-		class="inline-block bg-gradient-to-r from-emerald-200 via-lime-200 to-teal-300 bg-clip-text pb-8 ps-8 text-transparent">
+		class="inline-block bg-gradient-to-r from-emerald-200 via-lime-200 to-teal-300 bg-clip-text pb-8 text-transparent">
 		Product Plan 101
 	</h1>
 
 	<article
-		class="prose-section:mt-20 space-y-20 px-10 pb-10 prose-h2:mb-6 prose-h3:mb-6 prose-h3:mt-12 prose-h5:mb-4 prose-p:mb-4">
+		class="prose-section:mt-20 space-y-20 pb-10 prose-h2:mb-6 prose-h3:mb-6 prose-h3:mt-12 prose-h5:mb-4 prose-p:mb-4">
 		<section id="what-makes-a-product-plan" class="contents-observer">
 			<h2>1. What makes a product plan?</h2>
 			<div class="space-y-4 py-4">
@@ -103,18 +112,18 @@
 				{/snippet}
 			</GuideExample>
 
-			<GuideExample>
+			<GuideExampleLong showButton={false}>
 				{#snippet example()}
 					<ul class="space-y-4">
 						<li>
 							<p>
-								"Does your thing solve a real problem in the world and are people clamoring, needing
+								Does your thing solve a real problem in the world and are people clamoring, needing
 								it badly?
 							</p>
 							<p>
 								... during those 20 minutes (of product downtime), our customers weren't furious.
 								They weren't emailing us like crazy... I didn't realize at the time that was the
-								signal that we did not have product market fit."
+								signal that we did not have product market fit.
 							</p>
 							<p class="mt-6 text-end">
 								<a href="https://www.youtube.com/watch?v=qbZQjprTnrU"
@@ -123,7 +132,7 @@
 						</li>
 					</ul>
 				{/snippet}
-			</GuideExample>
+			</GuideExampleLong>
 
 			<h3 class="py-4">2.1. Writing Clear Problem Statements</h3>
 
@@ -311,6 +320,88 @@
 				The right outcome metrics tell us if we are moving in the right direction, to solve the
 				identified problem.
 			</p>
+			<p>
+				Metrics force trade-offs and decisions. They focus people on the direction where the
+				collective can best feel like they can build a better product, satisfy more customers, bring
+				in more sales.
+			</p>
+			<GuideExampleLong>
+				{#snippet example()}
+					<div class="space-y-6">
+						<p>
+							I had been working in our payments group at Stripe for a bit, and then I started
+							working on some of our banking and incorporation services. In Atlas, when I started
+							working on it, it had had some success. It had already existed for four or five years
+							prior to me spending time on it. But when I started to look at the support tickets,
+							people were pretty unhappy frequently. They had a DocuSign stuck in their email box.
+							They needed a co-founder's address, but they didn't know their co-founder's address.
+							They couldn't log into the dashboard to figure out their 83(b) manual filing
+							instructions.
+						</p>
+						<p>
+							We saw this basically in the first week of spending time on Atlas. I was just like,
+							"Just show me all the support tickets. Are they happy support tickets? People writing
+							in being like, 'Oh, I love this service, it's absolutely fantastic. Can you just do A,
+							B, C more for me?' Or are they sad support tickets?"
+						</p>
+						<p>
+							<span class="text-warning"
+								>And they're like, "Oh my God, they're all sad support tickets." We're just asking
+								ourselves, "Well, why would someone recommend Atlas to a friend?"</span>
+						</p>
+						<p>
+							I was like, "Well, it would have to accomplish A, B, and C activities for them. It
+							would have to get their company, it would have to handle getting their tax ID from the
+							IRS. It'd have to handle all the downstream administrivia." <span class="text-warning"
+								>But surely, if they had a bunch of support tickets at the end, they're not going to
+								go tell their friends to use this thing. We could measure all of the intermediate
+								parts, we could measure the success rate and the frequency of incorporation services
+								and we do all those things, but if you looked at the support tickets, there's just
+								no way if you had a support ticket, you would recommend it to a friend.</span>
+						</p>
+						<p>
+							So we suggested this metric to ourselves, companies that have no support tickets
+							through the incorporation service.
+						</p>
+
+						<p>
+							The whole process, from the moment you start the application open, actually the first
+							page load at the very beginning, all the way through the process waiting for the
+							government, waiting for the IRS, and we give you two more weeks to write into support.
+							We give an extra buffer two weeks. And if you get through that whole thing with no
+							support tickets, that's a yes. If you have any number of support tickets, that's a no.
+							And we just looked at the percentage of founders that were going through the service
+							with zero support tickets, which is very different than looking at an average, right?
+							You could have the average as 0.3, but that doesn't necessarily mean that getting to
+							0.2 is going to cause them to tell their friends more. We looked and only 15% of
+							founders were getting through Atlas with zero support tickets through that metric.
+						</p>
+
+						<p>
+							I just thought, "Okay, well let's just drive that number way up, and let's look at the
+							support tickets aside what people are needing and we'll bake it into the product, and
+							presumably it'll fix it. People will like that more and then tell their friends." And
+							over about 18 months, we took that number from 15% to 85. We basically just flipped
+							it. And you can look at the market share plotted on the same timeframe and it's the
+							same shape.
+						</p>
+						<p>
+							<span class="text-success"
+								>I think you have to find a measure by which it speaks directly to what the customer
+								wanted, and that if you accidentally leaked your dashboard to them, your customer
+								would be ecstatic to learn that that's what you were measuring the whole time.</span>
+							If we were to showcase the internal Atlas metrics, which we often just screenshot and publish,
+							I think they'd be pretty happy to hear that we were spending all of our time making sure
+							that none of them had support tickets.
+						</p>
+
+						<p class="mt-6 text-end">
+							<a href="https://www.youtube.com/watch?v=qbZQjprTnrU"
+								>Jeff Weinstein | Lenny's Podcast</a>
+						</p>
+					</div>
+				{/snippet}
+			</GuideExampleLong>
 			<h3>4.1. Attributes of the Right Outcome Metrics</h3>
 			<p>These outcome metrics should be:</p>
 			<GuideExample>
@@ -411,6 +502,28 @@
 						<CarbonCheckmarkFilled class="mb-1 me-2 inline text-success" />...
 						<span class="text-success">time from first submission to communication of outcome</span
 						>...
+					</div>
+				{/snippet}
+			</GuideExample>
+
+			<GuideExample>
+				{#snippet example()}
+					<div>
+						<p>
+							Instead of sitting around all day and saying, "Hey, I heard all these customer
+							problems, we should build X, Y, and Z." And another person could absolutely reasonably
+							say, "Well, I heard from these customers, we should build one, two and three." And
+							they're all true. We could have a lot of success in both, but the majority case is
+							that we don't build either and we sit around and argue and bicker and we go slowly.
+							"What are we going to do to naturally, organically every day, orient a larger group of
+							people in the right direction and see if our tactics are generating progress over time
+							for a customer from their perspective?" And metrics on the left and a series of tweets
+							on the right is a pretty great combo.
+						</p>
+						<p class="mt-6 text-end">
+							<a href="https://www.youtube.com/watch?v=qbZQjprTnrU"
+								>Jeff Weinstein | Lenny's Podcast</a>
+						</p>
 					</div>
 				{/snippet}
 			</GuideExample>

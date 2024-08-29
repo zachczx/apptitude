@@ -20,3 +20,8 @@ export function initIo(currentSection: string) {
 		observer.observe(i);
 	}
 }
+
+export function matchUrl(currentUrl: string, navUrl: string) {
+	let result = currentUrl.search(navUrl);
+	return result;
+}

@@ -3,11 +3,16 @@
 	import heroNewBackground from '$lib/assets/hero-new.webp?enhanced&w=800';
 	import heroNew2 from '$lib/assets/hero-new-2.webp?enhanced&w=2060;1536;1280;1024';
 	import heroNew2Background from '$lib/assets/hero-new-2.webp?enhanced&w=800';
+	import TablerChevronRight from '$lib/assets/svg/TablerChevronRight.svelte';
+	import logo from '$lib/assets/svg/logo.svg?dataurl';
 	import RocketAnimation from '$lib/RocketAnimation.svelte';
 	import { onMount } from 'svelte';
 	import { gsap } from 'gsap';
+	import { matchUrl } from '$lib/helpers';
 	import HowThisWorks from '$lib/HowThisWorks.svelte';
 	import pandaAnnoyed from '$lib/assets/panda-annoyed.webp?enhanced&w=600;500;300';
+	let { data } = $props();
+	let pageName = $state('Apptitude');
 
 	onMount(() => {
 		let tl = gsap.matchMedia();
@@ -40,6 +45,96 @@
 	});
 	// const currentBgNumber = Math.floor(Math.random() * 11);
 </script>
+
+<svelte:head>
+	<title>{pageName}</title>
+</svelte:head>
+
+<nav class="navbar-view-transition navbar {data.url === '/' ? 'absolute z-20' : ''}">
+	<div class="max-h-18">
+		<div class="dropdown lg:hidden">
+			<div tabindex="0" role="button" class="btn btn-ghost -ms-3">
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					class="h-5 w-5"
+					fill="none"
+					viewBox="0 0 24 24"
+					stroke="currentColor"
+					><path
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						stroke-width="2"
+						d="M4 6h16M4 12h8m-8 6h16" /></svg>
+			</div>
+			<nav class="opacity-1 menu dropdown-content z-50 w-48 rounded-lg bg-gray-900 p-0 text-xl">
+				<a
+					class="border-b border-slate-600 p-3 hover:rounded-t-lg hover:bg-slate-600 active:font-bold active:text-primary"
+					href="/learn"
+					><TablerChevronRight class="inline align-middle" height="1rem" width="1rem" /> Learn</a>
+				<a
+					class="border-b border-slate-600 p-3 hover:bg-slate-600 active:font-bold active:text-primary"
+					href="/guides"
+					><TablerChevronRight class="inline align-middle" height="1rem" width="1rem" /> Guides</a>
+				<a
+					class="border-b border-slate-600 p-3 hover:bg-slate-600 active:font-bold active:text-primary"
+					href="/techtrippin"
+					><TablerChevronRight class="inline align-middle" height="1rem" width="1rem" /> Tech Trippin'</a>
+				<!--<a
+					class="border-b border-slate-600 p-3 hover:bg-slate-600 active:font-bold active:text-primary"
+					href="/todo"
+					><TablerChevronRight class="inline align-middle" height="1rem" width="1rem" /> To-Do List</a
+				>-->
+				<a
+					class="p-3 hover:rounded-b-lg hover:bg-slate-600 active:font-bold active:text-primary"
+					href="/about"
+					><TablerChevronRight class="inline align-middle" height="1rem" width="1rem" /> About</a>
+			</nav>
+		</div>
+		<a href="/"
+			><img
+				src={logo}
+				alt="Apptitude logo"
+				fetchpriority="high"
+				height="84"
+				width="300"
+				class="lg:ms-[4.3rem]" /></a>
+	</div>
+	<div class="navbar hidden justify-start lg:flex">
+		<ul class="menu menu-horizontal gap-x-5 ps-20 font-medium">
+			<!-- removed menu class -->
+			<li aria-current={matchUrl(data.url, '/learn') === 0 ? 'page' : undefined}>
+				<a class="text-xl hover:bg-transparent hover:text-primary" href="/learn">Learn</a>
+			</li>
+			<li aria-current={matchUrl(data.url, '/guides') === 0 ? 'page' : undefined}>
+				<a class="text-xl hover:bg-transparent hover:text-primary" href="/guides">Guides</a>
+			</li>
+			<li aria-current={matchUrl(data.url, '/techtrippin') === 0 ? 'page' : undefined}>
+				<a class="text-xl hover:bg-transparent hover:text-primary" href="/techtrippin"
+					>Tech Trippin'</a>
+			</li>
+			<li aria-current={matchUrl(data.url, '/about') === 0 ? 'page' : undefined}>
+				<a class="text-xl hover:bg-transparent hover:text-primary" href="/about">About</a>
+			</li>
+		</ul>
+	</div>
+	<div class="navbar-end">
+		<a href="/search" class="lg:me-[4.3rem]"
+			><svg
+				xmlns="http://www.w3.org/2000/svg"
+				width="2em"
+				height="2em"
+				viewBox="0 0 24 24"
+				fill="none"
+				stroke="currentColor"
+				stroke-width="2"
+				stroke-linecap="round"
+				stroke-linejoin="round"
+				class="icon icon-tabler icons-tabler-outline icon-tabler-search me-3 inline"
+				><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path
+					d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" /><path d="M21 21l-6 -6" /></svg>
+		</a>
+	</div>
+</nav>
 
 <div class="hero grid min-h-dvh grid-cols-1 content-center justify-items-center xl:grid-cols-2">
 	<figure>
@@ -91,12 +186,12 @@
 			</div>
 		</div>
 		<h1 class="mb-12 text-center text-5xl lg:pt-20 lg:text-6xl min-[1921px]:text-7xl">
-			<span class="headline">Get better at</span>
+			<span class="headline text-neutral-content">Get better at</span>
 			<span
 				class="headline inline-block bg-gradient-to-r from-emerald-200 via-lime-200 to-teal-300 bg-clip-text pb-5 text-transparent"
 				>tech products & projects.</span>
 		</h1>
-		<div class="mb-12 grid grid-cols-3 py-2 text-start text-lg lg:text-xl">
+		<div class="mb-12 grid grid-cols-3 py-2 text-start text-lg text-neutral-content lg:text-xl">
 			<div class="subheadline border-r-2 border-base-content/50 py-1 pe-3 text-center">
 				<h2>Learn</h2>
 				key digital product knowledge
@@ -259,4 +354,37 @@
 	/*	* {
 		outline: 1px solid #f00 !important;
 	}*/
+
+	/*
+	.navbar-view-transition {
+		view-transition-name: navbar-view-transition;
+	}
+
+	li[aria-current='page'] {
+		color: #9fe88d;
+	}
+
+	li[aria-current='page']::after {
+		--size: 2px;
+		content: '';
+		width: 100%;
+		position: absolute;
+		bottom: -4px;
+		border: var(--size) solid #9fe88d;
+		view-transition-name: active-page2;
+	}
+	
+	li[aria-current='page']::before {
+		--size: 8px;
+		content: '';
+		width: 0;
+		height: 0;
+		position: absolute;
+		top: -8px;
+		left: calc(50% - var(--size));
+		border: var(--size) solid #9fe88d;
+		border-top: var(--size) solid var(--color-theme-1);
+		view-transition-name: active-page;
+	}
+	*/
 </style>

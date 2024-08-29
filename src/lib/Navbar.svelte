@@ -1,5 +1,5 @@
 <script>
-	import logo from '$lib/assets/green-logo.webp?enhanced&w=300;200';
+	import logo from '$lib/assets/svg/logo.svg?dataurl';
 	import TablerChevronRight from '$lib/assets/svg/TablerChevronRight.svelte';
 	function matchUrl(currentUrl, navUrl) {
 		let result = currentUrl.search(navUrl);
@@ -48,9 +48,10 @@
 			</nav>
 		</div>
 		<a href="/"
-			><enhanced:img
+			><img
 				src={logo}
-				sizes="(min-width:1920px) 300px, (min-width:1600px) 300px, (min-width:1280px) 200px"
+				width="300"
+				height="84"
 				alt="Apptitude"
 				class="object-scale-down lg:ms-16" /></a>
 	</div>

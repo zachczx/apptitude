@@ -31,10 +31,11 @@
 		{ id: 'suggestions', title: '5. Suggestions' },
 	];
 	let currentSection: any = $state();
-	let textCurrent = data.post.name;
+	let textCurrent = $derived(data.post.name);
 	let path: any = $derived(data.url.split('/'));
 	let category: any = $derived(path[1]);
 	let page: any = $derived(path[2]);
+	let textMiddle = 'Guides';
 
 	onMount(() => {
 		let contentsCollection = document.getElementsByClassName(
@@ -60,14 +61,21 @@
 	});
 </script>
 
-<ContentWrapper urlSelf={data.url} {page} {category} {contents} {currentSection} {textCurrent}>
+<ContentWrapper
+	urlSelf={data.url}
+	{page}
+	{category}
+	{textMiddle}
+	{contents}
+	{currentSection}
+	{textCurrent}>
 	<h1
-		class="inline-block bg-gradient-to-r from-emerald-200 via-lime-200 to-teal-300 bg-clip-text pb-8 ps-8 text-transparent">
+		class="inline-block bg-gradient-to-r from-emerald-200 via-lime-200 to-teal-300 bg-clip-text pb-8 text-transparent">
 		{data.post.name}
 	</h1>
 
 	<article
-		class="prose-section:mt-20 space-y-20 px-10 pb-10 prose-h2:mb-6 prose-h3:mb-6 prose-h3:mt-12 prose-h5:mb-4 prose-p:mb-4">
+		class="prose-section:mt-20 space-y-20 pb-10 prose-h2:mb-6 prose-h3:mb-6 prose-h3:mt-12 prose-h5:mb-4 prose-p:mb-4">
 		{#if data.post.bylines[0].text != ''}
 			<div class="flex justify-center">
 				{#key currentBylineNumber}

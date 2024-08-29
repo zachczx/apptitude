@@ -1,157 +1,157 @@
-<script>
+<script lang="ts">
 	import { techtrippin } from './data_techtrippin';
 	import twentyFiveDev from '$lib/assets/25yodev.webp?enhanced&w=200;150;70';
 	import Breadcrumbs from '$lib/Breadcrumbs.svelte';
 	import TablerHelpCircleFilled from '$lib/assets/svg/TablerHelpCircleFilled.svelte';
 	import TablerMessage from '$lib/assets/svg/TablerMessage.svelte';
 	import { fly } from 'svelte/transition';
+	import ContentWrapper from '$lib/ContentWrapper.svelte';
+	import { type Contents } from '$lib/Types';
+	import { onMount } from 'svelte';
 
 	let showMore = $state(false);
 	let currentItem = $state(0);
+
+	let { data } = $props();
+
+	let contents: Contents[] = [];
+	for (let i = 0; i < techtrippin.length; i++) {
+		let combinedId = 'content-' + String(techtrippin[i].id);
+		let combinedTitle = String(techtrippin[i].id) + '. ' + techtrippin[i].title;
+		// if (combinedTitle.length > 40) {
+		// 	combinedTitle = combinedTitle.slice(0, 40) + ' ...';
+		// }
+		contents[i] = { id: combinedId, title: combinedTitle };
+	}
+
+	let currentSection: any = $state();
+	let path: any = $derived(data.url.split('/'));
+	let category: any = $derived(path[1]);
+	let page: any = $derived(path[2]);
+	let textMiddle: string = "Tech Trippin'";
+
+	onMount(() => {
+		let contentsCollection = document.getElementsByClassName(
+			'contents-observer',
+		) as HTMLCollectionOf<HTMLDataListElement>;
+		let observer = new IntersectionObserver(
+			(entries) => {
+				entries.forEach((entry) => {
+					if (entry.isIntersecting) {
+						currentSection = entry.target.id;
+					}
+				});
+			},
+			{
+				rootMargin: '-10% 0% -10% 0%',
+				threshold: 0,
+			},
+		);
+
+		for (let i of contentsCollection) {
+			observer.observe(i);
+		}
+	});
 </script>
 
-<Breadcrumbs textCurrent={"Tech Trippin'"} />
-<div class="mb-2 grid-cols-1 rounded-lg px-2 pb-5 lg:mx-20 lg:mb-20">
-	<div class="text-center">
-		<h1
-			class="inline-block bg-gradient-to-r from-emerald-200 via-lime-200 to-teal-300 bg-clip-text py-3 text-transparent">
-			Tech Trippin'
-		</h1>
-		<div class="mb-10">
-			<i
-				>Going through real world examples of tech jargon-gibberish and calling out what makes
-				absolutely no sense.</i>
+<ContentWrapper urlSelf={data.url} {page} {textMiddle} {category} {currentSection} {contents}>
+	<section class="mb-12 space-y-12">
+		<div>
+			<h1
+				class="inline-block bg-gradient-to-r from-emerald-200 via-lime-200 to-teal-300 bg-clip-text pb-3 text-transparent">
+				Tech Trippin'
+			</h1>
+			<p class="text-sm">
+				<i
+					>Going through real world examples of tech jargon-gibberish and calling out what makes
+					absolutely no sense.
+				</i>
+			</p>
 		</div>
-		<div class="rounded-lg bg-base-100 p-1 text-start text-lg lg:p-0">
-			<div class="collapse collapse-arrow mb-10 bg-base-300">
-				<input type="checkbox" name="my-accordion-2" bind:checked={showMore} />
-				<div class="collapse-title">
-					<h2><TablerHelpCircleFilled class="mb-1 me-3 inline" />What's this?</h2>
-				</div>
-				<div class="collapse-content bg-base-300 px-5">
-					<p class="mb-7 border-t-2 border-t-gray-700 pt-5">
-						This is a collection of illogical or unproductive comments I encountered during work.
-						I'm not trying to shame anyone here, but I hope writing these gives you some affirmation
-						to speak out against similar comments in your own work, and do robust debates/challenges
-						to make overall outcomes better.
-					</p>
-					<p>And of course, given the anonymity here, also have a chuckle.</p>
-				</div>
-			</div>
-
-			<div
-				class="grid grid-cols-1 justify-items-center gap-y-8 rounded-2xl border border-gray-700 bg-base-300 lg:mb-7 lg:grid-cols-3 lg:gap-x-5 lg:gap-y-10">
-				<div id="navigation">
-					<div id="dropdown" class="mx-auto mt-3 flex w-11/12 lg:hidden">
-						<label class="ms-1">
-							<select bind:value={currentItem} class="select select-bordered w-full text-lg">
-								{#each techtrippin as sidebarItem, index}
-									<option value={index}>{sidebarItem.title}</option>
-								{/each}
-							</select>
-						</label>
-					</div>
-					<div id="sidebar" class="z-20 col-span-1 hidden lg:contents">
-						<div class="h-full rounded-l-2xl bg-[#191D24] py-3">
-							<ol class="divide-y-2 divide-slate-800">
-								{#each techtrippin as sidebarItem, index}
-									<button
-										onclick={() => {
-											currentItem = index;
-										}}
-										class="w-full px-5"
-										><li class="py-7 ps-5 text-start text-xl hover:text-primary">
-											<TablerMessage class="mb-1 me-3 inline" />{sidebarItem.title}
-										</li></button>
-								{/each}
-							</ol>
-						</div>
-					</div>
-				</div>
-				<div id="content" class="col-span-2">
-					{#key currentItem}
-						<div
-							data-id="Item-{currentItem}"
-							class="z-10 rounded-2xl"
-							in:fly={{ duration: 300, x: -40 }}
-							out:fly={{ duration: 0 }}>
-							<div class="mx-5 rounded-t-2xl border-b-2 px-5 pb-3 pt-5">
-								<h2
-									class="inline-block bg-gradient-to-r from-emerald-200 via-lime-200 to-teal-300 bg-clip-text text-transparent">
-									{techtrippin[currentItem].title}
-								</h2>
-							</div>
-							<div class="space-y-10 p-2 xl:p-6">
-								<div class="chat chat-start">
-									<div class="avatar chat-image">
-										<div class="w-10 rounded-full lg:w-[200px]">
-											<img alt="Person" src={techtrippin[currentItem].icon} />
-										</div>
-									</div>
-									<div class="chat-header ms-5 self-end pb-1 font-bold lg:text-xl">
-										{techtrippin[currentItem].name}
-									</div>
-									<div
-										class="chat-bubble bg-gradient-to-r from-red-950 to-rose-950 p-2 text-xl lg:p-6">
-										{techtrippin[currentItem].prompt}
-									</div>
-								</div>
-								<div class="chat chat-end">
-									<div class="avatar chat-image">
-										<div class="w-10 rounded-full lg:w-[200px]">
-											<enhanced:img
-												alt="Soy Dev"
-												src={twentyFiveDev}
-												sizes="(min-width:1920px) 200px, (min-width:1080px) 150px, (min-width:768px) 70px" />
-										</div>
-									</div>
-
-									<div class="chat-header me-5 self-end pb-1 font-bold lg:text-xl">
-										Chad Staffer
-									</div>
-									<div
-										class="chat-bubble self-start bg-gradient-to-r from-slate-900 via-base-300 to-slate-900 p-2 text-xl lg:p-6">
-										{techtrippin[currentItem].response}
-									</div>
-								</div>
-								{#if techtrippin[currentItem].prompt2 && techtrippin[currentItem].response2}
-									<div class="chat chat-start">
-										<div class="avatar chat-image">
-											<div class="w-10 rounded-full lg:w-[200px]">
-												<img alt="Person" src={techtrippin[currentItem].icon} />
-											</div>
-										</div>
-										<div class="chat-header ms-5 self-end pb-1 font-bold lg:text-xl">
-											{techtrippin[currentItem].name}
-										</div>
-										<div
-											class="chat-bubble bg-gradient-to-r from-red-950 to-rose-950 p-2 text-xl lg:p-6">
-											{techtrippin[currentItem].prompt2}
-										</div>
-									</div>
-
-									<div class="chat chat-end">
-										<div class="avatar chat-image">
-											<div class="w-10 rounded-full lg:w-[200px]">
-												<enhanced:img
-													alt="Soy Dev"
-													src={twentyFiveDev}
-													sizes="(min-width:1920px) 200px, (min-width:1080px) 150px, (min-width:768px) 70px" />
-											</div>
-										</div>
-
-										<div class="chat-header me-5 self-end pb-1 font-bold lg:text-xl">Me</div>
-										<div
-											class="chat-bubble self-start bg-gradient-to-r from-slate-900 via-base-300 to-slate-900 p-2 text-xl lg:p-6">
-											{techtrippin[currentItem].response2}
-										</div>
-									</div>
-								{/if}
-							</div>
-						</div>
-					{/key}
-				</div>
-			</div>
+		<div class="space-y-4">
+			<p>
+				I collected illogical or unproductive comments I came across during work. I'm not trying to
+				shame anyone here, but the intent here is to call out wrong stuff and see if there are
+				common themes with your experiences.
+			</p>
 		</div>
+	</section>
+	<div id="dropdown" class="mx-auto mt-3 flex w-11/12 lg:hidden">
+		<label class="ms-1">
+			<select bind:value={currentItem} class="select select-bordered w-full text-lg">
+				{#each techtrippin as sidebarItem, index}
+					<option value={index}>{sidebarItem.title}</option>
+				{/each}
+			</select>
+		</label>
 	</div>
-</div>
+
+	{#each techtrippin as item}
+		<section
+			id="content-{item.id}"
+			class="contents-observer mb-4 space-y-10 rounded-2xl border border-gray-700 bg-neutral p-2 shadow-md shadow-gray-800 lg:mb-16 lg:p-8">
+			<h3>{item.title}</h3>
+			<div class="space-y-10">
+				<div class="chat chat-start">
+					<div class="avatar chat-image">
+						<div class="w-10 rounded-full lg:w-[200px]">
+							<img alt="Person" src={item.icon} />
+						</div>
+					</div>
+					<div class="chat-header ms-5 self-end pb-1 font-bold lg:text-lg">
+						{item.name}
+					</div>
+					<div class="chat-bubble bg-gray-950 p-2 text-lg lg:p-6">
+						{item.prompt}
+					</div>
+				</div>
+				<div class="chat chat-end">
+					<div class="avatar chat-image">
+						<div class="w-10 rounded-full lg:w-[200px]">
+							<enhanced:img
+								alt="Soy Dev"
+								src={twentyFiveDev}
+								sizes="(min-width:1920px) 200px, (min-width:1080px) 150px, (min-width:768px) 70px" />
+						</div>
+					</div>
+
+					<div class="chat-header me-5 self-end pb-1 font-bold lg:text-lg">Chad Staffer</div>
+					<div class="chat-bubble self-start bg-gray-950 p-2 text-lg lg:p-6">
+						{item.response}
+					</div>
+				</div>
+				{#if item.prompt2 && item.response2}
+					<div class="chat chat-start">
+						<div class="avatar chat-image">
+							<div class="w-10 rounded-full lg:w-[200px]">
+								<img alt="Person" src={item.icon} />
+							</div>
+						</div>
+						<div class="chat-header ms-5 self-end pb-1 font-bold lg:text-lg">
+							{item.name}
+						</div>
+						<div class="chat-bubble bg-gray-950 p-2 text-lg lg:p-6">
+							{item.prompt2}
+						</div>
+					</div>
+
+					<div class="chat chat-end">
+						<div class="avatar chat-image">
+							<div class="w-10 rounded-full lg:w-[200px]">
+								<enhanced:img
+									alt="Soy Dev"
+									src={twentyFiveDev}
+									sizes="(min-width:1920px) 200px, (min-width:1080px) 150px, (min-width:768px) 70px" />
+							</div>
+						</div>
+
+						<div class="chat-header me-5 self-end pb-1 font-bold lg:text-lg">Me</div>
+						<div class="chat-bubble self-start bg-gray-950 p-2 text-lg lg:p-6">
+							{item.response2}
+						</div>
+					</div>
+				{/if}
+			</div>
+		</section>
+	{/each}
+</ContentWrapper>
