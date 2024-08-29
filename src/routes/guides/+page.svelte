@@ -40,14 +40,14 @@
 		<div
 			class="group card mb-12 border border-gray-700 bg-neutral shadow-xl hover:bg-gradient-to-tr hover:from-base-300 hover:via-base-200 hover:to-gray-700">
 			<div class="card-body grid lg:grid-cols-2">
-				<div class="mb-8 space-y-5 lg:px-8">
+				<div class="mb-8 lg:px-8">
 					<h2>
 						<a href="/guides/product-plan">Product</a>
 					</h2>
 					<p>
 						<i>Feel like you're shipping useless features?</i>
 					</p>
-					<p>
+					<p class="pb-4 pt-8">
 						Think about product-market fit, demand for your product, go-to market, success metrics.
 					</p>
 					<ul class="ms-8 list-disc space-y-2">
@@ -75,16 +75,15 @@
 				><div class="card-body grid lg:grid-cols-2">
 					<div class="mb-8 self-center lg:mb-20 lg:px-8">
 						<h2>Problem Statements</h2>
-
 						<p>
 							<i>Doubt your product works well? Never heard from your users?</i>
 						</p>
-						<p>
+						<p class="pt-8">
 							Investigate issues with identifying the problem you're solving, who you're trying to
 							help, user pain points.
 						</p>
 					</div>
-					<div class="w-full rounded-2xl bg-base-content">
+					<div class="w-full rounded-2xl bg-base-content lg:order-first">
 						<div class="flex justify-center">
 							<enhanced:img
 								src={problem}
@@ -100,10 +99,9 @@
 				<div
 					class="group card h-auto w-full border border-gray-700 bg-neutral shadow-xl hover:bg-gradient-to-tr hover:from-base-300 hover:via-base-200 hover:to-gray-700">
 					<div class="card-body grid lg:grid-cols-2">
-						<div class="order-first mb-8 lg:order-last lg:px-8">
+						<div class="mb-8 lg:px-8">
 							<h2>Research</h2>
-
-							<p class="">
+							<p>
 								<i
 									>Skipping user research is like designing a car without realizing humans need to
 									sit in it.</i>
@@ -125,12 +123,12 @@
 			<div
 				class="group card mb-12 grid w-full overflow-hidden border border-gray-700 bg-neutral shadow-xl hover:bg-gradient-to-tr hover:from-base-300 hover:via-base-200 hover:to-gray-700">
 				<div class="card-body grid lg:grid-cols-2">
-					<div class="mb-4 lg:px-8">
+					<div class="mb-4 lg:order-last lg:px-8">
 						<h2>Cost</h2>
 						<p>
 							<i>We're not sure what we're building, but we know we'll need a bigger budget?</i>
 						</p>
-						<p class="pb-5">
+						<p class="pt-8">
 							Vague requirements over hundreds of pages a spec sheet, cost evaluations based on
 							inflation figures, vendors quoting an arm and a leg to change a hero banner.
 						</p>
@@ -156,7 +154,7 @@
 							<p>
 								<i>Cyber security so tight, even the 1s and 0s can't escape</i>
 							</p>
-							<p>
+							<p class="pt-8">
 								Ever wondered why TRAs are so awfully tedious and yet mean nothing? Frustrated with
 								the ticking checkbox nature to comply with security policies?
 							</p>
