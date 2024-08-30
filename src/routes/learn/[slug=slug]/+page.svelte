@@ -11,6 +11,7 @@
 	import { type Contents } from '$lib/Types';
 	import { onMount } from 'svelte';
 	import CarbonCheckmarkFilled from '$lib/assets/svg/CarbonCheckmarkFilled.svelte';
+	import SimpleIconsKnowledgeBase from '$lib/assets/svg/SimpleIconsKnowledgeBase.svelte';
 	let contents: Contents[] = [
 		{ id: 'topics', title: '1. Topics' },
 		{ id: 'answers', title: '2. Find Answers To...' },
@@ -96,7 +97,7 @@
 			<ul class="flex flex-wrap items-center">
 				{#each data.post.topics as topic}
 					<li class="me-4">
-						<CarbonCheckmarkFilled class="mb-1 inline text-sm text-base-content" />
+						<SimpleIconsKnowledgeBase class="mb-1 inline text-sm text-lime-200" />
 						{topic}
 					</li>
 				{/each}

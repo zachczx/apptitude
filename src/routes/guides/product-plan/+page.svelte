@@ -69,7 +69,7 @@
 	{currentSection}
 	{textCurrent}>
 	<div class="mb-12">
-		<div class="w-full rounded-2xl bg-base-content">
+		<div class="w-full rounded-2xl bg-gray-600">
 			<div class="flex justify-end">
 				<enhanced:img src={product} alt="$$$" class="rounded-2xl lg:-mb-14 lg:-translate-y-14" />
 			</div>

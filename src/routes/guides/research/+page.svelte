@@ -68,8 +68,8 @@
 	{currentSection}
 	{textCurrent}>
 	<div class="mb-12">
-		<div class="w-full rounded-2xl bg-base-content">
-			<div class="flex max-h-72 justify-end">
+		<div class="w-full rounded-2xl bg-gray-600">
+			<div class="flex max-h-80 justify-end">
 				<enhanced:img
 					src={magnifyingGlass}
 					alt="User research: Avoiding those awkward 'Hey, does anyone like our product?' moments."

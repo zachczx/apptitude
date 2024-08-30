@@ -4,13 +4,10 @@
 	import Breadcrumbs from '$lib/Breadcrumbs.svelte';
 	import TablerHelpCircleFilled from '$lib/assets/svg/TablerHelpCircleFilled.svelte';
 	import TablerMessage from '$lib/assets/svg/TablerMessage.svelte';
-	import { fly } from 'svelte/transition';
+
 	import ContentWrapper from '$lib/ContentWrapper.svelte';
 	import { type Contents } from '$lib/Types';
 	import { onMount } from 'svelte';
-
-	let showMore = $state(false);
-	let currentItem = $state(0);
 
 	let { data } = $props();
 
@@ -18,9 +15,6 @@
 	for (let i = 0; i < techtrippin.length; i++) {
 		let combinedId = 'content-' + String(techtrippin[i].id);
 		let combinedTitle = String(techtrippin[i].id) + '. ' + techtrippin[i].title;
-		// if (combinedTitle.length > 40) {
-		// 	combinedTitle = combinedTitle.slice(0, 40) + ' ...';
-		// }
 		contents[i] = { id: combinedId, title: combinedTitle };
 	}
 
@@ -80,15 +74,6 @@
 			</p>
 		</div>
 	</section>
-	<div id="dropdown" class="mx-auto mt-3 flex w-11/12 lg:hidden">
-		<label class="ms-1">
-			<select bind:value={currentItem} class="select select-bordered w-full text-lg">
-				{#each techtrippin as sidebarItem, index}
-					<option value={index}>{sidebarItem.title}</option>
-				{/each}
-			</select>
-		</label>
-	</div>
 
 	{#each techtrippin as item}
 		<section

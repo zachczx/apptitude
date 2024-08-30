@@ -78,24 +78,30 @@
 	{currentSection}
 	{textCurrent}>
 	<div class="mb-12">
-		<div class="w-full rounded-2xl bg-base-content">
-			<div class="flex max-h-72 justify-end">
-				{#if page === 'problems'}
+		<div class="w-full rounded-2xl bg-gray-600">
+			{#if page === 'problems'}
+				<div class="flex max-h-72 justify-end">
 					<enhanced:img src={problem} alt="$$$" class="rounded-2xl lg:-mb-14 lg:-translate-y-14" />
-				{:else if page === 'product'}
+				</div>
+			{:else if page === 'product'}
+				<div class="flex max-h-72 justify-end">
 					<enhanced:img src={product} alt="$$$" class="rounded-2xl lg:-mb-14 lg:-translate-y-14" />
-				{:else if page === 'security'}
+				</div>
+			{:else if page === 'security'}
+				<div class="flex max-h-72 justify-end">
 					<enhanced:img
 						src={safeKeyboard}
 						alt="Put your keyboard in the safe - best in class for security~!"
 						class="rounded-2xl lg:-mb-14 lg:-translate-y-14" />
-				{:else if page === 'cost'}
+				</div>
+			{:else if page === 'cost'}
+				<div class="flex max-h-72 justify-start">
 					<enhanced:img
 						src={piggyBank}
 						alt="$$$"
 						class="rounded-2xl lg:-mb-14 lg:-translate-y-14" />
-				{/if}
-			</div>
+				</div>
+			{/if}
 		</div>
 	</div>
 	<h1
