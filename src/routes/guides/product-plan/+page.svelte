@@ -19,11 +19,10 @@
 	let contents: Contents[] = [
 		{ id: 'what-makes-a-product-plan', title: '1. What makes a product plan?' },
 		{ id: 'the-problem', title: '2. The Problem' },
-		{ id: 'the-research', title: '3. The Research' },
-		{ id: 'measurable-outcomes-targets', title: '4. Measurable Outcomes and Targets' },
-		{ id: 'risks', title: '5. Risks' },
-		{ id: 'product-plan-template', title: '6. Product Plan Template' },
-		{ id: 'credits', title: '7. Credits' },
+		{ id: 'measurable-outcomes-targets', title: '3. Measurable Outcomes and Targets' },
+		{ id: 'risks', title: '4. Risks' },
+		{ id: 'product-plan-template', title: '5. Product Plan Template' },
+		{ id: 'credits', title: '6. Credits' },
 	];
 	let currentSection: any = $state();
 	let textCurrent = 'Product Plan 101';
@@ -84,14 +83,31 @@
 		class="prose-section:mt-20 space-y-20 pb-10 prose-h2:mb-6 prose-h3:mb-6 prose-h3:mt-12 prose-h5:mb-4 prose-p:mb-4">
 		<section id="what-makes-a-product-plan" class="contents-observer">
 			<h2>1. What makes a product plan?</h2>
-			<div class="space-y-4 py-4">
-				<p>A good product plan consists of 3 key ingredients and 3 seasonings:</p>
-				<ul class="ms-8 list-disc space-y-4">
-					<li>A clear problem statement</li>
-					<li>Measurable outcomes with targets</li>
-					<li>Identification of key risks with mitigation steps</li>
-				</ul>
-			</div>
+
+			<h3 class="py-4">1.1. Key Ingredients</h3>
+			<p>A good product plan consists of 3 key ingredients:</p>
+			<ul class="ms-8 list-disc space-y-4">
+				<li>A clear problem statement</li>
+				<li>Measurable outcomes with targets</li>
+				<li>Identification of key risks with mitigation steps</li>
+			</ul>
+			<h3 class="py-4">1.2. Principles of a Good Plan</h3>
+			<p>In general, a good plan follows 3 principles:</p>
+			<ul class="ms-8 list-disc space-y-4">
+				<li>
+					Use Numbers Over Descriptions, because quantitative data aids objective decision-making.
+				</li>
+				<li>
+					Make Reasonable Assumptions, provide estimates when reliable data is lacking to facilitate
+					discussion.
+				</li>
+				<li>
+					Apply the 'Goldilocks Rule'. But This is often easier said than done. Similar to civil
+					service staff work, it takes good judgement to determine the right amount of details in
+					your plan. Too little details gives people little confidence to decide, whereas too much
+					distracts the decision-makers.
+				</li>
+			</ul>
 		</section>
 
 		<section id="the-problem" class="contents-observer">
@@ -258,6 +274,23 @@
 								</div>
 							{/snippet}
 						</GuideExample>
+
+						<GuideExample>
+							{#snippet example()}
+								<div>
+									<CarbonCloseFilled class="mb-1 me-2 inline text-warning" />Under the XXX system v2
+									milestone, we could not complete development to improve searchability and user
+									centricity. Given the AI boom, it is timely to revisit development for those
+									aspects, in the form of building an AI chatbot that can improve search and user
+									experience.
+									<div
+										class="tooltip"
+										data-tip="Inability to deliver features previously is used as justification for an AI chatbot, without explaining why an AI chatbot solves searchability.">
+										<button class="btn btn-outline btn-warning btn-xs ms-1">Why?</button>
+									</div>
+								</div>
+							{/snippet}
+						</GuideExample>
 					</li>
 				</ul>
 			</ul>
@@ -304,30 +337,25 @@
 					</div>
 				{/snippet}
 			</GuideExample>
+			<GuideExample>
+				{#snippet example()}
+					<div>
+						<CarbonCloseFilled class="mb-1 me-2 inline text-warning" />Employees need to go through
+						long documents to find relevant clauses, so they need an AI chatbot that can fetch,
+						communicate, and process rules for them, and we can improve the search experience in XXX
+						system today.
+						<div
+							class="tooltip"
+							data-tip="Describes solution and there are multiple problems here,">
+							<button class="btn btn-outline btn-warning btn-xs ms-1">Why?</button>
+						</div>
+					</div>
+				{/snippet}
+			</GuideExample>
 		</section>
-		<section id="the-research" class="contents-observer">
-			<h2>3. The Research</h2>
 
-			<h3>3.1. I've the key ingredients, what seasoning should I sprinkle on?</h3>
-
-			<ul class="ms-8 list-disc space-y-4">
-				<li>
-					<em>Use Numbers Over Descriptions</em>. Quantitative data aids objective decision-making.
-				</li>
-				<li>
-					<em>Make Reasonable Assumptions</em>. Provide estimates when reliable data is lacking to
-					facilitate discussion.
-				</li>
-				<li>
-					<em>Apply the 'Goldilocks Rule'</em>. This is often easier said than done. Similar to
-					civil service staff work, it takes good judgement to determine the right amount of details
-					in your plan. Too little details gives people little confidence to decide, whereas too
-					much distracts the decision-makers.
-				</li>
-			</ul>
-		</section>
 		<section id="measurable-outcomes-targets" class="contents-observer">
-			<h2>4. Measurable Outcomes & Targets</h2>
+			<h2>3. Measurable Outcomes & Targets</h2>
 			<p>
 				The right outcome metrics tell us if we are moving in the right direction, to solve the
 				identified problem.
@@ -414,8 +442,8 @@
 					</div>
 				{/snippet}
 			</GuideExampleLong>
-			<h3>4.1. Attributes of the Right Outcome Metrics</h3>
-			<p>These outcome metrics should be:</p>
+			<h3>3.1. Attributes of the Right Outcome Metrics</h3>
+			<p>Outcome metrics should be relevant, frequent, objective, and specific.</p>
 			<GuideExample>
 				{#snippet example()}
 					<div>
@@ -521,6 +549,54 @@
 			<GuideExample>
 				{#snippet example()}
 					<div>
+						<CarbonCloseFilled class="mb-1 me-2 inline text-warning" />Objective: Ensure the
+						currency of guidelines documents using new administration feature in XXX system
+						<div
+							class="tooltip"
+							data-tip="Terms used here, like currency and outdated, are too subjective. There are usually also 2-4 KRs for each Objective, not 1-to-1.">
+							<button class="btn btn-outline btn-warning btn-xs ms-1">Why?</button>
+						</div>
+					</div>
+					<div>
+						<CarbonCloseFilled class="mb-1 me-2 inline text-warning" />Key Result: No outdated
+						content on XXX system.
+						<div
+							class="tooltip"
+							data-tip="Terms used here, like currency and outdated, are too subjective. There are usually also 2-4 KRs for each Objective, not 1-to-1.">
+							<button class="btn btn-outline btn-warning btn-xs ms-1">Why?</button>
+						</div>
+					</div>
+					<div>
+						<CarbonCheckmarkFilled class="mb-1 me-2 inline text-success" />Objective: Search results
+						contain only content from the latest version of guidelines documents.
+					</div>
+					<div>
+						<CarbonCheckmarkFilled class="mb-1 me-2 inline text-success" />Key Result: Search
+						microservice will update index with content from outdated guidelines documents within 1
+						min of a new version upload.
+					</div>
+				{/snippet}
+			</GuideExample>
+
+			<GuideExample>
+				{#snippet example()}
+					<div>
+						<CarbonCloseFilled class="mb-1 me-2 inline text-warning" />Objective: Improve
+						information retrieval
+						<div class="tooltip" data-tip="What do we mean by improve information retrieval?">
+							<button class="btn btn-outline btn-warning btn-xs ms-1">Why?</button>
+						</div>
+					</div>
+					<div>
+						<CarbonCheckmarkFilled class="mb-1 me-2 inline text-success" />Objective: Users get an
+						accurate and concise explanation of questions on employee administrative policies.
+					</div>
+				{/snippet}
+			</GuideExample>
+
+			<GuideExample>
+				{#snippet example()}
+					<div>
 						<p>
 							Instead of sitting around all day and saying, "Hey, I heard all these customer
 							problems, we should build X, Y, and Z." And another person could absolutely reasonably
@@ -540,7 +616,29 @@
 				{/snippet}
 			</GuideExample>
 
-			<h3>4.2. Set Targets based on Cost Per Impact</h3>
+			<p>
+				And in my opinion, if the problem being solved is incorrect, metrics that seem alright will
+				be wrong as well.
+			</p>
+			<GuideExample>
+				{#snippet example()}
+					<div>
+						<CarbonCloseFilled class="mb-1 me-2 inline text-warning" />Key Result: Less than 1 min
+						to fetch requested information through an AI search engine
+						<div
+							class="tooltip"
+							data-tip="The problem being solved is the time it takes to display relevant content that can answer the user's questions, not the time it takes to fetch that information or the time it takes to run it via an AI chatbot. Measuring this is closing us off to alternate ways of improving the time it takes to get a user the desired information, e.g., improving Info Architecture.">
+							<button class="btn btn-outline btn-warning btn-xs ms-1">Why?</button>
+						</div>
+					</div>
+					<div>
+						<CarbonCheckmarkFilled class="mb-1 me-2 inline text-success" />Key Result: User's
+						question on employee admin guidelines is answered within 1 min of arriving on landing
+						page
+					</div>
+				{/snippet}
+			</GuideExample>
+			<h3>3.2. Set Targets based on Cost Per Impact</h3>
 
 			<p>
 				Generally, when setting targets, it is useful to consider what the cost per impact of the
@@ -606,9 +704,9 @@
 			</GuideExample>
 		</section>
 		<section id="risks" class="contents-observer">
-			<h2>5. Risks</h2>
+			<h2>4. Risks</h2>
 
-			<h3>5.1. Why mitigate risks?</h3>
+			<h3>4.1. Why mitigate risks?</h3>
 
 			<p>
 				Risk mitigation is important so we can be confident in delivering an effective product on
@@ -630,7 +728,7 @@
 				</li>
 			</ul>
 
-			<h3>5.2. Market Risk - Will this work?</h3>
+			<h3>4.2. Market Risk - Will this work?</h3>
 			<p>Determine the Theory of Change</p>
 			<ul class="ms-8 list-disc space-y-4">
 				<li>How will your solution achieve the desired outcome?</li>
@@ -762,9 +860,9 @@
 			</GuideExample>
 		</section>
 		<section id="product-plan-template" class="contents-observer">
-			<h2>6. Product Plan Template</h2>
+			<h2>5. Product Plan Template</h2>
 
-			<h3>6.1. Variant 1 (Amazon)</h3>
+			<h3>5.1. Variant 1 (Amazon)</h3>
 			<ul class="ms-8 list-disc space-y-4">
 				<li>Introduction: States the challenge or opportunity, and why it matters.</li>
 				<li>
@@ -787,7 +885,7 @@
 				<li>Appendix (optional): Extra info that avoids detracting main flow of proposal.</li>
 			</ul>
 
-			<h3 class="">6.2. Variant 2</h3>
+			<h3 class="">5.2. Variant 2</h3>
 			<ul class="ms-8 list-disc space-y-4">
 				<li>Customer problem</li>
 				<li>Observations</li>
@@ -797,7 +895,7 @@
 			</ul>
 		</section>
 		<section id="credits" class="contents-observer">
-			<h2>7. Credits</h2>
+			<h2>6. Credits</h2>
 			<ul class="ms-8 list-disc space-y-4">
 				<li>Smart Nation Group's Product Plan Framework, Govind Ganesan</li>
 				<li>BCG's RISE Programme materials</li>

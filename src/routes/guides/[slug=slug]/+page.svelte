@@ -9,6 +9,7 @@
 	import piggyBank from '$lib/assets/piggy-bank.webp?enhanced&w=300';
 	import problem from '$lib/assets/problem.webp?enhanced&w=300';
 	import product from '$lib/assets/product.webp?enhanced&w=300';
+	import productAlt from '$lib/assets/product-alt.webp?enhanced&w=300';
 	import { onMount } from 'svelte';
 	import NavToc from '$lib/NavToc.svelte';
 	import { fade } from 'svelte/transition';
@@ -85,7 +86,10 @@
 				</div>
 			{:else if page === 'product'}
 				<div class="flex max-h-72 justify-end">
-					<enhanced:img src={product} alt="$$$" class="rounded-2xl lg:-mb-14 lg:-translate-y-14" />
+					<enhanced:img
+						src={productAlt}
+						alt="$$$"
+						class="rounded-2xl lg:-mb-14 lg:-translate-y-14" />
 				</div>
 			{:else if page === 'security'}
 				<div class="flex max-h-72 justify-end">
