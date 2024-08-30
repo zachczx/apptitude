@@ -10,12 +10,12 @@ export default {
 			screens: {
 				jumbo: '1921px',
 			},
+			borderRadius: {
+				super: '15rem',
+			},
 		},
 	},
-	plugins: [
-		require('daisyui'),
-		require('@tailwindcss/typography'),
-	],
+	plugins: [require('daisyui'), require('@tailwindcss/typography')],
 	daisyui: {
 		themes: [
 			{

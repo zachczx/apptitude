@@ -11,6 +11,7 @@
 	import { matchUrl } from '$lib/helpers';
 	import HowThisWorks from '$lib/HowThisWorks.svelte';
 	import pandaAnnoyed from '$lib/assets/panda-annoyed.webp?enhanced&w=600;500;300';
+	import Problem from '$lib/Problem.svelte';
 	let { data } = $props();
 	let pageName = $state('Apptitude');
 
@@ -76,15 +77,6 @@
 					href="/guides"
 					><TablerChevronRight class="inline align-middle" height="1rem" width="1rem" /> Guides</a>
 				<a
-					class="border-b border-slate-600 p-3 hover:bg-slate-600 active:font-bold active:text-primary"
-					href="/techtrippin"
-					><TablerChevronRight class="inline align-middle" height="1rem" width="1rem" /> Tech Trippin'</a>
-				<!--<a
-					class="border-b border-slate-600 p-3 hover:bg-slate-600 active:font-bold active:text-primary"
-					href="/todo"
-					><TablerChevronRight class="inline align-middle" height="1rem" width="1rem" /> To-Do List</a
-				>-->
-				<a
 					class="p-3 hover:rounded-b-lg hover:bg-slate-600 active:font-bold active:text-primary"
 					href="/about"
 					><TablerChevronRight class="inline align-middle" height="1rem" width="1rem" /> About</a>
@@ -107,10 +99,6 @@
 			</li>
 			<li aria-current={matchUrl(data.url, '/guides') === 0 ? 'page' : undefined}>
 				<a class="text-xl hover:bg-transparent hover:text-primary" href="/guides">Guides</a>
-			</li>
-			<li aria-current={matchUrl(data.url, '/techtrippin') === 0 ? 'page' : undefined}>
-				<a class="text-xl hover:bg-transparent hover:text-primary" href="/techtrippin"
-					>Tech Trippin'</a>
 			</li>
 			<li aria-current={matchUrl(data.url, '/about') === 0 ? 'page' : undefined}>
 				<a class="text-xl hover:bg-transparent hover:text-primary" href="/about">About</a>
@@ -229,46 +217,7 @@
 	</div>
 </div>
 
-<HowThisWorks />
-
-<div class="grid min-h-[200px] gap-x-5 bg-gray-800 py-[4rem] lg:grid-cols-2">
-	<div class="avatar my-5 justify-self-end px-10">
-		<div class="mask mask-squircle">
-			<enhanced:img
-				src={pandaAnnoyed}
-				alt="Annoyed panda"
-				fetchpriority="low"
-				sizes="(min-width:1000px) 600px, (min-width:768px) 500px, 300px" />
-		</div>
-	</div>
-	<div class="grid grid-rows-2 justify-self-start">
-		<div class="content-end text-center lg:text-start"><h2>What are you waiting for?</h2></div>
-		<div class="z-50 pt-5 text-center lg:ps-5 lg:pt-10 lg:text-start">
-			<a
-				href="/learn"
-				class="btn relative overflow-hidden border border-primary bg-lime-600 font-bold text-white hover:border hover:border-primary hover:bg-gradient-to-r hover:from-lime-500 hover:via-teal-500 hover:to-emerald-600 active:from-lime-600 active:via-teal-600 active:to-emerald-700 lg:hidden lg:text-2xl"
-				>Learn the Basics <svg
-					xmlns="http://www.w3.org/2000/svg"
-					width="32"
-					height="32"
-					viewBox="0 0 24 24"
-					><path
-						class="fill-white stroke-white"
-						d="m13.692 17.308l-.707-.72l4.088-4.088H5v-1h12.073l-4.088-4.088l.707-.72L19 12z" /></svg
-				></a>
-			<a
-				class="hide-small group relative rounded-lg px-6 py-3 text-3xl font-bold text-white lg:text-5xl"
-				href="/learn">
-				<span
-					class="ease absolute inset-0 h-full w-full -translate-x-2 -translate-y-4 transform rounded bg-lime-600 transition duration-300 group-hover:translate-x-0 group-hover:translate-y-0 lg:-translate-x-4 lg:-translate-y-3"
-				></span>
-				<span
-					class="ease absolute inset-0 h-full w-full translate-x-2 translate-y-2 transform rounded bg-teal-800 mix-blend-screen transition duration-300 group-hover:translate-x-0 group-hover:translate-y-0 lg:translate-x-4 lg:translate-y-3"
-				></span>
-				<span class="relative p-5 font-bold">Start Learning Now! </span></a>
-		</div>
-	</div>
-</div>
+<Problem />
 
 <!--
 <div class="hidden lg:contents">
