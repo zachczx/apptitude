@@ -163,7 +163,7 @@
 </div>
 
 <div
-	class="grid min-h-[120dvh] content-center justify-items-center gap-y-8 px-2 py-10 lg:grid-cols-2 lg:gap-y-20 lg:px-20 lg:py-20">
+	class="grid min-h-[120dvh] content-center justify-items-center gap-y-8 px-2 py-10 lg:grid-cols-2 lg:gap-y-20 lg:py-20">
 	<h1 class="text-center lg:col-span-2">How Apptitude could help you.</h1>
 	<div class="justify-self-center">
 		<enhanced:img
@@ -172,7 +172,7 @@
 			sizes="(min-width:1920px) 700px, (min-width:600px) 400px"
 			class="rounded-super" />
 	</div>
-	<div class="grid content-center">
+	<div class="grid content-center lg:px-20">
 		<ul class="list-image-[url(/GravityUiSphere.svg)] space-y-8 ps-6">
 			<li class="space-y-2 ps-2">
 				<h3>Use my lists of online learning resources.</h3>
@@ -198,31 +198,17 @@
 				<p>Shit happens. Rome wasn't built in a day. Persevere and continue to survive!</p>
 			</li>
 		</ul>
-		<div class="join mt-8 flex justify-center lg:join-horizontal lg:mt-14 lg:justify-start">
+		<div class="mt-20 flex justify-center">
 			<a
-				href="/learn"
-				class="button-shine btn join-item relative overflow-hidden border border-primary bg-lime-600 font-bold text-white hover:border hover:border-primary hover:bg-gradient-to-r hover:from-lime-500 hover:via-teal-500 hover:to-emerald-600 active:from-lime-600 active:via-teal-600 active:to-emerald-700 lg:text-2xl"
-				>Learning Resources <svg
-					xmlns="http://www.w3.org/2000/svg"
-					width="1.5em"
-					height="1.5em"
-					viewBox="0 0 24 24"
-					><path
-						class="fill-white stroke-white"
-						d="m13.692 17.308l-.707-.72l4.088-4.088H5v-1h12.073l-4.088-4.088l.707-.72L19 12z" /></svg
-				></a>
-			<a
-				href="/guides"
-				class="bg-grey-900 group btn join-item border border-primary from-red-500 via-orange-500 to-pink-500 font-bold text-primary hover:border hover:border-primary hover:bg-gradient-to-r hover:from-teal-500 hover:to-lime-500 hover:text-white active:from-red-700 active:via-orange-700 active:to-pink-700 lg:text-2xl"
-				>My Guides <svg
-					xmlns="http://www.w3.org/2000/svg"
-					width="1.5em"
-					height="1.5em"
-					viewBox="0 0 24 24"
-					><path
-						class="fill-primary stroke-primary group-hover:stroke-white"
-						d="m13.692 17.308l-.707-.72l4.088-4.088H5v-1h12.073l-4.088-4.088l.707-.72L19 12z" /></svg
-				></a>
+				class="hide-small group relative rounded-lg px-6 py-3 text-3xl font-bold text-white lg:text-5xl"
+				href="/learn">
+				<span
+					class="ease absolute inset-0 h-full w-full -translate-x-2 -translate-y-4 transform rounded bg-lime-600 transition duration-300 group-hover:translate-x-0 group-hover:translate-y-0 lg:-translate-x-4 lg:-translate-y-3"
+				></span>
+				<span
+					class="ease absolute inset-0 h-full w-full translate-x-2 translate-y-2 transform rounded bg-teal-800 mix-blend-screen transition duration-300 group-hover:translate-x-0 group-hover:translate-y-0 lg:translate-x-4 lg:translate-y-3"
+				></span>
+				<span class="relative p-5 font-bold">Start Learning Now!</span></a>
 		</div>
 	</div>
 </div>
