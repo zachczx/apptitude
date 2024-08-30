@@ -205,14 +205,14 @@
 				poor & unnecessary products
 			</div>
 		</div>
-		<div class="join join-vertical flex justify-center lg:join-horizontal">
+		<div class="join-vertica join flex justify-center lg:join-horizontal">
 			<a
 				href="/learn"
 				class="button-shine btn join-item relative overflow-hidden border border-primary bg-lime-600 font-bold text-white hover:border hover:border-primary hover:bg-gradient-to-r hover:from-lime-500 hover:via-teal-500 hover:to-emerald-600 active:from-lime-600 active:via-teal-600 active:to-emerald-700 lg:text-2xl"
 				>Learn Basics <svg
 					xmlns="http://www.w3.org/2000/svg"
-					width="32"
-					height="32"
+					width="1.5em"
+					height="1.5em"
 					viewBox="0 0 24 24"
 					><path
 						class="fill-white stroke-white"
