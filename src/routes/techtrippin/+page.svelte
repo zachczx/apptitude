@@ -4,6 +4,7 @@
 	import Breadcrumbs from '$lib/Breadcrumbs.svelte';
 	import TablerHelpCircleFilled from '$lib/assets/svg/TablerHelpCircleFilled.svelte';
 	import TablerMessage from '$lib/assets/svg/TablerMessage.svelte';
+	import grumpyCat from '$lib/assets/grumpy-cat.webp?enhanced&w=400';
 
 	import ContentWrapper from '$lib/ContentWrapper.svelte';
 	import { type Contents } from '$lib/Types';
@@ -55,6 +56,13 @@
 <ContentWrapper urlSelf={data.url} {page} {textMiddle} {category} {currentSection} {contents}>
 	<section class="mb-12 space-y-12">
 		<div>
+			<div class="mb-12">
+				<div class="w-full rounded-2xl bg-gray-600">
+					<div class="flex justify-end overflow-hidden">
+						<enhanced:img src={grumpyCat} alt="Ugh" class="-mb-14 rounded-2xl" />
+					</div>
+				</div>
+			</div>
 			<h1
 				class="inline-block bg-gradient-to-r from-emerald-200 via-lime-200 to-teal-300 bg-clip-text pb-3 text-transparent">
 				Tech Trippin'
@@ -78,7 +86,7 @@
 	{#each techtrippin as item}
 		<section
 			id="content-{item.id}"
-			class="contents-observer mb-4 space-y-10 rounded-2xl border border-gray-700 bg-neutral p-2 shadow-md shadow-gray-800 lg:mb-16 lg:p-8">
+			class="contents-observer mb-4 space-y-10 rounded-2xl border border-gray-700 bg-neutral p-4 shadow-md shadow-gray-800 lg:mb-16 lg:p-8">
 			<h3>{item.title}</h3>
 			<div class="space-y-10">
 				<div class="chat chat-start">

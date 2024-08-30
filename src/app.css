@@ -10,7 +10,7 @@
 	.pagefind-ui {
 		width: 100%;
 		--pagefind-ui-scale: 1;
-		--pagefind-ui-primary: #38bdf8;
+		--pagefind-ui-primary: #9fe88d;
 		--pagefind-ui-text: #d6d6d6;
 		--pagefind-ui-background: #2a303c;
 		--pagefind-ui-border: #d6d6d6;
@@ -22,8 +22,10 @@
 		--pagefind-ui-font: 'Roboto', sans-serif;
 
 		& mark {
-			background-color: #f0ff00;
-			padding: 0.1em 0.5em 0.1em 0.5em;
+			font-weight: bold;
+			color: #9fe88d;
+			background-color: transparent; /*#f0ff00;*/
+			/* padding: 0.1em 0.2em 0.1em 0.2em; */
 		}
 	}
 
@@ -34,6 +36,7 @@
 	.pagefind-ui__result-link,
 	.pagefind-ui__result-title {
 		color: #9fe88d !important;
+		text-decoration: underline;
 	}
 
 	.pagefind-ui__button {
