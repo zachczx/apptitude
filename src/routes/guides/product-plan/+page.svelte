@@ -179,26 +179,44 @@
 			<h3>2.2. What is the pain point? (e.g. approvals taking 6 months instead of 3 months)</h3>
 
 			<ul class="ms-8 list-disc space-y-4">
-				<li>What happens if we left this problem alone?</li>
-				<li>If you need a benchmark, compare with alternate solutions or adjacent industries.</li>
+				<li>
+					What happens if we left this problem alone?
+					<GuideExample>
+						{#snippet example()}
+							<div>
+								<CarbonCloseFilled class="mb-1 me-2 inline text-warning" />Unclear and outdated
+								documentation were flagged out as areas of risk during the audit reviews.
+							</div>
+							<div>
+								<CarbonCheckmarkFilled class="mb-1 me-2 inline text-success" /><span
+									class="text-primary">XX cases</span>
+								of non-compliance to prevailing policies
+								<span class="text-primary">cost us $XM</span> each year because these users relied on
+								guidelines in outdated policy documents strewn across our employee portal.
+							</div>
+						{/snippet}
+					</GuideExample>
+				</li>
+				<li>
+					If you need a benchmark, compare with alternate solutions or adjacent industries.
+					<GuideExample>
+						{#snippet example()}
+							<div>
+								<CarbonCheckmarkFilled class="mb-1 me-2 inline text-success" />Approvals continue to
+								take 6 mths, or more with X new policy
+							</div>
+							<div>
+								<CarbonCheckmarkFilled class="mb-1 me-2 inline text-success" />System B takes 4 mths
+								per approval
+							</div>
+							<div>
+								<CarbonCheckmarkFilled class="mb-1 me-2 inline text-success" />F&B licenses take 3
+								mths per approval
+							</div>
+						{/snippet}
+					</GuideExample>
+				</li>
 			</ul>
-
-			<GuideExample>
-				{#snippet example()}
-					<div>
-						<CarbonCheckmarkFilled class="mb-1 me-2 inline text-success" />Approvals continue to
-						take 6 mths, or more with X new policy
-					</div>
-					<div>
-						<CarbonCheckmarkFilled class="mb-1 me-2 inline text-success" />System B takes 4 mths per
-						approval
-					</div>
-					<div>
-						<CarbonCheckmarkFilled class="mb-1 me-2 inline text-success" />F&B licenses take 3 mths
-						per approval
-					</div>
-				{/snippet}
-			</GuideExample>
 
 			<h3>2.3. What is the size of the problem?</h3>
 
