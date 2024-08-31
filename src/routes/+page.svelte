@@ -266,7 +266,7 @@
 		<div class="join-vertica join flex justify-center lg:join-horizontal">
 			<a
 				href="/learn"
-				class="button-shine btn join-item relative overflow-hidden border border-primary bg-lime-600 font-bold text-white hover:border hover:border-primary hover:bg-gradient-to-r hover:from-lime-500 hover:via-teal-500 hover:to-emerald-600 active:from-lime-600 active:via-teal-600 active:to-emerald-700 lg:text-2xl"
+				class="button-shine btn join-item relative overflow-hidden border border-primary bg-lime-500 font-bold text-white hover:border hover:border-primary hover:bg-gradient-to-r hover:from-lime-500 hover:via-teal-500 hover:to-emerald-600 active:from-lime-600 active:via-teal-600 active:to-emerald-700 lg:text-2xl"
 				>Learn Basics <svg
 					xmlns="http://www.w3.org/2000/svg"
 					width="1.5em"
@@ -278,7 +278,7 @@
 				></a>
 			<a
 				href="/guides"
-				class="bg-grey-900 btn join-item border border-primary from-red-500 via-orange-500 to-pink-500 font-bold text-primary hover:border hover:border-primary hover:bg-gradient-to-r hover:from-teal-500 hover:to-lime-500 hover:text-white active:from-red-700 active:via-orange-700 active:to-pink-700 lg:text-2xl"
+				class="btn join-item border border-primary bg-transparent from-red-500 via-orange-500 to-pink-500 font-bold text-primary hover:border hover:border-primary hover:bg-gradient-to-r hover:from-teal-500 hover:to-lime-500 hover:text-white active:from-red-700 active:via-orange-700 active:to-pink-700 lg:text-2xl"
 				>Skip to Guides</a>
 		</div>
 	</div>
