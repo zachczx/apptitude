@@ -43,7 +43,7 @@
 	</section>
 
 	<div class="space-y-20 pt-12">
-		<div class="space-y-7 rounded-2xl bg-base-300">
+		<div class="space-y-7 lg:rounded-2xl lg:bg-base-300">
 			<div class="space-y-3 ps-1">
 				<h2>
 					<TablerStarFilled class="mb-1 inline fill-primary" /><TablerStarFilled
@@ -59,11 +59,11 @@
 					<a href="/learn/{item.slug}" class="w-full">
 						<div
 							class="group card h-full border border-gray-700 bg-neutral shadow-md shadow-gray-800 hover:bg-gradient-to-tr hover:from-base-300 hover:via-base-200 hover:to-gray-700">
-							<div class="card-body grid grid-cols-1 content-start space-y-5 px-5">
+							<div class="card-body grid grid-cols-1 content-start space-y-2 px-5 lg:space-y-5">
 								<h3 class="group-hover:text-primary">
 									{item.name}
 								</h3>
-								<p class="text-lg"><i>{item.intro}</i></p>
+								<p class="text-sm lg:text-lg"><i>{item.intro}</i></p>
 							</div>
 						</div>
 					</a>
@@ -71,7 +71,7 @@
 			</div>
 		</div>
 
-		<div class="space-y-7 rounded-2xl bg-base-300">
+		<div class="space-y-7 lg:rounded-2xl lg:bg-base-300">
 			<div class="space-y-3 ps-1">
 				<h2>
 					<TablerStarFilled class="mb-1 inline fill-primary" /><TablerStarFilled
@@ -87,18 +87,18 @@
 					<a href="/learn/{item.slug}" class="w-full">
 						<div
 							class="group card h-full border border-gray-700 bg-neutral shadow-md shadow-gray-800 hover:bg-gradient-to-tr hover:from-base-300 hover:via-base-200 hover:to-gray-700">
-							<div class="card-body grid grid-cols-1 content-start space-y-5 px-5">
+							<div class="card-body grid grid-cols-1 content-start space-y-2 px-5 lg:space-y-5">
 								<h3 class="group-hover:text-primary">
 									{item.name}
 								</h3>
-								<p class="text-lg"><i>{item.intro}</i></p>
+								<p class="text-sm lg:text-lg"><i>{item.intro}</i></p>
 							</div>
 						</div>
 					</a>
 				{/each}
 			</div>
 		</div>
-		<div class="space-y-7 rounded-2xl bg-base-300">
+		<div class="space-y-7 lg:rounded-2xl lg:bg-base-300">
 			<div class="space-y-3 ps-1">
 				<h2>
 					<TablerStarFilled class="mb-1 inline fill-primary" /><TablerStarFilled
@@ -113,11 +113,11 @@
 					<a href="/learn/{item.slug}" class="w-full">
 						<div
 							class="group card h-full border border-gray-700 bg-neutral shadow-md shadow-gray-800 hover:bg-gradient-to-tr hover:from-base-300 hover:via-base-200 hover:to-gray-700">
-							<div class="card-body grid grid-cols-1 content-start space-y-5 px-5">
+							<div class="card-body grid grid-cols-1 content-start space-y-2 px-5 lg:space-y-5">
 								<h3 class="group-hover:text-primary">
 									{item.name}
 								</h3>
-								<p class="text-lg"><i>{item.intro}</i></p>
+								<p class="text-sm lg:text-lg"><i>{item.intro}</i></p>
 							</div>
 						</div>
 					</a>

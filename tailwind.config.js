@@ -11,6 +11,7 @@ export default {
 				jumbo: '1921px',
 			},
 			borderRadius: {
+				'semi-super': '8rem',
 				super: '15rem',
 			},
 		},

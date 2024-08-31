@@ -114,10 +114,11 @@
 			<h2>2. The Problem</h2>
 
 			<div class="space-y-4 py-4">
-				<p>Answer 3 questions clearly:</p>
+				<p>You'll need to answer these questions:</p>
 				<ul class="ms-8 list-disc space-y-4">
 					<li>Who is the user?</li>
-					<li>What is their pain point?</li>
+					<li>What are their pain points?</li>
+					<li>Describe the problem as the user's needs that are not being addressed.</li>
 					<li>How big or meaningful is the problem?</li>
 				</ul>
 			</div>
@@ -218,7 +219,41 @@
 				</li>
 			</ul>
 
-			<h3>2.3. What is the size of the problem?</h3>
+			<h3>2.3. Clearly Describe Unmet User Needs</h3>
+			<ul class="ms-8 list-disc space-y-4">
+				<li>
+					Based on data collected from users and speaking to them, state the user's characteristics,
+					needs, and why they have that need.
+				</li>
+				<li>
+					Consider expressing it in the form of <a
+						href="/guides/research"
+						class="text-primary underline">problem statement</a
+					>.
+					<GuideExample>
+						{#snippet example()}
+							<div>
+								<CarbonCheckmarkFilled class="mb-1 me-2 inline text-success" /><span
+									class="text-primary">[Name of user persona]</span>
+								is a
+								<span class="text-primary">[type of user]</span>
+								who needs
+								<span class="text-primary">[type of user experience]</span>
+								because
+								<span class="text-primary">[benefits of user experience]</span>.
+							</div>
+							<div>
+								<CarbonCheckmarkFilled class="mb-1 me-2 inline text-success" />Anne is a staff
+								officer who writes AORs for overseas trips. She needs an efficient way to double
+								check her submission against all applicable finance guidelines. She presently
+								searches, downloads, and toggles among more than 5 separate finance policy documents
+								for each AOR.
+							</div>
+						{/snippet}
+					</GuideExample>
+				</li>
+			</ul>
+			<h3>2.4. What is the size of the problem?</h3>
 
 			<ul class="ms-8 list-disc space-y-4">
 				<li>
@@ -238,8 +273,20 @@
 					</div>
 				{/snippet}
 			</GuideExample>
+			<GuideExample>
+				{#snippet example()}
+					<div>
+						<CarbonCheckmarkFilled class="mb-1 me-2 inline text-success" />~3 man months are spent
+						by 15 officers monthly collating, cleaning, emailing, and drafting MS Word reports on
+						service transactions, which are done manually on Excel, Outlook, Word.
+						<CarbonCheckmarkFilled class="mb-1 me-2 inline text-success" />Symptoms of poor service
+						delivery is only identified and acted upon up 2 weeks later, because data and business
+						insights are manually collated and generated.
+					</div>
+				{/snippet}
+			</GuideExample>
 
-			<h3>2.4. Finding it hard?</h3>
+			<h3>2.5. Finding it hard?</h3>
 
 			<p>You might have too many problems in one problem statement.</p>
 			<ul class="ms-8 list-disc space-y-4">
@@ -313,7 +360,7 @@
 				</ul>
 			</ul>
 
-			<h3>2.5. Common Pitfalls</h3>
+			<h3>2.6. Common Mistakes</h3>
 
 			<h5 class="text-lg font-bold italic">Too Aspirational</h5>
 			<ul class="ms-8 list-disc space-y-4">

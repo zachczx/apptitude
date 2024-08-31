@@ -39,7 +39,7 @@
 			class="b-4 h-14 w-full justify-items-start border-b-2 border-b-base-100 px-2 py-4 lg:grid lg:px-8">
 			<NewCrumbs urlMiddle="guides" {textMiddle} {textCurrent} />
 		</nav>
-		<div class="px-2 pb-10 pt-10 lg:px-8 lg:pt-0"><slot /></div>
+		<div class="px-2 pb-10 pt-4 lg:px-8 lg:pt-0"><slot /></div>
 	</main>
 	<aside
 		class="col-span-1 hidden w-full content-start rounded-r-3xl lg:grid lg:bg-base-300"

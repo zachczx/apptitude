@@ -78,7 +78,7 @@
 		</div>
 	</div>
 	<h1
-		class="inline-block bg-gradient-to-r from-emerald-200 via-lime-200 to-teal-300 bg-clip-text pb-8 text-transparent">
+		class="inline-block bg-gradient-to-r from-emerald-200 via-primary to-teal-300 bg-clip-text pb-8 text-transparent">
 		Research
 	</h1>
 
@@ -191,10 +191,10 @@
 			<GuideExample>
 				{#snippet example()}
 					<div>
-						As <span class="text-lime-200"><u>[type of user]</u></span>, I want to
-						<span class="text-lime-200"><u>[action]</u></span>
+						As <span class="text-primary">[type of user]</span>, I want to
+						<span class="text-primary">[action]</span>
 						so that
-						<span class="text-lime-200"><u>[benefit]</u></span>.
+						<span class="text-primary">[benefit]</span>.
 					</div>
 				{/snippet}
 			</GuideExample>
@@ -226,12 +226,12 @@
 			<GuideExample>
 				{#snippet example()}
 					<div>
-						<span class="text-lime-200"><u>[Name of user persona]</u></span> is a
-						<span class="text-lime-200"><u>[type of user]</u></span>
+						<span class="text-primary">[Name of user persona]</span> is a
+						<span class="text-primary">[type of user]</span>
 						who needs
-						<span class="text-lime-200"><u>[type of user experience]</u></span>
+						<span class="text-primary">[type of user experience]</span>
 						because
-						<span class="text-lime-200"><u>[benefits of user experience]</u></span>.
+						<span class="text-primary">[benefits of user experience]</span>.
 					</div>
 				{/snippet}
 			</GuideExample>
@@ -250,8 +250,8 @@
 				<GuideExample>
 					{#snippet example()}
 						<div>
-							If <span class="text-lime-200"><u>[action]</u></span>, then
-							<span class="text-lime-200"><u>[outcome]</u></span>
+							If <span class="text-primary">[action]</span>, then
+							<span class="text-primary">[outcome]</span>
 						</div>
 					{/snippet}
 				</GuideExample>
@@ -259,8 +259,8 @@
 				<GuideExample>
 					{#snippet example()}
 						<div>
-							We believe that <span class="text-lime-200"><u>[action]</u></span> will
-							<span class="text-lime-200"><u>[outcome]</u></span>.
+							We believe that <span class="text-primary">[action]</span> will
+							<span class="text-primary">[outcome]</span>.
 						</div>
 					{/snippet}
 				</GuideExample>

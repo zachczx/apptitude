@@ -401,10 +401,8 @@
 			<span class="bg-base-100">I found Apptitude very useful!</span>
 		</h2>
 		<p class="bg-base-100 py-5 lg:text-xl">
-			I'd love to hear from you - <a
-				href="https://forms.gle/zhfhmSR4RSA6FJNf6"
-				class="hover:text-primary">via this Google form <TablerLink class="inline" /></a
-			>.
+			I'd love to
+			<a href="https://zixianchen.com/contact" class="text-primary underline">hear from you!</a>
 		</p>
 	</div>
 	<div class="pic-9 lg:col-span-4">

@@ -11,8 +11,9 @@
 	import rocket from '$lib/assets/rocket.webp?enhanced&w=700;400';
 </script>
 
-<div class="mx-auto grid content-center px-2 py-4 lg:grid-cols-3 lg:gap-x-20 lg:px-28 lg:py-20">
-	<h2 class="text-center lg:col-span-3">Tech outcomes are mediocre for the amount spent.</h2>
+<div
+	class="mx-auto grid min-h-[70vh] content-center px-2 py-4 lg:grid-cols-3 lg:gap-x-20 lg:px-28 lg:py-20">
+	<h2 class="text-center lg:col-span-3">Tech outcomes can be mediocre for the amount spent.</h2>
 	<div class="grid max-h-[40rem] content-center justify-items-center space-y-4 p-8 text-center">
 		<div class="w-72">
 			<BadIdeaAmico />
@@ -163,26 +164,26 @@
 </div>
 
 <div
-	class="grid min-h-[120dvh] content-center justify-items-center gap-y-8 px-2 py-10 lg:grid-cols-2 lg:gap-y-20 lg:py-20">
+	class="grid content-center justify-items-center gap-y-8 px-2 py-10 lg:grid-cols-2 lg:gap-y-20 lg:py-20">
 	<h1 class="text-center lg:col-span-2">How Apptitude could help you.</h1>
 	<div class="justify-self-center">
 		<enhanced:img
 			src={rocket}
 			alt="Rocket"
 			sizes="(min-width:1920px) 700px, (min-width:600px) 400px"
-			class="rounded-super" />
+			class="rounded-semi-super lg:rounded-super" />
 	</div>
 	<div class="grid content-center lg:px-20">
 		<ul class="list-image-[url(/GravityUiSphere.svg)] space-y-8 ps-6">
 			<li class="space-y-2 ps-2">
-				<h3>Use my lists of online learning resources.</h3>
+				<h3><a href="/learn">Use my lists of online learning resources to learn.</a></h3>
 				<p>
 					You learn at your own pace, based on your own interest, using stuff that I watched, read,
 					and learned. Use this as a starting point, not the end.
 				</p>
 			</li>
 			<li class="space-y-2 ps-2">
-				<h3>Use my guides when you need a boost.</h3>
+				<h3><a href="/guides">Use my guides when you need a boost.</a></h3>
 				<p>
 					I summarized stuff I picked up over the years, from people I talked to, meetings I
 					attended, podcasts I watched, things I read. Use my questions, dealbreakers, plans,
@@ -200,7 +201,7 @@
 		</ul>
 		<div class="mt-20 flex justify-center">
 			<a
-				class="hide-small group relative rounded-lg px-6 py-3 text-3xl font-bold text-white lg:text-5xl"
+				class="hide-small group relative rounded-lg px-6 py-3 text-2xl font-bold text-white lg:text-3xl"
 				href="/learn">
 				<span
 					class="ease absolute inset-0 h-full w-full -translate-x-2 -translate-y-4 transform rounded bg-lime-600 transition duration-300 group-hover:translate-x-0 group-hover:translate-y-0 lg:-translate-x-4 lg:-translate-y-3"

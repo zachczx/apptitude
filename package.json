@@ -40,13 +40,13 @@
 	"type": "module",
 	"dependencies": {
 		"@fontsource/roboto": "^5.0.14",
-		"@shikijs/transformers": "^1.15.0",
+		"@shikijs/transformers": "^1.15.1",
 		"@sveltejs/adapter-cloudflare": "^4.7.2",
 		"@sveltejs/enhanced-img": "^0.3.4",
 		"gsap": "^3.12.5",
 		"rehype-slug": "^6.0.0",
 		"remark-toc": "^9.0.0",
-		"shiki": "^1.15.0",
+		"shiki": "^1.15.1",
 		"split-type": "^0.3.4",
 		"svelte-check": "^3.8.6"
 	}
