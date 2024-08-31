@@ -12,7 +12,8 @@
 </script>
 
 <div
-	class="mx-auto grid min-h-[70vh] content-center px-2 py-4 lg:grid-cols-3 lg:gap-x-20 lg:px-28 lg:py-20">
+	class="mx-auto grid min-h-[70vh] max-w-screen-2xl content-center px-2 py-4 lg:grid-cols-3 lg:gap-x-20 lg:px-28 lg:py-20"
+	data-pagefind-ignore>
 	<h2 class="text-center lg:col-span-3">Tech outcomes can be mediocre for the amount spent.</h2>
 	<div class="grid max-h-[40rem] content-center justify-items-center space-y-4 p-8 text-center">
 		<div class="w-72">
@@ -53,8 +54,8 @@
 	</div>
 </div>
 
-<div class="mx-auto min-h-dvh bg-base-300 px-1 py-8 lg:py-20">
-	<div class="grid w-full gap-8 lg:grid-cols-3">
+<div class="min-h-dvh bg-base-300 px-1 py-8 lg:py-20" data-pagefind-ignore>
+	<div class="mx-auto grid w-full max-w-screen-2xl gap-8 lg:grid-cols-3">
 		<div class="flex items-center justify-center text-center lg:col-span-3 lg:min-h-36">
 			<h2>These folks don't like our tech outcomes.</h2>
 		</div>
@@ -164,7 +165,8 @@
 </div>
 
 <div
-	class="grid content-center justify-items-center gap-y-8 px-2 py-10 lg:grid-cols-2 lg:gap-y-20 lg:py-20">
+	class="mx-auto grid max-w-screen-2xl content-center justify-items-center gap-y-8 px-2 py-10 lg:grid-cols-2 lg:gap-y-20 lg:py-20"
+	data-pagefind-ignore>
 	<h1 class="text-center lg:col-span-2">How Apptitude could help you.</h1>
 	<div class="justify-self-center">
 		<enhanced:img

@@ -51,7 +51,9 @@
 	<title>{pageName}</title>
 </svelte:head>
 
-<nav class="navbar-view-transition navbar {data.url === '/' ? 'absolute z-20' : ''}">
+<nav
+	class="navbar-view-transition navbar {data.url === '/' ? 'absolute z-20' : ''}"
+	data-pagefind-ignore>
 	<div class="max-h-18">
 		<div class="dropdown lg:hidden">
 			<div tabindex="0" role="button" class="btn btn-ghost -ms-3">
@@ -191,7 +193,9 @@
 	</div>
 </nav>
 
-<div class="hero grid min-h-dvh grid-cols-1 content-center justify-items-center xl:grid-cols-2">
+<div
+	class="hero grid min-h-dvh grid-cols-1 content-center justify-items-center xl:grid-cols-2"
+	data-pagefind-ignore>
 	<figure>
 		<!-- {#if currentBgNumber % 2 == 0}
 			<enhanced:img
