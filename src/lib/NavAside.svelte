@@ -331,12 +331,12 @@
 			{/if}
 		</a>
 	</li>
-	<li
+	<!-- <li
 		class="pt-4 text-xl font-bold lg:px-2 xl:px-4 {category === 'about'
 			? 'text-primary'
 			: undefined}">
 		<a href="/about">About</a>
-	</li>
+	</li> -->
 </ul>
 
 <style>
