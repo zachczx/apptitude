@@ -260,7 +260,7 @@
 			</div>
 			<div class="subheadline py-1 ps-3 text-center">
 				<h2>Drop</h2>
-				poor & unnecessary products
+				poor & unnecessary projects
 			</div>
 		</div>
 		<div class="join-vertica join flex justify-center lg:join-horizontal">
@@ -281,9 +281,6 @@
 				class="bg-grey-900 btn join-item border border-primary from-red-500 via-orange-500 to-pink-500 font-bold text-primary hover:border hover:border-primary hover:bg-gradient-to-r hover:from-teal-500 hover:to-lime-500 hover:text-white active:from-red-700 active:via-orange-700 active:to-pink-700 lg:text-2xl"
 				>Skip to Guides</a>
 		</div>
-		<p class="mt-3 text-center lg:text-xl">
-			<i><a href="/about" class="hover:text-primary">What's Apptitude?</a></i>
-		</p>
 	</div>
 </div>
 
