@@ -568,6 +568,10 @@ export const info: LearnData[] = [
 					text: 'Information Architecture. Basics for Designers.',
 					url: 'https://uxplanet.org/information-architecture-basics-for-designers-b5d43df62e20',
 				},
+				{
+					text: 'Deceptive Patterns',
+					url: 'https://www.deceptive.design/',
+				},
 			],
 		},
 	},
