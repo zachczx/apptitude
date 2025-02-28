@@ -179,111 +179,103 @@
 
 <div class="lg:bg-base100-pattern-alt">
 	<section
-		class="mx-auto grid max-w-screen-2xl content-center justify-items-center gap-x-8 gap-y-8 px-2 py-10 lg:grid-cols-2 lg:gap-y-20 lg:py-20"
+		class="mx-auto grid max-w-screen-2xl content-center justify-items-center gap-x-8 gap-y-8 px-2 py-10 lg:gap-y-20 lg:py-20"
 		data-pagefind-ignore>
-		<h1 class="text-center lg:col-span-2">How Apptitude could help you.</h1>
-		<div class="content-center justify-self-center">
-			<enhanced:img
-				src={rocket}
-				alt="Rocket"
-				sizes="(min-width:1920px) 700px, (min-width:600px) 400px"
-				class="rounded-semi-super lg:rounded-super" />
-		</div>
-		<div class="grid content-center">
-			<ul class="space-y-8">
-				<li
-					class="flex flex-wrap items-center justify-center space-y-8 rounded-2xl bg-base-300 p-4 lg:flex-nowrap lg:space-x-8 lg:space-y-0 lg:p-8">
-					<div>
-						<svg
-							id="hugeicons:refresh"
-							xmlns="http://www.w3.org/2000/svg"
-							width="2em"
-							height="2em"
-							class="h-24 w-24"
-							viewBox="0 0 24 24"
+		<h1 class="text-center">How Apptitude could help you.</h1>
+
+		<ul class="grid grid-cols-3 content-center gap-x-8">
+			<li
+				class="flex flex-wrap items-center justify-center space-y-8 rounded-2xl bg-base-300 p-4 lg:flex-nowrap lg:space-x-8 lg:space-y-0 lg:p-8">
+				<div>
+					<svg
+						id="hugeicons:refresh"
+						xmlns="http://www.w3.org/2000/svg"
+						width="2em"
+						height="2em"
+						class="h-24 w-24"
+						viewBox="0 0 24 24"
+						><path
+							fill="none"
+							stroke="currentColor"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="1.5"
+							d="M20.01 2v3.132a.314.314 0 0 1-.556.201A9.98 9.98 0 0 0 12 2C6.477 2 2 6.477 2 12s4.477 10 10 10s10-4.477 10-10"
+							color="currentColor" /></svg>
+				</div>
+				<div class="space-y-4">
+					<h3>Learn more. Start with you.</h3>
+					<p>Change starts with every person.</p>
+					<p>
+						Every better decision, every dollar saved is a dollar better spent on a hospital or
+						education. Not lining some vendor's Managing Partner or Sales Director peddling
+						expensive white elephant project.
+					</p>
+				</div>
+			</li>
+			<li
+				class="flex flex-wrap items-center justify-center space-y-8 rounded-2xl bg-base-300 p-4 lg:flex-nowrap lg:space-x-8 lg:space-y-0 lg:p-8">
+				<div>
+					<svg
+						id="hugeicons:elearning-exchange"
+						xmlns="http://www.w3.org/2000/svg"
+						width="2em"
+						height="2em"
+						class="h-24 w-24"
+						viewBox="0 0 24 24"
+						><g
+							fill="none"
+							stroke="currentColor"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="1.5"
+							color="currentColor"
 							><path
-								fill="none"
-								stroke="currentColor"
-								stroke-linecap="round"
-								stroke-linejoin="round"
-								stroke-width="1.5"
-								d="M20.01 2v3.132a.314.314 0 0 1-.556.201A9.98 9.98 0 0 0 12 2C6.477 2 2 6.477 2 12s4.477 10 10 10s10-4.477 10-10"
-								color="currentColor" /></svg>
-					</div>
-					<div class="space-y-4">
-						<h3>Learn more. Start with you.</h3>
-						<p>Change starts with every person.</p>
-						<p>
-							Every better decision, every dollar saved is a dollar better spent on a hospital or
-							education. Not lining some vendor's Managing Partner or Sales Director peddling
-							expensive white elephant project.
-						</p>
-					</div>
-				</li>
-				<li
-					class="flex flex-wrap items-center justify-center space-y-8 rounded-2xl bg-base-300 p-4 lg:flex-nowrap lg:space-x-8 lg:space-y-0 lg:p-8">
-					<div>
-						<svg
-							id="hugeicons:elearning-exchange"
-							xmlns="http://www.w3.org/2000/svg"
-							width="2em"
-							height="2em"
-							class="h-24 w-24"
-							viewBox="0 0 24 24"
-							><g
-								fill="none"
-								stroke="currentColor"
-								stroke-linecap="round"
-								stroke-linejoin="round"
-								stroke-width="1.5"
-								color="currentColor"
-								><path
-									d="M2.459 9c1.277-4.057 5.077-7 9.566-7c5.198 0 9.472 3.947 9.975 9l-2-.407M21.541 15a10.03 10.03 0 0 1-9.566 7C6.777 22 2.503 18.053 2 13l2 .407" /><path
-									d="M9.002 13.528v1.992a.95.95 0 0 0 .432.81c.844.528 1.485.683 2.571.716c1.001.027 1.629-.13 2.563-.714a.96.96 0 0 0 .44-.82v-1.984m2.003-2.513v3.015M7.05 10.844c.362-.764 2.605-2.094 4.652-2.751a.93.93 0 0 1 .604.014c1.81.662 3.824 1.665 4.555 2.478c.381.425.008.967-.453 1.302c-.937.681-1.97 1.21-4.058 2.013a.98.98 0 0 1-.688.005c-2.14-.795-4.142-1.82-4.595-2.723a.39.39 0 0 1-.017-.338" /></g
-							></svg>
-					</div>
-					<div class="space-y-4">
-						<h3>Use my resources to upskill.</h3>
-						<p>
-							Choose how you want to learn. <a href="/learn" class="text-primary underline"
-								>Use my lists of online resources</a>
-							as a starting point. Or
-							<a href="/guides" class="text-primary underline">use my guides</a> if you just want to
-							lob more relevant questions at your vendors or project teams.
-						</p>
-					</div>
-				</li>
-				<li
-					class="flex flex-wrap items-center justify-center space-y-8 rounded-2xl bg-base-300 p-4 lg:flex-nowrap lg:space-x-8 lg:space-y-0 lg:p-8">
-					<div>
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							width="2em"
-							height="2em"
-							class="h-24 w-24"
-							viewBox="0 0 24 24"
-							><path
-								fill="none"
-								stroke="currentColor"
-								stroke-linecap="round"
-								stroke-linejoin="round"
-								stroke-width="1.5"
-								d="M2.017 20.305c1.13 1.614 6.042 2.882 8.362-.14c2.51 1.2 6.65.828 10.02-1.052c.468-.261.912-.591 1.183-1.054c.613-1.045.628-2.495-.49-4.634c-1.865-4.655-5.218-8.74-6.572-10.383c-.278-.254-2.052-.614-3.133-.96c-.478-.147-1.367-.246-2.431 1.156c-.505.665-2.796 2.297.111 3.395c.45.115.782.326 2.836-.05c.268-.046.936 0 1.407.827l.983 1.406a.96.96 0 0 1 .17.44c.172 1.5.166 3.376 1.002 4.326c-1.291-.933-4.664-2.042-7.206 1.113M2.001 12.94a6.714 6.714 0 0 1 8.416-.419"
-								color="currentColor" /></svg>
-					</div>
-					<div class="space-y-4">
-						<h3>If things improve, keep at it!</h3>
-						<p>
-							If things still suck, shit happens. Rome wasn't built in a day. I myself still feel
-							like an imposter the more I read up, the more I hear from entrepreneurs and product
-							managers in person or podcasts. Persevere and live to fight another day against shitty
-							policies!
-						</p>
-					</div>
-				</li>
-			</ul>
-		</div>
-		<div class="flex justify-center lg:col-span-2">
+								d="M2.459 9c1.277-4.057 5.077-7 9.566-7c5.198 0 9.472 3.947 9.975 9l-2-.407M21.541 15a10.03 10.03 0 0 1-9.566 7C6.777 22 2.503 18.053 2 13l2 .407" /><path
+								d="M9.002 13.528v1.992a.95.95 0 0 0 .432.81c.844.528 1.485.683 2.571.716c1.001.027 1.629-.13 2.563-.714a.96.96 0 0 0 .44-.82v-1.984m2.003-2.513v3.015M7.05 10.844c.362-.764 2.605-2.094 4.652-2.751a.93.93 0 0 1 .604.014c1.81.662 3.824 1.665 4.555 2.478c.381.425.008.967-.453 1.302c-.937.681-1.97 1.21-4.058 2.013a.98.98 0 0 1-.688.005c-2.14-.795-4.142-1.82-4.595-2.723a.39.39 0 0 1-.017-.338" /></g
+						></svg>
+				</div>
+				<div class="space-y-4">
+					<h3>Use my resources to upskill.</h3>
+					<p>
+						Choose how you want to learn. <a href="/learn" class="text-primary underline"
+							>Use my lists of online resources</a>
+						as a starting point. Or
+						<a href="/guides" class="text-primary underline">use my guides</a> if you just want to lob
+						more relevant questions at your vendors or project teams.
+					</p>
+				</div>
+			</li>
+			<li
+				class="flex flex-wrap items-center justify-center space-y-8 rounded-2xl bg-base-300 p-4 lg:flex-nowrap lg:space-x-8 lg:space-y-0 lg:p-8">
+				<div>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="2em"
+						height="2em"
+						class="h-24 w-24"
+						viewBox="0 0 24 24"
+						><path
+							fill="none"
+							stroke="currentColor"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="1.5"
+							d="M2.017 20.305c1.13 1.614 6.042 2.882 8.362-.14c2.51 1.2 6.65.828 10.02-1.052c.468-.261.912-.591 1.183-1.054c.613-1.045.628-2.495-.49-4.634c-1.865-4.655-5.218-8.74-6.572-10.383c-.278-.254-2.052-.614-3.133-.96c-.478-.147-1.367-.246-2.431 1.156c-.505.665-2.796 2.297.111 3.395c.45.115.782.326 2.836-.05c.268-.046.936 0 1.407.827l.983 1.406a.96.96 0 0 1 .17.44c.172 1.5.166 3.376 1.002 4.326c-1.291-.933-4.664-2.042-7.206 1.113M2.001 12.94a6.714 6.714 0 0 1 8.416-.419"
+							color="currentColor" /></svg>
+				</div>
+				<div class="space-y-4">
+					<h3>If things improve, keep at it!</h3>
+					<p>
+						If things still suck, shit happens. Rome wasn't built in a day. I myself still feel like
+						an imposter the more I read up, the more I hear from entrepreneurs and product managers
+						in person or podcasts. Persevere and live to fight another day against shitty policies!
+					</p>
+				</div>
+			</li>
+		</ul>
+
+		<div class="flex justify-center">
 			<a
 				class="hide-small group relative rounded-lg px-6 py-3 text-2xl font-bold text-white lg:text-3xl"
 				href="/learn">
