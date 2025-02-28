@@ -1,28 +1,9 @@
 <script>
 	import '../app.css';
 	import logo from '$lib/assets/svg/logo.svg?dataurl';
-	import PageTransition from '$lib/Transition.svelte';
 	import TablerSquareRoundedPlusFilled from '$lib/assets/svg/TablerSquareRoundedPlusFilled.svelte';
-	import { guides } from './guides/data_guides';
-	import { info } from './learn/data_learn';
-	import TablerChevronRight from '$lib/assets/svg/TablerChevronRight.svelte';
-	import { onNavigate } from '$app/navigation';
 	import { matchUrl } from '$lib/helpers';
-	let { data } = $props();
-	let viewTransition = $state('');
-	onNavigate((navigation) => {
-		if (!document.startViewTransition) {
-			viewTransition = false;
-			return;
-		}
-
-		return new Promise((resolve) => {
-			document.startViewTransition(async () => {
-				resolve();
-				await navigation.complete;
-			});
-		});
-	});
+	let { data, children } = $props();
 </script>
 
 <nav class="navbar-view-transition navbar lg:hidden {data.url === '/' ? 'absolute z-20' : ''}">
@@ -151,7 +132,7 @@
 		</ul>
 	</div>
 	<div class="navbar-end lg:hidden">
-		<a href="/search" class="lg:me-[4.3rem]"
+		<a href="/search" class="lg:me-[4.3rem]" aria-label="search"
 			><svg
 				xmlns="http://www.w3.org/2000/svg"
 				width="2em"
@@ -169,7 +150,7 @@
 	</div>
 </nav>
 
-<slot />
+{@render children()}
 
 <footer class="footer footer-center gap-y-2 rounded bg-base-200 p-3 pt-5 text-base-content">
 	<aside>

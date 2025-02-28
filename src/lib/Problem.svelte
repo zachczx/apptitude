@@ -13,7 +13,7 @@
 
 <div class="lg:bg-base100-pattern">
 	<section
-		class="lg:x-28 mx-auto grid min-h-[70vh] max-w-screen-2xl content-center px-2 py-10 lg:grid-cols-1 lg:gap-x-20 lg:py-20"
+		class="lg:x-28 mx-auto grid min-h-[70vh] max-w-[1200px] content-center px-2 py-10 lg:grid-cols-1 lg:gap-x-20 lg:py-20"
 		data-pagefind-ignore>
 		<h2 class="text-center lg:col-span-1">People who do tech in Govt can feel disenchanted.</h2>
 		<div

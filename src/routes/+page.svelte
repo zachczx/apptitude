@@ -30,18 +30,6 @@
 					ease: 'sine.out',
 				});
 			}
-
-			gsap.from('.subheadline', {
-				autoAlpha: 0.4,
-				y: -20,
-				duration: 0.5,
-				ease: 'sine.out',
-			});
-			gsap.to('.button-shine', {
-				'--moveRight': '30rem',
-				duration: 2,
-				delay: 2,
-			});
 		});
 	});
 	// const currentBgNumber = Math.floor(Math.random() * 11);
@@ -175,7 +163,7 @@
 		</ul>
 	</div>
 	<div class="navbar-end">
-		<a href="/search" class="lg:me-[4.3rem]"
+		<a href="/search" class="lg:me-[4.3rem]" aria-label="search"
 			><svg
 				xmlns="http://www.w3.org/2000/svg"
 				width="2em"
@@ -263,22 +251,22 @@
 				poor & unnecessary projects
 			</div>
 		</div>
-		<div class="join-vertica join flex justify-center lg:join-horizontal">
+		<div class="flex flex-wrap justify-center gap-4">
 			<a
 				href="/learn"
-				class="button-shine btn join-item relative overflow-hidden border border-primary bg-lime-500 font-bold text-white hover:border hover:border-primary hover:bg-gradient-to-r hover:from-lime-500 hover:via-teal-500 hover:to-emerald-600 active:from-lime-600 active:via-teal-600 active:to-emerald-700 lg:text-2xl"
+				class="button-shine btn btn-primary relative overflow-hidden rounded-full border border-primary lg:px-8 lg:text-2xl"
 				>Learn Basics <svg
 					xmlns="http://www.w3.org/2000/svg"
 					width="1.5em"
 					height="1.5em"
+					stroke="currentColor"
 					viewBox="0 0 24 24"
 					><path
-						class="fill-white stroke-white"
 						d="m13.692 17.308l-.707-.72l4.088-4.088H5v-1h12.073l-4.088-4.088l.707-.72L19 12z" /></svg
 				></a>
 			<a
 				href="/guides"
-				class="btn join-item border border-primary bg-transparent from-red-500 via-orange-500 to-pink-500 font-bold text-primary hover:border hover:border-primary hover:bg-gradient-to-r hover:from-teal-500 hover:to-lime-500 hover:text-white active:from-red-700 active:via-orange-700 active:to-pink-700 lg:text-2xl"
+				class="btn btn-outline btn-primary rounded-full font-bold text-primary lg:px-8 lg:text-2xl"
 				>Skip to Guides</a>
 		</div>
 	</div>
@@ -300,11 +288,7 @@
 			opacity: 0;
 		}
 	}*/
-	@media (max-width: 1024px) {
-		.hide-small {
-			display: none;
-		}
-	}
+
 	.button-shine::before {
 		content: '';
 		position: absolute;
