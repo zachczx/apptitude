@@ -759,6 +759,7 @@ export const info: LearnData[] = [
 				'https://www.youtube.com/embed/0LNQxT9LvM0?si=KHzWpcisYehJbdHF',
 				'https://www.youtube.com/embed/yc1Uwhfxacs',
 				'https://www.youtube.com/embed/UA_gYKaXHS0',
+				'https://www.youtube.com/embed/egdYKLBswgk',
 				'https://www.youtube.com/embed/aOGMymXPgrk',
 				'https://www.youtube.com/embed/ZoKLofsp8u0',
 				'https://www.youtube.com/embed/6DTK9yDP6p0?si=niskiu1FnnDNhiOQ',
@@ -907,6 +908,7 @@ export const info: LearnData[] = [
 				'https://www.youtube.com/embed/Hx02SaL_IH0',
 				'https://www.youtube.com/embed/L22lDu3QX2c',
 				'https://www.youtube.com/embed/hlI6xGfBjkQ',
+				'https://www.youtube.com/embed/mK3aS4BiE2s',
 				'https://www.youtube.com/embed/C-UeBdtopdA',
 				'https://www.youtube.com/embed/UWwNIMHFdW4',
 				'https://www.youtube.com/embed/DBHBmeNhYrY',
@@ -1573,6 +1575,7 @@ export const info: LearnData[] = [
 				'https://youtube.com/embed/Dbog8Yw3kEM',
 				'https://youtube.com/embed/yTAMrHVG1ew?si=P-UQWIr2LRn6O-H3&t=165',
 				'https://youtube.com/embed/h1c_jmk97Ss',
+				'https://youtube.com/embed/hFTqQ4boR-s',
 			],
 			links: [
 				{
@@ -1739,6 +1742,7 @@ export const info: LearnData[] = [
 				'https://youtube.com/embed/AIs9mQaerZE',
 				'https://youtube.com/embed/Z8KZCYbjEng',
 				'https://youtube.com/embed/dGAgxozNWFE',
+				'https://youtube.com/embed/1iAeSCwh92c',
 			],
 			links: [
 				{
