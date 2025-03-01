@@ -248,7 +248,7 @@
 			</div>
 			<div class="subheadline py-1 ps-3 text-center">
 				<h2>Drop</h2>
-				poor & unnecessary projects
+				lousy & unnecessary projects
 			</div>
 		</div>
 		<div class="flex flex-wrap justify-center gap-4">
