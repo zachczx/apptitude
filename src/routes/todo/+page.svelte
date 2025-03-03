@@ -80,7 +80,7 @@
 <div class="grid grid-cols-1 content-start justify-items-center gap-y-3">
 	<div class="mb-10 text-center lg:mb-20">
 		<h1
-			class="inline-block bg-gradient-to-r from-emerald-200 via-lime-200 to-teal-300 bg-clip-text py-3 text-transparent">
+			class="inline-block bg-linear-to-r from-emerald-200 via-lime-200 to-teal-300 bg-clip-text py-3 text-transparent">
 			To-Dos
 		</h1>
 		<div><i>Track what you gotta do.</i></div>

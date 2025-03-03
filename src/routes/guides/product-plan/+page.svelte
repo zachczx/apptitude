@@ -75,14 +75,14 @@
 		</div>
 	</div>
 	<h1
-		class="inline-block bg-gradient-to-r from-emerald-200 via-lime-200 to-teal-300 bg-clip-text pb-8 text-transparent">
+		class="inline-block bg-linear-to-r from-emerald-200 via-lime-200 to-teal-300 bg-clip-text pb-8 text-4xl font-bold text-transparent lg:text-7xl">
 		Product Plan 101
 	</h1>
 
 	<article
-		class="prose-section:mt-20 space-y-20 pb-10 prose-h2:mb-6 prose-h3:mb-6 prose-h3:mt-12 prose-h5:mb-4 prose-p:mb-4">
+		class="prose-section:mt-20 prose-h2:mb-6 prose-h3:mb-6 prose-h3:mt-12 prose-h5:mb-4 prose-p:mb-4 space-y-20 pb-10">
 		<section id="what-makes-a-product-plan" class="contents-observer">
-			<h2>1. What makes a product plan?</h2>
+			<h2 class="text-2xl font-bold lg:text-4xl">1. What makes a product plan?</h2>
 
 			<h3 class="py-4">1.1. Key Ingredients</h3>
 			<p>A good product plan consists of 3 key ingredients:</p>
@@ -111,7 +111,7 @@
 		</section>
 
 		<section id="the-problem" class="contents-observer">
-			<h2>2. The Problem</h2>
+			<h2 class="text-2xl font-bold lg:text-4xl">2. The Problem</h2>
 
 			<div class="space-y-4 py-4">
 				<p>You'll need to answer these questions:</p>
@@ -126,15 +126,15 @@
 				{#snippet example()}
 					<ul class="space-y-4">
 						<li>
-							<CarbonCheckmarkFilled class="mb-1 me-2 inline text-success" />80% of license
+							<CarbonCheckmarkFilled class="text-success me-2 mb-1 inline" />80% of license
 							applications on XXX’s system A take >6 mths to resolve, against target of 3 mths.
 						</li>
 						<li>
-							<CarbonCheckmarkFilled class="mb-1 me-2 inline text-success" />This results in revenue
+							<CarbonCheckmarkFilled class="text-success me-2 mb-1 inline" />This results in revenue
 							loss of $X per year for these businesses.
 						</li>
 						<li>
-							<CarbonCheckmarkFilled class="mb-1 me-2 inline text-success" />With N license
+							<CarbonCheckmarkFilled class="text-success me-2 mb-1 inline" />With N license
 							approvals a year, the overall impact is significant.
 						</li>
 					</ul>
@@ -185,11 +185,11 @@
 					<GuideExample>
 						{#snippet example()}
 							<div>
-								<CarbonCloseFilled class="mb-1 me-2 inline text-warning" />Unclear and outdated
+								<CarbonCloseFilled class="text-warning me-2 mb-1 inline" />Unclear and outdated
 								documentation were flagged out as areas of risk during the audit reviews.
 							</div>
 							<div>
-								<CarbonCheckmarkFilled class="mb-1 me-2 inline text-success" /><span
+								<CarbonCheckmarkFilled class="text-success me-2 mb-1 inline" /><span
 									class="text-primary">XX cases</span>
 								of non-compliance to prevailing policies
 								<span class="text-primary">cost us $XM</span> each year because these users relied on
@@ -203,15 +203,15 @@
 					<GuideExample>
 						{#snippet example()}
 							<div>
-								<CarbonCheckmarkFilled class="mb-1 me-2 inline text-success" />Approvals continue to
+								<CarbonCheckmarkFilled class="text-success me-2 mb-1 inline" />Approvals continue to
 								take 6 mths, or more with X new policy
 							</div>
 							<div>
-								<CarbonCheckmarkFilled class="mb-1 me-2 inline text-success" />System B takes 4 mths
+								<CarbonCheckmarkFilled class="text-success me-2 mb-1 inline" />System B takes 4 mths
 								per approval
 							</div>
 							<div>
-								<CarbonCheckmarkFilled class="mb-1 me-2 inline text-success" />F&B licenses take 3
+								<CarbonCheckmarkFilled class="text-success me-2 mb-1 inline" />F&B licenses take 3
 								mths per approval
 							</div>
 						{/snippet}
@@ -233,7 +233,7 @@
 					<GuideExample>
 						{#snippet example()}
 							<div>
-								<CarbonCheckmarkFilled class="mb-1 me-2 inline text-success" /><span
+								<CarbonCheckmarkFilled class="text-success me-2 mb-1 inline" /><span
 									class="text-primary">[Name of user persona]</span>
 								is a
 								<span class="text-primary">[type of user]</span>
@@ -243,7 +243,7 @@
 								<span class="text-primary">[benefits of user experience]</span>.
 							</div>
 							<div>
-								<CarbonCheckmarkFilled class="mb-1 me-2 inline text-success" />Anne is a staff
+								<CarbonCheckmarkFilled class="text-success me-2 mb-1 inline" />Anne is a staff
 								officer who writes AORs for overseas trips. She needs an efficient way to double
 								check her submission against all applicable finance guidelines. She presently
 								searches, downloads, and toggles among more than 5 separate finance policy documents
@@ -268,7 +268,7 @@
 			<GuideExample>
 				{#snippet example()}
 					<div>
-						<CarbonCheckmarkFilled class="mb-1 me-2 inline text-success" />Revenue loss of $XXM per
+						<CarbonCheckmarkFilled class="text-success me-2 mb-1 inline" />Revenue loss of $XXM per
 						year for X no. of businesses
 					</div>
 				{/snippet}
@@ -276,10 +276,10 @@
 			<GuideExample>
 				{#snippet example()}
 					<div>
-						<CarbonCheckmarkFilled class="mb-1 me-2 inline text-success" />~3 man months are spent
+						<CarbonCheckmarkFilled class="text-success me-2 mb-1 inline" />~3 man months are spent
 						by 15 officers monthly collating, cleaning, emailing, and drafting MS Word reports on
 						service transactions, which are done manually on Excel, Outlook, Word.
-						<CarbonCheckmarkFilled class="mb-1 me-2 inline text-success" />Symptoms of poor service
+						<CarbonCheckmarkFilled class="text-success me-2 mb-1 inline" />Symptoms of poor service
 						delivery is only identified and acted upon up 2 weeks later, because data and business
 						insights are manually collated and generated.
 					</div>
@@ -295,7 +295,7 @@
 					<GuideExample>
 						{#snippet example()}
 							<div>
-								<CarbonCloseFilled class="mb-1 me-2 inline text-warning" />Users struggle to find
+								<CarbonCloseFilled class="text-warning me-2 mb-1 inline" />Users struggle to find
 								the correct employee HR service they need in XXX employee portal, which also doubly
 								frustrates them when it randomly crashes while they're filling in an application.
 								Employee productivity drops and this also creates workload for manual application
@@ -328,7 +328,7 @@
 						<GuideExample>
 							{#snippet example()}
 								<div>
-									<CarbonCloseFilled class="mb-1 me-2 inline text-warning" />XXX system will reach
+									<CarbonCloseFilled class="text-warning me-2 mb-1 inline" />XXX system will reach
 									end of life in 2025, and we need $XXXM to do a tech refresh, as otherwise citizens
 									would no longer be able to transact digitally for their XX applications.
 									<div
@@ -343,7 +343,7 @@
 						<GuideExample>
 							{#snippet example()}
 								<div>
-									<CarbonCloseFilled class="mb-1 me-2 inline text-warning" />Under the XXX system v2
+									<CarbonCloseFilled class="text-warning me-2 mb-1 inline" />Under the XXX system v2
 									milestone, we could not complete development to improve searchability and user
 									centricity. Given the AI boom, it is timely to revisit development for those
 									aspects, in the form of building an AI chatbot that can improve search and user
@@ -372,7 +372,7 @@
 			<GuideExample>
 				{#snippet example()}
 					<div>
-						<CarbonCloseFilled class="mb-1 me-2 inline text-warning" />We propose to support local
+						<CarbonCloseFilled class="text-warning me-2 mb-1 inline" />We propose to support local
 						small and medium enterprises to do well and expand both locally and into Southeast Asia.
 						<div class="tooltip" data-tip="What is preventing local businesses from scaling?">
 							<button class="btn btn-outline btn-warning btn-xs ms-1">Why?</button>
@@ -393,7 +393,7 @@
 			<GuideExample>
 				{#snippet example()}
 					<div>
-						<CarbonCloseFilled class="mb-1 me-2 inline text-warning" />We do not have a system that
+						<CarbonCloseFilled class="text-warning me-2 mb-1 inline" />We do not have a system that
 						can collect comprehensive information that businesses give us in the process of license
 						applications.
 						<div class="tooltip" data-tip="">
@@ -405,7 +405,7 @@
 			<GuideExample>
 				{#snippet example()}
 					<div>
-						<CarbonCloseFilled class="mb-1 me-2 inline text-warning" />Employees need to go through
+						<CarbonCloseFilled class="text-warning me-2 mb-1 inline" />Employees need to go through
 						long documents to find relevant clauses, so they need an AI chatbot that can fetch,
 						communicate, and process rules for them, and we can improve the search experience in XXX
 						system today.
@@ -420,7 +420,7 @@
 		</section>
 
 		<section id="measurable-outcomes-targets" class="contents-observer">
-			<h2>3. Measurable Outcomes & Targets</h2>
+			<h2 class="text-2xl font-bold lg:text-4xl">3. Measurable Outcomes & Targets</h2>
 			<p>
 				The right outcome metrics tell us if we are moving in the right direction, to solve the
 				identified problem.
@@ -512,7 +512,7 @@
 			<GuideExample>
 				{#snippet example()}
 					<div>
-						<CarbonCheckmarkFilled class="mb-1 me-2 inline text-success" /><span
+						<CarbonCheckmarkFilled class="text-success me-2 mb-1 inline" /><span
 							class="text-success"
 							>% of applications where time from first submission to communication of outcome is ≤ 3
 							months</span>
@@ -524,13 +524,13 @@
 			<GuideExample>
 				{#snippet example()}
 					<div>
-						<CarbonCloseFilled class="mb-1 me-2 inline text-warning" />% of successful applications
+						<CarbonCloseFilled class="text-warning me-2 mb-1 inline" />% of successful applications
 						<div class="tooltip" data-tip="Irrelevant to problem of processing time.">
 							<button class="btn btn-outline btn-warning btn-xs ms-1">Why?</button>
 						</div>
 					</div>
 					<div>
-						<CarbonCheckmarkFilled class="mb-1 me-2 inline text-success" />...
+						<CarbonCheckmarkFilled class="text-success me-2 mb-1 inline" />...
 						<span class="text-success">time from first submission to communication of outcome</span
 						>...
 					</div>
@@ -542,7 +542,7 @@
 			<GuideExample>
 				{#snippet example()}
 					<div>
-						<CarbonCloseFilled class="mb-1 me-2 inline text-warning" />% of applications resolved
+						<CarbonCloseFilled class="text-warning me-2 mb-1 inline" />% of applications resolved
 						within 3 months, calculated based on data extracted from system by vendor annually
 						<div
 							class="tooltip"
@@ -552,7 +552,7 @@
 						</div>
 					</div>
 					<div>
-						<CarbonCheckmarkFilled class="mb-1 me-2 inline text-success" />... to communication of
+						<CarbonCheckmarkFilled class="text-success me-2 mb-1 inline" />... to communication of
 						outcome is
 						<span class="text-success">≤ 3 months</span>
 					</div>
@@ -568,7 +568,7 @@
 			<GuideExample>
 				{#snippet example()}
 					<div>
-						<CarbonCloseFilled class="mb-1 me-2 inline text-warning" />% of applicants which report
+						<CarbonCloseFilled class="text-warning me-2 mb-1 inline" />% of applicants which report
 						having their applications resolved within 3 months
 						<div
 							class="tooltip"
@@ -578,7 +578,7 @@
 						</div>
 					</div>
 					<div>
-						<CarbonCheckmarkFilled class="mb-1 me-2 inline text-success" />% of
+						<CarbonCheckmarkFilled class="text-success me-2 mb-1 inline" />% of
 						<span class="text-success">applications</span>...
 					</div>
 				{/snippet}
@@ -593,7 +593,7 @@
 			<GuideExample>
 				{#snippet example()}
 					<div>
-						<CarbonCloseFilled class="mb-1 me-2 inline text-warning" />% of applications resolved
+						<CarbonCloseFilled class="text-warning me-2 mb-1 inline" />% of applications resolved
 						within 3 months
 						<div
 							class="tooltip"
@@ -604,7 +604,7 @@
 						</div>
 					</div>
 					<div>
-						<CarbonCheckmarkFilled class="mb-1 me-2 inline text-success" />...
+						<CarbonCheckmarkFilled class="text-success me-2 mb-1 inline" />...
 						<span class="text-success">time from first submission to communication of outcome</span
 						>...
 					</div>
@@ -614,7 +614,7 @@
 			<GuideExample>
 				{#snippet example()}
 					<div>
-						<CarbonCloseFilled class="mb-1 me-2 inline text-warning" />Objective: Ensure the
+						<CarbonCloseFilled class="text-warning me-2 mb-1 inline" />Objective: Ensure the
 						currency of guidelines documents using new administration feature in XXX system
 						<div
 							class="tooltip"
@@ -623,7 +623,7 @@
 						</div>
 					</div>
 					<div>
-						<CarbonCloseFilled class="mb-1 me-2 inline text-warning" />Key Result: No outdated
+						<CarbonCloseFilled class="text-warning me-2 mb-1 inline" />Key Result: No outdated
 						content on XXX system.
 						<div
 							class="tooltip"
@@ -632,11 +632,11 @@
 						</div>
 					</div>
 					<div>
-						<CarbonCheckmarkFilled class="mb-1 me-2 inline text-success" />Objective: Search results
+						<CarbonCheckmarkFilled class="text-success me-2 mb-1 inline" />Objective: Search results
 						contain only content from the latest version of guidelines documents.
 					</div>
 					<div>
-						<CarbonCheckmarkFilled class="mb-1 me-2 inline text-success" />Key Result: Search
+						<CarbonCheckmarkFilled class="text-success me-2 mb-1 inline" />Key Result: Search
 						microservice will update index with content from outdated guidelines documents within 1
 						min of a new version upload.
 					</div>
@@ -646,14 +646,14 @@
 			<GuideExample>
 				{#snippet example()}
 					<div>
-						<CarbonCloseFilled class="mb-1 me-2 inline text-warning" />Objective: Improve
+						<CarbonCloseFilled class="text-warning me-2 mb-1 inline" />Objective: Improve
 						information retrieval
 						<div class="tooltip" data-tip="What do we mean by improve information retrieval?">
 							<button class="btn btn-outline btn-warning btn-xs ms-1">Why?</button>
 						</div>
 					</div>
 					<div>
-						<CarbonCheckmarkFilled class="mb-1 me-2 inline text-success" />Objective: Users get an
+						<CarbonCheckmarkFilled class="text-success me-2 mb-1 inline" />Objective: Users get an
 						accurate and concise explanation of questions on employee administrative policies.
 					</div>
 				{/snippet}
@@ -688,7 +688,7 @@
 			<GuideExample>
 				{#snippet example()}
 					<div>
-						<CarbonCloseFilled class="mb-1 me-2 inline text-warning" />Key Result: Less than 1 min
+						<CarbonCloseFilled class="text-warning me-2 mb-1 inline" />Key Result: Less than 1 min
 						to fetch requested information through an AI search engine
 						<div
 							class="tooltip"
@@ -697,7 +697,7 @@
 						</div>
 					</div>
 					<div>
-						<CarbonCheckmarkFilled class="mb-1 me-2 inline text-success" />Key Result: User's
+						<CarbonCheckmarkFilled class="text-success me-2 mb-1 inline" />Key Result: User's
 						question on employee admin guidelines is answered within 1 min of arriving on landing
 						page
 					</div>
@@ -712,7 +712,7 @@
 			<GuideExample>
 				{#snippet example()}
 					<div>
-						<CarbonCheckmarkFilled class="mb-1 me-2 inline text-success" />Cost per impact = Annual
+						<CarbonCheckmarkFilled class="text-success me-2 mb-1 inline" />Cost per impact = Annual
 						Total Cost / Target units of impact achieved in the relevant year
 					</div>
 				{/snippet}
@@ -769,7 +769,7 @@
 			</GuideExample>
 		</section>
 		<section id="risks" class="contents-observer">
-			<h2>4. Risks</h2>
+			<h2 class="text-2xl font-bold lg:text-4xl">4. Risks</h2>
 
 			<h3>4.1. Why mitigate risks?</h3>
 
@@ -925,7 +925,7 @@
 			</GuideExample>
 		</section>
 		<section id="product-plan-template" class="contents-observer">
-			<h2>5. Product Plan Template</h2>
+			<h2 class="text-2xl font-bold lg:text-4xl">5. Product Plan Template</h2>
 
 			<h3>5.1. Variant 1 (Amazon)</h3>
 			<ul class="ms-8 list-disc space-y-4">
@@ -960,7 +960,7 @@
 			</ul>
 		</section>
 		<section id="credits" class="contents-observer">
-			<h2>6. Credits</h2>
+			<h2 class="text-2xl font-bold lg:text-4xl">6. Credits</h2>
 			<ul class="ms-8 list-disc space-y-4">
 				<li>Smart Nation Group's Product Plan Framework, Govind Ganesan</li>
 				<li>BCG's RISE Programme materials</li>

@@ -19,16 +19,16 @@
 	<section
 		class="mx-auto grid min-h-[70vh] max-w-[1200px] content-center gap-y-16 px-4 py-10 lg:grid-cols-1 lg:gap-x-20 lg:gap-y-0 lg:py-28"
 		data-pagefind-ignore>
-		<h2 class="text-center text-4xl lg:col-span-1 lg:pb-24 lg:text-8xl">
+		<h1 class="text-center text-4xl font-bold lg:col-span-1 lg:pb-24 lg:text-8xl">
 			Tech can be frustrating.
-		</h2>
+		</h1>
 		<div
 			class="flex max-h-[40rem] grid-cols-2 flex-wrap items-center justify-center gap-x-12 gap-y-4 lg:flex-nowrap">
 			<div class="min-w-72">
 				<enhanced:img src={fireBurning} alt="" class="rounded-3xl" />
 			</div>
 			<div class="grid gap-4">
-				<h3 class="text-2xl lg:text-4xl">Poor Outcomes</h3>
+				<h3 class="text-2xl font-bold lg:text-4xl">Poor Outcomes</h3>
 				<p class="text-base">
 					Don't we always come across examples where we think the project's pointless but we're
 					doing it anyway because a PS asked for it. Or a vendor is charging us an arm and a leg,
@@ -43,7 +43,7 @@
 				<enhanced:img src={pandaExhausted} alt="" class="rounded-3xl" />
 			</div>
 			<div class="grid gap-4">
-				<h3 class="text-2xl lg:text-4xl">Help ma, I can't keep up!</h3>
+				<h3 class="text-2xl font-bold lg:text-4xl">Help ma, I can't keep up!</h3>
 				<p class="text-base">
 					Tech moves so dizzying fast it's daunting to know where to start or keep up. So easy to
 					get imposter syndrome.
@@ -57,7 +57,7 @@
 				<enhanced:img src={pandaConfused} alt="" class="rounded-3xl" />
 			</div>
 			<div class="grid gap-4">
-				<h3 class="text-2xl lg:text-4xl">Individuals</h3>
+				<h3 class="text-2xl font-bold lg:text-4xl">Individuals</h3>
 				<p class="text-base">
 					Haven't we worked with people who know so little about tech or don't even know they're
 					clueless? Yet we must consult them or get their approval just because it's in their job
@@ -72,14 +72,15 @@
 	</section>
 </div>
 
-<section class="min-h-dvh bg-base-300 px-4 py-8 lg:py-28" data-pagefind-ignore>
-	<div class="mx-auto grid w-full max-w-screen-2xl gap-8 lg:grid-cols-3">
+<section class="bg-base-300 min-h-dvh px-4 py-8 lg:py-28" data-pagefind-ignore>
+	<div class="mx-auto grid w-full max-w-(--breakpoint-2xl) gap-8 lg:grid-cols-3">
 		<div class="flex items-center justify-center text-center lg:col-span-3 lg:min-h-36">
-			<h2 class="text-center text-4xl lg:col-span-1 lg:pb-24 lg:text-8xl">Common complaints</h2>
+			<h2 class="text-center text-4xl font-bold lg:col-span-1 lg:pb-24 lg:text-8xl">
+				Common Complaints
+			</h2>
 		</div>
 		<div>
-			<div
-				class="grid content-center justify-items-center space-y-4 rounded-2xl text-center lg:p-8">
+			<div class="grid content-center justify-items-center space-y-4 rounded-2xl lg:p-8">
 				<div class="avatar">
 					<div class="w-56 rounded-full">
 						<enhanced:img src={pandaAnnoyed} alt="" />
@@ -96,8 +97,7 @@
 			</div>
 		</div>
 		<div>
-			<div
-				class="grid content-center justify-items-center space-y-4 rounded-2xl text-center lg:p-8">
+			<div class="grid content-center justify-items-center space-y-4 rounded-2xl lg:p-8">
 				<div class="avatar">
 					<div class="w-56 rounded-full">
 						<enhanced:img src={pandaSuperhero} alt="" />
@@ -115,8 +115,7 @@
 			</div>
 		</div>
 		<div>
-			<div
-				class="grid content-center justify-items-center space-y-4 rounded-2xl text-center lg:p-8">
+			<div class="grid content-center justify-items-center space-y-4 rounded-2xl lg:p-8">
 				<div class="avatar">
 					<div class="w-56 rounded-full">
 						<enhanced:img src={unoptimised1} alt="" />
@@ -132,11 +131,10 @@
 			</div>
 		</div>
 		<div class="flex min-h-36 items-center justify-center text-center lg:col-span-3">
-			<h2>Neither do these important people.</h2>
+			<h2 class=" text-4xl font-bold">Neither do these important people.</h2>
 		</div>
 		<div>
-			<div
-				class="grid content-center justify-items-center space-y-4 rounded-2xl text-center lg:p-8">
+			<div class="grid content-center justify-items-center space-y-4 rounded-2xl lg:p-8">
 				<div class="avatar">
 					<div class="w-56 rounded-full">
 						<enhanced:img src={pandaBoss} alt="" />
@@ -146,16 +144,17 @@
 					<h3 class="text-2xl lg:text-4xl">Middle Managers</h3>
 					<p>
 						You often get a sinking feeling, but you don't know how to express your doubts when the
-						project lead says "everything's alright". You can't answer to your bosses when they ask
-						you why something takes so long or performs so bad. Shit usually hits the fan anyway and
-						you're left holding the can.
+						project lead says "everything's alright".
+					</p>
+					<p>
+						You can't answer your bosses when they ask you why something takes so long or performs
+						so bad. Shit usually hits the fan anyway and you're left holding the can.
 					</p>
 				</div>
 			</div>
 		</div>
 		<div>
-			<div
-				class="grid content-center justify-items-center space-y-4 rounded-2xl text-center lg:p-8">
+			<div class="grid content-center justify-items-center space-y-4 rounded-2xl lg:p-8">
 				<div class="avatar">
 					<div class="w-56 rounded-full">
 						<enhanced:img src={pandaSeniorMgmt} alt="" />
@@ -166,15 +165,14 @@
 					<p>
 						You feel trapped in fait accompli situations. Staffers don't give you the possible
 						options, trade-offs, and risks. Worse, you can't correct them because you don't know
-						what you're missing or what's applicable to the initiative on hand. Why does every
-						change take months more than humanly believable.
+						what you're missing or what's applicable to the initiative on hand.
 					</p>
+					<p>Why does every change take so many months?</p>
 				</div>
 			</div>
 		</div>
 		<div>
-			<div
-				class="grid content-center justify-items-center space-y-4 rounded-2xl text-center lg:p-8">
+			<div class="grid content-center justify-items-center space-y-4 rounded-2xl lg:p-8">
 				<div class="avatar">
 					<div class="w-56 rounded-full">
 						<enhanced:img src={pandaAnnoyedAlt} alt="" />
@@ -182,7 +180,7 @@
 				</div>
 				<div class="space-y-4">
 					<h3 class="text-2xl lg:text-4xl">Citizens</h3>
-					<p>You wonder why Govt products suck. Surely no one's that dumb, right?</p>
+					<p>Why do tech products suck? Surely no one's that dumb, right?</p>
 				</div>
 			</div>
 		</div>
@@ -191,15 +189,15 @@
 
 <div class="lg:bg-base100-pattern-alt">
 	<section
-		class="mx-auto grid max-w-screen-2xl content-center justify-items-center gap-x-8 gap-y-8 px-2 py-10 lg:gap-y-20 lg:py-28"
+		class="mx-auto grid max-w-(--breakpoint-2xl) content-center justify-items-center gap-x-8 gap-y-8 px-2 py-10 lg:gap-y-20 lg:py-28"
 		data-pagefind-ignore>
-		<h2 class="text-center text-4xl lg:col-span-1 lg:pb-24 lg:text-8xl">
-			How Apptitude could help you.
+		<h2 class="text-center text-4xl font-bold lg:col-span-1 lg:pb-24 lg:text-8xl">
+			How Apptitude could help you
 		</h2>
 
 		<ul class="grid content-center gap-8 lg:grid-cols-3">
-			<li class="grid content-center gap-4 rounded-2xl bg-base-300 p-4 lg:p-8">
-				<h3 class="text-2xl lg:text-4xl">Learn more</h3>
+			<li class="bg-base-300 grid content-center gap-4 rounded-2xl p-4 lg:p-8">
+				<h3 class="text-2xl font-bold lg:text-4xl">Learn More</h3>
 				<p>Change starts with every person.</p>
 				<p>
 					Every better decision, every dollar saved is a dollar better spent on a hospital or
@@ -207,8 +205,8 @@
 					white elephant project.
 				</p>
 			</li>
-			<li class="grid content-center gap-4 rounded-2xl bg-base-300 p-4 lg:p-8">
-				<h3 class="text-2xl lg:text-4xl">Upskill</h3>
+			<li class="bg-base-300 grid content-center gap-4 rounded-2xl p-4 lg:p-8">
+				<h3 class="text-2xl font-bold lg:text-4xl">Upskill</h3>
 				<p>
 					Choose how you want to learn. <a href="/learn" class="text-primary underline"
 						>Use my lists of online resources</a>
@@ -217,8 +215,8 @@
 					more relevant questions at your vendors or project teams.
 				</p>
 			</li>
-			<li class="grid content-center gap-4 rounded-2xl bg-base-300 p-4 lg:p-8">
-				<h3 class="text-2xl lg:text-4xl">Keep at it!</h3>
+			<li class="bg-base-300 grid content-center gap-4 rounded-2xl p-4 lg:p-8">
+				<h3 class="text-2xl font-bold lg:text-4xl">Keep at it!</h3>
 				<p>
 					If things still suck, shit happens. Rome wasn't built in a day. I myself still feel like
 					an imposter the more I read up, the more I hear from entrepreneurs and product managers in

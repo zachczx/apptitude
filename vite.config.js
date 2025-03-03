@@ -2,7 +2,8 @@ import { sveltekit } from '@sveltejs/kit/vite';
 import { enhancedImages } from '@sveltejs/enhanced-img';
 import { defineConfig } from 'vite';
 import svg from '@poppanator/sveltekit-svg';
-import pagefind from 'vite-plugin-pagefind';
+import { pagefind } from 'vite-plugin-pagefind';
+import tailwindcss from '@tailwindcss/vite';
 
 /** @type {import('vite').UserConfig} */
 export default defineConfig({
@@ -10,6 +11,7 @@ export default defineConfig({
 		pagefind(),
 		enhancedImages(),
 		sveltekit(),
+		tailwindcss(),
 		svg({
 			includePaths: ['./static/', './assets/svg/'],
 			svgoOptions: {

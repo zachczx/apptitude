@@ -47,7 +47,7 @@
 <Breadcrumbs textCurrent={'About Apptitude'} />
 <div class="mx-2 mb-10 text-center lg:mx-20 lg:mb-20">
 	<h1
-		class="inline-block bg-gradient-to-r from-emerald-200 via-lime-200 to-teal-300 bg-clip-text py-3 text-center text-transparent">
+		class="inline-block bg-linear-to-r from-emerald-200 via-lime-200 to-teal-300 bg-clip-text py-3 text-center text-4xl font-bold text-transparent lg:text-7xl">
 		About
 	</h1>
 	<div>
@@ -58,7 +58,7 @@
 <div
 	class="mb-7 grid grid-cols-1 justify-items-center gap-x-8 gap-y-8 px-3 lg:grid-cols-12 lg:px-20">
 	<div class="box space-y-5 self-center lg:col-span-8">
-		<h2 class="headline border-b-2 border-base-content pb-2 lg:text-5xl">
+		<h2 class="headline border-base-content border-b-2 pb-2 font-bold lg:text-5xl">
 			<span class="headline bg-base-100">What's Apptitude?</span>
 		</h2>
 		<p class="lg:text-xl">
@@ -72,7 +72,7 @@
 			otherwise it's always safer to defer to people in high positions of power.
 		</p>
 		<div class="relative">
-			<div class="absolute inset-x-3/4 -z-10 jumbo:mt-20">
+			<div class="jumbo:mt-20 absolute inset-x-3/4 -z-10">
 				<div class="set-b footprint rotate-[180deg]"></div>
 				<div class="set-b footprint translate-x-16 rotate-[160deg]"></div>
 				<div class="set-b footprint translate-x-2 rotate-[170deg]"></div>
@@ -111,7 +111,7 @@
 		</figure>
 	</div>
 	<div class="box self-center py-3 lg:col-span-8">
-		<h2 class="headline border-b-2 border-base-content pb-2 lg:text-5xl">
+		<h2 class="headline border-base-content border-b-2 pb-2 font-bold lg:text-5xl">
 			<span class="bg-base-100">How do you know there's a problem?</span>
 		</h2>
 		<p class="bg-base-100 pt-5 lg:text-xl">
@@ -134,7 +134,7 @@
 			often people who make assessments don't know what the issue is and what's standard out there.
 		</p>
 		<div class="relative">
-			<div class="absolute inset-x-1/4 -z-10 jumbo:mt-20">
+			<div class="jumbo:mt-20 absolute inset-x-1/4 -z-10">
 				<div class="set-a footprint rotate-[180deg]"></div>
 				<div class="set-a footprint -translate-x-16 rotate-[200deg]"></div>
 				<div class="set-a footprint -translate-x-2 rotate-[190deg]"></div>
@@ -150,24 +150,24 @@
 </div>
 <div class="mb-7 grid grid-cols-1 justify-items-center gap-x-8 px-3 lg:grid-cols-12 lg:px-20">
 	<div class="box self-center lg:col-span-8">
-		<h2 class="headline border-b-2 border-base-content pb-2 lg:text-5xl">
+		<h2 class="headline border-base-content border-b-2 pb-2 font-bold lg:text-5xl">
 			<span class=" bg-base-100">What's a bad product to you?</span>
 		</h2>
-		<p class="z-10 bg-base-100 pt-5 lg:text-xl">
+		<p class="bg-base-100 z-10 pt-5 lg:text-xl">
 			To me, a bad product doesn't solve a real problem. It doesn't solve a meaningful problem. It
 			might not have a unique selling point.
 		</p>
-		<p class="z-10 bg-base-100 pt-5 lg:text-xl">
+		<p class="bg-base-100 z-10 pt-5 lg:text-xl">
 			It might offer a bad user experience, is hardly usable, is inaccessible to segments of the
 			population.
 		</p>
-		<p class="z-10 bg-base-100 pt-5 lg:text-xl">
+		<p class="bg-base-100 z-10 pt-5 lg:text-xl">
 			It is costly relative to the value they bring, with costs that don't make sense vis-a-vis
 			competitors/alternatives. This is made worse when we are stuck in situations when legacy,
 			procurement, incompetent top-down reasons lock us/users into shitty products.
 		</p>
 		<div class="relative">
-			<div class="absolute inset-x-3/4 -z-10 jumbo:mt-20">
+			<div class="jumbo:mt-20 absolute inset-x-3/4 -z-10">
 				<div class="set-b footprint rotate-[180deg]"></div>
 				<div class="set-b footprint translate-x-16 rotate-[160deg]"></div>
 				<div class="set-b footprint translate-x-2 rotate-[170deg]"></div>
@@ -206,7 +206,7 @@
 		</figure>
 	</div>
 	<div class="box self-center lg:col-span-8">
-		<h2 class="headline border-b-2 border-base-content pb-2 lg:text-5xl">
+		<h2 class="headline border-base-content border-b-2 pb-2 font-bold lg:text-5xl">
 			<span class="bg-base-100">Good intentions, bad execution</span>
 		</h2>
 		<p class="bg-base-100 pt-5 lg:text-xl">
@@ -220,7 +220,7 @@
 			Unfortunately there's no test for knowledge before people are put in positions of power.
 		</p>
 		<div class="relative">
-			<div class="absolute inset-x-1/4 -z-10 jumbo:mt-20">
+			<div class="jumbo:mt-20 absolute inset-x-1/4 -z-10">
 				<div class="set-a footprint rotate-[180deg]"></div>
 				<div class="set-a footprint -translate-x-16 rotate-[200deg]"></div>
 				<div class="set-a footprint -translate-x-2 rotate-[190deg]"></div>
@@ -236,7 +236,7 @@
 </div>
 <div class="mb-7 grid grid-cols-1 justify-items-center gap-x-8 px-3 lg:grid-cols-12 lg:px-20">
 	<div class="box self-center lg:col-span-8">
-		<h2 class="headline border-b-2 border-base-content pb-2 lg:text-5xl">
+		<h2 class="headline border-base-content border-b-2 pb-2 font-bold lg:text-5xl">
 			<span class="bg-base-100">What's in it for you?</span>
 		</h2>
 		<p class="bg-base-100 pt-5 lg:text-xl">
@@ -249,7 +249,7 @@
 			something. /jk)
 		</p>
 		<div class="relative">
-			<div class="absolute inset-x-3/4 -z-10 jumbo:mt-20">
+			<div class="jumbo:mt-20 absolute inset-x-3/4 -z-10">
 				<div class="set-b footprint rotate-[180deg]"></div>
 				<div class="set-b footprint translate-x-16 rotate-[160deg]"></div>
 				<div class="set-b footprint translate-x-2 rotate-[170deg]"></div>
@@ -287,14 +287,14 @@
 		</figure>
 	</div>
 	<div class="box w-full self-center lg:col-span-8">
-		<h2 class="headline border-b-2 border-base-content pb-2 pt-5 lg:text-5xl">
+		<h2 class="headline border-base-content border-b-2 pt-5 pb-2 font-bold lg:text-5xl">
 			<span class="bg-base-100">Bad outcomes everywhere?</span>
 		</h2>
 		<p class="bg-base-100 pt-5 lg:text-xl">
 			Seriously though, the comments below are very common in the public sector. Each of these is a
 			major red flag for shitty products.
 		</p>
-		<ul class="ms-8 list-disc bg-base-100 py-5">
+		<ul class="bg-base-100 ms-8 list-disc py-5">
 			<li>IDK what engineers are saying.</li>
 			<li>Let's spend allocated $$, IDC about saving it.</li>
 			<li>Engineers and users should just suck it up.</li>
@@ -303,7 +303,7 @@
 			<li>New SOR = existing + every possible rqmt.</li>
 		</ul>
 		<div class="relative">
-			<div class="absolute inset-x-1/4 -z-10 jumbo:mt-20">
+			<div class="jumbo:mt-20 absolute inset-x-1/4 -z-10">
 				<div class="set-a footprint rotate-[180deg]"></div>
 				<div class="set-a footprint -translate-x-16 rotate-[200deg]"></div>
 				<div class="set-a footprint -translate-x-2 rotate-[190deg]"></div>
@@ -320,7 +320,7 @@
 
 <div class="mb-7 grid grid-cols-1 justify-items-center gap-x-8 px-3 lg:grid-cols-12 lg:px-20">
 	<div class="box self-center lg:col-span-8">
-		<h2 class="headline border-b-2 border-base-content pb-2 lg:text-5xl">
+		<h2 class="headline border-base-content border-b-2 pb-2 font-bold lg:text-5xl">
 			<span class="bg-base-100">You're too harsh!</span>
 		</h2>
 		<p class="bg-base-100 py-5 lg:text-xl">
@@ -329,7 +329,7 @@
 			doing good, share your wisdom with everyone else in a nicer way.
 		</p>
 		<div class="relative">
-			<div class="absolute inset-x-3/4 -z-10 jumbo:mt-20">
+			<div class="jumbo:mt-20 absolute inset-x-3/4 -z-10">
 				<div class="set-b footprint rotate-[180deg]"></div>
 				<div class="set-b footprint translate-x-16 rotate-[160deg]"></div>
 				<div class="set-b footprint translate-x-2 rotate-[170deg]"></div>
@@ -368,7 +368,7 @@
 		</figure>
 	</div>
 	<div class="box self-center lg:col-span-8">
-		<h2 class="headline border-b-2 border-base-content pb-2 lg:text-5xl">
+		<h2 class="headline border-base-content border-b-2 pb-2 font-bold lg:text-5xl">
 			<span class="bg-base-100">You're an idiot too, you think this is a good product?</span>
 		</h2>
 		<p class="bg-base-100 py-5 lg:text-xl">
@@ -377,7 +377,7 @@
 			enough to write off without second thought. (This also helped me learn Svelte5 and Sveltekit.)
 		</p>
 		<div class="relative">
-			<div class="absolute inset-x-1/4 -z-10 jumbo:mt-20">
+			<div class="jumbo:mt-20 absolute inset-x-1/4 -z-10">
 				<div class="set-a footprint rotate-[180deg]"></div>
 				<div class="set-a footprint -translate-x-16 rotate-[200deg]"></div>
 				<div class="set-a footprint -translate-x-2 rotate-[190deg]"></div>
@@ -397,7 +397,7 @@
 </div>
 <div class="mb-12 grid grid-cols-1 justify-items-center gap-x-8 px-3 lg:grid-cols-12 lg:px-20">
 	<div class="box mb-8 w-full self-center lg:col-span-8">
-		<h2 class="headline border-b-2 border-base-content pb-2 lg:text-5xl">
+		<h2 class="headline border-base-content border-b-2 pb-2 font-bold lg:text-5xl">
 			<span class="bg-base-100">I found Apptitude very useful!</span>
 		</h2>
 		<p class="bg-base-100 py-5 lg:text-xl">

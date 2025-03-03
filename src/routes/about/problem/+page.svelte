@@ -6,7 +6,7 @@
 <Breadcrumbs urlMiddle="about" textMiddle="About" textCurrent={"What's the Problem?"} />
 <div class="mx-2 mb-2 text-center lg:mx-20 lg:mb-10">
 	<h1
-		class="inline-block bg-gradient-to-r from-emerald-200 via-lime-200 to-teal-300 bg-clip-text py-3 text-center text-transparent">
+		class="inline-block bg-linear-to-r from-emerald-200 via-lime-200 to-teal-300 bg-clip-text py-3 text-center text-transparent">
 		What's the problem?
 	</h1>
 	<div>
@@ -22,7 +22,7 @@
 	</div>
 	<div class="space-y-4">
 		<h2
-			class="inline-block bg-gradient-to-r from-emerald-200 via-lime-200 to-teal-300 bg-clip-text text-transparent">
+			class="inline-block bg-linear-to-r from-emerald-200 via-lime-200 to-teal-300 bg-clip-text text-transparent">
 			There are problems with tech outcomes in Govt.
 		</h2>
 		<p class="text-xl">
@@ -174,7 +174,7 @@
 	</div>
 	<div class="space-y-4">
 		<h2
-			class="inline-block bg-gradient-to-r from-emerald-200 via-lime-200 to-teal-300 bg-clip-text text-transparent">
+			class="inline-block bg-linear-to-r from-emerald-200 via-lime-200 to-teal-300 bg-clip-text text-transparent">
 			Chip Away At This By Improving Tech Knowledge
 		</h2>
 		<p class="text-xl">

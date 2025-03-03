@@ -73,19 +73,19 @@
 				<enhanced:img
 					src={magnifyingGlass}
 					alt="User research: Avoiding those awkward 'Hey, does anyone like our product?' moments."
-					class="rounded-2xl lg:-mb-14 lg:-translate-y-20 lg:translate-x-5" />
+					class="rounded-2xl lg:-mb-14 lg:translate-x-5 lg:-translate-y-20" />
 			</div>
 		</div>
 	</div>
 	<h1
-		class="inline-block bg-gradient-to-r from-emerald-200 via-primary to-teal-300 bg-clip-text pb-8 text-transparent">
+		class="via-primary inline-block bg-linear-to-r from-emerald-200 to-teal-300 bg-clip-text pb-8 text-4xl font-bold text-transparent lg:text-7xl">
 		Research
 	</h1>
 
 	<article
-		class="prose-section:mt-20 mt-12 space-y-20 pb-10 prose-h2:mb-6 prose-h3:mb-6 prose-h3:mt-12 prose-h5:mb-4 prose-p:mb-4 prose-ul:mb-4">
+		class="prose-section:mt-20 prose-h2:mb-6 prose-h3:mb-6 prose-h3:mt-12 prose-h5:mb-4 prose-p:mb-4 prose-ul:mb-4 mt-12 space-y-20 pb-10">
 		<section id="empathize" class="contents-observer">
-			<h2>1. Empathize</h2>
+			<h2 class="text-2xl font-bold lg:text-4xl">1. Empathize</h2>
 
 			<p>Conduct user research to uncover genuine pain points and user needs that are not met.</p>
 			<h3>1.1. Plan user research</h3>
@@ -165,7 +165,7 @@
 		</section>
 
 		<section id="define" class="contents-observer">
-			<h2>2. Define</h2>
+			<h2 class="text-2xl font-bold lg:text-4xl">2. Define</h2>
 
 			<p>
 				Analyze research from empathize phase to identify and prioritize key user problems that need
@@ -238,7 +238,7 @@
 		</section>
 
 		<section id="ideate" class="contents-observer">
-			<h2>3. Ideate</h2>
+			<h2 class="text-2xl font-bold lg:text-4xl">3. Ideate</h2>
 
 			<h3>3.1. Develop Hypotheses</h3>
 			<ul class="ms-8 list-disc space-y-4">
@@ -297,7 +297,7 @@
 		</section>
 
 		<section id="prototype-test" class="contents-observer">
-			<h2>4. Prototype & Test</h2>
+			<h2 class="text-2xl font-bold lg:text-4xl">4. Prototype & Test</h2>
 
 			<h3>4.1. Prototype</h3>
 			<p>
@@ -362,7 +362,7 @@
 		</section>
 
 		<section id="sources" class="contents-observer">
-			<h2>5. Sources</h2>
+			<h2 class="text-2xl font-bold lg:text-4xl">5. Sources</h2>
 
 			<ul class="ms-8 list-disc space-y-4">
 				<li>

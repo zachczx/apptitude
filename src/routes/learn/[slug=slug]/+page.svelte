@@ -81,19 +81,19 @@
 	{contents}
 	{currentSection}
 	{textCurrent}>
-	<div class="space-y-12 prose-h2:mb-6 prose-h3:mb-6">
+	<div class="prose-h2:mb-6 prose-h3:mb-6 space-y-12">
 		<section class="mb-12">
 			<div>
 				<h1
-					class="mb-4 inline-block bg-gradient-to-r from-emerald-200 via-lime-200 to-teal-300 bg-clip-text text-transparent">
+					class="mb-4 inline-block bg-linear-to-r from-emerald-200 via-lime-200 to-teal-300 bg-clip-text text-4xl text-4xl font-bold font-bold text-transparent lg:text-7xl lg:text-7xl">
 					Learn: {data.post.name}
 				</h1>
 			</div>
 		</section>
 		<section
 			id="topics"
-			class="contents-observer rounded-2xl border border-slate-700 bg-neutral p-4 hover:bg-gradient-to-tr hover:from-base-300 hover:via-base-200 hover:to-gray-700 lg:p-8">
-			<h2>1. Topics</h2>
+			class="contents-observer bg-neutral hover:from-base-300 hover:via-base-200 rounded-2xl border border-slate-700 p-4 hover:bg-linear-to-tr hover:to-gray-700 lg:p-8">
+			<h2 class="text-2xl font-bold lg:text-4xl">1. Topics</h2>
 			<ul class="flex flex-wrap items-center">
 				{#each data.post.topics as topic}
 					<li class="me-4">
@@ -106,8 +106,8 @@
 
 		<section
 			id="answers"
-			class="contents-observer rounded-2xl border border-slate-700 bg-neutral p-4 hover:bg-gradient-to-tr hover:from-base-300 hover:via-base-200 hover:to-gray-700 lg:p-8">
-			<h2>2. Find answers to...</h2>
+			class="contents-observer bg-neutral hover:from-base-300 hover:via-base-200 rounded-2xl border border-slate-700 p-4 hover:bg-linear-to-tr hover:to-gray-700 lg:p-8">
+			<h2 class="text-2xl font-bold lg:text-4xl">2. Find answers to...</h2>
 			<ul class="ms-4 list-disc">
 				{#each data.post.questions as question}
 					<li>{question}</li>
@@ -117,8 +117,8 @@
 
 		<section
 			id="objectives"
-			class="contents-observer rounded-2xl border border-slate-700 bg-base-200 p-4 hover:bg-gradient-to-tr hover:from-base-300 hover:via-base-200 hover:to-gray-700 lg:p-8">
-			<h2>3. Objectives</h2>
+			class="contents-observer bg-base-200 hover:from-base-300 hover:via-base-200 rounded-2xl border border-slate-700 p-4 hover:bg-linear-to-tr hover:to-gray-700 lg:p-8">
+			<h2 class="text-2xl font-bold lg:text-4xl">3. Objectives</h2>
 			<ul class="ms-4 list-disc">
 				{#each data.post.objectives as objective}
 					<li>{objective}</li>
@@ -128,8 +128,8 @@
 
 		<section
 			id="observations"
-			class="contents-observer rounded-2xl border border-slate-700 bg-neutral p-4 hover:bg-gradient-to-tr hover:from-base-300 hover:via-base-200 hover:to-gray-700 lg:p-8">
-			<h2>4. My Observations</h2>
+			class="contents-observer bg-neutral hover:from-base-300 hover:via-base-200 rounded-2xl border border-slate-700 p-4 hover:bg-linear-to-tr hover:to-gray-700 lg:p-8">
+			<h2 class="text-2xl font-bold lg:text-4xl">4. My Observations</h2>
 			<div class="gap-y-4">
 				{#if data.post.issues == '' || !data.post.issues}
 					Haven't gotten to writing this yet.
@@ -144,15 +144,15 @@
 		</section>
 		<section
 			id="courses"
-			class="contents-observer rounded-2xl border border-slate-700 bg-neutral p-4 hover:bg-gradient-to-tr hover:from-base-300 hover:via-base-200 hover:to-gray-700 lg:p-8">
-			<h2>5. Courses</h2>
+			class="contents-observer bg-neutral hover:from-base-300 hover:via-base-200 rounded-2xl border border-slate-700 p-4 hover:bg-linear-to-tr hover:to-gray-700 lg:p-8">
+			<h2 class="text-2xl font-bold lg:text-4xl">5. Courses</h2>
 			{#if data.post.resources.courses == '' || !data.post.resources.courses}
 				Sorry, nothing here
 			{:else}
 				<ul class="list-disc ps-4">
 					{#each data.post.resources.courses as course}
 						<li>
-							<a href={course.url} class="underline hover:text-primary">{course.text}</a>
+							<a href={course.url} class="hover:text-primary underline">{course.text}</a>
 						</li>
 					{/each}
 				</ul>
@@ -160,8 +160,8 @@
 		</section>
 		<section
 			id="readings"
-			class="contents-observer rounded-2xl border border-slate-700 bg-neutral p-4 hover:bg-gradient-to-tr hover:from-base-300 hover:via-base-200 hover:to-gray-700 lg:p-8">
-			<h2>6. Readings</h2>
+			class="contents-observer bg-neutral hover:from-base-300 hover:via-base-200 rounded-2xl border border-slate-700 p-4 hover:bg-linear-to-tr hover:to-gray-700 lg:p-8">
+			<h2 class="text-2xl font-bold lg:text-4xl">6. Readings</h2>
 
 			{#if data.post.resources.links == ''}
 				Sorry, nothing here
@@ -169,7 +169,7 @@
 				<ul class="list-disc ps-4">
 					{#each data.post.resources.links as link}
 						<li>
-							<a href={link.url} class="underline hover:text-primary">{link.text}</a>
+							<a href={link.url} class="hover:text-primary underline">{link.text}</a>
 						</li>
 					{/each}
 				</ul>
@@ -177,8 +177,8 @@
 		</section>
 		<section
 			id="youtube"
-			class="contents-observer rounded-2xl border border-slate-700 bg-neutral p-4 hover:bg-gradient-to-tr hover:from-base-300 hover:via-base-200 hover:to-gray-700 lg:p-8">
-			<h2>
+			class="contents-observer bg-neutral hover:from-base-300 hover:via-base-200 rounded-2xl border border-slate-700 p-4 hover:bg-linear-to-tr hover:to-gray-700 lg:p-8">
+			<h2 class="text-2xl font-bold lg:text-4xl">
 				7. Watch on Youtube
 
 				<svg

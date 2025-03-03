@@ -109,12 +109,12 @@
 		</div>
 	</div>
 	<h1
-		class="inline-block bg-gradient-to-r from-emerald-200 via-lime-200 to-teal-300 bg-clip-text pb-8 text-transparent">
+		class="inline-block bg-linear-to-r from-emerald-200 via-lime-200 to-teal-300 bg-clip-text pb-8 text-4xl font-bold text-transparent lg:text-7xl">
 		{data.post.name}
 	</h1>
 
 	<article
-		class="prose-section:mt-20 space-y-20 pb-10 prose-h2:mb-6 prose-h3:mb-6 prose-h3:mt-12 prose-h5:mb-4 prose-p:mb-4">
+		class="prose-section:mt-20 prose-h2:mb-6 prose-h3:mb-6 prose-h3:mt-12 prose-h5:mb-4 prose-p:mb-4 space-y-20 pb-10">
 		{#if data.post.bylines[0].text != ''}
 			<div class="flex justify-center">
 				{#key currentBylineNumber}
@@ -124,7 +124,7 @@
 								<img src={data.post.bylines[currentBylineNumber].icon} alt="Author" />
 							</div>
 						</div>
-						<div class="chat-bubble border border-primary-content bg-primary-content/50">
+						<div class="chat-bubble border-primary-content bg-primary-content/50 border">
 							<i>{data.post.bylines[currentBylineNumber].text}</i>
 						</div>
 					</div>
@@ -132,7 +132,7 @@
 			</div>
 		{/if}
 		<section id="definitions" class="contents-observer">
-			<h2>1. Definitions</h2>
+			<h2 class="text-2xl font-bold lg:text-4xl">1. Definitions</h2>
 			<div>
 				<ol class="list-disc space-y-4 ps-4">
 					{#each data.post.definitions as definition}
@@ -142,7 +142,7 @@
 			</div>
 		</section>
 		<section id="goals" class="contents-observer">
-			<h2>2. Goals</h2>
+			<h2 class="text-2xl font-bold lg:text-4xl">2. Goals</h2>
 			<div>
 				<ol class="list-disc space-y-4 ps-4">
 					{#each data.post.goals as goal}
@@ -152,7 +152,7 @@
 			</div>
 		</section>
 		<section id="questions" class="contents-observer">
-			<h2>3. Questions</h2>
+			<h2 class="text-2xl font-bold lg:text-4xl">3. Questions</h2>
 			<div>
 				<ol class="list-disc space-y-4 ps-4">
 					{#each data.post.questions as question}
@@ -162,7 +162,7 @@
 			</div>
 		</section>
 		<section id="dealbreakers" class="contents-observer">
-			<h2>4. Dealbreakers</h2>
+			<h2 class="text-2xl font-bold lg:text-4xl">4. Dealbreakers</h2>
 			<div>
 				<ol class="list-disc space-y-4 ps-4">
 					{#each data.post.dealbreakers as dealbreaker}
@@ -172,7 +172,7 @@
 			</div>
 		</section>
 		<section id="suggestions" class="contents-observer">
-			<h2>5. Suggestions</h2>
+			<h2 class="text-2xl font-bold lg:text-4xl">5. Suggestions</h2>
 			<div>
 				<ol class="list-disc space-y-4 ps-4">
 					{#each data.post.suggestions as suggestion}

@@ -42,42 +42,42 @@
 					<a href="/learn/basics" class={page === 'basics' ? 'text-primary' : undefined}
 						>Basics {#if page === 'basics'}
 							<CarbonCaretLeft
-								class="inline scale-125 text-primary hover:bg-gradient-to-tr hover:from-base-300 hover:via-base-200 hover:to-gray-700" />
+								class="inline scale-125 text-primary hover:bg-linear-to-tr hover:from-base-300 hover:via-base-200 hover:to-gray-700" />
 						{/if}</a>
 				</li>
 				<li>
 					<a href="/learn/basics-web" class={page === 'basics-web' ? 'text-primary' : undefined}
 						>Basics (Web) {#if page === 'basics-web'}
 							<CarbonCaretLeft
-								class="inline scale-125 text-primary hover:bg-gradient-to-tr hover:from-base-300 hover:via-base-200 hover:to-gray-700" />
+								class="inline scale-125 text-primary hover:bg-linear-to-tr hover:from-base-300 hover:via-base-200 hover:to-gray-700" />
 						{/if}</a>
 				</li>
 				<li>
 					<a href="/learn/apps" class={page === 'apps' ? 'text-primary' : undefined}
 						>Apps {#if page === 'apps'}
 							<CarbonCaretLeft
-								class="inline scale-125 text-primary hover:bg-gradient-to-tr hover:from-base-300 hover:via-base-200 hover:to-gray-700" />
+								class="inline scale-125 text-primary hover:bg-linear-to-tr hover:from-base-300 hover:via-base-200 hover:to-gray-700" />
 						{/if}</a>
 				</li>
 				<li>
 					<a href="/learn/wog" class={page === 'wog' ? 'text-primary' : undefined}
 						>Central Tools {#if page === 'wog'}
 							<CarbonCaretLeft
-								class="inline scale-125 text-primary hover:bg-gradient-to-tr hover:from-base-300 hover:via-base-200 hover:to-gray-700" />
+								class="inline scale-125 text-primary hover:bg-linear-to-tr hover:from-base-300 hover:via-base-200 hover:to-gray-700" />
 						{/if}</a>
 				</li>
 				<li>
 					<a href="/learn/ux" class={page === 'ux' ? 'text-primary' : undefined}
 						>UX (I) {#if page === 'ux'}
 							<CarbonCaretLeft
-								class="inline scale-125 text-primary hover:bg-gradient-to-tr hover:from-base-300 hover:via-base-200 hover:to-gray-700" />
+								class="inline scale-125 text-primary hover:bg-linear-to-tr hover:from-base-300 hover:via-base-200 hover:to-gray-700" />
 						{/if}</a>
 				</li>
 				<li>
 					<a href="/learn/products" class={page === 'products' ? 'text-primary' : undefined}
 						>Products (I) {#if page === 'products'}
 							<CarbonCaretLeft
-								class="inline scale-125 text-primary hover:bg-gradient-to-tr hover:from-base-300 hover:via-base-200 hover:to-gray-700" />
+								class="inline scale-125 text-primary hover:bg-linear-to-tr hover:from-base-300 hover:via-base-200 hover:to-gray-700" />
 						{/if}</a>
 				</li>
 			</ul>
@@ -117,35 +117,35 @@
 						class={page === 'products-advanced' ? 'text-primary' : undefined}
 						>Products (II) {#if page === 'products-advanced'}
 							<CarbonCaretLeft
-								class="inline scale-125 text-primary hover:bg-gradient-to-tr hover:from-base-300 hover:via-base-200 hover:to-gray-700" />
+								class="inline scale-125 text-primary hover:bg-linear-to-tr hover:from-base-300 hover:via-base-200 hover:to-gray-700" />
 						{/if}</a>
 				</li>
 				<li>
 					<a href="/learn/ux-advanced" class={page === 'ux-advanced' ? 'text-primary' : undefined}
 						>UX (II) {#if page === 'ux-advanced'}
 							<CarbonCaretLeft
-								class="inline scale-125 text-primary hover:bg-gradient-to-tr hover:from-base-300 hover:via-base-200 hover:to-gray-700" />
+								class="inline scale-125 text-primary hover:bg-linear-to-tr hover:from-base-300 hover:via-base-200 hover:to-gray-700" />
 						{/if}</a>
 				</li>
 				<li>
 					<a href="/learn/methods" class={page === 'methods' ? 'text-primary' : undefined}
 						>Methods {#if page === 'methods'}
 							<CarbonCaretLeft
-								class="inline scale-125 text-primary hover:bg-gradient-to-tr hover:from-base-300 hover:via-base-200 hover:to-gray-700" />
+								class="inline scale-125 text-primary hover:bg-linear-to-tr hover:from-base-300 hover:via-base-200 hover:to-gray-700" />
 						{/if}</a>
 				</li>
 				<li>
 					<a href="/learn/data" class={page === 'data' ? 'text-primary' : undefined}
 						>Data {#if page === 'data'}
 							<CarbonCaretLeft
-								class="inline scale-125 text-primary hover:bg-gradient-to-tr hover:from-base-300 hover:via-base-200 hover:to-gray-700" />
+								class="inline scale-125 text-primary hover:bg-linear-to-tr hover:from-base-300 hover:via-base-200 hover:to-gray-700" />
 						{/if}</a>
 				</li>
 				<li>
 					<a href="/learn/ai" class={page === 'ai' ? 'text-primary' : undefined}
 						>AI (I) {#if page === 'ai'}
 							<CarbonCaretLeft
-								class="inline scale-125 text-primary hover:bg-gradient-to-tr hover:from-base-300 hover:via-base-200 hover:to-gray-700" />
+								class="inline scale-125 text-primary hover:bg-linear-to-tr hover:from-base-300 hover:via-base-200 hover:to-gray-700" />
 						{/if}</a>
 				</li>
 			</ul>
@@ -167,14 +167,14 @@
 					<a href="/learn/ai-advanced" class={page === 'ai-advanced' ? 'text-primary' : undefined}
 						>AI (II) {#if page === 'ai-advanced'}
 							<CarbonCaretLeft
-								class="inline scale-125 text-primary hover:bg-gradient-to-tr hover:from-base-300 hover:via-base-200 hover:to-gray-700" />
+								class="inline scale-125 text-primary hover:bg-linear-to-tr hover:from-base-300 hover:via-base-200 hover:to-gray-700" />
 						{/if}</a>
 				</li>
 				<li>
 					<a href="/learn/technical" class={page === 'technical' ? 'text-primary' : undefined}
 						>Technical {#if page === 'technical'}
 							<CarbonCaretLeft
-								class="inline scale-125 text-primary hover:bg-gradient-to-tr hover:from-base-300 hover:via-base-200 hover:to-gray-700" />
+								class="inline scale-125 text-primary hover:bg-linear-to-tr hover:from-base-300 hover:via-base-200 hover:to-gray-700" />
 						{/if}</a>
 				</li>
 			</ul>
@@ -204,7 +204,7 @@
 					<a href="/guides/product" class={page === 'product' ? 'text-primary' : undefined}
 						>Product Checklist {#if page === 'product'}
 							<CarbonCaretLeft
-								class="inline scale-125 text-primary hover:bg-gradient-to-tr hover:from-base-300 hover:via-base-200 hover:to-gray-700" />
+								class="inline scale-125 text-primary hover:bg-linear-to-tr hover:from-base-300 hover:via-base-200 hover:to-gray-700" />
 						{/if}</a>
 				</li>
 				<li>
@@ -213,7 +213,7 @@
 						class={page === 'product-plan' ? 'text-primary' : undefined}
 						>Product Plan 101 {#if page === 'product-plan'}
 							<CarbonCaretLeft
-								class="inline scale-125 text-primary hover:bg-gradient-to-tr hover:from-base-300 hover:via-base-200 hover:to-gray-700" />
+								class="inline scale-125 text-primary hover:bg-linear-to-tr hover:from-base-300 hover:via-base-200 hover:to-gray-700" />
 						{/if}</a>
 				</li>
 			</ul>
@@ -241,7 +241,7 @@
 				Problem Statements</summary
 			>{#if page === 'problems'}
 				<CarbonCaretLeft
-					class="inline scale-125 text-primary hover:bg-gradient-to-tr hover:from-base-300 hover:via-base-200 hover:to-gray-700" />
+					class="inline scale-125 text-primary hover:bg-linear-to-tr hover:from-base-300 hover:via-base-200 hover:to-gray-700" />
 			{/if}
 		</a>
 	</li>
@@ -261,7 +261,7 @@
 				Research</summary>
 			{#if page === 'research'}
 				<CarbonCaretLeft
-					class="inline scale-125 text-primary hover:bg-gradient-to-tr hover:from-base-300 hover:via-base-200 hover:to-gray-700" />
+					class="inline scale-125 text-primary hover:bg-linear-to-tr hover:from-base-300 hover:via-base-200 hover:to-gray-700" />
 			{/if}
 		</a>
 	</li>
@@ -281,7 +281,7 @@
 				Cost</summary
 			>{#if page === 'cost'}
 				<CarbonCaretLeft
-					class="inline scale-125 text-primary hover:bg-gradient-to-tr hover:from-base-300 hover:via-base-200 hover:to-gray-700" />
+					class="inline scale-125 text-primary hover:bg-linear-to-tr hover:from-base-300 hover:via-base-200 hover:to-gray-700" />
 			{/if}
 		</a>
 	</li>
@@ -301,7 +301,7 @@
 				Security</summary
 			>{#if page === 'security'}
 				<CarbonCaretLeft
-					class="inline scale-125 text-primary hover:bg-gradient-to-tr hover:from-base-300 hover:via-base-200 hover:to-gray-700" />
+					class="inline scale-125 text-primary hover:bg-linear-to-tr hover:from-base-300 hover:via-base-200 hover:to-gray-700" />
 			{/if}
 		</a>
 	</li>
@@ -327,7 +327,7 @@
 				Tech Trippin'</summary
 			>{#if category === 'techtrippin'}
 				<CarbonCaretLeft
-					class="inline scale-125 text-primary hover:bg-gradient-to-tr hover:from-base-300 hover:via-base-200 hover:to-gray-700" />
+					class="inline scale-125 text-primary hover:bg-linear-to-tr hover:from-base-300 hover:via-base-200 hover:to-gray-700" />
 			{/if}
 		</a>
 	</li>

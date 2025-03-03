@@ -57,14 +57,14 @@
 						stroke-width="2"
 						d="M4 6h16M4 12h8m-8 6h16" /></svg>
 			</div>
-			<nav class="menu dropdown-content z-50 w-48 rounded-lg bg-base-300 text-lg">
+			<nav class="menu dropdown-content bg-base-300 z-50 w-48 rounded-lg text-lg">
 				<a
-					class="border-b border-b-base-100 p-1 hover:rounded-t-lg active:text-primary active:text-primary"
+					class="border-b-base-100 active:text-primary active:text-primary border-b p-1 hover:rounded-t-lg"
 					href="/"
 					><svg
 						id="hugeicons:house-01"
 						xmlns="http://www.w3.org/2000/svg"
-						class="mb-1 me-2 inline stroke-base-content"
+						class="stroke-base-content me-2 mb-1 inline"
 						width="1em"
 						height="1em"
 						viewBox="0 0 24 24"
@@ -80,12 +80,12 @@
 								d="M10 22h7c1.886 0 2.828 0 3.414-.586S21 19.885 21 18v-6.5M18 10V7M7 11h1m-1 4h1m8-1h1m-.5 8v-4" /></g
 						></svg> Home</a>
 				<a
-					class="border-b border-b-base-100 p-1 hover:rounded-t-lg active:text-primary active:text-primary"
+					class="border-b-base-100 active:text-primary active:text-primary border-b p-1 hover:rounded-t-lg"
 					href="/learn"
 					><svg
 						id="hugeicons:elearning-exchange"
 						xmlns="http://www.w3.org/2000/svg"
-						class="mb-1 me-2 inline stroke-base-content"
+						class="stroke-base-content me-2 mb-1 inline"
 						width="1em"
 						height="1em"
 						viewBox="0 0 24 24"
@@ -101,12 +101,12 @@
 								d="M9.002 13.528v1.992a.95.95 0 0 0 .432.81c.844.528 1.485.683 2.571.716c1.001.027 1.629-.13 2.563-.714a.96.96 0 0 0 .44-.82v-1.984m2.003-2.513v3.015M7.05 10.844c.362-.764 2.605-2.094 4.652-2.751a.93.93 0 0 1 .604.014c1.81.662 3.824 1.665 4.555 2.478c.381.425.008.967-.453 1.302c-.937.681-1.97 1.21-4.058 2.013a.98.98 0 0 1-.688.005c-2.14-.795-4.142-1.82-4.595-2.723a.39.39 0 0 1-.017-.338" /></g
 						></svg> Learn</a>
 				<a
-					class="border-b border-b-base-100 p-1 active:font-bold active:text-primary"
+					class="border-b-base-100 active:text-primary border-b p-1 active:font-bold"
 					href="/guides"
 					><svg
 						id="hugeicons:online-learning-01"
 						xmlns="http://www.w3.org/2000/svg"
-						class="mb-1 me-2 inline stroke-base-content"
+						class="stroke-base-content me-2 mb-1 inline"
 						width="1em"
 						height="1em"
 						viewBox="0 0 24 24"
@@ -119,11 +119,11 @@
 							d="M6.583 7.238c3.007.53 4.799 1.639 5.417 2.276c.618-.637 2.41-1.746 5.418-2.276c1.523-.269 2.285-.403 2.933.112C21 7.864 21 8.7 21 10.372v6.007c0 1.529 0 2.293-.416 2.77c-.417.477-1.333.639-3.166.962c-1.635.288-2.91.747-3.833 1.208c-.909.454-1.363.681-1.585.681s-.677-.227-1.585-.68c-.923-.462-2.198-.921-3.832-1.21c-1.834-.322-2.75-.484-3.167-.961S3 17.908 3 16.379v-6.007C3 8.7 3 7.864 3.649 7.35c.648-.515 1.41-.38 2.933-.112M12 9v13M8.5 3.059a6.29 6.29 0 0 1 7 .01M13.622 5.5a3.14 3.14 0 0 0-3.244-.01"
 							color="currentColor" /></svg> Guides</a>
 
-				<a class="p-1 hover:rounded-b-lg active:font-bold active:text-primary" href="/about"
+				<a class="active:text-primary p-1 hover:rounded-b-lg active:font-bold" href="/about"
 					><svg
 						id="hugeicons:help-circle"
 						xmlns="http://www.w3.org/2000/svg"
-						class="mb-1 me-2 inline stroke-base-content"
+						class="stroke-base-content me-2 mb-1 inline"
 						width="1em"
 						height="1em"
 						viewBox="0 0 24 24"
@@ -152,13 +152,13 @@
 		<ul class="menu menu-horizontal gap-x-5 ps-20 font-medium">
 			<!-- removed menu class -->
 			<li aria-current={matchUrl(data.url, '/learn') === 0 ? 'page' : undefined}>
-				<a class="text-xl hover:bg-transparent hover:text-primary" href="/learn">Learn</a>
+				<a class="hover:text-primary text-xl hover:bg-transparent" href="/learn">Learn</a>
 			</li>
 			<li aria-current={matchUrl(data.url, '/guides') === 0 ? 'page' : undefined}>
-				<a class="text-xl hover:bg-transparent hover:text-primary" href="/guides">Guides</a>
+				<a class="hover:text-primary text-xl hover:bg-transparent" href="/guides">Guides</a>
 			</li>
 			<li aria-current={matchUrl(data.url, '/about') === 0 ? 'page' : undefined}>
-				<a class="text-xl hover:bg-transparent hover:text-primary" href="/about">About</a>
+				<a class="hover:text-primary text-xl hover:bg-transparent" href="/about">About</a>
 			</li>
 		</ul>
 	</div>
@@ -215,7 +215,7 @@
 			sizes="(min-width:2560px) 2060px, (min-width:1920px) 1536px, (min-width:1600px) 1280px, (min-width:1280px) 1024px" />
 	</figure>
 	<div class="mx-3 self-center justify-self-center rounded-full pt-4 lg:z-10 lg:mx-8 xl:px-[3rem]">
-		<div class="avatar mb-8 mt-20 flex justify-center px-4 text-center xl:mt-0 xl:hidden">
+		<div class="avatar mt-20 mb-8 flex justify-center px-4 text-center xl:mt-0 xl:hidden">
 			<div class="mask mask-squircle">
 				<!-- {#if currentBgNumber % 2 == 0}
 					<enhanced:img
@@ -231,34 +231,34 @@
 					sizes="(min-width:1000px) 600px, (min-width:768px) 500px, 300px" />
 			</div>
 		</div>
-		<h1 class="mb-12 text-center text-5xl lg:pt-20 lg:text-6xl min-[1921px]:text-7xl">
+		<h1 class="mb-12 text-center text-5xl font-bold min-[1921px]:text-7xl lg:pt-20 lg:text-6xl">
 			<span class="headline text-neutral-content">Get better at</span>
 			<span
-				class="headline inline-block bg-gradient-to-r from-emerald-200 via-lime-200 to-teal-300 bg-clip-text pb-5 text-transparent"
+				class="headline inline-block bg-linear-to-r from-emerald-200 via-lime-200 to-teal-300 bg-clip-text pb-5 text-transparent"
 				>tech products & projects.</span>
 		</h1>
-		<div class="mb-12 grid grid-cols-3 py-2 text-start text-lg text-neutral-content lg:text-xl">
-			<div class="subheadline border-r-2 border-base-content/50 py-1 pe-3 text-center">
-				<h2>Learn</h2>
+		<div class="text-neutral-content mb-12 grid grid-cols-3 py-2 text-start text-lg lg:text-xl">
+			<div class="subheadline border-base-content/50 border-r-2 py-1 pe-3 text-center">
+				<h2 class="text-2xl font-bold lg:text-4xl">Learn</h2>
 				key digital product knowledge
 			</div>
-			<div class="subheadline border-r-2 border-base-content/50 py-1 pe-3 ps-3 text-center">
-				<h2>Better</h2>
+			<div class="subheadline border-base-content/50 border-r-2 py-1 ps-3 pe-3 text-center">
+				<h2 class="text-2xl font-bold lg:text-4xl">Better</h2>
 				digital product management
 			</div>
 			<div class="subheadline py-1 ps-3 text-center">
-				<h2>Drop</h2>
+				<h2 class="text-2xl font-bold lg:text-4xl">Drop</h2>
 				lousy & unnecessary projects
 			</div>
 		</div>
 		<div class="flex flex-wrap justify-center gap-4">
 			<a
 				href="/learn"
-				class="button-shine btn btn-primary relative overflow-hidden rounded-full border border-primary lg:px-8 lg:text-2xl"
+				class="button-shine btn btn-primary border-primary relative overflow-hidden rounded-full border lg:px-8 lg:text-2xl"
 				>Learn Basics <svg
 					xmlns="http://www.w3.org/2000/svg"
-					width="1.5em"
-					height="1.5em"
+					width="1.3em"
+					height="1.3em"
 					stroke="currentColor"
 					viewBox="0 0 24 24"
 					><path
@@ -266,7 +266,7 @@
 				></a>
 			<a
 				href="/guides"
-				class="btn btn-outline btn-primary rounded-full font-bold text-primary lg:px-8 lg:text-2xl"
+				class="btn btn-outline btn-primary text-primary rounded-full lg:px-8 lg:text-2xl"
 				>Skip to Guides</a>
 		</div>
 	</div>

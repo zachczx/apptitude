@@ -23,7 +23,7 @@
 	<section class="mb-12 space-y-12">
 		<div>
 			<h1
-				class="inline-block bg-gradient-to-r from-emerald-200 via-lime-200 to-teal-300 bg-clip-text pb-3 text-transparent">
+				class="inline-block bg-linear-to-r from-emerald-200 via-lime-200 to-teal-300 bg-clip-text pb-3 text-4xl font-bold text-transparent lg:text-7xl">
 				Learn Bytes, Reap Career Delights
 			</h1>
 			<p class="text-sm">
@@ -43,22 +43,22 @@
 	</section>
 
 	<div class="space-y-20 pt-12">
-		<div class="space-y-7 lg:rounded-2xl lg:bg-base-300">
+		<div class="lg:bg-base-300 space-y-7 lg:rounded-2xl">
 			<div class="space-y-3 ps-1">
-				<h2>
-					<TablerStarFilled class="mb-1 inline fill-primary" /><TablerStarFilled
+				<h2 class="text-2xl font-bold lg:text-4xl">
+					<TablerStarFilled class="fill-primary mb-1 inline" /><TablerStarFilled
 						class="mb-1 inline fill-gray-600" /><TablerStarFilled
 						class="mb-1 inline fill-gray-600" /><TablerStarFilled
 						class="mb-1 inline fill-gray-600" /><TablerStarFilled
 						class="mb-1 inline fill-gray-600" />
 				</h2>
-				<h2>Beginner</h2>
+				<h2 class="text-2xl font-bold lg:text-4xl">Beginner</h2>
 			</div>
 			<div class="grid grid-cols-1 justify-items-center gap-3 lg:grid-cols-2">
 				{#each data.beginner as item}
 					<a href="/learn/{item.slug}" class="w-full">
 						<div
-							class="group card h-full border border-gray-700 bg-neutral shadow-md shadow-gray-800 hover:bg-gradient-to-tr hover:from-base-300 hover:via-base-200 hover:to-gray-700">
+							class="group card bg-neutral hover:from-base-300 hover:via-base-200 h-full border border-gray-700 shadow-md shadow-gray-800 hover:bg-linear-to-tr hover:to-gray-700">
 							<div class="card-body grid grid-cols-1 content-start space-y-2 px-5 lg:space-y-5">
 								<h3 class="group-hover:text-primary">
 									{item.name}
@@ -71,22 +71,22 @@
 			</div>
 		</div>
 
-		<div class="space-y-7 lg:rounded-2xl lg:bg-base-300">
+		<div class="lg:bg-base-300 space-y-7 lg:rounded-2xl">
 			<div class="space-y-3 ps-1">
-				<h2>
-					<TablerStarFilled class="mb-1 inline fill-primary" /><TablerStarFilled
-						class="mb-1 inline fill-primary" /><TablerStarFilled
-						class="mb-1 inline fill-primary" /><TablerStarFilled
+				<h2 class="text-2xl font-bold lg:text-4xl">
+					<TablerStarFilled class="fill-primary mb-1 inline" /><TablerStarFilled
+						class="fill-primary mb-1 inline" /><TablerStarFilled
+						class="fill-primary mb-1 inline" /><TablerStarFilled
 						class="mb-1 inline fill-gray-600" /><TablerStarFilled
 						class="mb-1 inline fill-gray-600" />
 				</h2>
-				<h2>Intermediate</h2>
+				<h2 class="text-2xl font-bold lg:text-4xl">Intermediate</h2>
 			</div>
 			<div class="grid grid-cols-1 justify-items-center gap-3 lg:grid-cols-2">
 				{#each data.intermediate as item}
 					<a href="/learn/{item.slug}" class="w-full">
 						<div
-							class="group card h-full border border-gray-700 bg-neutral shadow-md shadow-gray-800 hover:bg-gradient-to-tr hover:from-base-300 hover:via-base-200 hover:to-gray-700">
+							class="group card bg-neutral hover:from-base-300 hover:via-base-200 h-full border border-gray-700 shadow-md shadow-gray-800 hover:bg-linear-to-tr hover:to-gray-700">
 							<div class="card-body grid grid-cols-1 content-start space-y-2 px-5 lg:space-y-5">
 								<h3 class="group-hover:text-primary">
 									{item.name}
@@ -98,21 +98,21 @@
 				{/each}
 			</div>
 		</div>
-		<div class="space-y-7 lg:rounded-2xl lg:bg-base-300">
+		<div class="lg:bg-base-300 space-y-7 lg:rounded-2xl">
 			<div class="space-y-3 ps-1">
-				<h2>
-					<TablerStarFilled class="mb-1 inline fill-primary" /><TablerStarFilled
-						class="mb-1 inline fill-primary" /><TablerStarFilled
-						class="mb-1 inline fill-primary" /><TablerStarFilled
-						class="mb-1 inline fill-primary" /><TablerStarFilled class="mb-1 inline fill-primary" />
+				<h2 class="text-2xl font-bold lg:text-4xl">
+					<TablerStarFilled class="fill-primary mb-1 inline" /><TablerStarFilled
+						class="fill-primary mb-1 inline" /><TablerStarFilled
+						class="fill-primary mb-1 inline" /><TablerStarFilled
+						class="fill-primary mb-1 inline" /><TablerStarFilled class="fill-primary mb-1 inline" />
 				</h2>
-				<h2>Advanced</h2>
+				<h2 class="text-2xl font-bold lg:text-4xl">Advanced</h2>
 			</div>
 			<div class="grid grid-cols-1 justify-items-center gap-3 lg:grid-cols-2">
 				{#each data.advanced as item}
 					<a href="/learn/{item.slug}" class="w-full">
 						<div
-							class="group card h-full border border-gray-700 bg-neutral shadow-md shadow-gray-800 hover:bg-gradient-to-tr hover:from-base-300 hover:via-base-200 hover:to-gray-700">
+							class="group card bg-neutral hover:from-base-300 hover:via-base-200 h-full border border-gray-700 shadow-md shadow-gray-800 hover:bg-linear-to-tr hover:to-gray-700">
 							<div class="card-body grid grid-cols-1 content-start space-y-2 px-5 lg:space-y-5">
 								<h3 class="group-hover:text-primary">
 									{item.name}

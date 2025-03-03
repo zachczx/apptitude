@@ -21,7 +21,7 @@
 	<section class="mb-12 space-y-12">
 		<div>
 			<h1
-				class="mb-4 inline-block bg-gradient-to-r from-emerald-200 via-lime-200 to-teal-300 bg-clip-text text-transparent">
+				class="mb-4 inline-block bg-linear-to-r from-emerald-200 via-lime-200 to-teal-300 bg-clip-text text-4xl font-bold text-transparent lg:text-7xl">
 				Guides to Cache Up!
 			</h1>
 			<p class="text-sm">
@@ -38,28 +38,28 @@
 	</section>
 	<section>
 		<div
-			class="group card mb-12 border border-gray-700 bg-neutral shadow-xl hover:bg-gradient-to-tr hover:from-base-300 hover:via-base-200 hover:to-gray-700">
+			class="group card bg-neutral hover:from-base-300 hover:via-base-200 mb-12 border border-gray-700 shadow-xl hover:bg-linear-to-tr hover:to-gray-700">
 			<div class="card-body grid lg:grid-cols-2">
 				<div class="mb-8 lg:px-8">
-					<h2>
+					<h2 class="text-2xl font-bold lg:text-7xl">
 						<a href="/guides/product-plan">Product</a>
 					</h2>
 					<p>
 						<i>Feel like you're shipping useless features?</i>
 					</p>
-					<p class="pb-4 pt-8">
+					<p class="pt-8 pb-4">
 						Think about product-market fit, demand for your product, go-to market, success metrics.
 					</p>
 					<ul class="ms-8 list-disc space-y-2">
-						<li class="text-lg underline hover:text-primary">
+						<li class="hover:text-primary text-lg underline">
 							<a href="/guides/product-plan">Product Plan 101</a>
 						</li>
-						<li class="text-lg underline hover:text-primary">
+						<li class="hover:text-primary text-lg underline">
 							<a href="/guides/product">Product Quick Reference</a>
 						</li>
 					</ul>
 				</div>
-				<div class="w-full rounded-2xl bg-base-content">
+				<div class="bg-base-content w-full rounded-2xl">
 					<div class="flex justify-end">
 						<enhanced:img
 							src={product}
@@ -70,11 +70,11 @@
 			</div>
 		</div>
 		<div
-			class="group card mb-12 w-full border border-gray-700 bg-neutral shadow-xl hover:bg-gradient-to-tr hover:from-base-300 hover:via-base-200 hover:to-gray-700">
+			class="group card bg-neutral hover:from-base-300 hover:via-base-200 mb-12 w-full border border-gray-700 shadow-xl hover:bg-linear-to-tr hover:to-gray-700">
 			<a href="/guides/problems"
 				><div class="card-body grid lg:grid-cols-2">
 					<div class="mb-8 self-center lg:mb-20 lg:px-8">
-						<h2>Problem Statements</h2>
+						<h2 class="text-2xl font-bold lg:text-7xl">Problem Statements</h2>
 						<p>
 							<i>Doubt your product works well? Never heard from your users?</i>
 						</p>
@@ -83,7 +83,7 @@
 							help, user pain points.
 						</p>
 					</div>
-					<div class="w-full rounded-2xl bg-base-content lg:order-first">
+					<div class="bg-base-content w-full rounded-2xl lg:order-first">
 						<div class="flex justify-center">
 							<enhanced:img
 								src={problem}
@@ -97,22 +97,22 @@
 		<div class="mb-12">
 			<a href="/guides/research">
 				<div
-					class="group card h-auto w-full border border-gray-700 bg-neutral shadow-xl hover:bg-gradient-to-tr hover:from-base-300 hover:via-base-200 hover:to-gray-700">
+					class="group card bg-neutral hover:from-base-300 hover:via-base-200 h-auto w-full border border-gray-700 shadow-xl hover:bg-linear-to-tr hover:to-gray-700">
 					<div class="card-body grid lg:grid-cols-2">
 						<div class="mb-8 lg:px-8">
-							<h2>Research</h2>
+							<h2 class="text-2xl font-bold lg:text-7xl">Research</h2>
 							<p>
 								<i
 									>Skipping user research is like designing a car without realizing humans need to
 									sit in it.</i>
 							</p>
 						</div>
-						<div class="w-full rounded-2xl bg-base-content">
+						<div class="bg-base-content w-full rounded-2xl">
 							<div class="flex justify-end">
 								<enhanced:img
 									src={magnifyingGlass}
 									alt="User research: Avoiding those awkward 'Hey, does anyone like our product?' moments."
-									class="rounded-2xl lg:-mb-14 lg:-translate-y-20 lg:translate-x-5" />
+									class="rounded-2xl lg:-mb-14 lg:translate-x-5 lg:-translate-y-20" />
 							</div>
 						</div>
 					</div>
@@ -121,10 +121,10 @@
 		</div>
 		<a href="/guides/cost">
 			<div
-				class="group card mb-12 grid w-full overflow-hidden border border-gray-700 bg-neutral shadow-xl hover:bg-gradient-to-tr hover:from-base-300 hover:via-base-200 hover:to-gray-700">
+				class="group card bg-neutral hover:from-base-300 hover:via-base-200 mb-12 grid w-full overflow-hidden border border-gray-700 shadow-xl hover:bg-linear-to-tr hover:to-gray-700">
 				<div class="card-body grid lg:grid-cols-2">
 					<div class="mb-4 lg:order-last lg:px-8">
-						<h2>Cost</h2>
+						<h2 class="text-2xl font-bold lg:text-7xl">Cost</h2>
 						<p>
 							<i>We're not sure what we're building, but we know we'll need a bigger budget?</i>
 						</p>
@@ -133,7 +133,7 @@
 							inflation figures, vendors quoting an arm and a leg to change a hero banner.
 						</p>
 					</div>
-					<div class="w-full rounded-2xl bg-base-content">
+					<div class="bg-base-content w-full rounded-2xl">
 						<div class="flex">
 							<enhanced:img
 								src={piggyBank}
@@ -147,10 +147,10 @@
 		<a href="/guides/security"
 			><div class="mb-12">
 				<div
-					class="group card h-auto w-full border border-gray-700 bg-neutral shadow-xl hover:bg-gradient-to-tr hover:from-base-300 hover:via-base-200 hover:to-gray-700">
+					class="group card bg-neutral hover:from-base-300 hover:via-base-200 h-auto w-full border border-gray-700 shadow-xl hover:bg-linear-to-tr hover:to-gray-700">
 					<div class="card-body grid lg:grid-cols-2">
 						<div class="mb-8 lg:px-8">
-							<h2>Security</h2>
+							<h2 class="text-2xl font-bold lg:text-7xl">Security</h2>
 							<p>
 								<i>Cyber security so tight, even the 1s and 0s can't escape</i>
 							</p>
@@ -159,7 +159,7 @@
 								the ticking checkbox nature to comply with security policies?
 							</p>
 						</div>
-						<div class="w-full rounded-2xl bg-base-content">
+						<div class="bg-base-content w-full rounded-2xl">
 							<div class="flex justify-end">
 								<enhanced:img
 									src={safeKeyboard}

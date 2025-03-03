@@ -64,7 +64,7 @@
 				</div>
 			</div>
 			<h1
-				class="inline-block bg-gradient-to-r from-emerald-200 via-lime-200 to-teal-300 bg-clip-text pb-3 text-transparent">
+				class="inline-block bg-linear-to-r from-emerald-200 via-lime-200 to-teal-300 bg-clip-text pb-3 text-4xl font-bold text-transparent lg:text-7xl">
 				Tech Trippin'
 			</h1>
 			<p class="text-sm">
@@ -86,7 +86,7 @@
 	{#each techtrippin as item}
 		<section
 			id="content-{item.id}"
-			class="contents-observer mb-4 space-y-10 rounded-2xl border border-gray-700 bg-neutral p-4 shadow-md shadow-gray-800 lg:mb-16 lg:p-8">
+			class="contents-observer bg-neutral mb-4 space-y-10 rounded-2xl border border-gray-700 p-4 shadow-md shadow-gray-800 lg:mb-16 lg:p-8">
 			<h3>{item.title}</h3>
 			<div class="space-y-10">
 				<div class="chat chat-start">

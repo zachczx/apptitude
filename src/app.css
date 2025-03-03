@@ -1,6 +1,10 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+@plugin "daisyui";
+@plugin "daisyui/theme" {
+	name: 'dim';
+	default: true;
+	--color-neutral-content: #e0eaee;
+}
 
 :root {
 	font-family: 'Roboto', sans-serif;
@@ -62,46 +66,56 @@
 		color: #d6d6d6 !important;
 		opacity: 0.7 !important;
 	}
+
+	.popped {
+		font-family: 'Outfit', sans-serif;
+		font-optical-sizing: auto;
+		font-weight: 700;
+		font-style: normal;
+	}
+
+	html {
+		scroll-behavior: smooth;
+	}
 }
 
-.popped {
-	font-family: 'Outfit', sans-serif;
-	font-optical-sizing: auto;
-	font-weight: 700;
-	font-style: normal;
+@theme {
+	--transition-duration-2000: 2000ms;
+	--transition-duration-3000: 3000ms;
+
+	--breakpoint-jumbo: 1921px;
+
+	--radius-semi-super: 8rem;
+	--radius-super: 15rem;
 }
 
-html {
-	scroll-behavior: smooth;
+/*
+  The default border color has changed to `currentColor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+	*,
+	::after,
+	::before,
+	::backdrop,
+	::file-selector-button {
+		border-color: var(--color-gray-200, currentColor);
+	}
+}
+
+@utility bg-base100-pattern {
+	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='2560' height='1440' preserveAspectRatio='none' viewBox='0 0 2560 1440'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1233%26quot%3b)' fill='none'%3e%3crect width='2560' height='1440' x='0' y='0' fill='rgba(42%2c 48%2c 60%2c 1)'%3e%3c/rect%3e%3cpath d='M2560 0L2160.85 0L2560 393.75z' fill='rgba(255%2c 255%2c 255%2c .1)'%3e%3c/path%3e%3cpath d='M2160.85 0L2560 393.75L2560 447.55L1640.8899999999999 0z' fill='rgba(255%2c 255%2c 255%2c .075)'%3e%3c/path%3e%3cpath d='M1640.8899999999999 0L2560 447.55L2560 480.35L1615.7199999999998 0z' fill='rgba(255%2c 255%2c 255%2c .05)'%3e%3c/path%3e%3cpath d='M1615.72 0L2560 480.35L2560 1131.1L979.11 0z' fill='rgba(255%2c 255%2c 255%2c .025)'%3e%3c/path%3e%3cpath d='M0 1440L710.48 1440L0 722.74z' fill='rgba(0%2c 0%2c 0%2c .1)'%3e%3c/path%3e%3cpath d='M0 722.74L710.48 1440L1574.26 1440L0 600.85z' fill='rgba(0%2c 0%2c 0%2c .075)'%3e%3c/path%3e%3cpath d='M0 600.85L1574.26 1440L1793.6399999999999 1440L0 265.36z' fill='rgba(0%2c 0%2c 0%2c .05)'%3e%3c/path%3e%3cpath d='M0 265.3600000000001L1793.6399999999999 1440L2114.83 1440L0 192.71000000000012z' fill='rgba(0%2c 0%2c 0%2c .025)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1233'%3e%3crect width='2560' height='1440' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+}
+
+@utility bg-base100-pattern-alt {
+	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='2560' height='1440' preserveAspectRatio='none' viewBox='0 0 2560 1440'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1242%26quot%3b)' fill='none'%3e%3crect width='2560' height='1440' x='0' y='0' fill='rgba(42%2c 48%2c 60%2c 1)'%3e%3c/rect%3e%3cpath d='M0 0L258.12 0L0 709.05z' fill='rgba(255%2c 255%2c 255%2c .1)'%3e%3c/path%3e%3cpath d='M0 709.05L258.12 0L964.59 0L0 1026.29z' fill='rgba(255%2c 255%2c 255%2c .075)'%3e%3c/path%3e%3cpath d='M0 1026.29L964.59 0L1019.8100000000001 0L0 1221.72z' fill='rgba(255%2c 255%2c 255%2c .05)'%3e%3c/path%3e%3cpath d='M0 1221.72L1019.8100000000001 0L1754.5 0L0 1318.8700000000001z' fill='rgba(255%2c 255%2c 255%2c .025)'%3e%3c/path%3e%3cpath d='M2560 1440L2267.21 1440L2560 965.9z' fill='rgba(0%2c 0%2c 0%2c .1)'%3e%3c/path%3e%3cpath d='M2560 965.9L2267.21 1440L1022.1400000000001 1440L2560 591.8199999999999z' fill='rgba(0%2c 0%2c 0%2c .075)'%3e%3c/path%3e%3cpath d='M2560 591.8199999999999L1022.1400000000001 1440L538.96 1440L2560 458.38999999999993z' fill='rgba(0%2c 0%2c 0%2c .05)'%3e%3c/path%3e%3cpath d='M2560 458.3899999999999L538.96 1440L520.01 1440L2560 378.04999999999984z' fill='rgba(0%2c 0%2c 0%2c .025)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1242'%3e%3crect width='2560' height='1440' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
 }
 
 @layer base {
-	h1 {
-		@apply text-6xl lg:text-6xl;
-		font-weight: 900;
-	}
-
-	h2 {
-		@apply text-4xl lg:text-5xl;
-		font-weight: 700;
-		padding-bottom: 0.3rem;
-	}
-
-	h3 {
-		@apply text-2xl lg:text-3xl;
-		font-weight: 600;
-	}
-
-	h4 {
-		@apply text-xl lg:text-2xl;
-		font-weight: 500;
-	}
-
-	p,
-	li {
-		@apply text-base lg:text-base xl:text-base;
-	}
-
 	p > a {
 		text-decoration: underline;
 		text-underline-offset: 0.3rem;
@@ -165,15 +179,5 @@ html {
 		unicode-range:
 			U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329,
 			U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-	}
-}
-
-@layer utilities {
-	.bg-base100-pattern {
-		background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='2560' height='1440' preserveAspectRatio='none' viewBox='0 0 2560 1440'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1233%26quot%3b)' fill='none'%3e%3crect width='2560' height='1440' x='0' y='0' fill='rgba(42%2c 48%2c 60%2c 1)'%3e%3c/rect%3e%3cpath d='M2560 0L2160.85 0L2560 393.75z' fill='rgba(255%2c 255%2c 255%2c .1)'%3e%3c/path%3e%3cpath d='M2160.85 0L2560 393.75L2560 447.55L1640.8899999999999 0z' fill='rgba(255%2c 255%2c 255%2c .075)'%3e%3c/path%3e%3cpath d='M1640.8899999999999 0L2560 447.55L2560 480.35L1615.7199999999998 0z' fill='rgba(255%2c 255%2c 255%2c .05)'%3e%3c/path%3e%3cpath d='M1615.72 0L2560 480.35L2560 1131.1L979.11 0z' fill='rgba(255%2c 255%2c 255%2c .025)'%3e%3c/path%3e%3cpath d='M0 1440L710.48 1440L0 722.74z' fill='rgba(0%2c 0%2c 0%2c .1)'%3e%3c/path%3e%3cpath d='M0 722.74L710.48 1440L1574.26 1440L0 600.85z' fill='rgba(0%2c 0%2c 0%2c .075)'%3e%3c/path%3e%3cpath d='M0 600.85L1574.26 1440L1793.6399999999999 1440L0 265.36z' fill='rgba(0%2c 0%2c 0%2c .05)'%3e%3c/path%3e%3cpath d='M0 265.3600000000001L1793.6399999999999 1440L2114.83 1440L0 192.71000000000012z' fill='rgba(0%2c 0%2c 0%2c .025)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1233'%3e%3crect width='2560' height='1440' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
-	}
-
-	.bg-base100-pattern-alt {
-		background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='2560' height='1440' preserveAspectRatio='none' viewBox='0 0 2560 1440'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1242%26quot%3b)' fill='none'%3e%3crect width='2560' height='1440' x='0' y='0' fill='rgba(42%2c 48%2c 60%2c 1)'%3e%3c/rect%3e%3cpath d='M0 0L258.12 0L0 709.05z' fill='rgba(255%2c 255%2c 255%2c .1)'%3e%3c/path%3e%3cpath d='M0 709.05L258.12 0L964.59 0L0 1026.29z' fill='rgba(255%2c 255%2c 255%2c .075)'%3e%3c/path%3e%3cpath d='M0 1026.29L964.59 0L1019.8100000000001 0L0 1221.72z' fill='rgba(255%2c 255%2c 255%2c .05)'%3e%3c/path%3e%3cpath d='M0 1221.72L1019.8100000000001 0L1754.5 0L0 1318.8700000000001z' fill='rgba(255%2c 255%2c 255%2c .025)'%3e%3c/path%3e%3cpath d='M2560 1440L2267.21 1440L2560 965.9z' fill='rgba(0%2c 0%2c 0%2c .1)'%3e%3c/path%3e%3cpath d='M2560 965.9L2267.21 1440L1022.1400000000001 1440L2560 591.8199999999999z' fill='rgba(0%2c 0%2c 0%2c .075)'%3e%3c/path%3e%3cpath d='M2560 591.8199999999999L1022.1400000000001 1440L538.96 1440L2560 458.38999999999993z' fill='rgba(0%2c 0%2c 0%2c .05)'%3e%3c/path%3e%3cpath d='M2560 458.3899999999999L538.96 1440L520.01 1440L2560 378.04999999999984z' fill='rgba(0%2c 0%2c 0%2c .025)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1242'%3e%3crect width='2560' height='1440' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
 	}
 }
