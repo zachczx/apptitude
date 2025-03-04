@@ -8,14 +8,14 @@
 	let collapsed = $state(true);
 </script>
 
-<div class="mx-4 my-6 content-center space-y-4 rounded-2xl bg-primary-content/40 px-4 py-4">
-	<h4 class="border-b-2 border-b-base-100 text-lg font-bold">
+<div class="bg-primary-content/40 mx-4 content-center space-y-4 rounded-2xl px-4 py-4">
+	<h4 class="border-b-base-100 border-b-2 text-lg font-bold">
 		<svg
 			id="carbon:quotes"
 			xmlns="http://www.w3.org/2000/svg"
 			width="1.5em"
 			height="1.5em"
-			class="mb-1 me-1 inline"
+			class="me-1 mb-1 inline"
 			viewBox="0 0 32 32"
 			><path
 				fill="currentColor"
