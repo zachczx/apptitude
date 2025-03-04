@@ -70,19 +70,15 @@
 	{contents}
 	{currentSection}
 	{textCurrent}>
-	<div class="prose-h2:mb-6 prose-h3:mb-6 space-y-12">
-		<section class="mb-12">
-			<div>
-				<h1
-					class="mb-4 inline-block bg-linear-to-r from-emerald-200 via-lime-200 to-teal-300 bg-clip-text text-4xl text-4xl font-bold font-bold text-transparent lg:text-7xl lg:text-7xl">
-					Learn: {data.post.name}
-				</h1>
-			</div>
-		</section>
-		<section
-			id="topics"
-			class="contents-observer grid gap-8 rounded-2xl border border-slate-700 p-4 lg:p-8">
-			<h2 class="text-2xl font-bold lg:text-4xl">1. Topics</h2>
+	<h1
+		class="mb-4 inline-block bg-linear-to-r from-emerald-200 via-lime-200 to-teal-300 bg-clip-text text-4xl text-4xl font-bold font-bold text-transparent lg:mb-12 lg:text-7xl lg:text-7xl">
+		Learn: {data.post.name}
+	</h1>
+	<div class="prose-h2:mb-6 prose-h3:mb-6 grid gap-y-20">
+		<section id="topics" class="contents-observer grid gap-4">
+			<h2 class="border-b-base-content/20 mb-4 border-b-4 pb-2 text-2xl font-bold lg:text-4xl">
+				1. Topics
+			</h2>
 			<ul class="flex flex-wrap items-center">
 				{#each data.post.topics as topic}
 					<li class="me-4">
@@ -93,10 +89,10 @@
 			</ul>
 		</section>
 
-		<section
-			id="answers"
-			class="contents-observer grid gap-8 rounded-2xl border border-slate-700 p-4 lg:p-8">
-			<h2 class="text-2xl font-bold lg:text-4xl">2. Find answers to...</h2>
+		<section id="answers" class="contents-observer grid gap-4">
+			<h2 class="border-b-base-content/20 mb-4 border-b-4 pb-2 text-2xl font-bold lg:text-4xl">
+				2. Find answers to...
+			</h2>
 			<ul class="ms-4 list-disc">
 				{#each data.post.questions as question}
 					<li>{question}</li>
@@ -104,10 +100,10 @@
 			</ul>
 		</section>
 
-		<section
-			id="objectives"
-			class="contents-observer grid gap-8 rounded-2xl border border-slate-700 p-4 lg:p-8">
-			<h2 class="text-2xl font-bold lg:text-4xl">3. Objectives</h2>
+		<section id="objectives" class="contents-observer grid gap-4">
+			<h2 class="border-b-base-content/20 mb-4 border-b-4 pb-2 text-2xl font-bold lg:text-4xl">
+				3. Objectives
+			</h2>
 			<ul class="ms-4 list-disc">
 				{#each data.post.objectives as objective}
 					<li>{objective}</li>
@@ -115,10 +111,10 @@
 			</ul>
 		</section>
 
-		<section
-			id="observations"
-			class="contents-observer grid gap-8 rounded-2xl border border-slate-700 p-4 lg:p-8">
-			<h2 class="text-2xl font-bold lg:text-4xl">4. My Observations</h2>
+		<section id="observations" class="contents-observer grid gap-4">
+			<h2 class="border-b-base-content/20 mb-4 border-b-4 pb-2 text-2xl font-bold lg:text-4xl">
+				4. My Observations
+			</h2>
 			<div class="gap-y-4">
 				{#if data.post.issues == '' || !data.post.issues}
 					Haven't gotten to writing this yet.
@@ -131,10 +127,10 @@
 				{/if}
 			</div>
 		</section>
-		<section
-			id="courses"
-			class="contents-observer grid gap-8 rounded-2xl border border-slate-700 p-4 lg:p-8">
-			<h2 class="text-2xl font-bold lg:text-4xl">5. Courses</h2>
+		<section id="courses" class="contents-observer grid gap-4">
+			<h2 class="border-b-base-content/20 mb-4 border-b-4 pb-2 text-2xl font-bold lg:text-4xl">
+				5. Courses
+			</h2>
 			{#if data.post.resources.courses == '' || !data.post.resources.courses}
 				Sorry, nothing here
 			{:else}
@@ -147,10 +143,10 @@
 				</ul>
 			{/if}
 		</section>
-		<section
-			id="readings"
-			class="contents-observer grid gap-8 rounded-2xl border border-slate-700 p-4 lg:p-8">
-			<h2 class="text-2xl font-bold lg:text-4xl">6. Readings</h2>
+		<section id="readings" class="contents-observer grid gap-4">
+			<h2 class="border-b-base-content/20 mb-4 border-b-4 pb-2 text-2xl font-bold lg:text-4xl">
+				6. Readings
+			</h2>
 
 			{#if data.post.resources.links == ''}
 				Sorry, nothing here
@@ -164,10 +160,8 @@
 				</ul>
 			{/if}
 		</section>
-		<section
-			id="youtube"
-			class="contents-observer grid gap-8 rounded-2xl border border-slate-700 p-4 lg:p-8">
-			<h2 class="text-2xl font-bold lg:text-4xl">
+		<section id="youtube" class="contents-observer grid gap-4">
+			<h2 class="border-b-base-content/20 mb-4 border-b-4 pb-2 text-2xl font-bold lg:text-4xl">
 				7. Watch on Youtube
 
 				<svg

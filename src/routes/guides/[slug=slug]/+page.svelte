@@ -78,61 +78,17 @@
 	{contents}
 	{currentSection}
 	{textCurrent}>
-	<div class="mb-12">
-		<div class="w-full rounded-2xl bg-gray-600">
-			{#if page === 'problems'}
-				<div class="flex max-h-72 justify-end">
-					<enhanced:img src={problem} alt="$$$" class="rounded-2xl lg:-mb-14 lg:-translate-y-14" />
-				</div>
-			{:else if page === 'product'}
-				<div class="flex max-h-72 justify-end">
-					<enhanced:img
-						src={productAlt}
-						alt="$$$"
-						class="rounded-2xl lg:-mb-14 lg:-translate-y-14" />
-				</div>
-			{:else if page === 'security'}
-				<div class="flex max-h-72 justify-end">
-					<enhanced:img
-						src={safeKeyboard}
-						alt="Put your keyboard in the safe - best in class for security~!"
-						class="rounded-2xl lg:-mb-14 lg:-translate-y-14" />
-				</div>
-			{:else if page === 'cost'}
-				<div class="flex max-h-72 justify-start">
-					<enhanced:img
-						src={piggyBank}
-						alt="$$$"
-						class="rounded-2xl lg:-mb-14 lg:-translate-y-14" />
-				</div>
-			{/if}
-		</div>
-	</div>
 	<h1
 		class="inline-block bg-linear-to-r from-emerald-200 via-lime-200 to-teal-300 bg-clip-text pb-8 text-4xl font-bold text-transparent lg:text-7xl">
 		{data.post.name}
 	</h1>
 
 	<article
-		class="prose-section:mt-20 prose-h2:mb-6 prose-h3:mb-6 prose-h3:mt-12 prose-h5:mb-4 prose-p:mb-4 space-y-20 pb-10">
-		{#if data.post.bylines[0].text != ''}
-			<div class="flex justify-center">
-				{#key currentBylineNumber}
-					<div class="chat chat-start" in:fade={{ duration: 1000 }}>
-						<div class="avatar chat-image">
-							<div class="w-14 rounded-full">
-								<img src={data.post.bylines[currentBylineNumber].icon} alt="Author" />
-							</div>
-						</div>
-						<div class="chat-bubble border-primary-content bg-primary-content/50 border">
-							<i>{data.post.bylines[currentBylineNumber].text}</i>
-						</div>
-					</div>
-				{/key}
-			</div>
-		{/if}
-		<section id="definitions" class="contents-observer">
-			<h2 class="text-2xl font-bold lg:text-4xl">1. Definitions</h2>
+		class="prose-section:mt-20 prose-h2:mb-6 prose-h3:mb-6 prose-h3:mt-12 prose-h5:mb-4 prose-p:mb-4 grid gap-y-20 pb-10">
+		<section id="definitions" class="contents-observer grid gap-4">
+			<h2 class="border-b-base-content/20 mb-4 border-b-4 pb-2 text-2xl font-bold lg:text-4xl">
+				1. Definitions
+			</h2>
 			<div>
 				<ol class="list-disc space-y-4 ps-4">
 					{#each data.post.definitions as definition}
@@ -141,8 +97,10 @@
 				</ol>
 			</div>
 		</section>
-		<section id="goals" class="contents-observer">
-			<h2 class="text-2xl font-bold lg:text-4xl">2. Goals</h2>
+		<section id="goals" class="contents-observer grid gap-4">
+			<h2 class="border-b-base-content/20 mb-4 border-b-4 pb-2 text-2xl font-bold lg:text-4xl">
+				2. Goals
+			</h2>
 			<div>
 				<ol class="list-disc space-y-4 ps-4">
 					{#each data.post.goals as goal}
@@ -151,8 +109,10 @@
 				</ol>
 			</div>
 		</section>
-		<section id="questions" class="contents-observer">
-			<h2 class="text-2xl font-bold lg:text-4xl">3. Questions</h2>
+		<section id="questions" class="contents-observer grid gap-4">
+			<h2 class="border-b-base-content/20 mb-4 border-b-4 pb-2 text-2xl font-bold lg:text-4xl">
+				3. Questions
+			</h2>
 			<div>
 				<ol class="list-disc space-y-4 ps-4">
 					{#each data.post.questions as question}
@@ -161,8 +121,10 @@
 				</ol>
 			</div>
 		</section>
-		<section id="dealbreakers" class="contents-observer">
-			<h2 class="text-2xl font-bold lg:text-4xl">4. Dealbreakers</h2>
+		<section id="dealbreakers" class="contents-observer grid gap-4">
+			<h2 class="border-b-base-content/20 mb-4 border-b-4 pb-2 text-2xl font-bold lg:text-4xl">
+				4. Dealbreakers
+			</h2>
 			<div>
 				<ol class="list-disc space-y-4 ps-4">
 					{#each data.post.dealbreakers as dealbreaker}
@@ -171,8 +133,10 @@
 				</ol>
 			</div>
 		</section>
-		<section id="suggestions" class="contents-observer">
-			<h2 class="text-2xl font-bold lg:text-4xl">5. Suggestions</h2>
+		<section id="suggestions" class="contents-observer grid gap-4">
+			<h2 class="border-b-base-content/20 mb-4 border-b-4 pb-2 text-2xl font-bold lg:text-4xl">
+				5. Suggestions
+			</h2>
 			<div>
 				<ol class="list-disc space-y-4 ps-4">
 					{#each data.post.suggestions as suggestion}
