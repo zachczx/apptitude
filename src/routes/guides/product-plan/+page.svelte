@@ -26,9 +26,9 @@
 	];
 	let currentSection: any = $state();
 	let textCurrent = 'Product Plan 101';
-	let path: any = $derived(data.url.split('/'));
-	let category: any = $derived(path[1]);
-	let page: any = $derived(path[2]);
+	let path: string[] = $derived(data.url.split('/'));
+	let category: string = $derived(path[1]);
+	let page: string = $derived(path[2]);
 	let textMiddle = 'Guides';
 
 	onMount(() => {

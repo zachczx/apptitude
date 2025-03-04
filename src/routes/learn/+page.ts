@@ -1,7 +1,7 @@
 import { info } from './data_learn';
 
 export function load() {
-	const beginner = info.filter((item) => {
+	const starter = info.filter((item) => {
 		if (item.id <= 6) {
 			return item;
 		}
@@ -19,5 +19,5 @@ export function load() {
 		}
 	});
 
-	return { beginner, intermediate, advanced };
+	return { starter, intermediate, advanced };
 }

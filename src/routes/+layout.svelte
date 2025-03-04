@@ -22,14 +22,13 @@
 						stroke-width="2"
 						d="M4 6h16M4 12h8m-8 6h16" /></svg>
 			</div>
-			<nav class="menu dropdown-content z-50 w-48 rounded-lg bg-base-300 text-lg">
+			<nav class="menu dropdown-content bg-base-200 z-50 w-48 rounded-lg text-lg">
 				<a
-					class="border-b border-b-base-100 p-1 hover:rounded-t-lg active:text-primary active:text-primary"
+					class="border-b-base-100 active:text-primary flex items-center gap-4 border-b p-1 hover:rounded-t-lg"
 					href="/"
 					><svg
 						id="hugeicons:house-01"
 						xmlns="http://www.w3.org/2000/svg"
-						class="mb-1 me-2 inline stroke-base-content"
 						width="1em"
 						height="1em"
 						viewBox="0 0 24 24"
@@ -43,14 +42,14 @@
 							><path
 								d="M13 2L2 7m10-4v19H7c-1.886 0-2.828 0-3.414-.586S3 19.886 3 18V7m9 0l10 5" /><path
 								d="M10 22h7c1.886 0 2.828 0 3.414-.586S21 19.885 21 18v-6.5M18 10V7M7 11h1m-1 4h1m8-1h1m-.5 8v-4" /></g
-						></svg> Home</a>
+						></svg
+					>Home</a>
 				<a
-					class="border-b border-b-base-100 p-1 hover:rounded-t-lg active:text-primary active:text-primary"
+					class="border-b-base-100 active:text-primary flex items-center gap-4 border-b p-1 hover:rounded-t-lg"
 					href="/learn"
 					><svg
 						id="hugeicons:elearning-exchange"
 						xmlns="http://www.w3.org/2000/svg"
-						class="mb-1 me-2 inline stroke-base-content"
 						width="1em"
 						height="1em"
 						viewBox="0 0 24 24"
@@ -64,14 +63,14 @@
 							><path
 								d="M2.459 9c1.277-4.057 5.077-7 9.566-7c5.198 0 9.472 3.947 9.975 9l-2-.407M21.541 15a10.03 10.03 0 0 1-9.566 7C6.777 22 2.503 18.053 2 13l2 .407" /><path
 								d="M9.002 13.528v1.992a.95.95 0 0 0 .432.81c.844.528 1.485.683 2.571.716c1.001.027 1.629-.13 2.563-.714a.96.96 0 0 0 .44-.82v-1.984m2.003-2.513v3.015M7.05 10.844c.362-.764 2.605-2.094 4.652-2.751a.93.93 0 0 1 .604.014c1.81.662 3.824 1.665 4.555 2.478c.381.425.008.967-.453 1.302c-.937.681-1.97 1.21-4.058 2.013a.98.98 0 0 1-.688.005c-2.14-.795-4.142-1.82-4.595-2.723a.39.39 0 0 1-.017-.338" /></g
-						></svg> Learn</a>
+						></svg
+					>Learn</a>
 				<a
-					class="border-b border-b-base-100 p-1 active:font-bold active:text-primary"
+					class="border-b-base-100 active:text-primary flex items-center gap-4 border-b p-1 active:font-bold"
 					href="/guides"
 					><svg
 						id="hugeicons:online-learning-01"
 						xmlns="http://www.w3.org/2000/svg"
-						class="mb-1 me-2 inline stroke-base-content"
 						width="1em"
 						height="1em"
 						viewBox="0 0 24 24"
@@ -82,13 +81,15 @@
 							stroke-linejoin="round"
 							stroke-width="1.5"
 							d="M6.583 7.238c3.007.53 4.799 1.639 5.417 2.276c.618-.637 2.41-1.746 5.418-2.276c1.523-.269 2.285-.403 2.933.112C21 7.864 21 8.7 21 10.372v6.007c0 1.529 0 2.293-.416 2.77c-.417.477-1.333.639-3.166.962c-1.635.288-2.91.747-3.833 1.208c-.909.454-1.363.681-1.585.681s-.677-.227-1.585-.68c-.923-.462-2.198-.921-3.832-1.21c-1.834-.322-2.75-.484-3.167-.961S3 17.908 3 16.379v-6.007C3 8.7 3 7.864 3.649 7.35c.648-.515 1.41-.38 2.933-.112M12 9v13M8.5 3.059a6.29 6.29 0 0 1 7 .01M13.622 5.5a3.14 3.14 0 0 0-3.244-.01"
-							color="currentColor" /></svg> Guides</a>
+							color="currentColor" /></svg
+					>Guides</a>
 
-				<a class="p-1 hover:rounded-b-lg active:font-bold active:text-primary" href="/about"
+				<a
+					class="active:text-primary flex items-center gap-4 p-1 hover:rounded-b-lg active:font-bold"
+					href="/about"
 					><svg
 						id="hugeicons:help-circle"
 						xmlns="http://www.w3.org/2000/svg"
-						class="mb-1 me-2 inline stroke-base-content"
 						width="1em"
 						height="1em"
 						viewBox="0 0 24 24"
@@ -101,7 +102,8 @@
 							color="currentColor"
 							><circle cx="12" cy="12" r="10" /><path
 								d="M10 9a2 2 0 1 1 3.683 1.08C13.085 11.01 12 11.896 12 13v.5m-.008 3.5h.009" /></g
-						></svg> About</a>
+						></svg
+					>About</a>
 			</nav>
 		</div>
 		<a href="/"
@@ -117,17 +119,17 @@
 		<ul class="menu menu-horizontal gap-x-5 ps-20 font-medium">
 			<!-- removed menu class -->
 			<li aria-current={matchUrl(data.url, '/learn') === 0 ? 'page' : undefined}>
-				<a class="text-xl hover:bg-transparent hover:text-primary" href="/learn">Learn</a>
+				<a class="hover:text-primary text-xl hover:bg-transparent" href="/learn">Learn</a>
 			</li>
 			<li aria-current={matchUrl(data.url, '/guides') === 0 ? 'page' : undefined}>
-				<a class="text-xl hover:bg-transparent hover:text-primary" href="/guides">Guides</a>
+				<a class="hover:text-primary text-xl hover:bg-transparent" href="/guides">Guides</a>
 			</li>
 			<li aria-current={matchUrl(data.url, '/techtrippin') === 0 ? 'page' : undefined}>
-				<a class="text-xl hover:bg-transparent hover:text-primary" href="/techtrippin"
+				<a class="hover:text-primary text-xl hover:bg-transparent" href="/techtrippin"
 					>Tech Trippin'</a>
 			</li>
 			<li aria-current={matchUrl(data.url, '/about') === 0 ? 'page' : undefined}>
-				<a class="text-xl hover:bg-transparent hover:text-primary" href="/about">About</a>
+				<a class="hover:text-primary text-xl hover:bg-transparent" href="/about">About</a>
 			</li>
 		</ul>
 	</div>
@@ -152,7 +154,7 @@
 
 {@render children()}
 
-<footer class="footer footer-center gap-y-2 rounded-sm bg-base-200 p-3 pt-5 text-base-content">
+<footer class="footer footer-center bg-base-200 text-base-content gap-y-2 rounded-sm p-3 pt-5">
 	<aside>
 		<p class="mb-2 text-base">
 			Copyright © 2024 Zixian Chen. All rights reserved. All views expressed on Apptitude are
@@ -164,25 +166,25 @@
 		<div class="z-10">
 			<a href="https://abbreviation.zixian.dev" class="hover:text-primary"
 				><TablerSquareRoundedPlusFilled
-					class="mb-1 me-1 ms-2 inline fill-primary" />Abbreviation</a>
+					class="fill-primary ms-2 me-1 mb-1 inline" />Abbreviation</a>
 			<a href="https://titude.app/" class="hover:text-primary"
-				><TablerSquareRoundedPlusFilled class="mb-1 me-1 ms-2 inline fill-primary" />Apptitude</a>
+				><TablerSquareRoundedPlusFilled class="fill-primary ms-2 me-1 mb-1 inline" />Apptitude</a>
 			<a href="https://appraize.zixian.dev/" class="hover:text-primary"
-				><TablerSquareRoundedPlusFilled class="mb-1 me-1 ms-2 inline fill-primary" />Appraize</a>
+				><TablerSquareRoundedPlusFilled class="fill-primary ms-2 me-1 mb-1 inline" />Appraize</a>
 			<a href="https://abbreviation.zixian.dev/" class="hover:text-primary"
 				><TablerSquareRoundedPlusFilled
-					class="mb-1 me-1 ms-2 inline fill-primary" />Abbreviation</a>
+					class="fill-primary ms-2 me-1 mb-1 inline" />Abbreviation</a>
 			<a href="https://btonomics.com/" class="hover:text-primary"
-				><TablerSquareRoundedPlusFilled class="mb-1 me-1 ms-2 inline fill-primary" />Btonomics</a>
+				><TablerSquareRoundedPlusFilled class="fill-primary ms-2 me-1 mb-1 inline" />Btonomics</a>
 		</div>
 	</div>
 	<div class="grid grid-cols-1 md:grid-flow-col md:gap-4">
 		<div class="font-bold">Socials</div>
 		<div class="z-10">
 			<a href="https://www.linkedin.com/in/zixianchen/" class="hover:text-primary"
-				><TablerSquareRoundedPlusFilled class="mb-1 me-1 ms-2 inline fill-primary" /> LinkedIn</a>
+				><TablerSquareRoundedPlusFilled class="fill-primary ms-2 me-1 mb-1 inline" /> LinkedIn</a>
 			<a href="https://zixianchen.com/" class="hover:text-primary"
-				><TablerSquareRoundedPlusFilled class="mb-1 me-1 ms-2 inline fill-primary" /> Website</a>
+				><TablerSquareRoundedPlusFilled class="fill-primary ms-2 me-1 mb-1 inline" /> Website</a>
 		</div>
 	</div>
 </footer>

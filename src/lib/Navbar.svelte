@@ -8,8 +8,8 @@
 	export let comparisonUrl;
 </script>
 
-<nav class="navbar relative bg-base-300" data-pagefind-ignore>
-	<div class="max-h-18 navbar-start">
+<nav class="navbar bg-base-200 relative" data-pagefind-ignore>
+	<div class="navbar-start max-h-18">
 		<div class="dropdown">
 			<div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
 				<svg
@@ -24,25 +24,25 @@
 						stroke-width="2"
 						d="M4 6h16M4 12h8m-8 6h16" /></svg>
 			</div>
-			<nav class="opacity-1 menu dropdown-content z-50 w-48 rounded-lg bg-slate-900 p-0 text-xl">
+			<nav class="menu dropdown-content z-50 w-48 rounded-lg bg-slate-900 p-0 text-xl opacity-1">
 				<a
-					class="border-b border-slate-600 p-3 hover:rounded-t-lg hover:bg-slate-600 active:font-bold active:text-primary"
+					class="active:text-primary border-b border-slate-600 p-3 hover:rounded-t-lg hover:bg-slate-600 active:font-bold"
 					href="/learn"
 					><TablerChevronRight class="inline align-middle" height="1rem" width="1rem" /> Learn</a>
 				<a
-					class="border-b border-slate-600 p-3 hover:bg-slate-600 active:font-bold active:text-primary"
+					class="active:text-primary border-b border-slate-600 p-3 hover:bg-slate-600 active:font-bold"
 					href="/cacheup"
 					><TablerChevronRight class="inline align-middle" height="1rem" width="1rem" /> Cache Up!</a>
 				<a
-					class="border-b border-slate-600 p-3 hover:bg-slate-600 active:font-bold active:text-primary"
+					class="active:text-primary border-b border-slate-600 p-3 hover:bg-slate-600 active:font-bold"
 					href="/techtrippin"
 					><TablerChevronRight class="inline align-middle" height="1rem" width="1rem" /> Tech Trippin'</a>
 				<a
-					class="border-b border-slate-600 p-3 hover:bg-slate-600 active:font-bold active:text-primary"
+					class="active:text-primary border-b border-slate-600 p-3 hover:bg-slate-600 active:font-bold"
 					href="/todo"
 					><TablerChevronRight class="inline align-middle" height="1rem" width="1rem" /> To-Do List</a>
 				<a
-					class="p-3 hover:rounded-b-lg hover:bg-slate-600 active:font-bold active:text-primary"
+					class="active:text-primary p-3 hover:rounded-b-lg hover:bg-slate-600 active:font-bold"
 					href="/about"
 					><TablerChevronRight class="inline align-middle" height="1rem" width="1rem" /> About</a>
 			</nav>
@@ -56,7 +56,7 @@
 				class="object-scale-down lg:ms-16" /></a>
 	</div>
 	<div class="navbar-center hidden lg:flex">
-		<ul class="menu menu-horizontal gap-x-[2rem] pe-5 ps-1 text-2xl">
+		<ul class="menu menu-horizontal gap-x-[2rem] ps-1 pe-5 text-2xl">
 			<!-- removed menu class -->
 			<li aria-current={matchUrl(comparisonUrl, '/learn') === 0 ? 'page' : undefined}>
 				<a class="hover:bg-base-100 hover:text-primary" href="/learn">Learn</a>

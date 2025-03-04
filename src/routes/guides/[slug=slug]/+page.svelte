@@ -18,7 +18,7 @@
 
 	//for byline
 	let currentBylineNumber = $state(0);
-	let bylineTotal = data.post.bylines.length - 1;
+	let bylineTotal = data.post?.bylines.length - 1;
 
 	setInterval(() => {
 		if (currentBylineNumber < bylineTotal) {
@@ -36,10 +36,10 @@
 		{ id: 'suggestions', title: '5. Suggestions' },
 	];
 	let currentSection: any = $state();
-	let textCurrent = $derived(data.post.name);
-	let path: any = $derived(data.url.split('/'));
-	let category: any = $derived(path[1]);
-	let page: any = $derived(path[2]);
+	let textCurrent = $derived(data.post?.name);
+	let path: string[] = $derived(data.url.split('/'));
+	let category: string = $derived(path[1]);
+	let page: string = $derived(path[2]);
 	let textMiddle = 'Guides';
 
 	onMount(() => {

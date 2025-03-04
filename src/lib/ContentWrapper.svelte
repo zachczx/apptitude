@@ -14,12 +14,11 @@
 	export let textMiddle: string;
 </script>
 
-<div class="mb-8 mt-0 grid grid-cols-5 px-2 py-5 lg:px-10 xl:px-20">
+<div class="mt-0 mb-8 grid grid-cols-5 px-2 py-5 lg:px-10 xl:px-20">
 	<aside
-		class="col-span-1 hidden w-full content-start rounded-l-3xl lg:grid lg:border-r-2 lg:border-r-base-100 lg:bg-gray-950"
-		style="view-transition-name: view-transition-left-panel;">
+		class="lg:border-r-base-100 bg-base-200 col-span-1 hidden w-full content-start rounded-l-3xl lg:grid lg:border-r-2">
 		<div
-			class="view-transition-menu-text flex h-14 w-full items-center border-b-2 border-b-base-100 px-8 text-xl">
+			class="view-transition-menu-text border-b-base-100 flex h-14 w-full items-center border-b-2 px-8 text-xl">
 			<a href="/"
 				><img
 					src={logo}
@@ -33,19 +32,19 @@
 	</aside>
 
 	<main
-		class="col-span-5 w-full space-y-8 border-r-2 border-r-base-100 lg:col-span-3 lg:bg-base-300"
+		class="border-r-base-100 lg:bg-base-200 col-span-5 w-full space-y-8 border-r-2 lg:col-span-3"
 		style="view-transition-name: view-transition-base-canvas;">
 		<nav
-			class="b-4 h-14 w-full justify-items-start border-b-2 border-b-base-100 px-2 py-4 lg:grid lg:px-8">
-			<NewCrumbs urlMiddle="guides" {textMiddle} {textCurrent} />
+			class="b-4 border-b-base-100 h-14 w-full justify-items-start border-b-2 px-2 py-4 lg:grid lg:px-8">
+			<NewCrumbs urlMiddle={category} {textMiddle} {textCurrent} />
 		</nav>
-		<div class="px-2 pb-10 pt-4 lg:px-8 lg:pt-0"><slot /></div>
+		<div class="px-2 pt-4 pb-10 lg:px-8 lg:pt-0"><slot /></div>
 	</main>
 	<aside
-		class="col-span-1 hidden w-full content-start rounded-r-3xl lg:grid lg:bg-base-300"
+		class="lg:bg-base-200 col-span-1 hidden w-full content-start rounded-r-3xl lg:grid"
 		style="view-transition-name: view-transition-right-panel;">
 		<div
-			class="flex h-14 w-full items-center justify-end border-b-2 border-b-base-100 px-8 py-4 text-xl">
+			class="border-b-base-100 flex h-14 w-full items-center justify-end border-b-2 px-8 py-4 text-xl">
 			<a href="/search" class="view-transition-search-icon text-2xl"
 				><svg
 					xmlns="http://www.w3.org/2000/svg"

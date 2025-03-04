@@ -57,10 +57,8 @@
 						stroke-width="2"
 						d="M4 6h16M4 12h8m-8 6h16" /></svg>
 			</div>
-			<nav class="menu dropdown-content bg-base-300 z-50 w-48 rounded-lg text-lg">
-				<a
-					class="border-b-base-100 active:text-primary active:text-primary border-b p-1 hover:rounded-t-lg"
-					href="/"
+			<nav class="menu dropdown-content bg-base-200 z-50 w-48 rounded-lg text-lg">
+				<a class="border-b-base-100 active:text-primary border-b p-1 hover:rounded-t-lg" href="/"
 					><svg
 						id="hugeicons:house-01"
 						xmlns="http://www.w3.org/2000/svg"
@@ -254,8 +252,8 @@
 		<div class="flex flex-wrap justify-center gap-4">
 			<a
 				href="/learn"
-				class="button-shine btn btn-primary border-primary relative overflow-hidden rounded-full border lg:px-8 lg:text-2xl"
-				>Learn Basics <svg
+				class="button-shine btn btn-primary border-primary relative overflow-hidden rounded-full border py-8 font-medium lg:px-8 lg:text-2xl"
+				>Learn Basics<svg
 					xmlns="http://www.w3.org/2000/svg"
 					width="1.3em"
 					height="1.3em"
@@ -266,7 +264,7 @@
 				></a>
 			<a
 				href="/guides"
-				class="btn btn-outline btn-primary text-primary rounded-full lg:px-8 lg:text-2xl"
+				class="btn btn-outline btn-primary rounded-full py-8 font-medium hover:bg-lime-200 lg:px-8 lg:text-2xl"
 				>Skip to Guides</a>
 		</div>
 	</div>

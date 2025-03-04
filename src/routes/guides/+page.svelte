@@ -11,24 +11,18 @@
 
 	let { data } = $props();
 	let currentSection: any = $state();
-	let path: any = $derived(data.url.split('/'));
-	let category: any = $derived(path[1]);
-	let page: any = $derived(path[2]);
+	let path: string[] = $derived(data.url.split('/'));
+	let category: string = $derived(path[1]);
+	let page: string = $derived(path[2]);
 	let textMiddle: string = 'Guides';
 </script>
 
 <ContentWrapper urlSelf={data.url} {page} {textMiddle} {category} {currentSection}>
-	<section class="mb-12 space-y-12">
-		<div>
-			<h1
-				class="mb-4 inline-block bg-linear-to-r from-emerald-200 via-lime-200 to-teal-300 bg-clip-text text-4xl font-bold text-transparent lg:text-7xl">
-				Guides to Cache Up!
-			</h1>
-			<p class="text-sm">
-				<i
-					>Rebooting your obsolescence - migrating from Windows XP to actually current tech skills.</i>
-			</p>
-		</div>
+	<section class="mb-20 grid gap-4">
+		<h1
+			class="mb-4 inline-block bg-linear-to-r from-emerald-200 via-lime-200 to-teal-300 bg-clip-text text-4xl font-bold text-transparent lg:text-7xl">
+			Guides to Cache Up!
+		</h1>
 		<p>
 			This section offers a series of quickstart guides to catch up. The intent of the content here
 			is to equip you with an awareness of "what ought to be" and "what can be", and then use those
@@ -38,7 +32,7 @@
 	</section>
 	<section>
 		<div
-			class="group card bg-neutral hover:from-base-300 hover:via-base-200 mb-12 border border-gray-700 shadow-xl hover:bg-linear-to-tr hover:to-gray-700">
+			class="group card bg-base-200 hover:from-base-300 hover:via-base-200 mb-12 border border-gray-700 shadow-xl hover:bg-linear-to-tr hover:to-gray-700">
 			<div class="card-body grid lg:grid-cols-2">
 				<div class="mb-8 lg:px-8">
 					<h2 class="text-2xl font-bold lg:text-7xl">
@@ -70,7 +64,7 @@
 			</div>
 		</div>
 		<div
-			class="group card bg-neutral hover:from-base-300 hover:via-base-200 mb-12 w-full border border-gray-700 shadow-xl hover:bg-linear-to-tr hover:to-gray-700">
+			class="group card bg-base-200 hover:from-base-300 hover:via-base-200 mb-12 w-full border border-gray-700 shadow-xl hover:bg-linear-to-tr hover:to-gray-700">
 			<a href="/guides/problems"
 				><div class="card-body grid lg:grid-cols-2">
 					<div class="mb-8 self-center lg:mb-20 lg:px-8">
@@ -97,7 +91,7 @@
 		<div class="mb-12">
 			<a href="/guides/research">
 				<div
-					class="group card bg-neutral hover:from-base-300 hover:via-base-200 h-auto w-full border border-gray-700 shadow-xl hover:bg-linear-to-tr hover:to-gray-700">
+					class="group card bg-base-200 hover:from-base-300 hover:via-base-200 h-auto w-full border border-gray-700 shadow-xl hover:bg-linear-to-tr hover:to-gray-700">
 					<div class="card-body grid lg:grid-cols-2">
 						<div class="mb-8 lg:px-8">
 							<h2 class="text-2xl font-bold lg:text-7xl">Research</h2>
@@ -121,7 +115,7 @@
 		</div>
 		<a href="/guides/cost">
 			<div
-				class="group card bg-neutral hover:from-base-300 hover:via-base-200 mb-12 grid w-full overflow-hidden border border-gray-700 shadow-xl hover:bg-linear-to-tr hover:to-gray-700">
+				class="group card bg-base-200 hover:from-base-300 hover:via-base-200 mb-12 grid w-full overflow-hidden border border-gray-700 shadow-xl hover:bg-linear-to-tr hover:to-gray-700">
 				<div class="card-body grid lg:grid-cols-2">
 					<div class="mb-4 lg:order-last lg:px-8">
 						<h2 class="text-2xl font-bold lg:text-7xl">Cost</h2>
@@ -147,7 +141,7 @@
 		<a href="/guides/security"
 			><div class="mb-12">
 				<div
-					class="group card bg-neutral hover:from-base-300 hover:via-base-200 h-auto w-full border border-gray-700 shadow-xl hover:bg-linear-to-tr hover:to-gray-700">
+					class="group card bg-base-200 hover:from-base-300 hover:via-base-200 h-auto w-full border border-gray-700 shadow-xl hover:bg-linear-to-tr hover:to-gray-700">
 					<div class="card-body grid lg:grid-cols-2">
 						<div class="mb-8 lg:px-8">
 							<h2 class="text-2xl font-bold lg:text-7xl">Security</h2>
@@ -173,9 +167,3 @@
 		</a>
 	</section>
 </ContentWrapper>
-
-<style>
-	.box-shadow {
-		box-shadow: 5px -4px 4px 0 rgba(0, 0, 0, 0.4);
-	}
-</style>

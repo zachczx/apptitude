@@ -4,6 +4,8 @@
 	name: 'dim';
 	default: true;
 	--color-neutral-content: #e0eaee;
+	--color-base-200: #161920;
+	--color-base-300: #040506;
 }
 
 :root {
