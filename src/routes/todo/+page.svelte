@@ -131,7 +131,7 @@
 					bind:checked={item.done}
 					onclick={toggleTodo}
 					data-index={i}
-					class="checkbox-secondary checkbox checkbox-lg hover:outline-double hover:outline-red-300" />
+					class="checkbox-secondary checkbox checkbox-lg hover:outline-red-300 hover:outline-double" />
 			</div>
 		{/each}
 	</div>
