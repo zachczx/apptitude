@@ -5,7 +5,7 @@
 		let result = currentUrl.search(navUrl);
 		return result;
 	}
-	export let comparisonUrl;
+	let { comparisonUrl } = $props();
 </script>
 
 <nav class="navbar bg-base-200 relative" data-pagefind-ignore>

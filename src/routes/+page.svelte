@@ -265,7 +265,7 @@
 			<a
 				href="/guides"
 				class="btn btn-outline btn-primary rounded-full py-8 font-medium hover:bg-lime-200 lg:px-8 lg:text-2xl"
-				>Skip to Guides</a>
+				>Practical Guides</a>
 		</div>
 	</div>
 </div>

@@ -1,8 +1,6 @@
 <script lang="ts">
 	import SvgChevronRight from '$lib/assets/svg/TablerChevronRight.svelte';
-	export let urlMiddle = '';
-	export let textMiddle = '';
-	export let textCurrent = '';
+	let { urlMiddle = '', textMiddle = '', textCurrent = '' } = $props();
 </script>
 
 <div data-pagefind-ignore>
@@ -14,7 +12,7 @@
 					xmlns="http://www.w3.org/2000/svg"
 					width="1em"
 					height="1em"
-					class="mb-1 me-1 inline"
+					class="me-1 mb-1 inline"
 					viewBox="0 0 32 32"
 					><path
 						fill="currentColor"
@@ -32,7 +30,7 @@
 						xmlns="http://www.w3.org/2000/svg"
 						width="1em"
 						height="1em"
-						class="mb-1 me-1 inline"
+						class="me-1 mb-1 inline"
 						viewBox="0 0 32 32"
 						><path
 							fill="currentColor"
@@ -50,7 +48,7 @@
 					xmlns="http://www.w3.org/2000/svg"
 					width="1em"
 					height="1em"
-					class="mb-1 me-1 inline"
+					class="me-1 mb-1 inline"
 					style="view-transition-name: view-transition-paper-icon"
 					viewBox="0 0 32 32"
 					><path

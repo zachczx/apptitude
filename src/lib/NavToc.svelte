@@ -1,7 +1,5 @@
 <script>
-	export let urlSelf = '';
-	export let contents;
-	export let currentSection;
+	let { urlSelf = '', contents, currentSection } = $props();
 </script>
 
 <div class="menu sticky top-0">
