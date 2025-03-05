@@ -3,6 +3,7 @@
 @plugin "daisyui/theme" {
 	name: 'dim';
 	default: true;
+	--color-secondary: #e8d68d;
 	--color-neutral-content: #e0eaee;
 	--color-base-200: #161920;
 	--color-base-300: #040506;
