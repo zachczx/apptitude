@@ -66,22 +66,8 @@
 	{textMiddle}
 	{contents}
 	{currentSection}
-	{textCurrent}>
-	<!-- <div class="mb-12">
-		<div class="w-full rounded-2xl bg-gray-600">
-			<div class="flex max-h-80 justify-end">
-				<enhanced:img
-					src={magnifyingGlass}
-					alt="User research: Avoiding those awkward 'Hey, does anyone like our product?' moments."
-					class="rounded-2xl lg:-mb-14 lg:translate-x-5 lg:-translate-y-20" />
-			</div>
-		</div>
-	</div> -->
-	<h1
-		class="via-primary inline-block bg-linear-to-r from-emerald-200 to-teal-300 bg-clip-text pb-8 text-4xl font-bold text-transparent lg:text-7xl">
-		Research
-	</h1>
-
+	{textCurrent}
+	title="Research">
 	<article
 		class="prose-section:mt-20 prose-h2:mb-6 prose-h3:mb-6 prose-h3:mt-12 prose-h5:mb-4 prose-p:mb-4 prose-ul:mb-4 mt-12 space-y-20 pb-10">
 		<section id="empathize" class="contents-observer grid grid-cols-4 gap-x-8 gap-y-16">

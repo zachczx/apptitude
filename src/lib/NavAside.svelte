@@ -2,194 +2,171 @@
 	let { category = '', page = '' } = $props();
 </script>
 
-<ul class="view-transition-navaside menu rounded-box w-full text-base" data-pagefind-ignore>
-	<li
-		class="text-xl font-bold lg:px-2 xl:px-4 {category === 'learn'
-			? 'text-primary font-bold'
-			: undefined}">
-		<a href="/learn">Learn </a>
+<ul class="menu rounded-box w-full text-base" data-pagefind-ignore>
+	<li class="text-2xl font-bold lg:px-2 xl:px-4">
+		<a href="/learn">Learn</a>
 	</li>
 	<li class="lg:px-2 xl:px-4">
-		<details
-			open={page === 'basics' ||
+		<span
+			class={page === 'basics' ||
 			page === 'basics-web' ||
 			page === 'apps' ||
 			page === 'wog' ||
 			page === 'ux' ||
 			page === 'products'
-				? true
-				: false}>
-			<summary
-				class={page === 'basics' ||
-				page === 'basics-web' ||
-				page === 'apps' ||
-				page === 'wog' ||
-				page === 'ux' ||
-				page === 'products'
-					? 'text-primary font-bold'
-					: undefined}
-				><svg
-					id="carbon:skill-level-basic"
-					xmlns="http://www.w3.org/2000/svg"
-					width="1em"
-					height="1em"
-					class="me-2"
-					viewBox="0 0 32 32"
-					><path
-						fill="currentColor"
-						d="M30 30h-8V4h8zm-6-2h4V6h-4zm-4 2h-8V12h8zm-6-2h4V14h-4zm-4 2H2V18h8z" /></svg
-				>Starter</summary>
-			<ul class="border-l-base-content/30 ms-6 border-l-2 xl:ms-12">
-				<li>
-					<a href="/learn/basics" class={page === 'basics' ? 'text-primary font-bold' : undefined}
-						>Basics</a>
-				</li>
-				<li>
-					<a
-						href="/learn/basics-web"
-						class={page === 'basics-web' ? 'text-primary font-bold' : undefined}>Basics (Web)</a>
-				</li>
-				<li>
-					<a href="/learn/apps" class={page === 'apps' ? 'text-primary font-bold' : undefined}
-						>Apps</a>
-				</li>
-				<li>
-					<a href="/learn/wog" class={page === 'wog' ? 'text-primary font-bold' : undefined}
-						>Central Tools</a>
-				</li>
-				<li>
-					<a href="/learn/ux" class={page === 'ux' ? 'text-primary font-bold' : undefined}
-						>UX (I)</a>
-				</li>
-				<li>
-					<a
-						href="/learn/products"
-						class={page === 'products' ? 'text-primary font-bold' : undefined}>Products (I)</a>
-				</li>
-			</ul>
-		</details>
+				? 'text-primary font-medium'
+				: undefined}
+			><svg
+				id="carbon:skill-level-basic"
+				xmlns="http://www.w3.org/2000/svg"
+				width="1em"
+				height="1em"
+				class="me-2"
+				viewBox="0 0 32 32"
+				><path
+					fill="currentColor"
+					d="M30 30h-8V4h8zm-6-2h4V6h-4zm-4 2h-8V12h8zm-6-2h4V14h-4zm-4 2H2V18h8z" /></svg
+			>Starter</span>
+		<ul class="border-l-base-content/30 list-item-padding ms-6 border-l-2 ps-4">
+			<li>
+				<a href="/learn/basics" class={page === 'basics' ? 'text-primary font-medium' : undefined}
+					>Basics</a>
+			</li>
+			<li>
+				<a
+					href="/learn/basics-web"
+					class={page === 'basics-web' ? 'text-primary font-medium' : undefined}>Basics (Web)</a>
+			</li>
+			<li>
+				<a href="/learn/apps" class={page === 'apps' ? 'text-primary font-medium' : undefined}
+					>Apps</a>
+			</li>
+			<li>
+				<a href="/learn/wog" class={page === 'wog' ? 'text-primary font-medium' : undefined}
+					>Central Tools</a>
+			</li>
+			<li>
+				<a href="/learn/ux" class={page === 'ux' ? 'text-primary font-medium' : undefined}
+					>UX (I)</a>
+			</li>
+			<li>
+				<a
+					href="/learn/products"
+					class={page === 'products' ? 'text-primary font-medium' : undefined}>Products (I)</a>
+			</li>
+		</ul>
 	</li>
 	<li class="lg:px-2 xl:px-4">
-		<details
-			open={page === 'products-advanced' ||
+		<span
+			class={page === 'products-advanced' ||
 			page === 'ux-advanced' ||
 			page === 'methods' ||
 			page === 'data' ||
 			page === 'ai'
-				? true
-				: false}>
-			<summary
-				class={page === 'products-advanced' ||
-				page === 'ux-advanced' ||
-				page === 'methods' ||
-				page === 'data' ||
-				page === 'ai'
-					? 'text-primary'
-					: undefined}
-				><svg
-					id="carbon:skill-level-intermediate"
-					xmlns="http://www.w3.org/2000/svg"
-					width="1em"
-					height="1em"
-					class="me-2"
-					viewBox="0 0 32 32"
-					><path
-						fill="currentColor"
-						d="M30 30h-8V4h8zm-6-2h4V6h-4zm-4 2h-8V12h8zm-10 0H2V18h8z" /></svg
-				>Mid</summary>
-			<ul class="border-l-base-content/30 ms-6 border-l-2 xl:ms-12">
-				<li>
-					<a
-						href="/learn/products-advanced"
-						class={page === 'products-advanced' ? 'text-primary font-bold' : undefined}
-						>Products (II)</a>
-				</li>
-				<li>
-					<a
-						href="/learn/ux-advanced"
-						class={page === 'ux-advanced' ? 'text-primary font-bold' : undefined}>UX (II)</a>
-				</li>
-				<li>
-					<a href="/learn/methods" class={page === 'methods' ? 'text-primary font-bold' : undefined}
-						>Methods</a>
-				</li>
-				<li>
-					<a href="/learn/data" class={page === 'data' ? 'text-primary font-bold' : undefined}
-						>Data</a>
-				</li>
-				<li>
-					<a href="/learn/ai" class={page === 'ai' ? 'text-primary font-bold' : undefined}
-						>AI (I)</a>
-				</li>
-			</ul>
-		</details>
+				? 'text-primary'
+				: undefined}
+			><svg
+				id="carbon:skill-level-intermediate"
+				xmlns="http://www.w3.org/2000/svg"
+				width="1em"
+				height="1em"
+				class="me-2"
+				viewBox="0 0 32 32"
+				><path
+					fill="currentColor"
+					d="M30 30h-8V4h8zm-6-2h4V6h-4zm-4 2h-8V12h8zm-10 0H2V18h8z" /></svg
+			>Mid</span>
+		<ul class="border-l-base-content/30 ms-5 border-l-2 ps-6">
+			<li>
+				<a
+					href="/learn/products-advanced"
+					class={page === 'products-advanced' ? 'text-primary font-medium' : undefined}
+					>Products (II)</a>
+			</li>
+			<li>
+				<a
+					href="/learn/ux-advanced"
+					class={page === 'ux-advanced' ? 'text-primary font-medium' : undefined}>UX (II)</a>
+			</li>
+			<li>
+				<a href="/learn/methods" class={page === 'methods' ? 'text-primary font-medium' : undefined}
+					>Methods</a>
+			</li>
+			<li>
+				<a href="/learn/data" class={page === 'data' ? 'text-primary font-medium' : undefined}
+					>Data</a>
+			</li>
+			<li>
+				<a href="/learn/ai" class={page === 'ai' ? 'text-primary font-medium' : undefined}
+					>AI (I)</a>
+			</li>
+		</ul>
 	</li>
 	<li class="pb-4 lg:px-2 xl:px-4">
-		<details open={page === 'ai-advanced' || page === 'technical' ? true : false}>
-			<summary
-				class={page === 'ai-advanced' || page === 'technical'
-					? 'text-primary font-bold'
-					: undefined}
-				><svg
-					id="carbon:skill-level-advanced"
-					xmlns="http://www.w3.org/2000/svg"
-					width="1em"
-					height="1em"
-					class="me-2"
-					viewBox="0 0 32 32"
-					><path fill="currentColor" d="M30 30h-8V4h8zm-10 0h-8V12h8zm-10 0H2V18h8z" /></svg
-				>Pro</summary>
-			<ul class="border-l-base-content/30 ms-6 border-l-2 xl:ms-12">
-				<li>
-					<a
-						href="/learn/ai-advanced"
-						class={page === 'ai-advanced' ? 'text-primary font-bold' : undefined}>AI (II)</a>
-				</li>
-				<li>
-					<a
-						href="/learn/technical"
-						class={page === 'technical' ? 'text-primary font-bold' : undefined}>Technical</a>
-				</li>
-			</ul>
-		</details>
+		<span
+			class={page === 'ai-advanced' || page === 'technical'
+				? 'text-primary font-medium'
+				: undefined}
+			><svg
+				id="carbon:skill-level-advanced"
+				xmlns="http://www.w3.org/2000/svg"
+				width="1em"
+				height="1em"
+				class="me-2"
+				viewBox="0 0 32 32"
+				><path fill="currentColor" d="M30 30h-8V4h8zm-10 0h-8V12h8zm-10 0H2V18h8z" /></svg
+			>Pro</span>
+		<ul class="border-l-base-content/30 ms-5 border-l-2 ps-6">
+			<li>
+				<a
+					href="/learn/ai-advanced"
+					class={page === 'ai-advanced' ? 'text-primary font-medium' : undefined}>AI (II)</a>
+			</li>
+			<li>
+				<a
+					href="/learn/technical"
+					class={page === 'technical' ? 'text-primary font-medium' : undefined}>Technical</a>
+			</li>
+		</ul>
 	</li>
-	<li class="pt-4 text-xl font-bold lg:px-2 xl:px-4">
-		<a href="/guides" class={category === 'guides' ? 'text-primary font-bold' : undefined}
+
+	<li class="pt-4 text-2xl font-bold lg:px-2 xl:px-4">
+		<a href="/guides" class={category === 'guides' ? 'text-primary font-medium' : undefined}
 			>Guides</a>
 	</li>
+
 	<li class="lg:px-2 xl:px-4">
-		<details open={page === 'product-plan' ? true : page === 'product' ? true : false}>
-			<summary
-				><svg
-					id="carbon:box"
-					xmlns="http://www.w3.org/2000/svg"
-					width="1em"
-					height="1em"
-					class="me-2"
-					viewBox="0 0 32 32"
-					><path
-						fill="currentColor"
-						d="M20 21h-8a2 2 0 0 1-2-2v-2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2m-8-4v2h8v-2Z" /><path
-						fill="currentColor"
-						d="M28 4H4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2v16a2 2 0 0 0 2 2h20a2 2 0 0 0 2-2V12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2m-2 24H6V12h20Zm2-18H4V6h24z" /></svg>
-				Product</summary>
-			<ul class="border-l-base-content/30 ms-6 border-l-2 xl:ms-12">
-				<li>
-					<a
-						href="/guides/product"
-						class={page === 'product' ? 'text-primary font-bold' : undefined}>Product Checklist</a>
-				</li>
-				<li>
-					<a
-						href="/guides/product-plan"
-						class={page === 'product-plan' ? 'text-primary font-bold' : undefined}
-						>Product Plan 101</a>
-				</li>
-			</ul>
-		</details>
+		<span
+			class={page === 'product' || page === 'product-plan' ? 'text-primary font-medium' : undefined}
+			><svg
+				id="carbon:box"
+				xmlns="http://www.w3.org/2000/svg"
+				width="1em"
+				height="1em"
+				class="me-2"
+				viewBox="0 0 32 32"
+				><path
+					fill="currentColor"
+					d="M20 21h-8a2 2 0 0 1-2-2v-2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2m-8-4v2h8v-2Z" /><path
+					fill="currentColor"
+					d="M28 4H4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2v16a2 2 0 0 0 2 2h20a2 2 0 0 0 2-2V12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2m-2 24H6V12h20Zm2-18H4V6h24z" /></svg>
+			Product</span>
+		<ul class="border-l-base-content/30 ms-5 border-l-2 ps-6">
+			<li>
+				<a
+					href="/guides/product"
+					class={page === 'product' ? 'text-primary font-medium' : undefined}>Product Checklist</a>
+			</li>
+			<li>
+				<a
+					href="/guides/product-plan"
+					class={page === 'product-plan' ? 'text-primary font-medium' : undefined}
+					>Product Plan 101</a>
+			</li>
+		</ul>
 	</li>
 	<li class="lg:px-2 xl:px-4">
-		<a href="/guides/problems" class={page === 'problems' ? 'text-primary font-bold' : undefined}>
+		<a href="/guides/problems" class={page === 'problems' ? 'text-primary font-medium' : undefined}>
 			<summary
 				><svg
 					id="carbon:help"
@@ -211,7 +188,7 @@
 		</a>
 	</li>
 	<li class="lg:px-2 xl:px-4">
-		<a href="/guides/research" class={page === 'research' ? 'text-primary font-bold' : undefined}>
+		<a href="/guides/research" class={page === 'research' ? 'text-primary font-medium' : undefined}>
 			<summary
 				><svg
 					id="ri:survey-line"
@@ -227,7 +204,7 @@
 		</a>
 	</li>
 	<li class="lg:px-2 xl:px-4">
-		<a href="/guides/cost" class={page === 'cost' ? 'text-primary font-bold' : undefined}>
+		<a href="/guides/cost" class={page === 'cost' ? 'text-primary font-medium' : undefined}>
 			<summary
 				><svg
 					id="carbon:currency-dollar"
@@ -243,7 +220,7 @@
 		</a>
 	</li>
 	<li class="pb-4 lg:px-2 xl:px-4">
-		<a href="/guides/security" class={page === 'security' ? 'text-primary font-bold' : undefined}
+		<a href="/guides/security" class={page === 'security' ? 'text-primary font-medium' : undefined}
 			><summary
 				><svg
 					id="carbon:ibm-security"
@@ -259,13 +236,15 @@
 		</a>
 	</li>
 	<li
-		class="pt-4 text-xl font-bold lg:px-2 xl:px-4 {category === 'techtrippin'
+		class="pt-4 text-2xl font-bold lg:px-2 xl:px-4 {category === 'techtrippin'
 			? 'text-primary'
 			: undefined}">
 		<a href="/techtrippin">Tech Trippin'</a>
 	</li>
 	<li class="pb-4 lg:px-2 xl:px-4">
-		<a href="/techtrippin" class={category === 'techtrippin' ? 'text-primary font-bold' : undefined}
+		<a
+			href="/techtrippin"
+			class={category === 'techtrippin' ? 'text-primary font-medium' : undefined}
 			><summary
 				><svg
 					xmlns="http://www.w3.org/2000/svg"
@@ -289,7 +268,7 @@
 </ul>
 
 <style>
-	.view-transition-navaside {
-		view-transition-name: view-transition-navaside;
+	ul:not(.menu) > li > a {
+		padding-left: 1.5rem;
 	}
 </style>

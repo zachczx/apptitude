@@ -6,6 +6,7 @@
 	import ContentWrapper from '$lib/ContentWrapper.svelte';
 	import CarbonCheckmarkFilled from '$lib/assets/svg/CarbonCheckmarkFilled.svelte';
 	import SimpleIconsKnowledgeBase from '$lib/assets/svg/SimpleIconsKnowledgeBase.svelte';
+	import NewCrumbs from '$lib/NewCrumbs.svelte';
 
 	let { data } = $props();
 	let currentSection: any = $state();
@@ -13,36 +14,37 @@
 	let category: string = $derived(path[1]);
 	let page: string = $derived(path[2]);
 	let textMiddle: string = 'Learn';
+	let textCurrent = '';
+
+	const subtitle = `This section lists the resources I curated for self-learning from online courses, Youtube
+				channels, Youtube videos, articles, blog posts, cloud provider documentation, etc. Treat this as a useful start. It's impossible to be exhaustive. Information gets outdated
+				very fast. There's tons more I myself don't know.`;
 </script>
 
 <svelte:head>
 	<title>Apptitude - Learn</title>
 </svelte:head>
 
-<ContentWrapper urlSelf={data.url} {page} {textMiddle} {category} {currentSection}>
+<ContentWrapper
+	urlSelf={data.url}
+	{page}
+	{textMiddle}
+	{category}
+	{currentSection}
+	title="Learn Bytes"
+	{subtitle}>
+	<nav
+		class="b-4 border-b-base-100 h-14 w-full justify-items-start justify-self-center border-b-2 px-4 py-4 lg:grid">
+		<NewCrumbs urlMiddle={category} {textMiddle} {textCurrent} />
+	</nav>
 	<section class="grid grid-cols-4 gap-y-20">
-		<h1
-			class="col-span-4 inline-block bg-linear-to-r from-emerald-200 via-lime-200 to-teal-300 bg-clip-text pb-3 text-4xl font-bold text-transparent lg:text-7xl">
-			Learn Bytes, Reap Career Delights
-		</h1>
-		<div class="col-span-4 space-y-4">
-			<p>
-				This section lists the resources I curated for self-learning from online courses, Youtube
-				channels, Youtube videos, articles, blog posts, cloud provider documentation, etc.
-			</p>
-			<p>
-				Treat this as a useful start. It's impossible to be exhaustive. Information gets outdated
-				very fast. There's tons more I myself don't know.
-			</p>
-		</div>
-
 		<h2 class="text-4xl font-bold lg:text-6xl">Starter</h2>
 		<div
 			class="col-span-3 grid grid-cols-1 justify-items-center gap-3 lg:grid-cols-2 xl:grid-cols-3">
 			{#each data.starter as item}
 				<a href="/learn/{item.slug}" class="w-full">
 					<div
-						class="group card bg-base-200 h-full border border-gray-700 shadow-md shadow-gray-800">
+						class="group card bg-base-100 h-full border border-gray-700 shadow-md shadow-gray-800">
 						<div class="card-body grid grid-cols-1 content-start px-4">
 							<TablerStarFilled class="fill-primary mb-1 inline justify-self-start text-2xl" />
 							<h3 class="group-hover:text-primary text-2xl font-bold">
@@ -62,7 +64,7 @@
 			{#each data.intermediate as item}
 				<a href="/learn/{item.slug}" class="w-full">
 					<div
-						class="group card bg-base-200 h-full border border-gray-700 shadow-md shadow-gray-800">
+						class="group card bg-base-100 h-full border border-gray-700 shadow-md shadow-gray-800">
 						<div class="card-body grid grid-cols-1 content-start px-4">
 							<div class="justify-self-start text-2xl">
 								<TablerStarFilled class="fill-primary mb-1 inline" /><TablerStarFilled
@@ -86,7 +88,7 @@
 			{#each data.advanced as item}
 				<a href="/learn/{item.slug}" class="w-full">
 					<div
-						class="group card bg-base-200 h-full border border-gray-700 shadow-md shadow-gray-800">
+						class="group card bg-base-100 h-full border border-gray-700 shadow-md shadow-gray-800">
 						<div class="card-body grid grid-cols-1 content-start px-4">
 							<div class="justify-self-start text-2xl">
 								<TablerStarFilled class="fill-primary mb-1 inline" /><TablerStarFilled

@@ -66,19 +66,8 @@
 	{textMiddle}
 	{contents}
 	{currentSection}
-	{textCurrent}>
-	<!-- <div class="mb-12">
-		<div class="w-full rounded-2xl bg-gray-600">
-			<div class="flex justify-end">
-				<enhanced:img src={product} alt="$$$" class="rounded-2xl lg:-mb-14 lg:-translate-y-14" />
-			</div>
-		</div>
-	</div> -->
-	<h1
-		class="inline-block bg-linear-to-r from-emerald-200 via-lime-200 to-teal-300 bg-clip-text pb-8 text-4xl font-bold text-transparent lg:text-7xl">
-		Product Plan 101
-	</h1>
-
+	{textCurrent}
+	title="Product Plan 101">
 	<article
 		class="prose-section:mt-20 prose-h2:mb-6 prose-h3:mb-6 prose-h3:mt-12 prose-h5:mb-4 prose-p:mb-4 space-y-20 pb-10">
 		<section

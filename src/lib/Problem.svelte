@@ -72,7 +72,7 @@
 	</section>
 </div>
 
-<section class="bg-base-200 min-h-dvh px-4 py-8 lg:py-28" data-pagefind-ignore>
+<section class="bg-base-300 min-h-dvh px-4 py-8 lg:py-28" data-pagefind-ignore>
 	<div class="mx-auto grid w-full max-w-(--breakpoint-2xl) gap-8 lg:grid-cols-3">
 		<div class="flex items-center justify-center text-center lg:col-span-3 lg:min-h-36">
 			<h2 class="text-center text-4xl font-bold lg:col-span-1 lg:pb-24 lg:text-8xl">
@@ -196,7 +196,7 @@
 		</h2>
 
 		<ul class="grid content-center gap-8 lg:grid-cols-3">
-			<li class="bg-base-200 grid content-center gap-4 rounded-2xl p-4 lg:p-8">
+			<li class="border-base-content/30 grid content-center gap-4 rounded-2xl border p-4 lg:p-8">
 				<h3 class="text-2xl font-bold lg:text-4xl">Learn More</h3>
 				<p>Change starts with every person.</p>
 				<p>
@@ -205,7 +205,7 @@
 					white elephant project.
 				</p>
 			</li>
-			<li class="bg-base-200 grid content-center gap-4 rounded-2xl p-4 lg:p-8">
+			<li class="border-base-content/30 grid content-center gap-4 rounded-2xl border p-4 lg:p-8">
 				<h3 class="text-2xl font-bold lg:text-4xl">Upskill</h3>
 				<p>
 					Choose how you want to learn. <a href="/learn" class="text-primary underline"
@@ -215,7 +215,7 @@
 					more relevant questions at your vendors or project teams.
 				</p>
 			</li>
-			<li class="bg-base-200 grid content-center gap-4 rounded-2xl p-4 lg:p-8">
+			<li class="border-base-content/30 grid content-center gap-4 rounded-2xl border p-4 lg:p-8">
 				<h3 class="text-2xl font-bold lg:text-4xl">Keep at it!</h3>
 				<p>
 					If things still suck, shit happens. Rome wasn't built in a day. I myself still feel like

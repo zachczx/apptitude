@@ -1,6 +1,5 @@
 <script>
 	import Breadcrumbs from '$lib/Breadcrumbs.svelte';
-	import { newitem } from './todo_store';
 	let todos = $state([
 		{ text: 'Sample item 1', done: true },
 		{ text: 'Sample item 2', done: false },

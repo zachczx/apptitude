@@ -73,16 +73,10 @@
 <ContentWrapper
 	urlSelf={data.url}
 	{page}
-	{category}
 	{textMiddle}
-	{contents}
+	{category}
 	{currentSection}
-	{textCurrent}>
-	<h1
-		class="inline-block bg-linear-to-r from-emerald-200 via-lime-200 to-teal-300 bg-clip-text pb-8 text-4xl font-bold text-transparent lg:text-7xl">
-		{data.post.name}
-	</h1>
-
+	title={data.post.name}>
 	<article
 		class="prose-section:mt-20 prose-h2:mb-6 prose-h3:mb-6 prose-h3:mt-12 prose-h5:mb-4 prose-p:mb-4 grid gap-y-20 pb-10">
 		<section id="definitions" class="contents-observer grid gap-4">

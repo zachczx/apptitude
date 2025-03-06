@@ -16,9 +16,3 @@
 		</ul>
 	</ul>
 </div>
-
-<style>
-	.view-transition-navtoc {
-		view-transition-name: view-transition-navtoc;
-	}
-</style>

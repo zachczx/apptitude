@@ -1,46 +1,12 @@
 <script>
-	import heroNew from '$lib/assets/hero-new.webp?enhanced&w=2060;1536;1280;1024';
-	import heroNewBackground from '$lib/assets/hero-new.webp?enhanced&w=800';
-	import heroNew2 from '$lib/assets/hero-new-2.webp?enhanced&w=2060;1536;1280;1024';
-	import heroNew2Background from '$lib/assets/hero-new-2.webp?enhanced&w=800';
-	import TablerChevronRight from '$lib/assets/svg/TablerChevronRight.svelte';
 	import logo from '$lib/assets/svg/logo.svg?dataurl';
-	import RocketAnimation from '$lib/RocketAnimation.svelte';
-	import { onMount } from 'svelte';
-	import { gsap } from 'gsap';
+	import TablerSquareRoundedPlusFilled from '$lib/assets/svg/TablerSquareRoundedPlusFilled.svelte';
 	import { matchUrl } from '$lib/helpers';
-	import HowThisWorks from '$lib/HowThisWorks.svelte';
-	import pandaAnnoyed from '$lib/assets/panda-annoyed.webp?enhanced&w=600;500;300';
-	import Problem from '$lib/Problem.svelte';
-	let { data } = $props();
-	let pageName = $state('Apptitude');
-
-	onMount(() => {
-		let tl = gsap.matchMedia();
-		const headlineVar = document.getElementsByClassName('headline');
-
-		tl.add('(min-width: 1028px)', () => {
-			for (let i = 0; i < headlineVar.length; i++) {
-				let delay = i * 0.2;
-				gsap.from(headlineVar[i], {
-					autoAlpha: 0,
-					'--myBlur': '20px',
-					duration: 0.5,
-					delay: delay,
-					ease: 'sine.out',
-				});
-			}
-		});
-	});
-	// const currentBgNumber = Math.floor(Math.random() * 11);
+	let { data, children } = $props();
 </script>
 
-<svelte:head>
-	<title>{pageName}</title>
-</svelte:head>
-
 <nav
-	class="absolute z-10 flex h-14 w-full lg:grid lg:grid-cols-3 lg:content-center"
+	class="bg-base-100 border-b-base-content/20 fixed inset-x-0 top-0 z-10 flex h-14 border-b lg:grid lg:grid-cols-3 lg:content-center"
 	data-pagefind-ignore>
 	<div class="flex items-center px-2 lg:px-4">
 		<div class="dropdown lg:hidden">
@@ -181,111 +147,48 @@
 		</a>
 	</div>
 </nav>
-<div
-	class="hero grid min-h-dvh grid-cols-1 content-center justify-items-center xl:grid-cols-2"
-	data-pagefind-ignore>
-	<figure>
-		<enhanced:img
-			src={heroNew2Background}
-			alt="Hero"
-			class="hero-img -z-10"
-			fetchpriority="high"
-			loading="eager" />
-		<enhanced:img
-			src={heroNew2}
-			alt="Hero"
-			class="hero-img"
-			fetchpriority="high"
-			loading="eager"
-			sizes="(min-width:2560px) 2060px, (min-width:1920px) 1536px, (min-width:1600px) 1280px, (min-width:1280px) 1024px" />
-	</figure>
-	<div class="mx-3 self-center justify-self-center rounded-full pt-4 lg:z-10 lg:mx-8 xl:px-[3rem]">
-		<div class="avatar mt-20 mb-8 flex justify-center px-4 text-center xl:mt-0 xl:hidden">
-			<div class="mask mask-squircle">
-				<enhanced:img
-					src={heroNew2}
-					alt="Hero"
-					class="relative object-right"
-					sizes="(min-width:1000px) 600px, (min-width:768px) 500px, 300px" />
-			</div>
-		</div>
-		<h1 class="mb-12 text-center text-5xl font-bold min-[1921px]:text-7xl lg:pt-20 lg:text-6xl">
-			<span class="headline text-neutral-content">Get better at</span>
-			<span
-				class="headline inline-block bg-linear-to-r from-emerald-200 via-lime-200 to-teal-300 bg-clip-text pb-5 text-transparent"
-				>tech products & projects.</span>
-		</h1>
-		<div class="text-neutral-content mb-12 grid grid-cols-3 py-2 text-start text-lg lg:text-xl">
-			<div class="subheadline border-base-content/50 border-r-2 py-1 pe-3 text-center">
-				<h2 class="text-2xl font-bold lg:text-4xl">Learn</h2>
-				key digital product knowledge
-			</div>
-			<div class="subheadline border-base-content/50 border-r-2 py-1 ps-3 pe-3 text-center">
-				<h2 class="text-2xl font-bold lg:text-4xl">Better</h2>
-				digital product management
-			</div>
-			<div class="subheadline py-1 ps-3 text-center">
-				<h2 class="text-2xl font-bold lg:text-4xl">Drop</h2>
-				lousy & unnecessary projects
-			</div>
-		</div>
-		<div class="flex flex-wrap justify-center gap-4">
-			<a
-				href="/learn"
-				class="button-shine btn btn-primary border-primary relative overflow-hidden rounded-full border py-8 font-medium lg:px-8 lg:text-2xl"
-				>Learn Basics<svg
-					xmlns="http://www.w3.org/2000/svg"
-					width="1.3em"
-					height="1.3em"
-					stroke="currentColor"
-					viewBox="0 0 24 24"
-					><path
-						d="m13.692 17.308l-.707-.72l4.088-4.088H5v-1h12.073l-4.088-4.088l.707-.72L19 12z" /></svg
-				></a>
-			<a
-				href="/guides"
-				class="btn btn-outline btn-secondary rounded-full py-8 font-medium lg:px-8 lg:text-2xl"
-				>Practical Guides</a>
-		</div>
-	</div>
-</div>
 
-<Problem />
+{@render children()}
 
 <style>
-	.button-shine::before {
-		content: '';
-		position: absolute;
-		width: 2rem;
-		left: -3rem;
-		height: 130%;
-		background-color: white;
-		transform: skew(-30deg) translateX(var(--moveRight));
-		opacity: 0.7;
-		filter: blur(20px);
-	}
-	.headline {
-		filter: blur(var(--myBlur));
-	}
+	/** {
+		outline: 1px solid #f00 !important;
+	}*/
+
 	@media (min-width: 1281px) {
-		.hero {
-			position: relative;
+		@keyframes fade-in {
+			from {
+				opacity: 0;
+			}
 		}
-	}
-	@media (max-width: 1280px) {
-		.hero-img {
-			max-height: 0px;
+
+		@keyframes fade-out {
+			to {
+				opacity: 0;
+			}
 		}
-	}
-	@media (min-width: 1281px) {
-		.hero-img {
-			object-fit: cover;
-			object-position: 70% center;
-			width: 100%;
-			height: 100%;
-			position: absolute;
-			top: 0;
-			left: 0;
+
+		@keyframes slide-from-right {
+			from {
+				transform: translateX(30px);
+			}
+		}
+
+		@keyframes slide-to-left {
+			to {
+				transform: translateX(-30px);
+			}
+		}
+		:root::view-transition-old(root) {
+			animation:
+				90ms cubic-bezier(0.4, 0, 1, 1) both fade-out,
+				300ms cubic-bezier(0.4, 0, 0.2, 1) both slide-to-left;
+		}
+
+		:root::view-transition-new(root) {
+			animation:
+				210ms cubic-bezier(0, 0, 0.2, 1) 90ms both fade-in,
+				300ms cubic-bezier(0.4, 0, 0.2, 1) both slide-from-right;
 		}
 	}
 </style>

@@ -11,26 +11,27 @@
 
 	let { data } = $props();
 	let currentSection: any = $state();
-	let path: string[] = $derived(data.url.split('/'));
-	let category: string = $derived(path[1]);
-	let page: string = $derived(path[2]);
+	let path: any = $derived(data.url.split('/'));
+	let category: any = $derived(path[1]);
+	let page: any = $derived(path[2]);
+	let textCurrent: string = $state('');
 	let textMiddle: string = 'Guides';
+
+	const subtitle = `This section offers practical guides to equip you with an awareness of "what ought to be"
+					and "what can be", and then use those to question why your products/projects can't be the
+					same - your PM, bosses, teammates, vendors.`;
 </script>
 
-<ContentWrapper urlSelf={data.url} {page} {textMiddle} {category} {currentSection}>
-	<section class="mb-20 grid gap-4">
-		<h1
-			class="mb-4 inline-block bg-linear-to-r from-emerald-200 via-lime-200 to-teal-300 bg-clip-text text-4xl font-bold text-transparent lg:text-7xl">
-			Practical Guides
-		</h1>
-		<p>
-			This section offers practical guides to equip you with an awareness of "what ought to be" and
-			"what can be", and then use those to question why your products/projects can't be the same -
-			your PM, bosses, teammates, vendors.
-		</p>
-	</section>
+<ContentWrapper
+	urlSelf={data.url}
+	{page}
+	{textMiddle}
+	{category}
+	{currentSection}
+	title="Practical Guides"
+	{subtitle}>
 	<section>
-		<div class="group card bg-base-200 mb-12 border border-gray-700 shadow-xl">
+		<div class="group card bg-base-100 mb-12 border border-gray-700 shadow-xl">
 			<div class="card-body grid lg:grid-cols-2">
 				<div class="lg:px-8">
 					<h2 class="group-hover:text-primary text-2xl font-bold lg:text-7xl">
@@ -58,7 +59,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="group card bg-base-200 mb-12 w-full border border-gray-700 shadow-xl">
+		<div class="group card bg-base-100 mb-12 w-full border border-gray-700 shadow-xl">
 			<a href="/guides/problems"
 				><div class="card-body grid lg:grid-cols-2">
 					<div class="self-center lg:px-8">
@@ -83,7 +84,7 @@
 		</div>
 		<div class="mb-12">
 			<a href="/guides/research">
-				<div class="group card bg-base-200 h-auto w-full border border-gray-700 shadow-xl">
+				<div class="group card bg-base-100 h-auto w-full border border-gray-700 shadow-xl">
 					<div class="card-body grid lg:grid-cols-2">
 						<div class="lg:px-8">
 							<h2 class="group-hover:text-primary text-2xl font-bold lg:text-7xl">Research</h2>
@@ -108,7 +109,7 @@
 		</div>
 		<a href="/guides/cost">
 			<div
-				class="group card bg-base-200 mb-12 grid w-full overflow-hidden border border-gray-700 shadow-xl">
+				class="group card bg-base-100 mb-12 grid w-full overflow-hidden border border-gray-700 shadow-xl">
 				<div class="card-body grid lg:grid-cols-2">
 					<div class="mb-4 lg:order-last lg:px-8">
 						<h2 class="group-hover:text-primary text-2xl font-bold lg:text-7xl">Cost</h2>
@@ -130,7 +131,7 @@
 		</a>
 		<a href="/guides/security"
 			><div class="mb-12">
-				<div class="group card bg-base-200 h-auto w-full border border-gray-700 shadow-xl">
+				<div class="group card bg-base-100 h-auto w-full border border-gray-700 shadow-xl">
 					<div class="card-body grid lg:grid-cols-2">
 						<div class="lg:px-8">
 							<h2 class="group-hover:text-primary text-2xl font-bold lg:text-7xl">Security</h2>

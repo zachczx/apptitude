@@ -2,7 +2,6 @@
 	import Breadcrumbs from '$lib/Breadcrumbs.svelte';
 	import TablerLink from '$lib/assets/svg/TablerLink.svelte';
 	let { data } = $props();
-	import { newitem } from '../../todo/todo_store';
 	import TablerSquareRoundedPlusFilled from '$lib/assets/svg/TablerSquareRoundedPlusFilled.svelte';
 	import { slide } from 'svelte/transition';
 	import { elasticOut } from 'svelte/easing';
@@ -25,10 +24,8 @@
 	let currentSection: any = $state();
 	let path: any = $derived(data.url.split('/'));
 	let category: any = $derived(path[1]);
-	$inspect(category);
 	let page: any = $derived(path[2]);
-	$inspect(page);
-	let textMiddle: string = 'Learn';
+	let textMiddle: string = $state('Learn');
 	let textCurrent: string = $state('');
 	if (data.post?.name) {
 		textCurrent = data.post.name;
@@ -65,15 +62,12 @@
 <ContentWrapper
 	urlSelf={data.url}
 	{page}
-	{textMiddle}
+	bind:textMiddle
 	{category}
 	{contents}
 	{currentSection}
-	{textCurrent}>
-	<h1
-		class="mb-4 inline-block bg-linear-to-r from-emerald-200 via-lime-200 to-teal-300 bg-clip-text text-4xl text-4xl font-bold font-bold text-transparent lg:mb-12 lg:text-7xl lg:text-7xl">
-		Learn: {data.post.name}
-	</h1>
+	bind:textCurrent
+	title="Learn: {data.post.name}">
 	<div class="prose-h2:mb-6 prose-h3:mb-6 grid gap-y-20">
 		<section id="topics" class="contents-observer grid gap-4">
 			<h2 class="border-b-base-content/20 mb-4 border-b-4 pb-2 text-2xl font-bold lg:text-4xl">

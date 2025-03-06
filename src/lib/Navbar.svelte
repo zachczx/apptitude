@@ -8,7 +8,7 @@
 	let { comparisonUrl } = $props();
 </script>
 
-<nav class="navbar bg-base-200 relative" data-pagefind-ignore>
+<nav class="navbar bg-base-100 relative" data-pagefind-ignore>
 	<div class="navbar-start max-h-18">
 		<div class="dropdown">
 			<div tabindex="0" role="button" class="btn btn-ghost lg:hidden">

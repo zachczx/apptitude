@@ -35,12 +35,8 @@
 	<link href="/pagefind/pagefind-ui.css" rel="stylesheet" />
 </svelte:head>
 
-<ContentWrapper urlSelf={data.url} {page} {textMiddle} {category} {currentSection}>
-	<h1
-		class="inline-block bg-linear-to-r from-emerald-200 via-lime-200 to-teal-300 bg-clip-text pb-8 text-4xl font-bold text-transparent lg:text-7xl">
-		Search
-	</h1>
-	<div class="flex min-h-[30rem] w-full justify-center py-8">
+<ContentWrapper urlSelf={data.url} {page} {textMiddle} {category} {currentSection} title="Search">
+	<div class="flex min-h-[30rem] w-full items-start justify-center lg:min-w-[30rem]">
 		<div id="search" class="w-full"></div>
 	</div>
 </ContentWrapper>
