@@ -26,7 +26,7 @@
 </svelte:head>
 
 <nav
-	class="absolute z-10 flex h-14 w-full lg:grid lg:grid-cols-3 lg:content-center"
+	class="absolute z-[2] flex h-14 w-full lg:grid lg:grid-cols-3 lg:content-center"
 	data-pagefind-ignore>
 	<div class="flex items-center px-2 lg:px-4">
 		<div class="dropdown lg:hidden">
@@ -185,7 +185,7 @@
 			loading="eager"
 			sizes="(min-width:2560px) 2060px, (min-width:1920px) 1536px, (min-width:1600px) 1280px, (min-width:1280px) 1024px" />
 	</figure>
-	<div class="mx-3 self-center justify-self-center rounded-full pt-4 lg:z-10 lg:mx-8 xl:px-[3rem]">
+	<div class="mx-3 self-center justify-self-center rounded-full pt-4 lg:z-[1] lg:mx-8 xl:px-[3rem]">
 		<div class="avatar mt-20 mb-8 flex justify-center px-4 text-center xl:mt-0 xl:hidden">
 			<div class="mask mask-squircle">
 				<enhanced:img
