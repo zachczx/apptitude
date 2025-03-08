@@ -12,11 +12,9 @@
 		subtitle?: string;
 		urlSelf: string;
 		page: string;
-		contents: Contents[];
+		contents?: Contents[];
 		currentSection: string;
-		textCurrent: string;
 		category: string;
-		textMiddle: string;
 		children: Snippet;
 		showSideBar?: boolean;
 	}
@@ -27,9 +25,7 @@
 		page,
 		contents = [],
 		currentSection,
-		textCurrent = $bindable(''),
 		category = $bindable(),
-		textMiddle = $bindable(),
 		showSideBar = true,
 		children,
 	}: ContentWrapperProps = $props();

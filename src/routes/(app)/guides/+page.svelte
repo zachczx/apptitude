@@ -14,8 +14,6 @@
 	let path: any = $derived(data.url.split('/'));
 	let category: any = $derived(path[1]);
 	let page: any = $derived(path[2]);
-	let textCurrent: string = $state('');
-	let textMiddle: string = 'Guides';
 
 	const subtitle = `This section offers practical guides to equip you with an awareness of "what ought to be"
 					and "what can be", and then use those to question why your products/projects can't be the

@@ -118,10 +118,10 @@ export const guides: GuidesData[] = [
 				what: "We need to be no worse off / Ensure we're no worse off.",
 				why: 'Problems don\'t always need to be solved in the same way, but "no worse off" generally assumes solutions are static.',
 			},
-			/* 		{
-				what: '',
-				why: '',
-			}, */
+			{
+				what: "It's impossible to track whether our tool improves productivity, saves manual labor and how much it improves the business.",
+				why: "You can't track the productivity increase for every person, but you can follow >5 teams for several weeks and record how much they benefit in time savings, efficiency, errors they encounter, or even entire work flows they no longer do. But this has to be done before you deploy and is pointless to lament you didn't after the fact.",
+			},
 		],
 		dealbreakers: [
 			"No one knows what problem is it we're solving.",
@@ -191,7 +191,7 @@ export const guides: GuidesData[] = [
 		questions: [
 			{
 				what: 'Who is the target customer?',
-				why: "Without a clear target, you're designing for 'everyone', which ends up pleasing no one. Business-wise, *vague targets equal wasted budget*.  Knowing your customer means targeted marketing, focused development, and a product that truly resonates. It's not just about *who* clicks, but *who* converts and becomes a loyal advocate.  **Bottom line: Know your audience to maximize impact and ROI.**",
+				why: "Without a clear target, you're designing for 'everyone', which ends up pleasing no one. Business-wise, *vague targets equal wasted budget*. Knowing your customer means targeted marketing, focused development, and a product that truly resonates. It's not just about *who* clicks, but *who* converts and becomes a loyal advocate. **Bottom line: Know your audience to maximize impact and ROI.**",
 			},
 			{
 				what: 'What problem does your product solve?',
@@ -215,7 +215,7 @@ export const guides: GuidesData[] = [
 			},
 			{
 				what: 'Do you see product-market fit for your product?',
-				why: "UX strives for solutions that resonate with user needs.  Business *demands* market validation for sustainable growth.  Product-market fit isn't a 'maybe', it's a 'must-have'. It's about ensuring your product addresses a real market need, is competitively positioned, and has the potential for scale.  **No product-market fit, no sustainable business. It's that stark.**",
+				why: "UX strives for solutions that resonate with user needs. Business *demands* market validation for sustainable growth. Product-market fit isn't a 'maybe', it's a 'must-have'. It's about ensuring your product addresses a real market need, is competitively positioned, and has the potential for scale. **No product-market fit, no sustainable business. It's that stark.**",
 			},
 			{
 				what: 'What is the market size for your product?',
@@ -244,6 +244,14 @@ export const guides: GuidesData[] = [
 			{
 				what: 'What were the surprises you had while coming up with this plan/prototype/product?',
 				why: 'Learning from surprises is how we get smarter, faster, and more effective.',
+			},
+			{
+				what: 'Oh this insert govtech product? Not familiar with it but we know we need ours and they seem different anyway.',
+				why: "You're trying to recreate something that's presumably solved well. And doesn't seem like you did your competitive audit. Even if you're satisfied with your solution, you should say why yours works better, eg from user research.",
+			},
+			{
+				what: "Let's do UI UX better.",
+				why: "They're very different things! The person saying this betrays a lack of understanding of what these 2 acronyms mean. UI is a part of ux. UX is far more than just tinkering with screens, colors, typography, spacing on figma templates. And this lack of clarity prevents us from going into what needs to be solved and how we should solve them.",
 			},
 		],
 		alarms: [],
@@ -321,47 +329,47 @@ export const guides: GuidesData[] = [
 		questions: [
 			{
 				what: 'What is the TAM?',
-				why: "Understanding the Total Addressable Market (TAM) is non-negotiable. It defines the potential scale of our business.  Is it a multi-billion dollar opportunity or a niche play?  TAM analysis informs investment decisions, revenue projections, and long-term growth strategy.  Without knowing the TAM, we're flying blind on the size and scope of our potential success, risking significant resource misallocation.",
+				why: 'Understand the scale of the problem and impact of any solution.',
 			},
 			{
 				what: 'What are the trade-offs across cost, value, performance, security?',
-				why: 'Every product decision involves trade-offs.  Balancing cost, user value, performance, and security is a constant juggling act.  We must explicitly consider these trade-offs in every feature and design choice.  Are we optimizing for speed at the expense of security?  Are we adding features that drive up cost but deliver minimal user value?  Being aware of these trade-offs ensures balanced, strategic decisions that align with overall product and business goals.',
+				why: 'Optimum decision-making involves balancing these dimensions, which are often in conflict.',
 			},
 			{
 				what: 'More costs to mitigate what additional risks?',
-				why: 'Increased investment should always be tied to clear risk reduction or value creation.  If we are spending more, we need to understand *precisely* what additional risks we are mitigating or what new opportunities we are unlocking.  Are these risks significant enough to justify the added expense?  This question forces us to justify costs and ensure every dollar spent contributes meaningfully to risk management or business value.',
+				why: 'Increased investment should always be tied to clear risk reduction or value creation. If we are spending more, we need to understand *precisely* what additional risks we are mitigating or what new opportunities we are unlocking. Are these risks significant enough to justify the added expense? This question forces us to justify costs and ensure every dollar spent contributes meaningfully to risk management or business value.',
 			},
 			{
 				what: 'Why would it take X man months?',
-				why: 'Resource estimation needs rigorous justification, not just gut feeling.  "X man months" is a significant commitment.  We need to dissect the estimate and understand the *breakdown* of work.  Are we over-engineering?  Are there inefficiencies?  Challenging timelines and effort estimations ensures realistic planning, resource optimization, and accountability.  It prevents bloated timelines and cost overruns from the outset.',
+				why: 'Resource estimation needs rigorous justification, not just gut feeling. "X man months" is a significant commitment. We need to dissect the estimate and understand the *breakdown* of work. Are we over-engineering? Are there inefficiencies? Challenging timelines and effort estimations ensures realistic planning, resource optimization, and accountability. It prevents bloated timelines and cost overruns from the outset.',
 			},
 			{
 				what: 'How much of the cost is attributed to compliance, admin, overheads?',
-				why: 'Cost transparency is vital for understanding true product economics.  We need to separate core product development costs from compliance, administrative burdens, and overheads.  How much are these non-product elements eating into our budget?  Understanding this breakdown reveals hidden costs and inefficiencies, allowing us to optimize spending and improve the overall cost-effectiveness of our product and operations.',
+				why: 'Cost transparency is vital for understanding true product economics. We need to separate core product development costs from compliance, administrative burdens, and overheads. How much are these non-product elements eating into our budget? Understanding this breakdown reveals hidden costs and inefficiencies, allowing us to optimize spending and improve the overall cost-effectiveness of our product and operations.',
 			},
 			{
 				what: 'Is this a $40M or a $400k problem',
-				why: 'Problem sizing is critical for appropriate resource allocation.  Are we tackling a massive, strategic issue or a smaller, tactical one?  The scale of the problem directly dictates the scale of investment it warrants.  Over-engineering a minor problem wastes resources.  Under-investing in a major problem leaves significant value on the table.  Accurately sizing the problem ensures proportionate and impactful solutions.',
+				why: 'Problem sizing is critical for appropriate resource allocation. Are we tackling a massive, strategic issue or a smaller, tactical one? The scale of the problem directly dictates the scale of investment it warrants. Over-engineering a minor problem wastes resources. Under-investing in a major problem leaves significant value on the table.',
 			},
 			{
 				what: 'How much cost savings, cost avoidance, manpower savings, manpower productivity are we going to achieve?',
-				why: "Quantifying the benefits is essential to justify any product investment.  We need to project the tangible returns: cost savings, avoided expenses, manpower efficiencies, and productivity gains.  These metrics demonstrate the direct business value our product delivers.  Without quantifying these benefits, it’s impossible to prove ROI and justify the project's existence to stakeholders.",
+				why: 'Quantifying the benefits is essential to justify any product investment.',
 			},
 			{
 				what: 'How will we measure savings, avoidance, productivity benefits?',
-				why: 'Projected benefits are meaningless without a clear plan to measure them. We must define *how* we will track and validate these savings, avoidance, and productivity gains.  What metrics will we use?  What tools and processes will be in place?  Measurable benefits provide accountability, demonstrate real impact, and inform future product decisions based on data-driven evidence of success.',
+				why: 'Measurable benefits provide accountability, demonstrate real impact, and inform future product decisions based on data-driven evidence of success.',
 			},
 			{
 				what: 'Why are we satisfied with X times savings/productivity gains?',
-				why: 'Benchmarking and continuous improvement are key.  Simply achieving *some* savings isn’t enough.  We need to evaluate if "X times savings" is truly ambitious and impactful enough.  Are we settling for mediocrity when greater gains are possible?  Challenging our targets ensures we are striving for optimal performance and maximizing the return on our product investments, not just hitting minimum thresholds.',
+				why: "Benchmarking and continuous improvement are key. Simply achieving some savings isn't enough.",
 			},
 			{
 				what: 'Why do we need a project management or admin wrapper fee that contributes nothing to the product?',
-				why: 'Every cost component must be justified, especially non-value-add overheads.  Project management and administration are necessary, but should be lean and efficient, directly supporting product value delivery.  Excessive "wrapper fees" dilute product ROI and indicate potential inefficiencies or unnecessary layers.  Questioning these costs ensures we maximize resources dedicated to actual product development and user value, not just administration.',
+				why: 'Every cost component must be justified, especially non-value-add overheads.',
 			},
 			{
 				what: 'What are the CAPEX and OPEX for X?',
-				why: 'Understanding the Capital Expenditure (CAPEX) and Operational Expenditure (OPEX) breakdown is vital for financial planning and long-term sustainability.  CAPEX reflects upfront investment, OPEX reflects ongoing running costs.  This distinction impacts budgeting, financial modeling, and pricing strategies.  Knowing the CAPEX/OPEX structure ensures realistic financial forecasting, efficient resource allocation, and a sustainable business model for the product.',
+				why: 'CAPEX reflects upfront investment, OPEX reflects ongoing running costs. This distinction impacts budgeting, financial modeling, and pricing strategies, as both types of costs need different handling and approaches.',
 			},
 		],
 		alarms: [
@@ -486,10 +494,7 @@ export const guides: GuidesData[] = [
 				what: 'What third-party components or services will the product use?',
 				why: '',
 			},
-			{
-				what: 'How do we manage vulnerabilities (CVEs) and patches?',
-				why: '',
-			},
+
 			{
 				what: 'How will my product handle and respond to security incidents and breaches?',
 				why: '',
@@ -565,11 +570,35 @@ export const guides: GuidesData[] = [
 				what: "It's impossible to track whether our tool improves productivity, saves manual labor and how much it improves the business.",
 				why: "You can't track the productivity increase for every person, but you can follow >5 teams for several weeks and record how much they benefit in time savings, efficiency, errors they encounter, or even entire work flows they no longer do. But this has to be done before you deploy and is pointless to lament you didn't after the fact.",
 			},
+			{
+				what: 'How do we manage vulnerabilities (CVEs) and patches?',
+				why: "It's part and parcel of running systems. Patching is essential.",
+			},
+			{
+				what: "Let's do UI UX better.",
+				why: "They're very different things! The person saying this betrays a lack of understanding of what these 2 acronyms mean. UI is a part of ux. UX is far more than just tinkering with screens, colors, typography, spacing on figma templates. And this lack of clarity prevents us from going into what needs to be solved and how we should solve them.",
+			},
+			{
+				what: 'There needs to be X approvals from xxx, yyy, zzz groups to make an edit to the website.',
+				why: "Bureaucracy crept in. If this is for a new tool, then it's also the case we bought a new tool and overlaid past processes.",
+			},
 		],
 		questions: [
 			{
 				what: 'How could this product fail (i.e. pre-mortem)?',
 				why: 'Work backwards from where failure occurs, so that you can then plug those gaps.',
+			},
+			{
+				what: 'How does this scale? What do you have in place to scale vertically (make your existing infrastructure more powerful) and/or horizontally (add more infrastructure quantity/units)?',
+				why: "Either or both options have situations where they're better. No matter what, there must be a plan that's being executed to handle a surge later on.",
+			},
+			{
+				what: 'Are our images and other static assets optimized? Are they webp/avif? Are there 2mb jpg hero images?',
+				why: 'These are extremely simple but can absolutely show dedication (or lack thereof) to optimizing performance. Better performance will help improve transaction completion rates and user satisfaction.',
+			},
+			{
+				what: 'How does our UI look across device screen sizes?',
+				why: 'UIs have no excuse doing poorly on mobile responsiveness and accessibility.',
 			},
 		],
 		dealbreakers: [],

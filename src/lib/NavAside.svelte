@@ -133,22 +133,24 @@
 	</li>
 
 	<li class="lg:px-2 xl:px-4">
-		<span
-			class="flex items-center gap-4 {page === 'product' || page === 'product-plan'
-				? 'text-primary font-medium'
-				: undefined}"
-			><svg
-				id="carbon:box"
-				xmlns="http://www.w3.org/2000/svg"
-				width="1em"
-				height="1em"
-				viewBox="0 0 32 32"
-				><path
-					fill="currentColor"
-					d="M20 21h-8a2 2 0 0 1-2-2v-2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2m-8-4v2h8v-2Z" /><path
-					fill="currentColor"
-					d="M28 4H4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2v16a2 2 0 0 0 2 2h20a2 2 0 0 0 2-2V12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2m-2 24H6V12h20Zm2-18H4V6h24z" /></svg>
-			Product</span>
+		<a href="/guides/product"
+			><span
+				class="flex items-center gap-4 {page === 'product' || page === 'product-plan'
+					? 'text-primary font-medium'
+					: undefined}"
+				><svg
+					id="carbon:box"
+					xmlns="http://www.w3.org/2000/svg"
+					width="1em"
+					height="1em"
+					viewBox="0 0 32 32"
+					><path
+						fill="currentColor"
+						d="M20 21h-8a2 2 0 0 1-2-2v-2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2m-8-4v2h8v-2Z" /><path
+						fill="currentColor"
+						d="M28 4H4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2v16a2 2 0 0 0 2 2h20a2 2 0 0 0 2-2V12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2m-2 24H6V12h20Zm2-18H4V6h24z" /></svg>
+				Product</span
+			></a>
 		<ul class="border-l-base-content/30 ms-5 border-l-2 ps-6">
 			<li>
 				<a
@@ -216,7 +218,7 @@
 				Cost</summary>
 		</a>
 	</li>
-	<li class="lg:px-2 xl:px-4">
+	<!-- <li class="lg:px-2 xl:px-4">
 		<a href="/guides/security" class={page === 'security' ? 'text-primary font-medium' : undefined}
 			><summary class="flex items-center gap-4"
 				><svg
@@ -231,7 +233,7 @@
 						d="M16 0L4 5.978v14.066a12 12 0 0 0 24 0V5.978Zm6.83 27.314L16 23.912v2.228l5.036 2.509A10.003 10.003 0 0 1 6 20.044V7.21l10-4.982L26 7.21v3.75L16 5.978v2.228l10 4.982v3.75l-10-4.982v2.228l10 4.982v.878a10 10 0 0 1-.37 2.687L16 17.934v2.228l8.895 4.431a10 10 0 0 1-2.065 2.721" /></svg>
 				Security</summary>
 		</a>
-	</li>
+	</li> -->
 	<li class="pb-4 lg:px-2 xl:px-4">
 		<a href="/guides/running" class={page === 'running' ? 'text-primary font-medium' : undefined}
 			><summary class="flex items-center gap-4"

@@ -13,8 +13,6 @@
 	let path: string[] = $derived(data.url.split('/'));
 	let category: string = $derived(path[1]);
 	let page: string = $derived(path[2]);
-	let textMiddle: string = 'Learn';
-	let textCurrent = '';
 
 	const subtitle = `I curated a non-exhaustive list of resources I found useful from online courses, Youtube
 				channels, Youtube videos, articles, blog posts, cloud provider documentation, etc.`;
@@ -27,7 +25,6 @@
 <ContentWrapper
 	urlSelf={data.url}
 	{page}
-	{textMiddle}
 	{category}
 	{currentSection}
 	title="Learn Bytes"

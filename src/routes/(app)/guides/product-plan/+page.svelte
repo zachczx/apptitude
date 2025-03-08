@@ -25,11 +25,9 @@
 		{ id: 'credits', title: 'Credits' },
 	];
 	let currentSection: any = $state();
-	let textCurrent = 'Product Plan 101';
 	let path: string[] = $derived(data.url.split('/'));
 	let category: string = $derived(path[1]);
 	let page: string = $derived(path[2]);
-	let textMiddle = 'Guides';
 
 	onMount(() => {
 		let contentsCollection = document.getElementsByClassName(
@@ -63,10 +61,8 @@
 	urlSelf={data.url}
 	{page}
 	{category}
-	{textMiddle}
 	{contents}
 	{currentSection}
-	{textCurrent}
 	title="Product Plan 101">
 	<article
 		class="prose-section:mt-20 prose-h2:mb-6 prose-h3:mb-6 prose-h3:mt-12 prose-h5:mb-4 prose-p:mb-4 space-y-20 pb-10">

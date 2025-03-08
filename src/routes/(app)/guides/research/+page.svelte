@@ -25,11 +25,9 @@
 		{ id: 'sources', title: 'Sources' },
 	];
 	let currentSection: any = $state();
-	let textCurrent: string = 'Research';
 	let path: string[] = $derived(data.url.split('/'));
 	let category: string = $derived(path[1]);
 	let page: string = $derived(path[2]);
-	let textMiddle = 'Guides';
 
 	onMount(() => {
 		let contentsCollection = document.getElementsByClassName(
@@ -59,15 +57,7 @@
 	<title>Apptitude - Research</title>
 </svelte:head>
 
-<ContentWrapper
-	urlSelf={data.url}
-	{page}
-	{category}
-	{textMiddle}
-	{contents}
-	{currentSection}
-	{textCurrent}
-	title="Research">
+<ContentWrapper urlSelf={data.url} {page} {category} {contents} {currentSection} title="Research">
 	<article
 		class="prose-section:mt-20 prose-h2:mb-6 prose-h3:mb-6 prose-h3:mt-12 prose-h5:mb-4 prose-p:mb-4 prose-ul:mb-4 mt-12 space-y-20 pb-10">
 		<section id="empathize" class="contents-observer grid grid-cols-4 gap-x-8 gap-y-16">

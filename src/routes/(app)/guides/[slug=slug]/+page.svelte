@@ -30,12 +30,9 @@
 	];
 
 	let currentSection: any = $state();
-	$inspect(currentSection);
-	let textCurrent = $derived(data.post?.name);
 	let path: string[] = $derived(data.url.split('/'));
 	let category: string = $derived(path[1]);
 	let page: string = $derived(path[2]);
-	let textMiddle = 'Guides';
 
 	onMount(() => {
 		let contentsCollection = document.getElementsByClassName(
@@ -62,7 +59,7 @@
 </script>
 
 <svelte:head>
-	<title>Apptitude - {textCurrent}</title>
+	<title>Apptitude - {data.post?.name}</title>
 </svelte:head>
 
 {#if data.post}
@@ -70,12 +67,11 @@
 		urlSelf={data.url}
 		{page}
 		{contents}
-		{textMiddle}
 		{category}
 		{currentSection}
 		title={data.post.name}>
 		<article
-			class="prose-section:mt-20 prose-h2:mb-6 prose-h3:mb-6 prose-h3:mt-12 prose-h5:mb-4 prose-p:mb-4 grid gap-y-20 pb-10">
+			class="prose-section:mt-20 prose-h2:mb-6 prose-h3:mb-6 prose-h3:mt-12 prose-h5:mb-4 prose-p:mb-4 grid gap-y-32 pb-10">
 			{#if data.post.definitions}
 				<section id="definitions" class="contents-observer grid gap-4">
 					<h2 class="border-b-base-content/20 mb-4 border-b-4 pb-2 text-2xl font-bold lg:text-4xl">

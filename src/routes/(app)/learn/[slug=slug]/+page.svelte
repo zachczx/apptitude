@@ -12,24 +12,19 @@
 	import CarbonCheckmarkFilled from '$lib/assets/svg/CarbonCheckmarkFilled.svelte';
 	import SimpleIconsKnowledgeBase from '$lib/assets/svg/SimpleIconsKnowledgeBase.svelte';
 	let contents: Contents[] = [
-		{ id: 'topics', title: '1. Topics' },
-		{ id: 'answers', title: '2. Find Answers To...' },
-		{ id: 'objectives', title: '3. Objectives' },
-		{ id: 'observations', title: '4. My Observations' },
-		{ id: 'courses', title: '5. Courses' },
-		{ id: 'readings', title: '6. Readings' },
-		{ id: 'youtube', title: '7. Watch on Youtube' },
+		{ id: 'topics', title: 'Topics' },
+		{ id: 'answers', title: 'Find Answers To...' },
+		{ id: 'objectives', title: 'Objectives' },
+		{ id: 'observations', title: 'My Observations' },
+		{ id: 'courses', title: 'Courses' },
+		{ id: 'readings', title: 'Readings' },
+		{ id: 'youtube', title: 'Watch on Youtube' },
 	];
 
 	let currentSection: any = $state();
 	let path: any = $derived(data.url.split('/'));
 	let category: any = $derived(path[1]);
 	let page: any = $derived(path[2]);
-	let textMiddle: string = $state('Learn');
-	let textCurrent: string = $state('');
-	if (data.post?.name) {
-		textCurrent = data.post.name;
-	}
 
 	onMount(() => {
 		let contentsCollection = document.getElementsByClassName(
@@ -56,18 +51,16 @@
 </script>
 
 <svelte:head>
-	<title>Apptitude - {textCurrent}</title>
+	<title>Apptitude - {data.post?.name}</title>
 </svelte:head>
 
 <ContentWrapper
 	urlSelf={data.url}
 	{page}
-	bind:textMiddle
 	{category}
 	{contents}
 	{currentSection}
-	bind:textCurrent
-	title="Learn: {data.post.name}">
+	title="Learn: {data.post?.name}">
 	<div class="prose-h2:mb-6 prose-h3:mb-6 grid gap-y-20">
 		<section id="topics" class="contents-observer grid gap-4">
 			<h2 class="border-b-base-content/20 mb-4 border-b-4 pb-2 text-2xl font-bold lg:text-4xl">
@@ -198,10 +191,6 @@
 	li {
 		margin-bottom: 0.75rem;
 		padding-left: 0.1rem;
-	}
-
-	.next-prev {
-		view-transition-name: next-prev;
 	}
 
 	/* Mobile Youtube */

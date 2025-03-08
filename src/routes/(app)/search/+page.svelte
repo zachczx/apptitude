@@ -1,16 +1,12 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	let { data } = $props();
-	import TablerChevronRight from '$lib/assets/svg/TablerChevronRight.svelte';
-	import logo from '$lib/assets/svg/logo.svg?dataurl';
-	import { matchUrl } from '$lib/helpers';
 	import ContentWrapper from '$lib/ContentWrapper.svelte';
 
 	let currentSection: any = $state();
 	let path: any = $derived(data.url.split('/'));
 	let category: any = $derived(path[1]);
 	let page: any = $derived(path[2]);
-	let textMiddle: string = "Search'";
 
 	onMount(async () => {
 		// @ts-expect-error - Pagefind will be present at runtime
@@ -39,7 +35,6 @@
 	showSideBar={false}
 	urlSelf={data.url}
 	{page}
-	{textMiddle}
 	{category}
 	{currentSection}
 	title="Search">
