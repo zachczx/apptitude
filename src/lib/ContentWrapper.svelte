@@ -13,7 +13,7 @@
 		urlSelf: string;
 		page: string;
 		contents?: Contents[];
-		currentSection: string;
+		currentSection?: string;
 		category: string;
 		children: Snippet;
 		showSideBar?: boolean;
@@ -40,7 +40,7 @@
 	</aside>
 
 	<main class="border-r-base-100 bg-base-100 w-full border-r-2">
-		<div class="w-full max-w-[900px] justify-self-center px-4 pt-4 pb-10 lg:pt-0">
+		<div class="w-full max-w-[900px] justify-self-center px-4 pt-4 pb-12 lg:pt-0 lg:pb-32">
 			<section class="mt-14 mb-8 grid gap-4 lg:mt-20 lg:mb-20">
 				<h1
 					class="inline-block bg-linear-to-r from-emerald-200 via-lime-200 to-teal-300 bg-clip-text pb-4 text-4xl font-bold text-transparent lg:text-7xl">

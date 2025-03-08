@@ -64,7 +64,7 @@
 	<div class="prose-h2:mb-6 prose-h3:mb-6 grid gap-y-20">
 		<section id="topics" class="contents-observer grid gap-4">
 			<h2 class="border-b-base-content/20 mb-4 border-b-4 pb-2 text-2xl font-bold lg:text-4xl">
-				1. Topics
+				Topics
 			</h2>
 			<ul class="flex flex-wrap items-center">
 				{#each data.post.topics as topic}
@@ -78,7 +78,7 @@
 
 		<section id="answers" class="contents-observer grid gap-4">
 			<h2 class="border-b-base-content/20 mb-4 border-b-4 pb-2 text-2xl font-bold lg:text-4xl">
-				2. Find answers to...
+				Find answers to...
 			</h2>
 			<ul class="ms-4 list-disc">
 				{#each data.post.questions as question}
@@ -89,7 +89,7 @@
 
 		<section id="objectives" class="contents-observer grid gap-4">
 			<h2 class="border-b-base-content/20 mb-4 border-b-4 pb-2 text-2xl font-bold lg:text-4xl">
-				3. Objectives
+				Objectives
 			</h2>
 			<ul class="ms-4 list-disc">
 				{#each data.post.objectives as objective}
@@ -100,7 +100,7 @@
 
 		<section id="observations" class="contents-observer grid gap-4">
 			<h2 class="border-b-base-content/20 mb-4 border-b-4 pb-2 text-2xl font-bold lg:text-4xl">
-				4. My Observations
+				My Observations
 			</h2>
 			<div class="gap-y-4">
 				{#if data.post.issues == '' || !data.post.issues}
@@ -116,7 +116,7 @@
 		</section>
 		<section id="courses" class="contents-observer grid gap-4">
 			<h2 class="border-b-base-content/20 mb-4 border-b-4 pb-2 text-2xl font-bold lg:text-4xl">
-				5. Courses
+				Courses
 			</h2>
 			{#if data.post.resources.courses == '' || !data.post.resources.courses}
 				Sorry, nothing here
@@ -132,7 +132,7 @@
 		</section>
 		<section id="readings" class="contents-observer grid gap-4">
 			<h2 class="border-b-base-content/20 mb-4 border-b-4 pb-2 text-2xl font-bold lg:text-4xl">
-				6. Readings
+				Readings
 			</h2>
 
 			{#if data.post.resources.links == ''}
@@ -149,7 +149,7 @@
 		</section>
 		<section id="youtube" class="contents-observer grid gap-4">
 			<h2 class="border-b-base-content/20 mb-4 border-b-4 pb-2 text-2xl font-bold lg:text-4xl">
-				7. Watch on Youtube
+				Watch on Youtube
 
 				<svg
 					xmlns="http://www.w3.org/2000/svg"

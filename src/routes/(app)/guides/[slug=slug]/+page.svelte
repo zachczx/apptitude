@@ -43,11 +43,12 @@
 				entries.forEach((entry) => {
 					if (entry.isIntersecting) {
 						currentSection = entry.target.id;
+						console.log(currentSection);
 					}
 				});
 			},
 			{
-				rootMargin: '-50% 0% -50% 0%',
+				rootMargin: '-50px 0px -50% 0px',
 				threshold: 0,
 			},
 		);

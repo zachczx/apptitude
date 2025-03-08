@@ -254,7 +254,44 @@ export const guides: GuidesData[] = [
 				why: "They're very different things! The person saying this betrays a lack of understanding of what these 2 acronyms mean. UI is a part of ux. UX is far more than just tinkering with screens, colors, typography, spacing on figma templates. And this lack of clarity prevents us from going into what needs to be solved and how we should solve them.",
 			},
 		],
-		alarms: [],
+		alarms: [
+			{
+				what: 'Get this feature added, I don’t care how you get it done.',
+				why: 'There’s obviously no prioritization done for features and no idea (probably unlikely) it solves an important user pain point. User research is an afterthought, so this decision is definitely not going to help the product.',
+			},
+			{
+				what: 'There’re 5 organizations using our wrapper product, they’re using it because doing this is cheaper than using the actual product as is.',
+				why: 'We’re subsidizing this usage and wasting money (versus letting market economics dictate demand).',
+			},
+			{
+				what: 'I’m doing this system revamp because I can shave X days from this process, though the entire process still takes 10X days in total from other manual processes and legacy systems.',
+				why: 'The money spent on this new system is going to be wasted, because the crux of the problem lies in the majority of time wasted on manual processes and other legacy systems.',
+			},
+			{
+				what: 'Get this feature added, I don’t care how you get it done.',
+				why: 'There’s obviously no prioritization done for features and no idea (probably unlikely) it solves an important user pain point. User research is an afterthought, so this decision is definitely not going to help the product.',
+			},
+			{
+				what: 'There’re 5 organizations using our wrapper product, they’re using it because doing this is cheaper than using the actual product as is.',
+				why: 'We’re subsidizing this usage and wasting money (versus letting market economics dictate demand).',
+			},
+			{
+				what: 'I’m doing this system revamp because I can shave X days from this process, though the entire process still takes 10X days in total from other manual processes and legacy systems.',
+				why: 'The money spent on this new system is going to be wasted, because the crux of the problem lies in the majority of time wasted on manual processes and other legacy systems.',
+			},
+			{
+				what: 'I know the problem, I’m user number 1 and my colleagues are users 2, 3, 4…',
+				why: 'No you (yall )are not representative of all users, no matter how experienced and frequently you use.',
+			},
+			{
+				what: 'Users don’t appear to want to use our system, but we’ll write to their DSes and Dirs to encourage takeup.',
+				why: 'Users are not using it because it doesn’t solve a real problem or there’s just too much friction for too little value. If there’s a big problem, everyone will use it if it provides enough value. Obviously not the case here, and no amount of pleading senior leaders everywhere else will help.',
+			},
+			{
+				what: 'Users tell me they have this X problem and therefore need Y, so let’s just build Y.',
+				why: 'This is the XY problem. We’re focusing on the wrong thing (customer’s attempted solution Y) rather than the root problem (X), which could be better solved with a new solution, Z. This is very common and I see this a lot.',
+			},
+		],
 		dealbreakers: [
 			'Product is a suboptimal solution (read: XY problem)',
 			"Product solves only a small part of the problem or doesn't solve any real problem at all.",
