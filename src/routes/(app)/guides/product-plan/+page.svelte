@@ -17,12 +17,12 @@
 
 	//Props needed for PageWrapper component
 	let contents: Contents[] = [
-		{ id: 'what-makes-a-product-plan', title: '1. What makes a product plan?' },
-		{ id: 'the-problem', title: '2. The Problem' },
-		{ id: 'measurable-outcomes-targets', title: '3. Measurable Outcomes and Targets' },
-		{ id: 'risks', title: '4. Risks' },
-		{ id: 'product-plan-template', title: '5. Product Plan Template' },
-		{ id: 'credits', title: '6. Credits' },
+		{ id: 'what-makes-a-product-plan', title: 'What makes a product plan?' },
+		{ id: 'the-problem', title: 'The Problem' },
+		{ id: 'measurable-outcomes-targets', title: 'Measurable Outcomes and Targets' },
+		{ id: 'risks', title: 'Risks' },
+		{ id: 'product-plan-template', title: 'Product Plan Template' },
+		{ id: 'credits', title: 'Credits' },
 	];
 	let currentSection: any = $state();
 	let textCurrent = 'Product Plan 101';

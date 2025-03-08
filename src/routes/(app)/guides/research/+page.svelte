@@ -18,11 +18,11 @@
 
 	//Props needed for PageWrapper component
 	let contents: Contents[] = [
-		{ id: 'empathize', title: '1. Empathize' },
-		{ id: 'define', title: '2. Define' },
-		{ id: 'ideate', title: '3. Ideate' },
-		{ id: 'prototype-test', title: '4. Prototype & Test' },
-		{ id: 'sources', title: '5. Sources' },
+		{ id: 'empathize', title: 'Empathize' },
+		{ id: 'define', title: 'Define' },
+		{ id: 'ideate', title: 'Ideate' },
+		{ id: 'prototype-test', title: 'Prototype & Test' },
+		{ id: 'sources', title: 'Sources' },
 	];
 	let currentSection: any = $state();
 	let textCurrent: string = 'Research';

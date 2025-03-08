@@ -30,6 +30,7 @@
 	];
 
 	let currentSection: any = $state();
+	$inspect(currentSection);
 	let textCurrent = $derived(data.post?.name);
 	let path: string[] = $derived(data.url.split('/'));
 	let category: string = $derived(path[1]);
@@ -49,7 +50,7 @@
 				});
 			},
 			{
-				rootMargin: '-10% 0% -10% 0%',
+				rootMargin: '-50% 0% -50% 0%',
 				threshold: 0,
 			},
 		);

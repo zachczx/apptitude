@@ -321,47 +321,47 @@ export const guides: GuidesData[] = [
 		questions: [
 			{
 				what: 'What is the TAM?',
-				why: '',
+				why: "Understanding the Total Addressable Market (TAM) is non-negotiable. It defines the potential scale of our business.  Is it a multi-billion dollar opportunity or a niche play?  TAM analysis informs investment decisions, revenue projections, and long-term growth strategy.  Without knowing the TAM, we're flying blind on the size and scope of our potential success, risking significant resource misallocation.",
 			},
 			{
 				what: 'What are the trade-offs across cost, value, performance, security?',
-				why: '',
+				why: 'Every product decision involves trade-offs.  Balancing cost, user value, performance, and security is a constant juggling act.  We must explicitly consider these trade-offs in every feature and design choice.  Are we optimizing for speed at the expense of security?  Are we adding features that drive up cost but deliver minimal user value?  Being aware of these trade-offs ensures balanced, strategic decisions that align with overall product and business goals.',
 			},
 			{
 				what: 'More costs to mitigate what additional risks?',
-				why: '',
+				why: 'Increased investment should always be tied to clear risk reduction or value creation.  If we are spending more, we need to understand *precisely* what additional risks we are mitigating or what new opportunities we are unlocking.  Are these risks significant enough to justify the added expense?  This question forces us to justify costs and ensure every dollar spent contributes meaningfully to risk management or business value.',
 			},
 			{
 				what: 'Why would it take X man months?',
-				why: '',
+				why: 'Resource estimation needs rigorous justification, not just gut feeling.  "X man months" is a significant commitment.  We need to dissect the estimate and understand the *breakdown* of work.  Are we over-engineering?  Are there inefficiencies?  Challenging timelines and effort estimations ensures realistic planning, resource optimization, and accountability.  It prevents bloated timelines and cost overruns from the outset.',
 			},
 			{
 				what: 'How much of the cost is attributed to compliance, admin, overheads?',
-				why: '',
+				why: 'Cost transparency is vital for understanding true product economics.  We need to separate core product development costs from compliance, administrative burdens, and overheads.  How much are these non-product elements eating into our budget?  Understanding this breakdown reveals hidden costs and inefficiencies, allowing us to optimize spending and improve the overall cost-effectiveness of our product and operations.',
 			},
 			{
 				what: 'Is this a $40M or a $400k problem',
-				why: '',
+				why: 'Problem sizing is critical for appropriate resource allocation.  Are we tackling a massive, strategic issue or a smaller, tactical one?  The scale of the problem directly dictates the scale of investment it warrants.  Over-engineering a minor problem wastes resources.  Under-investing in a major problem leaves significant value on the table.  Accurately sizing the problem ensures proportionate and impactful solutions.',
 			},
 			{
 				what: 'How much cost savings, cost avoidance, manpower savings, manpower productivity are we going to achieve?',
-				why: '',
+				why: "Quantifying the benefits is essential to justify any product investment.  We need to project the tangible returns: cost savings, avoided expenses, manpower efficiencies, and productivity gains.  These metrics demonstrate the direct business value our product delivers.  Without quantifying these benefits, it’s impossible to prove ROI and justify the project's existence to stakeholders.",
 			},
 			{
 				what: 'How will we measure savings, avoidance, productivity benefits?',
-				why: '',
+				why: 'Projected benefits are meaningless without a clear plan to measure them. We must define *how* we will track and validate these savings, avoidance, and productivity gains.  What metrics will we use?  What tools and processes will be in place?  Measurable benefits provide accountability, demonstrate real impact, and inform future product decisions based on data-driven evidence of success.',
 			},
 			{
 				what: 'Why are we satisfied with X times savings/productivity gains?',
-				why: '',
+				why: 'Benchmarking and continuous improvement are key.  Simply achieving *some* savings isn’t enough.  We need to evaluate if "X times savings" is truly ambitious and impactful enough.  Are we settling for mediocrity when greater gains are possible?  Challenging our targets ensures we are striving for optimal performance and maximizing the return on our product investments, not just hitting minimum thresholds.',
 			},
 			{
 				what: 'Why do we need a project management or admin wrapper fee that contributes nothing to the product?',
-				why: '',
+				why: 'Every cost component must be justified, especially non-value-add overheads.  Project management and administration are necessary, but should be lean and efficient, directly supporting product value delivery.  Excessive "wrapper fees" dilute product ROI and indicate potential inefficiencies or unnecessary layers.  Questioning these costs ensures we maximize resources dedicated to actual product development and user value, not just administration.',
 			},
 			{
 				what: 'What are the CAPEX and OPEX for X?',
-				why: '',
+				why: 'Understanding the Capital Expenditure (CAPEX) and Operational Expenditure (OPEX) breakdown is vital for financial planning and long-term sustainability.  CAPEX reflects upfront investment, OPEX reflects ongoing running costs.  This distinction impacts budgeting, financial modeling, and pricing strategies.  Knowing the CAPEX/OPEX structure ensures realistic financial forecasting, efficient resource allocation, and a sustainable business model for the product.',
 			},
 		],
 		alarms: [
