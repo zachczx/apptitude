@@ -16,9 +16,8 @@
 	let textMiddle: string = 'Learn';
 	let textCurrent = '';
 
-	const subtitle = `This section lists the resources I curated for self-learning from online courses, Youtube
-				channels, Youtube videos, articles, blog posts, cloud provider documentation, etc. Treat this as a useful start. It's impossible to be exhaustive. Information gets outdated
-				very fast. There's tons more I myself don't know.`;
+	const subtitle = `I curated a non-exhaustive list of resources I found useful from online courses, Youtube
+				channels, Youtube videos, articles, blog posts, cloud provider documentation, etc.`;
 </script>
 
 <svelte:head>
@@ -33,74 +32,75 @@
 	{currentSection}
 	title="Learn Bytes"
 	{subtitle}>
-	<section class="grid grid-cols-4 gap-y-20">
-		<h2 class="text-4xl font-bold lg:text-6xl">Starter</h2>
-		<div
-			class="col-span-3 grid grid-cols-1 justify-items-center gap-3 lg:grid-cols-2 xl:grid-cols-3">
-			{#each data.starter as item}
-				<a href="/learn/{item.slug}" class="w-full">
-					<div
-						class="group card bg-base-100 h-full border border-gray-700 shadow-md shadow-gray-800">
-						<div class="card-body grid grid-cols-1 content-start px-4">
-							<TablerStarFilled class="fill-primary mb-1 inline justify-self-start text-2xl" />
-							<h3 class="group-hover:text-primary text-2xl font-bold">
-								{item.name}
-							</h3>
-							<p><i>{item.intro}</i></p>
+	<section class="grid gap-y-20">
+		<div>
+			<h2 class="mb-4 text-4xl font-bold lg:text-6xl">Basic</h2>
+			<div class="grid grid-cols-1 justify-items-center gap-3 lg:grid-cols-2 xl:grid-cols-3">
+				{#each data.starter as item}
+					<a href="/learn/{item.slug}" class="w-full">
+						<div
+							class="group card bg-base-100 h-full border border-gray-700 shadow-md shadow-gray-800">
+							<div class="card-body grid grid-cols-1 content-start px-4">
+								<TablerStarFilled class="fill-primary mb-1 inline justify-self-start text-2xl" />
+								<h3 class="group-hover:text-primary text-2xl font-bold">
+									{item.name}
+								</h3>
+								<p><i>{item.intro}</i></p>
+							</div>
 						</div>
-					</div>
-				</a>
-			{/each}
+					</a>
+				{/each}
+			</div>
 		</div>
 
-		<h2 class="text-4xl font-bold lg:text-6xl">Mid</h2>
-
-		<div
-			class="col-span-3 grid grid-cols-1 justify-items-center gap-3 lg:grid-cols-2 xl:grid-cols-3">
-			{#each data.intermediate as item}
-				<a href="/learn/{item.slug}" class="w-full">
-					<div
-						class="group card bg-base-100 h-full border border-gray-700 shadow-md shadow-gray-800">
-						<div class="card-body grid grid-cols-1 content-start px-4">
-							<div class="justify-self-start text-2xl">
-								<TablerStarFilled class="fill-primary mb-1 inline" /><TablerStarFilled
-									class="fill-primary mb-1 inline" /><TablerStarFilled
-									class="fill-primary mb-1 inline" />
+		<div>
+			<h2 class="mb-4 text-4xl font-bold lg:text-6xl">Intermediate</h2>
+			<div class="grid grid-cols-1 justify-items-center gap-3 lg:grid-cols-2 xl:grid-cols-3">
+				{#each data.intermediate as item}
+					<a href="/learn/{item.slug}" class="w-full">
+						<div
+							class="group card bg-base-100 h-full border border-gray-700 shadow-md shadow-gray-800">
+							<div class="card-body grid grid-cols-1 content-start px-4">
+								<div class="justify-self-start text-2xl">
+									<TablerStarFilled class="fill-primary mb-1 inline" /><TablerStarFilled
+										class="fill-primary mb-1 inline" /><TablerStarFilled
+										class="fill-primary mb-1 inline" />
+								</div>
+								<h3 class="group-hover:text-primary text-2xl font-bold">
+									{item.name}
+								</h3>
+								<p><i>{item.intro}</i></p>
 							</div>
-							<h3 class="group-hover:text-primary text-2xl font-bold">
-								{item.name}
-							</h3>
-							<p><i>{item.intro}</i></p>
 						</div>
-					</div>
-				</a>
-			{/each}
+					</a>
+				{/each}
+			</div>
 		</div>
 
-		<h2 class="text-4xl font-bold lg:text-6xl">Pro</h2>
-
-		<div
-			class="col-span-3 grid grid-cols-1 justify-items-center gap-3 lg:grid-cols-2 xl:grid-cols-3">
-			{#each data.advanced as item}
-				<a href="/learn/{item.slug}" class="w-full">
-					<div
-						class="group card bg-base-100 h-full border border-gray-700 shadow-md shadow-gray-800">
-						<div class="card-body grid grid-cols-1 content-start px-4">
-							<div class="justify-self-start text-2xl">
-								<TablerStarFilled class="fill-primary mb-1 inline" /><TablerStarFilled
-									class="fill-primary mb-1 inline" /><TablerStarFilled
-									class="fill-primary mb-1 inline" /><TablerStarFilled
-									class="fill-primary mb-1 inline" /><TablerStarFilled
-									class="fill-primary mb-1 inline" />
+		<div>
+			<h2 class="mb-4 text-4xl font-bold lg:text-6xl">Advanced</h2>
+			<div class="grid grid-cols-1 justify-items-center gap-3 lg:grid-cols-2 xl:grid-cols-3">
+				{#each data.advanced as item}
+					<a href="/learn/{item.slug}" class="w-full">
+						<div
+							class="group card bg-base-100 h-full border border-gray-700 shadow-md shadow-gray-800">
+							<div class="card-body grid grid-cols-1 content-start px-4">
+								<div class="justify-self-start text-2xl">
+									<TablerStarFilled class="fill-primary mb-1 inline" /><TablerStarFilled
+										class="fill-primary mb-1 inline" /><TablerStarFilled
+										class="fill-primary mb-1 inline" /><TablerStarFilled
+										class="fill-primary mb-1 inline" /><TablerStarFilled
+										class="fill-primary mb-1 inline" />
+								</div>
+								<h3 class="group-hover:text-primary text-2xl font-bold">
+									{item.name}
+								</h3>
+								<p><i>{item.intro}</i></p>
 							</div>
-							<h3 class="group-hover:text-primary text-2xl font-bold">
-								{item.name}
-							</h3>
-							<p><i>{item.intro}</i></p>
 						</div>
-					</div>
-				</a>
-			{/each}
+					</a>
+				{/each}
+			</div>
 		</div>
 	</section>
 </ContentWrapper>

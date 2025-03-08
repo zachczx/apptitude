@@ -74,82 +74,97 @@
 		<article
 			class="prose-section:mt-20 prose-h2:mb-6 prose-h3:mb-6 prose-h3:mt-12 prose-h5:mb-4 prose-p:mb-4 grid gap-y-20 pb-10">
 			{#if data.post.definitions}
-				<section id="definitions" class="contents-observer grid gap-4">
-					<h2 class="border-b-base-content/20 mb-4 border-b-4 pb-2 text-2xl font-bold lg:text-4xl">
-						1. Definitions
-					</h2>
-					<div>
-						<ol class="list-disc space-y-4 ps-4">
-							{#each data.post.definitions as definition}
-								<li>{definition}</li>
-							{/each}
-						</ol>
-					</div>
-				</section>
+				{#if data.post.definitions.length > 0}
+					<section id="definitions" class="contents-observer grid gap-4">
+						<h2
+							class="border-b-base-content/20 mb-4 border-b-4 pb-2 text-2xl font-bold lg:text-4xl">
+							Definitions
+						</h2>
+						<div>
+							<ol class="list-disc space-y-4 ps-4">
+								{#each data.post.definitions as definition}
+									<li>{definition}</li>
+								{/each}
+							</ol>
+						</div>
+					</section>
+				{/if}
 			{/if}
 
 			{#if data.post.goals}
-				<section id="goals" class="contents-observer grid gap-4">
-					<h2 class="border-b-base-content/20 mb-4 border-b-4 pb-2 text-2xl font-bold lg:text-4xl">
-						2. Goals
-					</h2>
-					<div>
-						<ol class="list-disc space-y-4 ps-4">
-							{#each data.post.goals as goal}
-								<li>{goal}</li>
-							{/each}
-						</ol>
-					</div>
-				</section>
+				{#if data.post.goals.length > 0}
+					<section id="goals" class="contents-observer grid gap-4">
+						<h2
+							class="border-b-base-content/20 mb-4 border-b-4 pb-2 text-2xl font-bold lg:text-4xl">
+							Goals
+						</h2>
+						<div>
+							<ol class="list-disc space-y-4 ps-4">
+								{#each data.post.goals as goal}
+									<li>{goal}</li>
+								{/each}
+							</ol>
+						</div>
+					</section>
+				{/if}
 			{/if}
 
 			{#if data.post.questions}
-				<section id="questions" class="contents-observer grid gap-4">
-					<h2 class="border-b-base-content/20 mb-4 border-b-4 pb-2 text-2xl font-bold lg:text-4xl">
-						3. Questions
-					</h2>
-					<div>
-						<ol class="list-disc space-y-4 ps-4">
-							{#each data.post.questions as question}
-								<li>{question}</li>
-							{/each}
-						</ol>
-					</div>
-				</section>
+				{#if data.post.questions.length > 0}
+					<section id="questions" class="contents-observer grid gap-4">
+						<h2
+							class="border-b-base-content/20 mb-4 border-b-4 pb-2 text-2xl font-bold lg:text-4xl">
+							Questions
+						</h2>
+						<div>
+							<ol class="list-disc space-y-4 ps-4">
+								{#each data.post.questions as question}
+									<li>{question}</li>
+								{/each}
+							</ol>
+						</div>
+					</section>
+				{/if}
 			{/if}
 
 			{#if data.post.alarms}
-				<section id="questions" class="contents-observer grid gap-4">
-					<h2 class="border-b-base-content/20 mb-4 border-b-4 pb-2 text-2xl font-bold lg:text-4xl">
-						4. Alarm Bells
-					</h2>
-					<div class="grid grid-cols-2 gap-x-8 gap-y-8">
-						<div class="text-base-content/70 font-bold">They say...</div>
-						<div class="text-base-content/70 font-bold">Why I'd be scared</div>
-						{#each data.post.alarms as alarm, i}
-							<div class="italic">{alarm.what}</div>
-							<div>{alarm.why}</div>
-							{#if i < data.post.alarms.length - 1}
-								<div class="bg-base-content/20 col-span-2 h-0.5"></div>
-							{/if}
-						{/each}
-					</div>
-				</section>
+				{#if data.post.alarms.length > 0}
+					<section id="questions" class="contents-observer grid gap-4">
+						<h2
+							class="border-b-base-content/20 mb-4 border-b-4 pb-2 text-2xl font-bold lg:text-4xl">
+							Alarm Bells
+						</h2>
+						<div class="grid grid-cols-2 gap-x-8 gap-y-8">
+							<div class="text-base-content/70 font-bold">They say...</div>
+							<div class="text-base-content/70 font-bold">Why I'd be scared</div>
+							{#each data.post.alarms as alarm, i}
+								<div class="italic">{alarm.what}</div>
+								<div>{alarm.why}</div>
+								{#if i < data.post.alarms.length - 1}
+									<div class="bg-base-content/20 col-span-2 h-0.5"></div>
+								{/if}
+							{/each}
+						</div>
+					</section>
+				{/if}
 			{/if}
 
 			{#if data.post.dealbreakers}
-				<section id="dealbreakers" class="contents-observer grid gap-4">
-					<h2 class="border-b-base-content/20 mb-4 border-b-4 pb-2 text-2xl font-bold lg:text-4xl">
-						5. Dealbreakers
-					</h2>
-					<div>
-						<ol class="list-disc space-y-4 ps-4">
-							{#each data.post.dealbreakers as dealbreaker}
-								<li>{dealbreaker}</li>
-							{/each}
-						</ol>
-					</div>
-				</section>
+				{#if data.post.dealbreakers.length > 0}
+					<section id="dealbreakers" class="contents-observer grid gap-4">
+						<h2
+							class="border-b-base-content/20 mb-4 border-b-4 pb-2 text-2xl font-bold lg:text-4xl">
+							Dealbreakers
+						</h2>
+						<div>
+							<ol class="list-disc space-y-4 ps-4">
+								{#each data.post.dealbreakers as dealbreaker}
+									<li>{dealbreaker}</li>
+								{/each}
+							</ol>
+						</div>
+					</section>
+				{/if}
 			{/if}
 
 			<!-- <section id="suggestions" class="contents-observer grid gap-4">

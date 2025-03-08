@@ -18,6 +18,7 @@
 		category: string;
 		textMiddle: string;
 		children: Snippet;
+		showSideBar?: boolean;
 	}
 	let {
 		title,
@@ -29,6 +30,7 @@
 		textCurrent = $bindable(''),
 		category = $bindable(),
 		textMiddle = $bindable(),
+		showSideBar = true,
 		children,
 	}: ContentWrapperProps = $props();
 </script>
@@ -36,7 +38,9 @@
 <div class="grid grid-cols-[auto_1fr_auto]">
 	<aside
 		class="lg:border-r-base-100 bg-base-100 vertical-offset sticky top-16 hidden w-full content-start overflow-y-auto lg:grid lg:border-r-2">
-		<NavAside {page} {category} />
+		{#if showSideBar}
+			<NavAside {page} {category} />
+		{/if}
 	</aside>
 
 	<main class="border-r-base-100 bg-base-100 w-full border-r-2">

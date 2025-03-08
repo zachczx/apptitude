@@ -34,7 +34,7 @@
 		<div class="group card bg-base-100 mb-12 border border-gray-700 shadow-xl">
 			<div class="card-body grid lg:grid-cols-2">
 				<div class="lg:px-8">
-					<h2 class="group-hover:text-primary text-2xl font-bold lg:text-7xl">
+					<h2 class="group-hover:text-primary mb-1 text-2xl font-medium lg:text-7xl">
 						<a href="/guides/product-plan">Product</a>
 					</h2>
 					<p>
@@ -63,9 +63,7 @@
 			<a href="/guides/problems"
 				><div class="card-body grid lg:grid-cols-2">
 					<div class="self-center lg:px-8">
-						<h2 class="group-hover:text-primary text-2xl font-bold lg:text-7xl">
-							Problem Statements
-						</h2>
+						<h2 class="group-hover:text-primary mb-1 text-2xl font-medium lg:text-7xl">Problems</h2>
 						<p>
 							<i>Doubt your product works well? Never heard from your users?</i>
 						</p>
@@ -87,7 +85,9 @@
 				<div class="group card bg-base-100 h-auto w-full border border-gray-700 shadow-xl">
 					<div class="card-body grid lg:grid-cols-2">
 						<div class="lg:px-8">
-							<h2 class="group-hover:text-primary text-2xl font-bold lg:text-7xl">Research</h2>
+							<h2 class="group-hover:text-primary mb-1 text-2xl font-medium lg:text-7xl">
+								Research
+							</h2>
 							<p>
 								<i
 									>Skipping user research is like designing a car without realizing humans need to
@@ -112,7 +112,7 @@
 				class="group card bg-base-100 mb-12 grid w-full overflow-hidden border border-gray-700 shadow-xl">
 				<div class="card-body grid lg:grid-cols-2">
 					<div class="mb-4 lg:order-last lg:px-8">
-						<h2 class="group-hover:text-primary text-2xl font-bold lg:text-7xl">Cost</h2>
+						<h2 class="group-hover:text-primary mb-1 text-2xl font-medium lg:text-7xl">Cost</h2>
 						<p>
 							<i>We're not sure what we're building, but we know we'll need a bigger budget?</i>
 						</p>
@@ -134,7 +134,9 @@
 				<div class="group card bg-base-100 h-auto w-full border border-gray-700 shadow-xl">
 					<div class="card-body grid lg:grid-cols-2">
 						<div class="lg:px-8">
-							<h2 class="group-hover:text-primary text-2xl font-bold lg:text-7xl">Security</h2>
+							<h2 class="group-hover:text-primary mb-1 text-2xl font-medium lg:text-7xl">
+								Security
+							</h2>
 							<p>
 								<i>Cyber security so tight, even the 1s and 0s can't escape</i>
 							</p>

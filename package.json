@@ -38,6 +38,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@fontsource-variable/open-sans": "^5.2.5",
 		"@fontsource/roboto": "^5.2.5",
 		"@shikijs/transformers": "^3.1.0",
 		"@sveltejs/adapter-cloudflare": "^5.0.3",

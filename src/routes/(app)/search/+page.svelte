@@ -35,8 +35,21 @@
 	<link href="/pagefind/pagefind-ui.css" rel="stylesheet" />
 </svelte:head>
 
-<ContentWrapper urlSelf={data.url} {page} {textMiddle} {category} {currentSection} title="Search">
-	<div class="flex min-h-[30rem] w-full items-start justify-center lg:min-w-[30rem]">
+<ContentWrapper
+	showSideBar={false}
+	urlSelf={data.url}
+	{page}
+	{textMiddle}
+	{category}
+	{currentSection}
+	title="Search">
+	<div class="flex w-full items-start justify-center lg:min-w-[30rem]">
 		<div id="search" class="w-full"></div>
 	</div>
 </ContentWrapper>
+
+<style>
+	.vertical-offset {
+		min-height: calc(100dvh - 4.5rem);
+	}
+</style>

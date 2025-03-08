@@ -8,25 +8,24 @@
 	</li>
 	<li class="lg:px-2 xl:px-4">
 		<span
-			class={page === 'basics' ||
+			class="flex items-center gap-4 {page === 'basics' ||
 			page === 'basics-web' ||
 			page === 'apps' ||
 			page === 'wog' ||
 			page === 'ux' ||
 			page === 'products'
 				? 'text-primary font-medium'
-				: undefined}
+				: undefined}"
 			><svg
 				id="carbon:skill-level-basic"
 				xmlns="http://www.w3.org/2000/svg"
 				width="1em"
 				height="1em"
-				class="me-2"
 				viewBox="0 0 32 32"
 				><path
 					fill="currentColor"
 					d="M30 30h-8V4h8zm-6-2h4V6h-4zm-4 2h-8V12h8zm-6-2h4V14h-4zm-4 2H2V18h8z" /></svg
-			>Starter</span>
+			>Basic</span>
 		<ul class="border-l-base-content/30 list-item-padding ms-6 border-l-2 ps-4">
 			<li>
 				<a href="/learn/basics" class={page === 'basics' ? 'text-primary font-medium' : undefined}
@@ -58,24 +57,23 @@
 	</li>
 	<li class="lg:px-2 xl:px-4">
 		<span
-			class={page === 'products-advanced' ||
+			class="flex items-center gap-4 {page === 'products-advanced' ||
 			page === 'ux-advanced' ||
 			page === 'methods' ||
 			page === 'data' ||
 			page === 'ai'
 				? 'text-primary'
-				: undefined}
+				: undefined}"
 			><svg
 				id="carbon:skill-level-intermediate"
 				xmlns="http://www.w3.org/2000/svg"
 				width="1em"
 				height="1em"
-				class="me-2"
 				viewBox="0 0 32 32"
 				><path
 					fill="currentColor"
 					d="M30 30h-8V4h8zm-6-2h4V6h-4zm-4 2h-8V12h8zm-10 0H2V18h8z" /></svg
-			>Mid</span>
+			>Intermediate</span>
 		<ul class="border-l-base-content/30 ms-5 border-l-2 ps-6">
 			<li>
 				<a
@@ -104,18 +102,17 @@
 	</li>
 	<li class="pb-4 lg:px-2 xl:px-4">
 		<span
-			class={page === 'ai-advanced' || page === 'technical'
+			class="flex items-center gap-4 {page === 'ai-advanced' || page === 'technical'
 				? 'text-primary font-medium'
-				: undefined}
+				: undefined}"
 			><svg
 				id="carbon:skill-level-advanced"
 				xmlns="http://www.w3.org/2000/svg"
 				width="1em"
 				height="1em"
-				class="me-2"
 				viewBox="0 0 32 32"
 				><path fill="currentColor" d="M30 30h-8V4h8zm-10 0h-8V12h8zm-10 0H2V18h8z" /></svg
-			>Pro</span>
+			>Advanced</span>
 		<ul class="border-l-base-content/30 ms-5 border-l-2 ps-6">
 			<li>
 				<a
@@ -137,13 +134,14 @@
 
 	<li class="lg:px-2 xl:px-4">
 		<span
-			class={page === 'product' || page === 'product-plan' ? 'text-primary font-medium' : undefined}
+			class="flex items-center gap-4 {page === 'product' || page === 'product-plan'
+				? 'text-primary font-medium'
+				: undefined}"
 			><svg
 				id="carbon:box"
 				xmlns="http://www.w3.org/2000/svg"
 				width="1em"
 				height="1em"
-				class="me-2"
 				viewBox="0 0 32 32"
 				><path
 					fill="currentColor"
@@ -166,13 +164,13 @@
 	</li>
 	<li class="lg:px-2 xl:px-4">
 		<a href="/guides/problems" class={page === 'problems' ? 'text-primary font-medium' : undefined}>
-			<summary
+			<summary class="flex items-center gap-4"
 				><svg
 					id="carbon:help"
 					xmlns="http://www.w3.org/2000/svg"
 					width="1em"
 					height="1em"
-					class="me-3 mb-1 inline"
+					class=""
 					viewBox="0 0 32 32"
 					><path
 						fill="currentColor"
@@ -188,13 +186,13 @@
 	</li>
 	<li class="lg:px-2 xl:px-4">
 		<a href="/guides/research" class={page === 'research' ? 'text-primary font-medium' : undefined}>
-			<summary
+			<summary class="flex items-center gap-4"
 				><svg
 					id="ri:survey-line"
 					xmlns="http://www.w3.org/2000/svg"
 					width="1em"
 					height="1em"
-					class="me-3 mb-1 inline"
+					class=""
 					viewBox="0 0 24 24"
 					><path
 						fill="currentColor"
@@ -204,13 +202,13 @@
 	</li>
 	<li class="lg:px-2 xl:px-4">
 		<a href="/guides/cost" class={page === 'cost' ? 'text-primary font-medium' : undefined}>
-			<summary
+			<summary class="flex items-center gap-4"
 				><svg
 					id="carbon:currency-dollar"
 					xmlns="http://www.w3.org/2000/svg"
 					width="1em"
 					height="1em"
-					class="me-3 mb-1 inline"
+					class=""
 					viewBox="0 0 32 32"
 					><path
 						fill="currentColor"
@@ -218,15 +216,15 @@
 				Cost</summary>
 		</a>
 	</li>
-	<li class="pb-4 lg:px-2 xl:px-4">
+	<li class="lg:px-2 xl:px-4">
 		<a href="/guides/security" class={page === 'security' ? 'text-primary font-medium' : undefined}
-			><summary
+			><summary class="flex items-center gap-4"
 				><svg
 					id="carbon:ibm-security"
 					xmlns="http://www.w3.org/2000/svg"
 					width="1em"
 					height="1em"
-					class="me-3 mb-1 inline"
+					class=""
 					viewBox="0 0 32 32"
 					><path
 						fill="currentColor"
@@ -234,6 +232,26 @@
 				Security</summary>
 		</a>
 	</li>
+	<li class="pb-4 lg:px-2 xl:px-4">
+		<a href="/guides/running" class={page === 'running' ? 'text-primary font-medium' : undefined}
+			><summary class="flex items-center gap-4"
+				><svg
+					xmlns="http://www.w3.org/2000/svg"
+					width="1em"
+					height="1em"
+					class="carbon:running"
+					viewBox="0 0 32 32"
+					><!-- Icon from Carbon by IBM - undefined --><path
+						fill="currentColor"
+						d="m21.707 20.293l-5-5a.996.996 0 0 0-1.414 0L2 28.586L3.414 30L16 17.414L19.586 21L14 26.586L15.414 28l2.292-2.292l4.001-4.001a.997.997 0 0 0 0-1.414" /><path
+						fill="currentColor"
+						d="M28.586 9L23 14.586l-6.001-6.002A2 2 0 0 0 15.577 8a2 2 0 0 0-1.407.584L8 14.76l1.414 1.414l6.17-6.175l6.71 6.708a.997.997 0 0 0 1.413 0L30 10.414z" /><path
+						fill="currentColor"
+						d="M22.5 9C20.57 9 19 7.43 19 5.5S20.57 2 22.5 2S26 3.57 26 5.5S24.43 9 22.5 9m0-5c-.827 0-1.5.673-1.5 1.5S21.673 7 22.5 7S24 6.327 24 5.5S23.327 4 22.5 4" /></svg
+				>Running</summary>
+		</a>
+	</li>
+
 	<li
 		class="pt-4 text-2xl font-bold lg:px-2 xl:px-4 {category === 'techtrippin'
 			? 'text-primary'
@@ -244,11 +262,11 @@
 		<a
 			href="/techtrippin"
 			class={category === 'techtrippin' ? 'text-primary font-medium' : undefined}
-			><summary
+			><summary class="flex items-center gap-4"
 				><svg
 					xmlns="http://www.w3.org/2000/svg"
 					id="carbon:thumbs-down"
-					class="me-3 mb-1 inline"
+					class=""
 					width="1em"
 					height="1em"
 					viewBox="0 0 32 32"

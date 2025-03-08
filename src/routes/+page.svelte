@@ -469,7 +469,7 @@
 		<a
 			href="/learn"
 			class="btn btn-primary h-auto rounded-full px-8 py-4 text-4xl shadow-lg shadow-lime-400/50 lg:min-w-96"
-			>Learn Now</a>
+			>Get Resources</a>
 	</section>
 </div>
 
