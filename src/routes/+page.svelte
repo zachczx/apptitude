@@ -1,50 +1,24 @@
 <script>
-	import heroNew from '$lib/assets/hero-new.webp?enhanced&w=2060;1536;1280;1024';
-	import heroNewBackground from '$lib/assets/hero-new.webp?enhanced&w=800';
 	import heroNew2 from '$lib/assets/hero-new-2.webp?enhanced&w=2060;1536;1280;1024';
 	import heroNew2Background from '$lib/assets/hero-new-2.webp?enhanced&w=800';
-	import TablerChevronRight from '$lib/assets/svg/TablerChevronRight.svelte';
+
 	import logo from '$lib/assets/svg/logo.svg?dataurl';
-	import RocketAnimation from '$lib/RocketAnimation.svelte';
-	import { onMount } from 'svelte';
-	import { gsap } from 'gsap';
+
 	import { matchUrl } from '$lib/helpers';
-	import HowThisWorks from '$lib/HowThisWorks.svelte';
+
 	import pandaAnnoyed from '$lib/assets/panda-annoyed.webp?enhanced&w=600;500;300';
 	import pandaSuperhero from '$lib/assets/panda-superhero.webp?enhanced&w=600';
 	import pandaAnnoyedAlt from '$lib/assets/panda-annoyed-alt.webp?enhanced&w=300';
 	import pandaSeniorMgmt from '$lib/assets/panda-senior-mgmt.webp?enhanced&w=300';
 	import pandaBoss from '$lib/assets/panda-boss.webp?enhanced&w=300';
 	import unoptimised1 from '$lib/assets/unoptimised1.webp?enhanced&w=300';
-	import BadIdeaAmico from '$lib/assets/svg/BadIdeaAmico.svelte';
-	import CoolRobotAmico from '$lib/assets/svg/CoolRobotAmico.svelte';
-	import QuestionsAmico from '$lib/assets/svg/QuestionsAmico.svelte';
-	import rocket from '$lib/assets/rocket.webp?enhanced&w=700;400';
-	import pandaCrying from '$lib/assets/panda-crying.webp?enhanced&w=300';
+
 	import fireBurning from '$lib/assets/fire-burning.webp?enhanced&w=300';
 	import pandaExhausted from '$lib/assets/panda-exhausted.webp?enhanced&w=300';
 	import pandaConfused from '$lib/assets/panda-confused.webp?enhanced&w=300';
+	import burning from '$lib/assets/burning.webp';
 	let { data } = $props();
 	let pageName = $state('Apptitude');
-
-	onMount(() => {
-		let tl = gsap.matchMedia();
-		const headlineVar = document.getElementsByClassName('headline');
-
-		tl.add('(min-width: 1028px)', () => {
-			for (let i = 0; i < headlineVar.length; i++) {
-				let delay = i * 0.2;
-				gsap.from(headlineVar[i], {
-					autoAlpha: 0,
-					'--myBlur': '20px',
-					duration: 0.5,
-					delay: delay,
-					ease: 'sine.out',
-				});
-			}
-		});
-	});
-	// const currentBgNumber = Math.floor(Math.random() * 11);
 </script>
 
 <svelte:head>
@@ -93,7 +67,7 @@
 								d="M10 22h7c1.886 0 2.828 0 3.414-.586S21 19.885 21 18v-6.5M18 10V7M7 11h1m-1 4h1m8-1h1m-.5 8v-4" /></g
 						></svg> Home</a>
 				<a
-					class="border-b-base-100 active:text-primary active:text-primary border-b p-1 hover:rounded-t-lg"
+					class="border-b-base-100 active:text-primary border-b p-1 hover:rounded-t-lg"
 					href="/learn"
 					><svg
 						id="hugeicons:elearning-exchange"
@@ -224,7 +198,7 @@
 		<h1 class="mb-12 text-center text-5xl font-bold min-[1921px]:text-7xl lg:pt-20 lg:text-6xl">
 			<span class="headline text-neutral-content">Get better at</span>
 			<span
-				class="headline inline-block bg-linear-to-r from-emerald-200 via-lime-200 to-teal-300 bg-clip-text pb-5 text-transparent"
+				class="headline-slower inline-block bg-linear-to-r from-emerald-200 via-lime-200 to-teal-300 bg-clip-text pb-5 text-transparent"
 				>tech products & projects.</span>
 		</h1>
 		<div class="text-neutral-content mb-12 grid grid-cols-3 py-2 text-start text-lg lg:text-xl">
@@ -244,7 +218,7 @@
 		<div class="flex flex-wrap justify-center gap-4">
 			<a
 				href="/learn"
-				class="button-shine btn btn-primary border-primary relative overflow-hidden rounded-full border py-8 font-medium lg:px-8 lg:text-2xl"
+				class="button-shine btn btn-primary border-primary relative overflow-hidden rounded-full border py-8 font-bold lg:px-8 lg:text-2xl"
 				>Get Resources<svg
 					xmlns="http://www.w3.org/2000/svg"
 					width="1.3em"
@@ -319,61 +293,67 @@
 	</section>
 </div>
 
-<section class="bg-base-300 min-h-dvh px-4 py-8 lg:py-28" data-pagefind-ignore>
-	<div class="mx-auto grid w-full max-w-(--breakpoint-2xl) gap-8 lg:grid-cols-3">
+<section class="min-h-dvh px-4 py-8" data-pagefind-ignore>
+	<div><img src={burning} alt="" class="w-full" /></div>
+	<div class="mx-auto grid w-full max-w-(--breakpoint-2xl) gap-8 py-16 lg:grid-cols-3">
 		<div class="flex items-center justify-center text-center lg:col-span-3 lg:min-h-36">
 			<h2 class="text-center text-4xl font-bold lg:col-span-1 lg:pb-24 lg:text-8xl">
-				Common Complaints
+				No one likes this...
 			</h2>
 		</div>
-		<div>
-			<div class="grid content-center justify-items-center space-y-4 rounded-2xl lg:p-8">
-				<div class="avatar">
-					<div class="w-56 rounded-full">
-						<enhanced:img src={pandaAnnoyed} alt="" />
+		<div class="grid lg:col-span-3">
+			<div class="flex min-h-36 items-center justify-center text-center lg:col-span-3">
+				<h3 class=" text-4xl font-bold">Not the ones doing the work.</h3>
+			</div>
+			<div>
+				<div class="grid content-center justify-items-center space-y-4 rounded-2xl lg:p-8">
+					<div class="avatar">
+						<div class="w-56 rounded-full">
+							<enhanced:img src={pandaAnnoyed} alt="" />
+						</div>
 					</div>
-				</div>
-				<div class="space-y-4">
-					<h3 class="text-2xl lg:text-4xl">Developers</h3>
-					<p>
-						Govt officers just don't get it. You wish you didn't need to spend so much time teaching
-						them 101 stuff. And stop asking me to write papers or do shitty powerpoint slides to say
-						obvious things.
-					</p>
+					<div class="space-y-4">
+						<h3 class="text-2xl lg:text-4xl">Developers</h3>
+						<p>
+							Govt officers just don't get it. You wish you didn't need to spend so much time
+							teaching them 101 stuff. And stop asking me to write papers or do shitty powerpoint
+							slides to say obvious things.
+						</p>
+					</div>
 				</div>
 			</div>
-		</div>
-		<div>
-			<div class="grid content-center justify-items-center space-y-4 rounded-2xl lg:p-8">
-				<div class="avatar">
-					<div class="w-56 rounded-full">
-						<enhanced:img src={pandaSuperhero} alt="" />
+			<div>
+				<div class="grid content-center justify-items-center space-y-4 rounded-2xl lg:p-8">
+					<div class="avatar">
+						<div class="w-56 rounded-full">
+							<enhanced:img src={pandaSuperhero} alt="" />
+						</div>
 					</div>
-				</div>
-				<div class="space-y-4">
-					<h3 class="text-2xl lg:text-4xl">Staffers</h3>
-					<p>
-						You feel stuck when those in charge and those who write policies cannot see the effects
-						of their decisions. You're not sure what's all these terms being talked about. You feel
-						the things being said, like daily scrum meetings, issues with authentication, cyber
-						risks are dumb.
-					</p>
+					<div class="space-y-4">
+						<h3 class="text-2xl lg:text-4xl">Staffers</h3>
+						<p>
+							You feel stuck when those in charge and those who write policies cannot see the
+							effects of their decisions. You're not sure what's all these terms being talked about.
+							You feel the things being said, like daily scrum meetings, issues with authentication,
+							cyber risks are dumb.
+						</p>
+					</div>
 				</div>
 			</div>
-		</div>
-		<div>
-			<div class="grid content-center justify-items-center space-y-4 rounded-2xl lg:p-8">
-				<div class="avatar">
-					<div class="w-56 rounded-full">
-						<enhanced:img src={unoptimised1} alt="" />
+			<div>
+				<div class="grid content-center justify-items-center space-y-4 rounded-2xl lg:p-8">
+					<div class="avatar">
+						<div class="w-56 rounded-full">
+							<enhanced:img src={unoptimised1} alt="" />
+						</div>
 					</div>
-				</div>
-				<div class="space-y-4">
-					<h3 class="text-2xl lg:text-4xl">Planners</h3>
-					<p>
-						Can't tell if your plans are good or bad. But you see poor outcomes mushrooming across
-						Govt. An unresolved root cause, repeating across teams, projects, tech stacks, eras.
-					</p>
+					<div class="space-y-4">
+						<h3 class="text-2xl lg:text-4xl">Planners</h3>
+						<p>
+							Can't tell if your plans are good or bad. But you see poor outcomes mushrooming across
+							Govt. An unresolved root cause, repeating across teams, projects, tech stacks, eras.
+						</p>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -439,7 +419,7 @@
 		class="mx-auto grid min-h-[70vh] max-w-(--breakpoint-2xl) content-center justify-items-center gap-x-8 gap-y-8 px-2 py-10"
 		data-pagefind-ignore>
 		<h2 class="text-center text-4xl font-bold lg:col-span-1 lg:pb-12 lg:text-8xl">
-			You might not need this...
+			You might not need the resources here...
 		</h2>
 
 		<ul class="grid max-w-[1000px] content-center gap-8 lg:grid-cols-2">
@@ -463,7 +443,7 @@
 		class="mx-auto grid min-h-[70vh] max-w-(--breakpoint-2xl) content-center justify-items-center gap-x-8 gap-y-8 px-2 py-10"
 		data-pagefind-ignore>
 		<h2 class="text-center text-4xl font-bold lg:col-span-1 lg:pb-12 lg:text-8xl">
-			But you're still up for this,
+			But if learning more helps your outcomes,
 		</h2>
 
 		<a
@@ -474,6 +454,16 @@
 </div>
 
 <style>
+	:root {
+		--myBlur: 20px;
+	}
+
+	@keyframes headline-blur {
+		from {
+			filter: blur(var(--myBlur));
+		}
+	}
+
 	.button-shine::before {
 		content: '';
 		position: absolute;
@@ -485,9 +475,21 @@
 		opacity: 0.7;
 		filter: blur(20px);
 	}
+
 	.headline {
-		filter: blur(var(--myBlur));
+		animation: headline-blur 0.5s linear 0s 1 forwards;
+		@starting-style {
+			opacity: 0%;
+		}
 	}
+
+	.headline-slower {
+		animation: headline-blur 0.7s linear 0s 1 forwards;
+		@starting-style {
+			opacity: 0%;
+		}
+	}
+
 	@media (min-width: 1281px) {
 		.hero {
 			position: relative;
