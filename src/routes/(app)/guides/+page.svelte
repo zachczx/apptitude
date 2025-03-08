@@ -20,14 +20,7 @@
 					same - your PM, bosses, teammates, vendors.`;
 </script>
 
-<ContentWrapper
-	urlSelf={data.url}
-	{page}
-	{textMiddle}
-	{category}
-	{currentSection}
-	title="My Views"
-	{subtitle}>
+<ContentWrapper urlSelf={data.url} {page} {category} {currentSection} title="My Views" {subtitle}>
 	<section>
 		<div class="group card bg-base-100 mb-12 border border-gray-700 shadow-xl">
 			<div class="card-body grid lg:grid-cols-2">
