@@ -4,7 +4,7 @@ interface GuidesData {
 	tagline: string;
 	slug: string;
 	bylines?: { [index: number]: { text: string; icon: string } };
-	definitions: string[];
+	definitions: { term: string; definition: string }[];
 	goals: string[];
 	questions: string[];
 	alarms?: { what: string; why: string }[];
@@ -20,11 +20,30 @@ export const guides: GuidesData[] = [
 		tagline: "Problematic problem statement? There's a product for that!",
 		slug: 'problems',
 		definitions: [
-			'User is a person who is trying to solve a problem and is looking for a product or service to help them solve it.',
-			'User experience is the journey that the user takes with that product or service.',
-			'Problem statement is a concise description of the problem that needs to be solved, and it summarizes who the user is, what they need from a design, and why.',
-			'Pain points are any UX issue or friction that frustrates the user and blocks them from getting what they need. Minimizing pain points keeps users happy and encourages them to keep interacting with the product.',
-			'Value proposition is why your user would or should use the product or service that you’re designing.',
+			{
+				term: 'User',
+				definition:
+					'A person who is trying to solve a problem and is looking for a product or service to help them solve it.',
+			},
+			{
+				term: 'User experience',
+				definition: 'The journey that the user takes with that product or service.',
+			},
+			{
+				term: 'Problem statement',
+				definition:
+					'A concise description of the problem that needs to be solved, and it summarizes who the user is, what they need from a design, and why.',
+			},
+			{
+				term: 'Pain points',
+				definition:
+					'Any UX issue or friction that frustrates the user and blocks them from getting what they need. Minimizing pain points keeps users happy and encourages them to keep interacting with the product.',
+			},
+			{
+				term: 'Value proposition',
+				definition:
+					'Why your user would or should use the product or service that you’re designing.',
+			},
 		],
 		goals: [
 			'Problem we are solving must be clear',
@@ -98,12 +117,36 @@ export const guides: GuidesData[] = [
 		tagline: 'Just keep shipping... utterly useless features!',
 		slug: 'product',
 		definitions: [
-			'Product-market fit is how much product satisfies strong market demand, i.e., target customers truly need and want the product.',
-			'First Round Capital calls product-market fit "a state of widespread demand for a product that satisfies a critical need and crucially can be delivered repeatably and efficiently to each customer".',
-			'A North Star Metric is a single, primary metric that best captures the core value that a product delivers to customers.',
-			'A minimum viable product (MVP) is a product development strategy used to quickly get a basic version of a product into the market for initial testing and validation from real users.',
-			"XY Problem - often in customer service - is where someone seeks help for a solution (X) they have chosen as a way to solve a different problem (Y). Helping with X won't help solve actual problem if it's not a good approach in the first place.",
-			'Project management is plan-driven (timelines, people tasked, execution plans), product management is user-driven (user adoption, customer satisfaction, business impact).',
+			{
+				term: 'Product-market fit',
+				definition:
+					'How much product satisfies strong market demand, i.e., target customers truly need and want the product.',
+			},
+			{
+				term: 'Product-market fit (First Round Capital)',
+				definition:
+					'"A state of widespread demand for a product that satisfies a critical need and crucially can be delivered repeatably and efficiently to each customer".',
+			},
+			{
+				term: 'North Star Metric',
+				definition:
+					'A single, primary metric that best captures the core value that a product delivers to customers.',
+			},
+			{
+				term: 'Minimum viable product (MVP)',
+				definition:
+					'A product development strategy used to quickly get a basic version of a product into the market for initial testing and validation from real users.',
+			},
+			{
+				term: 'XY Problem',
+				definition:
+					"Often in customer service - is where someone seeks help for a solution (X) they have chosen as a way to solve a different problem (Y). Helping with X won't help solve actual problem if it's not a good approach in the first place.",
+			},
+			{
+				term: 'Project management vs. Product management',
+				definition:
+					'Project management is plan-driven (timelines, people tasked, execution plans), product management is user-driven (user adoption, customer satisfaction, business impact).',
+			},
 		],
 		goals: [
 			'Make products that solve real problems for users',
@@ -166,12 +209,35 @@ export const guides: GuidesData[] = [
 		tagline: "We're not sure what we're building, but we know we'll need a bigger budget.",
 		slug: 'cost',
 		definitions: [
-			'Cost savings are reduction in costs or expenses.',
-			'Cost avoidance is preventing/avoiding future costs/expenses that would have been incurred if no action was taken.',
-			'So cost savings reduces current or existing costs, while cost avoidance prevents future costs from occurring in the first place.',
-			'Total addressable market (TAM) is total revenue opportunity available to a product or service with 100% market share, i.e., max market demand and revenue potential.',
-			'Capital Expenditure (CAPEX) is funds used by a company to acquire, upgrade, or maintain fixed assets such as buildings, equipment, machinery, or land. These are major investments that are capitalized on the balance sheet and depreciated over their useful life.',
-			'Operating Expenditure (OPEX) is ongoing costs incurred by a company for its day-to-day operations and maintaining its existing facilities and equipment. These expenses are recorded on the income statement and are fully tax-deductible for the period in which they are incurred. Examples of OPEX include rent, utilities, salaries, and supplies.',
+			{
+				term: 'Cost savings',
+				definition: 'Reduction in costs or expenses.',
+			},
+			{
+				term: 'Cost avoidance',
+				definition:
+					'Preventing/avoiding future costs/expenses that would have been incurred if no action was taken.',
+			},
+			{
+				term: 'Cost savings vs. Cost avoidance',
+				definition:
+					'Cost savings reduces current or existing costs, while cost avoidance prevents future costs from occurring in the first place.',
+			},
+			{
+				term: 'Total addressable market (TAM)',
+				definition:
+					'Total revenue opportunity available to a product or service with 100% market share, i.e., max market demand and revenue potential.',
+			},
+			{
+				term: 'Capital Expenditure (CAPEX)',
+				definition:
+					'Funds used by a company to acquire, upgrade, or maintain fixed assets such as buildings, equipment, machinery, or land. These are major investments that are capitalized on the balance sheet and depreciated over their useful life.',
+			},
+			{
+				term: 'Operating Expenditure (OPEX)',
+				definition:
+					'Ongoing costs incurred by a company for its day-to-day operations and maintaining its existing facilities and equipment. These expenses are recorded on the income statement and are fully tax-deductible for the period in which they are incurred. Examples of OPEX include rent, utilities, salaries, and supplies.',
+			},
 		],
 		goals: [
 			'We strive to be as lean and cheap as possible.',
@@ -249,8 +315,16 @@ export const guides: GuidesData[] = [
 		tagline: "Cyber security so tight, even the 1s and 0s can't escape",
 		slug: 'security',
 		definitions: [
-			'Note: This section assumes the cyber security professionals are competent and what is needed is getting the best outcome between cyber security and business.',
-			'Common Vulnerabilities and Exposures, is a standard for identifying and cataloging cybersecurity vulnerabilities and exposures in computer software and hardware. Each CVE entry provides a detailed explanation of a vulnerability, including its potential impact, how it can be exploited, and, often, how it can be mitigated or resolved.',
+			{
+				term: 'Cybersecurity context',
+				definition:
+					'Note: This section assumes the cyber security professionals are competent and what is needed is getting the best outcome between cyber security and business.',
+			},
+			{
+				term: 'Common Vulnerabilities and Exposures (CVE)',
+				definition:
+					'A standard for identifying and cataloging cybersecurity vulnerabilities and exposures in computer software and hardware. Each CVE entry provides a detailed explanation of a vulnerability, including its potential impact, how it can be exploited, and, often, how it can be mitigated or resolved.',
+			},
 		],
 		goals: [
 			'Decide the appropriate trade-offs across threat vector, likelihood, severity, mitigation, timelines, cost, residual risk',
@@ -308,7 +382,11 @@ export const guides: GuidesData[] = [
 		tagline: '',
 		slug: 'running',
 		definitions: [
-			'Transaction completion rate (TCR) is calculated by dividing the total number of successful (approved) transactions by the total number of attempted transactions over a given time period.',
+			{
+				term: 'Transaction completion rate (TCR)',
+				definition:
+					'Calculated by dividing the total number of successful (approved) transactions by the total number of attempted transactions over a given time period.',
+			},
 		],
 		goals: [],
 		alarms: [

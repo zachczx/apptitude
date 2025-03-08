@@ -301,114 +301,99 @@
 				No one likes this...
 			</h2>
 		</div>
-		<div class="grid lg:col-span-3">
+		<div class="grid gap-x-8 lg:col-span-3">
 			<div class="flex min-h-36 items-center justify-center text-center lg:col-span-3">
-				<h3 class=" text-4xl font-bold">Not the ones doing the work.</h3>
+				<h3 class="text-4xl font-bold">Not the ones doing the work.</h3>
 			</div>
-			<div>
-				<div class="grid content-center justify-items-center space-y-4 rounded-2xl lg:p-8">
-					<div class="avatar">
-						<div class="w-56 rounded-full">
-							<enhanced:img src={pandaAnnoyed} alt="" />
-						</div>
-					</div>
-					<div class="space-y-4">
-						<h3 class="text-2xl lg:text-4xl">Developers</h3>
-						<p>
-							Govt officers just don't get it. You wish you didn't need to spend so much time
-							teaching them 101 stuff. And stop asking me to write papers or do shitty powerpoint
-							slides to say obvious things.
-						</p>
+
+			<div
+				class="grid content-center justify-items-center space-y-4 rounded-2xl text-center lg:p-8">
+				<div class="avatar">
+					<div class="w-56 rounded-full">
+						<enhanced:img src={pandaAnnoyed} alt="" />
 					</div>
 				</div>
-			</div>
-			<div>
-				<div class="grid content-center justify-items-center space-y-4 rounded-2xl lg:p-8">
-					<div class="avatar">
-						<div class="w-56 rounded-full">
-							<enhanced:img src={pandaSuperhero} alt="" />
-						</div>
-					</div>
-					<div class="space-y-4">
-						<h3 class="text-2xl lg:text-4xl">Staffers</h3>
-						<p>
-							You feel stuck when those in charge and those who write policies cannot see the
-							effects of their decisions. You're not sure what's all these terms being talked about.
-							You feel the things being said, like daily scrum meetings, issues with authentication,
-							cyber risks are dumb.
-						</p>
-					</div>
+				<div class="space-y-4">
+					<h3 class="text-2xl lg:text-4xl">Developers</h3>
+					<p>
+						Hate needing to teach non-technical folks basic stuff, worse if you need to do
+						papers/slides.
+					</p>
 				</div>
 			</div>
-			<div>
-				<div class="grid content-center justify-items-center space-y-4 rounded-2xl lg:p-8">
-					<div class="avatar">
-						<div class="w-56 rounded-full">
-							<enhanced:img src={unoptimised1} alt="" />
-						</div>
+
+			<div
+				class="grid content-center justify-items-center space-y-4 rounded-2xl text-center lg:p-8">
+				<div class="avatar">
+					<div class="w-56 rounded-full">
+						<enhanced:img src={pandaSuperhero} alt="" />
 					</div>
-					<div class="space-y-4">
-						<h3 class="text-2xl lg:text-4xl">Planners</h3>
-						<p>
-							Can't tell if your plans are good or bad. But you see poor outcomes mushrooming across
-							Govt. An unresolved root cause, repeating across teams, projects, tech stacks, eras.
-						</p>
+				</div>
+				<div class="space-y-4">
+					<h3 class="text-2xl lg:text-4xl">Staffers</h3>
+					<p>
+						You need to staff your bosses, but you don't know much. So you need to ask your
+						technical POCs for everything.
+					</p>
+				</div>
+			</div>
+
+			<div
+				class="grid content-center justify-items-center space-y-4 rounded-2xl text-center lg:p-8">
+				<div class="avatar">
+					<div class="w-56 rounded-full">
+						<enhanced:img src={unoptimised1} alt="" />
 					</div>
+				</div>
+				<div class="space-y-4">
+					<h3 class="text-2xl lg:text-4xl">Planners</h3>
+					<p>You can't tell if your plans are good or bad.</p>
 				</div>
 			</div>
 		</div>
 		<div class="flex min-h-36 items-center justify-center text-center lg:col-span-3">
 			<h2 class=" text-4xl font-bold">Neither do these important people.</h2>
 		</div>
-		<div>
-			<div class="grid content-center justify-items-center space-y-4 rounded-2xl lg:p-8">
-				<div class="avatar">
-					<div class="w-56 rounded-full">
-						<enhanced:img src={pandaBoss} alt="" />
-					</div>
-				</div>
-				<div class="space-y-4">
-					<h3 class="text-2xl lg:text-4xl">Middle Managers</h3>
-					<p>
-						You often get a sinking feeling, but you don't know how to express your doubts when the
-						project lead says "everything's alright".
-					</p>
-					<p>
-						You can't answer your bosses when they ask you why something takes so long or performs
-						so bad. Shit usually hits the fan anyway and you're left holding the can.
-					</p>
+
+		<div class="grid content-center justify-items-center space-y-4 rounded-2xl text-center lg:p-8">
+			<div class="avatar">
+				<div class="w-56 rounded-full">
+					<enhanced:img src={pandaBoss} alt="" />
 				</div>
 			</div>
-		</div>
-		<div>
-			<div class="grid content-center justify-items-center space-y-4 rounded-2xl lg:p-8">
-				<div class="avatar">
-					<div class="w-56 rounded-full">
-						<enhanced:img src={pandaSeniorMgmt} alt="" />
-					</div>
-				</div>
-				<div class="space-y-4">
-					<h3 class="text-2xl lg:text-4xl">Senior Management</h3>
-					<p>
-						You feel trapped in fait accompli situations. Staffers don't give you the possible
-						options, trade-offs, and risks. Worse, you can't correct them because you don't know
-						what you're missing or what's applicable to the initiative on hand.
-					</p>
-					<p>Why does every change take so many months?</p>
-				</div>
+			<div class="space-y-4">
+				<h3 class="text-2xl lg:text-4xl">Middle Managers</h3>
+				<p>
+					You're expected to lead, but you don't know how. When something goes wrong, you don't know
+					why.
+				</p>
 			</div>
 		</div>
-		<div>
-			<div class="grid content-center justify-items-center space-y-4 rounded-2xl lg:p-8">
-				<div class="avatar">
-					<div class="w-56 rounded-full">
-						<enhanced:img src={pandaAnnoyedAlt} alt="" />
-					</div>
+
+		<div class="grid content-center justify-items-center space-y-4 rounded-2xl text-center lg:p-8">
+			<div class="avatar">
+				<div class="w-56 rounded-full">
+					<enhanced:img src={pandaSeniorMgmt} alt="" />
 				</div>
-				<div class="space-y-4">
-					<h3 class="text-2xl lg:text-4xl">Citizens</h3>
-					<p>Why do tech products suck? Surely no one's that dumb, right?</p>
+			</div>
+			<div class="space-y-4">
+				<h3 class="text-2xl lg:text-4xl">Senior Management</h3>
+				<p>
+					Fait accompli proposals. Delays. Unknown trade-offs and risks. Not sure how to question or
+					decide.
+				</p>
+			</div>
+		</div>
+
+		<div class="grid content-center justify-items-center space-y-4 rounded-2xl text-center lg:p-8">
+			<div class="avatar">
+				<div class="w-56 rounded-full">
+					<enhanced:img src={pandaAnnoyedAlt} alt="" />
 				</div>
+			</div>
+			<div class="space-y-4">
+				<h3 class="text-2xl lg:text-4xl">Citizens</h3>
+				<p>Why do tech products suck? Surely no one's that dumb, right?</p>
 			</div>
 		</div>
 	</div>
