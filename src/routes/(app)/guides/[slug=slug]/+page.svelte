@@ -24,7 +24,7 @@
 		{ id: 'definitions', title: 'Definitions' },
 		{ id: 'goals', title: 'Goals' },
 		{ id: 'questions', title: 'Questions' },
-		{ id: 'alarm', title: 'Alarm Bells' },
+		{ id: 'alarms', title: 'Alarm Bells' },
 		{ id: 'dealbreakers', title: 'Dealbreakers' },
 		// { id: 'suggestions', title: '6. Suggestions' },
 	];
@@ -137,7 +137,7 @@
 			{/if}
 
 			{#if data.post.alarms}
-				<section id="questions" class="contents-observer grid gap-4">
+				<section id="alarms" class="contents-observer grid gap-4">
 					<h2 class="border-b-base-content/20 mb-4 border-b-4 pb-2 text-2xl font-bold lg:text-4xl">
 						Alarm Bells
 					</h2>
