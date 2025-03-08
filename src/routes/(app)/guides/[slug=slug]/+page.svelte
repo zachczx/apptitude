@@ -21,13 +21,14 @@
 	let currentBylineNumber = $state(0);
 
 	let contents: Contents[] = [
-		{ id: 'definitions', title: '1. Definitions' },
-		{ id: 'goals', title: '2. Goals' },
-		{ id: 'questions', title: '3. Questions' },
-		{ id: 'alarm', title: '4. Alarm Bells' },
-		{ id: 'dealbreakers', title: '5. Dealbreakers' },
-		{ id: 'suggestions', title: '6. Suggestions' },
+		{ id: 'definitions', title: 'Definitions' },
+		{ id: 'goals', title: 'Goals' },
+		{ id: 'questions', title: 'Questions' },
+		{ id: 'alarm', title: 'Alarm Bells' },
+		{ id: 'dealbreakers', title: 'Dealbreakers' },
+		// { id: 'suggestions', title: '6. Suggestions' },
 	];
+
 	let currentSection: any = $state();
 	let textCurrent = $derived(data.post?.name);
 	let path: string[] = $derived(data.url.split('/'));
@@ -67,6 +68,7 @@
 	<ContentWrapper
 		urlSelf={data.url}
 		{page}
+		{contents}
 		{textMiddle}
 		{category}
 		{currentSection}
@@ -74,13 +76,11 @@
 		<article
 			class="prose-section:mt-20 prose-h2:mb-6 prose-h3:mb-6 prose-h3:mt-12 prose-h5:mb-4 prose-p:mb-4 grid gap-y-20 pb-10">
 			{#if data.post.definitions}
-				{#if data.post.definitions.length > 0}
-					<section id="definitions" class="contents-observer grid gap-4">
-						<h2
-							class="border-b-base-content/20 mb-4 border-b-4 pb-2 text-2xl font-bold lg:text-4xl">
-							Definitions
-						</h2>
-
+				<section id="definitions" class="contents-observer grid gap-4">
+					<h2 class="border-b-base-content/20 mb-4 border-b-4 pb-2 text-2xl font-bold lg:text-4xl">
+						Definitions
+					</h2>
+					{#if data.post.definitions.length > 0}
 						<div class="grid grid-cols-3 gap-x-8 gap-y-8">
 							{#each data.post.definitions as definition, i}
 								<div class="italic">{definition.term}</div>
@@ -90,17 +90,18 @@
 								{/if}
 							{/each}
 						</div>
-					</section>
-				{/if}
+					{:else}
+						Nothing here!
+					{/if}
+				</section>
 			{/if}
 
 			{#if data.post.goals}
-				{#if data.post.goals.length > 0}
-					<section id="goals" class="contents-observer grid gap-4">
-						<h2
-							class="border-b-base-content/20 mb-4 border-b-4 pb-2 text-2xl font-bold lg:text-4xl">
-							Goals
-						</h2>
+				<section id="goals" class="contents-observer grid gap-4">
+					<h2 class="border-b-base-content/20 mb-4 border-b-4 pb-2 text-2xl font-bold lg:text-4xl">
+						Goals
+					</h2>
+					{#if data.post.goals.length > 0}
 						<div>
 							<ol class="list-disc space-y-4 ps-4">
 								{#each data.post.goals as goal}
@@ -108,35 +109,39 @@
 								{/each}
 							</ol>
 						</div>
-					</section>
-				{/if}
+					{:else}
+						Nothing here!
+					{/if}
+				</section>
 			{/if}
 
 			{#if data.post.questions}
-				{#if data.post.questions.length > 0}
-					<section id="questions" class="contents-observer grid gap-4">
-						<h2
-							class="border-b-base-content/20 mb-4 border-b-4 pb-2 text-2xl font-bold lg:text-4xl">
-							Questions
-						</h2>
-						<div>
-							<ol class="list-disc space-y-4 ps-4">
-								{#each data.post.questions as question}
-									<li>{question}</li>
-								{/each}
-							</ol>
+				<section id="questions" class="contents-observer grid gap-4">
+					<h2 class="border-b-base-content/20 mb-4 border-b-4 pb-2 text-2xl font-bold lg:text-4xl">
+						Questions
+					</h2>
+					{#if data.post.questions.length > 0}
+						<div class="grid grid-cols-2 gap-x-8 gap-y-8">
+							{#each data.post.questions as question, i}
+								<div class="italic">{question.what}</div>
+								<div class="">{question.why}</div>
+								{#if i < data.post.questions.length - 1}
+									<div class="bg-base-content/20 col-span-2 h-0.5"></div>
+								{/if}
+							{/each}
 						</div>
-					</section>
-				{/if}
+					{:else}
+						Nothing here!
+					{/if}
+				</section>
 			{/if}
 
 			{#if data.post.alarms}
-				{#if data.post.alarms.length > 0}
-					<section id="questions" class="contents-observer grid gap-4">
-						<h2
-							class="border-b-base-content/20 mb-4 border-b-4 pb-2 text-2xl font-bold lg:text-4xl">
-							Alarm Bells
-						</h2>
+				<section id="questions" class="contents-observer grid gap-4">
+					<h2 class="border-b-base-content/20 mb-4 border-b-4 pb-2 text-2xl font-bold lg:text-4xl">
+						Alarm Bells
+					</h2>
+					{#if data.post.alarms.length > 0}
 						<div class="grid grid-cols-2 gap-x-8 gap-y-8">
 							<div class="text-base-content/70 flex items-center gap-2 font-bold">
 								<svg
@@ -159,17 +164,18 @@
 								{/if}
 							{/each}
 						</div>
-					</section>
-				{/if}
+					{:else}
+						Nothing here!
+					{/if}
+				</section>
 			{/if}
 
 			{#if data.post.dealbreakers}
-				{#if data.post.dealbreakers.length > 0}
-					<section id="dealbreakers" class="contents-observer grid gap-4">
-						<h2
-							class="border-b-base-content/20 mb-4 border-b-4 pb-2 text-2xl font-bold lg:text-4xl">
-							Dealbreakers
-						</h2>
+				<section id="dealbreakers" class="contents-observer grid gap-4">
+					<h2 class="border-b-base-content/20 mb-4 border-b-4 pb-2 text-2xl font-bold lg:text-4xl">
+						Dealbreakers
+					</h2>
+					{#if data.post.dealbreakers.length > 0}
 						<div>
 							<ol class="list-disc space-y-4 ps-4">
 								{#each data.post.dealbreakers as dealbreaker}
@@ -177,8 +183,10 @@
 								{/each}
 							</ol>
 						</div>
-					</section>
-				{/if}
+					{:else}
+						Nothing here!
+					{/if}
+				</section>
 			{/if}
 
 			<!-- <section id="suggestions" class="contents-observer grid gap-4">
@@ -196,3 +204,9 @@
 		</article>
 	</ContentWrapper>
 {/if}
+
+<style>
+	:target {
+		scroll-margin-top: 4.5rem;
+	}
+</style>

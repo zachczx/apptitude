@@ -231,7 +231,7 @@
 			<a
 				href="/guides"
 				class="btn btn-outline btn-secondary rounded-full py-8 font-medium lg:px-8 lg:text-2xl"
-				>Practical Guides</a>
+				>My Views</a>
 		</div>
 	</div>
 </div>

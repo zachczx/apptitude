@@ -210,4 +210,8 @@
 			width: 100% !important;
 		}
 	}
+
+	:target {
+		scroll-margin-top: 4.5rem;
+	}
 </style>

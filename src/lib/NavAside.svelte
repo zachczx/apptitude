@@ -129,7 +129,7 @@
 
 	<li class="pt-4 text-2xl font-bold lg:px-2 xl:px-4">
 		<a href="/guides" class={category === 'guides' ? 'text-primary font-medium' : undefined}
-			>Guides</a>
+			>My Views</a>
 	</li>
 
 	<li class="lg:px-2 xl:px-4">

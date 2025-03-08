@@ -28,7 +28,7 @@
 	{textMiddle}
 	{category}
 	{currentSection}
-	title="Practical Guides"
+	title="My Views"
 	{subtitle}>
 	<section>
 		<div class="group card bg-base-100 mb-12 border border-gray-700 shadow-xl">

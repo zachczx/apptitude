@@ -6,7 +6,7 @@ interface GuidesData {
 	bylines?: { [index: number]: { text: string; icon: string } };
 	definitions: { term: string; definition: string }[];
 	goals: string[];
-	questions: string[];
+	questions: { what: string; why: string }[];
 	alarms?: { what: string; why: string }[];
 	dealbreakers: string[];
 	solutions: string[];
@@ -51,16 +51,51 @@ export const guides: GuidesData[] = [
 			"User's goals must be clear and therein lies the need to define what constitutes success for the user",
 		],
 		questions: [
-			'What is the problem statement?',
-			'Who is experiencing the problem?',
-			'What are the pain points you’re trying to solve?',
-			'Where is the user when they’re using the product?',
-			'When does the problem occur?',
-			'Why is the problem important?',
-			'How are users reaching their goals by using the product?',
-			'What is the hypothesis?',
-			'Who gets value, at what velocity, at what volume?',
-			'Why do we need X? What happens if we got rid of this by end of this year, or if we refused to build this? Who would come to us to complain and why would they do so?',
+			{
+				what: 'Is there a problem statement? What is the problem statement?',
+				why: 'You need to be clear what you are trying to do. Identify a right, meaningful problem.',
+			},
+			{
+				what: 'What is the need and desired outcome?',
+				why: 'Focus on the gap, not the solution, and what the user/customer wants achieved.',
+			},
+			{
+				what: 'Why is the problem important?',
+				why: 'Choosing the correct problem to solve increases the odds you succeed in your initiative.',
+			},
+			{
+				what: 'Who is experiencing the problem?',
+				why: "You need to focus on who the customer really is whom you're trying to value add.",
+			},
+			{
+				what: 'What are the pain points you’re trying to solve?',
+				why: "You want to target key issues users have with whatever you're trying to get them to do.",
+			},
+			{
+				what: 'Where is the user when they’re using the product?',
+				why: "Context matters. Knowing the user's environment (physical location, device, surrounding distractions) informs design and functionality. A product used on a noisy factory floor will have different UI/UX needs than one used in a quiet office. Understanding the user's context improves usability and relevance.",
+			},
+			{
+				what: 'When does the problem occur?',
+				why: 'Understanding when the problem occurs (frequency, specific situations, time of day) helps prioritize solutions and identify trigger events for your product to intervene effectively.',
+			},
+
+			{
+				what: 'How are users reaching their goals by using the product?',
+				why: 'This focuses on user journeys and product effectiveness. Mapping user goals and how your product facilitates them reveals areas for improvement in usability and value proposition. It ensures your product is actually helping users achieve what they set out to do, and highlights potential friction points.',
+			},
+			{
+				what: 'What is the hypothesis?',
+				why: "Product development should be driven by testable assumptions, not just gut feelings. Formulating a clear hypothesis ('If we build X, then Y will happen') allows you to validate your ideas through data and iteration.",
+			},
+			{
+				what: 'Who gets value, at what velocity, at what volume?',
+				why: 'Understanding value delivery is key to sustainability and growth. Knowing who benefits, how quickly they see value, and how much value they receive informs your business model, marketing strategy, and product roadmap. It helps you quantify impact and understand the scale of your potential success.',
+			},
+			{
+				what: 'Why do we need X? What happens if we got rid of this by end of this year, or if we refused to build this? Who would come to us to complain and why would they do so?',
+				why: 'This question challenges assumptions and forces you to justify features or projects. It encourages critical thinking about necessity and impact.',
+			},
 		],
 		alarms: [
 			{
@@ -79,25 +114,22 @@ export const guides: GuidesData[] = [
 				what: 'I already have a strategy approved X years ago',
 				why: 'You probably missed out on technologies, solutions and products that came up. ',
 			},
+			{
+				what: "We need to be no worse off / Ensure we're no worse off.",
+				why: 'Problems don\'t always need to be solved in the same way, but "no worse off" generally assumes solutions are static.',
+			},
 			/* 		{
-				what: '',
-				why: '',
-			},
-			{
-				what: '',
-				why: '',
-			},
-			{
 				what: '',
 				why: '',
 			}, */
 		],
 		dealbreakers: [
-			'Problem statement is unclear.',
-			"Let's retain all past requirements so we are no worse off.",
+			"No one knows what problem is it we're solving.",
+			'Problem being tackled seems to be changing after every meeting.',
+			"We're constantly adding new requirements to our total list of requirements.",
 			"No one's asking for this.",
 			'Meetings are dominated by people who say "I think..." but no one actually knows someone who\'s a user.',
-			"POHs, PSes think it's a good idea.",
+			"You're doing things because bosses asked.",
 			'Problem is an edge case, but we have money, so who cares.',
 			"Business owner says they need all the requirements, so let's keep every one.",
 		],
@@ -157,20 +189,62 @@ export const guides: GuidesData[] = [
 			'If a product solves a real problem, people will want to join in, no matter how "bad" it seems to be (see: Twitch).',
 		],
 		questions: [
-			'Who is the target customer?',
-			'What problem does your product solve?',
-			'How does your product solve this problem?',
-			'What are the key features and benefits of your product?',
-			'What is the product vision?',
-			'What is a minimum viable product?',
-			'Do you see product-market fit for your product?',
-			'What is the market size for your product?',
-			'Who are your competitors, and how is your product different?',
-			'What is your go-to market plan?',
-			'What is the development/iteration timeline for your product?',
-			'How will you measure the success of your product?',
-			'Are you replacing/refactoring for the sake of it? (common when trying to rewrite existing/legacy services in latest framework)',
-			'What were the surprises you had while coming up with this plan/prototype/product?',
+			{
+				what: 'Who is the target customer?',
+				why: "Without a clear target, you're designing for 'everyone', which ends up pleasing no one. Business-wise, *vague targets equal wasted budget*.  Knowing your customer means targeted marketing, focused development, and a product that truly resonates. It's not just about *who* clicks, but *who* converts and becomes a loyal advocate.  **Bottom line: Know your audience to maximize impact and ROI.**",
+			},
+			{
+				what: 'What problem does your product solve?',
+				why: "Solve real problems, not imagined ones. Without a core value proposition, you're just wasting resources.",
+			},
+			{
+				what: 'How does your product solve this problem?',
+				why: 'Emphasize effective solutions, not just solutions. Ineffective solutions waste resources and erode trust.',
+			},
+			{
+				what: 'What are the key features and benefits of your product?',
+				why: "Highlight value upfront - features are the 'what', benefits are the 'why' users should care. Focusing on benefits – time saved, money earned, efficiency boosted, stress reduced – speaks directly to user needs and business ROI. Ultimately, features sell products, benefits sell value.",
+			},
+			{
+				what: 'What is the product vision?',
+				why: 'Vision guide us to focus and alignment.',
+			},
+			{
+				what: 'What is a minimum viable product?',
+				why: "Conserve resources and minimize losses. Test early by putting your product in your users' hands as early as possible.",
+			},
+			{
+				what: 'Do you see product-market fit for your product?',
+				why: "UX strives for solutions that resonate with user needs.  Business *demands* market validation for sustainable growth.  Product-market fit isn't a 'maybe', it's a 'must-have'. It's about ensuring your product addresses a real market need, is competitively positioned, and has the potential for scale.  **No product-market fit, no sustainable business. It's that stark.**",
+			},
+			{
+				what: 'What is the market size for your product?',
+				why: 'Not all problems are worth solving. A problem that affects few people might not be worth your while.',
+			},
+			{
+				what: 'Who are your competitors and how is your product different?',
+				why: 'Understand user alternatives, identify gaps, opportunities, and your unique selling proposition (USP).',
+			},
+			{
+				what: 'What is your go-to market plan?',
+				why: 'Consider the user journey beyond the product itself, including reach, user acquisition, momentum.',
+			},
+			{
+				what: 'What is the development/iteration timeline for your product?',
+				why: 'The shorter the timeline, the faster you can get feedback, the faster you can "fail fast".',
+			},
+			{
+				what: 'How will you measure the success of your product?',
+				why: "You need to know how you know you succeed or fail. If you can't measure it, you can't manage it, and you certainly can't improve it.",
+			},
+			{
+				what: 'Are you replacing/refactoring for the sake of it? (common when trying to rewrite existing/legacy services in latest framework)',
+				why: 'New is not better.',
+			},
+			{
+				what: 'What were the surprises you had while coming up with this plan/prototype/product?',
+				why: 'Learning from surprises is how we get smarter, faster, and more effective.',
+			},
 		],
 		alarms: [],
 		dealbreakers: [
@@ -245,17 +319,50 @@ export const guides: GuidesData[] = [
 			'Money spent must solve real problems.',
 		],
 		questions: [
-			'What is the TAM?',
-			'What are the trade-offs across cost, value, performance, security?',
-			'More costs to mitigate what additional risks?',
-			'Why would it take X man months?',
-			'How much of the cost is attributed to compliance, admin, overheads?',
-			'Is this a $40M or a $400k problem',
-			'How much cost savings, cost avoidance, manpower savings, manpower productivity are we going to achieve?',
-			'How will we measure savings, avoidance, productivity benefits?',
-			'Why are we satisfied with X times savings/productivity gains?',
-			'Why do we need a project management or admin wrapper fee that contributes nothing to the product?',
-			'What are the CAPEX and OPEX for X?',
+			{
+				what: 'What is the TAM?',
+				why: '',
+			},
+			{
+				what: 'What are the trade-offs across cost, value, performance, security?',
+				why: '',
+			},
+			{
+				what: 'More costs to mitigate what additional risks?',
+				why: '',
+			},
+			{
+				what: 'Why would it take X man months?',
+				why: '',
+			},
+			{
+				what: 'How much of the cost is attributed to compliance, admin, overheads?',
+				why: '',
+			},
+			{
+				what: 'Is this a $40M or a $400k problem',
+				why: '',
+			},
+			{
+				what: 'How much cost savings, cost avoidance, manpower savings, manpower productivity are we going to achieve?',
+				why: '',
+			},
+			{
+				what: 'How will we measure savings, avoidance, productivity benefits?',
+				why: '',
+			},
+			{
+				what: 'Why are we satisfied with X times savings/productivity gains?',
+				why: '',
+			},
+			{
+				what: 'Why do we need a project management or admin wrapper fee that contributes nothing to the product?',
+				why: '',
+			},
+			{
+				what: 'What are the CAPEX and OPEX for X?',
+				why: '',
+			},
 		],
 		alarms: [
 			{
@@ -347,18 +454,54 @@ export const guides: GuidesData[] = [
 			},
 		],
 		questions: [
-			'What sensitive data will my product handle, and how will it be secured (encryption, access controls, etc.)?',
-			'Who am I afraid of attacking me (attack vectors)?',
-			'How will they attack me, how long will they take, how likely are they to succeed?',
-			'If they succeed, what do I lose, for how long?',
-			'What are the options for mitigation, how much does it cost, how long does it take to implement/maintain, how much man effort?',
-			'Despite mitigation, what are the residual risks I need to live with, and how much additional cost is each mitigation?',
-			"If I'm brought down, how can I do disaster recovery and data restoration/validation?",
-			'What third-party components or services will the product use?',
-			'How do we manage vulnerabilities (CVEs) and patches?',
-			'How will my product handle and respond to security incidents and breaches?',
-			"How will my product's security be monitored and audited on an ongoing basis?",
-			"What are the potential legal and regulatory implications related to my product's security?",
+			{
+				what: 'What sensitive data will my product handle, and how will it be secured (encryption, access controls, etc.)?',
+				why: '',
+			},
+			{
+				what: 'Who am I afraid of attacking me (attack vectors)?',
+				why: '',
+			},
+			{
+				what: 'How will they attack me, how long will they take, how likely are they to succeed?',
+				why: '',
+			},
+			{
+				what: 'If they succeed, what do I lose, for how long?',
+				why: '',
+			},
+			{
+				what: 'What are the options for mitigation, how much does it cost, how long does it take to implement/maintain, how much man effort?',
+				why: '',
+			},
+			{
+				what: 'Despite mitigation, what are the residual risks I need to live with, and how much additional cost is each mitigation?',
+				why: '',
+			},
+			{
+				what: "If I'm brought down, how can I do disaster recovery and data restoration/validation?",
+				why: '',
+			},
+			{
+				what: 'What third-party components or services will the product use?',
+				why: '',
+			},
+			{
+				what: 'How do we manage vulnerabilities (CVEs) and patches?',
+				why: '',
+			},
+			{
+				what: 'How will my product handle and respond to security incidents and breaches?',
+				why: '',
+			},
+			{
+				what: "How will my product's security be monitored and audited on an ongoing basis?",
+				why: '',
+			},
+			{
+				what: "What are the potential legal and regulatory implications related to my product's security?",
+				why: '',
+			},
 		],
 		dealbreakers: [
 			'Cyber security guidelines hinder innovation - "It can\'t be done!"',
@@ -406,8 +549,29 @@ export const guides: GuidesData[] = [
 				what: 'System health checks and metrics are run/calculated manually; no immediate notification of service outages.',
 				why: 'Manual monitoring is inefficient and unresponsive. Real-time, automated monitoring is essential for timely service issue detection and resolution. Stats should be used for ongoing health checks, not just periodic presentations.',
 			},
+			{
+				what: 'We have backup, this is not a critical system anyway.',
+				why: "What is the backup frequency? Are these active or passive copies? Where are they stored? How many copies? How long does it take to restore them? Are these complete snapshots or diffs? You'd always want some variant of the 321 backup rule.",
+			},
+			{
+				what: 'Oh this insert GovTech product? Not familiar with it but we know we need ours and they seem different anyway.',
+				why: "You're trying to recreate something that's presumably solved well. And doesn't seem like you did your competitive audit. Even if you're satisfied with your solution, you should say why yours works better, eg from user research.",
+			},
+			{
+				what: "Let's do UI UX better.",
+				why: "They're very different things! The person saying this betrays a lack of understanding of what these 2 acronyms mean. Ui is a part of ux. Ux is far more than just tinkering with screens, colors, typography, spacing on figma templates. And this lack of clarity prevents us from going into what needs to be solved and how we should solve them.",
+			},
+			{
+				what: "It's impossible to track whether our tool improves productivity, saves manual labor and how much it improves the business.",
+				why: "You can't track the productivity increase for every person, but you can follow >5 teams for several weeks and record how much they benefit in time savings, efficiency, errors they encounter, or even entire work flows they no longer do. But this has to be done before you deploy and is pointless to lament you didn't after the fact.",
+			},
 		],
-		questions: [],
+		questions: [
+			{
+				what: 'How could this product fail (i.e. pre-mortem)?',
+				why: 'Work backwards from where failure occurs, so that you can then plug those gaps.',
+			},
+		],
 		dealbreakers: [],
 		solutions: [],
 		suggestions: [],
