@@ -6,7 +6,7 @@
 </script>
 
 <nav
-	class="bg-base-100 border-b-base-content/20 fixed inset-x-0 top-0 z-10 flex h-14 border-b lg:grid lg:grid-cols-3 lg:content-center"
+	class="bg-base-100 border-b-base-content/20 fixed inset-x-0 top-0 z-10 flex h-14 border-b-2 lg:grid lg:grid-cols-3 lg:content-center"
 	data-pagefind-ignore>
 	<div class="flex items-center px-2 lg:px-4">
 		<div class="dropdown lg:hidden">
@@ -47,7 +47,7 @@
 								d="M10 22h7c1.886 0 2.828 0 3.414-.586S21 19.885 21 18v-6.5M18 10V7M7 11h1m-1 4h1m8-1h1m-.5 8v-4" /></g
 						></svg> Home</a>
 				<a
-					class="border-b-base-100 active:text-primary active:text-primary border-b p-1 hover:rounded-t-lg"
+					class="border-b-base-100 active:text-primary border-b p-1 hover:rounded-t-lg"
 					href="/learn"
 					><svg
 						id="hugeicons:elearning-exchange"

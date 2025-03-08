@@ -33,15 +33,15 @@
 	}: ContentWrapperProps = $props();
 </script>
 
-<div class="grid grid-cols-5">
+<div class="grid grid-cols-[auto_1fr_auto]">
 	<aside
-		class="lg:border-r-base-100 bg-base-100 vertical-offset sticky top-14 col-span-1 hidden w-full content-start overflow-y-auto lg:grid lg:border-r-2">
+		class="lg:border-r-base-100 bg-base-100 vertical-offset sticky top-16 hidden w-full content-start overflow-y-auto lg:grid lg:border-r-2">
 		<NavAside {page} {category} />
 	</aside>
 
-	<main class="border-r-base-100 bg-base-100 col-span-5 w-full border-r-2 lg:col-span-3">
-		<div class="max-w-[900px] justify-self-center px-4 pt-4 pb-10 lg:pt-0">
-			<section class="mt-20 mb-8 grid gap-4 lg:mt-24 lg:mb-20">
+	<main class="border-r-base-100 bg-base-100 w-full border-r-2">
+		<div class="w-full max-w-[900px] justify-self-center px-4 pt-4 pb-10 lg:pt-0">
+			<section class="mt-14 mb-8 grid gap-4 lg:mt-20 lg:mb-20">
 				<h1
 					class="mb-4 inline-block bg-linear-to-r from-emerald-200 via-lime-200 to-teal-300 bg-clip-text text-4xl font-bold text-transparent lg:text-7xl">
 					{title}
@@ -62,7 +62,7 @@
 	</main>
 
 	<aside
-		class="vertical-offset sticky top-14 col-span-1 hidden w-full content-start rounded-r-3xl lg:grid">
+		class="vertical-offset sticky top-16 col-span-1 hidden w-full content-start rounded-r-3xl lg:grid">
 		{#if contents.length > 0}
 			<NavToc {urlSelf} {contents} {currentSection} />
 		{/if}

@@ -1,22 +1,13 @@
-import JeffBezos from '$lib/assets/profileheads/JeffBezos.webp';
-import JakobNielsen from '$lib/assets/profileheads/JakobNielsen.webp';
-import JohnDoerr from '$lib/assets/profileheads/JohnDoerr.webp';
-import MartyCagan from '$lib/assets/profileheads/MartyCagan.webp';
-import KerstinBalka from '$lib/assets/profileheads/KerstinBalka.webp';
-import JimmySanders from '$lib/assets/profileheads/JimmySanders.webp';
-import SethGodin from '$lib/assets/profileheads/SethGodin.webp';
-import LeaHickman from '$lib/assets/profileheads/LeaHickman.webp';
-import TeresaTorres from '$lib/assets/profileheads/TeresaTorres.webp';
-
 interface GuidesData {
 	id: number;
 	name: string;
 	tagline: string;
 	slug: string;
-	bylines: { [index: number]: { text: string; icon: string } };
+	bylines?: { [index: number]: { text: string; icon: string } };
 	definitions: string[];
 	goals: string[];
 	questions: string[];
+	alarms?: { what: string; why: string }[];
 	dealbreakers: string[];
 	solutions: string[];
 	suggestions: string[];
@@ -28,24 +19,6 @@ export const guides: GuidesData[] = [
 		name: 'Problem Statements',
 		tagline: "Problematic problem statement? There's a product for that!",
 		slug: 'problems',
-		bylines: [
-			{
-				text: 'Important truths can be uncomfortable, awkward, exhausting... Any high performing organization has to have mechanisms and a culture that supports truth telling.',
-				icon: JeffBezos,
-			},
-			{
-				text: 'Pay attention to what users do, not what they say.',
-				icon: JakobNielsen,
-			},
-			{
-				text: 'Don’t find customers for your products, find products for your customers.',
-				icon: SethGodin,
-			},
-			{
-				text: 'If we focus on collecting stories in our customer interviews, opportunities will emerge from those stories.',
-				icon: TeresaTorres,
-			},
-		],
 		definitions: [
 			'User is a person who is trying to solve a problem and is looking for a product or service to help them solve it.',
 			'User experience is the journey that the user takes with that product or service.',
@@ -68,6 +41,37 @@ export const guides: GuidesData[] = [
 			'How are users reaching their goals by using the product?',
 			'What is the hypothesis?',
 			'Who gets value, at what velocity, at what volume?',
+			'Why do we need X? What happens if we got rid of this by end of this year, or if we refused to build this? Who would come to us to complain and why would they do so?',
+		],
+		alarms: [
+			{
+				what: 'You should be doing xxx, yyy, zzz because Company X is doing it as well.',
+				why: "Context is important, there's very little point in trying to copy solutions if it worked to solve their problems, not ours.",
+			},
+			{
+				what: 'I already have a plan and it incorporates input and requirements from X departments.',
+				why: "It most likely is an aggregation of desired solutions that do not solve real problems. It also is likely overly complex because it tries to be everyone's solution.",
+			},
+			{
+				what: 'I have KPIs that xxx/IDSC/committee already approved X years ago',
+				why: "You probably haven't reviewed if they're still appropriate and if it measures your ability to solve user problems",
+			},
+			{
+				what: 'I already have a strategy approved X years ago',
+				why: 'You probably missed out on technologies, solutions and products that came up. ',
+			},
+			/* 		{
+				what: '',
+				why: '',
+			},
+			{
+				what: '',
+				why: '',
+			},
+			{
+				what: '',
+				why: '',
+			}, */
 		],
 		dealbreakers: [
 			'Problem statement is unclear.',
@@ -93,16 +97,6 @@ export const guides: GuidesData[] = [
 		name: 'Product',
 		tagline: 'Just keep shipping... utterly useless features!',
 		slug: 'product',
-		bylines: [
-			{
-				text: 'Goals must be measurable or have quantifiable targets. Maybe it’s shipping a certain number of products or hitting a release schedule... we have to be able to track and measure the goals.',
-				icon: JohnDoerr,
-			},
-			{
-				text: 'The worst thing about product in the past was that is was all about opinions... the higher up in the organization, the more that opinion counted... I hear constantly from teams now how often they are surprised by the data and how minds are changed.',
-				icon: MartyCagan,
-			},
-		],
 		definitions: [
 			'Product-market fit is how much product satisfies strong market demand, i.e., target customers truly need and want the product.',
 			'First Round Capital calls product-market fit "a state of widespread demand for a product that satisfies a critical need and crucially can be delivered repeatably and efficiently to each customer".',
@@ -135,6 +129,7 @@ export const guides: GuidesData[] = [
 			'Are you replacing/refactoring for the sake of it? (common when trying to rewrite existing/legacy services in latest framework)',
 			'What were the surprises you had while coming up with this plan/prototype/product?',
 		],
+		alarms: [],
 		dealbreakers: [
 			'Product is a suboptimal solution (read: XY problem)',
 			"Product solves only a small part of the problem or doesn't solve any real problem at all.",
@@ -164,70 +159,12 @@ export const guides: GuidesData[] = [
 			"A product is not a project, don't manage it like one.",
 		],
 	},
-	{
-		id: 4,
-		name: 'Security',
-		tagline: "Cyber security so tight, even the 1s and 0s can't escape",
-		slug: 'security',
-		bylines: [
-			{
-				text: "We'll give developers, engineers, we’ll give different practitioners the freedom to do what they want to do. But it’s their responsibility to do it to a certain standard... My security tools have to be in lockstep with that. My tools can’t block them from the freedom that is a core tenant of Netflix.",
-				icon: JimmySanders,
-			},
-		],
-		definitions: [
-			'Note: This section assumes the cyber security professionals are competent and what is needed is getting the best outcome between cyber security and business.',
-			'Common Vulnerabilities and Exposures, is a standard for identifying and cataloging cybersecurity vulnerabilities and exposures in computer software and hardware. Each CVE entry provides a detailed explanation of a vulnerability, including its potential impact, how it can be exploited, and, often, how it can be mitigated or resolved.',
-		],
-		goals: [
-			'Decide the appropriate trade-offs across threat vector, likelihood, severity, mitigation, timelines, cost, residual risk',
-			'Mitigation is not free and even the best theorized mitigations can fail when not kept up with.',
-			'Move beyond theorycrafting and indecipherable threat-risk assessments to outlining threats with actual impact and likelihood for business to assume risk',
-			'Understand cloud is as secure, if not more, than on-prem systems. Especially if you use native cloud services for logging and triggering alerts for anomalous behaviors.',
-		],
-		questions: [
-			'What sensitive data will my product handle, and how will it be secured (encryption, access controls, etc.)?',
-			'Who am I afraid of attacking me (attack vectors)?',
-			'How will they attack me, how long will they take, how likely are they to succeed?',
-			'If they succeed, what do I lose, for how long?',
-			'What are the options for mitigation, how much does it cost, how long does it take to implement/maintain, how much man effort?',
-			'Despite mitigation, what are the residual risks I need to live with, and how much additional cost is each mitigation?',
-			"If I'm brought down, how can I do disaster recovery and data restoration/validation?",
-			'What third-party components or services will the product use?',
-			'What is the strategy for managing vulnerabilities (CVEs) and patches?',
-			'How will my product handle and respond to security incidents and breaches?',
-			"How will my product's security be monitored and audited on an ongoing basis?",
-			"What are the potential legal and regulatory implications related to my product's security?",
-		],
-		dealbreakers: [
-			'Cyber security guidelines hinder innovation - "It can\'t be done!"',
-			'Cyber security cannot be questioned and yet it is poorly explained/quantified/verifiable.',
-			"Business is not confident of taking on any risk because they can't understand them, so they just go the most conservative possible.",
-			'Tons of money is spent tightening up every possible doomsday scenario you can think of.',
-			"Cybersecurity lock-downs prevent business from achieving its product outcomes (then what's the point?).",
-			'We rely on threat risk assessments as scriptures, never mind that the scoring and likelihood multipliers are almost always done arbitrarily.',
-			'We drink our kool-aid so much that we believe in the illusion of layering on more frameworks and theories, not what top tier companies do.',
-		],
-		solutions: [
-			'Discuss with the cyber security professional the threat vector, likelihood, severity, mitigation, timelines, cost, residual risk',
-		],
-		suggestions: ["I wish I could give you a solution, but I won't pretend to know the solution."],
-	},
+
 	{
 		id: 3,
 		name: 'Cost',
 		tagline: "We're not sure what we're building, but we know we'll need a bigger budget.",
 		slug: 'cost',
-		bylines: [
-			{
-				text: '8/10 public-sector IT projects take longer than expected, compared with just more than half of projects in the private sector. Cost overruns occur in nearly 1/2 public-sector projects, as opposed to about 1/3 in the private sector.',
-				icon: KerstinBalka,
-			},
-			{
-				text: 'It is easy to give employees a new job title, but much harder to change how they think and behave.  And sometimes that new job title carries along with it expectations that existing staff may not be able to perform.',
-				icon: MartyCagan,
-			},
-		],
 		definitions: [
 			'Cost savings are reduction in costs or expenses.',
 			'Cost avoidance is preventing/avoiding future costs/expenses that would have been incurred if no action was taken.',
@@ -254,6 +191,28 @@ export const guides: GuidesData[] = [
 			'Why do we need a project management or admin wrapper fee that contributes nothing to the product?',
 			'What are the CAPEX and OPEX for X?',
 		],
+		alarms: [
+			{
+				what: "<insert party> assesses this effort is reasonable, it'll take XX man days.",
+				why: "Though traditional contracts/projects need estimation for an effort, it's near impossible to know upfront how much effort is required. Naturally the incentive is to overestimate, add more buffer. Even when eventually the effort is smaller, there's no incentive to downsize, because it's additional work.",
+			},
+			{
+				what: 'We need X business analysts, project managers, senior developers, developers, designers, xxx, yyy, etc',
+				why: "We're bring tons of people to the team, based on a vendor's hyper specialization and billable rates.",
+			},
+			{
+				what: "It's not even $100,000, why are we quibbling over a small sum?",
+				why: "Every $1 spent unnecessarily is unacceptable. I'm a taxpayer too! And if you calculate per unit/transaction costs, you can see clearly excessive spending.",
+			},
+			{
+				what: "We've no choice because the team already decided X years ago to buy this",
+				why: "If something doesn't work or doesn't work well, then consider if stopping it gives you future savings + a chance at getting something that solves your problem, versus abortive costs and switching costs.",
+			},
+			{
+				what: "This company is able to customize it in Xyz way that we require. It's not their main product line but something they're thinking of launching as a full product in future. It's not cheap but it'll do the job.",
+				why: "They are going to milk you like a cash cow via change requests (formal proposals for modifications to a system). Also, them offering you a non-product to you means you're their guinea pig to see if something is profitable, and you can be sure they know you're desperate for this set of requirements.",
+			},
+		],
 		dealbreakers: [
 			'People say "Sounds about right" when talking about cost items & full-time engineers (no shit, Sherlock).',
 			'$100M is ok because the previous project was $90M and after factoring in inflation it sounds about right.',
@@ -266,6 +225,7 @@ export const guides: GuidesData[] = [
 			'Might as well spend it since the FY is closing.',
 			'Everyone dumps their requirements onto a project to get funding.',
 			'Staffers say they need to find a new justification to get funding for 2.0 of their project.',
+			"Business owners of systems are asked to give waivers for things they don't understand, but are told the waivers must be given (fait accompli).",
 		],
 		solutions: [
 			'Kill the product or project.',
@@ -279,52 +239,132 @@ export const guides: GuidesData[] = [
 			"There's no shame to you or your team to kill projects.",
 			"Get opinions from people who know their stuff - nothing worse than pretending to approve when you've no idea.",
 			"Buy the cheapest option of anything and use it to the limits before you upgrade (you'd do the same for your own laptop anyway, who starts off with an i9?)",
-			"Developer resources are the most precious they're not your pptx/docx machines!",
+			"Developer resources are the most precious, they're not your pptx/docx machines!",
 		],
 	},
+
 	{
-		id: 5,
-		name: '',
-		tagline: '',
-		slug: '',
-		bylines: [
+		id: 4,
+		name: 'Security',
+		tagline: "Cyber security so tight, even the 1s and 0s can't escape",
+		slug: 'security',
+		definitions: [
+			'Note: This section assumes the cyber security professionals are competent and what is needed is getting the best outcome between cyber security and business.',
+			'Common Vulnerabilities and Exposures, is a standard for identifying and cataloging cybersecurity vulnerabilities and exposures in computer software and hardware. Each CVE entry provides a detailed explanation of a vulnerability, including its potential impact, how it can be exploited, and, often, how it can be mitigated or resolved.',
+		],
+		goals: [
+			'Decide the appropriate trade-offs across threat vector, likelihood, severity, mitigation, timelines, cost, residual risk',
+			'Mitigation is not free and even the best theorized mitigations can fail when not kept up with.',
+			'Move beyond theorycrafting and indecipherable threat-risk assessments to outlining threats with actual impact and likelihood for business to assume risk',
+			'Understand cloud is as secure, if not more, than on-prem systems. Especially if you use native cloud services for logging and triggering alerts for anomalous behaviors.',
+		],
+		alarms: [
 			{
-				text: '8/10 public-sector IT projects take longer than expected, compared with just more than half of projects in the private sector. Cost overruns occur in nearly 1/2 public-sector projects, as opposed to about 1/3 in the private sector.',
-				icon: KerstinBalka,
+				what: "We can't work on <insert critical backend task> yet, because it might derail our upcoming release, and I rather focus on deploying the new release.",
+				why: 'Our haste to push out a new release should not prevent us from doing the right thing, especially patching and reliability.',
+			},
+			{
+				what: "I need a waiver for EOL/EOS stuff, because we're waiting for <insert workstream with multiple involved parties> before we can proceed with the upgrade/rebuild.",
+				why: "Upgrading from EOL/EOS precedes everything, especially if we're waiting for something long drawn to be decided.",
+			},
+			{
+				what: 'You are shown rows of CVEs, package names, EC2 instances, and technical terms.',
+				why: 'Request to know what the CVEs cover, the risks each present, and implication if breached. A runtime environment vulnerability is very different from a vulnerability for a UI library.',
 			},
 		],
-		definitions: [],
+		questions: [
+			'What sensitive data will my product handle, and how will it be secured (encryption, access controls, etc.)?',
+			'Who am I afraid of attacking me (attack vectors)?',
+			'How will they attack me, how long will they take, how likely are they to succeed?',
+			'If they succeed, what do I lose, for how long?',
+			'What are the options for mitigation, how much does it cost, how long does it take to implement/maintain, how much man effort?',
+			'Despite mitigation, what are the residual risks I need to live with, and how much additional cost is each mitigation?',
+			"If I'm brought down, how can I do disaster recovery and data restoration/validation?",
+			'What third-party components or services will the product use?',
+			'How do we manage vulnerabilities (CVEs) and patches?',
+			'How will my product handle and respond to security incidents and breaches?',
+			"How will my product's security be monitored and audited on an ongoing basis?",
+			"What are the potential legal and regulatory implications related to my product's security?",
+		],
+		dealbreakers: [
+			'Cyber security guidelines hinder innovation - "It can\'t be done!"',
+			'Waivers are always being sought, especially for long obsolete (or EOS and EOL) components',
+			'Cyber security cannot be questioned and yet it is poorly explained/quantified/verifiable.',
+			"Business is not confident of taking on any risk because they can't understand them, so they just go the most conservative possible.",
+			'Tons of money is spent tightening up every possible doomsday scenario you can think of.',
+			"Cybersecurity lock-downs prevent business from achieving its product outcomes (then what's the point?).",
+			'We rely on threat risk assessments as scriptures, never mind that the scoring and likelihood multipliers are almost always done arbitrarily.',
+			'We drink our kool-aid so much that we believe in the illusion of layering on more frameworks and theories, not what top tier companies do.',
+		],
+		solutions: [
+			'Discuss with the cyber security professional the threat vector, likelihood, severity, mitigation, timelines, cost, residual risk',
+		],
+		suggestions: ["I wish I could give you a solution, but I won't pretend to know the solution."],
+	},
+
+	{
+		id: 5,
+		name: 'Running the Project',
+		tagline: '',
+		slug: 'running',
+		definitions: [
+			'Transaction completion rate (TCR) is calculated by dividing the total number of successful (approved) transactions by the total number of attempted transactions over a given time period.',
+		],
 		goals: [],
+		alarms: [
+			{
+				what: 'Using xxx, yyy, zzz resources (or X%, Y%, Z%) for cloud/on-prem resources.',
+				why: 'From a business perspective, need to understand how resource usage meets objectives. Can users access the offering? Can they transact? Are they satisfied? How can costs be reduced?',
+			},
+			{
+				what: "Haven't asked AWS support for an optimization check or used tools for optimization.",
+				why: 'Lack of utilization of free AWS tools like Trusted Advisor and enterprise support indicates a lack of cost discipline and workload optimization.',
+			},
+			{
+				what: 'Transaction completion rate is really good! (90-99%).',
+				why: 'A 10% failure rate is common; excessively high rates suggest potential measurement errors. Review start and end points of measurements to ensure they accurately reflect customer transaction success.',
+			},
+			{
+				what: 'System health checks and metrics are run/calculated manually; no immediate notification of service outages.',
+				why: 'Manual monitoring is inefficient and unresponsive. Real-time, automated monitoring is essential for timely service issue detection and resolution. Stats should be used for ongoing health checks, not just periodic presentations.',
+			},
+		],
 		questions: [],
 		dealbreakers: [],
 		solutions: [],
 		suggestions: [],
 	},
-	/* 	{
-		id: 5,
-		name: "Structures and processes",
-		slug: "structure",
-	  bylines: [
-	{
-		text: "As transformation to the product model involves moving from output to outcomes, the problem here is that the transformation effort hides behind output (activities) rather than outcomes (results).",
-		icon: LeaHickman
-	}
-	],
+	/* {
+		id: 6,
+		name: 'Structures, Processes, Vendors',
+		tagline: '',
+		slug: 'structure',
 		definitions: [],
 		goals: [],
-	  questions: [],
-	"Has this undergone business process reengineering?",
-	"Explain what agile/velocity means to you and what are examples of agility/velocity?",
-	"What are real world figures for developers or business owners when it comes to adding new features for business needs?",
-	"Why is on boarding of developers/services still manual?,"
-	"How long does it take to on-board a new service or API or platform?,"
-	"(perennial claims about implementing microservices architecture)",
-	"What are the steps to get approval for this idea?",
-	"Why can't we just get all these people into a room and decide?",
-	"Why are you coming with an \"all or nothing\" or fait accompli plan? (usually when process of seeking further funding is tedious, so it's all tied up in one big bang)",
-	  dealbreakers: [],
-	  solutions: [],
-	  suggestions: [],
-		screening: [],
+		alarms: [
+			'No one has a hypothesis on what is the problem with a product, feature, system.',
+			"We're chasing after some urgent deadline, be it funding, procurement, licensing/agreement expiration",
+			"We need to continue with the current approach because that's how things have always been done.",
+			'People avoid doing things that they know they need to do, but they try to defer it or hide behind a waiver, because it takes too much effort, it will derail their timeline, or affects their personal appraisal.',
+			{
+				what: "We can't work on <insert critical backend task> yet, because it might derail our upcoming release, and I rather focus on deploying the new release.",
+				why: 'Our haste to push out a new release should not prevent us from doing the right thing, especially patching and reliability.',
+			},
+		],
+		questions: [
+			'Has this undergone business process reengineering?',
+			'Explain what agile/velocity means to you and what are examples of agility/velocity?',
+			'What are real world figures for developers or business owners when it comes to adding new features for business needs?',
+			'Why is on boarding of developers/services still manual?',
+			'How long does it take to on-board a new service or API or platform?,',
+			'(perennial claims about implementing microservices architecture)',
+			'What are the steps to get approval for this idea?',
+			"Why can't we just get all these people into a room and decide?",
+			'Why are you coming with an "all or nothing" or fait accompli plan? (usually when process of seeking further funding is tedious, so it\'s all tied up in one big bang)',
+		],
+
+		dealbreakers: [],
+		solutions: [],
+		suggestions: [],
 	}, */
 ];

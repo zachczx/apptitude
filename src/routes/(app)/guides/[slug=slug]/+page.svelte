@@ -14,26 +14,19 @@
 	import NavToc from '$lib/NavToc.svelte';
 	import { fade } from 'svelte/transition';
 	import ContentWrapper from '$lib/ContentWrapper.svelte';
+	import { goto } from '$app/navigation';
 	let { data } = $props();
 
 	//for byline
 	let currentBylineNumber = $state(0);
-	let bylineTotal = data.post?.bylines.length - 1;
-
-	setInterval(() => {
-		if (currentBylineNumber < bylineTotal) {
-			currentBylineNumber += 1;
-		} else {
-			currentBylineNumber = 0;
-		}
-	}, 10000);
 
 	let contents: Contents[] = [
 		{ id: 'definitions', title: '1. Definitions' },
 		{ id: 'goals', title: '2. Goals' },
 		{ id: 'questions', title: '3. Questions' },
-		{ id: 'dealbreakers', title: '4. Dealbreakers' },
-		{ id: 'suggestions', title: '5. Suggestions' },
+		{ id: 'alarm', title: '4. Alarm Bells' },
+		{ id: 'dealbreakers', title: '5. Dealbreakers' },
+		{ id: 'suggestions', title: '6. Suggestions' },
 	];
 	let currentSection: any = $state();
 	let textCurrent = $derived(data.post?.name);
@@ -70,66 +63,98 @@
 	<title>Apptitude - {textCurrent}</title>
 </svelte:head>
 
-<ContentWrapper
-	urlSelf={data.url}
-	{page}
-	{textMiddle}
-	{category}
-	{currentSection}
-	title={data.post.name}>
-	<article
-		class="prose-section:mt-20 prose-h2:mb-6 prose-h3:mb-6 prose-h3:mt-12 prose-h5:mb-4 prose-p:mb-4 grid gap-y-20 pb-10">
-		<section id="definitions" class="contents-observer grid gap-4">
+{#if data.post}
+	<ContentWrapper
+		urlSelf={data.url}
+		{page}
+		{textMiddle}
+		{category}
+		{currentSection}
+		title={data.post.name}>
+		<article
+			class="prose-section:mt-20 prose-h2:mb-6 prose-h3:mb-6 prose-h3:mt-12 prose-h5:mb-4 prose-p:mb-4 grid gap-y-20 pb-10">
+			{#if data.post.definitions}
+				<section id="definitions" class="contents-observer grid gap-4">
+					<h2 class="border-b-base-content/20 mb-4 border-b-4 pb-2 text-2xl font-bold lg:text-4xl">
+						1. Definitions
+					</h2>
+					<div>
+						<ol class="list-disc space-y-4 ps-4">
+							{#each data.post.definitions as definition}
+								<li>{definition}</li>
+							{/each}
+						</ol>
+					</div>
+				</section>
+			{/if}
+
+			{#if data.post.goals}
+				<section id="goals" class="contents-observer grid gap-4">
+					<h2 class="border-b-base-content/20 mb-4 border-b-4 pb-2 text-2xl font-bold lg:text-4xl">
+						2. Goals
+					</h2>
+					<div>
+						<ol class="list-disc space-y-4 ps-4">
+							{#each data.post.goals as goal}
+								<li>{goal}</li>
+							{/each}
+						</ol>
+					</div>
+				</section>
+			{/if}
+
+			{#if data.post.questions}
+				<section id="questions" class="contents-observer grid gap-4">
+					<h2 class="border-b-base-content/20 mb-4 border-b-4 pb-2 text-2xl font-bold lg:text-4xl">
+						3. Questions
+					</h2>
+					<div>
+						<ol class="list-disc space-y-4 ps-4">
+							{#each data.post.questions as question}
+								<li>{question}</li>
+							{/each}
+						</ol>
+					</div>
+				</section>
+			{/if}
+
+			{#if data.post.alarms}
+				<section id="questions" class="contents-observer grid gap-4">
+					<h2 class="border-b-base-content/20 mb-4 border-b-4 pb-2 text-2xl font-bold lg:text-4xl">
+						4. Alarm Bells
+					</h2>
+					<div class="grid grid-cols-2 gap-x-8 gap-y-8">
+						<div class="text-base-content/70 font-bold">They say...</div>
+						<div class="text-base-content/70 font-bold">Why I'd be scared</div>
+						{#each data.post.alarms as alarm, i}
+							<div class="italic">{alarm.what}</div>
+							<div>{alarm.why}</div>
+							{#if i < data.post.alarms.length - 1}
+								<div class="bg-base-content/20 col-span-2 h-0.5"></div>
+							{/if}
+						{/each}
+					</div>
+				</section>
+			{/if}
+
+			{#if data.post.dealbreakers}
+				<section id="dealbreakers" class="contents-observer grid gap-4">
+					<h2 class="border-b-base-content/20 mb-4 border-b-4 pb-2 text-2xl font-bold lg:text-4xl">
+						5. Dealbreakers
+					</h2>
+					<div>
+						<ol class="list-disc space-y-4 ps-4">
+							{#each data.post.dealbreakers as dealbreaker}
+								<li>{dealbreaker}</li>
+							{/each}
+						</ol>
+					</div>
+				</section>
+			{/if}
+
+			<!-- <section id="suggestions" class="contents-observer grid gap-4">
 			<h2 class="border-b-base-content/20 mb-4 border-b-4 pb-2 text-2xl font-bold lg:text-4xl">
-				1. Definitions
-			</h2>
-			<div>
-				<ol class="list-disc space-y-4 ps-4">
-					{#each data.post.definitions as definition}
-						<li>{definition}</li>
-					{/each}
-				</ol>
-			</div>
-		</section>
-		<section id="goals" class="contents-observer grid gap-4">
-			<h2 class="border-b-base-content/20 mb-4 border-b-4 pb-2 text-2xl font-bold lg:text-4xl">
-				2. Goals
-			</h2>
-			<div>
-				<ol class="list-disc space-y-4 ps-4">
-					{#each data.post.goals as goal}
-						<li>{goal}</li>
-					{/each}
-				</ol>
-			</div>
-		</section>
-		<section id="questions" class="contents-observer grid gap-4">
-			<h2 class="border-b-base-content/20 mb-4 border-b-4 pb-2 text-2xl font-bold lg:text-4xl">
-				3. Questions
-			</h2>
-			<div>
-				<ol class="list-disc space-y-4 ps-4">
-					{#each data.post.questions as question}
-						<li>{question}</li>
-					{/each}
-				</ol>
-			</div>
-		</section>
-		<section id="dealbreakers" class="contents-observer grid gap-4">
-			<h2 class="border-b-base-content/20 mb-4 border-b-4 pb-2 text-2xl font-bold lg:text-4xl">
-				4. Dealbreakers
-			</h2>
-			<div>
-				<ol class="list-disc space-y-4 ps-4">
-					{#each data.post.dealbreakers as dealbreaker}
-						<li>{dealbreaker}</li>
-					{/each}
-				</ol>
-			</div>
-		</section>
-		<section id="suggestions" class="contents-observer grid gap-4">
-			<h2 class="border-b-base-content/20 mb-4 border-b-4 pb-2 text-2xl font-bold lg:text-4xl">
-				5. Suggestions
+				6. Suggestions
 			</h2>
 			<div>
 				<ol class="list-disc space-y-4 ps-4">
@@ -138,6 +163,7 @@
 					{/each}
 				</ol>
 			</div>
-		</section>
-	</article>
-</ContentWrapper>
+		</section> -->
+		</article>
+	</ContentWrapper>
+{/if}

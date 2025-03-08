@@ -6,7 +6,7 @@
 	<ul
 		class="view-transition-navtoc max-h-dvh w-full overflow-y-auto px-2 lg:px-4"
 		data-pagefind-ignore>
-		<li class="text-xl font-bold"><a href={urlSelf}>Contents</a></li>
+		<li class="text-2xl font-bold"><a href={urlSelf}>Contents</a></li>
 		<ul id="placeholder">
 			{#each contents as section}
 				<li class="{currentSection === section.id ? 'text-primary' : undefined} text-lg">

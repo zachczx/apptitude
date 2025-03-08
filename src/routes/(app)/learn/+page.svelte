@@ -33,10 +33,6 @@
 	{currentSection}
 	title="Learn Bytes"
 	{subtitle}>
-	<nav
-		class="b-4 border-b-base-100 h-14 w-full justify-items-start justify-self-center border-b-2 px-4 py-4 lg:grid">
-		<NewCrumbs urlMiddle={category} {textMiddle} {textCurrent} />
-	</nav>
 	<section class="grid grid-cols-4 gap-y-20">
 		<h2 class="text-4xl font-bold lg:text-6xl">Starter</h2>
 		<div

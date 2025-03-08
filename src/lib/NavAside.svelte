@@ -154,14 +154,13 @@
 		<ul class="border-l-base-content/30 ms-5 border-l-2 ps-6">
 			<li>
 				<a
-					href="/guides/product"
-					class={page === 'product' ? 'text-primary font-medium' : undefined}>Product Checklist</a>
+					href="/guides/product-plan"
+					class={page === 'product-plan' ? 'text-primary font-medium' : undefined}>Plan</a>
 			</li>
 			<li>
 				<a
-					href="/guides/product-plan"
-					class={page === 'product-plan' ? 'text-primary font-medium' : undefined}
-					>Product Plan 101</a>
+					href="/guides/product"
+					class={page === 'product' ? 'text-primary font-medium' : undefined}>Checklist</a>
 			</li>
 		</ul>
 	</li>
