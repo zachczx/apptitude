@@ -291,7 +291,9 @@
 <section
 	class="mx-auto mt-12 grid min-h-[40vh] max-w-(--breakpoint-2xl) content-center justify-items-center gap-x-8 gap-y-8 px-2 py-12"
 	data-pagefind-ignore>
-	<h2 class="content-center text-4xl font-medium lg:text-6xl">Try Now</h2>
+	<h2 class="content-center text-4xl font-medium lg:text-6xl">
+		Try <a href="/"><img src={logo} alt="Apptitude logo" class="inline h-10 lg:h-20" /></a>
+	</h2>
 	<ul class="mb-12 grid gap-y-4 justify-self-center px-2 lg:text-2xl">
 		<li class="group flex items-center gap-4">
 			<svg
