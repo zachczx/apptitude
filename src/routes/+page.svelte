@@ -215,7 +215,7 @@
 	data-pagefind-ignore>
 	<h2 class="text-center text-4xl font-medium lg:col-span-1 lg:text-6xl">Why You Need This</h2>
 	<div>
-		<div class="mb-12 text-center text-2xl">
+		<div class="mb-12 text-center">
 			To lead and do better in tech, you'll need foundational tech knowledge and business
 			perspectives.
 		</div>

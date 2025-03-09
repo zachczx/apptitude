@@ -11,6 +11,7 @@
 	import unoptimised5 from '$lib/assets/unoptimised5.webp?enhanced&w=800;600;400';
 	import unoptimised6 from '$lib/assets/unoptimised6.webp?enhanced&w=800;600;400';
 	import ContentWrapper from '$lib/ContentWrapper.svelte';
+	import AboutSegment from '$lib/AboutSegment.svelte';
 
 	let { data } = $props();
 
@@ -27,257 +28,32 @@
 	{page}
 	urlSelf={data.url}
 	subtitle="If you need an opinion, I have plenty to spare.">
-	<div class="grid gap-y-24">
-		<div class="grid grid-cols-1 justify-items-center gap-x-8 gap-y-8 lg:grid-cols-12">
-			<div class="box space-y-5 self-center lg:col-span-8">
-				<h2 class="headline border-base-content/20 border-b-4 pb-2 text-2xl font-bold lg:text-4xl">
-					<span class="headline bg-base-100">What's Apptitude?</span>
-				</h2>
-				<p>
-					I wrote Apptitude to learn Svelte and at the same time figure a way to help my teammates
-					know what competencies to learn, easily grab resources, and quickly use the knowledge to
-					call out bad tech outcomes.
-				</p>
-				<p>
-					Apptitude is an attempt to start more dissatisfaction and rebel against poor product
-					outcomes and groupthink. My hypothesis is that people need the knowledge and safety to
-					critique, otherwise it's always safer to defer to people in high positions of power.
-				</p>
-			</div>
-			<div class="pic-1 lg:col-span-4">
-				<figure class="lg:avatar">
-					<div class="lg:mask lg:mask-squircle">
-						<enhanced:img
-							src={oops3}
-							alt="Red pandas, because they're cute"
-							class="lg:transition lg:duration-3000 lg:hover:scale-125"
-							sizes="(min-width:1920px) 800px, (min-width:1200px) 600px, 400px" />
-					</div>
-				</figure>
-			</div>
-		</div>
-		<div class="grid grid-cols-1 justify-items-center gap-x-8 gap-y-0 lg:grid-cols-12">
-			<div class="pic-2 lg:col-span-4">
-				<figure class="lg:avatar">
-					<div class="lg:mask lg:mask-squircle">
-						<enhanced:img
-							src={pandabutterfly}
-							alt="Red pandas, because they're cute"
-							class="transition duration-3000 hover:scale-125"
-							sizes="(min-width:1920px) 800px, (min-width:1200px) 600px, 400px" />
-					</div>
-				</figure>
-			</div>
-			<div class="box self-center py-3 lg:col-span-8">
-				<h2 class="headline border-base-content/20 border-b-4 pb-2 text-2xl font-bold lg:text-4xl">
-					<span class="bg-base-100">How do you know there's a problem?</span>
-				</h2>
-				<p class="bg-base-100 pt-5">
-					<a href="/about/problem/"
-						>Reading "Recoding America", the stories resonated with my experience working on several
-						tech projects.</a>
-					And honestly, I feel Govt's tech products aren't that good or flat out didn't make sense, especially
-					for the large sums we spend (<a
-						href="https://www.tech.gov.sg/media/media-releases/2023-05-24-government-projected-to-spend-on-ict-in-fy23"
-						>here</a
-					>).
-				</p>
-				<p class="bg-base-100 pt-5">Products can be slow, laggy, hard to use, super expensive.</p>
-				<p class="bg-base-100 py-5">
-					Occam's razor applies - the simplest solution is almost always the best. Reflecting on my
-					own journey and weaknesses, good decisions are mostly common sense, but that often doesn't
-					get chosen in the public service. Like this meme below. Sometimes it's entrenched
-					mindsets, but often people who make assessments don't know what the issue is and what's
-					standard out there.
-				</p>
-			</div>
-		</div>
-		<div class="grid grid-cols-1 justify-items-center gap-x-8 lg:grid-cols-12">
-			<div class="box self-center lg:col-span-8">
-				<h2 class="headline border-base-content/20 border-b-4 pb-2 text-2xl font-bold lg:text-4xl">
-					<span class=" bg-base-100">What's a bad product to you?</span>
-				</h2>
-				<p class="bg-base-100 z-10 pt-5">
-					To me, a bad product doesn't solve a real problem. It doesn't solve a meaningful problem.
-					It might not have a unique selling point.
-				</p>
-				<p class="bg-base-100 z-10 pt-5">
-					It might offer a bad user experience, is hardly usable, is inaccessible to segments of the
-					population.
-				</p>
-				<p class="bg-base-100 z-10 pt-5">
-					It is costly relative to the value they bring, with costs that don't make sense vis-a-vis
-					competitors/alternatives. This is made worse when we are stuck in situations when legacy,
-					procurement, incompetent top-down reasons lock us/users into shitty products.
-				</p>
-			</div>
-			<div class="pic-3 lg:col-span-4">
-				<figure class="lg:avatar">
-					<div class="lg:mask lg:mask-squircle">
-						<enhanced:img
-							src={unoptimised1}
-							alt="Red pandas, because they're cute"
-							class="transition duration-3000 hover:scale-125"
-							sizes="(min-width:1920px) 800px, (min-width:1200px) 600px, 400px" />
-					</div>
-				</figure>
-			</div>
-		</div>
-		<div class="grid grid-cols-1 justify-items-center gap-x-8 gap-y-8 lg:grid-cols-12">
-			<div class="pic-4 lg:col-span-4">
-				<figure class="lg:avatar">
-					<div class="lg:mask lg:mask-squircle">
-						<enhanced:img
-							src={unoptimised6}
-							alt="Red pandas, because they're cute"
-							class="transition duration-3000 hover:scale-125"
-							sizes="(min-width:1920px) 800px, (min-width:1200px) 600px,400px" />
-					</div>
-				</figure>
-			</div>
-			<div class="box self-center lg:col-span-8">
-				<h2 class="headline border-base-content/20 border-b-4 pb-2 text-2xl font-bold lg:text-4xl">
-					<span class="bg-base-100">Good intentions, bad execution</span>
-				</h2>
-				<p class="bg-base-100 pt-5">
-					I don't think any public servant wakes up and says "let me think of ways to waste money
-					and make a bad product". If there is, fire that person! In my view, a lot of the time,
-					decisions or policies made are head scratchers. Maybe because they were made by people who
-					don't hear from the ones actually using or building these things. Or maybe they're unaware
-					they're doing the wrong things despite best intentions, and then they get promoted.
-				</p>
-				<p class="bg-base-100 py-5">
-					Unfortunately there's no test for knowledge before people are put in positions of power.
-				</p>
-			</div>
-		</div>
-		<div class="grid grid-cols-1 justify-items-center gap-x-8 lg:grid-cols-12">
-			<div class="box self-center lg:col-span-8">
-				<h2 class="headline border-base-content/20 border-b-4 pb-2 text-2xl font-bold lg:text-4xl">
-					<span class="bg-base-100">What's in it for you?</span>
-				</h2>
-				<p class="bg-base-100 pt-5">
-					I do this so that I can feel like I did some good for society. If you asked just one extra
-					question that saves taxpayers some money or give users a better product, Apptitude would
-					have done some good for Singaporeans.
-				</p>
-				<p class="bg-base-100 py-5">
-					(If this really does work out, maybe I should put some ads or make this in patreon or
-					something. /jk)
-				</p>
-			</div>
-			<div class="pic-5 lg:col-span-4">
-				<figure class="lg:avatar">
-					<div class="lg:mask lg:mask-squircle">
-						<enhanced:img
-							src={pandayawn}
-							alt="Red pandas, because they're cute"
-							class="transition duration-3000 hover:scale-125"
-							sizes="(min-width:1920px) 800px, (min-width:1200px) 600px,400px" />
-					</div>
-				</figure>
-			</div>
-		</div>
-		<div class="grid grid-cols-1 justify-items-center gap-x-8 lg:grid-cols-12">
-			<div class="pic-6 lg:col-span-4">
-				<figure class="lg:avatar">
-					<div class="lg:mask lg:mask-squircle">
-						<enhanced:img
-							src={unoptimised5}
-							alt="Red pandas, because they're cute"
-							class="transition duration-3000 hover:scale-125"
-							sizes="(min-width:1920px) 800px, (min-width:1200px) 600px,400px" />
-					</div>
-				</figure>
-			</div>
-			<div class="box w-full self-center lg:col-span-8">
-				<h2
-					class="headline border-base-content/20 border-b-4 pt-5 pb-2 text-2xl font-bold lg:text-4xl">
-					<span class="bg-base-100">Bad outcomes everywhere?</span>
-				</h2>
-				<p class="bg-base-100 pt-5">
-					Seriously though, the comments below are very common in the public sector. Each of these
-					is a major red flag for shitty products.
-				</p>
-				<ul class="bg-base-100 ms-8 list-disc py-5">
-					<li>IDK what engineers are saying.</li>
-					<li>Let's spend allocated $$, IDC about saving it.</li>
-					<li>Engineers and users should just suck it up.</li>
-					<li>My system is good, I just need more MMF/$$ for it.</li>
-					<li>Stop asking and just do what my Dir said.</li>
-					<li>New SOR = existing + every possible rqmt.</li>
-				</ul>
-			</div>
-		</div>
+	<AboutSegment question="Who are you?">
+		<p>I work in the public sector and I did tech related stuff in the last few years.</p>
+	</AboutSegment>
 
-		<div class="grid grid-cols-1 justify-items-center gap-x-8 lg:grid-cols-12">
-			<div class="box self-center lg:col-span-8">
-				<h2 class="headline border-base-content/20 border-b-4 pb-2 text-2xl font-bold lg:text-4xl">
-					<span class="bg-base-100">You're too harsh!</span>
-				</h2>
-				<p class="bg-base-100 py-5">
-					I'm not nice (though certainly not at Linus' level). I don't know a way to say the stuff
-					here nicely. I'd personally prefer someone to just tell me if I'm screwing things up. If
-					you're doing good, share your wisdom with everyone else in a nicer way.
-				</p>
-			</div>
-			<div class="pic-7 lg:col-span-4">
-				<figure class="lg:avatar">
-					<div class="lg:mask lg:mask-squircle">
-						<enhanced:img
-							src={unoptimised4}
-							alt="Red pandas, because they're cute"
-							class="transition duration-3000 hover:scale-125"
-							sizes="(min-width:1920px) 800px, (min-width:1200px) 600px,400px" />
-					</div>
-				</figure>
-			</div>
-		</div>
-		<div class="grid grid-cols-1 justify-items-center gap-x-8 gap-y-8 lg:grid-cols-12">
-			<div class="pic-8 lg:col-span-4">
-				<figure class="lg:avatar">
-					<div class="lg:mask lg:mask-squircle">
-						<enhanced:img
-							src={unoptimised3}
-							alt="Red pandas, because they're cute"
-							class="transition duration-3000 hover:scale-125"
-							sizes="(min-width:1920px) 800px, (min-width:1200px) 600px,400px" />
-					</div>
-				</figure>
-			</div>
-			<div class="box self-center lg:col-span-8">
-				<h2 class="headline border-base-content/20 border-b-4 pb-2 text-2xl font-bold lg:text-4xl">
-					<span class="bg-base-100">You're an idiot too, you think this is a good product?</span>
-				</h2>
-				<p class="bg-base-100 py-5">
-					In any case Apptitude only costs me $13.28/yr (incl GST), for the domain name. I got to
-					learn Svelte through this, so it's not wasted effort. If you think this sucks, cool. It's
-					cheap enough to write off without second thought. (This also helped me learn Svelte5 and
-					Sveltekit.)
-				</p>
-			</div>
-		</div>
-		<div class="grid grid-cols-1 justify-items-center gap-x-8 lg:grid-cols-12">
-			<div class="box mb-8 w-full self-center lg:col-span-8">
-				<h2 class="headline border-base-content/20 border-b-4 pb-2 text-2xl font-bold lg:text-4xl">
-					<span class="bg-base-100">I found Apptitude very useful!</span>
-				</h2>
-				<p class="bg-base-100 py-5">
-					I'd love to
-					<a href="https://zixianchen.com/contact" class="text-primary underline">hear from you!</a>
-				</p>
-			</div>
-			<div class="pic-9 lg:col-span-4">
-				<figure class="lg:avatar">
-					<div class="lg:mask lg:mask-squircle">
-						<enhanced:img
-							src={unoptimised2}
-							alt="Red pandas, because they're cute"
-							class="transition duration-3000 hover:scale-125"
-							sizes="(min-width:1920px) 800px, (min-width:1200px) 600px,400px" />
-					</div>
-				</figure>
-			</div>
-		</div>
-	</div>
+	<AboutSegment question="How can I trust what you wrote?">
+		<p>
+			Yeah you shouldn't if you don't want to. Take these as suggestions, not instructions. And my
+			views are mostly pitched as things that should sound an alarm, but context matters, and only
+			you can judge whether your way of working is good.
+		</p>
+	</AboutSegment>
+
+	<AboutSegment question="How did you gather the info?">
+		<p>
+			I referred liberally to past discussions while in Smart Nation Singapore, with tech agencies
+			in Govt, and with companies outside. I also watched and read a lot, mainly on YouTube. I enjoy
+			stuff on products, entrepreneurship, engineering and the business side of tech, so it was
+			trivial to construct a playlist of sorts over here.
+		</p>
+	</AboutSegment>
+
+	<AboutSegment
+		question="I don't need this. I don't know anything covered here but I'm doing mightily fine!”">
+		<p>
+			Sure! Nothing here is cardinal. But in my experience it's easy to tell those who know from
+			those who don't.
+		</p>
+	</AboutSegment>
 </ContentWrapper>
