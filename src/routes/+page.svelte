@@ -186,7 +186,7 @@
 			sizes="(min-width:2560px) 2060px, (min-width:1920px) 1536px, (min-width:1600px) 1280px, (min-width:1280px) 1024px" />
 	</figure>
 	<div class="mx-3 self-center justify-self-center rounded-full pt-4 lg:z-[1] lg:mx-8 xl:px-[3rem]">
-		<div class="avatar mt-20 mb-8 flex justify-center px-4 text-center xl:mt-0 xl:hidden">
+		<div class="avatar mt-20 mb-8 flex justify-center px-4 xl:mt-0 xl:hidden">
 			<div class="mask mask-squircle">
 				<enhanced:img
 					src={heroNew2}
@@ -195,13 +195,58 @@
 					sizes="(min-width:1000px) 600px, (min-width:768px) 500px, 300px" />
 			</div>
 		</div>
-		<h1 class="mb-12 text-center text-5xl font-bold min-[1921px]:text-7xl lg:pt-20 lg:text-6xl">
+		<h1 class="mb-12 text-center text-5xl font-bold lg:pt-20 lg:text-6xl 2xl:text-7xl">
 			<span class="headline text-neutral-content">Get better at</span>
 			<span
 				class="headline-slower inline-block bg-linear-to-r from-emerald-200 via-lime-200 to-teal-300 bg-clip-text pb-5 text-transparent"
 				>tech products & projects.</span>
 		</h1>
-		<div class="text-neutral-content mb-12 grid grid-cols-3 py-2 text-start text-lg lg:text-xl">
+		<ul class="mb-12 grid gap-y-2 justify-self-center text-2xl">
+			<li class="flex items-center gap-4">
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					width="1.3em"
+					height="1.3em"
+					class="carbon:checkmark-filled text-primary"
+					viewBox="0 0 32 32"
+					><!-- Icon from Carbon by IBM - undefined --><path
+						fill="currentColor"
+						d="M16 2a14 14 0 1 0 14 14A14 14 0 0 0 16 2m-2 19.59l-5-5L10.59 15L14 18.41L21.41 11l1.596 1.586Z" /><path
+						fill="none"
+						d="m14 21.591l-5-5L10.591 15L14 18.409L21.41 11l1.595 1.585z" /></svg
+				>Watch helpful resources to improve your base knowledge
+			</li>
+			<li class="flex items-center gap-4">
+				<svg
+					xmlns="http://www.w3.org/2000/svg text-success"
+					width="1.3em"
+					height="1.3em"
+					class="carbon:checkmark-filled text-primary"
+					viewBox="0 0 32 32"
+					><!-- Icon from Carbon by IBM - undefined --><path
+						fill="currentColor"
+						d="M16 2a14 14 0 1 0 14 14A14 14 0 0 0 16 2m-2 19.59l-5-5L10.59 15L14 18.41L21.41 11l1.596 1.586Z" /><path
+						fill="none"
+						d="m14 21.591l-5-5L10.591 15L14 18.409L21.41 11l1.595 1.585z" /></svg
+				>Read my views as suggestions you can consider at work
+			</li>
+			<li class="flex items-center gap-4">
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					width="1.3em"
+					height="1.3em"
+					class="carbon:checkmark-filled text-primary"
+					viewBox="0 0 32 32"
+					><!-- Icon from Carbon by IBM - undefined --><path
+						fill="currentColor"
+						d="M16 2a14 14 0 1 0 14 14A14 14 0 0 0 16 2m-2 19.59l-5-5L10.59 15L14 18.41L21.41 11l1.596 1.586Z" /><path
+						fill="none"
+						d="m14 21.591l-5-5L10.591 15L14 18.409L21.41 11l1.595 1.585z" /></svg
+				>Improve your work and project outcomes
+			</li>
+		</ul>
+
+		<!-- <div class="text-neutral-content mb-12 grid grid-cols-3 py-2 text-start text-lg lg:text-xl">
 			<div class="subheadline border-base-content/50 border-r-2 py-1 pe-3 text-center">
 				<h2 class="text-2xl font-bold lg:text-4xl">Learn</h2>
 				key digital product knowledge
@@ -214,12 +259,12 @@
 				<h2 class="text-2xl font-bold lg:text-4xl">Drop</h2>
 				lousy & unnecessary projects
 			</div>
-		</div>
+		</div> -->
 		<div class="flex flex-wrap justify-center gap-4">
 			<a
 				href="/learn"
-				class="button-shine btn btn-primary border-primary relative overflow-hidden rounded-full border py-8 font-bold lg:px-8 lg:text-2xl"
-				>Get Resources<svg
+				class="button-shine btn btn-primary shadow-primary/60 border-primary relative overflow-hidden rounded-full border py-8 font-bold shadow-lg ring-2 ring-gray-100/30 lg:px-8 lg:text-2xl"
+				>See Resources<svg
 					xmlns="http://www.w3.org/2000/svg"
 					width="1.3em"
 					height="1.3em"
