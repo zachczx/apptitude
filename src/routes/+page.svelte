@@ -211,7 +211,7 @@
 </div>
 
 <section
-	class="bg-base-200 mx-auto grid max-w-(--breakpoint-2xl) content-center justify-items-center gap-y-12 rounded-4xl px-2 py-20 lg:px-20"
+	class="bg-base-200 border-base-content/30 mx-auto grid max-w-(--breakpoint-2xl) content-center justify-items-center gap-y-12 rounded-4xl border px-2 py-20 lg:px-20"
 	data-pagefind-ignore>
 	<h2 class="text-center text-4xl font-medium lg:col-span-1 lg:text-6xl">Why You Need This</h2>
 	<div>
@@ -291,7 +291,7 @@
 <section
 	class="mx-auto mt-12 grid min-h-[40vh] max-w-(--breakpoint-2xl) content-center justify-items-center gap-x-8 gap-y-8 px-2 py-12"
 	data-pagefind-ignore>
-	<h2 class="content-center text-4xl font-bold lg:text-6xl">Try Now</h2>
+	<h2 class="content-center text-4xl font-medium lg:text-6xl">Try Now</h2>
 	<ul class="mb-12 grid gap-y-4 justify-self-center px-2 lg:text-2xl">
 		<li class="group flex items-center gap-4">
 			<svg

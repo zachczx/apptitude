@@ -34,9 +34,9 @@
 
 	<AboutSegment question="How can I trust what you wrote?">
 		<p>
-			Yeah you shouldn't if you don't want to. Take these as suggestions, not instructions. And my
-			views are mostly pitched as things that should sound an alarm, but context matters, and only
-			you can judge whether your way of working is good.
+			Yeah you needn't and you shouldn't. Take these as suggestions, not instructions. And my views
+			are mostly pitched as things that should sound an alarm, but context matters, and only you can
+			judge whether your way of working is good.
 		</p>
 	</AboutSegment>
 
