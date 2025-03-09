@@ -55,7 +55,7 @@
 			{@render children()}
 		</div>
 		<div>
-			<footer class="text-center">
+			<footer class="py-2 text-center">
 				© 2024-2025 Zixian Chen. All views expressed here are solely mine.
 			</footer>
 		</div>

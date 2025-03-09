@@ -167,321 +167,162 @@
 		</a>
 	</div>
 </nav>
-<div
-	class="hero grid min-h-dvh grid-cols-1 content-center justify-items-center xl:grid-cols-2"
-	data-pagefind-ignore>
-	<figure>
-		<enhanced:img
-			src={heroNew2Background}
-			alt="Hero"
-			class="hero-img -z-10"
-			fetchpriority="high"
-			loading="eager" />
-		<enhanced:img
-			src={heroNew2}
-			alt="Hero"
-			class="hero-img"
-			fetchpriority="high"
-			loading="eager"
-			sizes="(min-width:2560px) 2060px, (min-width:1920px) 1536px, (min-width:1600px) 1280px, (min-width:1280px) 1024px" />
-	</figure>
-	<div class="mx-3 self-center justify-self-center rounded-full pt-4 lg:z-[1] lg:mx-8 xl:px-[3rem]">
-		<div class="avatar mt-20 mb-8 flex justify-center px-4 xl:mt-0 xl:hidden">
-			<div class="mask mask-squircle">
-				<enhanced:img
-					src={heroNew2}
-					alt="Hero"
-					class="relative object-right"
-					sizes="(min-width:1000px) 600px, (min-width:768px) 500px, 300px" />
+<div class="grid min-h-[70vh] content-center justify-items-center" data-pagefind-ignore>
+	<section>
+		<div class="max-w-[1000px] self-center justify-self-center px-2">
+			<h1
+				class="mb-12 text-center text-5xl font-bold tracking-tighter lg:pt-20 lg:text-6xl 2xl:text-7xl">
+				Understand Tech <span
+					class="headline inline-block bg-linear-to-r from-emerald-200 via-lime-200 to-teal-300 bg-clip-text pb-5 text-transparent"
+					>Deeper</span
+				>. Lead Tech
+				<span
+					class="headline-slower inline-block bg-linear-to-r from-teal-300 via-lime-200 to-emerald-200 bg-clip-text pb-5 text-transparent"
+					>Better</span
+				>.
+			</h1>
+			<p class="mb-12 text-center text-2xl">
+				Whether you're building or leading, you need basic tech knowledge and business instincts.
+				Let's fix that together.
+			</p>
+
+			<div class="mb-12 flex flex-wrap justify-center gap-4">
+				<a
+					href="/learn"
+					aria-label="See Resources"
+					class="group btn btn-primary border-primary rounded-full border py-8 font-bold ring-2 shadow-teal-300/50 ring-gray-100/30 hover:shadow-lg lg:px-8 lg:text-2xl"
+					>See Resources<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="1.3em"
+						height="1.3em"
+						class="transition-all duration-300 ease-in-out group-hover:translate-x-2"
+						stroke="currentColor"
+						viewBox="0 0 24 24"
+						><path
+							d="m13.692 17.308l-.707-.72l4.088-4.088H5v-1h12.073l-4.088-4.088l.707-.72L19 12z" /></svg
+					></a>
+				<a
+					href="/guides"
+					class="btn btn-outline btn-secondary rounded-full py-8 font-medium lg:px-8 lg:text-2xl"
+					>My Views</a>
 			</div>
 		</div>
-		<h1 class="mb-12 text-center text-5xl font-bold lg:pt-20 lg:text-6xl 2xl:text-7xl">
-			<span class="headline text-neutral-content">Get better at</span>
-			<span
-				class="headline-slower inline-block bg-linear-to-r from-emerald-200 via-lime-200 to-teal-300 bg-clip-text pb-5 text-transparent"
-				>tech products & projects.</span>
-		</h1>
-		<ul class="mb-12 grid gap-y-2 justify-self-center text-2xl">
-			<li class="flex items-center gap-4">
-				<svg
-					xmlns="http://www.w3.org/2000/svg"
-					width="1.3em"
-					height="1.3em"
-					class="carbon:checkmark-filled text-primary"
-					viewBox="0 0 32 32"
-					><!-- Icon from Carbon by IBM - undefined --><path
-						fill="currentColor"
-						d="M16 2a14 14 0 1 0 14 14A14 14 0 0 0 16 2m-2 19.59l-5-5L10.59 15L14 18.41L21.41 11l1.596 1.586Z" /><path
-						fill="none"
-						d="m14 21.591l-5-5L10.591 15L14 18.409L21.41 11l1.595 1.585z" /></svg
-				>Watch helpful resources to improve your base knowledge
-			</li>
-			<li class="flex items-center gap-4">
-				<svg
-					xmlns="http://www.w3.org/2000/svg text-success"
-					width="1.3em"
-					height="1.3em"
-					class="carbon:checkmark-filled text-primary"
-					viewBox="0 0 32 32"
-					><!-- Icon from Carbon by IBM - undefined --><path
-						fill="currentColor"
-						d="M16 2a14 14 0 1 0 14 14A14 14 0 0 0 16 2m-2 19.59l-5-5L10.59 15L14 18.41L21.41 11l1.596 1.586Z" /><path
-						fill="none"
-						d="m14 21.591l-5-5L10.591 15L14 18.409L21.41 11l1.595 1.585z" /></svg
-				>Read my views as suggestions you can consider at work
-			</li>
-			<li class="flex items-center gap-4">
-				<svg
-					xmlns="http://www.w3.org/2000/svg"
-					width="1.3em"
-					height="1.3em"
-					class="carbon:checkmark-filled text-primary"
-					viewBox="0 0 32 32"
-					><!-- Icon from Carbon by IBM - undefined --><path
-						fill="currentColor"
-						d="M16 2a14 14 0 1 0 14 14A14 14 0 0 0 16 2m-2 19.59l-5-5L10.59 15L14 18.41L21.41 11l1.596 1.586Z" /><path
-						fill="none"
-						d="m14 21.591l-5-5L10.591 15L14 18.409L21.41 11l1.595 1.585z" /></svg
-				>Improve your work and project outcomes
-			</li>
-		</ul>
+	</section>
+</div>
 
-		<!-- <div class="text-neutral-content mb-12 grid grid-cols-3 py-2 text-start text-lg lg:text-xl">
-			<div class="subheadline border-base-content/50 border-r-2 py-1 pe-3 text-center">
-				<h2 class="text-2xl font-bold lg:text-4xl">Learn</h2>
-				key digital product knowledge
+<div class="bg-base-100">
+	<section
+		class="bg-base-200 mx-auto grid max-w-(--breakpoint-2xl) content-center justify-items-center gap-y-12 rounded-4xl px-2 py-24 lg:px-24"
+		data-pagefind-ignore>
+		<h2 class="text-center text-4xl font-medium lg:col-span-1 lg:text-6xl">Why You Need This</h2>
+		<div>
+			<div class="mb-12 text-center text-2xl">
+				To lead and do better in tech, you'll need foundational tech knowledge and business
+				perspectives.
 			</div>
-			<div class="subheadline border-base-content/50 border-r-2 py-1 ps-3 pe-3 text-center">
-				<h2 class="text-2xl font-bold lg:text-4xl">Better</h2>
-				digital product management
+
+			<div class="grid content-start gap-8 lg:grid-cols-2">
+				<div class="border-base-content/30 grid content-start gap-4 rounded-2xl border p-4 lg:p-8">
+					<h3 class="py-4 text-center text-4xl font-bold lg:text-6xl">
+						Learn <span class="text-info">How</span>
+					</h3>
+
+					<div class="flex flex-wrap justify-center gap-4">
+						<div class="btn btn-info btn-outline btn-lg rounded-full">Computing</div>
+						<div class="btn btn-info btn-outline btn-lg rounded-full">Internet</div>
+						<div class="btn btn-info btn-outline btn-lg rounded-full">Workplace Apps</div>
+						<div class="btn btn-info btn-outline btn-lg rounded-full">Central Tools</div>
+						<div class="btn btn-info btn-outline btn-lg rounded-full">UX</div>
+						<div class="btn btn-info btn-outline btn-lg rounded-full">Products</div>
+						<div class="btn btn-info btn-outline btn-lg rounded-full">Methodology</div>
+						<div class="btn btn-info btn-outline btn-lg rounded-full">Data</div>
+						<div class="btn btn-info btn-outline btn-lg rounded-full">AI</div>
+						<div class="btn btn-info btn-outline btn-lg rounded-full">Web Dev</div>
+					</div>
+				</div>
+
+				<div class="border-base-content/30 grid content-start gap-4 rounded-2xl border p-4 lg:p-8">
+					<h3 class="py-4 text-center text-4xl font-bold lg:text-6xl">
+						Think <span class="text-secondary">Why</span>
+					</h3>
+
+					<div class="flex flex-wrap justify-center gap-4">
+						<div class="btn btn-secondary btn-outline btn-lg rounded-full">Products</div>
+						<div class="btn btn-secondary btn-outline btn-lg rounded-full">Problem Statements</div>
+						<div class="btn btn-secondary btn-outline btn-lg rounded-full">Cost</div>
+						<div class="btn btn-secondary btn-outline btn-lg rounded-full">User Research</div>
+						<div class="btn btn-secondary btn-outline btn-lg rounded-full">Management</div>
+					</div>
+				</div>
 			</div>
-			<div class="subheadline py-1 ps-3 text-center">
-				<h2 class="text-2xl font-bold lg:text-4xl">Drop</h2>
-				lousy & unnecessary projects
-			</div>
-		</div> -->
-		<div class="flex flex-wrap justify-center gap-4">
+		</div>
+	</section>
+</div>
+<section
+	class="mx-auto mt-24 grid min-h-[40vh] max-w-(--breakpoint-2xl) grid-cols-[auto_1fr] content-center justify-items-center gap-x-8 gap-y-8 px-2 py-10"
+	data-pagefind-ignore>
+	<h2 class="content-center text-4xl font-bold lg:col-span-1 lg:pb-12 lg:text-6xl">Try Now</h2>
+	<ul class="mb-12 grid gap-y-4 justify-self-center text-2xl">
+		<li class="group flex items-center gap-4">
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				width="1.3em"
+				height="1.3em"
+				class="carbon:checkmark-filled text-primary group-hover:text-secondary"
+				viewBox="0 0 32 32"
+				><path
+					fill="currentColor"
+					d="M16 2a14 14 0 1 0 14 14A14 14 0 0 0 16 2m-2 19.59l-5-5L10.59 15L14 18.41L21.41 11l1.596 1.586Z" /><path
+					fill="none"
+					d="m14 21.591l-5-5L10.591 15L14 18.409L21.41 11l1.595 1.585z" /></svg
+			>Get helpful resources to improve base knowledge
 			<a
 				href="/learn"
-				class="button-shine btn btn-primary shadow-primary/60 border-primary relative overflow-hidden rounded-full border py-8 font-bold shadow-lg ring-2 ring-gray-100/30 lg:px-8 lg:text-2xl"
-				>See Resources<svg
+				aria-label="See Resources"
+				class="group hover:border-b-primary hover:text-primary ms-2 flex gap-2 border-b"
+				>View by Topics<svg
 					xmlns="http://www.w3.org/2000/svg"
 					width="1.3em"
 					height="1.3em"
+					class="transition-all duration-300 ease-in-out group-hover:translate-x-2"
 					stroke="currentColor"
 					viewBox="0 0 24 24"
 					><path
 						d="m13.692 17.308l-.707-.72l4.088-4.088H5v-1h12.073l-4.088-4.088l.707-.72L19 12z" /></svg
 				></a>
-			<a
+		</li>
+		<li class="group flex items-center gap-4">
+			<svg
+				xmlns="http://www.w3.org/2000/svg text-success"
+				width="1.3em"
+				height="1.3em"
+				class="carbon:checkmark-filled text-primary group-hover:text-secondary"
+				viewBox="0 0 32 32"
+				><!-- Icon from Carbon by IBM - undefined --><path
+					fill="currentColor"
+					d="M16 2a14 14 0 1 0 14 14A14 14 0 0 0 16 2m-2 19.59l-5-5L10.59 15L14 18.41L21.41 11l1.596 1.586Z" /><path
+					fill="none"
+					d="m14 21.591l-5-5L10.591 15L14 18.409L21.41 11l1.595 1.585z" /></svg
+			>Read my views as suggestions you can use at work<a
 				href="/guides"
-				class="btn btn-outline btn-secondary rounded-full py-8 font-medium lg:px-8 lg:text-2xl"
-				>My Views</a>
-		</div>
-	</div>
-</div>
-
-<div>
-	<section
-		class="mx-auto grid min-h-[70vh] max-w-[1200px] content-center gap-y-16 px-4 py-10 lg:grid-cols-1 lg:gap-x-20 lg:gap-y-0 lg:py-28"
-		data-pagefind-ignore>
-		<h1 class="text-center text-4xl font-bold lg:col-span-1 lg:pb-24 lg:text-8xl">
-			Tech can be frustrating.
-		</h1>
-		<div
-			class="flex max-h-[40rem] grid-cols-2 flex-wrap items-center justify-center gap-x-12 gap-y-4 lg:flex-nowrap">
-			<div class="min-w-72">
-				<enhanced:img src={fireBurning} alt="" class="rounded-3xl" />
-			</div>
-			<div class="grid gap-4">
-				<h3 class="text-2xl font-bold lg:text-4xl">Poor Outcomes</h3>
-				<p class="text-base">
-					Don't we always come across examples where we think the project's pointless but we're
-					doing it anyway because a PS asked for it. Or a vendor is charging us an arm and a leg,
-					but we need to do it anyway. Or a project under us is so unusable, but we've already sunk
-					all our effort and money into it to u-turn.
-				</p>
-			</div>
-		</div>
-		<div
-			class="flex max-h-[40rem] grid-cols-2 flex-wrap items-center justify-center gap-x-12 gap-y-4 lg:flex-nowrap lg:ps-[300px]">
-			<div class="min-w-72">
-				<enhanced:img src={pandaExhausted} alt="" class="rounded-3xl" />
-			</div>
-			<div class="grid gap-4">
-				<h3 class="text-2xl font-bold lg:text-4xl">Help Ma, I can't keep up!</h3>
-				<p class="text-base">
-					Tech moves so dizzying fast it's daunting to know where to start or keep up. So easy to
-					get imposter syndrome.
-				</p>
-				<p>AI, tech stacks, databases, cloud, software-as-a-service, hardware.</p>
-			</div>
-		</div>
-		<div
-			class="flex max-h-[40rem] grid-cols-2 flex-wrap items-center justify-center gap-x-12 gap-y-4 lg:flex-nowrap">
-			<div class="min-w-72">
-				<enhanced:img src={pandaConfused} alt="" class="rounded-3xl" />
-			</div>
-			<div class="grid gap-4">
-				<h3 class="text-2xl font-bold lg:text-4xl">Individuals</h3>
-				<p class="text-base">
-					Haven't we worked with people who know so little about tech or don't even know they're
-					clueless? Yet we must consult them or get their approval just because it's in their job
-					designation?
-				</p>
-				<p>
-					(Of course they're experts at "management" and "strategy", or because they were engineers
-					30 years ago working on Visual Basic.)
-				</p>
-			</div>
-		</div>
-	</section>
-</div>
-
-<section class="min-h-dvh px-4 py-8" data-pagefind-ignore>
-	<div><img src={burning} alt="" class="w-full" /></div>
-	<div class="mx-auto grid w-full max-w-(--breakpoint-2xl) gap-8 py-16 lg:grid-cols-3">
-		<div class="flex items-center justify-center text-center lg:col-span-3 lg:min-h-36">
-			<h2 class="text-center text-4xl font-bold lg:col-span-1 lg:pb-24 lg:text-8xl">
-				No one likes this...
-			</h2>
-		</div>
-		<div class="grid gap-x-8 lg:col-span-3">
-			<div class="flex min-h-36 items-center justify-center text-center lg:col-span-3">
-				<h3 class="text-4xl font-bold">Not the ones doing the work.</h3>
-			</div>
-
-			<div
-				class="grid content-center justify-items-center space-y-4 rounded-2xl text-center lg:p-8">
-				<div class="avatar">
-					<div class="w-56 rounded-full">
-						<enhanced:img src={pandaAnnoyed} alt="" />
-					</div>
-				</div>
-				<div class="space-y-4">
-					<h3 class="text-2xl lg:text-4xl">Developers</h3>
-					<p>
-						Hate needing to teach non-technical folks basic stuff, worse if you need to do
-						papers/slides.
-					</p>
-				</div>
-			</div>
-
-			<div
-				class="grid content-center justify-items-center space-y-4 rounded-2xl text-center lg:p-8">
-				<div class="avatar">
-					<div class="w-56 rounded-full">
-						<enhanced:img src={pandaSuperhero} alt="" />
-					</div>
-				</div>
-				<div class="space-y-4">
-					<h3 class="text-2xl lg:text-4xl">Staffers</h3>
-					<p>
-						You need to staff your bosses, but you don't know much. So you need to ask your
-						technical POCs for everything.
-					</p>
-				</div>
-			</div>
-
-			<div
-				class="grid content-center justify-items-center space-y-4 rounded-2xl text-center lg:p-8">
-				<div class="avatar">
-					<div class="w-56 rounded-full">
-						<enhanced:img src={unoptimised1} alt="" />
-					</div>
-				</div>
-				<div class="space-y-4">
-					<h3 class="text-2xl lg:text-4xl">Planners</h3>
-					<p>You can't tell if your plans are good or bad.</p>
-				</div>
-			</div>
-		</div>
-		<div class="flex min-h-36 items-center justify-center text-center lg:col-span-3">
-			<h2 class=" text-4xl font-bold">Neither do these important people.</h2>
-		</div>
-
-		<div class="grid content-center justify-items-center space-y-4 rounded-2xl text-center lg:p-8">
-			<div class="avatar">
-				<div class="w-56 rounded-full">
-					<enhanced:img src={pandaBoss} alt="" />
-				</div>
-			</div>
-			<div class="space-y-4">
-				<h3 class="text-2xl lg:text-4xl">Middle Managers</h3>
-				<p>
-					You're expected to lead, but you don't know how. When something goes wrong, you don't know
-					why.
-				</p>
-			</div>
-		</div>
-
-		<div class="grid content-center justify-items-center space-y-4 rounded-2xl text-center lg:p-8">
-			<div class="avatar">
-				<div class="w-56 rounded-full">
-					<enhanced:img src={pandaSeniorMgmt} alt="" />
-				</div>
-			</div>
-			<div class="space-y-4">
-				<h3 class="text-2xl lg:text-4xl">Senior Management</h3>
-				<p>
-					Fait accompli proposals. Delays. Unknown trade-offs and risks. Not sure how to question or
-					decide.
-				</p>
-			</div>
-		</div>
-
-		<div class="grid content-center justify-items-center space-y-4 rounded-2xl text-center lg:p-8">
-			<div class="avatar">
-				<div class="w-56 rounded-full">
-					<enhanced:img src={pandaAnnoyedAlt} alt="" />
-				</div>
-			</div>
-			<div class="space-y-4">
-				<h3 class="text-2xl lg:text-4xl">Citizens</h3>
-				<p>Why do tech products suck? Surely no one's that dumb, right?</p>
-			</div>
-		</div>
-	</div>
+				aria-label="See guides"
+				class="group hover:border-b-primary hover:text-primary ms-2 flex gap-2 border-b"
+				>Read My Views<svg
+					xmlns="http://www.w3.org/2000/svg"
+					width="1.3em"
+					height="1.3em"
+					class="transition-all duration-300 ease-in-out group-hover:translate-x-2"
+					stroke="currentColor"
+					viewBox="0 0 24 24"
+					><path
+						d="m13.692 17.308l-.707-.72l4.088-4.088H5v-1h12.073l-4.088-4.088l.707-.72L19 12z" /></svg
+				></a>
+		</li>
+	</ul>
 </section>
-
-<div>
-	<section
-		class="mx-auto grid min-h-[70vh] max-w-(--breakpoint-2xl) content-center justify-items-center gap-x-8 gap-y-8 px-2 py-10"
-		data-pagefind-ignore>
-		<h2 class="text-center text-4xl font-bold lg:col-span-1 lg:pb-12 lg:text-8xl">
-			You might not need the resources here...
-		</h2>
-
-		<ul class="grid max-w-[1000px] content-center gap-8 lg:grid-cols-2">
-			<li class="border-base-content/30 grid content-center gap-4 rounded-2xl border p-4 lg:p-8">
-				<h3 class="text-2xl font-bold lg:text-4xl">You're already skilled</h3>
-				<p>
-					If you're highly technical or a principal engineer, you're way more skilled. The resources
-					here won't match your level!
-				</p>
-			</li>
-			<li class="border-base-content/30 grid content-center gap-4 rounded-2xl border p-4 lg:p-8">
-				<h3 class="text-2xl font-bold lg:text-4xl">It's no big deal</h3>
-				<p>
-					If there are no users, users can't complain, or it's just an obscure system that costs
-					nothing.
-				</p>
-			</li>
-		</ul>
-	</section>
-	<section
-		class="mx-auto grid min-h-[70vh] max-w-(--breakpoint-2xl) content-center justify-items-center gap-x-8 gap-y-8 px-2 py-10"
-		data-pagefind-ignore>
-		<h2 class="text-center text-4xl font-bold lg:col-span-1 lg:pb-12 lg:text-8xl">
-			But if learning more helps your outcomes,
-		</h2>
-
-		<a
-			href="/learn"
-			class="btn btn-primary h-auto rounded-full px-8 py-4 text-4xl shadow-lg shadow-lime-400/50 lg:min-w-96"
-			>Get Resources</a>
-	</section>
-</div>
+<footer class="py-2 text-center">
+	© 2024-2025 Zixian Chen. All views expressed here are solely mine.
+</footer>
 
 <style>
 	:root {

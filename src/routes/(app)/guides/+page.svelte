@@ -120,33 +120,6 @@
 				</div>
 			</div>
 		</a>
-		<a href="/guides/security"
-			><div class="mb-12">
-				<div class="group card bg-base-100 h-auto w-full border border-gray-700 shadow-xl">
-					<div class="card-body grid lg:grid-cols-2">
-						<div class="lg:px-8">
-							<h2 class="group-hover:text-primary mb-1 text-2xl font-medium lg:text-7xl">
-								Security
-							</h2>
-							<p>
-								<i>Cyber security so tight, even the 1s and 0s can't escape</i>
-							</p>
-							<p class="pt-8">
-								Ever wondered why TRAs are so awfully tedious and yet mean nothing? Frustrated with
-								the ticking checkbox nature to comply with security policies?
-							</p>
-						</div>
-						<div class="w-full rounded-2xl">
-							<div class="flex justify-center">
-								<enhanced:img
-									src={safeKeyboard}
-									alt="Put your keyboard in the safe - best in class for security~!"
-									class="rounded-2xl" />
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</a>
+		<!--  -->
 	</section>
 </ContentWrapper>
