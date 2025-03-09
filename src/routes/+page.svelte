@@ -167,21 +167,21 @@
 		</a>
 	</div>
 </nav>
-<div class="grid min-h-[70vh] content-center justify-items-center" data-pagefind-ignore>
+<div class="grid content-start justify-items-center py-24 lg:min-h-[60vh]" data-pagefind-ignore>
 	<section>
 		<div class="max-w-[1000px] self-center justify-self-center px-2">
 			<h1
 				class="mb-12 text-center text-5xl font-bold tracking-tighter lg:pt-20 lg:text-6xl 2xl:text-7xl">
 				Understand Tech <span
-					class="headline inline-block bg-linear-to-r from-emerald-200 via-lime-200 to-teal-300 bg-clip-text pb-5 text-transparent"
+					class="headline inline-block bg-linear-to-r from-emerald-200 via-lime-200 to-teal-300 bg-clip-text text-transparent"
 					>Deeper</span
 				>. Lead Tech
 				<span
-					class="headline-slower inline-block bg-linear-to-r from-teal-300 via-lime-200 to-emerald-200 bg-clip-text pb-5 text-transparent"
+					class="headline-slower inline-block bg-linear-to-r from-teal-300 via-lime-200 to-emerald-200 bg-clip-text text-transparent"
 					>Better</span
 				>.
 			</h1>
-			<p class="mb-12 text-center text-2xl">
+			<p class="mb-12 text-center lg:text-2xl">
 				Whether you're building or leading, you need basic tech knowledge and business instincts.
 				Let's fix that together.
 			</p>
@@ -190,7 +190,7 @@
 				<a
 					href="/learn"
 					aria-label="See Resources"
-					class="group btn btn-primary border-primary rounded-full border py-8 font-bold ring-2 shadow-teal-300/50 ring-gray-100/30 hover:shadow-lg lg:px-8 lg:text-2xl"
+					class="group btn btn-primary border-primary rounded-full border py-8 text-lg font-bold ring-2 shadow-teal-300/50 ring-gray-100/30 hover:shadow-lg lg:px-8 lg:text-2xl"
 					>See Resources<svg
 						xmlns="http://www.w3.org/2000/svg"
 						width="1.3em"
@@ -203,66 +203,96 @@
 					></a>
 				<a
 					href="/guides"
-					class="btn btn-outline btn-secondary rounded-full py-8 font-medium lg:px-8 lg:text-2xl"
+					class="btn btn-outline btn-secondary rounded-full py-8 text-lg font-medium lg:px-8 lg:text-2xl"
 					>My Views</a>
 			</div>
 		</div>
 	</section>
 </div>
 
-<div class="bg-base-100">
-	<section
-		class="bg-base-200 mx-auto grid max-w-(--breakpoint-2xl) content-center justify-items-center gap-y-12 rounded-4xl px-2 py-24 lg:px-24"
-		data-pagefind-ignore>
-		<h2 class="text-center text-4xl font-medium lg:col-span-1 lg:text-6xl">Why You Need This</h2>
-		<div>
-			<div class="mb-12 text-center text-2xl">
-				To lead and do better in tech, you'll need foundational tech knowledge and business
-				perspectives.
-			</div>
+<section
+	class="bg-base-200 mx-auto grid max-w-(--breakpoint-2xl) content-center justify-items-center gap-y-12 rounded-4xl px-2 py-20 lg:px-20"
+	data-pagefind-ignore>
+	<h2 class="text-center text-4xl font-medium lg:col-span-1 lg:text-6xl">Why You Need This</h2>
+	<div>
+		<div class="mb-12 text-center text-2xl">
+			To lead and do better in tech, you'll need foundational tech knowledge and business
+			perspectives.
+		</div>
 
-			<div class="grid content-start gap-8 lg:grid-cols-2">
-				<div class="border-base-content/30 grid content-start gap-4 rounded-2xl border p-4 lg:p-8">
-					<h3 class="py-4 text-center text-4xl font-bold lg:text-6xl">
-						Learn <span class="text-info">How</span>
-					</h3>
+		<div class="grid content-start gap-8 lg:grid-cols-2">
+			<div class="border-base-content/30 grid content-start gap-4 rounded-2xl border p-4 lg:p-8">
+				<h3 class="py-4 text-center text-4xl font-bold lg:text-6xl">
+					Learn <span class="text-info">How</span>
+				</h3>
 
-					<div class="flex flex-wrap justify-center gap-4">
-						<div class="btn btn-info btn-outline btn-lg rounded-full">Computing</div>
-						<div class="btn btn-info btn-outline btn-lg rounded-full">Internet</div>
-						<div class="btn btn-info btn-outline btn-lg rounded-full">Workplace Apps</div>
-						<div class="btn btn-info btn-outline btn-lg rounded-full">Central Tools</div>
-						<div class="btn btn-info btn-outline btn-lg rounded-full">UX</div>
-						<div class="btn btn-info btn-outline btn-lg rounded-full">Products</div>
-						<div class="btn btn-info btn-outline btn-lg rounded-full">Methodology</div>
-						<div class="btn btn-info btn-outline btn-lg rounded-full">Data</div>
-						<div class="btn btn-info btn-outline btn-lg rounded-full">AI</div>
-						<div class="btn btn-info btn-outline btn-lg rounded-full">Web Dev</div>
+				<div class="flex flex-wrap justify-center gap-4">
+					<div>
+						<a href="/learn" class="btn btn-info btn-outline btn-lg rounded-full">Computing</a>
+					</div>
+					<div>
+						<a href="/learn" class="btn btn-info btn-outline btn-lg rounded-full">Internet</a>
+					</div>
+					<div>
+						<a href="/learn" class="btn btn-info btn-outline btn-lg rounded-full">Workplace Apps</a>
+					</div>
+					<div>
+						<a href="/learn" class="btn btn-info btn-outline btn-lg rounded-full">Central Tools</a>
+					</div>
+					<div><a href="/learn" class="btn btn-info btn-outline btn-lg rounded-full">UX</a></div>
+					<div>
+						<a href="/learn" class="btn btn-info btn-outline btn-lg rounded-full">Products</a>
+					</div>
+					<div>
+						<a href="/learn" class="btn btn-info btn-outline btn-lg rounded-full">Methodology</a>
+					</div>
+					<div>
+						<a href="/learn" class="btn btn-info btn-outline btn-lg rounded-full">Data</a>
+					</div>
+					<div><a href="/learn" class="btn btn-info btn-outline btn-lg rounded-full">AI</a></div>
+					<div>
+						<a href="/learn" class="btn btn-info btn-outline btn-lg rounded-full">Web Dev</a>
 					</div>
 				</div>
+			</div>
 
-				<div class="border-base-content/30 grid content-start gap-4 rounded-2xl border p-4 lg:p-8">
-					<h3 class="py-4 text-center text-4xl font-bold lg:text-6xl">
-						Think <span class="text-secondary">Why</span>
-					</h3>
+			<div class="border-base-content/30 grid content-start gap-4 rounded-2xl border p-4 lg:p-8">
+				<h3 class="py-4 text-center text-4xl font-bold lg:text-6xl">
+					Think <span class="text-secondary">Why</span>
+				</h3>
 
-					<div class="flex flex-wrap justify-center gap-4">
-						<div class="btn btn-secondary btn-outline btn-lg rounded-full">Products</div>
-						<div class="btn btn-secondary btn-outline btn-lg rounded-full">Problem Statements</div>
-						<div class="btn btn-secondary btn-outline btn-lg rounded-full">Cost</div>
-						<div class="btn btn-secondary btn-outline btn-lg rounded-full">User Research</div>
-						<div class="btn btn-secondary btn-outline btn-lg rounded-full">Management</div>
+				<div class="flex flex-wrap justify-center gap-4">
+					<div>
+						<a href="/guides/product" class="btn btn-secondary btn-outline btn-lg rounded-full"
+							>Products</a>
+					</div>
+					<div>
+						<a href="/guides/problems" class="btn btn-secondary btn-outline btn-lg rounded-full"
+							>Problem Statements</a>
+					</div>
+					<div>
+						<a href="/guides/cost" class="btn btn-secondary btn-outline btn-lg rounded-full"
+							>Cost</a>
+					</div>
+					<div>
+						<a href="/guides/research" class="btn btn-secondary btn-outline btn-lg rounded-full"
+							>User Research</a>
+					</div>
+					<div>
+						<a href="/guides/running" class="btn btn-secondary btn-outline btn-lg rounded-full"
+							>Management</a>
 					</div>
 				</div>
 			</div>
 		</div>
-	</section>
-</div>
+	</div>
+</section>
+
 <section
-	class="mx-auto mt-24 grid min-h-[40vh] max-w-(--breakpoint-2xl) grid-cols-[auto_1fr] content-center justify-items-center gap-x-8 gap-y-8 px-2 py-10"
+	class="mx-auto mt-12 grid min-h-[40vh] max-w-(--breakpoint-2xl) content-center justify-items-center gap-x-8 gap-y-8 px-2 py-12"
 	data-pagefind-ignore>
-	<h2 class="content-center text-4xl font-bold lg:col-span-1 lg:pb-12 lg:text-6xl">Try Now</h2>
-	<ul class="mb-12 grid gap-y-4 justify-self-center text-2xl">
+	<h2 class="content-center text-4xl font-bold lg:text-6xl">Try Now</h2>
+	<ul class="mb-12 grid gap-y-4 justify-self-center px-2 lg:text-2xl">
 		<li class="group flex items-center gap-4">
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
@@ -335,18 +365,6 @@
 		}
 	}
 
-	.button-shine::before {
-		content: '';
-		position: absolute;
-		width: 2rem;
-		left: -3rem;
-		height: 130%;
-		background-color: white;
-		transform: skew(-30deg) translateX(var(--moveRight));
-		opacity: 0.7;
-		filter: blur(20px);
-	}
-
 	.headline {
 		animation: headline-blur 0.5s linear 0s 1 forwards;
 		@starting-style {
@@ -358,28 +376,6 @@
 		animation: headline-blur 0.7s linear 0s 1 forwards;
 		@starting-style {
 			opacity: 0%;
-		}
-	}
-
-	@media (min-width: 1281px) {
-		.hero {
-			position: relative;
-		}
-	}
-	@media (max-width: 1280px) {
-		.hero-img {
-			max-height: 0px;
-		}
-	}
-	@media (min-width: 1281px) {
-		.hero-img {
-			object-fit: cover;
-			object-position: 70% center;
-			width: 100%;
-			height: 100%;
-			position: absolute;
-			top: 0;
-			left: 0;
 		}
 	}
 </style>
