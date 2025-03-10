@@ -133,14 +133,14 @@
 }
 
 @layer base {
-	p > a {
+	/* p > a {
 		text-decoration: underline;
 		text-underline-offset: 0.3rem;
 		&:hover {
 			color: rgb(163 230 53);
 		}
 		font-weight: 500;
-	}
+	} */
 
 	/* roboto-latin-400-normal */
 	@font-face {
