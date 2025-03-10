@@ -125,7 +125,9 @@
 	<title>{pageName}</title>
 </svelte:head>
 
-<div class="grid content-start justify-items-center py-24 lg:min-h-[60vh]" data-pagefind-ignore>
+<div
+	class="to-base-100 grid content-start justify-items-center bg-radial-[at_50%_60%] from-white/20 to-70% py-24 lg:min-h-[60vh]"
+	data-pagefind-ignore>
 	<section>
 		<div class="max-w-[1000px] self-center justify-self-center px-2">
 			<h1
