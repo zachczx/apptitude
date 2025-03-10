@@ -564,7 +564,7 @@ export const guides: GuidesData[] = [
 	{
 		id: 5,
 		name: 'Running the Project',
-		tagline: '',
+		tagline: 'Organized Chaos. Mostly Chaos.',
 		slug: 'running',
 		definitions: [
 			{
