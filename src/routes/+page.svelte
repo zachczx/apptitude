@@ -28,6 +28,7 @@
 	let pageName = $state('Apptitude');
 	let carouselTopics = $state() as HTMLDivElement;
 	let carouselGuides = $state() as HTMLDivElement;
+	let activeCarousel: 'how' | 'why' = $state('how');
 
 	interface Topics {
 		name: string;
@@ -75,40 +76,40 @@
 					},
 					x: '-10vw',
 				});
-				gsap.to(card, {
-					scrollTrigger: {
-						trigger: card,
-						start: 'top 60%',
-						end: '+=10px',
-						scrub: true,
-						markers: false,
-					},
-					opacity: 1,
-				});
+				// gsap.to(card, {
+				// 	scrollTrigger: {
+				// 		trigger: card,
+				// 		start: 'top 60%',
+				// 		end: '+=10px',
+				// 		scrub: true,
+				// 		markers: false,
+				// 	},
+				// 	opacity: 1,
+				// });
 			}
 
-			for (const card of guideCards) {
-				gsap.from(card, {
-					scrollTrigger: {
-						trigger: card,
-						start: 'top 60%',
-						end: '+=1500px',
-						scrub: true,
-						markers: false,
-					},
-					x: '-10vw',
-				});
-				gsap.to(card, {
-					scrollTrigger: {
-						trigger: card,
-						start: 'top 60%',
-						end: '+=10px',
-						scrub: true,
-						markers: false,
-					},
-					opacity: 1,
-				});
-			}
+			// for (const card of guideCards) {
+			// 	gsap.from(card, {
+			// 		scrollTrigger: {
+			// 			trigger: card,
+			// 			start: 'top 60%',
+			// 			end: '+=1500px',
+			// 			scrub: true,
+			// 			markers: false,
+			// 		},
+			// 		x: '-1vw',
+			// 	});
+			// 	gsap.to(card, {
+			// 		scrollTrigger: {
+			// 			trigger: card,
+			// 			start: 'top 60%',
+			// 			end: '+=10px',
+			// 			scrub: true,
+			// 			markers: false,
+			// 		},
+			// 		opacity: 1,
+			// 	});
+			// }
 		});
 	});
 
@@ -182,114 +183,52 @@
 		<div class="grid content-start gap-8 lg:grid-cols-2">
 			<div
 				class="border-base-content/30 grid content-start gap-4 rounded-2xl border p-4 lg:ms-20 lg:p-8">
-				<h3 class="py-4 text-center text-4xl font-bold lg:text-6xl">
+				<button
+					class="cursor-pointer py-4 text-center text-4xl font-bold lg:text-6xl"
+					onclick={() => (activeCarousel = 'how')}>
 					Learn <span class="text-info">How</span>
-				</h3>
+				</button>
 
 				<div class="flex flex-wrap justify-center gap-4">
-					<div>
-						<a
-							href="/learn"
-							class="btn btn-info btn-outline hover:bg-base-content hover:text-primary-content btn-lg rounded-full"
-							>Computing</a>
-					</div>
-					<div>
-						<a
-							href="/learn"
-							class="btn btn-info btn-outline hover:bg-base-content hover:text-primary-content btn-lg rounded-full"
-							>Internet</a>
-					</div>
-					<div>
-						<a
-							href="/learn"
-							class="btn btn-info btn-outline hover:bg-base-content hover:text-primary-content btn-lg rounded-full"
-							>Workplace Apps</a>
-					</div>
-					<div>
-						<a
-							href="/learn"
-							class="btn btn-info btn-outline hover:bg-base-content hover:text-primary-content btn-lg rounded-full"
-							>Central Tools</a>
-					</div>
-					<div>
-						<a
-							href="/learn"
-							class="btn btn-info btn-outline hover:bg-base-content hover:text-primary-content btn-lg rounded-full"
-							>UX</a>
-					</div>
-					<div>
-						<a
-							href="/learn"
-							class="btn btn-info btn-outline hover:bg-base-content hover:text-primary-content btn-lg rounded-full"
-							>Products</a>
-					</div>
-					<div>
-						<a
-							href="/learn"
-							class="btn btn-info btn-outline hover:bg-base-content hover:text-primary-content btn-lg rounded-full"
-							>Methodology</a>
-					</div>
-					<div>
-						<a
-							href="/learn"
-							class="btn btn-info btn-outline hover:bg-base-content hover:text-primary-content btn-lg rounded-full"
-							>Data</a>
-					</div>
-					<div>
-						<a
-							href="/learn"
-							class="btn btn-info btn-outline hover:bg-base-content hover:text-primary-content btn-lg rounded-full"
-							>AI</a>
-					</div>
-					<div>
-						<a
-							href="/learn"
-							class="btn btn-info btn-outline hover:bg-base-content hover:text-primary-content btn-lg rounded-full"
-							>Web Dev</a>
-					</div>
+					{#each topics as topic}
+						<a href="/learn/{topic.slug}" class="btn btn-info btn-outline btn-lg rounded-full"
+							>{topic.name}</a>
+					{/each}
 				</div>
 			</div>
 
 			<div
 				class="border-base-content/30 grid content-start gap-4 rounded-2xl border p-4 lg:me-20 lg:p-8">
-				<h3 class="py-4 text-center text-4xl font-bold lg:text-6xl">
+				<button
+					onclick={() => (activeCarousel = 'why')}
+					class="cursor-pointer py-4 text-center text-4xl font-bold lg:text-6xl">
 					Think <span class="text-secondary">Why</span>
-				</h3>
+				</button>
 
 				<div class="flex flex-wrap justify-center gap-4">
 					<div>
-						<a
-							href="/guides/product"
-							class="btn btn-secondary btn-outline hover:bg-base-content hover:text-primary-content btn-lg rounded-full"
+						<a href="/guides/product" class="btn btn-secondary btn-outline btn-lg rounded-full"
 							>Products</a>
 					</div>
 					<div>
-						<a
-							href="/guides/problems"
-							class="btn btn-secondary btn-outline hover:bg-base-content hover:text-primary-content btn-lg rounded-full"
+						<a href="/guides/problems" class="btn btn-secondary btn-outline btn-lg rounded-full"
 							>Problem Statements</a>
 					</div>
 					<div>
-						<a
-							href="/guides/cost"
-							class="btn btn-secondary btn-outline hover:bg-base-content hover:text-primary-content btn-lg rounded-full"
+						<a href="/guides/cost" class="btn btn-secondary btn-outline btn-lg rounded-full"
 							>Cost</a>
 					</div>
 					<div>
-						<a
-							href="/guides/research"
-							class="btn btn-secondary btn-outline hover:bg-base-content hover:text-primary-content btn-lg rounded-full"
+						<a href="/guides/research" class="btn btn-secondary btn-outline btn-lg rounded-full"
 							>User Research</a>
 					</div>
 					<div>
-						<a
-							href="/guides/running"
-							class="btn btn-secondary btn-outline hover:bg-base-content hover:text-primary-content btn-lg rounded-full"
+						<a href="/guides/running" class="btn btn-secondary btn-outline btn-lg rounded-full"
 							>Management</a>
 					</div>
 				</div>
 			</div>
-			<div class="relative col-span-2 w-full">
+			<div class="relative col-span-2 w-full {activeCarousel === 'how' ? undefined : 'hidden'}">
 				<button
 					onclick={() => {
 						console.log('clicked');
@@ -313,7 +252,7 @@
 					{#each topics as topic}
 						<div class="carousel-item">
 							<div
-								class="topic-card card bg-info/5 border-info/40 card-md h-96 w-72 border opacity-60 shadow-sm">
+								class="topic-card card bg-info/5 border-info/40 card-md h-96 w-72 border shadow-sm">
 								<div class="card-body">
 									<h2 class="card-title text-2xl font-medium">
 										<a href="/learn/{topic.slug}">{topic.name}</a>
@@ -354,7 +293,7 @@
 				</button>
 			</div>
 
-			<div class="relative col-span-2 w-full">
+			<div class="relative col-span-2 w-full {activeCarousel === 'why' ? undefined : 'hidden'}">
 				<button
 					onclick={() => {
 						console.log('clicked');
@@ -377,7 +316,7 @@
 					{#each guides as guide}
 						<div class="carousel-item">
 							<div
-								class="guide-card card border-secondary card-md bg-secondary/5 h-96 w-96 border opacity-60 shadow-sm">
+								class="guide-card card border-secondary card-md bg-secondary/5 h-96 w-84 border shadow-sm">
 								<div class="card-body">
 									<a href="/guides/{guide.slug}">
 										<h2 class="card-title text-2xl font-medium">
