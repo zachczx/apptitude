@@ -3,8 +3,9 @@
 </script>
 
 <ul class="menu rounded-box w-full text-base" data-pagefind-ignore>
-	<li class="text-2xl font-bold lg:px-2 xl:px-4">
-		<a href="/learn">Learn</a>
+	<li class="text-2xl font-medium lg:px-2 xl:px-4">
+		<a href="/learn" class={category === 'learn' && page === '' ? 'text-primary' : undefined}
+			>Learn</a>
 	</li>
 	<li class="lg:px-2 xl:px-4">
 		<span
@@ -127,8 +128,8 @@
 		</ul>
 	</li>
 
-	<li class="pt-4 text-2xl font-bold lg:px-2 xl:px-4">
-		<a href="/guides" class={category === 'guides' ? 'text-primary font-medium' : undefined}
+	<li class="pt-4 text-2xl font-medium lg:px-2 xl:px-4">
+		<a href="/guides" class={category === 'guides' && page === '' ? 'text-primary' : undefined}
 			>My Views</a>
 	</li>
 
