@@ -150,7 +150,7 @@
 				<a
 					href="/learn"
 					aria-label="See Resources"
-					class="group btn btn-primary border-primary rounded-full border py-8 text-lg font-bold ring-2 shadow-teal-300/50 ring-gray-100/30 hover:shadow-lg lg:px-8 lg:text-2xl"
+					class="group btn btn-primary border-primary shadow-primary/50 rounded-full border py-8 text-lg font-bold ring-2 ring-gray-100/30 hover:shadow-lg lg:px-8 lg:text-2xl"
 					>See Resources<svg
 						xmlns="http://www.w3.org/2000/svg"
 						width="1.3em"
