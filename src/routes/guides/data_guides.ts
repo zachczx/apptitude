@@ -96,6 +96,10 @@ export const guides: GuidesData[] = [
 				what: 'Why do we need X? What happens if we got rid of this by end of this year, or if we refused to build this? Who would come to us to complain and why would they do so?',
 				why: 'This question challenges assumptions and forces you to justify features or projects. It encourages critical thinking about necessity and impact.',
 			},
+			{
+				what: "What are the blockers to doing X? Let's split them by policy, user research, resources.",
+				why: 'First step to unblocking is to understand the nature of the blocker. Each type of blocker deserves its own treatment.',
+			},
 		],
 		alarms: [
 			{
