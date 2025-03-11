@@ -8,9 +8,9 @@ interface LearnData {
 	issues: string[];
 	objectives: string[];
 	resources: {
-		courses: [{ text: string; url: string }];
+		courses: { text: string; url: string }[];
 		youtube: string[];
-		links: [{ text: string; url: string }];
+		links: { text: string; url: string }[];
 	};
 }
 
@@ -425,6 +425,7 @@ export const info: LearnData[] = [
 					text: 'Govtech Data Science & Artifical Intelligence Division Medium Blog',
 					url: 'https://medium.com/dsaid-govtech',
 				},
+				{ text: 'Open Government Products', url: 'https://opengovsg.substack.com/' },
 			],
 		},
 	},
@@ -916,6 +917,7 @@ export const info: LearnData[] = [
 				'https://www.youtube.com/embed/vqXLGX0szIQ',
 				'https://www.youtube.com/embed/WgXU7XAZYmQ',
 				'https://www.youtube.com/embed/OgwlV-vQNYk',
+				'https://www.youtube.com/embed/mK3aS4BiE2s',
 			],
 			links: [
 				{
