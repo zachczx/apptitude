@@ -126,7 +126,7 @@
 </svelte:head>
 
 <div
-	class="to-base-100 grid content-start justify-items-center bg-radial-[at_50%_60%] from-white/20 to-70% py-24 lg:min-h-[60vh]"
+	class="to-base-100 grid content-start justify-items-center bg-radial-[at_50%_60%] from-white/20 to-50% py-24 lg:min-h-[60vh]"
 	data-pagefind-ignore>
 	<section>
 		<div class="max-w-[1000px] self-center justify-self-center px-2">
@@ -188,12 +188,12 @@
 				<button
 					class="cursor-pointer py-4 text-center text-4xl font-bold lg:text-6xl"
 					onclick={() => (activeCarousel = 'how')}>
-					Learn <span class="text-info">How</span>
+					Learn <span class="text-primary">How</span>
 				</button>
 
 				<div class="flex flex-wrap justify-center gap-4">
 					{#each topics as topic}
-						<a href="/learn/{topic.slug}" class="btn btn-info btn-outline btn-lg rounded-full"
+						<a href="/learn/{topic.slug}" class="btn btn-primary btn-outline btn-lg rounded-full"
 							>{topic.name}</a>
 					{/each}
 				</div>
@@ -230,7 +230,10 @@
 					</div>
 				</div>
 			</div>
-			<div class="relative col-span-2 w-full {activeCarousel === 'how' ? undefined : 'hidden'}">
+			<div
+				class="relative hidden w-full lg:col-span-2 {activeCarousel === 'how'
+					? 'lg:grid'
+					: undefined}">
 				<button
 					onclick={() => {
 						console.log('clicked');
@@ -254,7 +257,7 @@
 					{#each topics as topic}
 						<div class="carousel-item">
 							<div
-								class="topic-card card bg-info/5 border-info/40 card-md h-96 w-72 border shadow-sm">
+								class="topic-card card bg-primary/5 border-primary/40 card-md h-96 w-72 border shadow-sm">
 								<div class="card-body">
 									<h2 class="card-title text-2xl font-medium">
 										<a href="/learn/{topic.slug}">{topic.name}</a>
@@ -295,7 +298,10 @@
 				</button>
 			</div>
 
-			<div class="relative col-span-2 w-full {activeCarousel === 'why' ? undefined : 'hidden'}">
+			<div
+				class="relative hidden w-full lg:col-span-2 {activeCarousel === 'why'
+					? 'lg:grid'
+					: undefined}">
 				<button
 					onclick={() => {
 						console.log('clicked');
