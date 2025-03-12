@@ -23,6 +23,7 @@
 	import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 	import { onMount } from 'svelte';
 	import { goto } from '$app/navigation';
+	import bg from '$lib/assets/carolina-pimenta-ELO-NmuvFCM-unsplash.webp';
 
 	let { data } = $props();
 	let pageName = $state('Apptitude');
@@ -76,48 +77,8 @@
 					},
 					x: '-10vw',
 				});
-				// gsap.to(card, {
-				// 	scrollTrigger: {
-				// 		trigger: card,
-				// 		start: 'top 60%',
-				// 		end: '+=10px',
-				// 		scrub: true,
-				// 		markers: false,
-				// 	},
-				// 	opacity: 1,
-				// });
 			}
-
-			// for (const card of guideCards) {
-			// 	gsap.from(card, {
-			// 		scrollTrigger: {
-			// 			trigger: card,
-			// 			start: 'top 60%',
-			// 			end: '+=1500px',
-			// 			scrub: true,
-			// 			markers: false,
-			// 		},
-			// 		x: '-1vw',
-			// 	});
-			// 	gsap.to(card, {
-			// 		scrollTrigger: {
-			// 			trigger: card,
-			// 			start: 'top 60%',
-			// 			end: '+=10px',
-			// 			scrub: true,
-			// 			markers: false,
-			// 		},
-			// 		opacity: 1,
-			// 	});
-			// }
 		});
-	});
-
-	$effect(() => {
-		// if (carouselGuides) {
-		// 	carouselGuides.scrollLeft = -400;
-		// 	console.log(typeof carouselGuides.scrollLeft);
-		// }
 	});
 </script>
 
@@ -126,27 +87,30 @@
 </svelte:head>
 
 <div
-	class="to-base-100 grid content-start justify-items-center bg-radial-[at_50%_60%] from-white/20 to-50% py-24 lg:min-h-[60vh]"
+	class="to-base-100 grid grid-cols-1 content-center justify-items-start lg:min-h-dvh"
+	style="background: url({bg}) no-repeat; background-size:cover; background-blend-mode: multiply;background-color: rgba(0,0,0,.7);"
 	data-pagefind-ignore>
-	<section>
-		<div class="max-w-[1000px] self-center justify-self-center px-2">
-			<h1
-				class="mb-12 text-center text-5xl font-bold tracking-tighter lg:pt-20 lg:text-6xl 2xl:text-7xl">
+	<section class="mx-auto mt-20 w-full py-24">
+		<div class="w-full max-w-(--breakpoint-2xl) self-center justify-self-center px-2">
+			<h1 class="text-start text-5xl font-bold tracking-tighter lg:text-6xl 2xl:text-7xl">
 				Understand Tech <span
 					class="headline inline-block bg-linear-to-r from-emerald-200 via-lime-200 to-teal-300 bg-clip-text text-transparent"
 					>Deeper</span
-				>. Lead Tech
+				>.
+			</h1>
+			<h1 class="mb-12 text-start text-5xl font-bold tracking-tighter lg:text-6xl 2xl:text-7xl">
+				Lead Tech
 				<span
 					class="headline-slower inline-block bg-linear-to-r from-teal-300 via-lime-200 to-emerald-200 bg-clip-text text-transparent"
 					>Better</span
 				>.
 			</h1>
-			<p class="mb-12 text-center lg:text-2xl">
-				Whether you're building or leading, you need basic tech knowledge and business instincts.
-				Let's work on that together.
+			<p class="mb-12 text-start lg:text-2xl">
+				Building or leading, you need basic tech knowledge and business instincts. Let's climb those
+				steps together.
 			</p>
 
-			<div class="mb-12 flex flex-wrap justify-center gap-4">
+			<div class="mb-12 flex flex-wrap justify-center gap-4 lg:justify-start">
 				<a
 					href="/learn"
 					aria-label="See Resources"
@@ -171,7 +135,7 @@
 </div>
 
 <section
-	class="bg-base-200 border-base-content/30 mx-auto grid max-w-(--breakpoint-2xl) content-center justify-items-center gap-y-12 rounded-4xl border px-2 py-20"
+	class="bg-base-200 border-base-content/30 mx-auto grid max-w-(--breakpoint-2xl) content-center justify-items-center gap-y-12 rounded-4xl border px-2 py-20 lg:-mt-48"
 	data-pagefind-ignore>
 	<h2 class="text-center text-4xl font-medium lg:col-span-1 lg:px-20 lg:text-6xl">
 		Why You Need This
