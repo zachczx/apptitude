@@ -79,7 +79,7 @@
 						Definitions
 					</h2>
 					{#if data.post.definitions.length > 0}
-						<div class="grid grid-cols-3 gap-x-8 gap-y-8">
+						<div class="grid grid-cols-3 gap-x-16 gap-y-8">
 							{#each data.post.definitions as definition, i}
 								<div class="italic">{definition.term}</div>
 								<div class="col-span-2">{definition.definition}</div>
@@ -119,7 +119,7 @@
 						Questions
 					</h2>
 					{#if data.post.questions.length > 0}
-						<div class="grid grid-cols-2 gap-x-8 gap-y-8">
+						<div class="grid grid-cols-2 gap-x-16 gap-y-8">
 							{#each data.post.questions as question, i}
 								<div class="italic">{question.what}</div>
 								<div class="">{question.why}</div>
@@ -140,7 +140,7 @@
 						Alarm Bells
 					</h2>
 					{#if data.post.alarms.length > 0}
-						<div class="grid grid-cols-2 gap-x-8 gap-y-8">
+						<div class="grid grid-cols-2 gap-x-16 gap-y-8">
 							<div class="text-base-content/70 flex items-center gap-2 font-bold">
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
@@ -174,12 +174,27 @@
 						Dealbreakers
 					</h2>
 					{#if data.post.dealbreakers.length > 0}
-						<div>
-							<ol class="list-disc space-y-4 ps-4">
-								{#each data.post.dealbreakers as dealbreaker}
-									<li>{dealbreaker}</li>
-								{/each}
-							</ol>
+						<div class="grid grid-cols-2 gap-x-16 gap-y-8">
+							<div class="text-base-content/70 flex items-center gap-2 font-bold">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="1.3em"
+									height="1.3em"
+									class="carbon:warning-filled"
+									viewBox="0 0 32 32"
+									><!-- Icon from Carbon by IBM - undefined --><path
+										fill="currentColor"
+										d="M16 2C8.3 2 2 8.3 2 16s6.3 14 14 14s14-6.3 14-14S23.7 2 16 2m-1.1 6h2.2v11h-2.2zM16 25c-.8 0-1.5-.7-1.5-1.5S15.2 22 16 22s1.5.7 1.5 1.5S16.8 25 16 25" /></svg
+								>Symptom
+							</div>
+							<div class="text-base-content/70 font-bold">Why I'd be scared</div>
+							{#each data.post.dealbreakers as dealbreaker, i}
+								<div class="italic">{dealbreaker.what}</div>
+								<div>{dealbreaker.why}</div>
+								{#if i < data.post.dealbreakers.length - 1}
+									<div class="bg-base-content/20 col-span-2 h-0.5"></div>
+								{/if}
+							{/each}
 						</div>
 					{:else}
 						Nothing here!
