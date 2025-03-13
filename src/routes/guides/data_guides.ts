@@ -8,7 +8,7 @@ interface GuidesData {
 	goals: string[];
 	questions: { what: string; why: string }[];
 	alarms?: { what: string; why: string }[];
-	dealbreakers: string[];
+	dealbreakers: { what: string; why: string }[];
 	solutions: string[];
 	suggestions: string[];
 }
@@ -128,14 +128,38 @@ export const guides: GuidesData[] = [
 			},
 		],
 		dealbreakers: [
-			"No one knows what problem is it we're solving.",
-			'Problem being tackled seems to be changing after every meeting.',
-			"We're constantly adding new requirements to our total list of requirements.",
-			"No one's asking for this.",
-			'Meetings are dominated by people who say "I think..." but no one actually knows someone who\'s a user.',
-			"You're doing things because bosses asked.",
-			'Problem is an edge case, but we have money, so who cares.',
-			"Business owner says they need all the requirements, so let's keep every one.",
+			{
+				what: "No one knows what problem is it we're solving.",
+				why: 'No clear problem.',
+			},
+			{
+				what: 'Problem being tackled seems to be changing after every meeting.',
+				why: 'Problem keeps changing.',
+			},
+			{
+				what: "We're constantly adding new requirements to our total list of requirements.",
+				why: 'Requirements keep growing.',
+			},
+			{
+				what: "No one's asking for this.",
+				why: 'Nobody wants it.',
+			},
+			{
+				what: 'Meetings are dominated by people who say "I think..." but no one actually knows someone who\'s a user.',
+				why: 'No user knowledge.',
+			},
+			{
+				what: "You're doing things because bosses asked.",
+				why: 'Boss-driven, not user-driven.',
+			},
+			{
+				what: 'Problem is an edge case, but we have money, so who cares.',
+				why: 'Solving a rare problem (wasteful).',
+			},
+			{
+				what: "Business owner says they need all the requirements, so let's keep every one.",
+				why: 'Unfocused and wasteful.',
+			},
 		],
 		solutions: [
 			"Talk to users. We're trying to solve their problems, not some Minister or PS. Users are masters of their problems, even if they can be terrible at finding the best solutions.",
@@ -297,17 +321,50 @@ export const guides: GuidesData[] = [
 			},
 		],
 		dealbreakers: [
-			'Product is a suboptimal solution (read: XY problem)',
-			"Product solves only a small part of the problem or doesn't solve any real problem at all.",
-			'Product is managed as a project, with paper requirements and delivery timelines overriding questions on product value.',
-			'Product has no viable market, no users, no product-market fit.',
-			"Users don't like the product, don't use the product, but are forced to use it because of mandates or management pressure.",
-			"Market has (new) alternatives, we either don't know or we hid our heads in the sand (insisting that ours is better).",
-			'Existing products that have no traction, users keeps getting life support with no end in sight.',
-			'X product has Y% of weekly active users, never mind that these are captive users who are forced to use the platform.',
-			"If user anecdotes are contradicting your data (that everything's alright), you might be measuring the wrong thing.",
-			'Are the gains marginal? We spend 10mil to cut one process by 2 days but overall process still takes 5 months because of other manual processes.',
-			"Everything's a native app, no matter if all you do is provide info (i.e. a static url or webapp is more fitting).",
+			{
+				what: 'Product is a suboptimal solution (read: XY problem)',
+				why: 'Fixing the wrong problem.',
+			},
+			{
+				what: "Product solves only a small part of the problem or doesn't solve any real problem at all.",
+				why: 'Useless product.',
+			},
+			{
+				what: 'Product is managed as a project, with paper requirements and delivery timelines overriding questions on product value.',
+				why: 'Process over value.',
+			},
+			{
+				what: 'Product has no viable market, no users, no product-market fit.',
+				why: 'Nobody wants it.',
+			},
+			{
+				what: "Users don't like the product, don't use the product, but are forced to use it because of mandates or management pressure.",
+				why: 'Users hate it (forced).',
+			},
+			{
+				what: "Market has (new) alternatives, we either don't know or we hid our heads in the sand (insisting that ours is better).",
+				why: 'Outdated; better options exist.',
+			},
+			{
+				what: 'Existing products that have no traction, users keeps getting life support with no end in sight.',
+				why: 'Zombie product (no end in sight).',
+			},
+			{
+				what: 'X product has Y% of weekly active users, never mind that these are captive users who are forced to use the platform.',
+				why: 'Fake user numbers (forced).',
+			},
+			{
+				what: "If user anecdotes are contradicting your data (that everything's alright), you might be measuring the wrong thing.",
+				why: 'Wrong metrics (users complain).',
+			},
+			{
+				what: 'Are the gains marginal? We spend 10mil to cut one process by 2 days but overall process still takes 5 months because of other manual processes.',
+				why: 'Tiny gain, huge cost (pointless).',
+			},
+			{
+				what: "Everything's a native app, no matter if all you do is provide info (i.e. a static url or webapp is more fitting).",
+				why: 'Over-engineered (too complex).',
+			},
 		],
 		solutions: [
 			'Conduct UX/market research to understand your customers/users, and then base your product strategy on the data.',
@@ -436,18 +493,54 @@ export const guides: GuidesData[] = [
 			},
 		],
 		dealbreakers: [
-			'People say "Sounds about right" when talking about cost items & full-time engineers (no shit, Sherlock).',
-			'$100M is ok because the previous project was $90M and after factoring in inflation it sounds about right.',
-			'The TAM is negligible and users are sticking around because of compliance reasons.',
-			'We need to build ourselves because we have unique requirements',
-			'We must develop our own product because we need to continue to serve past requirements.',
-			'We get the ultimate versions of licenses because we might need it in future.',
-			'A lot of cost is needed to almost completely mitigate X cyber security risk, but nevermind it was a theoretical risk in the first place.',
-			'We spend $10M over several years to reduce 1 headcount (might as well spend $150K on that headcount and save $9.5M).',
-			'Might as well spend it since the FY is closing.',
-			'Everyone dumps their requirements onto a project to get funding.',
-			'Staffers say they need to find a new justification to get funding for 2.0 of their project.',
-			"Business owners of systems are asked to give waivers for things they don't understand, but are told the waivers must be given (fait accompli).",
+			{
+				what: 'People say "Sounds about right" when talking about cost items & full-time engineers (no shit, Sherlock).',
+				why: 'Budgeting and resource allocation should be data-driven and rigorously justified, not based on vague estimations or gut feelings.',
+			},
+			{
+				what: '$100M is ok because the previous project was $90M and after factoring in inflation it sounds about right.',
+				why: 'Justification should be based on the problem and value delivered, not historical spend. Anchoring costs to previous projects ignores current needs, market changes, and potential for optimization.',
+			},
+			{
+				what: 'The TAM is negligible and users are sticking around because of compliance reasons.',
+				why: 'A tiny market and forced user adoption are unsustainable. Projects should aim for genuine user value and market demand, not rely on regulatory mandates for existence.',
+			},
+			{
+				what: 'We need to build it ourselves because we have unique requirements',
+				why: "'Unique requirements' is a common but often incorrect diagnosis of your needs.",
+			},
+			{
+				what: 'We must develop our own product because we need to continue to serve past requirements.',
+				why: 'What you do needs to be focused on solving the actual problem now, not continue what you have been doing.',
+			},
+			{
+				what: 'We get the ultimate versions of licenses because we might need it in future.',
+				why: "It's wasteful. You wouldn't pay for it with your own money, why would you do it with someone else's? Scale up only when there is actual demand.",
+			},
+			{
+				what: 'A lot of cost is needed to almost completely mitigate X cyber security risk, but nevermind it was a theoretical risk in the first place.',
+				why: 'Resource allocation should be risk-based and proportional.',
+			},
+			{
+				what: 'We spend $10M over several years to reduce 1 headcount (might as well spend $150K on that headcount and save $9.5M).',
+				why: 'Digitalization and tech are the means to an end, not the end in itself.',
+			},
+			{
+				what: 'Might as well spend it since the FY is closing.',
+				why: "It's fiscally irresponsible and prioritizes spending over value creation.",
+			},
+			{
+				what: 'Everyone dumps their requirements onto a project to get funding.',
+				why: 'Scope creep driven by funding opportunism leads to unfocused and bloated projects.',
+			},
+			{
+				what: 'Staffers say they need to find a new justification to get funding for 2.0 of their project.',
+				why: 'This suggests a lack of initial clear objectives or achieved outcomes. Projects should be driven by clear value propositions and ongoing needs, not by the need to constantly invent justifications for continued funding.',
+			},
+			{
+				what: "Business owners of systems are asked to give waivers for things they don't understand, but are told the waivers must be given (fait accompli).",
+				why: "Forcing approvals on complex issues that stakeholders don't understand undermines accountability and sound decision-making.",
+			},
 		],
 		solutions: [
 			'Kill the product or project.',
@@ -550,14 +643,14 @@ export const guides: GuidesData[] = [
 			},
 		],
 		dealbreakers: [
-			'Cyber security guidelines hinder innovation - "It can\'t be done!"',
-			'Waivers are always being sought, especially for long obsolete (or EOS and EOL) components',
-			'Cyber security cannot be questioned and yet it is poorly explained/quantified/verifiable.',
-			"Business is not confident of taking on any risk because they can't understand them, so they just go the most conservative possible.",
-			'Tons of money is spent tightening up every possible doomsday scenario you can think of.',
-			"Cybersecurity lock-downs prevent business from achieving its product outcomes (then what's the point?).",
-			'We rely on threat risk assessments as scriptures, never mind that the scoring and likelihood multipliers are almost always done arbitrarily.',
-			'We drink our kool-aid so much that we believe in the illusion of layering on more frameworks and theories, not what top tier companies do.',
+			// 'Cyber security guidelines hinder innovation - "It can\'t be done!"',
+			// 'Waivers are always being sought, especially for long obsolete (or EOS and EOL) components',
+			// 'Cyber security cannot be questioned and yet it is poorly explained/quantified/verifiable.',
+			// "Business is not confident of taking on any risk because they can't understand them, so they just go the most conservative possible.",
+			// 'Tons of money is spent tightening up every possible doomsday scenario you can think of.',
+			// "Cybersecurity lock-downs prevent business from achieving its product outcomes (then what's the point?).",
+			// 'We rely on threat risk assessments as scriptures, never mind that the scoring and likelihood multipliers are almost always done arbitrarily.',
+			// 'We drink our kool-aid so much that we believe in the illusion of layering on more frameworks and theories, not what top tier companies do.',
 		],
 		solutions: [
 			'Discuss with the cyber security professional the threat vector, likelihood, severity, mitigation, timelines, cost, residual risk',
@@ -623,6 +716,10 @@ export const guides: GuidesData[] = [
 				what: 'There needs to be X approvals from xxx, yyy, zzz groups to make an edit to the website.',
 				why: "Bureaucracy crept in. If this is for a new tool, then it's also the case we bought a new tool and overlaid past processes.",
 			},
+			{
+				what: 'Work always costs a lot of man days and money, even for things that sound very simple.',
+				why: 'Finance processes (fixed payments for vendor work) can ironically encourage spending more than common sense dictates, because they can let vendors pocket the change if the job turned out easier. People also want to buffer so no one needs to reseek approval. End result, people add buffers, overestimate, and vendors pocket the "change".',
+			},
 		],
 		questions: [
 			{
@@ -641,8 +738,37 @@ export const guides: GuidesData[] = [
 				what: 'How does our UI look across device screen sizes?',
 				why: 'UIs have no excuse doing poorly on mobile responsiveness and accessibility.',
 			},
+			{
+				what: "What model are we using and why can't we use <insert model>?",
+				why: 'There are obvious differences across models, some do better than others. Like Claude 3.5 sonnet is really good with code and Gemini 2.0 or gpt 4.5 give me really good creative writing pieces. The business objective to keep up with the best in class and choice when there are advancements. The fear is always stagnating because of a lack of incentives to change.',
+			},
 		],
-		dealbreakers: [],
+		dealbreakers: [
+			{
+				what: "Users are telling us the app sucks, the app is slow, the app is useless. But we're sure the noise will go away eventually.",
+				why: "We only listen to feedback if it's good, or if our bosses are affected by it.",
+			},
+			{
+				what: "Team proudly presents top notched figures but hasn't validated measurement methodology or investigated outliers.",
+				why: "Lack of data integrity and actionable insights. At this point we might as well not even have measured, that'd be better than getting wrong conclusions from incorrect data.",
+			},
+			{
+				what: 'Operations relies on manual log reviews, powerpoint slides, and spreadsheets to detect and assess system outages.',
+				why: 'Relying on manual system checks signals a reactive operational model. Business outcomes benefit from proactive, automated monitoring, with clear triggers tied to business objectives.',
+			},
+			{
+				what: 'Stakeholder feedback is limited to "Make it look nicer" or "Let\'s improve the UI" without user research or defined UX goals.',
+				why: 'Reducing UX to purely visual UI tweaks betrays a fundamental misunderstanding of user-centered design. True UX is about understanding user needs and designing effective, efficient, and satisfying solutions.  Ignoring user research leads to poorly adopted products.',
+			},
+			{
+				what: 'No established KPIs or tracking mechanisms to measure productivity gains or cost savings after launch.',
+				why: 'Launching projects without a plan to quantify business impact makes it impossible to justify the investment and demonstrate ROI. Projects must be accountable for delivering tangible value, requiring measurement from the outset.',
+			},
+			{
+				what: 'You need a 5-level approval process for changing words on your app/website.',
+				why: 'Overly complex approval processes for routine tasks signal a bureaucratic culture that stifles agility and innovation.  In tech, quick adaptation is crucial. Excessive bureaucracy hinders progress and responsiveness.',
+			},
+		],
 		solutions: [],
 		suggestions: [],
 	},
