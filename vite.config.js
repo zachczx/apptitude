@@ -13,7 +13,7 @@ export default defineConfig({
 		sveltekit(),
 		tailwindcss(),
 		svg({
-			includePaths: ['./static/', './assets/svg/'],
+			includePaths: ['./static/', './assets/'],
 			svgoOptions: {
 				multipass: true,
 				plugins: [

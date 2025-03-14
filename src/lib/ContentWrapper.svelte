@@ -31,14 +31,13 @@
 	}: ContentWrapperProps = $props();
 </script>
 
-<div class="grid grid-cols-[auto_1fr_auto]">
-	<aside
-		class="lg:border-r-base-100 bg-base-100 vertical-offset sticky top-16 hidden w-full content-start overflow-y-auto lg:grid lg:border-r-2">
-		{#if showSideBar}
+<div class="grid {showSideBar ? 'grid-cols-[auto_1fr_auto]' : 'grid-cols-1'}">
+	{#if showSideBar}
+		<aside
+			class="lg:border-r-base-100 vertical-offset sticky top-[56px] hidden w-full min-w-72 content-start overflow-y-auto lg:grid lg:border-r-2">
 			<NavAside {page} {category} />
-		{/if}
-	</aside>
-
+		</aside>
+	{/if}
 	<main class="border-r-base-100 bg-base-100 w-full border-r-2">
 		<div class="w-full max-w-[900px] justify-self-center px-4 pt-4 pb-12 lg:pt-0 lg:pb-32">
 			<section class="mt-14 mb-8 grid gap-4 lg:mt-20 lg:mb-20">
@@ -71,6 +70,6 @@
 
 <style>
 	.vertical-offset {
-		height: calc(100dvh - 4.5rem);
+		height: calc(100dvh - 56px);
 	}
 </style>

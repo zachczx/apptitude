@@ -1,15 +1,4 @@
 <script lang="ts">
-	import Breadcrumbs from '$lib/Breadcrumbs.svelte';
-	import TablerLink from '$lib/assets/svg/TablerLink.svelte';
-	import oops3 from '$lib/assets/oops3.webp?enhanced&w=800;600;400';
-	import pandayawn from '$lib/assets/pandayawn.webp?enhanced&w=800;600;400';
-	import pandabutterfly from '$lib/assets/panda-butterfly.webp?enhanced&w=800;600;400';
-	import unoptimised1 from '$lib/assets/unoptimised1.webp?enhanced&w=800;600;400';
-	import unoptimised2 from '$lib/assets/unoptimised2.webp?enhanced&w=800;600;400';
-	import unoptimised3 from '$lib/assets/unoptimised3.webp?enhanced&w=800;600;400';
-	import unoptimised4 from '$lib/assets/unoptimised4.webp?enhanced&w=800;600;400';
-	import unoptimised5 from '$lib/assets/unoptimised5.webp?enhanced&w=800;600;400';
-	import unoptimised6 from '$lib/assets/unoptimised6.webp?enhanced&w=800;600;400';
 	import ContentWrapper from '$lib/ContentWrapper.svelte';
 	import AboutSegment from '$lib/AboutSegment.svelte';
 
@@ -42,10 +31,10 @@
 
 	<AboutSegment question="How did you gather the info?">
 		<p>
-			I referred liberally to past discussions while in Smart Nation Singapore, with tech agencies
-			in Govt, and with companies outside. I also watched and read a lot, mainly on YouTube. I enjoy
-			stuff on products, entrepreneurship, engineering and the business side of tech, so it was
-			trivial to construct a playlist of sorts over here.
+			I referred liberally to past discussions while in Smart Nation, with tech agencies in Govt,
+			and with companies outside. I also watched and read a lot, mainly on YouTube. I enjoy stuff on
+			products, entrepreneurship, engineering and the business side of tech, so it was trivial to
+			construct a playlist of sorts over here.
 		</p>
 	</AboutSegment>
 

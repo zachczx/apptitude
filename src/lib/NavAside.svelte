@@ -1,8 +1,10 @@
 <script lang="ts">
+	import { onMount } from 'svelte';
+
 	let { category = '', page = '' } = $props();
 </script>
 
-<ul class="menu rounded-box w-full text-base" data-pagefind-ignore>
+<ul class="menu rounded-box w-full text-base" id="bar" data-pagefind-ignore>
 	<li class="text-2xl font-medium lg:px-2 xl:px-4">
 		<a href="/learn" class={category === 'learn' && page === '' ? 'text-primary' : undefined}
 			>Learn</a>
@@ -235,7 +237,7 @@
 				Security</summary>
 		</a>
 	</li> -->
-	<li class="pb-4 lg:px-2 xl:px-4">
+	<li class="lg:px-2 xl:px-4">
 		<a href="/guides/running" class={page === 'running' ? 'text-primary font-medium' : undefined}
 			><summary class="flex items-center gap-4"
 				><svg
@@ -252,6 +254,25 @@
 						fill="currentColor"
 						d="M22.5 9C20.57 9 19 7.43 19 5.5S20.57 2 22.5 2S26 3.57 26 5.5S24.43 9 22.5 9m0-5c-.827 0-1.5.673-1.5 1.5S21.673 7 22.5 7S24 6.327 24 5.5S23.327 4 22.5 4" /></svg
 				>Running</summary>
+		</a>
+	</li>
+	<li class="pb-4 lg:px-2 xl:px-4">
+		<a
+			href="/guides/running"
+			class={page === 'communications' ? 'text-primary font-medium' : undefined}
+			><summary class="flex items-center gap-4">
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					width="1em"
+					height="1em"
+					class="carbon:chat"
+					viewBox="0 0 32 32"
+					><!-- Icon from Carbon by IBM - undefined --><path
+						fill="currentColor"
+						d="M17.74 30L16 29l4-7h6a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h9v2H6a4 4 0 0 1-4-4V8a4 4 0 0 1 4-4h20a4 4 0 0 1 4 4v12a4 4 0 0 1-4 4h-4.84Z" /><path
+						fill="currentColor"
+						d="M8 10h16v2H8zm0 6h10v2H8z" /></svg
+				>Communications</summary>
 		</a>
 	</li>
 
@@ -279,12 +300,6 @@
 				Tech Trippin'</summary>
 		</a>
 	</li>
-	<!-- <li
-		class="pt-4 text-xl font-bold lg:px-2 xl:px-4 {category === 'about'
-			? 'text-primary'
-			: undefined}">
-		<a href="/about">About</a>
-	</li> -->
 </ul>
 
 <style>

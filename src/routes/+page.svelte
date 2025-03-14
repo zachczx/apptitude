@@ -1,29 +1,16 @@
 <script lang="ts">
-	import heroNew2 from '$lib/assets/hero-new-2.webp?enhanced&w=2060;1536;1280;1024';
-	import heroNew2Background from '$lib/assets/hero-new-2.webp?enhanced&w=800';
-
 	import logo from '$lib/assets/svg/logo.svg?dataurl';
 
 	import { matchUrl } from '$lib/helpers';
 
-	import pandaAnnoyed from '$lib/assets/panda-annoyed.webp?enhanced&w=600;500;300';
-	import pandaSuperhero from '$lib/assets/panda-superhero.webp?enhanced&w=600';
-	import pandaAnnoyedAlt from '$lib/assets/panda-annoyed-alt.webp?enhanced&w=300';
-	import pandaSeniorMgmt from '$lib/assets/panda-senior-mgmt.webp?enhanced&w=300';
-	import pandaBoss from '$lib/assets/panda-boss.webp?enhanced&w=300';
-	import unoptimised1 from '$lib/assets/unoptimised1.webp?enhanced&w=300';
-
-	import fireBurning from '$lib/assets/fire-burning.webp?enhanced&w=300';
-	import pandaExhausted from '$lib/assets/panda-exhausted.webp?enhanced&w=300';
-	import pandaConfused from '$lib/assets/panda-confused.webp?enhanced&w=300';
-	import burning from '$lib/assets/burning.webp';
 	import { info } from './learn/data_learn';
 	import { guides } from './guides/data_guides';
 	import { gsap } from 'gsap';
 	import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 	import { onMount } from 'svelte';
 	import { goto } from '$app/navigation';
-	import bg from '$lib/assets/carolina-pimenta-ELO-NmuvFCM-unsplash.webp';
+	// import bg2 from '$lib/assets/daniel-lezuch-I4DcRJ_Evd8-unsplash.webp';
+	import bg2 from '$lib/assets/thomas-jensen-GztZ77a0tAM-unsplash.jpg';
 
 	let { data } = $props();
 	let pageName = $state('Apptitude');
@@ -88,7 +75,7 @@
 
 <div
 	class="to-base-100 grid grid-cols-1 content-center justify-items-start lg:min-h-dvh"
-	style="background: url({bg}) no-repeat; background-size:cover; background-blend-mode: multiply;background-color: rgba(0,0,0,.7);"
+	style="background: url({bg2}) no-repeat; background-position: center bottom; background-size:cover; background-blend-mode: multiply; background-color: rgba(22, 25, 32, .9);"
 	data-pagefind-ignore>
 	<section class="mx-auto mt-20 w-full py-24">
 		<div class="w-full max-w-(--breakpoint-2xl) self-center justify-self-center px-2">
@@ -105,9 +92,11 @@
 					>Better</span
 				>.
 			</h1>
+			<p class="mb-4 text-start lg:text-2xl">
+				Whether you're building or leading in tech, you need core knowledge and business instincts.
+			</p>
 			<p class="mb-12 text-start lg:text-2xl">
-				Building or leading, you need basic tech knowledge and business instincts. Let's climb those
-				steps together.
+				Get the resources you need to upgrade your internals.
 			</p>
 
 			<div class="mb-12 flex flex-wrap justify-center gap-4 lg:justify-start">
@@ -148,7 +137,7 @@
 
 		<div class="grid content-start gap-8 lg:grid-cols-2">
 			<div
-				class="border-base-content/30 grid content-start gap-4 rounded-2xl border p-4 lg:ms-20 lg:p-8">
+				class="border-base-content/30 grid content-start gap-4 rounded-3xl border p-4 lg:ms-20 lg:p-8">
 				<button
 					class="cursor-pointer py-4 text-center text-4xl font-bold lg:text-6xl"
 					onclick={() => (activeCarousel = 'how')}>
@@ -164,7 +153,7 @@
 			</div>
 
 			<div
-				class="border-base-content/30 grid content-start gap-4 rounded-2xl border p-4 lg:me-20 lg:p-8">
+				class="border-base-content/30 grid content-start gap-4 rounded-3xl border p-4 lg:me-20 lg:p-8">
 				<button
 					onclick={() => (activeCarousel = 'why')}
 					class="cursor-pointer py-4 text-center text-4xl font-bold lg:text-6xl">
@@ -348,10 +337,110 @@
 <section
 	class="mx-auto mt-12 grid min-h-[40vh] max-w-(--breakpoint-2xl) content-center justify-items-center gap-x-8 gap-y-8 px-2 py-12"
 	data-pagefind-ignore>
+	<h2 class="text-center text-4xl font-medium lg:col-span-1 lg:px-20 lg:text-6xl">
+		Who Is This For?
+	</h2>
+	<div class="mb-12 text-center">
+		People who do digitalization, digital products. People who need to make decisions, govern, give
+		funding.
+	</div>
+	<div class="grid w-full max-w-[800px] gap-8 lg:grid-cols-2">
+		<ul class="border-primary relative grid w-full gap-y-8 rounded-3xl border p-12">
+			<li class="mb-8">
+				<h3 class="text-primary text-4xl font-medium lg:text-6xl">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="32"
+						height="32"
+						class="icon-park-twotone:muscle text-primary mb-4 h-16 w-16"
+						viewBox="0 0 48 48"
+						><!-- Icon from All by undefined - undefined --><defs
+							><mask id="ipTMuscle0"
+								><g fill="none"
+									><path
+										fill="#555"
+										d="M21.37 36c1.45-5.25 6.52-9 12.36-8.38c5.56.59 9.98 5.28 10.26 10.86c.07 1.47-.13 2.88-.56 4.19c-.26.8-1.04 1.33-1.89 1.33H11.758c-5.048 0-8.834-4.619-7.844-9.569L10 4h12l4 7l-8.57 6.13L15 14" /><path
+										stroke="#fff"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										stroke-miterlimit="2"
+										stroke-width="4"
+										d="M21.37 36c1.45-5.25 6.52-9 12.36-8.38c5.56.59 9.98 5.28 10.26 10.86c.07 1.47-.13 2.88-.56 4.19c-.26.8-1.04 1.33-1.89 1.33H11.758c-5.048 0-8.834-4.619-7.844-9.569L10 4h12l4 7l-8.57 6.13L15 14m2.44 3.13L22 34" /></g
+								></mask
+							></defs
+						><path fill="currentColor" d="M0 0h48v48H0z" mask="url(#ipTMuscle0)" /></svg
+					>Doers
+				</h3>
+			</li>
+			<li class="">
+				<h4 class="mb-2 font-bold">Business Devt Lead</h4>
+				<p class="text-base-content/70">
+					Business benefits if digitalization is done well & cheaper
+				</p>
+			</li>
+			<li class="">
+				<h4 class="mb-2 font-bold">Project Managers</h4>
+				<p class="text-base-content/70">Run things better</p>
+			</li>
+			<li class="">
+				<h4 class="mb-2 font-bold">Developer</h4>
+				<p class="text-base-content/70">Manage people on the other side more effectively</p>
+			</li>
+			<li class="">
+				<h4 class="mb-2 font-bold">Digitalization Lead</h4>
+				<p class="text-base-content/70">Do digitalization better</p>
+			</li>
+		</ul>
+		<ul class="border-secondary relative grid w-full content-start gap-y-8 rounded-3xl border p-12">
+			<li class="mb-8">
+				<h3 class="text-secondary text-4xl font-medium lg:text-6xl">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="32"
+						height="32"
+						class="icon-park-twotone:user-business text-secondary mb-4 h-16 w-16"
+						viewBox="0 0 48 48"
+						><!-- Icon from IconPark TwoTone by ByteDance - https://github.com/bytedance/IconPark/blob/master/LICENSE --><defs
+							><mask id="ipTUserBusiness0"
+								><g
+									fill="none"
+									stroke="#fff"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									stroke-width="4"
+									><circle cx="24" cy="12" r="8" fill="#555" /><path
+										d="M42 44c0-9.941-8.059-18-18-18S6 34.059 6 44" /><path
+										fill="#555"
+										d="m24 44l4-5l-4-13l-4 13z" /></g
+								></mask
+							></defs
+						><path fill="currentColor" d="M0 0h48v48H0z" mask="url(#ipTUserBusiness0)" /></svg
+					>Leaders
+				</h3>
+			</li>
+			<li class="">
+				<h4 class="mb-2 font-bold">Business Owners</h4>
+				<p class="text-base-content/70">It's your responsibility</p>
+			</li>
+			<li class="">
+				<h4 class="mb-2 font-bold">Product Owners</h4>
+				<p class="text-base-content/70">Your head rolls if your product messes up</p>
+			</li>
+			<li class="">
+				<h4 class="mb-2 font-bold">Funder</h4>
+				<p class="text-base-content/70">You're giving money, of course you should git gud</p>
+			</li>
+		</ul>
+	</div>
+</section>
+
+<section
+	class="mx-auto mt-12 grid min-h-[40vh] max-w-(--breakpoint-2xl) content-center justify-items-center gap-x-8 gap-y-8 px-2 py-12"
+	data-pagefind-ignore>
 	<h2 class="content-center text-4xl font-medium lg:text-6xl">
 		Try <a href="/"><img src={logo} alt="Apptitude logo" class="inline h-10 lg:h-20" /></a>
 	</h2>
-	<ul class="mb-12 grid gap-y-4 justify-self-center px-2 lg:text-2xl">
+	<ul class="mb-12 grid gap-y-4 justify-self-center px-2">
 		<li class="group flex items-center gap-4">
 			<svg
 				xmlns="http://www.w3.org/2000/svg"

@@ -7,9 +7,9 @@
 </script>
 
 <nav
-	class="bg-base-100 border-b-base-content/20 fixed inset-x-0 top-0 z-10 flex h-14 border-b-2 lg:grid lg:grid-cols-3 lg:content-center"
+	class="bg-base-100 border-b-base-content/20 fixed inset-x-0 top-0 z-10 h-[56px] border-b-2 lg:grid lg:grid-cols-3 lg:content-center"
 	data-pagefind-ignore>
-	<div class="flex items-center px-2 lg:px-4">
+	<div class="flex items-center justify-between px-2 lg:px-4">
 		<div class="dropdown lg:hidden">
 			<div
 				tabindex="0"
@@ -87,7 +87,7 @@
 							stroke-width="1.5"
 							d="M6.583 7.238c3.007.53 4.799 1.639 5.417 2.276c.618-.637 2.41-1.746 5.418-2.276c1.523-.269 2.285-.403 2.933.112C21 7.864 21 8.7 21 10.372v6.007c0 1.529 0 2.293-.416 2.77c-.417.477-1.333.639-3.166.962c-1.635.288-2.91.747-3.833 1.208c-.909.454-1.363.681-1.585.681s-.677-.227-1.585-.68c-.923-.462-2.198-.921-3.832-1.21c-1.834-.322-2.75-.484-3.167-.961S3 17.908 3 16.379v-6.007C3 8.7 3 7.864 3.649 7.35c.648-.515 1.41-.38 2.933-.112M12 9v13M8.5 3.059a6.29 6.29 0 0 1 7 .01M13.622 5.5a3.14 3.14 0 0 0-3.244-.01"
 							color="currentColor" /></svg
-					>Guides</a>
+					>My Views</a>
 
 				<a class="active:text-primary p-1 hover:rounded-b-lg active:font-bold" href="/about"
 					><svg
@@ -118,22 +118,38 @@
 				height="56"
 				width="200"
 				class="h-12" /></a>
+		<div class="flex items-center justify-end text-lg lg:hidden">
+			<a href="/search" class="px-2 lg:px-4" aria-label="search"
+				><svg
+					xmlns="http://www.w3.org/2000/svg"
+					width="1.3em"
+					height="1.3em"
+					viewBox="0 0 24 24"
+					fill="none"
+					stroke="currentColor"
+					stroke-width="2"
+					stroke-linecap="round"
+					stroke-linejoin="round"
+					class="icon icon-tabler icons-tabler-outline icon-tabler-search"
+					><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path
+						d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" /><path d="M21 21l-6 -6" /></svg>
+			</a>
+		</div>
 	</div>
 	<div class="hidden items-center justify-center lg:flex">
 		<ul class="menu menu-horizontal flex w-full justify-around font-medium">
-			<!-- removed menu class -->
 			<li aria-current={matchUrl(data.url, '/learn') === 0 ? 'page' : undefined}>
 				<a class="hover:text-primary text-lg hover:bg-transparent" href="/learn">Learn</a>
 			</li>
 			<li aria-current={matchUrl(data.url, '/guides') === 0 ? 'page' : undefined}>
-				<a class="hover:text-primary text-lg hover:bg-transparent" href="/guides">Guides</a>
+				<a class="hover:text-primary text-lg hover:bg-transparent" href="/guides">My Views</a>
 			</li>
 			<li aria-current={matchUrl(data.url, '/about') === 0 ? 'page' : undefined}>
 				<a class="hover:text-primary text-lg hover:bg-transparent" href="/about">About</a>
 			</li>
 		</ul>
 	</div>
-	<div class="navbar-end flex w-full items-center justify-end text-lg">
+	<div class="hidden items-center justify-end text-lg lg:flex">
 		<a href="/search" class="px-2 lg:px-4" aria-label="search"
 			><svg
 				xmlns="http://www.w3.org/2000/svg"

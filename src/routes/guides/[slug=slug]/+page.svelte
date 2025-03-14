@@ -9,7 +9,6 @@
 	import piggyBank from '$lib/assets/piggy-bank.webp?enhanced&w=300';
 	import problem from '$lib/assets/problem.webp?enhanced&w=300';
 	import product from '$lib/assets/product.webp?enhanced&w=300';
-	import productAlt from '$lib/assets/product-alt.webp?enhanced&w=300';
 	import { onMount } from 'svelte';
 	import NavToc from '$lib/NavToc.svelte';
 	import { fade } from 'svelte/transition';
