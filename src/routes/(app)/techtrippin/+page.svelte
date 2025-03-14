@@ -9,53 +9,22 @@
 	import ContentWrapper from '$lib/ContentWrapper.svelte';
 	import { type Contents } from '$lib/Types';
 	import { onMount } from 'svelte';
+	import NewWrap from '$lib/NewWrap.svelte';
+	import NavToc from '$lib/NavToc.svelte';
 
 	let { data } = $props();
-
-	let contents: Contents[] = [];
-	for (let i = 0; i < techtrippin.length; i++) {
-		const combinedId = 'content-' + String(techtrippin[i].id);
-		contents[i] = { id: combinedId, title: techtrippin[i].title };
-	}
 
 	let currentSection: any = $state();
 	let path: string[] = $derived(data.url.split('/'));
 	let category: string = $derived(path[1]);
 	let page: string = $derived(path[2]);
-
-	onMount(() => {
-		let contentsCollection = document.getElementsByClassName(
-			'contents-observer',
-		) as HTMLCollectionOf<HTMLDataListElement>;
-		let observer = new IntersectionObserver(
-			(entries) => {
-				entries.forEach((entry) => {
-					if (entry.isIntersecting) {
-						currentSection = entry.target.id;
-					}
-				});
-			},
-			{
-				rootMargin: '-10% 0% -10% 0%',
-				threshold: 0,
-			},
-		);
-
-		for (let i of contentsCollection) {
-			observer.observe(i);
-		}
-	});
 </script>
 
 <svelte:head>
 	<title>Apptitude - Tech Trippin'</title>
 </svelte:head>
 
-<ContentWrapper
-	urlSelf={data.url}
-	{page}
-	{category}
-	{currentSection}
+<NewWrap
 	title="Tech Trippin'"
 	subtitle="Words I have heard from people working on tech in Govt that left me scratching my head.">
 	<ul class="grid gap-y-4">
@@ -79,4 +48,7 @@
 			{/if}
 		{/each}
 	</ul>
-</ContentWrapper>
+	{#snippet toc()}
+		<NavToc {currentSection} />
+	{/snippet}
+</NewWrap>

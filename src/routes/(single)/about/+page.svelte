@@ -1,6 +1,7 @@
 <script lang="ts">
 	import ContentWrapper from '$lib/ContentWrapper.svelte';
 	import AboutSegment from '$lib/AboutSegment.svelte';
+	import NewWrap from '$lib/NewWrap.svelte';
 
 	let { data } = $props();
 
@@ -11,12 +12,7 @@
 	<title>Apptitude - About</title>
 </svelte:head>
 
-<ContentWrapper
-	title="About"
-	category=""
-	{page}
-	urlSelf={data.url}
-	subtitle="If you need an opinion, I have plenty to spare.">
+<NewWrap title="About" subtitle="If you need an opinion, I have plenty to spare.">
 	<AboutSegment question="Who are you?">
 		<p>I work in the public sector and I did tech related stuff in the last few years.</p>
 	</AboutSegment>
@@ -45,4 +41,5 @@
 			those who don't.
 		</p>
 	</AboutSegment>
-</ContentWrapper>
+	{#snippet toc()}{/snippet}
+</NewWrap>

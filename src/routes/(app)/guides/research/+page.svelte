@@ -14,6 +14,7 @@
 	import { onMount } from 'svelte';
 	import NavToc from '$lib/NavToc.svelte';
 	import ContentWrapper from '$lib/ContentWrapper.svelte';
+	import NewWrap from '$lib/NewWrap.svelte';
 	let { data } = $props();
 
 	//Props needed for PageWrapper component
@@ -56,8 +57,7 @@
 <svelte:head>
 	<title>Apptitude - Research</title>
 </svelte:head>
-
-<ContentWrapper urlSelf={data.url} {page} {category} {contents} {currentSection} title="Research">
+<NewWrap title="Research">
 	<article
 		class="prose-section:mt-20 prose-h2:mb-6 prose-h3:mb-6 prose-h3:mt-12 prose-h5:mb-4 prose-p:mb-4 prose-ul:mb-4 mt-12 space-y-20 pb-10">
 		<section id="empathize" class="contents-observer grid grid-cols-4 gap-x-8 gap-y-16">
@@ -389,7 +389,10 @@
 			</ul>
 		</section>
 	</article>
-</ContentWrapper>
+	{#snippet toc()}
+		<NavToc {contents} {currentSection} />
+	{/snippet}
+</NewWrap>
 
 <style>
 </style>

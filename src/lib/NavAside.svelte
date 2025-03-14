@@ -4,7 +4,7 @@
 	let { category = '', page = '' } = $props();
 </script>
 
-<ul class="menu rounded-box w-full text-base" id="bar" data-pagefind-ignore>
+<ul class="menu rounded-box w-full text-base" data-pagefind-ignore>
 	<li class="text-2xl font-medium lg:px-2 xl:px-4">
 		<a href="/learn" class={category === 'learn' && page === '' ? 'text-primary' : undefined}
 			>Learn</a>
@@ -258,7 +258,7 @@
 	</li>
 	<li class="pb-4 lg:px-2 xl:px-4">
 		<a
-			href="/guides/running"
+			href="/guides/communications"
 			class={page === 'communications' ? 'text-primary font-medium' : undefined}
 			><summary class="flex items-center gap-4">
 				<svg

@@ -3,8 +3,8 @@
 
 	import { matchUrl } from '$lib/helpers';
 
-	import { info } from './learn/data_learn';
-	import { guides } from './guides/data_guides';
+	import { info } from './(app)/learn/data_learn';
+	import { guides } from './(app)/guides/data_guides';
 	import { gsap } from 'gsap';
 	import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 	import { onMount } from 'svelte';

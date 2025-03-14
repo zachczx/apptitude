@@ -13,6 +13,7 @@
 	import NavToc from '$lib/NavToc.svelte';
 	import ContentWrapper from '$lib/ContentWrapper.svelte';
 	import GuideExampleLong from '$lib/GuideExampleLong.svelte';
+	import NewWrap from '$lib/NewWrap.svelte';
 	let { data } = $props();
 
 	//Props needed for PageWrapper component
@@ -57,13 +58,7 @@
 	<title>Apptitude - Product Plan 101</title>
 </svelte:head>
 
-<ContentWrapper
-	urlSelf={data.url}
-	{page}
-	{category}
-	{contents}
-	{currentSection}
-	title="Product Plan 101">
+<NewWrap title="Product Plan 101">
 	<article
 		class="prose-section:mt-20 prose-h2:mb-6 prose-h3:mb-6 prose-h3:mt-12 prose-h5:mb-4 prose-p:mb-4 space-y-20 pb-10">
 		<section
@@ -1020,4 +1015,7 @@
 			</ul>
 		</section>
 	</article>
-</ContentWrapper>
+	{#snippet toc()}
+		<NavToc {contents} {currentSection} />
+	{/snippet}
+</NewWrap>

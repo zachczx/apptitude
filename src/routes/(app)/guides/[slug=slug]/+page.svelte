@@ -14,6 +14,7 @@
 	import { fade } from 'svelte/transition';
 	import ContentWrapper from '$lib/ContentWrapper.svelte';
 	import { goto } from '$app/navigation';
+	import NewWrap from '$lib/NewWrap.svelte';
 	let { data } = $props();
 
 	//for byline
@@ -63,13 +64,7 @@
 </svelte:head>
 
 {#if data.post}
-	<ContentWrapper
-		urlSelf={data.url}
-		{page}
-		{contents}
-		{category}
-		{currentSection}
-		title={data.post.name}>
+	<NewWrap title={data.post.name}>
 		<article
 			class="prose-section:mt-20 prose-h2:mb-6 prose-h3:mb-6 prose-h3:mt-12 prose-h5:mb-4 prose-p:mb-4 grid gap-y-32 pb-10">
 			{#if data.post.definitions}
@@ -214,7 +209,10 @@
 			</div>
 		</section> -->
 		</article>
-	</ContentWrapper>
+		{#snippet toc()}
+			<NavToc {contents} {currentSection} />
+		{/snippet}
+	</NewWrap>
 {/if}
 
 <style>

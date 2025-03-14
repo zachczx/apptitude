@@ -1,6 +1,7 @@
 <script lang="ts">
 	import ErrorAquarium from '$lib/assets/error-aquarium.svg?dataurl';
 	import ContentWrapper from '$lib/ContentWrapper.svelte';
+	import NewWrap from '$lib/NewWrap.svelte';
 	let { data } = $props();
 	let currentSection: any = $state();
 	let path: string[] = $derived(data.url.split('/'));
@@ -8,7 +9,7 @@
 	let page: string = $derived(path[2]);
 </script>
 
-<ContentWrapper urlSelf={data.url} {page} {category} title="Under construction">
+<NewWrap>
 	<div class="grid content-start justify-items-center gap-8">
 		<img src={ErrorAquarium} alt="Error" class="h-72" />
 		<div class="grid gap-2 text-center">
@@ -16,4 +17,5 @@
 			<p>I haven't written stuff here yet!</p>
 		</div>
 	</div>
-</ContentWrapper>
+	{#snippet toc()}{/snippet}
+</NewWrap>

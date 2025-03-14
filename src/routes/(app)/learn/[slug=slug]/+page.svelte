@@ -11,6 +11,8 @@
 	import { onMount } from 'svelte';
 	import CarbonCheckmarkFilled from '$lib/assets/svg/CarbonCheckmarkFilled.svelte';
 	import SimpleIconsKnowledgeBase from '$lib/assets/svg/SimpleIconsKnowledgeBase.svelte';
+	import NewWrap from '$lib/NewWrap.svelte';
+	import NavToc from '$lib/NavToc.svelte';
 	let contents: Contents[] = [
 		{ id: 'topics', title: 'Topics' },
 		{ id: 'answers', title: 'Find Answers To...' },
@@ -54,13 +56,7 @@
 	<title>Apptitude - {data.post?.name}</title>
 </svelte:head>
 
-<ContentWrapper
-	urlSelf={data.url}
-	{page}
-	{category}
-	{contents}
-	{currentSection}
-	title="Learn: {data.post?.name}">
+<NewWrap title="Learn: {data.post?.name}">
 	<div class="prose-h2:mb-6 prose-h3:mb-6 grid gap-y-20">
 		<section id="topics" class="contents-observer grid gap-4">
 			<h2 class="border-b-base-content/20 mb-4 border-b-4 pb-2 text-2xl font-bold lg:text-4xl">
@@ -185,7 +181,10 @@
 			{/if}
 		</section>
 	</div>
-</ContentWrapper>
+	{#snippet toc()}
+		<NavToc {contents} {currentSection} />
+	{/snippet}
+</NewWrap>
 
 <style>
 	li {

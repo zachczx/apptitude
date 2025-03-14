@@ -7,6 +7,8 @@
 	import CarbonCheckmarkFilled from '$lib/assets/svg/CarbonCheckmarkFilled.svelte';
 	import SimpleIconsKnowledgeBase from '$lib/assets/svg/SimpleIconsKnowledgeBase.svelte';
 	import NewCrumbs from '$lib/NewCrumbs.svelte';
+	import NewWrap from '$lib/NewWrap.svelte';
+	import NavToc from '$lib/NavToc.svelte';
 
 	let { data } = $props();
 	let currentSection: any = $state();
@@ -22,13 +24,7 @@
 	<title>Apptitude - Learn</title>
 </svelte:head>
 
-<ContentWrapper
-	urlSelf={data.url}
-	{page}
-	{category}
-	{currentSection}
-	title="Learn Bytes"
-	{subtitle}>
+<NewWrap title="Learn Bytes" {subtitle}>
 	<section class="grid gap-y-20">
 		<div>
 			<h2 class="mb-4 text-4xl font-bold lg:text-6xl">Basic</h2>
@@ -100,4 +96,7 @@
 			</div>
 		</div>
 	</section>
-</ContentWrapper>
+	{#snippet toc()}
+		<NavToc {currentSection} />
+	{/snippet}
+</NewWrap>
