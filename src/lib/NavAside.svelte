@@ -1,13 +1,10 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
-
 	let { category = '', page = '' } = $props();
 </script>
 
 <ul class="menu rounded-box w-full text-base" data-pagefind-ignore>
 	<li class="text-2xl font-medium lg:px-2 xl:px-4">
-		<a href="/learn" class={category === 'learn' && page === '' ? 'text-primary' : undefined}
-			>Learn</a>
+		<a href="/learn" class={category === 'learn' ? 'text-primary' : undefined}>Learn</a>
 	</li>
 	<li class="lg:px-2 xl:px-4">
 		<a href="/learn/basics" class={page === 'basics' ? 'text-primary font-medium' : undefined}
@@ -232,8 +229,7 @@
 	</li>
 
 	<li class="pt-4 text-2xl font-medium lg:px-2 xl:px-4">
-		<a href="/guides" class={category === 'guides' && page === '' ? 'text-primary' : undefined}
-			>My Views</a>
+		<a href="/guides" class={category === 'guides' ? 'text-primary' : undefined}>Suggestions</a>
 	</li>
 
 	<li class="lg:px-2 xl:px-4">

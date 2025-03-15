@@ -14,7 +14,7 @@
 		<img src={ErrorAquarium} alt="Error" class="h-72" />
 		<div class="grid gap-2 text-center">
 			<h1 class="text-4xl lg:text-6xl">Under construction</h1>
-			<p>I haven't written stuff here yet!</p>
+			<p>Intending to, but haven't gotten to writing stuff on this yet!</p>
 		</div>
 	</div>
 	{#snippet toc()}{/snippet}

@@ -21,7 +21,7 @@
 				same - your PM, bosses, teammates, vendors.`;
 </script>
 
-<NewWrap title="My Views" {subtitle}>
+<NewWrap title="Suggestions" {subtitle}>
 	<div class="group card bg-base-100 mb-12 border border-gray-700 shadow-xl">
 		<div class="card-body grid lg:grid-cols-2">
 			<div class="lg:px-8">

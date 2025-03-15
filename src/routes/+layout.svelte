@@ -1,9 +1,21 @@
 <script>
 	import logo from '$lib/assets/svg/logo.svg?dataurl';
-	import TablerSquareRoundedPlusFilled from '$lib/assets/svg/TablerSquareRoundedPlusFilled.svelte';
 	import { matchUrl } from '$lib/helpers';
 	import '../app.css';
+	import { onNavigate } from '$app/navigation';
 	let { data, children } = $props();
+	let cat = $derived(data.category);
+
+	onNavigate((navigation) => {
+		if (!document.startViewTransition) return;
+
+		return new Promise((resolve) => {
+			document.startViewTransition(async () => {
+				resolve();
+				await navigation.complete;
+			});
+		});
+	});
 </script>
 
 <nav
@@ -87,7 +99,7 @@
 							stroke-width="1.5"
 							d="M6.583 7.238c3.007.53 4.799 1.639 5.417 2.276c.618-.637 2.41-1.746 5.418-2.276c1.523-.269 2.285-.403 2.933.112C21 7.864 21 8.7 21 10.372v6.007c0 1.529 0 2.293-.416 2.77c-.417.477-1.333.639-3.166.962c-1.635.288-2.91.747-3.833 1.208c-.909.454-1.363.681-1.585.681s-.677-.227-1.585-.68c-.923-.462-2.198-.921-3.832-1.21c-1.834-.322-2.75-.484-3.167-.961S3 17.908 3 16.379v-6.007C3 8.7 3 7.864 3.649 7.35c.648-.515 1.41-.38 2.933-.112M12 9v13M8.5 3.059a6.29 6.29 0 0 1 7 .01M13.622 5.5a3.14 3.14 0 0 0-3.244-.01"
 							color="currentColor" /></svg
-					>My Views</a>
+					>Suggestions</a>
 
 				<a class="active:text-primary p-1 hover:rounded-b-lg active:font-bold" href="/about"
 					><svg
@@ -139,13 +151,25 @@
 	<div class="hidden items-center justify-center lg:flex">
 		<ul class="menu menu-horizontal flex w-full justify-around font-medium">
 			<li aria-current={matchUrl(data.url, '/learn') === 0 ? 'page' : undefined}>
-				<a class="hover:text-primary text-lg hover:bg-transparent" href="/learn">Learn</a>
+				<a
+					class="hover:text-primary text-lg hover:bg-transparent {cat === 'learn'
+						? 'highlight'
+						: undefined}"
+					href="/learn">Learn</a>
 			</li>
 			<li aria-current={matchUrl(data.url, '/guides') === 0 ? 'page' : undefined}>
-				<a class="hover:text-primary text-lg hover:bg-transparent" href="/guides">My Views</a>
+				<a
+					class="hover:text-primary text-lg hover:bg-transparent {cat === 'guides'
+						? 'highlight'
+						: undefined}"
+					href="/guides">Suggestions</a>
 			</li>
 			<li aria-current={matchUrl(data.url, '/about') === 0 ? 'page' : undefined}>
-				<a class="hover:text-primary text-lg hover:bg-transparent" href="/about">About</a>
+				<a
+					class="hover:text-primary text-lg hover:bg-transparent {cat === 'about'
+						? 'highlight'
+						: undefined}"
+					href="/about">About</a>
 			</li>
 		</ul>
 	</div>
@@ -169,3 +193,16 @@
 </nav>
 
 {@render children()}
+
+<style>
+	.highlight::after {
+		content: '';
+		height: 0.25rem;
+		width: 100%;
+		position: absolute;
+		top: 110%;
+		left: 0;
+		background-color: var(--color-primary);
+		view-transition-name: current-page;
+	}
+</style>

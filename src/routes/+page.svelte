@@ -93,7 +93,7 @@
 				<a
 					href="/guides"
 					class="btn btn-outline btn-secondary rounded-full py-8 text-lg font-medium lg:px-8 lg:text-2xl"
-					>My Views</a>
+					>Suggestions</a>
 			</div>
 		</div>
 	</section>
@@ -457,7 +457,7 @@
 				href="/guides"
 				aria-label="See guides"
 				class="group hover:border-b-primary hover:text-primary border-b-base-content ms-2 flex gap-2 border-b"
-				>Read My Views<svg
+				>Read Suggestions<svg
 					xmlns="http://www.w3.org/2000/svg"
 					width="1.3em"
 					height="1.3em"
