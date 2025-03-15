@@ -62,10 +62,10 @@
 			<h2 class="border-b-base-content/20 mb-4 border-b-4 pb-2 text-2xl font-bold lg:text-4xl">
 				Topics
 			</h2>
-			<ul class="flex flex-wrap items-center">
+			<ul class="gapy-2 flex flex-wrap items-center gap-x-8">
 				{#each data.post.topics as topic}
-					<li class="me-4">
-						<SimpleIconsKnowledgeBase class="mb-1 inline text-sm text-lime-200" />
+					<li class="flex items-center gap-2">
+						<SimpleIconsKnowledgeBase class="text-sm" />
 						{topic}
 					</li>
 				{/each}
