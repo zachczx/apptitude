@@ -21,23 +21,24 @@ export const info: LearnData[] = [
 		intro: 'The world of computing and modern software development.',
 		slug: 'basics',
 		topics: [
-			'computing',
-			'binary',
-			'cpu',
-			'kernel',
-			'open source',
-			'linux',
-			'assembly',
 			'algorithms',
-			'runtime',
+			'apps',
+			'assembly',
+			'binary',
+			'c',
 			'compiler',
+			'computing',
+			'cpu',
+			'development',
 			'gpu',
+			'internet',
+			'kernel',
+			'linux',
 			'memory',
 			'networking',
-			'internet',
-			'development',
+			'open source',
+			'runtime',
 			'software',
-			'apps',
 		],
 		questions: [
 			'What is a computer?',
@@ -108,7 +109,6 @@ export const info: LearnData[] = [
 				'https://youtube.com/embed/LN0ucKNX0hc',
 				'https://youtube.com/embed/-uleG_Vecis',
 				'https://youtube.com/embed/vqs_0W-MSB0',
-
 				'https://youtube.com/embed/gI-qXk7XojA',
 				'https://youtube.com/embed/M5BZou6C01w',
 				'https://youtube.com/embed/rL8X2mlNHPM',
@@ -144,10 +144,10 @@ export const info: LearnData[] = [
 	},
 	{
 		id: 2,
-		name: 'Basics (Web)',
+		name: 'The Internet',
 		intro: 'The web and the cloud.',
 		slug: 'basics-web',
-		topics: ['internet', 'http', 'https', 'cloud', 'ssl', 'html', 'css', 'javascript', 'php'],
+		topics: ['cloud', 'css', 'html', 'http', 'https', 'internet', 'javascript', 'php', 'ssl'],
 		questions: [
 			'How does the Internet work?',
 			'What is HTML, CSS, Javascript, Web Assembly?',
@@ -292,7 +292,7 @@ export const info: LearnData[] = [
 		intro:
 			'Know what the free world uses for work. See how much more efficient and better work can be.',
 		slug: 'apps',
-		topics: ['SaaS', 'apps', 'applications', 'AWS', 'Azure', 'GCP', 'M365', 'Workspace'],
+		topics: ['apps', 'applications', 'aws', 'azure', 'gcp', 'm365', 'saas', 'workspace'],
 		questions: [
 			'Cloud services on AWS, Azure, Google Cloud Platform',
 			'Do office work on M365, Google Workspace, LibreOffice',
@@ -388,7 +388,7 @@ export const info: LearnData[] = [
 		intro:
 			'Great things have been built centrally by top tier people, stop recreating old grounds and get with the times.',
 		slug: 'wog',
-		topics: ['SG Tech Stack', 'GSIB', 'GCC', 'GDC', 'SG-Teams'],
+		topics: ['gcc', 'gdc', 'gsib', 'sg tech stack', 'sg-teams'],
 		questions: [
 			'Trade offs between going Infrastructure-as-a-Service, Platform-as-a-Service, Software-as-a-Service',
 			'Mainstays in WOG networks, especially the endpoint device, network, and backend infrastructure',
@@ -461,17 +461,18 @@ export const info: LearnData[] = [
 	{
 		id: 5,
 		name: 'UX (I)',
-		intro: 'If you want people to actually use your app, try to make it not suck.',
+		intro: 'If you want people to use your app, try to make it not suck.',
 		slug: 'ux',
 		topics: [
-			'ux',
-			'human-centered design',
+			'accessibility',
 			'design thinking',
 			'empathy',
-			'problem',
-			'pain-point',
-			'stories',
+			'human-centered design',
 			'journey',
+			'pain-point',
+			'problem',
+			'stories',
+			'ux',
 		],
 		questions: [
 			'What is UX?',
@@ -610,16 +611,7 @@ export const info: LearnData[] = [
 		name: 'Products (I)',
 		intro: 'Make good products, listen to customers, solve user problems.',
 		slug: 'products',
-		topics: [
-			'project',
-			'management',
-			'leadership',
-			'strategy',
-			'management',
-			'execution',
-			'startups',
-			'pivot',
-		],
+		topics: ['execution', 'leadership', 'management', 'pivot', 'project', 'startups', 'strategy'],
 		questions: [
 			"What's difference between project and product management?",
 			'What is product-market fit?',
@@ -726,15 +718,14 @@ export const info: LearnData[] = [
 		intro: 'Make good products, listen to customers, solve user problems.',
 		slug: 'products-advanced',
 		topics: [
+			'execution',
+			'leadership',
+			'management',
+			'pivot',
 			'product-market fit',
 			'project',
-			'management',
-			'leadership',
-			'strategy',
-			'management',
-			'execution',
 			'startups',
-			'pivot',
+			'strategy',
 		],
 		questions: [
 			"What's difference between project and product management?",
@@ -880,15 +871,15 @@ export const info: LearnData[] = [
 		intro: 'If you want people to actually use your app, try to make it not suck.',
 		slug: 'ux-advanced',
 		topics: [
-			'ux',
-			'contextual inquiry',
-			'interview',
 			'accessibility',
-			'usability',
+			'contextual inquiry',
 			'interaction',
-			'motion',
-			'visual',
+			'interview',
 			'lo-fi',
+			'motion',
+			'usability',
+			'ux',
+			'visual',
 			'wireframe',
 		],
 		questions: [
@@ -933,46 +924,17 @@ export const info: LearnData[] = [
 			],
 			youtube: [
 				'https://www.youtube.com/embed/NepFo4zXyK4',
-				'https://www.youtube.com/embed/yUvGHNzqG7M',
-				'https://www.youtube.com/embed/9ElrcTtAxzA',
-				'https://www.youtube.com/embed/Hx02SaL_IH0',
 				'https://www.youtube.com/embed/L22lDu3QX2c',
 				'https://www.youtube.com/embed/hlI6xGfBjkQ',
-				'https://www.youtube.com/embed/mK3aS4BiE2s',
-				'https://www.youtube.com/embed/C-UeBdtopdA',
-				'https://www.youtube.com/embed/UWwNIMHFdW4',
 				'https://www.youtube.com/embed/DBHBmeNhYrY',
 				'https://www.youtube.com/embed/rHeWoBPdNT4',
-				'https://www.youtube.com/embed/vqXLGX0szIQ',
 				'https://www.youtube.com/embed/WgXU7XAZYmQ',
 				'https://www.youtube.com/embed/OgwlV-vQNYk',
-				'https://www.youtube.com/embed/mK3aS4BiE2s',
-				'https://www.youtube.com/embed/sT2YiwRXoJM',
 			],
 			links: [
 				{
-					text: 'Design Systems for Developers',
-					url: 'https://storybook.js.org/tutorials/design-systems-for-developers/',
-				},
-				{
-					text: 'DesignOps at Airbnb',
-					url: 'https://airbnb.design/designops-airbnb/',
-				},
-				{
-					text: 'Material Design | Google',
-					url: 'https://m3.material.io/',
-				},
-				{
-					text: 'Resource library | Figma',
-					url: 'https://www.figma.com/resource-library/',
-				},
-				{
 					text: 'Articles - Discover everything you need to know about building for the modern web | Web.dev',
 					url: 'https://web.dev/articles',
-				},
-				{
-					text: 'Design Tools Database',
-					url: 'https://uxtools.co/tools/design',
 				},
 				{
 					text: 'The Gestalt Principles for User Interface Design',
@@ -991,28 +953,8 @@ export const info: LearnData[] = [
 					url: 'https://www.nngroup.com/articles/legibility-readability-comprehension/',
 				},
 				{
-					text: 'Breaking Down the Principles of Design (With Infographic)',
-					url: 'https://www.toptal.com/designers/gui/principles-of-design-infographic',
-				},
-				{
-					text: '7 Things To Remember When Selecting Fonts For Your Design',
-					url: 'https://uxplanet.org/7-things-to-remember-when-selecting-fonts-for-your-design-ec1e592266c5',
-				},
-				{
-					text: 'Emphasis: Setting up the focal point of your design',
-					url: 'https://www.interaction-design.org/literature/article/emphasis-setting-up-the-focal-point-of-your-design',
-				},
-				{
-					text: 'Mockplus- Design, prototype and deliver your digital future',
-					url: 'https://www.mockplus.com/blog/post/ui-visual-hierarchy',
-				},
-				{
 					text: 'Visual Hierarchy | Interaction Design Foundation',
 					url: 'https://www.interaction-design.org/literature/topics/visual-hierarchy',
-				},
-				{
-					text: 'Golden Ratio. Bring Balance in UI Design.',
-					url: 'https://uxplanet.org/golden-ratio-bring-balance-in-ui-design-765c954f0ff9',
 				},
 				{
 					text: 'The ultimate guide to proper use of animation in UX',
@@ -1023,24 +965,12 @@ export const info: LearnData[] = [
 					url: 'https://www.uxmatters.com/mt/archives/2023/07/the-anatomy-of-a-perfect-landing-page-that-converts.php',
 				},
 				{
-					text: '16 little UI design rules that make a big impact',
-					url: 'https://www.adhamdannaway.com/blog/ui-design/16-ui-design-rules',
-				},
-				{
 					text: 'Improve Your Designs With The Principles Of Similarity And Proximity (Part 1)',
 					url: 'https://www.smashingmagazine.com/2016/05/improve-your-designs-with-principles-similarity-proximity-part-1/',
 				},
 				{
 					text: 'Improve Your Designs With The Principles Of Closure And Figure-Ground (Part 2)',
 					url: 'https://www.smashingmagazine.com/2016/05/improve-your-designs-with-the-principles-of-closure-and-figure-ground-part-2/',
-				},
-				{
-					text: 'The 4 Golden Rules of UI Design',
-					url: 'https://xd.adobe.com/ideas/process/ui-design/4-golden-rules-ui-design/',
-				},
-				{
-					text: 'The Principles of Design and Their Importance',
-					url: 'https://www.toptal.com/designers/ui/principles-of-design',
 				},
 				{
 					text: 'The Rules for Modern Navigation',
@@ -1075,10 +1005,6 @@ export const info: LearnData[] = [
 					url: 'https://m3.material.io/foundations/interaction/gestures',
 				},
 				{
-					text: 'A LIST of free tools to help you start in UXTools & apps (r/UXDesign)',
-					url: 'https://www.reddit.com/r/UXDesign/comments/z64rl2/a_list_of_free_tools_to_help_you_start_in_ux/',
-				},
-				{
 					text: 'What is not talked enough about in the topic of Information architecture | r/UXDesign',
 					url: 'https://www.reddit.com/r/UXDesign/comments/1cdk001/what_is_not_talked_enough_about_in_the_topic_of/?share_id=ma_P0v_wsyb0aEnj5RiAG',
 				},
@@ -1087,28 +1013,12 @@ export const info: LearnData[] = [
 					url: 'https://www.w3.org/WAI/test-evaluate/preliminary/#video',
 				},
 				{
-					text: 'Buttons | Material Design',
-					url: 'https://m3.material.io/components/buttons/overview',
-				},
-				{
 					text: 'Ask a UXpert: How to Develop an Effective, Multi-Device UX Strategy',
 					url: 'https://xd.adobe.com/ideas/principles/web-design/ux-design-strategy-for-multiple-devices/',
 				},
 				{
-					text: '10 Best Design Systems and How to Learn (and Steal) From Them',
-					url: 'https://designerup.co/blog/10-best-design-systems-and-how-to-learn-and-steal-from-them/',
-				},
-				{
-					text: 'Components, styles, and shared library best practices',
-					url: 'https://www.figma.com/best-practices/components-styles-and-shared-libraries/',
-				},
-				{
 					text: 'Sound Advice: A Quick Guide to Designing UX Sounds',
 					url: 'https://www.toptal.com/designers/ux/ux-sounds-guide',
-				},
-				{
-					text: '10 Usability Heuristics for User Interface Design',
-					url: 'https://www.nngroup.com/articles/ten-usability-heuristics/',
 				},
 				{
 					text: 'Best Practices For Video',
@@ -1121,18 +1031,6 @@ export const info: LearnData[] = [
 				{
 					text: 'Sitemaps & Information Architecture (IA)',
 					url: 'https://xd.adobe.com/ideas/process/information-architecture/sitemap-and-information-architecture/',
-				},
-				{
-					text: '5 Visual Sitemap Examples for Website Designs',
-					url: 'https://xd.adobe.com/ideas/process/information-architecture/visual-sitemap-examples-website-designs/',
-				},
-				{
-					text: 'Responsive Design (RD) | Interaction Design Foundation',
-					url: 'https://www.interaction-design.org/literature/topics/responsive-design#:~:text=Responsive%20design%20is%20a%20graphic,ensure%20content%20consistency%20across%20devices.',
-				},
-				{
-					text: '11 powerful examples of responsive web design',
-					url: 'https://www.invisionapp.com/inside-design/examples-responsive-web-design/',
 				},
 				{
 					text: 'Navigation design: Almost everything you need to know',
@@ -1155,43 +1053,6 @@ export const info: LearnData[] = [
 					url: 'https://alistapart.com/article/object-oriented-ux/',
 				},
 				{
-					text: 'Google Material Design 3',
-					url: 'https://m3.material.io/',
-				},
-				{
-					text: 'Shopify Polaris Design System',
-					url: 'https://polaris.shopify.com/',
-				},
-				{
-					text: 'Apple Human Interface Design System',
-					url: 'https://developer.apple.com/design/',
-				},
-				{
-					text: 'Microsoft Fluent 2 Design System',
-					url: 'https://fluent2.microsoft.design/#/',
-				},
-				{
-					text: 'Airbnb Design System',
-					url: 'https://airbnb.design/building-a-visual-language/',
-				},
-				{
-					text: 'U.S. Web Design System (USWDS)',
-					url: 'https://designsystem.digital.gov/',
-				},
-				{ text: 'Design Systems for Figma', url: 'https://www.designsystemsforfigma.com/' },
-				{
-					text: 'Salesforce Design Kit',
-					url: 'https://www.figma.com/@salesforce',
-				},
-				{
-					text: 'Atlassian Design Kit',
-					url: 'https://www.figma.com/@atlassian',
-				},
-				{
-					text: 'Uber Design Kit',
-					url: 'https://www.figma.com/@uber',
-				},
-				{
 					text: 'Articles | Nielsen Norman Group',
 					url: 'https://www.nngroup.com/articles/',
 				},
@@ -1207,14 +1068,6 @@ export const info: LearnData[] = [
 					text: 'Let Your Users Wait | UX Magazine',
 					url: 'https://uxmag.com/articles/let-your-users-wait',
 				},
-				{
-					text: 'Web App Design Examples: Consistent & Stylish — vol. 233',
-					url: 'https://medium.com/theymakedesign/web-app-design-examples-vol-233-946b304e8b11',
-				},
-				{
-					text: 'Neumorphism: why it’s all the hype in UI design',
-					url: 'https://www.justinmind.com/ui-design/neumorphism',
-				},
 			],
 		},
 	},
@@ -1223,7 +1076,7 @@ export const info: LearnData[] = [
 		name: 'Methods',
 		intro: "Agile or fragile? This will become your project's survival guide.",
 		slug: 'methods',
-		topics: ['agile', 'waterfall', 'scrum', 'lean', 'kanban', 'safe'],
+		topics: ['agile', 'kanban', 'lean', 'safe', 'scrum', 'waterfall'],
 		questions: [
 			'What is Agile?',
 			"Is Scrum what you do when you're Agile?",
@@ -1314,16 +1167,18 @@ export const info: LearnData[] = [
 		intro: 'Rolling a dice for decisions only works in Monopoly.',
 		slug: 'data',
 		topics: [
-			'database',
-			'data warehouse',
-			'data lake',
 			'analysis',
-			'data visualization',
-			'data sanitation',
-			'business intelligence',
+			'intelligence',
+			'lake',
+			'sanitation',
+			'visualization',
+			'warehouse',
+			'database',
+			'etl',
 			'storytelling',
-			'Tableau',
-			'ETL',
+			'tableau',
+			'databricks',
+			'snowflake',
 		],
 		questions: [
 			'What is data science, data analytics, data exploitation?',
@@ -1433,19 +1288,19 @@ export const info: LearnData[] = [
 		intro: 'AI is the extra brain cells you wish you were born with.',
 		slug: 'ai',
 		topics: [
-			'AI',
-			'embeddings',
-			'vectors',
-			'training',
-			'inference',
-			'deep learning',
-			'machine learning',
-			'LLM',
-			'RAG',
-			'neural networks',
-			'natural language processing',
+			'ai',
 			'computer vision',
+			'deep learning',
+			'embeddings',
+			'inference',
+			'LLM',
+			'machine learning',
+			'natural language processing',
+			'neural networks',
 			'prompting',
+			'RAG',
+			'training',
+			'vectors',
 		],
 		questions: [
 			'What are the foundational principles and technologies behind AI and LLMs?',
@@ -1567,18 +1422,18 @@ export const info: LearnData[] = [
 		intro: 'AI is the extra brain cells you wish you were born with.',
 		slug: 'ai-advanced',
 		topics: [
-			'AI',
-			'embeddings',
-			'vectors',
-			'training',
-			'inference',
-			'transformers',
-			'deep learning',
-			'machine learning',
-			'neural networks',
-			'natural language processing',
+			'ai',
 			'computer vision',
+			'deep learning',
+			'embeddings',
+			'inference',
+			'machine learning',
+			'natural language processing',
+			'neural networks',
 			'pretraining',
+			'training',
+			'transformers',
+			'vectors',
 		],
 		questions: [
 			'What is the value chain for AI/LLMs and how do they come together? AI value chain - GPU Chips, Foundational Models, Compute (Training, Inference) + Storage + Data Infrastructure, Application',
@@ -1708,23 +1563,23 @@ export const info: LearnData[] = [
 	},
 	{
 		id: 13,
-		name: 'Technical',
+		name: 'Web Dev',
 		intro:
 			'Befriend the machines, learn to speak their language before they achieve world domination.',
 		slug: 'technical',
 		topics: [
-			'programming',
-			'languages',
-			'development',
 			'algorithms',
+			'ci/cd',
 			'cli',
+			'cybersecurity',
 			'data',
 			'databases',
-			'structures',
+			'development',
 			'engineering',
-			'cybersecurity',
-			'ci/cd',
 			'git',
+			'languages',
+			'programming',
+			'structures',
 		],
 		questions: [
 			'What is <insert language> and what does it do well?',
@@ -1901,6 +1756,216 @@ export const info: LearnData[] = [
 				{
 					text: 'Retries: An interactive study of common retry methods',
 					url: 'https://encore.dev/blog/retries',
+				},
+			],
+		},
+	},
+	{
+		id: 14,
+		name: 'Web Design',
+		intro:
+			"Spend 90% of your time debugging and the other 10% wondering why it still doesn't look right on Internet Explorer.",
+		slug: 'web-design',
+		topics: [
+			'animation',
+			'branding',
+			'color',
+			'flow',
+			'grid',
+			'hierarchy',
+			'iconography',
+			'illustration',
+			'interaction',
+			'mobile',
+			'palette',
+			'ratio',
+			'spacing',
+			'systems',
+			'template',
+			'theme',
+			'typography',
+			'ui',
+			'usability',
+		],
+		questions: [
+			'Why makes something look good?',
+			'What is "good" design?',
+			"How do I know when a design is \'too much\'?",
+			'What are dated trends in web design?',
+			'How is modern design on websites and apps done?',
+			'Why are animations generally not a great idea for usability and accessibility?',
+		],
+		issues: [
+			"We typically don't know what makes good design and have no idea whether something a vendor/agency proposes is well designed.",
+			'Design is more than just looks!',
+			'Web design can be "too much" and knowing that limit is key to reigning in our impulses',
+			'We tend to follow trends too much - the goal is to enable the user and look good.',
+			'Know the trade-offs in design and how they stack up against technical, business, cost considerations.',
+			'Stop treating UI and web design as all there is to UX.',
+		],
+		objectives: [
+			'Define key visual design principles and their impact on website aesthetics. Know the principles of visually appealing and effective layouts.',
+			'Define "good" web design by its user-friendliness, clarity, effectiveness, and appeal. Understand the multifaceted nature of successful web design beyond just looks.',
+			'Evaluate when web design elements become excessive and detract from user experience. Avoid overwhelming users and maintain a clear, focused design.',
+			'Recognize and explain why certain web design trends are now considered dated. Learn what makes designs feel current and professional.',
+			'Describe the characteristics of modern web design in websites and apps. Understand and implement contemporary design approaches.',
+			'Apply current modern design principles in web design projects. Know what makes aesthetically pleasing products and aligned with current standards.',
+			'Explain the negative impacts of excessive animations on website usability and accessibility. Think about animation in terms of user outcomes rather than animations that detract from design goals.',
+			'Make informed decisions about using animations in web design, prioritizing usability. Enhance, rather than detract from, the user journey with animation.',
+		],
+		resources: {
+			courses: [],
+			youtube: [
+				'https://www.youtube.com/embed/yUvGHNzqG7M',
+				'https://www.youtube.com/embed/9ElrcTtAxzA',
+				'https://www.youtube.com/embed/Hx02SaL_IH0',
+				'https://www.youtube.com/embed/C-UeBdtopdA',
+				'https://www.youtube.com/embed/mK3aS4BiE2s',
+				'https://www.youtube.com/embed/UWwNIMHFdW4',
+				'https://www.youtube.com/embed/vqXLGX0szIQ',
+				'https://www.youtube.com/embed/sT2YiwRXoJM',
+			],
+			links: [
+				{
+					text: 'Design Systems for Developers',
+					url: 'https://storybook.js.org/tutorials/design-systems-for-developers/',
+				},
+				{
+					text: 'DesignOps at Airbnb',
+					url: 'https://airbnb.design/designops-airbnb/',
+				},
+				{
+					text: 'Material Design | Google',
+					url: 'https://m3.material.io/',
+				},
+				{
+					text: 'Resource library | Figma',
+					url: 'https://www.figma.com/resource-library/',
+				},
+				{
+					text: 'Design Tools Database',
+					url: 'https://uxtools.co/tools/design',
+				},
+				{
+					text: 'Breaking Down the Principles of Design (With Infographic)',
+					url: 'https://www.toptal.com/designers/gui/principles-of-design-infographic',
+				},
+				{
+					text: '7 Things To Remember When Selecting Fonts For Your Design',
+					url: 'https://uxplanet.org/7-things-to-remember-when-selecting-fonts-for-your-design-ec1e592266c5',
+				},
+				{
+					text: 'Emphasis: Setting up the focal point of your design',
+					url: 'https://www.interaction-design.org/literature/article/emphasis-setting-up-the-focal-point-of-your-design',
+				},
+				{
+					text: 'Mockplus- Design, prototype and deliver your digital future',
+					url: 'https://www.mockplus.com/blog/post/ui-visual-hierarchy',
+				},
+				{
+					text: 'Golden Ratio. Bring Balance in UI Design.',
+					url: 'https://uxplanet.org/golden-ratio-bring-balance-in-ui-design-765c954f0ff9',
+				},
+				{
+					text: 'The ultimate guide to proper use of animation in UX',
+					url: 'https://uxdesign.cc/the-ultimate-guide-to-proper-use-of-animation-in-ux-10bd98614fa9',
+				},
+				{
+					text: '16 little UI design rules that make a big impact',
+					url: 'https://www.adhamdannaway.com/blog/ui-design/16-ui-design-rules',
+				},
+				{
+					text: 'The 4 Golden Rules of UI Design',
+					url: 'https://xd.adobe.com/ideas/process/ui-design/4-golden-rules-ui-design/',
+				},
+				{
+					text: 'The Principles of Design and Their Importance',
+					url: 'https://www.toptal.com/designers/ui/principles-of-design',
+				},
+				{
+					text: 'The Role of Animation and Motion in UX',
+					url: 'https://www.nngroup.com/articles/animation-purpose-ux/',
+				},
+				{
+					text: 'Creating Usability with Motion: The UX in Motion Manifesto',
+					url: 'https://medium.com/ux-in-motion/creating-usability-with-motion-the-ux-in-motion-manifesto-a87a4584ddc',
+				},
+				{
+					text: 'A LIST of free tools to help you start in UXTools & apps (r/UXDesign)',
+					url: 'https://www.reddit.com/r/UXDesign/comments/z64rl2/a_list_of_free_tools_to_help_you_start_in_ux/',
+				},
+				{
+					text: 'Buttons | Material Design',
+					url: 'https://m3.material.io/components/buttons/overview',
+				},
+				{
+					text: '10 Best Design Systems and How to Learn (and Steal) From Them',
+					url: 'https://designerup.co/blog/10-best-design-systems-and-how-to-learn-and-steal-from-them/',
+				},
+				{
+					text: 'Components, styles, and shared library best practices',
+					url: 'https://www.figma.com/best-practices/components-styles-and-shared-libraries/',
+				},
+				{
+					text: '10 Usability Heuristics for User Interface Design',
+					url: 'https://www.nngroup.com/articles/ten-usability-heuristics/',
+				},
+				{
+					text: '5 Visual Sitemap Examples for Website Designs',
+					url: 'https://xd.adobe.com/ideas/process/information-architecture/visual-sitemap-examples-website-designs/',
+				},
+				{
+					text: 'Responsive Design (RD) | Interaction Design Foundation',
+					url: 'https://www.interaction-design.org/literature/topics/responsive-design#:~:text=Responsive%20design%20is%20a%20graphic,ensure%20content%20consistency%20across%20devices.',
+				},
+				{
+					text: '11 powerful examples of responsive web design',
+					url: 'https://www.invisionapp.com/inside-design/examples-responsive-web-design/',
+				},
+				{
+					text: 'Google Material Design 3',
+					url: 'https://m3.material.io/',
+				},
+				{
+					text: 'Shopify Polaris Design System',
+					url: 'https://polaris.shopify.com/',
+				},
+				{
+					text: 'Apple Human Interface Design System',
+					url: 'https://developer.apple.com/design/',
+				},
+				{
+					text: 'Microsoft Fluent 2 Design System',
+					url: 'https://fluent2.microsoft.design/#/',
+				},
+				{
+					text: 'Airbnb Design System',
+					url: 'https://airbnb.design/building-a-visual-language/',
+				},
+				{
+					text: 'U.S. Web Design System (USWDS)',
+					url: 'https://designsystem.digital.gov/',
+				},
+				{ text: 'Design Systems for Figma', url: 'https://www.designsystemsforfigma.com/' },
+				{
+					text: 'Salesforce Design Kit',
+					url: 'https://www.figma.com/@salesforce',
+				},
+				{
+					text: 'Atlassian Design Kit',
+					url: 'https://www.figma.com/@atlassian',
+				},
+				{
+					text: 'Uber Design Kit',
+					url: 'https://www.figma.com/@uber',
+				},
+				{
+					text: 'Web App Design Examples: Consistent & Stylish — vol. 233',
+					url: 'https://medium.com/theymakedesign/web-app-design-examples-vol-233-946b304e8b11',
+				},
+				{
+					text: 'Neumorphism: why it’s all the hype in UI design',
+					url: 'https://www.justinmind.com/ui-design/neumorphism',
 				},
 			],
 		},
