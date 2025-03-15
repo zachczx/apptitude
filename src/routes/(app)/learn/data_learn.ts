@@ -78,6 +78,10 @@ export const info: LearnData[] = [
 					url: 'https://pll.harvard.edu/course/cs50s-understanding-technology-0',
 				},
 				{
+					text: 'Cloud Digital Leader Learning Path',
+					url: 'https://www.cloudskillsboost.google/paths/9',
+				},
+				{
 					text: 'How Computers Work (UOL) | Coursera',
 					url: 'https://www.coursera.org/learn/how-computers-work',
 				},
@@ -93,7 +97,6 @@ export const info: LearnData[] = [
 					text: 'Programming for Everybody (Getting Started with Python) | Coursera',
 					url: 'https://www.coursera.org/learn/python',
 				},
-
 				{
 					text: 'Google IT Support Professional Certificate | Coursera',
 					url: 'https://www.coursera.org/professional-certificates/google-it-support',
@@ -174,8 +177,28 @@ export const info: LearnData[] = [
 		resources: {
 			courses: [
 				{
+					text: 'Google Cloud Computing Foundations Certificate',
+					url: 'https://www.cloudskillsboost.google/paths/36',
+				},
+				{
 					text: 'AWS Fundamentals Specialization [3 courses] (AWS) | Coursera',
 					url: 'https://www.coursera.org/specializations/aws-fundamentals',
+				},
+				{
+					text: 'Google Cloud Computing Foundations: Cloud Computing Fundamentals',
+					url: 'https://www.cloudskillsboost.google/course_templates/153',
+				},
+				{
+					text: 'Cloud Engineer Learning Path',
+					url: 'https://www.cloudskillsboost.google/paths/11',
+				},
+				{
+					text: 'Cloud Architect Learning Path',
+					url: 'https://www.cloudskillsboost.google/paths/12',
+				},
+				{
+					text: 'Hybrid and Multi-Cloud Architect Learning Path',
+					url: 'https://www.cloudskillsboost.google/paths/13',
 				},
 			],
 			youtube: [
@@ -388,6 +411,12 @@ export const info: LearnData[] = [
 			"On the other hand, inefficiency and mismanagement at the central level will snowball, as every additional/unnecessary thing that's provisioned gets multiplied by every officer",
 		],
 		resources: {
+			courses: [
+				{
+					text: 'Stack Developer Conference 2024',
+					url: 'https://www.developer.tech.gov.sg/communities/events/conferences/stack-developer-conference-2024/overview.html',
+				},
+			],
 			youtube: [
 				'https://www.youtube.com/embed/5u6nRus74ZQ?si=AJoNdLtdkxV4TV3i',
 				'https://www.youtube.com/embed/02f4G6pU-08',
@@ -1346,6 +1375,10 @@ export const info: LearnData[] = [
 					text: 'Meta Database Engineer Professional Certificate | Coursera',
 					url: 'https://www.coursera.org/professional-certificates/meta-database-engineer',
 				},
+				{
+					text: 'Data Engineer Learning Path',
+					url: 'https://www.cloudskillsboost.google/paths/16',
+				},
 			],
 			youtube: [
 				'https://youtube.com/embed/GbL-42kv5LI',
@@ -1446,12 +1479,24 @@ export const info: LearnData[] = [
 					url: 'https://www.cloudskillsboost.google/course_templates/536',
 				},
 				{
+					text: 'Introduction to Large Language Models',
+					url: 'https://www.cloudskillsboost.google/course_templates/539',
+				},
+				{
 					text: 'AI For Everyone Course (DeepLearning.AI) | Coursera',
 					url: 'https://www.coursera.org/learn/ai-for-everyone',
 				},
 				{
 					text: 'Machine Learning Crash Course | Google',
 					url: 'https://developers.google.com/machine-learning/crash-course/ml-intro',
+				},
+				{
+					text: 'Responsible AI: Applying AI Principles with Google Cloud',
+					url: 'https://www.cloudskillsboost.google/course_templates/388',
+				},
+				{
+					text: 'Prompt Design in Vertex AI',
+					url: 'https://www.cloudskillsboost.google/course_templates/976',
 				},
 			],
 			youtube: [
@@ -1558,6 +1603,14 @@ export const info: LearnData[] = [
 		],
 		resources: {
 			courses: [
+				{
+					text: 'Machine Learning Crash Course',
+					url: 'https://developers.google.com/machine-learning/crash-course',
+				},
+				{
+					text: 'Machine Learning Engineer Learning Path',
+					url: 'https://www.cloudskillsboost.google/paths/17',
+				},
 				{
 					text: 'Machine Learning Problem Framing | Google',
 					url: 'https://developers.google.com/machine-learning/problem-framing',
