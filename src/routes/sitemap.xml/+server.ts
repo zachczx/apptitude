@@ -2,8 +2,8 @@
 import type { RequestHandler } from '@sveltejs/kit';
 import { error } from '@sveltejs/kit';
 import * as sitemap from 'super-sitemap';
-import { info } from '../learn/data_learn';
-import { guides } from '../guides/data_guides';
+import { info } from '../(app)/learn/data_learn';
+import { guides } from '../(app)/guides/data_guides';
 
 export const prerender = true;
 
