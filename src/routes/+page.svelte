@@ -5,8 +5,6 @@
 
 	import { info } from './(app)/learn/data_learn';
 	import { guides } from './(app)/guides/data_guides';
-	import { gsap } from 'gsap';
-	import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 	import { onMount } from 'svelte';
 	import { goto } from '$app/navigation';
 	// import bg2 from '$lib/assets/daniel-lezuch-I4DcRJ_Evd8-unsplash.webp';
@@ -45,28 +43,6 @@
 			}
 		}
 	}
-
-	onMount(() => {
-		gsap.registerPlugin(ScrollTrigger);
-		const topicCards = document.getElementsByClassName('topic-card');
-		const guideCards = document.getElementsByClassName('guide-card');
-
-		let t3 = gsap.matchMedia();
-		t3.add('(min-width: 1028px)', () => {
-			for (const card of topicCards) {
-				gsap.to(card, {
-					scrollTrigger: {
-						trigger: card,
-						start: 'top 60%',
-						end: '+=500px',
-						scrub: true,
-						markers: false,
-					},
-					x: '-10vw',
-				});
-			}
-		});
-	});
 </script>
 
 <svelte:head>
@@ -189,7 +165,6 @@
 					: undefined}">
 				<button
 					onclick={() => {
-						console.log('clicked');
 						carouselTopics.scrollLeft -= 400;
 					}}
 					class="text-base-content hover:text-primary cursor-pointer"
@@ -209,8 +184,7 @@
 					class="carousel carousel-center bg-base-200 rounded-box relative w-full space-x-8">
 					{#each topics as topic}
 						<div class="carousel-item">
-							<div
-								class="topic-card card bg-primary/5 border-primary/40 card-md h-96 w-72 border shadow-sm">
+							<div class="card bg-primary/5 border-primary/40 card-md h-96 w-72 border shadow-sm">
 								<div class="card-body">
 									<h2 class="card-title text-2xl font-medium">
 										<a href="/learn/{topic.slug}">{topic.name}</a>
@@ -276,8 +250,7 @@
 					class="carousel carousel-center bg-base-200 rounded-box relative w-full space-x-8">
 					{#each guides as guide}
 						<div class="carousel-item">
-							<div
-								class="guide-card card border-secondary card-md bg-secondary/5 h-96 w-84 border shadow-sm">
+							<div class="card border-secondary card-md bg-secondary/5 h-96 w-84 border shadow-sm">
 								<div class="card-body">
 									<a href="/guides/{guide.slug}">
 										<h2 class="card-title text-2xl font-medium">
@@ -315,7 +288,6 @@
 				</div>
 				<button
 					onclick={() => {
-						console.log('clicked');
 						carouselGuides.scrollLeft += 400;
 					}}
 					class="text-base-content hover:text-primary z-[2] cursor-pointer"
