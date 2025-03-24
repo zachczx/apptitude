@@ -1,34 +1,40 @@
 <script lang="ts">
-	import { techtrippin } from './data_techtrippin';
-	import twentyFiveDev from '$lib/assets/25yodev.webp?enhanced&w=200;150;70';
-	import Breadcrumbs from '$lib/Breadcrumbs.svelte';
-	import TablerHelpCircleFilled from '$lib/assets/svg/TablerHelpCircleFilled.svelte';
-	import TablerMessage from '$lib/assets/svg/TablerMessage.svelte';
-	import grumpyCat from '$lib/assets/grumpy-cat.webp?enhanced&w=400';
-
-	import ContentWrapper from '$lib/ContentWrapper.svelte';
-	import { type Contents } from '$lib/Types';
-	import { onMount } from 'svelte';
+	import { techtrippin, type Trippin } from './data_techtrippin';
 	import NewWrap from '$lib/NewWrap.svelte';
 	import NavToc from '$lib/NavToc.svelte';
-
-	let { data } = $props();
-
 	let currentSection: any = $state();
-	let path: string[] = $derived(data.url.split('/'));
-	let category: string = $derived(path[1]);
-	let page: string = $derived(path[2]);
+
+	interface Sorted {
+		apathetic: Trippin[];
+		avoiding: Trippin[];
+		faker: Trippin[];
+		illogical: Trippin[];
+		resistant: Trippin[];
+		unskilled: Trippin[];
+	}
+
+	const techtrippinSorted: Sorted = {
+		apathetic: [],
+		avoiding: [],
+		faker: [],
+		illogical: [],
+		resistant: [],
+		unskilled: [],
+	};
+	techtrippin.forEach((item) => {
+		techtrippinSorted[item.category].push(item);
+	});
 </script>
 
 <svelte:head>
 	<title>Apptitude - Tech Trippin'</title>
 </svelte:head>
-
-<NewWrap
-	title="Tech Trippin'"
-	subtitle="Words I have heard from people working on tech in Govt that left me scratching my head.">
+{#snippet trip(title: string)}
 	<ul class="grid gap-y-4">
-		{#each techtrippin as item, i}
+		<h2 class="border-b-base-content/20 mb-4 border-b-4 pb-2 text-2xl font-bold lg:text-4xl">
+			{title[0].toUpperCase() + title.slice(1)}
+		</h2>
+		{#each techtrippinSorted[title as keyof Sorted] as item, i}
 			<li class="flex items-center gap-4 py-2">
 				<div>
 					<svg
@@ -43,11 +49,24 @@
 				</div>
 				<div>{item.text}</div>
 			</li>
-			{#if i < techtrippin.length - 1}
-				<li class="bg-base-content/20 col-span-2 h-0.5"></li>
+			{#if i < techtrippinSorted[title as keyof Sorted].length - 1}
+				<li class="bg-base-content/20 h-0.5"></li>
 			{/if}
 		{/each}
 	</ul>
+{/snippet}
+
+<NewWrap
+	title="Tech Trippin'"
+	subtitle="Words I have heard from people working on tech in Govt that left me scratching my head.">
+	<div class="grid gap-y-32">
+		{@render trip('apathetic')}
+		{@render trip('avoiding')}
+		{@render trip('faker')}
+		{@render trip('illogical')}
+		{@render trip('resistant')}
+		{@render trip('unskilled')}
+	</div>
 	{#snippet toc()}
 		<NavToc {currentSection} />
 	{/snippet}
