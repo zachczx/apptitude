@@ -1569,7 +1569,8 @@ export const info: LearnData[] = [
 		slug: 'technical',
 		topics: [
 			'algorithms',
-			'ci/cd',
+			'ci',
+			'cd',
 			'cli',
 			'cybersecurity',
 			'data',
