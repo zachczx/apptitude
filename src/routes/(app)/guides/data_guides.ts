@@ -670,6 +670,7 @@ export const guides: GuidesData[] = [
 					'Calculated by dividing the total number of successful (approved) transactions by the total number of attempted transactions over a given time period.',
 			},
 		],
+		goals: [],
 		alarms: [
 			{
 				what: 'Using xxx, yyy, zzz resources (or X%, Y%, Z%) for cloud/on-prem resources.',
@@ -794,6 +795,7 @@ export const guides: GuidesData[] = [
 				definition: '(Emails clicked) / (Emails opened)',
 			},
 		],
+		goals: [],
 		alarms: [
 			{
 				what: 'Communications contain words that imply the user needs to "suck it up" for downtime, errors, or unforeseen circumstances.',
