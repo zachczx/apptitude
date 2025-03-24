@@ -5,7 +5,7 @@ interface GuidesData {
 	slug: string;
 	bylines?: { [index: number]: { text: string; icon: string } };
 	definitions: { term: string; definition: string }[];
-	goals: string[];
+	goals?: string[];
 	questions: { what: string; why: string }[];
 	alarms?: { what: string; why: string }[];
 	dealbreakers: { what: string; why: string }[];
@@ -670,7 +670,6 @@ export const guides: GuidesData[] = [
 					'Calculated by dividing the total number of successful (approved) transactions by the total number of attempted transactions over a given time period.',
 			},
 		],
-		goals: [],
 		alarms: [
 			{
 				what: 'Using xxx, yyy, zzz resources (or X%, Y%, Z%) for cloud/on-prem resources.',
@@ -767,6 +766,115 @@ export const guides: GuidesData[] = [
 			{
 				what: 'You need a 5-level approval process for changing words on your app/website.',
 				why: 'Overly complex approval processes for routine tasks signal a bureaucratic culture that stifles agility and innovation.  In tech, quick adaptation is crucial. Excessive bureaucracy hinders progress and responsiveness.',
+			},
+		],
+		solutions: [],
+		suggestions: [],
+	},
+	{
+		id: 6,
+		name: 'Communications',
+		tagline: "It's okay to say 'oops.' Just don't say it too often.",
+		slug: 'communications',
+		definitions: [
+			{
+				term: 'Empathy',
+				definition: 'The ability to understand and share the feelings of another.',
+			},
+			{
+				term: 'Click rate',
+				definition: '(No. of clicks) / (No. of emails sent - No. of emails bounced)',
+			},
+			{
+				term: 'Open rate',
+				definition: '(No. of unique opens) / (No. of emails sent - No. of emails bounced)',
+			},
+			{
+				term: 'Click-to-Open rate',
+				definition: '(Emails clicked) / (Emails opened)',
+			},
+		],
+		alarms: [
+			{
+				what: 'Communications contain words that imply the user needs to "suck it up" for downtime, errors, or unforeseen circumstances.',
+				why: "Too often system owners think they're beyond reproach and as long as they tried their best, users need to accept whatever that happens. The least you can do is not to sound like that.",
+			},
+			{
+				what: 'Communications contain "canned" empathy phrases like "I understand how this can be upsetting to you...".',
+				why: 'People can tell it comes across as non-genuine, facetious. Worse if the contents are totally at odds with what your words meant.',
+				// https://www.reddit.com/r/CustomerService/comments/1dffx9d/canned_empathy_phrases_in_chat_email_have_gotta/
+			},
+			{
+				what: 'We communicate what we do or what people should do.',
+				why: 'Focus should always be on the user or customer getting value. How will life be better if the customer gets their hands on our product?',
+			},
+			{
+				what: 'We communicate slowly and at our own pace (read: ultra slow), especially for high severity issues like cybersecurity breaches, data mishandling.',
+				why: "You want to prevent speculation, users getting confused, news getting out where you can't control the narrative, and damage to your brand, reputation, or operations.",
+			},
+			{
+				what: 'Giving too little detail.',
+				why: "Giving too little conveys a lack of openness and sincerity. This is often tempting, but you won't be building any trust for sure.",
+			},
+			{
+				what: 'Too much jargon!',
+				why: "It's easy to slip into spamming technical terms and jargon. Few would take the time to read those. Yet fewer would understand and appreciate it.",
+			},
+		],
+		questions: [
+			{
+				what: 'How do we communicate to users?',
+				why: "It's probably too general, but it's a good start.",
+			},
+			{
+				what: "What's the key message? What's the desired headline (8 words or fewer) we want to create? What's the photo op you want?",
+				why: "Like with general communication plans and campaigns, start with the end in mind and be clear what you're trying to convey.",
+			},
+			{
+				what: 'What are our metrics for our communication campaigns/efforts?',
+				why: "If it's not measurable, it doesn't exist!",
+			},
+			{
+				what: 'What are our open and click rates for email campaigns?',
+				why: "Note: email tracking isn't entirely ",
+			},
+			{
+				what: 'How are allocating and differentiating our relationship building and revenue-generating communications?',
+				why: 'Different communication objectives need different strategies. Sometimes we want to tell stories, build a brand. Other times we want to convert and close sales.',
+			},
+			{
+				what: 'How will life be better if the customer gets their hands on our product?',
+				why: 'Sell the value to the user, not the product. Like what every textbook tries to teach, Steve Jobs sold the value of having 1,000 songs in your pocket, not 8GB of hard disk space on the iPod.',
+			},
+			{
+				what: "What are the user personas we're targeting?",
+				why: 'Ought to be aligned with personas from UX research and product strategy, but might sometimes differ.',
+			},
+			{
+				what: "What's our crisis communications plan?",
+				why: "In a crisis you'd want to quickly communicate. To do so, you'll need a plan, you want to put out reliable information, and you want people to trust that you know your shit.",
+			},
+			{
+				what: 'How do we use Android/iOS notifications, dialogs, and which screens?',
+				why: 'Notifications and messages are essential to communications. Chances are they won\'t read your emails, but more likely they will read notifications. Then again, you wouldn\'t want that annoying high-pitched "shopee!" sound.',
+			},
+		],
+		dealbreakers: [
+			{
+				what: 'We keep trying to sell what we do, not what value we bring.',
+				why: 'Covered above.',
+			},
+			{
+				what: 'We\'re heavy handed and use a "we-know-better" tone.',
+				why: 'Covered above.',
+			},
+			{
+				what: "We don't communicate quickly when we need to.",
+				why: 'People lose trust in us.',
+			},
+			{
+				what: 'We spam people with tons of stuff we think we need them to know.',
+				why: "Our message won't get through if we need it to.",
 			},
 		],
 		solutions: [],
