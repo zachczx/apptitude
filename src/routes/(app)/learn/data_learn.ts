@@ -144,7 +144,7 @@ export const info: LearnData[] = [
 	},
 	{
 		id: 2,
-		name: 'The Internet',
+		name: 'Internet',
 		intro: 'The web and the cloud.',
 		slug: 'basics-web',
 		topics: ['cloud', 'css', 'html', 'http', 'https', 'internet', 'javascript', 'php', 'ssl'],
@@ -222,6 +222,10 @@ export const info: LearnData[] = [
 				{
 					text: 'How does the Internet work? | Cloudflare',
 					url: 'https://www.cloudflare.com/en-gb/learning/network-layer/how-does-the-internet-work/',
+				},
+				{
+					text: 'Networking for Web Developers: How the Internet Works',
+					url: 'https://themsaid.com/networking-for-web-developers-how-the-internet-works',
 				},
 				{
 					text: 'Learn web development | MDN Web Docs',
