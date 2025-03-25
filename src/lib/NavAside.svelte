@@ -42,7 +42,7 @@
 						><circle cx="12" cy="12" r="10" /><ellipse cx="12" cy="12" rx="4" ry="10" /><path
 							d="M2 12h20" /></g
 					></svg
-				>The Internet</summary
+				>Internet</summary
 			></a>
 	</li>
 	<li class="lg:px-2 xl:px-4">
