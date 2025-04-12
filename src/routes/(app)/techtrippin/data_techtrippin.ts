@@ -100,4 +100,29 @@ export const techtrippin: Trippin[] = [
 		text: 'Do you need personal data to be desensitized on the frontend?',
 		score: 0,
 	},
+	{
+		category: 'unskilled',
+		text: 'We need the precise date and time when you encountered the issue to help us locate the corresponding logs. Since many users are on the app simultaneously, having the exact timestamp will allow us to pinpoint your specific problem in our system logs.',
+		score: 1,
+	},
+	{
+		category: 'apathetic',
+		text: 'Why do we need to reflect downtime incidence and errors during planned downtime for a cloud system?',
+		score: 0,
+	},
+	{
+		category: 'unskilled',
+		text: "X product doesn't meet our needs. I went into the frontend and did a casual search. The results were more generalized and weren't specific enough for what business owner specified. So it doesn't fit our needs. (Never mind that we're not even using that frontend, but the API.)",
+		score: 1,
+	},
+	{
+		category: 'unskilled',
+		text: "If we don't do and deploy it ourselves we don't have full visibility over the entire process, including data operations. When I go to review meetings if people ask me whether the SaaS team did the crawling, I can't say. If we did it ourselves I can track the ticket, the status, and where it is now. That's why we shouldn't be using a SaaS product and should DIY.",
+		score: 1,
+	},
+	// {
+	// 	category: 'unskilled',
+	// 	text: "My pool of developer laptops is running out. Empty CMOS batteries are causing time on those non-Internet connected laptops to be desynced and therefore they can't get authorized to access privileged resources.",
+	// 	score: 0,
+	// },
 ];

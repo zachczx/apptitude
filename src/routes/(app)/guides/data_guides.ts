@@ -126,6 +126,10 @@ export const guides: GuidesData[] = [
 				what: "It's impossible to track whether our tool improves productivity, saves manual labor and how much it improves the business.",
 				why: "You can't track the productivity increase for every person, but you can follow >5 teams for several weeks and record how much they benefit in time savings, efficiency, errors they encounter, or even entire work flows they no longer do. But this has to be done before you deploy and is pointless to lament you didn't after the fact.",
 			},
+			{
+				what: 'Anything is technically possible. GPT 4, 5, 6, 7 are all the same. What matter are the business requirements and the use case.',
+				why: 'I\'ve heard this a lot. Tech advancements can meaningfully change the game for business. Like, models are literally getting much smarter with every release. This just betrays a lack of understanding by "technical consultants" and is a lazy excuse to not think deeper.',
+			},
 		],
 		dealbreakers: [
 			{
@@ -719,6 +723,10 @@ export const guides: GuidesData[] = [
 			{
 				what: 'Work always costs a lot of man days and money, even for things that sound very simple.',
 				why: 'Finance processes (fixed payments for vendor work) can ironically encourage spending more than common sense dictates, because they can let vendors pocket the change if the job turned out easier. People also want to buffer so no one needs to reseek approval. End result, people add buffers, overestimate, and vendors pocket the "change".',
+			},
+			{
+				what: "Whenever there's a problem, the instinct is always to absolve themselves from blame, especially by questioning whether there was a delay in reporting that issue or whether administrative processes were followed.",
+				why: 'Tackling problems become secondary to covering asses.',
 			},
 		],
 		questions: [
