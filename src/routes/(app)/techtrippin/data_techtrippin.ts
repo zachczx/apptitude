@@ -111,6 +111,11 @@ export const techtrippin: Trippin[] = [
 		score: 0,
 	},
 	{
+		category: 'apathetic',
+		text: "We'll just do frontend work to disable buttons so users don't keep clicking and unintentionally tax our resources too much.",
+		score: 0,
+	},
+	{
 		category: 'unskilled',
 		text: "X product doesn't meet our needs. I went into the frontend and did a casual search. The results were more generalized and weren't specific enough for what business owner specified. So it doesn't fit our needs. (Never mind that we're not even using that frontend, but the API.)",
 		score: 1,
