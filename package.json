@@ -41,7 +41,7 @@
 		"@fontsource-variable/open-sans": "^5.2.5",
 		"@fontsource/roboto": "^5.2.5",
 		"@shikijs/transformers": "^3.4.0",
-		"@sveltejs/adapter-cloudflare": "^6.0.1",
+		"@sveltejs/adapter-cloudflare": "^7.0.3",
 		"@sveltejs/enhanced-img": "^0.5.1",
 		"@tailwindcss/vite": "^4.1.6",
 		"gsap": "^3.13.0",
