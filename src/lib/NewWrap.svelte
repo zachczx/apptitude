@@ -3,7 +3,7 @@
 </script>
 
 <div class="relative grid grid-cols-[1fr_auto]">
-	<article class="w-full max-w-[900px] justify-self-center px-4 pt-4 pb-12 lg:pt-0 lg:pb-32">
+	<article class="w-full max-w-200 justify-self-center px-4 pt-4 pb-12 lg:pt-0 lg:pb-32">
 		<div class="mt-14 mb-8 grid gap-4 lg:mt-20 lg:mb-20">
 			<h1
 				class="inline-block bg-linear-to-r from-emerald-200 via-lime-200 to-teal-300 bg-clip-text pb-4 text-4xl font-bold tracking-tighter text-transparent lg:text-7xl">
