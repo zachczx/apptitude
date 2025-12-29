@@ -1,6 +1,4 @@
-//import adapter from '@sveltejs/adapter-auto';
 import adapter from '@sveltejs/adapter-static';
-//import adapter from '@sveltejs/adapter-cloudflare';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 /** @type {import('@sveltejs/kit').Config} */
 import { mdsvex, escapeSvelte } from 'mdsvex';
@@ -37,12 +35,26 @@ const mdsvexOptions = {
 };
 
 const config = {
+	preprocess: [vitePreprocess(), mdsvex(mdsvexOptions)],
 	extensions: ['.svelte', '.md'],
 	kit: {
-		adapter: adapter(),
+		adapter: adapter({
+			pages: 'build',
+			assets: 'build',
+			fallback: 'index.html',
+			precompress: false,
+			strict: true,
+		}),
 		prerender: { handleHttpError: 'warn' },
+		env: {
+			dir: '../',
+		},
 	},
-	preprocess: [vitePreprocess(), mdsvex(mdsvexOptions)],
+	compilerOptions: {
+		experimental: {
+			async: true,
+		},
+	},
 };
 
 export default config;
