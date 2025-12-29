@@ -8,7 +8,13 @@ import tailwindcss from '@tailwindcss/vite';
 /** @type {import('vite').UserConfig} */
 export default defineConfig({
 	plugins: [
-		pagefind(),
+		pagefind({
+			outputDirectory: 'build',
+			assetsDirectory: 'static',
+			bundleDirectory: 'pagefind',
+			buildScript: 'build',
+		}),
+		,
 		enhancedImages(),
 		sveltekit(),
 		tailwindcss(),
