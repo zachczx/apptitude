@@ -7,7 +7,6 @@
 	import GuideExampleLong from '$lib/GuideExampleLong.svelte';
 	import NewWrap from '$lib/NewWrap.svelte';
 	import Intersection from '$lib/ui/Intersection.svelte';
-	let { data } = $props();
 
 	//Props needed for PageWrapper component
 	let contents: Contents[] = [
@@ -161,8 +160,8 @@
 									<CarbonCheckmarkFilled class="text-success me-2 mb-1 inline" /><span
 										class="text-primary">XX cases</span>
 									of non-compliance to prevailing policies
-									<span class="text-primary">cost us $XM</span> each year because these users relied
-									on guidelines in outdated policy documents strewn across our employee portal.
+									<span class="text-primary">cost us $XM</span> each year because these users relied on
+									guidelines in outdated policy documents strewn across our employee portal.
 								</div>
 							{/snippet}
 						</GuideExample>

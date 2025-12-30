@@ -1,11 +1,9 @@
 <script lang="ts">
 	import NavAside from './NavAside.svelte';
-	import NewCrumbs from './NewCrumbs.svelte';
 	import NavToc from './NavToc.svelte';
 	import { type Contents } from '$lib/Types';
 	import logo from '$lib/assets/svg/logo.svg?dataurl';
 	import type { Snippet } from 'svelte';
-	import TablerSquareRoundedPlusFilled from './assets/svg/TablerSquareRoundedPlusFilled.svelte';
 
 	interface ContentWrapperProps {
 		title: string;

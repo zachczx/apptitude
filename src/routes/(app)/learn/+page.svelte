@@ -1,12 +1,5 @@
 <script lang="ts">
-	import { info } from './data_learn';
-	import Breadcrumbs from '$lib/Breadcrumbs.svelte';
-	import TablerHelpCircleFilled from '$lib/assets/svg/TablerHelpCircleFilled.svelte';
 	import TablerStarFilled from '$lib/assets/svg/TablerStarFilled.svelte';
-	import ContentWrapper from '$lib/ContentWrapper.svelte';
-	import CarbonCheckmarkFilled from '$lib/assets/svg/CarbonCheckmarkFilled.svelte';
-	import SimpleIconsKnowledgeBase from '$lib/assets/svg/SimpleIconsKnowledgeBase.svelte';
-	import NewCrumbs from '$lib/NewCrumbs.svelte';
 	import NewWrap from '$lib/NewWrap.svelte';
 	import NavToc from '$lib/NavToc.svelte';
 

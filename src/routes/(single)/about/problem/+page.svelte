@@ -1,10 +1,8 @@
 <script>
 	import recodingAmericaCover from '$lib/assets/recoding-america-cover.jpg?w=300&enhanced';
-	import Breadcrumbs from '$lib/Breadcrumbs.svelte';
 </script>
 
-<Breadcrumbs urlMiddle="about" textMiddle="About" textCurrent={"What's the Problem?"} />
-<div class="mx-2 mb-2 text-center lg:mx-20 lg:mb-10">
+<div class="mx-2 mt-20 mb-2 text-center lg:mx-20 lg:mb-10">
 	<h1
 		class="inline-block bg-linear-to-r from-emerald-200 via-lime-200 to-teal-300 bg-clip-text py-3 text-center text-transparent">
 		What's the problem?

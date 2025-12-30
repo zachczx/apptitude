@@ -1,18 +1,12 @@
 <script lang="ts">
-	import Breadcrumbs from '$lib/Breadcrumbs.svelte';
-	import TablerLink from '$lib/assets/svg/TablerLink.svelte';
-	let { data } = $props();
-	import TablerSquareRoundedPlusFilled from '$lib/assets/svg/TablerSquareRoundedPlusFilled.svelte';
-	import { slide } from 'svelte/transition';
-	import { elasticOut } from 'svelte/easing';
-	import TablerSquareRoundedChevronsRightFilled from '$lib/assets/svg/TablerSquareRoundedChevronsRightFilled.svelte';
-	import ContentWrapper from '$lib/ContentWrapper.svelte';
 	import { type Contents } from '$lib/Types';
 	import { onMount } from 'svelte';
-	import CarbonCheckmarkFilled from '$lib/assets/svg/CarbonCheckmarkFilled.svelte';
 	import SimpleIconsKnowledgeBase from '$lib/assets/svg/SimpleIconsKnowledgeBase.svelte';
 	import NewWrap from '$lib/NewWrap.svelte';
 	import NavToc from '$lib/NavToc.svelte';
+
+	let { data } = $props();
+
 	let contents: Contents[] = [
 		{ id: 'topics', title: 'Topics' },
 		{ id: 'answers', title: 'Find Answers To...' },
@@ -63,7 +57,7 @@
 				Topics
 			</h2>
 			<ul class="gapy-2 flex flex-wrap items-center gap-x-8">
-				{#each data.post.topics as topic}
+				{#each data.post?.topics as topic}
 					<li class="flex items-center gap-2">
 						<SimpleIconsKnowledgeBase class="text-sm" />
 						{topic}
@@ -77,7 +71,7 @@
 				Find answers to...
 			</h2>
 			<ul class="ms-4 list-disc">
-				{#each data.post.questions as question}
+				{#each data.post?.questions as question}
 					<li>{question}</li>
 				{/each}
 			</ul>
@@ -88,7 +82,7 @@
 				Objectives
 			</h2>
 			<ul class="ms-4 list-disc">
-				{#each data.post.objectives as objective}
+				{#each data.post?.objectives as objective}
 					<li>{objective}</li>
 				{/each}
 			</ul>
@@ -99,11 +93,11 @@
 				Things to Consider
 			</h2>
 			<div class="gap-y-4">
-				{#if data.post.issues == '' || !data.post.issues}
+				{#if !data.post?.issues || data.post?.issues.length === 0}
 					Haven't gotten to writing this yet.
 				{:else}
 					<ul class="list-disc ps-4">
-						{#each data.post.issues as issue}
+						{#each data.post?.issues as issue}
 							<li>{issue}</li>
 						{/each}
 					</ul>
@@ -114,11 +108,11 @@
 			<h2 class="border-b-base-content/20 mb-4 border-b-4 pb-2 text-2xl font-bold lg:text-4xl">
 				Courses
 			</h2>
-			{#if data.post.resources.courses == '' || !data.post.resources.courses}
+			{#if !data.post?.resources.courses || data.post?.resources.courses.length === 0}
 				Sorry, nothing here
 			{:else}
 				<ul class="list-disc ps-4">
-					{#each data.post.resources.courses as course}
+					{#each data.post?.resources.courses as course}
 						<li>
 							<a href={course.url} class="hover:text-primary underline">{course.text}</a>
 						</li>
@@ -131,11 +125,11 @@
 				Readings
 			</h2>
 
-			{#if data.post.resources.links == ''}
+			{#if !data.post?.resources.links || data.post?.resources.links.length === 0}
 				Sorry, nothing here
 			{:else}
 				<ul class="list-disc ps-4">
-					{#each data.post.resources.links as link}
+					{#each data.post?.resources.links as link}
 						<li>
 							<a href={link.url} class="hover:text-primary underline">{link.text}</a>
 						</li>
@@ -163,10 +157,10 @@
 						stroke-width="0"
 						fill="currentColor" /></svg>
 			</h2>
-			{#if data.post.resources.youtube == ''}
+			{#if !data.post?.resources.youtube || data.post?.resources.youtube.length === 0}
 				Sorry, nothing here
 			{:else}
-				{#each data.post.resources.youtube as resource}
+				{#each data.post?.resources.youtube as resource}
 					<div class="mb-5">
 						<iframe
 							width="560"
