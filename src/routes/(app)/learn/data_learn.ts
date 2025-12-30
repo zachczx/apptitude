@@ -1360,6 +1360,7 @@ export const info: LearnData[] = [
 			],
 			youtube: [
 				'https://youtube.com/embed/zjkBMFhNj_g',
+				'https://youtube.com/embed/NKnZYvZA7w4',
 				'https://youtube.com/embed/PeMlggyqz0Y?si=X1ZeR-qr01d_BnP-',
 				'https://youtube.com/embed/5sLYAQS9sWQ',
 				'https://youtube.com/embed/G8T1O81W96Y',
