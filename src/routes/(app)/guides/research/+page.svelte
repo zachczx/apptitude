@@ -1,5 +1,5 @@
 <script lang="ts">
-	import interviewSampleSize from '$lib/assets/interview_sample_sizes.png?enhanced&w=300';
+	import interviewSampleSize from '$lib/assets/interview_sample_sizes.png?w=300&enhanced';
 	import GuideExample from '$lib/GuideExample.svelte';
 	import { type Contents } from '$lib/Types';
 	import NavToc from '$lib/NavToc.svelte';

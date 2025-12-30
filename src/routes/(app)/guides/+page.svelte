@@ -1,13 +1,8 @@
 <script lang="ts">
-	import Breadcrumbs from '$lib/Breadcrumbs.svelte';
-	import { guides } from './data_guides';
-	import TablerHelpCircleFilled from '$lib/assets/svg/TablerHelpCircleFilled.svelte';
-	import safeKeyboard from '$lib/assets/safe-keyboard.webp?enhanced&w=200';
-	import piggyBank from '$lib/assets/piggy-bank.webp?enhanced&w=200';
-	import product from '$lib/assets/product.webp?enhanced&w=200';
-	import problem from '$lib/assets/problem.webp?enhanced&w=200';
-	import magnifyingGlass from '$lib/assets/magnifying-glass.webp?enhanced&w=200';
-	import ContentWrapper from '$lib/ContentWrapper.svelte';
+	import piggyBank from '$lib/assets/piggy-bank.webp?w=200&enhanced';
+	import product from '$lib/assets/product.webp?w=200&enhanced';
+	import problem from '$lib/assets/problem.webp?w=200&enhanced';
+	import magnifyingGlass from '$lib/assets/magnifying-glass.webp?w=200&enhanced';
 	import NavToc from '$lib/NavToc.svelte';
 	import NewWrap from '$lib/NewWrap.svelte';
 

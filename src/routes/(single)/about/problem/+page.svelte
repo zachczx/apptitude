@@ -1,5 +1,5 @@
 <script>
-	import recodingAmericaCover from '$lib/assets/recoding-america-cover.jpg?enhanced&w=300';
+	import recodingAmericaCover from '$lib/assets/recoding-america-cover.jpg?w=300&enhanced';
 	import Breadcrumbs from '$lib/Breadcrumbs.svelte';
 </script>
 
@@ -61,8 +61,8 @@
 					exceedingly specific, but nowhere in government documents will you find a requirement that
 					the service actually works for the people who are supposed to use it.</span>
 				The systems are designed instead to meet the needs of the bureaucracies that create them—they
-				are risk-mitigation strategies for dozens of internal stakeholders. And they often fail even
-				at that task; trying to be all things to all people, they’re unable to make any reasonable tradeoffs
+				are risk-mitigation strategies for dozens of internal stakeholders. And they often fail even at
+				that task; trying to be all things to all people, they’re unable to make any reasonable tradeoffs
 				for the sake of usability.
 			</blockquote>
 		</div>
@@ -94,10 +94,10 @@
 				<span class="text-primary"
 					>modernization projects all sought to “add functionality” — more layers of paint — or just
 					to move to more modern infrastructure, particularly to the cloud. None of them targeted
-					serving clients better or scaling to meet demand.</span> If the people running the systems
-				had set scale as a goal and truly analyzed their bottlenecks, they would have recognized the
-				need to rationalize and simplify the accumulated layers of policy and process along with bringing
-				in new technology.
+					serving clients better or scaling to meet demand.</span> If the people running the systems had
+				set scale as a goal and truly analyzed their bottlenecks, they would have recognized the need
+				to rationalize and simplify the accumulated layers of policy and process along with bringing in
+				new technology.
 			</blockquote>
 		</div>
 		<div class="space-y-7">
