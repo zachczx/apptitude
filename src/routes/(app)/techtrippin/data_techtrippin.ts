@@ -125,9 +125,24 @@ export const techtrippin: Trippin[] = [
 		text: "If we don't do and deploy it ourselves we don't have full visibility over the entire process, including data operations. When I go to review meetings if people ask me whether the SaaS team did the crawling, I can't say. If we did it ourselves I can track the ticket, the status, and where it is now. That's why we shouldn't be using a SaaS product and should DIY.",
 		score: 1,
 	},
-	// {
-	// 	category: 'unskilled',
-	// 	text: "My pool of developer laptops is running out. Empty CMOS batteries are causing time on those non-Internet connected laptops to be desynced and therefore they can't get authorized to access privileged resources.",
-	// 	score: 0,
-	// },
+	{
+		category: 'resistant',
+		text: "The Group Director, who's the chairperson of the committee, approved to send 10 push notifications for the campaign duration over 2 months. We understand the concern about spamming users, but these were approved. We also want to extend registration, so we need the notifications for that too.",
+		score: 1,
+	},
+	{
+		category: 'unskilled',
+		text: "Here are a whole bunch of attachments of internal team write-ups on pentester findings, emails among teammates, clarifications with one another. There're also word documents listing tons of configurations, settings, vulnerabilities, outdated work in progress task items. For your approval.",
+		score: 1,
+	},
+	{
+		category: 'apathetic',
+		text: 'Why do we need to reflect downtime incidence and errors during planned downtime for a cloud system?',
+		score: 0,
+	},
+	{
+		category: 'illogical',
+		text: "We needn't validate the GovWallet API responses even though we have the schema. We should trust government systems. If we add validation, it might break our responses. (So we're ignoring technical standards and choosing to find out things are broken via angry App Store reviews and support tickets instead of logs? I prefer knowing when it breaks rather than be Shocked Pikachu when users complain about it.)",
+		score: 1,
+	},
 ];
