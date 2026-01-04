@@ -28,7 +28,7 @@
 		<Footer />
 	</article>
 
-	<aside class="overflow sticky top-14 h-[calc(100vh-4rem)]">
+	<aside class="overflow-y-auto sticky top-14 h-[calc(100vh-4rem)] min-w-64 hidden lg:block">
 		{@render toc?.()}
 	</aside>
 </div>

@@ -35,7 +35,7 @@
 				});
 			},
 			{
-				rootMargin: '-10% 0% -10% 0%',
+				rootMargin: '-20% 0% -65% 0%',
 				threshold: 0,
 			},
 		);

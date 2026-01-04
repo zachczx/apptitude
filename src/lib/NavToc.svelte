@@ -26,21 +26,27 @@
 			{#each contents as section, i}
 				{@const isActive = currentSection === section.id}
 
-				<a href="#{section.id}" class={['p-4', isActive && 'bg-primary/30 rounded-3xl']}>
+				<a
+					href="#{section.id}"
+					class={['p-4 block transition-all duration-200', isActive && 'bg-primary/10 rounded-2xl']}
+					onclick={(e) => {
+						e.preventDefault();
+						const el = document.getElementById(section.id);
+						if (el) {
+							const y = el.getBoundingClientRect().top + window.scrollY - 100; // Offset for header
+							window.scrollTo({ top: y, behavior: 'smooth' });
+						}
+					}}>
 					<div class="flex items-center gap-4">
 						<div
-							class="bg-base-content text-base-100 flex aspect-square size-6 items-center justify-center rounded-full font-bold">
+							class="bg-base-content text-base-100 flex aspect-square size-6 items-center justify-center rounded-full text-xs font-bold">
 							{i + 1}
 						</div>
 
-						<div class={[isActive ? 'font-bold' : 'font-medium']}>
+						<div class={[isActive ? 'font-bold text-primary' : 'font-medium text-base-content/70']}>
 							{section.title}
 						</div>
 					</div>
-
-					{#if isActive}
-						<div class="active-bar"></div>
-					{/if}
 				</a>
 			{/each}
 		</nav>
@@ -67,5 +73,3 @@
 	</div>
 {/if}
 
-<style>
-</style>
