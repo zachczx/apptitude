@@ -40,8 +40,8 @@
 
 	let currentSection = $state('');
 
-	let contents: TableOfContent[] = $derived.by(() => {
-		let items = [];
+	let contents = $derived.by(() => {
+		let items: TableOfContent[] = [];
 		if (data.post?.definitions && data.post.definitions.length > 0)
 			items.push({ id: 'definitions', title: 'Definitions' });
 		if (data.post?.goals && data.post.goals.length > 0) items.push({ id: 'goals', title: 'Goals' });
@@ -62,7 +62,7 @@
 	<NewWrap title={data.post.name}>
 		<Intersection bind:currentSection>
 			<article
-				class="prose-section:mt-20 prose-h3:mb-6 prose-h3:mt-12 prose-h5:mb-4 prose-p:mb-4 grid gap-y-32 pb-10">
+				class="grid gap-y-20 pb-10">
 				{#if data.post.definitions && data.post.definitions.length > 0}
 					<Section id="definitions" title="Definitions">
 						{#each data.post.definitions as d}

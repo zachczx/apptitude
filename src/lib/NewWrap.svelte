@@ -7,7 +7,7 @@
 		toc,
 		title,
 		subtitle = '',
-	}: { children: Snippet; toc?: Snippet; title: string; subtitle: string } = $props();
+	}: { children: Snippet; toc?: Snippet; title: string; subtitle?: string } = $props();
 </script>
 
 <div class="relative grid min-h-dvh grid-cols-[1fr_auto]">
@@ -28,7 +28,7 @@
 		<Footer />
 	</article>
 
-	<aside class="overflow-y-auto sticky top-14 h-[calc(100vh-4rem)] min-w-64 hidden lg:block">
+	<aside class="sticky top-14 hidden h-[calc(100vh-4rem)] min-w-64 overflow-y-auto lg:block">
 		{@render toc?.()}
 	</aside>
 </div>
