@@ -20,7 +20,7 @@
 		<article
 			class="group card bg-base-card border-base-content/10 hover:border-primary/40 border transition-all hover:shadow-lg">
 			<div class="card-body">
-				<div class="size-20 shrink-0">
+				<div class="my-4 size-20 shrink-0">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
 						width="32"
@@ -64,7 +64,7 @@
 		<article
 			class="group card bg-base-card border-base-content/10 hover:border-primary/40 border transition-all hover:shadow-lg">
 			<div class="card-body">
-				<div class="h-20 w-20 shrink-0">
+				<div class="my-4 size-20 shrink-0">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
 						width="32"
@@ -117,7 +117,7 @@
 		<article
 			class="group card bg-base-card border-base-content/10 hover:border-primary/40 border transition-all hover:shadow-lg">
 			<div class="card-body">
-				<div class="size-20 shrink-0">
+				<div class="my-4 size-20 shrink-0">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
 						width="32"
@@ -155,7 +155,7 @@
 		<article
 			class="group card bg-base-card border-base-content/10 hover:border-primary/40 border transition-all hover:shadow-lg">
 			<div class="card-body">
-				<div class="size-20 shrink-0">
+				<div class="my-4 size-20 shrink-0">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
 						width="32"
