@@ -1252,49 +1252,42 @@ export const info: LearnData[] = [
 	},
 	{
 		id: 11,
-		name: 'AI (I)',
+		name: 'AI Fundamentals & Application',
 		level: 2,
-		intro: 'AI is the extra brain cells you wish you were born with.',
-		slug: 'ai',
+		intro:
+			'Sort the hype from the reality. Understand what AI is and how to apply it in public service.',
+		slug: 'ai-fundamentals',
 		topics: [
 			'ai',
-			'computer vision',
-			'deep learning',
-			'embeddings',
-			'inference',
+			'generative-ai',
 			'LLM',
-			'machine learning',
-			'natural language processing',
-			'neural networks',
 			'prompting',
+			'ethics',
+			'public-service',
+			'buy-vs-build',
 			'RAG',
-			'training',
-			'vectors',
 		],
 		questions: [
 			'What are the foundational principles and technologies behind AI and LLMs?',
-			'What are the differences between closed and open source LLMs',
 			'How can AI and LLMs be leveraged to enhance public service delivery?',
 			'Should we buy vs build vs adopt?',
 			'Should we go with GovTech/OGP products, build ourselves, or approach a vendor?',
-			'If we build, how can we avoid irreversible decisions that lock us into (soon to be) obsolete paths?',
-			'How can AI contribute to more efficient and effective public service workflows?',
 			'What are AI agents and what are the benefits/costs of agentic workflows?',
 			'What training or skills are necessary for public sector employees to work effectively with AI?',
 		],
 		issues: [
+			// Application & Hype Issues
 			"The AI genie is out of the bottle, there's no return to life before it",
 			"Given the ongoing hype train for AI, it's tempting to use AI for the sake of it, but that'd would be a huge L",
 			'Focus on solving a meaningful problem, not the hype',
-			'Long tail of training/finetuning yourself, building UIs, and maintaining is too much investment',
 			'AI user interfaces and workflows are not necessarily (and can often be contrary to) good UX',
 			'Simple applications of ML might be far more useful for everyday problems, as is straightforward improvements to how we organize info, design websites instead of pushing for a chatbot',
 		],
 		objectives: [
 			'Sort through the AI hype from the keepers',
-			'Understand what it takes to conceptualize, develop, & deploy AI products, e.g. compute infrastructure, toolchain',
-			'Know what everyone not on LLMs is missing out',
+			'Understand the different techniques and methods to enhance your business processes with AI',
 			'Spot opportunities to do things much faster and easier with LLMs',
+			'Understand the trade-offs between buying, building, and adopting central tools',
 		],
 		resources: {
 			courses: [
@@ -1311,10 +1304,6 @@ export const info: LearnData[] = [
 					url: 'https://www.coursera.org/learn/ai-for-everyone',
 				},
 				{
-					text: 'Machine Learning Crash Course | Google',
-					url: 'https://developers.google.com/machine-learning/crash-course/ml-intro',
-				},
-				{
 					text: 'Responsible AI: Applying AI Principles with Google Cloud',
 					url: 'https://www.cloudskillsboost.google/course_templates/388',
 				},
@@ -1324,35 +1313,19 @@ export const info: LearnData[] = [
 				},
 			],
 			youtube: [
-				'https://youtube.com/embed/zjkBMFhNj_g',
-				'https://youtube.com/embed/NKnZYvZA7w4',
-				'https://youtube.com/embed/PeMlggyqz0Y?si=X1ZeR-qr01d_BnP-',
-				'https://youtube.com/embed/5sLYAQS9sWQ',
-				'https://youtube.com/embed/G8T1O81W96Y',
-				'https://youtube.com/embed/T-D1OfcDW1M?si=WZJLcElfcEh4-51c',
-				'https://youtube.com/embed/sal78ACtGTc',
-				'https://youtube.com/embed/lXLBTBBil2U',
-				'https://youtube.com/embed/yTAMrHVG1ew',
-				'https://youtube.com/embed/i2qSxMVeVLI',
-				'https://youtube.com/embed/fG3IE9dkyKY',
-				'https://youtube.com/embed/sFztPP9qPRc',
-				'https://youtube.com/embed/LsNHsfZFjlA',
-				'https://youtube.com/embed/oZPTBXnaSBI',
+				'https://youtube.com/embed/zjkBMFhNj_g', // Intro to GenAI
+				'https://youtube.com/embed/NKnZYvZA7w4', // What is GenAI
+				'https://youtube.com/embed/PeMlggyqz0Y?si=X1ZeR-qr01d_BnP-', // AI for Good
+				'https://youtube.com/embed/5sLYAQS9sWQ', // GenAI in Public Sector
+				'https://youtube.com/embed/G8T1O81W96Y', // Prompt Engineering
+				'https://youtube.com/embed/T-D1OfcDW1M?si=WZJLcElfcEh4-51c', // Agents
+				'https://youtube.com/embed/sal78ACtGTc', // Ethics
 			],
 			links: [
 				{
 					text: 'The AI Index Report: Measuring trends in AI',
 					url: 'https://aiindex.stanford.edu/report/',
 				},
-				{
-					text: 'Introduction to Generative AI',
-					url: 'https://www.cloudskillsboost.google/course_templates/536',
-				},
-				{
-					text: 'AI For Everyone Course (DeepLearning.AI) | Coursera',
-					url: 'https://www.coursera.org/learn/ai-for-everyone',
-				},
-
 				{
 					text: 'AI Explained - Youtube',
 					url: 'https://www.youtube.com/@aiexplained-official',
@@ -1361,16 +1334,10 @@ export const info: LearnData[] = [
 					text: 'LLM Embeddings — Explained Simply',
 					url: 'https://pub.aimind.so/llm-embeddings-explained-simply-f7536d3d0e4b',
 				},
-
-				{
-					text: 'Visual Interactive Guide to the Basics of Neural Networks',
-					url: 'http://jalammar.github.io/visual-interactive-guide-basics-neural-networks/',
-				},
 				{
 					text: 'Introduction to Natural Language Processing for Text',
 					url: 'https://towardsdatascience.com/introduction-to-natural-language-processing-for-text-df845750fb63',
 				},
-
 				{
 					text: 'National AI Strategy | Smart Nation Singapore',
 					url: 'https://www.smartnation.gov.sg/nais/',
@@ -1383,54 +1350,64 @@ export const info: LearnData[] = [
 					text: 'AI agents: types, benefits, and examples',
 					url: 'https://yellow.ai/blog/ai-agents/',
 				},
+				{
+					text: "There's An AI For That",
+					url: 'https://theresanaiforthat.com/',
+				},
+				{
+					text: 'Futurepedia - Find the Best AI Tools & Software',
+					url: 'https://www.futurepedia.io/',
+				},
 			],
 		},
 	},
 	{
 		id: 12,
-		name: 'AI (II)',
+		name: 'AI Engineering & Strategy',
 		level: 3,
-		intro: 'AI is the extra brain cells you wish you were born with.',
-		slug: 'ai-advanced',
+		intro:
+			'Deep dive into the value chain: Chips, Training, Inference, and avoiding technical debt.',
+		slug: 'ai-engineering-strategy',
 		topics: [
-			'ai',
 			'computer vision',
 			'deep learning',
 			'embeddings',
 			'inference',
 			'machine learning',
-			'natural language processing',
 			'neural networks',
-			'pretraining',
 			'training',
 			'transformers',
 			'vectors',
+			'gpus',
+			'value-chain',
 		],
 		questions: [
-			'What is the value chain for AI/LLMs and how do they come together? AI value chain - GPU Chips, Foundational Models, Compute (Training, Inference) + Storage + Data Infrastructure, Application',
-			'How are the various options for training/learning, deploying, & performing inference for AI/LLMs/vision models',
-			'How does the industry and leading minds think about learning/inference, effectiveness, size of model, speed/throughput, efficiency, power needs/consumption?',
-			'What part of the AI value chain do we as a product/project/policy team go for?',
+			'What is the value chain for AI/LLMs? (Chips -> Foundational Models -> Compute/Inference -> Apps)',
+			'How does the industry think about learning vs inference, model size, and power consumption?',
+			'What are the differences between closed and open source LLMs?',
 			'How can we ensure the privacy and security of data used by AI systems?',
 			'What are the key challenges in integrating AI technologies into existing IT infrastructure?',
 			'What is the immediate and medium term future for LLMs, and where are the next leaps & improvements going to be at?',
-			'What ethical considerations should guide the use of AI in public sectors?',
+			'If we build, how can we avoid irreversible decisions that lock us into (soon to be) obsolete paths?',
 		],
 		issues: [
+			// Engineering & Strategic Risks
 			'Obsolescence cycle is extremely fast, so we must avoid significant sunk costs and irreversible decisions',
 			'Fast pace of product and technological improvements challenges rigid/aged organizational structures - impossible to keep up if tons of red-tape is needed for chopping and changing',
 			'Generative AI is not the be-all and end-all, not everything needs to be an LLM-based chatbot',
 			'Lock-in or sunk costs is an issue, e.g. sinking tons of money into deploying/finetuning your Llama2 something only to have it obsolete 12 months later',
+			'Long tail of training/finetuning yourself, building UIs, and maintaining is too much investment',
 		],
 		objectives: [
 			'See the opportunities and challenges across the AI value chain - GPU Chips, Foundational Models, Compute (Training, Inference) + Storage + Data Infrastructure, Application.',
-			'Understand the different techniques and methods to enhance your business processes with AI',
+			'Understand what it takes to conceptualize, develop, & deploy AI products, e.g. compute infrastructure, toolchain',
 			'Know which LLMs are good, how good, for what',
+			'Know what everyone not on LLMs is missing out',
 		],
 		resources: {
 			courses: [
 				{
-					text: 'Machine Learning Crash Course',
+					text: 'Machine Learning Crash Course | Google',
 					url: 'https://developers.google.com/machine-learning/crash-course',
 				},
 				{
@@ -1447,19 +1424,29 @@ export const info: LearnData[] = [
 				},
 			],
 			youtube: [
-				'https://youtube.com/embed/jvqFAi7vkBc',
-				'https://youtube.com/embed/Mf1P3n6TqCc',
-				'https://www.youtube.com/embed/qTogNUV3CAI',
-				'https://youtube.com/embed/5t1vTLU7s40?si=uEflOaOw_p1eyRoZ',
-				'https://youtube.com/embed/bc6uFV9CJGg',
-				'https://youtube.com/embed/cdiD-9MMpb0',
-				'https://youtube.com/embed/Z0jqIk7MUfE',
-				'https://youtube.com/embed/Dbog8Yw3kEM',
-				'https://youtube.com/embed/yTAMrHVG1ew?si=P-UQWIr2LRn6O-H3&t=165',
-				'https://youtube.com/embed/h1c_jmk97Ss',
-				'https://youtube.com/embed/hFTqQ4boR-s',
+				'https://youtube.com/embed/lXLBTBBil2U', // Neural Networks
+				'https://youtube.com/embed/yTAMrHVG1ew', // Transformers
+				'https://youtube.com/embed/i2qSxMVeVLI', // Backpropagation
+				'https://youtube.com/embed/fG3IE9dkyKY', // Gradient Descent
+				'https://youtube.com/embed/sFztPP9qPRc', // CNNs
+				'https://youtube.com/embed/LsNHsfZFjlA', // RNNs
+				'https://youtube.com/embed/oZPTBXnaSBI', // GANs
+				'https://youtube.com/embed/jvqFAi7vkBc', // Andrej Karpathy
+				'https://youtube.com/embed/Mf1P3n6TqCc', // Yann LeCun
+				'https://www.youtube.com/embed/qTogNUV3CAI', // Geoffrey Hinton
+				'https://youtube.com/embed/5t1vTLU7s40?si=uEflOaOw_p1eyRoZ', // Ilya Sutskever
+				'https://youtube.com/embed/bc6uFV9CJGg', // Sam Altman
+				'https://youtube.com/embed/cdiD-9MMpb0', // Demis Hassabis
+				'https://youtube.com/embed/Z0jqIk7MUfE', // Fei-Fei Li
+				'https://youtube.com/embed/Dbog8Yw3kEM', // Andrew Ng
+				'https://youtube.com/embed/h1c_jmk97Ss', // Jensen Huang
+				'https://youtube.com/embed/hFTqQ4boR-s', // Satya Nadella
 			],
 			links: [
+				{
+					text: 'Visual Interactive Guide to the Basics of Neural Networks',
+					url: 'http://jalammar.github.io/visual-interactive-guide-basics-neural-networks/',
+				},
 				{
 					text: 'LLM Visualization',
 					url: 'https://bbycroft.net/llm',
@@ -1492,7 +1479,6 @@ export const info: LearnData[] = [
 					text: 'Introducing Meta Llama 3: The most capable openly available LLM to date',
 					url: 'https://ai.meta.com/blog/meta-llama-3/',
 				},
-
 				{
 					text: 'Why Nvidia’s AI Supremacy is Only Temporary | HN',
 					url: 'https://news.ycombinator.com/item?id=37467585',
@@ -1514,20 +1500,12 @@ export const info: LearnData[] = [
 					url: 'https://www.quantamagazine.org/how-do-machines-grok-data-20240412/',
 				},
 				{
-					text: "	New GitHub Copilot research finds 'downward pressure on code quality' | HackerNews",
+					text: "New GitHub Copilot research finds 'downward pressure on code quality' | HackerNews",
 					url: 'https://news.ycombinator.com/item?id=39168105',
 				},
 				{
 					text: 'Unlock Your LLM Coding Potential with StarCoder2',
 					url: 'https://developer.nvidia.com/blog/unlock-your-llm-coding-potential-with-starcoder2/',
-				},
-				{
-					text: "There's An AI For That",
-					url: 'https://theresanaiforthat.com/',
-				},
-				{
-					text: 'Futurepedia - Find the Best AI Tools & Software',
-					url: 'https://www.futurepedia.io/',
 				},
 			],
 		},

@@ -61,8 +61,12 @@
 					id: 'header-ai',
 					icon: AI,
 					children: [
-						{ label: 'L1', id: 'ai', href: '/learn/ai' },
-						{ label: 'L2', id: 'ai-advanced', href: '/learn/ai-advanced' },
+						{ label: 'AI Fundamentals', id: 'ai-fundamentals', href: '/learn/ai-fundamentals' },
+						{
+							label: 'AI Engineering & Strategy',
+							id: 'ai-engineering-strategy',
+							href: '/learn/ai-engineering-strategy',
+						},
 					],
 				},
 				{ label: 'Web Dev', id: 'technical', href: '/learn/technical', icon: WebDev },
