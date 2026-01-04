@@ -3,7 +3,7 @@
 	import NavToc from '$lib/NavToc.svelte';
 	import Intersection from '$lib/ui/Intersection.svelte';
 	import Section from '$lib/ui/Section.svelte';
-	import CarbonWarningFilled from '$lib/assets/svg/CarbonWarningFilled.svelte';
+	import { WarningFilled } from 'carbon-icons-svelte';
 
 	let { data } = $props();
 
@@ -79,7 +79,7 @@
 						{#each data.post.issues as issue}
 							<div
 								class="bg-base-card grid grid-cols-[auto_1fr] items-center gap-4 rounded-xl p-6 shadow-sm">
-								<CarbonWarningFilled class="text-error size-8" />
+								<WarningFilled class="text-error size-8" />
 								<p class="text-base-content">{issue}</p>
 							</div>
 						{/each}

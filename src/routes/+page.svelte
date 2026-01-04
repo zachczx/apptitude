@@ -1,5 +1,5 @@
 <script lang="ts">
-	import CarbonChevronRight from '$lib/assets/svg/CarbonChevronRight.svelte';
+	import { ChevronRight } from 'carbon-icons-svelte';
 	import Footer from '$lib/Footer.svelte';
 	import { info } from './(app)/learn/data_learn';
 
@@ -135,7 +135,7 @@
 				href="/learn"
 				class="text-primary mt-8 inline-flex items-center gap-2 text-sm font-semibold transition-all hover:gap-3">
 				Browse full list
-				<CarbonChevronRight class="h-4 w-4" />
+				<ChevronRight class="h-4 w-4" />
 			</a>
 		</div>
 
@@ -156,25 +156,25 @@
 					href="/guides/product"
 					class="border-secondary-content/10 flex items-center justify-between rounded-lg border p-3 text-sm font-medium transition-colors hover:border-rose-300 hover:bg-rose-50">
 					<span>Product Strategy</span>
-					<CarbonChevronRight class="text-secondary-content h-4 w-4" />
+					<ChevronRight class="text-secondary-content h-4 w-4" />
 				</a>
 				<a
 					href="/guides/problems"
 					class="border-secondary-content/10 flex items-center justify-between rounded-lg border p-3 text-sm font-medium transition-colors hover:border-rose-300 hover:bg-rose-50">
 					<span>Problem Solving</span>
-					<CarbonChevronRight class="text-secondary-content h-4 w-4" />
+					<ChevronRight class="text-secondary-content h-4 w-4" />
 				</a>
 				<a
 					href="/guides/cost"
 					class="border-secondary-content/10 flex items-center justify-between rounded-lg border p-3 text-sm font-medium transition-colors hover:border-rose-300 hover:bg-rose-50">
 					<span>Cost Management</span>
-					<CarbonChevronRight class="text-secondary-content h-4 w-4" />
+					<ChevronRight class="text-secondary-content h-4 w-4" />
 				</a>
 				<a
 					href="/guides/research"
 					class="border-secondary-content/10 flex items-center justify-between rounded-lg border p-3 text-sm font-medium transition-colors hover:border-rose-300 hover:bg-rose-50">
 					<span>User Research</span>
-					<CarbonChevronRight class="text-secondary-content h-4 w-4" />
+					<ChevronRight class="text-secondary-content h-4 w-4" />
 				</a>
 			</div>
 
@@ -182,7 +182,7 @@
 				href="/guides"
 				class="text-secondary-content mt-8 inline-flex items-center gap-2 text-sm font-semibold transition-all hover:gap-3">
 				Read all notes
-				<CarbonChevronRight class="h-4 w-4" />
+				<ChevronRight class="h-4 w-4" />
 			</a>
 		</div>
 	</div>

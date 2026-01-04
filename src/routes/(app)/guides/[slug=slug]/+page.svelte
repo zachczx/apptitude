@@ -3,12 +3,11 @@
 	import NewWrap from '$lib/NewWrap.svelte';
 	import Intersection from '$lib/ui/Intersection.svelte';
 	import Section from '$lib/ui/Section.svelte';
-	import CarbonHelpFilled from '$lib/assets/svg/CarbonHelpFilled.svelte';
-	import CarbonReply from '$lib/assets/svg/CarbonReply.svelte';
+	import {
+		CloseFilled,
+		NotificationFilled
+	} from 'carbon-icons-svelte';
 	import { Marked, marked } from 'marked';
-	import CarbonWarningFilled from '$lib/assets/svg/CarbonWarningFilled.svelte';
-	import CarbonCloseFilled from '$lib/assets/svg/CarbonCloseFilled.svelte';
-	import CarbonNotificationFilled from '$lib/assets/svg/CarbonNotificationFilled.svelte';
 	let { data } = $props();
 
 	let markedQuestions = $derived.by(() => {
@@ -138,10 +137,10 @@
 						class="bg-base-card grid content-center gap-4 rounded-xl p-8 shadow lg:grid-cols-[auto_1fr]">
 						{#if icon === 'warning'}
 							<div class="bg-warning flex size-8 items-center justify-center rounded-full">
-								<CarbonNotificationFilled class="text-base-100 size-5" />
+								<NotificationFilled class="text-base-100 size-5" />
 							</div>
 						{:else}
-							<CarbonCloseFilled class="text-error size-8" />
+							<CloseFilled class="text-error size-8" />
 						{/if}
 
 						<div class="grid gap-4">

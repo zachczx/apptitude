@@ -1,6 +1,5 @@
 <script lang="ts">
-	import CarbonCheckmarkFilled from '$lib/assets/svg/CarbonCheckmarkFilled.svelte';
-	import CarbonCloseFilled from '$lib/assets/svg/CarbonCloseFilled.svelte';
+	import { CheckmarkFilled, CloseFilled } from 'carbon-icons-svelte';
 	import GuideExample from '$lib/GuideExample.svelte';
 	import NavToc from '$lib/NavToc.svelte';
 	import GuideExampleLong from '$lib/GuideExampleLong.svelte';
@@ -89,15 +88,15 @@
 					<GuideExample>
 						<ul class="space-y-4">
 							<li>
-								<CarbonCheckmarkFilled class="text-success me-2 mb-1 inline" />80% of license
+								<CheckmarkFilled class="text-success me-2 mb-1 inline" />80% of license
 								applications on XXX’s system A take >6 mths to resolve, against target of 3 mths.
 							</li>
 							<li>
-								<CarbonCheckmarkFilled class="text-success me-2 mb-1 inline" />This results in
+								<CheckmarkFilled class="text-success me-2 mb-1 inline" />This results in
 								revenue loss of $X per year for these businesses.
 							</li>
 							<li>
-								<CarbonCheckmarkFilled class="text-success me-2 mb-1 inline" />With N license
+								<CheckmarkFilled class="text-success me-2 mb-1 inline" />With N license
 								approvals a year, the overall impact is significant.
 							</li>
 						</ul>
@@ -146,11 +145,11 @@
 						What happens if we left this problem alone?
 						<GuideExample>
 							<div>
-								<CarbonCloseFilled class="text-warning me-2 mb-1 inline" />Unclear and outdated
+								<CloseFilled class="text-warning me-2 mb-1 inline" />Unclear and outdated
 								documentation were flagged out as areas of risk during the audit reviews.
 							</div>
 							<div>
-								<CarbonCheckmarkFilled class="text-success me-2 mb-1 inline" /><span
+								<CheckmarkFilled class="text-success me-2 mb-1 inline" /><span
 									class="text-primary">XX cases</span>
 								of non-compliance to prevailing policies
 								<span class="text-primary">cost us $XM</span> each year because these users relied on
@@ -162,15 +161,15 @@
 						If you need a benchmark, compare with alternate solutions or adjacent industries.
 						<GuideExample>
 							<div>
-								<CarbonCheckmarkFilled class="text-success me-2 mb-1 inline" />Approvals continue to
+								<CheckmarkFilled class="text-success me-2 mb-1 inline" />Approvals continue to
 								take 6 mths, or more with X new policy
 							</div>
 							<div>
-								<CarbonCheckmarkFilled class="text-success me-2 mb-1 inline" />System B takes 4 mths
+								<CheckmarkFilled class="text-success me-2 mb-1 inline" />System B takes 4 mths
 								per approval
 							</div>
 							<div>
-								<CarbonCheckmarkFilled class="text-success me-2 mb-1 inline" />F&B licenses take 3
+								<CheckmarkFilled class="text-success me-2 mb-1 inline" />F&B licenses take 3
 								mths per approval
 							</div>
 						</GuideExample>
@@ -190,7 +189,7 @@
 						>.
 						<GuideExample>
 							<div>
-								<CarbonCheckmarkFilled class="text-success me-2 mb-1 inline" /><span
+								<CheckmarkFilled class="text-success me-2 mb-1 inline" /><span
 									class="text-primary">[Name of user persona]</span>
 								is a
 								<span class="text-primary">[type of user]</span>
@@ -200,7 +199,7 @@
 								<span class="text-primary">[benefits of user experience]</span>.
 							</div>
 							<div>
-								<CarbonCheckmarkFilled class="text-success me-2 mb-1 inline" />Anne is a staff
+								<CheckmarkFilled class="text-success me-2 mb-1 inline" />Anne is a staff
 								officer who writes AORs for overseas trips. She needs an efficient way to double
 								check her submission against all applicable finance guidelines. She presently
 								searches, downloads, and toggles among more than 5 separate finance policy documents
@@ -226,16 +225,16 @@
 					</ul>
 					<GuideExample>
 						<div>
-							<CarbonCheckmarkFilled class="text-success me-2 mb-1 inline" />Revenue loss of $XXM
+							<CheckmarkFilled class="text-success me-2 mb-1 inline" />Revenue loss of $XXM
 							per year for X no. of businesses
 						</div>
 					</GuideExample>
 					<GuideExample>
 						<div>
-							<CarbonCheckmarkFilled class="text-success me-2 mb-1 inline" />~3 man months are spent
+							<CheckmarkFilled class="text-success me-2 mb-1 inline" />~3 man months are spent
 							by 15 officers monthly collating, cleaning, emailing, and drafting MS Word reports on
 							service transactions, which are done manually on Excel, Outlook, Word.
-							<CarbonCheckmarkFilled class="text-success me-2 mb-1 inline" />Symptoms of poor
+							<CheckmarkFilled class="text-success me-2 mb-1 inline" />Symptoms of poor
 							service delivery is only identified and acted upon up 2 weeks later, because data and
 							business insights are manually collated and generated.
 						</div>
@@ -251,7 +250,7 @@
 							Break down large problem statements into its components.
 							<GuideExample>
 								<div>
-									<CarbonCloseFilled class="text-warning me-2 mb-1 inline" />Users struggle to find
+									<CloseFilled class="text-warning me-2 mb-1 inline" />Users struggle to find
 									the correct employee HR service they need in XXX employee portal, which also
 									doubly frustrates them when it randomly crashes while they're filling in an
 									application. Employee productivity drops and this also creates workload for manual
@@ -282,7 +281,7 @@
 								Reaching EOL or EOS tells you the timeline, not the value.
 								<GuideExample>
 									<div>
-										<CarbonCloseFilled class="text-warning me-2 mb-1 inline" />XXX system will reach
+										<CloseFilled class="text-warning me-2 mb-1 inline" />XXX system will reach
 										end of life in 2025, and we need $XXXM to do a tech refresh, as otherwise
 										citizens would no longer be able to transact digitally for their XX
 										applications.
@@ -296,7 +295,7 @@
 
 								<GuideExample>
 									<div>
-										<CarbonCloseFilled class="text-warning me-2 mb-1 inline" />Under the XXX system
+										<CloseFilled class="text-warning me-2 mb-1 inline" />Under the XXX system
 										v2 milestone, we could not complete development to improve searchability and
 										user centricity. Given the AI boom, it is timely to revisit development for
 										those aspects, in the form of building an AI chatbot that can improve search and
@@ -325,7 +324,7 @@
 					</ul>
 					<GuideExample>
 						<div>
-							<CarbonCloseFilled class="text-warning me-2 mb-1 inline" />We propose to support local
+							<CloseFilled class="text-warning me-2 mb-1 inline" />We propose to support local
 							small and medium enterprises to do well and expand both locally and into Southeast
 							Asia.
 							<div class="tooltip" data-tip="What is preventing local businesses from scaling?">
@@ -345,7 +344,7 @@
 					</ul>
 					<GuideExample>
 						<div>
-							<CarbonCloseFilled class="text-warning me-2 mb-1 inline" />We do not have a system
+							<CloseFilled class="text-warning me-2 mb-1 inline" />We do not have a system
 							that can collect comprehensive information that businesses give us in the process of
 							license applications.
 							<div class="tooltip" data-tip="">
@@ -355,7 +354,7 @@
 					</GuideExample>
 					<GuideExample>
 						<div>
-							<CarbonCloseFilled class="text-warning me-2 mb-1 inline" />Employees need to go
+							<CloseFilled class="text-warning me-2 mb-1 inline" />Employees need to go
 							through long documents to find relevant clauses, so they need an AI chatbot that can
 							fetch, communicate, and process rules for them, and we can improve the search
 							experience in XXX system today.
@@ -470,7 +469,7 @@
 					<p>Outcome metrics should be relevant, frequent, objective, and specific.</p>
 					<GuideExample>
 						<div>
-							<CarbonCheckmarkFilled class="text-success me-2 mb-1 inline" /><span
+							<CheckmarkFilled class="text-success me-2 mb-1 inline" /><span
 								class="text-success"
 								>% of applications where time from first submission to communication of outcome is ≤
 								3 months</span>
@@ -480,14 +479,14 @@
 					<p>Improvement or worsening of problem should show in metrics.</p>
 					<GuideExample>
 						<div>
-							<CarbonCloseFilled class="text-warning me-2 mb-1 inline" />% of successful
+							<CloseFilled class="text-warning me-2 mb-1 inline" />% of successful
 							applications
 							<div class="tooltip" data-tip="Irrelevant to problem of processing time.">
 								<button class="btn btn-outline btn-warning btn-xs ms-1">Why?</button>
 							</div>
 						</div>
 						<div>
-							<CarbonCheckmarkFilled class="text-success me-2 mb-1 inline" />...
+							<CheckmarkFilled class="text-success me-2 mb-1 inline" />...
 							<span class="text-success"
 								>time from first submission to communication of outcome</span
 							>...
@@ -498,7 +497,7 @@
 					<p>Changes in solution should quickly show in metrics.</p>
 					<GuideExample>
 						<div>
-							<CarbonCloseFilled class="text-warning me-2 mb-1 inline" />% of applications resolved
+							<CloseFilled class="text-warning me-2 mb-1 inline" />% of applications resolved
 							within 3 months, calculated based on data extracted from system by vendor annually
 							<div
 								class="tooltip"
@@ -508,7 +507,7 @@
 							</div>
 						</div>
 						<div>
-							<CarbonCheckmarkFilled class="text-success me-2 mb-1 inline" />... to communication of
+							<CheckmarkFilled class="text-success me-2 mb-1 inline" />... to communication of
 							outcome is
 							<span class="text-success">≤ 3 months</span>
 						</div>
@@ -522,7 +521,7 @@
 
 					<GuideExample>
 						<div>
-							<CarbonCloseFilled class="text-warning me-2 mb-1 inline" />% of applicants which
+							<CloseFilled class="text-warning me-2 mb-1 inline" />% of applicants which
 							report having their applications resolved within 3 months
 							<div
 								class="tooltip"
@@ -532,7 +531,7 @@
 							</div>
 						</div>
 						<div>
-							<CarbonCheckmarkFilled class="text-success me-2 mb-1 inline" />% of
+							<CheckmarkFilled class="text-success me-2 mb-1 inline" />% of
 							<span class="text-success">applications</span>...
 						</div>
 					</GuideExample>
@@ -545,7 +544,7 @@
 					</p>
 					<GuideExample>
 						<div>
-							<CarbonCloseFilled class="text-warning me-2 mb-1 inline" />% of applications resolved
+							<CloseFilled class="text-warning me-2 mb-1 inline" />% of applications resolved
 							within 3 months
 							<div
 								class="tooltip"
@@ -556,7 +555,7 @@
 							</div>
 						</div>
 						<div>
-							<CarbonCheckmarkFilled class="text-success me-2 mb-1 inline" />...
+							<CheckmarkFilled class="text-success me-2 mb-1 inline" />...
 							<span class="text-success"
 								>time from first submission to communication of outcome</span
 							>...
@@ -565,7 +564,7 @@
 
 					<GuideExample>
 						<div>
-							<CarbonCloseFilled class="text-warning me-2 mb-1 inline" />Objective: Ensure the
+							<CloseFilled class="text-warning me-2 mb-1 inline" />Objective: Ensure the
 							currency of guidelines documents using new administration feature in XXX system
 							<div
 								class="tooltip"
@@ -574,7 +573,7 @@
 							</div>
 						</div>
 						<div>
-							<CarbonCloseFilled class="text-warning me-2 mb-1 inline" />Key Result: No outdated
+							<CloseFilled class="text-warning me-2 mb-1 inline" />Key Result: No outdated
 							content on XXX system.
 							<div
 								class="tooltip"
@@ -583,11 +582,11 @@
 							</div>
 						</div>
 						<div>
-							<CarbonCheckmarkFilled class="text-success me-2 mb-1 inline" />Objective: Search
+							<CheckmarkFilled class="text-success me-2 mb-1 inline" />Objective: Search
 							results contain only content from the latest version of guidelines documents.
 						</div>
 						<div>
-							<CarbonCheckmarkFilled class="text-success me-2 mb-1 inline" />Key Result: Search
+							<CheckmarkFilled class="text-success me-2 mb-1 inline" />Key Result: Search
 							microservice will update index with content from outdated guidelines documents within
 							1 min of a new version upload.
 						</div>
@@ -595,14 +594,14 @@
 
 					<GuideExample>
 						<div>
-							<CarbonCloseFilled class="text-warning me-2 mb-1 inline" />Objective: Improve
+							<CloseFilled class="text-warning me-2 mb-1 inline" />Objective: Improve
 							information retrieval
 							<div class="tooltip" data-tip="What do we mean by improve information retrieval?">
 								<button class="btn btn-outline btn-warning btn-xs ms-1">Why?</button>
 							</div>
 						</div>
 						<div>
-							<CarbonCheckmarkFilled class="text-success me-2 mb-1 inline" />Objective: Users get an
+							<CheckmarkFilled class="text-success me-2 mb-1 inline" />Objective: Users get an
 							accurate and concise explanation of questions on employee administrative policies.
 						</div>
 					</GuideExample>
@@ -633,7 +632,7 @@
 					</p>
 					<GuideExample>
 						<div>
-							<CarbonCloseFilled class="text-warning me-2 mb-1 inline" />Key Result: Less than 1 min
+							<CloseFilled class="text-warning me-2 mb-1 inline" />Key Result: Less than 1 min
 							to fetch requested information through an AI search engine
 							<div
 								class="tooltip"
@@ -642,7 +641,7 @@
 							</div>
 						</div>
 						<div>
-							<CarbonCheckmarkFilled class="text-success me-2 mb-1 inline" />Key Result: User's
+							<CheckmarkFilled class="text-success me-2 mb-1 inline" />Key Result: User's
 							question on employee admin guidelines is answered within 1 min of arriving on landing
 							page
 						</div>
@@ -657,7 +656,7 @@
 					</p>
 					<GuideExample>
 						<div>
-							<CarbonCheckmarkFilled class="text-success me-2 mb-1 inline" />Cost per impact =
+							<CheckmarkFilled class="text-success me-2 mb-1 inline" />Cost per impact =
 							Annual Total Cost / Target units of impact achieved in the relevant year
 						</div>
 					</GuideExample>
