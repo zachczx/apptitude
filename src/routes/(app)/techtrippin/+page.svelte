@@ -67,7 +67,4 @@
 		{@render trip('resistant')}
 		{@render trip('unskilled')}
 	</div>
-	{#snippet toc()}
-		<NavToc {currentSection} />
-	{/snippet}
 </NewWrap>
