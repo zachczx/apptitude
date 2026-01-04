@@ -135,14 +135,7 @@
 				href="/learn"
 				class="text-primary mt-8 inline-flex items-center gap-2 text-sm font-semibold transition-all hover:gap-3">
 				Browse full list
-				<svg
-					xmlns="http://www.w3.org/2000/svg"
-					class="h-4 w-4"
-					fill="none"
-					viewBox="0 0 24 24"
-					stroke="currentColor">
-					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-				</svg>
+				<CarbonChevronRight class="h-4 w-4" />
 			</a>
 		</div>
 
@@ -161,25 +154,25 @@
 			<div class="flex flex-col gap-2">
 				<a
 					href="/guides/product"
-					class="border-secondary-content/20 flex items-center justify-between rounded-lg border p-3 text-sm font-medium transition-colors hover:border-rose-300 hover:bg-rose-50">
+					class="border-secondary-content/10 flex items-center justify-between rounded-lg border p-3 text-sm font-medium transition-colors hover:border-rose-300 hover:bg-rose-50">
 					<span>Product Strategy</span>
 					<CarbonChevronRight class="text-secondary-content h-4 w-4" />
 				</a>
 				<a
 					href="/guides/problems"
-					class="border-secondary-content/20 flex items-center justify-between rounded-lg border p-3 text-sm font-medium transition-colors hover:border-rose-300 hover:bg-rose-50">
+					class="border-secondary-content/10 flex items-center justify-between rounded-lg border p-3 text-sm font-medium transition-colors hover:border-rose-300 hover:bg-rose-50">
 					<span>Problem Solving</span>
 					<CarbonChevronRight class="text-secondary-content h-4 w-4" />
 				</a>
 				<a
 					href="/guides/cost"
-					class="border-secondary-content/20 flex items-center justify-between rounded-lg border p-3 text-sm font-medium transition-colors hover:border-rose-300 hover:bg-rose-50">
+					class="border-secondary-content/10 flex items-center justify-between rounded-lg border p-3 text-sm font-medium transition-colors hover:border-rose-300 hover:bg-rose-50">
 					<span>Cost Management</span>
 					<CarbonChevronRight class="text-secondary-content h-4 w-4" />
 				</a>
 				<a
 					href="/guides/research"
-					class="border-secondary-content/20 flex items-center justify-between rounded-lg border p-3 text-sm font-medium transition-colors hover:border-rose-300 hover:bg-rose-50">
+					class="border-secondary-content/10 flex items-center justify-between rounded-lg border p-3 text-sm font-medium transition-colors hover:border-rose-300 hover:bg-rose-50">
 					<span>User Research</span>
 					<CarbonChevronRight class="text-secondary-content h-4 w-4" />
 				</a>
@@ -189,14 +182,7 @@
 				href="/guides"
 				class="text-secondary-content mt-8 inline-flex items-center gap-2 text-sm font-semibold transition-all hover:gap-3">
 				Read all notes
-				<svg
-					xmlns="http://www.w3.org/2000/svg"
-					class="h-4 w-4"
-					fill="none"
-					viewBox="0 0 24 24"
-					stroke="currentColor">
-					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-				</svg>
+				<CarbonChevronRight class="h-4 w-4" />
 			</a>
 		</div>
 	</div>
