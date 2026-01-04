@@ -45,7 +45,7 @@ const config = {
 			precompress: false,
 			strict: true,
 		}),
-		// prerender: { handleHttpError: 'warn' },
+		prerender: { handleHttpError: 'warn' },
 		env: {
 			dir: '../',
 		},
