@@ -101,42 +101,34 @@
 		},
 	];
 
-	// ---------------------------------------------------------
-	// 3. LOGIC
-	// ---------------------------------------------------------
+	function getClasses(itemID: string | undefined) {
+		const baseInclParentItems =
+			'rounded-lg block transition-all duration-200 px-3 py-2 w-full text-sm font-semibold';
 
-	function getClasses(itemID: string | undefined, isSubItem = false) {
-		// Base classes for all links
-		const base = 'rounded-3xl block transition-colors duration-100 px-4 py-2 w-full';
+		const inactive = 'hover:bg-primary/5 text-base-content/70 hover:text-base-content';
 
-		// Inactive State
-		const inactive = 'hover:bg-primary/10 text-base-content/80';
+		const active = 'bg-primary/10 text-primary';
 
-		// Active State
-		const active = 'bg-primary/30 font-bold';
-
-		// Logic: active if IDs match
 		const isActive = itemID && page === itemID;
-
-		return [base, isActive ? active : inactive];
+		return [baseInclParentItems, isActive ? active : inactive];
 	}
 </script>
 
-<ul class="menu rounded-box w-full text-base" data-pagefind-ignore>
+<ul class="menu w-full p-4" data-pagefind-ignore>
 	{#each menuData as section}
-		<li class="mt-8 font-bold first:mt-0 lg:px-2 xl:px-4">
+		<li class="mt-6 mb-2 px-3 first:mt-0">
 			<a
 				href={section.href}
-				class="hover:bg-primary/10 text-xs tracking-wider text-stone-500 uppercase hover:rounded-3xl">
+				class="cursor-default px-0 text-xs font-bold tracking-widest text-stone-500 uppercase hover:bg-transparent">
 				{section.label}
 			</a>
 		</li>
 
 		{#each section.items as item}
-			<li class="w-full text-sm font-medium lg:px-2 xl:px-4">
+			<li class="w-full px-0">
 				{#if item.href}
 					<a href={item.href ?? ''} class={[getClasses(item.id)]}>
-						<span class="flex items-center gap-4">
+						<span class="flex items-center gap-3">
 							{#if item.icon}
 								<item.icon />
 							{/if}
@@ -144,10 +136,10 @@
 						</span>
 					</a>
 				{:else}
-					<div class={[getClasses(item.id), 'cursor-default hover:bg-transparent']}>
-						<span class="flex items-center gap-4">
+					<div class={getClasses(item.id)}>
+						<span class="flex items-center gap-3">
 							{#if item.icon}
-								<item.icon />
+								<item.icon class="text-base-content/40" />
 							{/if}
 							{item.label}
 						</span>
@@ -155,10 +147,18 @@
 				{/if}
 
 				{#if item.children}
-					<ul class="border-l-base-content/30 ms-5 border-l-2">
+					<ul class="border-base-200 relative mt-1 ml-5 space-y-0.5 border-l pb-1 pl-0">
 						{#each item.children as subItem}
-							<li class="-ms-1.5">
-								<a href={subItem.href} class={getClasses(subItem.id, true)}>
+							{@const isActiveSub = page === subItem.id}
+							<li>
+								<a
+									href={subItem.href}
+									class={[
+										'-ml-px block rounded-l-none rounded-r-lg border-l-2 py-1.5 pl-4 text-sm transition-all duration-200',
+										isActiveSub
+											? 'border-primary bg-primary/10 text-primary font-bold'
+											: 'text-base-content/60 hover:text-base-content hover:border-base-300 border-transparent',
+									]}>
 									{subItem.label}
 								</a>
 							</li>
@@ -169,10 +169,3 @@
 		{/each}
 	{/each}
 </ul>
-
-<style>
-	/* Custom indent override if the Tailwind classes aren't enough */
-	ul:not(.menu) > li > a {
-		padding-left: 1.5rem;
-	}
-</style>
