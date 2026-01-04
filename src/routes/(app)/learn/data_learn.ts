@@ -1073,7 +1073,7 @@ export const info: LearnData[] = [
 		level: 2,
 		intro: "Agile or fragile? This will become your project's survival guide.",
 		slug: 'methods',
-		topics: ['agile', 'kanban', 'lean', 'safe', 'scrum', 'waterfall'],
+		topics: ['agile', 'kanban', 'lean', 'safe', 'scrum', 'waterfall', 'water-agile-fall'],
 		questions: [
 			'What is Agile?',
 			"Is Scrum what you do when you're Agile?",

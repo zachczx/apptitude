@@ -16,16 +16,18 @@
 		const links = r.links?.length ?? 0;
 		return { videos, courses, links, total: videos + courses + links };
 	}
+
+	const pageTitle = 'Knowledge Base';
 </script>
 
 <svelte:head>
-	<title>Apptitude - Learn</title>
+	<title>{pageTitle}</title>
 </svelte:head>
 
 <div class="mx-auto max-w-5xl px-6 py-12">
 	<div class="mb-12">
-		<h1 class="text-base-content text-4xl font-bold">Learn</h1>
-		<p class="text-base-content/60 mt-2 max-w-2xl text-lg">
+		<h1 class="text-4xl font-bold">{pageTitle}</h1>
+		<p class="text-base-content mt-2 max-w-2xl text-sm font-light">
 			Tech fundamentals explained for people who need to understand it, not build it.
 		</p>
 	</div>

@@ -11,12 +11,12 @@
 	let path: any = $derived(data.url.split('/'));
 	let category: any = $derived(path[1]);
 	let page: any = $derived(path[2]);
+	const pageTitle = 'The Playbook';
 	const subtitle = `Frameworks for the messy parts of building products. From "should we build this?" to "why does this cost so much?"`;
 </script>
 
-<NewWrap title="Thoughts" {subtitle}>
+<NewWrap title={pageTitle} {subtitle}>
 	<div class="grid gap-6 md:grid-cols-2">
-		<!-- Product Card -->
 		<article
 			class="group card bg-base-card border-base-content/10 hover:border-primary/40 border transition-all hover:shadow-lg">
 			<div class="card-body">
@@ -61,7 +61,6 @@
 			</div>
 		</article>
 
-		<!-- Problems Card -->
 		<article
 			class="group card bg-base-card border-base-content/10 hover:border-primary/40 border transition-all hover:shadow-lg">
 			<div class="card-body">
@@ -192,8 +191,4 @@
 			</div>
 		</article>
 	</div>
-
-	{#snippet toc()}
-		<NavToc {currentSection} />
-	{/snippet}
 </NewWrap>

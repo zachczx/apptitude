@@ -21,7 +21,7 @@
 
 	const menuData: MenuSection[] = [
 		{
-			label: 'Learn',
+			label: 'Docs',
 			href: '/learn',
 			items: [
 				{ label: 'Basics', id: 'basics', href: '/learn/basics', icon: Basics },
@@ -62,7 +62,7 @@
 		},
 
 		{
-			label: 'Suggestions',
+			label: 'Playbook',
 			href: '/guides',
 			items: [
 				{
@@ -110,7 +110,7 @@
 		const base = 'rounded-3xl block transition-colors duration-100 px-4 py-2 w-full';
 
 		// Inactive State
-		const inactive = 'hover:bg-primary/10';
+		const inactive = 'hover:bg-primary/10 text-base-content/80';
 
 		// Active State
 		const active = 'bg-primary/30 font-bold';
@@ -133,7 +133,7 @@
 		</li>
 
 		{#each section.items as item}
-			<li class="w-full lg:px-2 xl:px-4">
+			<li class="w-full text-sm font-medium lg:px-2 xl:px-4">
 				{#if item.href}
 					<a href={item.href ?? ''} class={[getClasses(item.id)]}>
 						<span class="flex items-center gap-4">

@@ -26,16 +26,14 @@
 			{#each contents as section, i}
 				{@const isActive = currentSection === section.id}
 
-				<a
-					href="#{section.id}"
-					class={['p-4', isActive && 'bg-primary/30 text-primary-content rounded-3xl']}>
+				<a href="#{section.id}" class={['p-4', isActive && 'bg-primary/30 rounded-3xl']}>
 					<div class="flex items-center gap-4">
 						<div
 							class="bg-base-content text-base-100 flex aspect-square size-6 items-center justify-center rounded-full font-bold">
 							{i + 1}
 						</div>
 
-						<div class="font-medium">
+						<div class={[isActive ? 'font-bold' : 'font-medium']}>
 							{section.title}
 						</div>
 					</div>

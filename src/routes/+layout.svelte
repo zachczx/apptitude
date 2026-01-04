@@ -152,7 +152,7 @@
 						'hover:text-primary flex min-w-32 items-center justify-center text-lg hover:bg-transparent',
 						cat === 'learn' && 'highlight font-bold',
 					]}
-					href="/learn">Learn</a>
+					href="/learn">Docs</a>
 			</li>
 			<li aria-current={matchUrl(data.url, '/guides') === 0 ? 'page' : undefined}>
 				<a
@@ -160,7 +160,7 @@
 						'hover:text-primary flex min-w-32 items-center justify-center text-lg hover:bg-transparent',
 						cat === 'guides' && 'highlight font-bold',
 					]}
-					href="/guides">Thoughts</a>
+					href="/guides">Playbook</a>
 			</li>
 			<!-- <li aria-current={matchUrl(data.url, '/about') === 0 ? 'page' : undefined}>
 				<a
@@ -197,8 +197,9 @@
 		content: '';
 		height: 0.25rem;
 		width: 100%;
+		border-radius: 20px;
 		position: absolute;
-		top: 110%;
+		top: 115%;
 		left: 0;
 		background-color: var(--color-primary);
 		view-transition-name: current-page;

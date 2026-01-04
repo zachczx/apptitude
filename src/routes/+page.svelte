@@ -1,5 +1,6 @@
 <script lang="ts">
 	import CarbonChevronRight from '$lib/assets/svg/CarbonChevronRight.svelte';
+	import Footer from '$lib/Footer.svelte';
 	import { info } from './(app)/learn/data_learn';
 
 	let { data } = $props();
@@ -39,26 +40,25 @@
 	<title>{pageName}</title>
 </svelte:head>
 
-<!-- Hero Section -->
-<div class="bg-base-100 relative min-h-[85dvh] w-full overflow-hidden" data-pagefind-ignore>
+<div class="bg-base-100 relative min-h-[75dvh] w-full overflow-hidden" data-pagefind-ignore>
 	<section
-		class="relative mx-auto grid h-full min-h-[85dvh] w-full max-w-(--breakpoint-2xl) items-center gap-12 px-6 py-24 lg:grid-cols-2">
+		class="relative mx-auto grid h-full min-h-[75dvh] w-full max-w-(--breakpoint-2xl) items-center gap-12 px-6 py-24 lg:grid-cols-2">
 		<div class="flex flex-col items-start gap-6">
 			<h1 class="text-base-content text-4xl leading-tight font-bold tracking-tight lg:text-5xl">
-				Tech literacy for people who make decisions about tech.
+				Building technical intuition.
 			</h1>
 			<p class="text-base-content/70 max-w-xl text-lg leading-relaxed">
-				I kept explaining the same concepts to colleagues—APIs, databases, why that "simple" feature
-				isn't simple. So I wrote it all down.
+				I'm Zixian. Apptitude is my personal collection of situations, mental models, and notes on
+				software in Govt. Written for people who make decisions about tech.
 			</p>
 
 			<div class="mt-4 flex flex-wrap gap-4">
 				<a
 					href="/learn"
 					class="btn btn-primary btn-lg rounded-full border-none px-8 transition-all hover:-translate-y-0.5">
-					Learn Basics
+					Browse the Docs
 				</a>
-				<a href="/guides" class="btn btn-primary btn-soft btn-lg rounded-full"> My Thoughts </a>
+				<a href="/guides" class="btn btn-primary btn-soft btn-lg rounded-full">Zixian's Takes</a>
 			</div>
 		</div>
 
@@ -66,7 +66,7 @@
 			<a
 				href="/learn/basics-web"
 				class="border-secondary/15 bg-base-card absolute top-8 left-0 w-72 -rotate-6 rounded-2xl border p-6 shadow-lg transition-all duration-300 hover:-translate-y-1 hover:rotate-0 hover:shadow-xl">
-				<p class="text-secondary text-xs font-medium tracking-wide uppercase">Internet</p>
+				<p class="text-secondary text-xs font-medium tracking-wide uppercase">Concept</p>
 				<h3 class="text-base-content mt-2 text-lg font-bold">What's an API?</h3>
 				<p class="text-base-content/60 mt-2 text-sm leading-relaxed">
 					Think of it as a waiter taking your order to the kitchen. You don't need to know how the
@@ -74,53 +74,50 @@
 				</p>
 				<div class="mt-4 flex gap-2">
 					<span class="bg-secondary/10 text-secondary rounded-full px-2 py-1 text-xs"
-						>5 min read</span>
+						>Definition</span>
 				</div>
 			</a>
 
 			<a
 				href="/learn/data"
 				class="border-accent/20 bg-base-card absolute top-32 left-24 z-1 w-72 rotate-3 rounded-2xl border p-6 shadow-xl transition-all duration-300 hover:-translate-y-1 hover:rotate-0 hover:shadow-2xl">
-				<p class="text-xs font-medium tracking-wide text-rose-500 uppercase">Data</p>
+				<p class="text-xs font-medium tracking-wide text-rose-500 uppercase">Case Study</p>
 				<h3 class="text-base-content mt-2 text-lg font-bold">Databases vs Spreadsheets</h3>
 				<p class="text-base-content/60 mt-2 text-sm leading-relaxed">
 					Excel is great until you have 50,000 rows and three people editing at once. Here's when
 					you need something else...
 				</p>
 				<div class="mt-4 flex gap-2">
-					<span class="rounded-full bg-rose-100 px-2 py-1 text-xs text-rose-600">8 min read</span>
+					<span class="rounded-full bg-rose-100 px-2 py-1 text-xs text-rose-600">Comparison</span>
 				</div>
 			</a>
 
 			<a
 				href="/guides/cost"
 				class="bg-base-card border-primary/20 absolute top-56 left-8 z-2 w-72 -rotate-2 rounded-2xl border p-6 shadow-xl transition-all duration-300 hover:-translate-y-1 hover:rotate-0 hover:shadow-2xl">
-				<p class="text-xs font-medium tracking-wide text-amber-600 uppercase">Guide</p>
+				<p class="text-xs font-medium tracking-wide text-amber-600 uppercase">My Take</p>
 				<h3 class="text-base-content mt-2 text-lg font-bold">Why does this cost so much?</h3>
 				<p class="text-base-content/60 mt-2 text-sm leading-relaxed">
 					A framework for understanding software estimates without getting lost in technical
 					jargon...
 				</p>
 				<div class="mt-4 flex gap-2">
-					<span class="rounded-full bg-amber-100 px-2 py-1 text-xs text-amber-700"
-						>12 min read</span>
+					<span class="rounded-full bg-amber-100 px-2 py-1 text-xs text-amber-700">Strategy</span>
 				</div>
 			</a>
 		</div>
 	</section>
 </div>
 
-<!-- Content Grid -->
 <section class="mx-auto max-w-(--breakpoint-2xl) px-6 py-20" data-pagefind-ignore>
 	<div class="grid grid-cols-1 gap-6 lg:grid-cols-2">
-		<!-- Learn Section -->
 		<div class="rounded-2xl border border-orange-200/60 bg-white p-8 shadow-sm">
 			<div class="mb-6">
-				<p class="text-primary text-sm font-medium tracking-wide uppercase">Learn</p>
+				<p class="text-primary text-sm font-medium tracking-wide uppercase">The Knowledge Base</p>
 				<h2 class="text-base-content mt-2 text-2xl font-bold">How things actually work</h2>
 				<p class="text-base-content/70 mt-2">
-					The fundamentals, explained for people who need to understand tech without becoming
-					engineers.
+					A reference library of technical concepts, stripped of jargon and explained with plain
+					English and clear diagrams.
 				</p>
 			</div>
 
@@ -137,7 +134,7 @@
 			<a
 				href="/learn"
 				class="text-primary mt-8 inline-flex items-center gap-2 text-sm font-semibold transition-all hover:gap-3">
-				See all topics
+				Browse full list
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
 					class="h-4 w-4"
@@ -149,13 +146,15 @@
 			</a>
 		</div>
 
-		<!-- Guides Section -->
 		<div class="rounded-2xl border border-rose-200/60 bg-white p-8 shadow-sm">
 			<div class="mb-6">
-				<p class="text-secondary-content text-sm font-medium tracking-wide uppercase">Guides</p>
+				<p class="text-secondary-content text-sm font-medium tracking-wide uppercase">
+					The Playbook
+				</p>
 				<h2 class="text-base-content mt-2 text-2xl font-bold">Thinking through decisions</h2>
 				<p class="text-base-content/70 mt-2">
-					Frameworks for the messy stuff: prioritization, cost, stakeholders.
+					Opinionated frameworks for product strategy, scoping, and stakeholder management. This is
+					how I approach the work.
 				</p>
 			</div>
 
@@ -189,7 +188,7 @@
 			<a
 				href="/guides"
 				class="text-secondary-content mt-8 inline-flex items-center gap-2 text-sm font-semibold transition-all hover:gap-3">
-				All guides
+				Read all notes
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
 					class="h-4 w-4"
@@ -216,4 +215,4 @@
 	</div>
 </section>
 
-<footer class="text-base-content/50 py-8 text-center text-sm">© 2024–2025 Zixian Chen</footer>
+<Footer />
