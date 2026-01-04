@@ -41,20 +41,20 @@ const config = {
 		adapter: adapter({
 			pages: 'build',
 			assets: 'build',
-			fallback: 'index.html',
+			// fallback: 'index.html',
 			precompress: false,
 			strict: true,
 		}),
-		prerender: { handleHttpError: 'warn' },
+		// prerender: { handleHttpError: 'warn' },
 		env: {
 			dir: '../',
 		},
 	},
-	compilerOptions: {
-		experimental: {
-			async: true,
-		},
-	},
+	// compilerOptions: {
+	// 	experimental: {
+	// 		async: true,
+	// 	},
+	// },
 };
 
 export default config;

@@ -1,9 +1,10 @@
 <script lang="ts">
+	import type { Snippet } from 'svelte';
 	interface GuideLongExampleProps {
-		example: string;
+		children: Snippet;
 		showButton?: boolean;
 	}
-	let { example, showButton = true } = $props();
+	let { children, showButton = true }: GuideLongExampleProps = $props();
 
 	let collapsed = $state(true);
 </script>
@@ -23,7 +24,7 @@
 		Example
 	</h4>
 	<div class={collapsed ? 'line-clamp-6 max-h-48' : ''}>
-		{@render example()}
+		{@render children()}
 	</div>
 	{#if showButton}
 		<button

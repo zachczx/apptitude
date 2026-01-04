@@ -1,13 +1,51 @@
 @import 'tailwindcss';
-@plugin "daisyui";
-@plugin "daisyui/theme" {
-	name: 'dim';
+@plugin 'daisyui';
+@plugin '@tailwindcss/typography';
+@plugin 'daisyui/theme' {
+	name: 'light';
 	default: true;
-	--color-secondary: #e8d68d;
-	--color-neutral-content: #e0eaee;
-	--color-base-100: #161920;
-	--color-base-200: #040506;
-	--color-base-300: red;
+
+	/* Primary: Soft Coral */
+	--color-primary: #ea580c; /* Orange-600: Warm, visible, inviting */
+	--color-primary-content: #fff7ed; /* Deep orange-brown */
+
+	/* Secondary: Soft Teal */
+	--color-secondary: #5eead4; /* Teal-300: Fresh complement */
+	--color-secondary-content: #134e4a; /* Deep teal */
+
+	/* Accent: Lavender */
+	--color-accent: #d8b4fe; /* Purple-300 */
+	--color-accent-content: #581c87;
+
+	/* Neutral: Warm Beige */
+	--color-neutral: #f5f5f4; /* Stone-100 */
+	--color-neutral-content: #57534e; /* Stone-600 */
+
+	/* --- Backgrounds (keep your warm cream!) --- */
+	--color-base-100: #fffbeb; /* Amber-50 */
+	--color-base-200: #fef3c7; /* Amber-100 */
+	--color-base-300: #fde68a; /* Amber-200 */
+
+	/* --- Text --- */
+	--color-base-content: #44403c; /* Stone-700 */
+
+	/* --- Status Colors --- */
+	--color-info: #7dd3fc; /* Sky-300: Matches accent */
+	--color-info-content: #0c4a6e;
+
+	--color-success: #86efac; /* Green-300 */
+	--color-success-content: #065f46;
+
+	--color-warning: #fcd34d; /* Amber-300: More visible */
+	--color-warning-content: #78350f;
+
+	--color-error: #fca5a5; /* Red-300: Softer but visible */
+	--color-error-content: #991b1b;
+}
+
+@theme {
+	--color-bright: rgba(255, 255, 255, 0.8);
+	--color-base-card: #ffffff;
 }
 
 :root {
@@ -17,6 +55,10 @@
 
 	@view-transition {
 		navigation: auto;
+	}
+
+	.btn-soft.btn-primary {
+		--color-primary: #c2410c; /* Orange-700 for text */
 	}
 
 	.pagefind-ui {

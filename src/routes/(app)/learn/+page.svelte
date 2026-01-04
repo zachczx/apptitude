@@ -1,95 +1,129 @@
 <script lang="ts">
-	import TablerStarFilled from '$lib/assets/svg/TablerStarFilled.svelte';
-	import NewWrap from '$lib/NewWrap.svelte';
-	import NavToc from '$lib/NavToc.svelte';
+	import { info } from './data_learn.js';
 
 	let { data } = $props();
-	let currentSection: any = $state();
-	let path: string[] = $derived(data.url.split('/'));
-	let category: string = $derived(path[1]);
-	let page: string = $derived(path[2]);
 
-	const subtitle = `I curated a non-exhaustive list of resources I found useful from online courses, Youtube
-				channels, Youtube videos, articles, blog posts, cloud provider documentation, etc.`;
+	// Featured "start here" topics
+	const starterSlugs = ['basics', 'basics-web'];
+	const starterTopics = info.filter((i) => starterSlugs.includes(i.slug));
+	const otherTopics = info.filter((i) => !starterSlugs.includes(i.slug));
+
+	// Helper to count resources
+	function countResources(entry: LearnData) {
+		const r = entry.resources;
+		const videos = r.youtube?.length ?? 0;
+		const courses = r.courses?.length ?? 0;
+		const links = r.links?.length ?? 0;
+		return { videos, courses, links, total: videos + courses + links };
+	}
 </script>
 
 <svelte:head>
 	<title>Apptitude - Learn</title>
 </svelte:head>
 
-<NewWrap title="Learn Bytes" {subtitle}>
-	<section class="grid gap-y-20">
-		<div>
-			<h2 class="mb-4 text-4xl font-bold lg:text-6xl">Basic</h2>
-			<div class="grid grid-cols-1 justify-items-center gap-3 lg:grid-cols-2 xl:grid-cols-3">
-				{#each data.starter as item}
-					<a href="/learn/{item.slug}" class="w-full">
-						<div
-							class="group card bg-base-100 h-full border border-gray-700 shadow-md shadow-gray-800">
-							<div class="card-body grid grid-cols-1 content-start px-4">
-								<TablerStarFilled class="fill-primary mb-1 inline justify-self-start text-2xl" />
-								<h3 class="group-hover:text-primary text-2xl font-bold">
-									{item.name}
-								</h3>
-								<p><i>{item.intro}</i></p>
-							</div>
-						</div>
-					</a>
-				{/each}
-			</div>
-		</div>
+<div class="mx-auto max-w-5xl px-6 py-12">
+	<div class="mb-12">
+		<h1 class="text-base-content text-4xl font-bold">Learn</h1>
+		<p class="text-base-content/60 mt-2 max-w-2xl text-lg">
+			Tech fundamentals explained for people who need to understand it, not build it.
+		</p>
+	</div>
 
-		<div>
-			<h2 class="mb-4 text-4xl font-bold lg:text-6xl">Intermediate</h2>
-			<div class="grid grid-cols-1 justify-items-center gap-3 lg:grid-cols-2 xl:grid-cols-3">
-				{#each data.intermediate as item}
-					<a href="/learn/{item.slug}" class="w-full">
-						<div
-							class="group card bg-base-100 h-full border border-gray-700 shadow-md shadow-gray-800">
-							<div class="card-body grid grid-cols-1 content-start px-4">
-								<div class="justify-self-start text-2xl">
-									<TablerStarFilled class="fill-primary mb-1 inline" /><TablerStarFilled
-										class="fill-primary mb-1 inline" /><TablerStarFilled
-										class="fill-primary mb-1 inline" />
-								</div>
-								<h3 class="group-hover:text-primary text-2xl font-bold">
-									{item.name}
-								</h3>
-								<p><i>{item.intro}</i></p>
-							</div>
-						</div>
-					</a>
-				{/each}
-			</div>
-		</div>
+	{#if starterTopics.length > 0}
+		<section class="mb-16">
+			<p class="text-base-content/75 mb-4 text-sm font-semibold tracking-wide uppercase">
+				Start here
+			</p>
+			<div class="grid grid-cols-1 gap-6 md:grid-cols-2">
+				{#each starterTopics as topic}
+					{@const counts = countResources(topic)}
+					<a
+						href="/learn/{topic.slug}"
+						class="group border-base-content/10 flex flex-col rounded-2xl border bg-white p-6 shadow-md transition-all hover:shadow-lg">
+						<h2
+							class="text-base-content group-hover:text-primary text-2xl font-bold transition-colors">
+							{topic.name}
+						</h2>
+						<p class="text-base-content/70 mt-2">
+							{topic.questions?.[0] ?? topic.intro}
+						</p>
 
-		<div>
-			<h2 class="mb-4 text-4xl font-bold lg:text-6xl">Advanced</h2>
-			<div class="grid grid-cols-1 justify-items-center gap-3 lg:grid-cols-2 xl:grid-cols-3">
-				{#each data.advanced as item}
-					<a href="/learn/{item.slug}" class="w-full">
-						<div
-							class="group card bg-base-100 h-full border border-gray-700 shadow-md shadow-gray-800">
-							<div class="card-body grid grid-cols-1 content-start px-4">
-								<div class="justify-self-start text-2xl">
-									<TablerStarFilled class="fill-primary mb-1 inline" /><TablerStarFilled
-										class="fill-primary mb-1 inline" /><TablerStarFilled
-										class="fill-primary mb-1 inline" /><TablerStarFilled
-										class="fill-primary mb-1 inline" /><TablerStarFilled
-										class="fill-primary mb-1 inline" />
-								</div>
-								<h3 class="group-hover:text-primary text-2xl font-bold">
-									{item.name}
-								</h3>
-								<p><i>{item.intro}</i></p>
-							</div>
+						<!-- Topic pills -->
+						<div class="mt-4 flex flex-wrap gap-2">
+							{#each topic.topics?.slice(0, 6) ?? [] as t}
+								<span
+									class="text-base-content/80 border-base-content/10 bg-base-100 rounded-full border px-2.5 py-0.5 text-xs">
+									{t}
+								</span>
+							{/each}
+							{#if (topic.topics?.length ?? 0) > 6}
+								<span class="bg-primary/10 text-primary rounded-full px-2.5 py-0.5 text-xs">
+									+{topic.topics.length - 6} more
+								</span>
+							{/if}
+						</div>
+
+						<div class="text-base-content/75 mt-auto flex gap-4 pt-4 text-sm">
+							{#if counts.videos > 0}
+								<span>{counts.videos} videos</span>
+							{/if}
+							{#if counts.courses > 0}
+								<span>{counts.courses} courses</span>
+							{/if}
+							{#if counts.links > 0}
+								<span>{counts.links} articles</span>
+							{/if}
 						</div>
 					</a>
 				{/each}
 			</div>
+		</section>
+	{/if}
+
+	<section>
+		<p class="text-base-content/75 mb-4 text-sm font-semibold tracking-wide uppercase">
+			Keep going
+		</p>
+		<div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+			{#each otherTopics as entry}
+				{@const counts = countResources(entry)}
+				<a
+					href="/learn/{entry.slug}"
+					class="group border-base-content/10 hover:border-base-content/20 flex flex-col rounded-xl border bg-white p-6 shadow-sm transition-all hover:shadow-md">
+					<h3
+						class="text-base-content group-hover:text-primary text-xl font-bold transition-colors">
+						{entry.name}
+					</h3>
+
+					<p class="text-base-content/60 mt-2 text-sm leading-relaxed">
+						{entry.questions?.[0] ?? entry.intro}
+					</p>
+
+					<!-- Topic pills -->
+					<div class="mt-4 flex flex-wrap gap-1.5">
+						{#each entry.topics?.slice(0, 4) ?? [] as topic}
+							<span
+								class="bg-base-content/5 text-base-content/60 rounded-full px-2.5 py-0.5 text-xs">
+								{topic}
+							</span>
+						{/each}
+						{#if (entry.topics?.length ?? 0) > 4}
+							<span
+								class="bg-base-content/5 text-base-content/40 rounded-full px-2.5 py-0.5 text-xs">
+								+{entry.topics.length - 4}
+							</span>
+						{/if}
+					</div>
+
+					<!-- Resource count -->
+					<div class="text-base-content/75 mt-auto flex gap-4 pt-4 text-xs">
+						{#if counts.total > 0}
+							<span>{counts.total} resources</span>
+						{/if}
+					</div>
+				</a>
+			{/each}
 		</div>
 	</section>
-	{#snippet toc()}
-		<NavToc {currentSection} />
-	{/snippet}
-</NewWrap>
+</div>

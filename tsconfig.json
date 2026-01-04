@@ -11,5 +11,5 @@
 		"strict": true,
 		"moduleResolution": "bundler"
 	},
-	"exclude": ["node_modules", "src/lib/assets/svg"]
+	"exclude": ["node_modules"]
 }

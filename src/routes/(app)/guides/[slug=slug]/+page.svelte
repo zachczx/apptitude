@@ -1,20 +1,57 @@
 <script lang="ts">
-	import { type Contents } from '$lib/Types';
 	import NavToc from '$lib/NavToc.svelte';
 	import NewWrap from '$lib/NewWrap.svelte';
 	import Intersection from '$lib/ui/Intersection.svelte';
+	import Section from '$lib/ui/Section.svelte';
+	import CarbonHelpFilled from '$lib/assets/svg/CarbonHelpFilled.svelte';
+	import CarbonReply from '$lib/assets/svg/CarbonReply.svelte';
+	import { Marked, marked } from 'marked';
+	import CarbonWarningFilled from '$lib/assets/svg/CarbonWarningFilled.svelte';
+	import CarbonCloseFilled from '$lib/assets/svg/CarbonCloseFilled.svelte';
+	import CarbonNotificationFilled from '$lib/assets/svg/CarbonNotificationFilled.svelte';
 	let { data } = $props();
 
-	let contents: Contents[] = [
-		{ id: 'definitions', title: 'Definitions' },
-		{ id: 'goals', title: 'Goals' },
-		{ id: 'questions', title: 'Questions' },
-		{ id: 'alarms', title: 'Alarm Bells' },
-		{ id: 'dealbreakers', title: 'Dealbreakers' },
-		// { id: 'suggestions', title: '6. Suggestions' },
-	];
+	let markedQuestions = $derived.by(() => {
+		return data.post?.questions.map((q) => {
+			return {
+				what: q.what,
+				why: String(marked.parse(q.why)),
+			};
+		});
+	});
+
+	let markedAlarms = $derived.by(() => {
+		return data.post?.alarms?.map((a) => {
+			return {
+				what: a.what,
+				why: String(marked.parse(a.why)),
+			};
+		});
+	});
+
+	let markedDealbreakers = $derived.by(() => {
+		return data.post?.dealbreakers?.map((d) => {
+			return {
+				what: d.what,
+				why: String(marked.parse(d.why)),
+			};
+		});
+	});
 
 	let currentSection = $state('');
+
+	let contents: TableOfContent[] = $derived.by(() => {
+		let items = [];
+		if (data.post?.definitions && data.post.definitions.length > 0)
+			items.push({ id: 'definitions', title: 'Definitions' });
+		if (data.post?.goals && data.post.goals.length > 0) items.push({ id: 'goals', title: 'Goals' });
+		if (markedQuestions && markedQuestions.length > 0)
+			items.push({ id: 'questions', title: 'Questions' });
+		if (markedAlarms && markedAlarms.length > 0) items.push({ id: 'alarms', title: 'Alarm Bells' });
+		if (markedDealbreakers && markedDealbreakers.length > 0)
+			items.push({ id: 'dealbreakers', title: 'Dealbreakers' });
+		return items;
+	});
 </script>
 
 <svelte:head>
@@ -25,153 +62,113 @@
 	<NewWrap title={data.post.name}>
 		<Intersection bind:currentSection>
 			<article
-				class="prose-section:mt-20 prose-h2:mb-6 prose-h3:mb-6 prose-h3:mt-12 prose-h5:mb-4 prose-p:mb-4 grid gap-y-32 pb-10">
-				{#if data.post.definitions}
-					<section id="definitions" class="contents-observer grid gap-4">
-						<h2
-							class="border-b-base-content/20 mb-4 border-b-4 pb-2 text-2xl font-bold lg:text-4xl">
-							Definitions
-						</h2>
-						{#if data.post.definitions.length > 0}
-							<div class="grid grid-cols-3 gap-x-16 gap-y-8">
-								{#each data.post.definitions as definition, i}
-									<div class="italic">{definition.term}</div>
-									<div class="col-span-2">{definition.definition}</div>
-									{#if i < data.post.definitions.length - 1}
-										<div class="bg-base-content/20 col-span-3 h-0.5"></div>
-									{/if}
-								{/each}
-							</div>
-						{:else}
-							Nothing here!
-						{/if}
-					</section>
+				class="prose-section:mt-20 prose-h3:mb-6 prose-h3:mt-12 prose-h5:mb-4 prose-p:mb-4 grid gap-y-32 pb-10">
+				{#if data.post.definitions && data.post.definitions.length > 0}
+					<Section id="definitions" title="Definitions">
+						{#each data.post.definitions as d}
+							{@render definitionCard(d.term, d.definition)}
+						{/each}
+					</Section>
 				{/if}
 
-				{#if data.post.goals}
-					<section id="goals" class="contents-observer grid gap-4">
-						<h2
-							class="border-b-base-content/20 mb-4 border-b-4 pb-2 text-2xl font-bold lg:text-4xl">
-							Goals
-						</h2>
-						{#if data.post.goals.length > 0}
-							<div>
-								<ol class="list-disc space-y-4 ps-4">
-									{#each data.post.goals as goal}
-										<li>{goal}</li>
-									{/each}
-								</ol>
-							</div>
-						{:else}
-							Nothing here!
-						{/if}
-					</section>
+				{#if data.post.goals && data.post.goals.length > 0}
+					<Section id="goals" title="Goals">
+						{#each data.post.goals as goal, i}
+							{@render goalCard(goal, i + 1)}
+						{/each}
+					</Section>
 				{/if}
 
-				{#if data.post.questions}
-					<section id="questions" class="contents-observer grid gap-4">
-						<h2
-							class="border-b-base-content/20 mb-4 border-b-4 pb-2 text-2xl font-bold lg:text-4xl">
-							Questions
-						</h2>
-						{#if data.post.questions.length > 0}
-							<div class="grid grid-cols-2 gap-x-16 gap-y-8">
-								{#each data.post.questions as question, i}
-									<div class="italic">{question.what}</div>
-									<div class="">{question.why}</div>
-									{#if i < data.post.questions.length - 1}
-										<div class="bg-base-content/20 col-span-2 h-0.5"></div>
-									{/if}
-								{/each}
-							</div>
-						{:else}
-							Nothing here!
-						{/if}
-					</section>
+				{#snippet definitionCard(term: string, definition: string)}
+					<div
+						class="bg-base-card grid grid-cols-[1fr_2fr] content-center gap-8 rounded-xl p-8 shadow">
+						<div class="font-bold">
+							{term}
+						</div>
+						<div class="grid content-center">{definition}</div>
+					</div>
+				{/snippet}
+
+				{#snippet goalCard(content: string, index: number)}
+					<div
+						class="bg-base-card grid grid-cols-[auto_1fr] content-center gap-4 rounded-xl p-8 shadow">
+						<div
+							class="bg-base-content text-base-100 flex aspect-square size-8 items-center justify-center rounded-full font-bold">
+							{index}
+						</div>
+						<div class="grid content-center">{content}</div>
+					</div>
+				{/snippet}
+
+				{#if markedQuestions && markedQuestions.length > 0}
+					<Section id="questions" title="Questions to Ask">
+						{#each markedQuestions as q}
+							{@render questionCard(q.what, q.why)}
+						{/each}
+					</Section>
 				{/if}
 
-				{#if data.post.alarms}
-					<section id="alarms" class="contents-observer grid gap-4">
-						<h2
-							class="border-b-base-content/20 mb-4 border-b-4 pb-2 text-2xl font-bold lg:text-4xl">
-							Alarm Bells
-						</h2>
-						{#if data.post.alarms.length > 0}
-							<div class="grid grid-cols-2 gap-x-16 gap-y-8">
-								<div class="text-base-content/70 flex items-center gap-2 font-bold">
-									<svg
-										xmlns="http://www.w3.org/2000/svg"
-										width="1.3em"
-										height="1.3em"
-										class="carbon:warning-filled"
-										viewBox="0 0 32 32"
-										><!-- Icon from Carbon by IBM - undefined --><path
-											fill="currentColor"
-											d="M16 2C8.3 2 2 8.3 2 16s6.3 14 14 14s14-6.3 14-14S23.7 2 16 2m-1.1 6h2.2v11h-2.2zM16 25c-.8 0-1.5-.7-1.5-1.5S15.2 22 16 22s1.5.7 1.5 1.5S16.8 25 16 25" /></svg
-									>They say...
+				{#snippet questionCard(question: string, answer: string)}
+					<div
+						class="bg-base-card grid content-center gap-4 rounded-xl p-8 shadow lg:grid-cols-[auto_1fr]">
+						<div
+							class="bg-primary text-base-100 flex aspect-square size-8 items-center justify-center rounded-full font-bold">
+							?
+						</div>
+						<div class="grid max-w-[75ch] content-center font-bold">
+							{question}
+						</div>
+						<div class="size-7"></div>
+						<div class="prose prose-p:pb-4 prose-p:last-of-type:pb-0 max-w-[75ch] *:my-0!">
+							{@html answer}
+						</div>
+					</div>
+				{/snippet}
+
+				{#if markedAlarms && markedAlarms.length > 0}
+					<Section id="alarms" title="Alarm Bells">
+						{#each markedAlarms as a}
+							{@render whatWhyCard('warning', a.what, a.why)}
+						{/each}
+					</Section>
+				{/if}
+
+				{#snippet whatWhyCard(icon: string, what: string, why: string)}
+					<div
+						class="bg-base-card grid content-center gap-4 rounded-xl p-8 shadow lg:grid-cols-[auto_1fr]">
+						{#if icon === 'warning'}
+							<div class="bg-warning flex size-8 items-center justify-center rounded-full">
+								<CarbonNotificationFilled class="text-base-100 size-5" />
+							</div>
+						{:else}
+							<CarbonCloseFilled class="text-error size-8" />
+						{/if}
+
+						<div class="grid gap-4">
+							<div
+								class="border-b-base-content/30 grid max-w-[75ch] content-center border-b-2 pb-4 leading-7">
+								<div class="mb-2 text-sm font-bold uppercase">They say...</div>
+								{what}
+							</div>
+
+							<div class="grid max-w-[75ch] content-center pb-4">
+								<div class="mb-2 text-sm font-bold uppercase">Why it's scary</div>
+								<div
+									class="prose prose-p:text-base-content prose-p:pb-4 prose-p:last-of-type:pb-0 max-w-[75ch] *:my-0!">
+									{@html why}
 								</div>
-								<div class="text-base-content/70 font-bold">Why I'd be scared</div>
-								{#each data.post.alarms as alarm, i}
-									<div class="italic">{alarm.what}</div>
-									<div>{alarm.why}</div>
-									{#if i < data.post.alarms.length - 1}
-										<div class="bg-base-content/20 col-span-2 h-0.5"></div>
-									{/if}
-								{/each}
 							</div>
-						{:else}
-							Nothing here!
-						{/if}
-					</section>
-				{/if}
+						</div>
+					</div>
+				{/snippet}
 
-				{#if data.post.dealbreakers}
-					<section id="dealbreakers" class="contents-observer grid gap-4">
-						<h2
-							class="border-b-base-content/20 mb-4 border-b-4 pb-2 text-2xl font-bold lg:text-4xl">
-							Dealbreakers
-						</h2>
-						{#if data.post.dealbreakers.length > 0}
-							<div class="grid grid-cols-2 gap-x-16 gap-y-8">
-								<div class="text-base-content/70 flex items-center gap-2 font-bold">
-									<svg
-										xmlns="http://www.w3.org/2000/svg"
-										width="1.3em"
-										height="1.3em"
-										class="carbon:warning-filled"
-										viewBox="0 0 32 32"
-										><!-- Icon from Carbon by IBM - undefined --><path
-											fill="currentColor"
-											d="M16 2C8.3 2 2 8.3 2 16s6.3 14 14 14s14-6.3 14-14S23.7 2 16 2m-1.1 6h2.2v11h-2.2zM16 25c-.8 0-1.5-.7-1.5-1.5S15.2 22 16 22s1.5.7 1.5 1.5S16.8 25 16 25" /></svg
-									>Symptom
-								</div>
-								<div class="text-base-content/70 font-bold">Why I'd be scared</div>
-								{#each data.post.dealbreakers as dealbreaker, i}
-									<div class="italic">{dealbreaker.what}</div>
-									<div>{dealbreaker.why}</div>
-									{#if i < data.post.dealbreakers.length - 1}
-										<div class="bg-base-content/20 col-span-2 h-0.5"></div>
-									{/if}
-								{/each}
-							</div>
-						{:else}
-							Nothing here!
-						{/if}
-					</section>
+				{#if markedDealbreakers && markedDealbreakers.length > 0}
+					<Section id="dealbreakers" title="Dealbreakers">
+						{#each markedDealbreakers as d}
+							{@render whatWhyCard('error', d.what, d.why)}
+						{/each}
+					</Section>
 				{/if}
-
-				<!-- <section id="suggestions" class="contents-observer grid gap-4">
-			<h2 class="border-b-base-content/20 mb-4 border-b-4 pb-2 text-2xl font-bold lg:text-4xl">
-				6. Suggestions
-			</h2>
-			<div>
-				<ol class="list-disc space-y-4 ps-4">
-					{#each data.post.suggestions as suggestion}
-						<li>{suggestion}</li>
-					{/each}
-				</ol>
-			</div>
-		</section> -->
 			</article>
 		</Intersection>
 		{#snippet toc()}

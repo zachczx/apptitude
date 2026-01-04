@@ -89,7 +89,7 @@
 						</ul>
 					</div>
 					<GuideExample>
-						{#snippet example()}
+						
 							<ul class="space-y-4">
 								<li>
 									<CarbonCheckmarkFilled class="text-success me-2 mb-1 inline" />80% of license
@@ -104,11 +104,11 @@
 									approvals a year, the overall impact is significant.
 								</li>
 							</ul>
-						{/snippet}
+						
 					</GuideExample>
 
 					<GuideExampleLong showButton={false}>
-						{#snippet example()}
+						
 							<ul class="space-y-4">
 								<li>
 									<p>
@@ -126,7 +126,7 @@
 									</p>
 								</li>
 							</ul>
-						{/snippet}
+						
 					</GuideExampleLong>
 				</div>
 				<h3 class="text-2xl font-bold">Clear Problem Statements</h3>
@@ -151,7 +151,7 @@
 					<li>
 						What happens if we left this problem alone?
 						<GuideExample>
-							{#snippet example()}
+							
 								<div>
 									<CarbonCloseFilled class="text-warning me-2 mb-1 inline" />Unclear and outdated
 									documentation were flagged out as areas of risk during the audit reviews.
@@ -163,13 +163,13 @@
 									<span class="text-primary">cost us $XM</span> each year because these users relied on
 									guidelines in outdated policy documents strewn across our employee portal.
 								</div>
-							{/snippet}
+							
 						</GuideExample>
 					</li>
 					<li>
 						If you need a benchmark, compare with alternate solutions or adjacent industries.
 						<GuideExample>
-							{#snippet example()}
+							
 								<div>
 									<CarbonCheckmarkFilled class="text-success me-2 mb-1 inline" />Approvals continue
 									to take 6 mths, or more with X new policy
@@ -182,7 +182,7 @@
 									<CarbonCheckmarkFilled class="text-success me-2 mb-1 inline" />F&B licenses take 3
 									mths per approval
 								</div>
-							{/snippet}
+							
 						</GuideExample>
 					</li>
 				</ul>
@@ -199,7 +199,7 @@
 							class="text-primary underline">problem statement</a
 						>.
 						<GuideExample>
-							{#snippet example()}
+							
 								<div>
 									<CarbonCheckmarkFilled class="text-success me-2 mb-1 inline" /><span
 										class="text-primary">[Name of user persona]</span>
@@ -217,7 +217,7 @@
 									searches, downloads, and toggles among more than 5 separate finance policy
 									documents for each AOR.
 								</div>
-							{/snippet}
+							
 						</GuideExample>
 					</li>
 				</ul>
@@ -237,15 +237,15 @@
 						</li>
 					</ul>
 					<GuideExample>
-						{#snippet example()}
+						
 							<div>
 								<CarbonCheckmarkFilled class="text-success me-2 mb-1 inline" />Revenue loss of $XXM
 								per year for X no. of businesses
 							</div>
-						{/snippet}
+						
 					</GuideExample>
 					<GuideExample>
-						{#snippet example()}
+						
 							<div>
 								<CarbonCheckmarkFilled class="text-success me-2 mb-1 inline" />~3 man months are
 								spent by 15 officers monthly collating, cleaning, emailing, and drafting MS Word
@@ -254,7 +254,7 @@
 								service delivery is only identified and acted upon up 2 weeks later, because data
 								and business insights are manually collated and generated.
 							</div>
-						{/snippet}
+						
 					</GuideExample>
 				</div>
 
@@ -266,7 +266,7 @@
 						<li>
 							Break down large problem statements into its components.
 							<GuideExample>
-								{#snippet example()}
+								
 									<div>
 										<CarbonCloseFilled class="text-warning me-2 mb-1 inline" />Users struggle to
 										find the correct employee HR service they need in XXX employee portal, which
@@ -279,7 +279,7 @@
 											<button class="btn btn-outline btn-warning btn-xs ms-1">Why?</button>
 										</div>
 									</div>
-								{/snippet}
+								
 							</GuideExample>
 						</li>
 						<li>
@@ -299,7 +299,7 @@
 							<li>
 								Reaching EOL or EOS tells you the timeline, not the value.
 								<GuideExample>
-									{#snippet example()}
+									
 										<div>
 											<CarbonCloseFilled class="text-warning me-2 mb-1 inline" />XXX system will
 											reach end of life in 2025, and we need $XXXM to do a tech refresh, as
@@ -311,11 +311,11 @@
 												<button class="btn btn-outline btn-warning btn-xs ms-1">Why?</button>
 											</div>
 										</div>
-									{/snippet}
+									
 								</GuideExample>
 
 								<GuideExample>
-									{#snippet example()}
+									
 										<div>
 											<CarbonCloseFilled class="text-warning me-2 mb-1 inline" />Under the XXX
 											system v2 milestone, we could not complete development to improve
@@ -328,7 +328,7 @@
 												<button class="btn btn-outline btn-warning btn-xs ms-1">Why?</button>
 											</div>
 										</div>
-									{/snippet}
+									
 								</GuideExample>
 							</li>
 						</ul>
@@ -346,7 +346,7 @@
 						</li>
 					</ul>
 					<GuideExample>
-						{#snippet example()}
+						
 							<div>
 								<CarbonCloseFilled class="text-warning me-2 mb-1 inline" />We propose to support
 								local small and medium enterprises to do well and expand both locally and into
@@ -355,7 +355,7 @@
 									<button class="btn btn-outline btn-warning btn-xs ms-1">Why?</button>
 								</div>
 							</div>
-						{/snippet}
+						
 					</GuideExample>
 
 					<h5 class="text-lg font-bold italic">Describing the solution</h5>
@@ -368,7 +368,7 @@
 						</li>
 					</ul>
 					<GuideExample>
-						{#snippet example()}
+						
 							<div>
 								<CarbonCloseFilled class="text-warning me-2 mb-1 inline" />We do not have a system
 								that can collect comprehensive information that businesses give us in the process of
@@ -377,10 +377,10 @@
 									<button class="btn btn-outline btn-warning btn-xs ms-1">Why?</button>
 								</div>
 							</div>
-						{/snippet}
+						
 					</GuideExample>
 					<GuideExample>
-						{#snippet example()}
+						
 							<div>
 								<CarbonCloseFilled class="text-warning me-2 mb-1 inline" />Employees need to go
 								through long documents to find relevant clauses, so they need an AI chatbot that can
@@ -392,7 +392,7 @@
 									<button class="btn btn-outline btn-warning btn-xs ms-1">Why?</button>
 								</div>
 							</div>
-						{/snippet}
+						
 					</GuideExample>
 				</div>
 			</section>
@@ -414,7 +414,7 @@
 						bring in more sales.
 					</p>
 					<GuideExampleLong>
-						{#snippet example()}
+						
 							<div class="space-y-6">
 								<p>
 									I had been working in our payments group at Stripe for a bit, and then I started
@@ -492,26 +492,26 @@
 										>Jeff Weinstein | Lenny's Podcast</a>
 								</p>
 							</div>
-						{/snippet}
+						
 					</GuideExampleLong>
 				</div>
 				<h3 class="text-2xl font-bold">Attributes of the Right Outcome Metrics</h3>
 				<div class="col-span-3 mt-1">
 					<p>Outcome metrics should be relevant, frequent, objective, and specific.</p>
 					<GuideExample>
-						{#snippet example()}
+						
 							<div>
 								<CarbonCheckmarkFilled class="text-success me-2 mb-1 inline" /><span
 									class="text-success"
 									>% of applications where time from first submission to communication of outcome is
 									≤ 3 months</span>
 							</div>
-						{/snippet}
+						
 					</GuideExample>
 					<h5 class="text-lg font-bold italic">Relevant</h5>
 					<p>Improvement or worsening of problem should show in metrics.</p>
 					<GuideExample>
-						{#snippet example()}
+						
 							<div>
 								<CarbonCloseFilled class="text-warning me-2 mb-1 inline" />% of successful
 								applications
@@ -525,13 +525,13 @@
 									>time from first submission to communication of outcome</span
 								>...
 							</div>
-						{/snippet}
+						
 					</GuideExample>
 
 					<h5 class="text-lg font-bold italic">Frequent</h5>
 					<p>Changes in solution should quickly show in metrics.</p>
 					<GuideExample>
-						{#snippet example()}
+						
 							<div>
 								<CarbonCloseFilled class="text-warning me-2 mb-1 inline" />% of applications
 								resolved within 3 months, calculated based on data extracted from system by vendor
@@ -548,7 +548,7 @@
 								of outcome is
 								<span class="text-success">≤ 3 months</span>
 							</div>
-						{/snippet}
+						
 					</GuideExample>
 
 					<h5 class="text-lg font-bold italic">Objective</h5>
@@ -558,7 +558,7 @@
 					</p>
 
 					<GuideExample>
-						{#snippet example()}
+						
 							<div>
 								<CarbonCloseFilled class="text-warning me-2 mb-1 inline" />% of applicants which
 								report having their applications resolved within 3 months
@@ -573,7 +573,7 @@
 								<CarbonCheckmarkFilled class="text-success me-2 mb-1 inline" />% of
 								<span class="text-success">applications</span>...
 							</div>
-						{/snippet}
+						
 					</GuideExample>
 
 					<h5 class="text-lg font-bold italic">Specific</h5>
@@ -583,7 +583,7 @@
 						the metric.
 					</p>
 					<GuideExample>
-						{#snippet example()}
+						
 							<div>
 								<CarbonCloseFilled class="text-warning me-2 mb-1 inline" />% of applications
 								resolved within 3 months
@@ -601,11 +601,11 @@
 									>time from first submission to communication of outcome</span
 								>...
 							</div>
-						{/snippet}
+						
 					</GuideExample>
 
 					<GuideExample>
-						{#snippet example()}
+						
 							<div>
 								<CarbonCloseFilled class="text-warning me-2 mb-1 inline" />Objective: Ensure the
 								currency of guidelines documents using new administration feature in XXX system
@@ -633,11 +633,11 @@
 								microservice will update index with content from outdated guidelines documents
 								within 1 min of a new version upload.
 							</div>
-						{/snippet}
+						
 					</GuideExample>
 
 					<GuideExample>
-						{#snippet example()}
+						
 							<div>
 								<CarbonCloseFilled class="text-warning me-2 mb-1 inline" />Objective: Improve
 								information retrieval
@@ -650,11 +650,11 @@
 								an accurate and concise explanation of questions on employee administrative
 								policies.
 							</div>
-						{/snippet}
+						
 					</GuideExample>
 
 					<GuideExample>
-						{#snippet example()}
+						
 							<div>
 								<p>
 									Instead of sitting around all day and saying, "Hey, I heard all these customer
@@ -672,7 +672,7 @@
 										>Jeff Weinstein | Lenny's Podcast</a>
 								</p>
 							</div>
-						{/snippet}
+						
 					</GuideExample>
 
 					<p>
@@ -680,7 +680,7 @@
 						will be wrong as well.
 					</p>
 					<GuideExample>
-						{#snippet example()}
+						
 							<div>
 								<CarbonCloseFilled class="text-warning me-2 mb-1 inline" />Key Result: Less than 1
 								min to fetch requested information through an AI search engine
@@ -695,7 +695,7 @@
 								question on employee admin guidelines is answered within 1 min of arriving on
 								landing page
 							</div>
-						{/snippet}
+						
 					</GuideExample>
 				</div>
 				<h3 class="text-2xl font-bold">Set Targets based on Cost Per Impact</h3>
@@ -706,12 +706,12 @@
 						the product will be.
 					</p>
 					<GuideExample>
-						{#snippet example()}
+						
 							<div>
 								<CarbonCheckmarkFilled class="text-success me-2 mb-1 inline" />Cost per impact =
 								Annual Total Cost / Target units of impact achieved in the relevant year
 							</div>
-						{/snippet}
+						
 					</GuideExample>
 
 					<p>
@@ -724,7 +724,7 @@
 					</p>
 
 					<GuideExample>
-						{#snippet example()}
+						
 							<div class="overflow-x-auto">
 								<table class="table">
 									<thead>
@@ -762,7 +762,7 @@
 									</tbody>
 								</table>
 							</div>
-						{/snippet}
+						
 					</GuideExample>
 				</div>
 			</section>
@@ -813,7 +813,7 @@
 						</li>
 					</ul>
 					<GuideExample>
-						{#snippet example()}
+						
 							<p>
 								Reduce time taken for 80% of applications from 6 months to 3 months by introducing
 							</p>
@@ -823,7 +823,7 @@
 									Better UI to present info and cut need for clarifications
 								</li>
 							</ul>
-						{/snippet}
+						
 					</GuideExample>
 
 					<p>Identify the riskiest assumptions</p>
@@ -839,7 +839,7 @@
 						</li>
 					</ul>
 					<GuideExample>
-						{#snippet example()}
+						
 							<div class="overflow-x-auto">
 								<table class="table">
 									<thead>
@@ -896,7 +896,7 @@
 									</tbody>
 								</table>
 							</div>
-						{/snippet}
+						
 					</GuideExample>
 
 					<p>Validate the assumptions with a proof-of-concept (POC)</p>
@@ -911,7 +911,7 @@
 						</li>
 					</ul>
 					<GuideExample>
-						{#snippet example()}
+						
 							<ul class="space-y-4">
 								<li>
 									<p>
@@ -934,7 +934,7 @@
 									</p>
 								</li>
 							</ul>
-						{/snippet}
+						
 					</GuideExample>
 				</div>
 			</section>

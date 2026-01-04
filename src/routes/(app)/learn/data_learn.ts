@@ -1,23 +1,8 @@
-interface LearnData {
-	id: number;
-	name: string;
-	intro: string;
-	slug: string;
-	topics: string[];
-	questions: string[];
-	issues: string[];
-	objectives: string[];
-	resources: {
-		courses: { text: string; url: string }[];
-		youtube: string[];
-		links: { text: string; url: string }[];
-	};
-}
-
 export const info: LearnData[] = [
 	{
 		id: 1,
 		name: 'Basics',
+		level: 1,
 		intro: 'The world of computing and modern software development.',
 		slug: 'basics',
 		topics: [
@@ -44,7 +29,7 @@ export const info: LearnData[] = [
 			'What is a computer?',
 			'How do computers run?',
 			'What is assembly language, C/C++, interpreted languages, runtime, compilers?',
-			'What are containers, docker, Kubernetes?',
+			'What are containers, Docker, Kubernetes?',
 			'What are lower and higher level languages?',
 			'What languages work best for prototyping, speed/performance, large teams/apps, web interactivity, data science, scaling up?',
 			'What is the cloud, compute, storage?',
@@ -145,6 +130,7 @@ export const info: LearnData[] = [
 	{
 		id: 2,
 		name: 'Internet',
+		level: 1,
 		intro: 'The web and the cloud.',
 		slug: 'basics-web',
 		topics: ['cloud', 'css', 'html', 'http', 'https', 'internet', 'javascript', 'php', 'ssl'],
@@ -293,6 +279,7 @@ export const info: LearnData[] = [
 	{
 		id: 3,
 		name: 'Apps',
+		level: 1,
 		intro:
 			'Know what the free world uses for work. See how much more efficient and better work can be.',
 		slug: 'apps',
@@ -389,6 +376,7 @@ export const info: LearnData[] = [
 	{
 		id: 4,
 		name: 'Central Tools',
+		level: 1,
 		intro:
 			'Great things have been built centrally by top tier people, stop recreating old grounds and get with the times.',
 		slug: 'wog',
@@ -465,6 +453,7 @@ export const info: LearnData[] = [
 	{
 		id: 5,
 		name: 'UX (I)',
+		level: 1,
 		intro: 'If you want people to use your app, try to make it not suck.',
 		slug: 'ux',
 		topics: [
@@ -613,6 +602,7 @@ export const info: LearnData[] = [
 	{
 		id: 6,
 		name: 'Products (I)',
+		level: 1,
 		intro: 'Make good products, listen to customers, solve user problems.',
 		slug: 'products',
 		topics: ['execution', 'leadership', 'management', 'pivot', 'project', 'startups', 'strategy'],
@@ -719,6 +709,7 @@ export const info: LearnData[] = [
 	{
 		id: 7,
 		name: 'Products (II)',
+		level: 2,
 		intro: 'Make good products, listen to customers, solve user problems.',
 		slug: 'products-advanced',
 		topics: [
@@ -872,6 +863,7 @@ export const info: LearnData[] = [
 	{
 		id: 8,
 		name: 'UX (II)',
+		level: 2,
 		intro: 'If you want people to actually use your app, try to make it not suck.',
 		slug: 'ux-advanced',
 		topics: [
@@ -1078,6 +1070,7 @@ export const info: LearnData[] = [
 	{
 		id: 9,
 		name: 'Methods',
+		level: 2,
 		intro: "Agile or fragile? This will become your project's survival guide.",
 		slug: 'methods',
 		topics: ['agile', 'kanban', 'lean', 'safe', 'scrum', 'waterfall'],
@@ -1168,6 +1161,7 @@ export const info: LearnData[] = [
 	{
 		id: 10,
 		name: 'Data',
+		level: 2,
 		intro: 'Rolling a dice for decisions only works in Monopoly.',
 		slug: 'data',
 		topics: [
@@ -1289,6 +1283,7 @@ export const info: LearnData[] = [
 	{
 		id: 11,
 		name: 'AI (I)',
+		level: 2,
 		intro: 'AI is the extra brain cells you wish you were born with.',
 		slug: 'ai',
 		topics: [
@@ -1424,6 +1419,7 @@ export const info: LearnData[] = [
 	{
 		id: 12,
 		name: 'AI (II)',
+		level: 3,
 		intro: 'AI is the extra brain cells you wish you were born with.',
 		slug: 'ai-advanced',
 		topics: [
@@ -1569,6 +1565,7 @@ export const info: LearnData[] = [
 	{
 		id: 13,
 		name: 'Web Dev',
+		level: 3,
 		intro:
 			'Befriend the machines, learn to speak their language before they achieve world domination.',
 		slug: 'technical',
@@ -1588,7 +1585,7 @@ export const info: LearnData[] = [
 			'structures',
 		],
 		questions: [
-			'What is <insert language> and what does it do well?',
+			'What is XYZ language and what does it do well?',
 			'How do I solve <X> problem? How do others solve it with <Y>?',
 			'How do developers work in the normal world?',
 			'What are difficulties that developers face in my environment?',
@@ -1769,6 +1766,7 @@ export const info: LearnData[] = [
 	{
 		id: 14,
 		name: 'Web Design',
+		level: 3,
 		intro:
 			"Spend 90% of your time debugging and the other 10% wondering why it still doesn't look right on Internet Explorer.",
 		slug: 'web-design',

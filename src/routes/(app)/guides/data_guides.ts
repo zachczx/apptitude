@@ -439,7 +439,7 @@ export const guides: GuidesData[] = [
 			},
 			{
 				what: 'More costs to mitigate what additional risks?',
-				why: 'Increased investment should always be tied to clear risk reduction or value creation. If we are spending more, we need to understand *precisely* what additional risks we are mitigating or what new opportunities we are unlocking. Are these risks significant enough to justify the added expense? This question forces us to justify costs and ensure every dollar spent contributes meaningfully to risk management or business value.',
+				why: `Increased investment should always be tied to clear risk reduction or value creation. If we are spending more, we need to understand *precisely* what additional risks we are mitigating or what new opportunities we are unlocking. Are these risks significant enough to justify the added expense?\n\nThis question forces us to justify costs and ensure every dollar spent contributes meaningfully to risk management or business value.`,
 			},
 			{
 				what: 'Why would it take X man months?',
@@ -481,7 +481,7 @@ export const guides: GuidesData[] = [
 			},
 			{
 				what: 'We need X business analysts, project managers, senior developers, developers, designers, xxx, yyy, etc',
-				why: "We're bring tons of people to the team, based on a vendor's hyper specialization and billable rates.",
+				why: "We're bringing tons of people to the team, based on a vendor's hyper specialization and billable rates.",
 			},
 			{
 				what: "It's not even $100,000, why are we quibbling over a small sum?",
@@ -598,6 +598,7 @@ export const guides: GuidesData[] = [
 				what: 'You are shown rows of CVEs, package names, EC2 instances, and technical terms.',
 				why: 'Request to know what the CVEs cover, the risks each present, and implication if breached. A runtime environment vulnerability is very different from a vulnerability for a UI library.',
 			},
+			// apptitude: something that was sensitive is declared accordingly because it was always like that, withouit review, and uses specialised tools
 		],
 		questions: [
 			{
@@ -918,6 +919,8 @@ export const guides: GuidesData[] = [
 			"Why can't we just get all these people into a room and decide?",
 			'Why are you coming with an "all or nothing" or fait accompli plan? (usually when process of seeking further funding is tedious, so it\'s all tied up in one big bang)',
 		],
+
+//Apptitude - bootstrap for a new custom SharePoint site - so slow, legacy, and people not familiar with modern work
 
 		dealbreakers: [],
 		solutions: [],

@@ -1,7 +1,6 @@
 <script lang="ts">
 	import NavAside from './NavAside.svelte';
 	import NavToc from './NavToc.svelte';
-	import { type Contents } from '$lib/Types';
 	import logo from '$lib/assets/svg/logo.svg?dataurl';
 	import type { Snippet } from 'svelte';
 
