@@ -1,21 +1,30 @@
 <script lang="ts">
-	import Basics from '$lib/assets/svg/nav-icons/Basics.svelte';
-	import Internet from '$lib/assets/svg/nav-icons/Internet.svelte';
-	import Apps from '$lib/assets/svg/nav-icons/Apps.svelte';
-	import CentralTools from '$lib/assets/svg/nav-icons/CentralTools.svelte';
-	import UX from '$lib/assets/svg/nav-icons/UX.svelte';
-	import Products from '$lib/assets/svg/nav-icons/Products.svelte';
-	import Methods from '$lib/assets/svg/nav-icons/Methods.svelte';
-	import Data from '$lib/assets/svg/nav-icons/Data.svelte';
-	import AI from '$lib/assets/svg/nav-icons/AI.svelte';
-	import WebDev from '$lib/assets/svg/nav-icons/WebDev.svelte';
-	import Product from '$lib/assets/svg/nav-icons/Product.svelte';
-	import ProblemStatements from '$lib/assets/svg/nav-icons/ProblemStatements.svelte';
-	import Research from '$lib/assets/svg/nav-icons/Research.svelte';
-	import Cost from '$lib/assets/svg/nav-icons/Cost.svelte';
-	import Running from '$lib/assets/svg/nav-icons/Running.svelte';
-	import Communications from '$lib/assets/svg/nav-icons/Communications.svelte';
-	import TechTrippin from '$lib/assets/svg/nav-icons/TechTrippin.svelte';
+	import {
+		// Docs Imports
+		Education, // Basics
+		Globe, // Internet
+		AppConnectivity, // Apps
+		Building, // Central Tools
+		UserSpeaker, // UX
+		Product, // Products
+		Flow, // Methods
+		DataBase, // Data
+		Bot, // AI
+		Security, // Security
+		Code, // Web Dev
+		Template, // Web Design
+		Infinity, // DevOps
+
+		// Playbook Imports
+		Help, // Problem Statements
+		Search, // Research
+		CurrencyDollar, // Cost
+		Run, // Running
+		Chat, // Communications
+
+		// Tripping Imports
+		Plane, // Tech Trippin'
+	} from 'carbon-icons-svelte';
 
 	let { page = '' } = $props();
 
@@ -24,14 +33,14 @@
 			label: 'Docs',
 			href: '/learn',
 			items: [
-				{ label: 'Basics', id: 'basics', href: '/learn/basics', icon: Basics },
-				{ label: 'Internet', id: 'basics-web', href: '/learn/basics-web', icon: Internet },
-				{ label: 'Apps', id: 'apps', href: '/learn/apps', icon: Apps },
-				{ label: 'Central Tools', id: 'wog', href: '/learn/wog', icon: CentralTools },
+				{ label: 'Basics', id: 'basics', href: '/learn/basics', icon: Education },
+				{ label: 'Internet', id: 'basics-web', href: '/learn/basics-web', icon: Globe },
+				{ label: 'Apps', id: 'apps', href: '/learn/apps', icon: AppConnectivity },
+				{ label: 'Central Tools', id: 'wog', href: '/learn/wog', icon: Building },
 				{
 					label: 'UX',
 					id: 'header-ux',
-					icon: UX,
+					icon: UserSpeaker,
 					children: [
 						{ label: 'UX Fundamentals', id: 'ux-fundamentals', href: '/learn/ux-fundamentals' },
 						{
@@ -44,7 +53,7 @@
 				{
 					label: 'Products',
 					id: 'header-products',
-					icon: Products,
+					icon: Product,
 					children: [
 						{
 							label: 'Product Fundamentals',
@@ -54,12 +63,12 @@
 						{ label: 'Product Strategy', id: 'product-strategy', href: '/learn/product-strategy' },
 					],
 				},
-				{ label: 'Methods', id: 'methods', href: '/learn/methods', icon: Methods },
-				{ label: 'Data', id: 'data', href: '/learn/data', icon: Data },
+				{ label: 'Methods', id: 'methods', href: '/learn/methods', icon: Flow },
+				{ label: 'Data', id: 'data', href: '/learn/data', icon: DataBase },
 				{
 					label: 'AI',
 					id: 'header-ai',
-					icon: AI,
+					icon: Bot,
 					children: [
 						{ label: 'AI Fundamentals', id: 'ai-fundamentals', href: '/learn/ai-fundamentals' },
 						{
@@ -69,7 +78,10 @@
 						},
 					],
 				},
-				{ label: 'Web Dev', id: 'technical', href: '/learn/technical', icon: WebDev },
+				{ label: 'Security', id: 'security', href: '/learn/security', icon: Security },
+				{ label: 'Web Dev', id: 'technical', href: '/learn/technical', icon: Code },
+				{ label: 'Web Design', id: 'web-design', href: '/learn/web-design', icon: Template },
+				{ label: 'DevOps & SRE', id: 'devops', href: '/learn/devops', icon: Infinity },
 			],
 		},
 
@@ -80,7 +92,7 @@
 				{
 					label: 'Product',
 					id: 'header-product',
-					icon: Product,
+					icon: Product, // Reusing Product icon
 					children: [
 						{ label: 'General', id: 'product', href: '/guides/product' },
 						{ label: 'Plan', id: 'product-plan', href: '/guides/product-plan' },
@@ -90,16 +102,16 @@
 					label: 'Problem Statements',
 					id: 'problems',
 					href: '/guides/problems',
-					icon: ProblemStatements,
+					icon: Help, // Represents the "Question" or the "Why"
 				},
-				{ label: 'Research', id: 'research', href: '/guides/research', icon: Research },
-				{ label: 'Cost', id: 'cost', href: '/guides/cost', icon: Cost },
-				{ label: 'Running', id: 'running', href: '/guides/running', icon: Running },
+				{ label: 'Research', id: 'research', href: '/guides/research', icon: Search },
+				{ label: 'Cost', id: 'cost', href: '/guides/cost', icon: CurrencyDollar },
+				{ label: 'Running', id: 'running', href: '/guides/running', icon: Run }, // Represents execution
 				{
 					label: 'Communications',
 					id: 'communications',
 					href: '/guides/communications',
-					icon: Communications,
+					icon: Chat,
 				},
 			],
 		},
@@ -107,9 +119,7 @@
 		{
 			label: 'Tripping',
 			href: '/techtrippin',
-			items: [
-				{ label: "Tech Trippin'", id: 'techtrippin', href: '/techtrippin', icon: TechTrippin },
-			],
+			items: [{ label: "Tech Trippin'", id: 'techtrippin', href: '/techtrippin', icon: Plane }],
 		},
 	];
 

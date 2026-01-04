@@ -14,6 +14,7 @@ export const info: LearnData[] = [
 			'computing',
 			'cpu',
 			'development',
+			'encoding',
 			'gpu',
 			'internet',
 			'kernel',
@@ -23,12 +24,13 @@ export const info: LearnData[] = [
 			'open source',
 			'runtime',
 			'software',
+			'utf-8',
 		],
 		questions: [
 			'What is a computer?',
 			'How do computers run?',
 			'What is assembly language, C/C++, interpreted languages, runtime, compilers?',
-			'What are containers, Docker, Kubernetes?',
+			'What are containers?',
 			'What are lower and higher level languages?',
 			'What languages work best for prototyping, speed/performance, large teams/apps, web interactivity, data science, scaling up?',
 			'What is the cloud, compute, storage?',
@@ -237,14 +239,6 @@ export const info: LearnData[] = [
 					text: 'Queueing: An interactive study of queueing strategies',
 					url: 'https://encore.dev/blog/queueing',
 				},
-				{
-					text: 'What is SSL (Secure Sockets Layer)? | Cloudflare',
-					url: 'https://www.cloudflare.com/en-gb/learning/ssl/what-is-ssl/',
-				},
-				{
-					text: 'Cloud Security: A Primer for Policymakers',
-					url: 'https://carnegieendowment.org/2020/08/31/cloud-security-primer-for-policymakers-pub-82597',
-				},
 				{ text: 'Learn CSS | Web.dev', url: 'https://web.dev/learn/css' },
 				{ text: 'Webflow (Website Builder)', url: 'https://webflow.com/' },
 				{ text: 'Weebly (Website Builder)', url: 'https://www.weebly.com/' },
@@ -371,12 +365,12 @@ export const info: LearnData[] = [
 		},
 	},
 	{
-		name: 'Central Tools',
+		name: "Central Tools (S'pore Govt)",
 		level: 1,
 		intro:
 			'Great things have been built centrally by top tier people, stop recreating old grounds and get with the times.',
 		slug: 'wog',
-		topics: ['gcc', 'gdc', 'gsib', 'sg tech stack', 'sg-teams'],
+		topics: ['gcc', 'gdc', 'gsib', 'sgts', 'sg-teams'],
 		questions: [
 			'Trade offs between going Infrastructure-as-a-Service, Platform-as-a-Service, Software-as-a-Service',
 			'Mainstays in WOG networks, especially the endpoint device, network, and backend infrastructure',
@@ -1133,6 +1127,8 @@ export const info: LearnData[] = [
 			'warehouse',
 			'database',
 			'etl',
+			'elt',
+			'dbt',
 			'storytelling',
 			'tableau',
 			'databricks',
@@ -1145,6 +1141,7 @@ export const info: LearnData[] = [
 			'What is end-to-end data observability and monitoring?',
 			'What is Extract, Transform, Load (ETL)? What is traditional vs modern ETL?',
 			'What is Extract, Load, Transform (ELT)? How does it differ from ETL?',
+			'What is a Data Build Tool?',
 			'How mature is the organization in the collection, manipulation, exploitation of data?',
 			'Where are the data silos in our organization and how did they come to be?',
 			'What are our business needs for data (e.g. latency, scale, security)?',
@@ -1302,13 +1299,13 @@ export const info: LearnData[] = [
 				},
 			],
 			youtube: [
-				'https://youtube.com/embed/zjkBMFhNj_g', // Intro to GenAI
-				'https://youtube.com/embed/NKnZYvZA7w4', // What is GenAI
-				'https://youtube.com/embed/PeMlggyqz0Y?si=X1ZeR-qr01d_BnP-', // AI for Good
-				'https://youtube.com/embed/5sLYAQS9sWQ', // GenAI in Public Sector
-				'https://youtube.com/embed/G8T1O81W96Y', // Prompt Engineering
-				'https://youtube.com/embed/T-D1OfcDW1M?si=WZJLcElfcEh4-51c', // Agents
-				'https://youtube.com/embed/sal78ACtGTc', // Ethics
+				'https://youtube.com/embed/zjkBMFhNj_g',
+				'https://youtube.com/embed/NKnZYvZA7w4',
+				'https://youtube.com/embed/PeMlggyqz0Y?si=X1ZeR-qr01d_BnP-',
+				'https://youtube.com/embed/5sLYAQS9sWQ',
+				'https://youtube.com/embed/G8T1O81W96Y',
+				'https://youtube.com/embed/T-D1OfcDW1M?si=WZJLcElfcEh4-51c',
+				'https://youtube.com/embed/sal78ACtGTc',
 			],
 			links: [
 				{
@@ -1346,6 +1343,106 @@ export const info: LearnData[] = [
 				{
 					text: 'Futurepedia - Find the Best AI Tools & Software',
 					url: 'https://www.futurepedia.io/',
+				},
+			],
+		},
+	},
+	{
+		name: 'Security Fundamentals',
+		level: 2,
+		intro:
+			'The only secure computer is one unplugged, buried in concrete, and you are still not sure.',
+		slug: 'security',
+		topics: [
+			'authentication',
+			'authorization',
+			'encryption',
+			'hashing',
+			'https',
+			'identity',
+			'owasp',
+			'phishing',
+			'social engineering',
+			'zero trust',
+			'2fa',
+			'supply-chain',
+			'sbom',
+			'prompt-injection',
+		],
+		questions: [
+			'What is the difference between Authentication (AuthN) and Authorization (AuthZ)?',
+			'What is the CIA Triad (Confidentiality, Integrity, Availability)?',
+			'Why is HTTPs essential and what are SSL/TLS certificates?',
+			'What are the OWASP Top 10 web vulnerabilities?',
+			'What is Social Engineering and why is the human the weakest link?',
+			'What is Zero Trust architecture?',
+			'How do password managers and 2FA/MFA work?',
+		],
+		issues: [
+			'Security is often seen as a blocker to speed, until you get hacked and speed drops to zero.',
+			'Compliance (ticking boxes) is NOT the same as Security.',
+			'Developers often trust user input too much—never trust anything the client sends.',
+			'Phishing tests are annoying, but one click typically compromises the entire network.',
+		],
+		objectives: [
+			'Understand the basics of digital hygiene and organizational security',
+			'Differentiate between compliance and actual security posture',
+			'Learn the common attack vectors (SQL Injection, XSS, Phishing)',
+			'Understand the importance of Identity Access Management (IAM)',
+		],
+		resources: {
+			courses: [
+				{
+					text: 'Cybersecurity for Everyone | Coursera',
+					url: 'https://www.coursera.org/learn/cybersecurity-for-everyone',
+				},
+				{
+					text: 'Introduction to Web Security | Stanford (CS253)',
+					url: 'https://web.stanford.edu/class/cs253/',
+				},
+				{
+					text: 'Google Cybersecurity Certificate',
+					url: 'https://grow.google/certificates/cybersecurity/',
+				},
+				{
+					text: 'CISSP - Certified Information Systems Security Professional',
+					url: 'https://https://www.isc2.org/certifications/cissp',
+				},
+			],
+			youtube: [
+				'https://www.youtube.com/embed/inWWhr5tnEA',
+				'https://www.youtube.com/embed/z5nc9MDd-6o',
+				'https://www.youtube.com/embed/sdpxddDzXfE',
+				'https://www.youtube.com/embed/ciNHn38EyRc',
+			],
+			links: [
+				{
+					text: 'OWASP Top 10',
+					url: 'https://owasp.org/www-project-top-ten/',
+				},
+				{
+					text: 'OWASP Top 10 for LLM Applications',
+					url: 'https://owasp.org/www-project-top-10-for-large-language-model-applications/',
+				},
+				{
+					text: 'The 6 Principles of Zero Trust',
+					url: 'https://www.crowdstrike.com/cybersecurity-101/zero-trust-security/',
+				},
+				{
+					text: 'What is SSL (Secure Sockets Layer)? | Cloudflare',
+					url: 'https://www.cloudflare.com/en-gb/learning/ssl/what-is-ssl/',
+				},
+				{
+					text: 'Cloud Security: A Primer for Policymakers',
+					url: 'https://carnegieendowment.org/2020/08/31/cloud-security-primer-for-policymakers-pub-82597',
+				},
+				{
+					text: 'Have I Been Pwned',
+					url: 'https://haveibeenpwned.com/',
+				},
+				{
+					text: 'Google: Supply chain security for software artifacts (SLSA)',
+					url: 'https://security.googleblog.com/2021/06/introducing-slsa-end-to-end-framework.html',
 				},
 			],
 		},
@@ -1506,6 +1603,7 @@ export const info: LearnData[] = [
 		slug: 'technical',
 		topics: [
 			'algorithms',
+			'system-design',
 			'ci',
 			'cd',
 			'cli',
@@ -1633,6 +1731,14 @@ export const info: LearnData[] = [
 				{
 					text: 'Kevin Powell - YouTube',
 					url: 'https://www.youtube.com/@KevinPowell',
+				},
+				{
+					text: 'The System Design Primer',
+					url: 'https://github.com/donnemartin/system-design-primer',
+				},
+				{
+					text: 'ByteByteGo',
+					url: 'https://www.youtube.com/@ByteByteGo',
 				},
 				{
 					text: 'Web Dev Simplified - YouTube',
@@ -1904,6 +2010,81 @@ export const info: LearnData[] = [
 				{
 					text: 'Neumorphism: why it’s all the hype in UI design',
 					url: 'https://www.justinmind.com/ui-design/neumorphism',
+				},
+			],
+		},
+	},
+	{
+		name: 'DevOps & SRE',
+		level: 2,
+		intro: '"It works on my machine" is not a valid deployment strategy.',
+		slug: 'devops',
+		topics: [
+			'ci/cd',
+			'containers',
+			'docker',
+			'kubernetes',
+			'terraform',
+			'observability',
+			'infrastructure-as-code',
+			'sre',
+			'metrics',
+			'logs',
+			'uptime',
+		],
+		questions: [
+			'What is the difference between DevOps, SRE (Site Reliability Engineering), and Platform Engineering?',
+			'Why do we need CI/CD pipelines instead of dragging files to a server?',
+			'What is Infrastructure as Code (IaC) and why is Terraform/OpenTofu standard?',
+			'What happens when a server crashes at 3 AM? (Incident Response)',
+			'What are SLIs, SLOs, and SLAs?',
+			'How do we know if the system is healthy? (Monitoring vs Observability)',
+		],
+		issues: [
+			'Developers often build things that are impossible to operate or monitor.',
+			'Manual deployments are the root cause of most outages.',
+			'Uptime is a feature, not luck.',
+			'Alert fatigue is real: if everything is urgent, nothing is urgent.',
+		],
+		objectives: [
+			'Understand how code moves from a laptop to production securely and reliably',
+			'Learn the principles of Site Reliability Engineering (SRE)',
+			'Understand the value of Infrastructure as Code',
+			'Stop treating servers like pets (naming them) and start treating them like cattle (numbering them)',
+		],
+		resources: {
+			courses: [
+				{
+					text: 'DevOps Engineering on AWS',
+					url: 'https://www.coursera.org/specializations/aws-devops',
+				},
+				{
+					text: 'Google Cloud SRE: Measuring and Managing Reliability',
+					url: 'https://www.coursera.org/learn/sre-measuring-reliability',
+				},
+			],
+			youtube: [
+				'https://www.youtube.com/embed/s1LhM_R086U',
+				'https://www.youtube.com/embed/hQcFE0RD0cQ',
+				'https://www.youtube.com/embed/scEDHsr3APg',
+				'https://www.youtube.com/embed/0yWAtQ6GGXE',
+			],
+			links: [
+				{
+					text: 'The Site Reliability Engineering Books (Free to read)',
+					url: 'https://sre.google/books/',
+				},
+				{
+					text: 'The Twelve-Factor App',
+					url: 'https://12factor.net/',
+				},
+				{
+					text: 'DevOps Roadmap',
+					url: 'https://roadmap.sh/devops',
+				},
+				{
+					text: 'What is Platform Engineering?',
+					url: 'https://platformengineering.org/blog/what-is-platform-engineering',
 				},
 			],
 		},

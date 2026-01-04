@@ -23,6 +23,9 @@ importers:
       '@tailwindcss/vite':
         specifier: ^4.1.18
         version: 4.1.18(vite@7.3.0(@types/node@25.0.3)(jiti@2.6.1)(lightningcss@1.30.2))
+      carbon-icons-svelte:
+        specifier: ^13.8.0
+        version: 13.8.0
       gsap:
         specifier: ^3.14.2
         version: 3.14.2
@@ -915,6 +918,9 @@ packages:
   callsites@3.1.0:
     resolution: {integrity: sha512-P8BjAsXvZS+VIDUI11hHCQEv74YT67YUi5JJFNWIqL235sBmjX4+qx9Muvls5ivyNENctx46xQLQ3aTuE7ssaQ==}
     engines: {node: '>=6'}
+
+  carbon-icons-svelte@13.8.0:
+    resolution: {integrity: sha512-1sTbSOhiKjs7BXj2Ctk6tekSNX4DLUy9miNeYaQK/jeveM4x/+et09JH8xnrwRE1QseLdRd3sOoVwqPZEYsdkA==}
 
   ccount@2.0.1:
     resolution: {integrity: sha512-eyrF0jiFpY+3drT6383f1qhkbGsLSifNAjA61IUjZjmLCWjItY6LB9ft9YhoDgwfmclB2zhu51Lc7+95b8NRAg==}
@@ -2553,6 +2559,8 @@ snapshots:
       concat-map: 0.0.1
 
   callsites@3.1.0: {}
+
+  carbon-icons-svelte@13.8.0: {}
 
   ccount@2.0.1: {}
 

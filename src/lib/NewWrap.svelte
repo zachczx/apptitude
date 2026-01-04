@@ -11,7 +11,7 @@
 </script>
 
 <div class="relative grid min-h-dvh grid-cols-[1fr_auto]">
-	<article class="grid max-w-200 grid-rows-[auto_1fr_auto] justify-self-center">
+	<article class="mx-4 grid max-w-200 grid-rows-[auto_1fr_auto] justify-self-center">
 		<div class="mb-8 rounded-xl py-8">
 			<h1 class="text-4xl font-bold">
 				{title}
