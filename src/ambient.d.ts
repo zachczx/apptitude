@@ -1,5 +1,5 @@
 interface TableOfContent {
-	id: SuggestionSection | ResearchSection;
+	id: SuggestionSection | ResearchSection | LearnSection;
 	title: string;
 }
 
@@ -19,6 +19,8 @@ interface LearnData {
 		links: { text: string; url: string }[];
 	};
 }
+
+type LearnSection = 'questions' | 'objectives' | 'observations' | 'resources';
 
 type SuggestionSection = 'definitions' | 'goals' | 'questions' | 'alarms' | 'dealbreakers';
 

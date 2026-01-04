@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { type Contents } from '$lib/Types';
 	import NewWrap from '$lib/NewWrap.svelte';
 	import NavToc from '$lib/NavToc.svelte';
 	import Intersection from '$lib/ui/Intersection.svelte';
@@ -8,7 +7,7 @@
 
 	let { data } = $props();
 
-	let contents: Contents[] = [
+	let contents: TableOfContent[] = [
 		{ id: 'questions', title: 'Questions' },
 		{ id: 'objectives', title: 'Objectives' },
 		{ id: 'observations', title: 'Observations' },
