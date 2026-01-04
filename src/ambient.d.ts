@@ -6,7 +6,6 @@ interface TableOfContent {
 type TableOfContentId = SuggestionSection | ResearchSection | LearnSection | ProductPlanSection;
 
 interface LearnData {
-	id: number;
 	name: string;
 	intro: string;
 	slug: string;

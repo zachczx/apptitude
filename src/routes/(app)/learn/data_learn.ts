@@ -1,6 +1,5 @@
 export const info: LearnData[] = [
 	{
-		id: 1,
 		name: 'Basics',
 		level: 1,
 		intro: 'The world of computing and modern software development.',
@@ -128,7 +127,6 @@ export const info: LearnData[] = [
 		},
 	},
 	{
-		id: 2,
 		name: 'Internet',
 		level: 1,
 		intro: 'The web and the cloud.',
@@ -277,7 +275,6 @@ export const info: LearnData[] = [
 		},
 	},
 	{
-		id: 3,
 		name: 'Apps',
 		level: 1,
 		intro:
@@ -374,7 +371,6 @@ export const info: LearnData[] = [
 		},
 	},
 	{
-		id: 4,
 		name: 'Central Tools',
 		level: 1,
 		intro:
@@ -451,7 +447,6 @@ export const info: LearnData[] = [
 		},
 	},
 	{
-		id: 5,
 		name: 'UX Fundamentals',
 		level: 1,
 		intro: 'UX is not just UI. It is how something works, not just how it looks.',
@@ -588,7 +583,6 @@ export const info: LearnData[] = [
 		},
 	},
 	{
-		id: 6,
 		name: 'Product Fundamentals',
 		level: 1,
 		intro: 'Make good products, listen to customers, solve user problems.',
@@ -693,7 +687,6 @@ export const info: LearnData[] = [
 		},
 	},
 	{
-		id: 7,
 		name: 'Product Strategy',
 		level: 2,
 		intro: 'Focus on strategy, metrics, and finding product-market fit.',
@@ -829,7 +822,6 @@ export const info: LearnData[] = [
 		},
 	},
 	{
-		id: 8,
 		name: 'UX Design & Interaction',
 		level: 2,
 		intro:
@@ -1038,7 +1030,6 @@ export const info: LearnData[] = [
 		},
 	},
 	{
-		id: 9,
 		name: 'Methods',
 		level: 2,
 		intro: "Agile or fragile? This will become your project's survival guide.",
@@ -1129,7 +1120,6 @@ export const info: LearnData[] = [
 		},
 	},
 	{
-		id: 10,
 		name: 'Data',
 		level: 2,
 		intro: 'Rolling a dice for decisions only works in Monopoly.',
@@ -1251,7 +1241,6 @@ export const info: LearnData[] = [
 		},
 	},
 	{
-		id: 11,
 		name: 'AI Fundamentals & Application',
 		level: 2,
 		intro:
@@ -1362,7 +1351,6 @@ export const info: LearnData[] = [
 		},
 	},
 	{
-		id: 12,
 		name: 'AI Engineering & Strategy',
 		level: 3,
 		intro:
@@ -1511,7 +1499,6 @@ export const info: LearnData[] = [
 		},
 	},
 	{
-		id: 13,
 		name: 'Web Dev',
 		level: 3,
 		intro:
@@ -1712,7 +1699,6 @@ export const info: LearnData[] = [
 		},
 	},
 	{
-		id: 14,
 		name: 'Web Design',
 		level: 3,
 		intro:
