@@ -6,7 +6,7 @@
 		title,
 		subtitle,
 		children,
-	}: { id: string; title: string; subtitle?: string; children: Snippet } = $props();
+	}: { id: TableOfContentId; title: string; subtitle?: string; children: Snippet } = $props();
 </script>
 
 <section {id} class="contents-observer grid gap-4">

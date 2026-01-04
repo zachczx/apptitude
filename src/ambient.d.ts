@@ -1,7 +1,9 @@
 interface TableOfContent {
-	id: SuggestionSection | ResearchSection | LearnSection | ProductPlanSection;
+	id: TableOfContentId;
 	title: string;
 }
+
+type TableOfContentId = SuggestionSection | ResearchSection | LearnSection | ProductPlanSection;
 
 interface LearnData {
 	id: number;
@@ -28,7 +30,7 @@ type ProductPlanSection =
 	| 'product-plan-template'
 	| 'credits';
 
-type LearnSection = 'questions' | 'objectives' | 'observations' | 'resources';
+type LearnSection = 'questions' | 'objectives' | 'hard-truths' | 'resources';
 
 type SuggestionSection = 'definitions' | 'goals' | 'questions' | 'alarms' | 'dealbreakers';
 

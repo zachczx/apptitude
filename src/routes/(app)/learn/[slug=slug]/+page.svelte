@@ -10,7 +10,7 @@
 	let contents: TableOfContent[] = [
 		{ id: 'questions', title: 'Questions' },
 		{ id: 'objectives', title: 'Objectives' },
-		{ id: 'observations', title: 'Observations' },
+		{ id: 'hard-truths', title: 'Hard Truths' },
 		{ id: 'resources', title: 'Resources' },
 	];
 
@@ -74,7 +74,7 @@
 			{/if}
 
 			{#if data.post?.issues && data.post.issues.length > 0}
-				<Section id="observations" title="Things to Keep in Mind">
+				<Section id="hard-truths" title="Hard Truths">
 					<div class="grid gap-4">
 						{#each data.post.issues as issue}
 							<div
