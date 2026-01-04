@@ -1,4 +1,6 @@
 <script lang="ts">
+	import CarbonChevronRight from './assets/svg/CarbonChevronRight.svelte';
+
 	let { contents = [], currentSection }: { contents: TableOfContent[]; currentSection: string } =
 		$props();
 
@@ -28,7 +30,7 @@
 
 				<a
 					href="#{section.id}"
-					class={['p-4 block transition-all duration-200', isActive && 'bg-primary/10 rounded-2xl']}
+					class={['block p-4 transition-all duration-200', isActive && 'bg-primary/10 rounded-2xl']}
 					onclick={(e) => {
 						e.preventDefault();
 						const el = document.getElementById(section.id);
@@ -43,7 +45,7 @@
 							{i + 1}
 						</div>
 
-						<div class={[isActive ? 'font-bold text-primary' : 'font-medium text-base-content/70']}>
+						<div class={[isActive ? 'text-primary font-bold' : 'text-base-content/70 font-medium']}>
 							{section.title}
 						</div>
 					</div>
@@ -51,25 +53,14 @@
 			{/each}
 		</nav>
 
-		<div class="toc-footer border-t-base-content/30 flex items-center gap-2 border-t-2 pt-4">
+		<div class="toc-footer border-t-base-content/10 flex items-center gap-2 border-t-2 pt-4">
 			<button
-				class="hover:text-bright flex w-full cursor-pointer items-center justify-center gap-2"
+				class="hover:text-primary flex w-full cursor-pointer items-center justify-center gap-2 text-sm"
 				onclick={() => {
 					if (window) {
 						window.scrollTo(0, 0);
 					}
-				}}
-				><svg
-					xmlns="http://www.w3.org/2000/svg"
-					width="16"
-					height="16"
-					viewBox="0 0 24 24"
-					fill="none"
-					stroke="currentColor"
-					stroke-width="2">
-					<path d="M18 15l-6-6-6 6" />
-				</svg>Scroll to top</button>
+				}}><CarbonChevronRight class="rotate-270" />Scroll to top</button>
 		</div>
 	</div>
 {/if}
-
