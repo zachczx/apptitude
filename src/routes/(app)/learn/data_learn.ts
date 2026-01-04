@@ -452,10 +452,10 @@ export const info: LearnData[] = [
 	},
 	{
 		id: 5,
-		name: 'UX (I)',
+		name: 'UX Fundamentals',
 		level: 1,
-		intro: 'If you want people to use your app, try to make it not suck.',
-		slug: 'ux',
+		intro: 'UX is not just UI. It is how something works, not just how it looks.',
+		slug: 'ux-fundamentals',
 		topics: [
 			'accessibility',
 			'design thinking',
@@ -470,28 +470,24 @@ export const info: LearnData[] = [
 		questions: [
 			'What is UX?',
 			'How does UX differ from UI?',
-			'How do you conduct user research, design, prototype, validation, testing?',
 			'What are the key principles of user-centric products?',
 			'What are UX design processes and methodologies?',
-			'Why should we incorporate design for users with disabilities and how can I make design inclusive?',
-			'What are industry standard tools for UX design (esp Figma)?',
+			'Why should we incorporate design for users with disabilities?',
+			'How do you conduct user research, design, prototype, validation, testing?',
+		],
+		issues: [
+			// Cultural & Process Issues
+			'Products which offer poor experience still hang in there, because users are often captured audience (think NS Portal and fact that it was always down on weekends)',
+			'People who manage products in Govt seldom talk to actual users',
+			'There is product management theatre in the public sector',
+			"People who do know/talk to users don't get to decide and often get overridden by generalists",
 		],
 		objectives: [
 			"UX is not UI, it's all aspects of the end-user's interaction with the company, its services, and its products.",
 			'Understand user needs, behaviors, and motivations',
 			'Learn methods for user research (e.g. interviews, surveys, usability testing)',
 			'Study principles of good UX design (e.g. usability, accessibility, desirability)',
-			'Grasp key usability principles (learnability, efficiency, memorability, error prevention, satisfaction)',
-			'Explore UX design processes and methodologies',
-			'See usable, intuitive, and appealing in action, especially for web products',
 			'Know the basics of using Figma (no exporting to PDF and sending over email plzzz), Adobe XD, Sketch, etc',
-		],
-		issues: [
-			'Products which offer poor experience still hang in there, because users are often captured audience (think NS Portal and fact that it was always down on weekends)',
-			'People who manage products in Govt seldom talk to actual users',
-			'UX is neither about doing usability testing nor is it copywriting',
-			'There is product management theatre in the public sector',
-			"Good design doesn't mean doing bright colors, flashy animations, layouts. In fact, predictable layout is good, like for websites.",
 		],
 		resources: {
 			courses: [
@@ -509,14 +505,14 @@ export const info: LearnData[] = [
 				},
 			],
 			youtube: [
-				'https://www.youtube.com/embed/2QQQtiFwXjU',
-				'https://www.youtube.com/embed/8PM6KxV8GRc',
-				'https://www.youtube.com/embed/wIuVvCuiJhU',
-				'https://www.youtube.com/embed/yNDgFK2Jj1E',
-				'https://www.youtube.com/embed/4eAM6ASs76U',
-				'https://www.youtube.com/embed/NJbTER11-kQ',
-				'https://www.youtube.com/embed/S6maF4tICPs',
-				'https://www.youtube.com/embed/VQhHX5zpC-U',
+				'https://www.youtube.com/embed/2QQQtiFwXjU', // Introduction to UX
+				'https://www.youtube.com/embed/8PM6KxV8GRc', // Design Thinking
+				'https://www.youtube.com/embed/wIuVvCuiJhU', // UX vs UI
+				'https://www.youtube.com/embed/yNDgFK2Jj1E', // Empathy Maps
+				'https://www.youtube.com/embed/4eAM6ASs76U', // User Research
+				'https://www.youtube.com/embed/NJbTER11-kQ', // User Personas
+				'https://www.youtube.com/embed/S6maF4tICPs', // Accessibility
+				'https://www.youtube.com/embed/VQhHX5zpC-U', // Usability Testing
 			],
 			links: [
 				{
@@ -532,7 +528,7 @@ export const info: LearnData[] = [
 					url: 'https://www.nngroup.com/articles/which-ux-research-methods/',
 				},
 				{
-					text: 'User Stories: As a [UX Designer] I want to [embrace Agile] so that [I can make my projects user-centered] | Interaction Design Foundation',
+					text: 'User Stories: As a [UX Designer] I want to [embrace Agile]...',
 					url: 'https://www.interaction-design.org/literature/article/user-stories-as-a-ux-designer-i-want-to-embrace-agile-so-that-i-can-make-my-projects-user-centered',
 				},
 				{
@@ -565,7 +561,7 @@ export const info: LearnData[] = [
 					url: 'https://www.nngroup.com/articles/usability-101-introduction-to-usability/',
 				},
 				{
-					text: 'The A to Z of UX — A is for Accessibility: 12 tips for designing an inclusive user experience',
+					text: 'The A to Z of UX — A is for Accessibility',
 					url: 'https://uxdesign.cc/the-a-to-z-of-ux-a-is-for-accessibility-12-top-tips-for-designing-an-inclusive-user-experience-667eedaf5bca',
 				},
 				{
@@ -585,14 +581,6 @@ export const info: LearnData[] = [
 					url: 'https://www.thedesignership.com/blog/how-youtube-keeps-you-watching-addicted',
 				},
 				{
-					text: 'The Beginner’s Guide to Information Architecture in UX',
-					url: 'https://xd.adobe.com/ideas/process/information-architecture/introductory-guide-to-information-architecture/',
-				},
-				{
-					text: 'Information Architecture. Basics for Designers.',
-					url: 'https://uxplanet.org/information-architecture-basics-for-designers-b5d43df62e20',
-				},
-				{
 					text: 'Deceptive Patterns',
 					url: 'https://www.deceptive.design/',
 				},
@@ -601,44 +589,40 @@ export const info: LearnData[] = [
 	},
 	{
 		id: 6,
-		name: 'Products (I)',
+		name: 'Product Fundamentals',
 		level: 1,
 		intro: 'Make good products, listen to customers, solve user problems.',
 		slug: 'products',
-		topics: ['execution', 'leadership', 'management', 'pivot', 'project', 'startups', 'strategy'],
+		topics: [
+			'execution',
+			'management',
+			'project',
+			'user-stories',
+			'scrum',
+			'agile',
+			'feature-teams',
+		],
 		questions: [
 			"What's difference between project and product management?",
-			'What is product-market fit?',
-			'How do you find product-market fit?',
-			'How do you identify and prioritize product features?',
-			'What metrics do you use to measure product success?',
-			'What is a north star metric for a product?',
-			'What is a pivot?',
-			'How do you define and communicate the product vision?',
-			'What are the typical funding rounds for startups and companies trying to raise funds?',
 			'What is the difference between a product manager vs a project manager?',
 			'What is the difference between a feature team vs a product team?',
-			'Who are product leaders? What do they do and what is product leadership?',
-		],
-		objectives: [
-			'Spot project management and product management',
-			'Know what goes into a good product',
-			'Spot solutions in search of a problem',
-			'Feel it in your soul when a "product" just ain\'t it',
-			'Think user-first, Min/PS/DS last',
-			'Be aware of how startups and industry get funding, and what metrics/trajectories they prioritize',
-			"We don't often need product managers, but know when you need one, and know when you don't have one.",
-			'Be mindful of the transformation and product management theatre',
+			'How do you identify and prioritize product features?',
+			'How do you define and communicate the product vision?',
 		],
 		issues: [
 			"Many products/systems developed by Govt don't solve real & meaningful problems, are slow & laggy, huge wastes of money",
-			"Product-market fit simply isn't thought about, most certainly not efficiency and working at scale (see: $1 vending machine that dispenses $100 doesn't have product-market fit)",
 			'Tech product owners are often appointed to the role without relevant skills or experience, and end up roleplaying their idea of what the job requires',
-			"People who manage products don't talk to users",
 			"Prescriptive rules in public service restrain engineering teams's ability to innovate, deliver fast",
 			"Project KPIs are usually an afterthought - KPIs are neither meaningful, ambitious, or a good indication of the product's value (e.g. 70% of users rate 4/5)",
-			"People always have want to develop something new, without thinking of the long tail that's involved with maintaining something you developed",
-			'No one is incentivized to terminate their projects/products even if poorly performing, because it means they lose MMF, lose funding, lose appraisal work achievements.',
+			'There is product management theatre in the public sector',
+			"People who manage products don't talk to users",
+		],
+		objectives: [
+			'Spot project management and product management',
+			'Spot solutions in search of a problem',
+			"We don't often need product managers, but know when you need one, and know when you don't have one.",
+			'Think user-first, Min/PS/DS last',
+			'Be mindful of the transformation and product management theatre',
 		],
 		resources: {
 			courses: [
@@ -657,124 +641,100 @@ export const info: LearnData[] = [
 			],
 			youtube: [
 				'https://www.youtube.com/embed/XmRNIGqzuRI',
-				'https://www.youtube.com/embed/C27RVio2rOs?si=rKY_2K-n0lC6vk54',
-				'https://www.youtube.com/embed/Pg72m3CjuK4?si=aEfAca3W0v2MlTP1',
-				'https://www.youtube.com/embed/QRZ_l7cVzzU?si=sh3L1sWZzBhLb2dy',
 				'https://www.youtube.com/embed/T3VRz18ntjQ',
-				'https://www.youtube.com/embed/h-KVGHoQ_98',
 				'https://www.youtube.com/embed/YP_QghPLG-8',
 				'https://www.youtube.com/embed/fEvKo90qBns?si=bsb5008mqkuhft0F',
 				'https://www.youtube.com/embed/qbZQjprTnrU',
+				'https://www.youtube.com/embed/UA_gYKaXHS0',
+				'https://www.youtube.com/embed/Acj6hrfZeVg',
 			],
 			links: [
 				{
+					text: 'Product Management – Start Here',
+					url: 'https://www.svpg.com/product-management-start-here/',
+				},
+				{
 					text: 'Product Thinking, Project Thinking | @shreyas',
 					url: 'https://twitter.com/shreyas/status/1471650411341750273',
-				},
-				{
-					text: 'Y Combinator - YouTube',
-					url: 'https://www.youtube.com/c/ycombinator',
-				},
-				{
-					text: "Lenny's Podcast - YouTube",
-					url: 'https://www.youtube.com/@LennysPodcast',
-				},
-				{
-					text: 'All-In Podcast - YouTube',
-					url: 'https://www.youtube.com/@allin',
 				},
 				{
 					text: 'Product Management Theater - Silicon Valley Product Group',
 					url: 'https://www.svpg.com/product-management-theater/',
 				},
 				{
-					text: 'Transforming Product Culture with Lea Hickman',
-					url: 'https://www.mindtheproduct.com/transforming-product-culture-lea-hickman/',
-				},
-				{
-					text: 'The Product Strategy Stack',
-					url: 'https://www.reforge.com/blog/the-product-strategy-stack',
-				},
-				{
 					text: 'Transformation Fail - Silicon Valley Product Group',
 					url: 'https://www.svpg.com/transformation-fail/',
 				},
 				{
-					text: 'A Management Maturity Model for Performance',
-					url: 'https://infrequently.org/2022/05/performance-management-maturity/',
+					text: 'Intercom on Product Management',
+					url: 'https://marketing.intercomcdn.com/assets/pm-book/v3/Intercom_on_Product_Management.pdf',
+				},
+				{
+					text: 'Gitlab Product Handbook',
+					url: 'https://handbook.gitlab.com/handbook/product/',
+				},
+				{
+					text: 'Product Coalition',
+					url: 'https://productcoalition.com/',
+				},
+				{
+					text: 'Shape Up | Base Camp',
+					url: 'https://basecamp.com/shapeup/0.3-chapter-01',
+				},
+				{
+					text: 'Ruthless Prioritization',
+					url: 'https://blackboxofpm.com/ruthless-prioritization-e4256e3520a9',
+				},
+				{
+					text: 'Managing and Developing Product Managers',
+					url: 'https://blackboxofpm.com/managing-and-developing-product-managers-2f9a3963fab6',
 				},
 			],
 		},
 	},
 	{
 		id: 7,
-		name: 'Products (II)',
+		name: 'Product Strategy',
 		level: 2,
-		intro: 'Make good products, listen to customers, solve user problems.',
+		intro: 'Focus on strategy, metrics, and finding product-market fit.',
 		slug: 'products-advanced',
 		topics: [
-			'execution',
 			'leadership',
-			'management',
 			'pivot',
 			'product-market fit',
-			'project',
 			'startups',
 			'strategy',
+			'metrics',
+			'funding',
 		],
 		questions: [
-			"What's difference between project and product management?",
 			'What is product-market fit?',
 			'How do you find product-market fit?',
-			'How do you identify and prioritize product features?',
 			'What metrics do you use to measure product success?',
 			'What is a north star metric for a product?',
 			'What is a pivot?',
-			'How do you define and communicate the product vision?',
 			'What are the typical funding rounds for startups and companies trying to raise funds?',
-			'What is the difference between a product manager vs a project manager?',
-			'What is the difference between a feature team vs a product team?',
 			'Who are product leaders? What do they do and what is product leadership?',
 		],
 		objectives: [
-			'Spot project management and product management',
 			'Know what goes into a good product',
-			'Spot solutions in search of a problem',
 			'Feel it in your soul when a "product" just ain\'t it',
-			'Think user-first, Min/PS/DS last',
 			'Be aware of how startups and industry get funding, and what metrics/trajectories they prioritize',
-			"We don't often need product managers, but know when you need one, and know when you don't have one.",
-			'Be mindful of the transformation and product management theatre',
 		],
 		issues: [
-			"Many products/systems developed by Govt don't solve real & meaningful problems, are slow & laggy, huge wastes of money",
 			"Product-market fit simply isn't thought about, most certainly not efficiency and working at scale (see: $1 vending machine that dispenses $100 doesn't have product-market fit)",
-			'Tech product owners are often appointed to the role without relevant skills or experience, and end up roleplaying their idea of what the job requires',
-			"People who manage products don't talk to users",
-			"Prescriptive rules in public service restrain engineering teams's ability to innovate, deliver fast",
-			"Project KPIs are usually an afterthought - KPIs are neither meaningful, ambitious, or a good indication of the product's value (e.g. 70% of users rate 4/5)",
 			"People always have want to develop something new, without thinking of the long tail that's involved with maintaining something you developed",
 			'No one is incentivized to terminate their projects/products even if poorly performing, because it means they lose MMF, lose funding, lose appraisal work achievements.',
 		],
 		resources: {
-			courses: [
-				{
-					text: 'Product Management Course: Singapore (caveat emptor)',
-					url: 'https://generalassemb.ly/education/product-management/singapore',
-				},
-				{
-					text: 'Become a Product Manager | Learn the Skills & Get the Job',
-					url: 'https://www.udemy.com/course/become-a-product-manager-learn-the-skills-get-a-job/',
-				},
-				{
-					text: 'Google Project Management: Professional Certificate | Coursera',
-					url: 'https://www.coursera.org/professional-certificates/google-project-management',
-				},
-			],
+			courses: [],
 			youtube: [
+				'https://www.youtube.com/embed/C27RVio2rOs?si=rKY_2K-n0lC6vk54',
+				'https://www.youtube.com/embed/Pg72m3CjuK4?si=aEfAca3W0v2MlTP1',
+				'https://www.youtube.com/embed/QRZ_l7cVzzU?si=sh3L1sWZzBhLb2dy',
+				'https://www.youtube.com/embed/h-KVGHoQ_98',
 				'https://www.youtube.com/embed/0LNQxT9LvM0?si=KHzWpcisYehJbdHF',
 				'https://www.youtube.com/embed/yc1Uwhfxacs',
-				'https://www.youtube.com/embed/UA_gYKaXHS0',
 				'https://www.youtube.com/embed/egdYKLBswgk',
 				'https://www.youtube.com/embed/aOGMymXPgrk',
 				'https://www.youtube.com/embed/ZoKLofsp8u0',
@@ -784,37 +744,16 @@ export const info: LearnData[] = [
 				'https://www.youtube.com/embed/yr_sz6fRy-w',
 				'https://www.youtube.com/embed/6Uc-EiQ2xnU',
 				'https://www.youtube.com/embed/YCIF9948uts?si=vYu5TVLBICY7Ll8W',
-				'https://www.youtube.com/embed/Acj6hrfZeVg',
 			],
 			links: [
-				{
-					text: 'Product Management – Start Here',
-					url: 'https://www.svpg.com/product-management-start-here/',
-				},
 				{ text: 'Product-Market Fit | First Round Capital', url: 'https://pmf.firstround.com/' },
 				{
 					text: 'Paths to PMF with Todd Jackson',
 					url: 'https://review.firstround.com/series/product-market-fit/',
 				},
-
 				{
 					text: 'The Arc Product-Market Fit Framework',
 					url: 'https://www.sequoiacap.com/article/pmf-framework/',
-				},
-				{ text: 'Product Coalition', url: 'https://productcoalition.com/' },
-				{
-					text: 'Ruthless Prioritization',
-					url: 'https://blackboxofpm.com/ruthless-prioritization-e4256e3520a9',
-				},
-				{ text: 'Shape Up | Base Camp', url: 'https://basecamp.com/shapeup/0.3-chapter-01' },
-				{
-					text: 'Intercom on Product Management',
-					url: 'https://marketing.intercomcdn.com/assets/pm-book/v3/Intercom_on_Product_Management.pdf',
-				},
-				{ text: 'Gitlab Product Handbook', url: 'https://handbook.gitlab.com/handbook/product/' },
-				{
-					text: 'Managing and Developing Product Managers',
-					url: 'https://blackboxofpm.com/managing-and-developing-product-managers-2f9a3963fab6',
 				},
 				{
 					text: 'Product Metrics: What You Need to Know - Qualtrics',
@@ -824,8 +763,14 @@ export const info: LearnData[] = [
 					text: 'Product Metrics Guide - Amplitude',
 					url: 'https://amplitude.com/blog/product-metrics-guide',
 				},
-				{ text: "Brandon Chu's Medium Blog", url: 'https://medium.com/@brandonmchu' },
-				{ text: 'Stratechery', url: 'https://stratechery.com/' },
+				{
+					text: "Brandon Chu's Medium Blog",
+					url: 'https://medium.com/@brandonmchu',
+				},
+				{
+					text: 'Stratechery',
+					url: 'https://stratechery.com/',
+				},
 				{
 					text: 'Intro to Responsive Product Portfolio Management White Paper',
 					url: 'https://dragonboat.io/wp-content/uploads/2021/02/responsive-ppm-intro-whitepaper.pdf',
@@ -845,6 +790,30 @@ export const info: LearnData[] = [
 				{ text: 'Pmarca', url: 'https://pmarchive.com/' },
 				{ text: 'Guides | Reforge', url: 'https://www.reforge.com/guides' },
 				{
+					text: 'The Product Strategy Stack',
+					url: 'https://www.reforge.com/blog/the-product-strategy-stack',
+				},
+				{
+					text: 'A Management Maturity Model for Performance',
+					url: 'https://infrequently.org/2022/05/performance-management-maturity/',
+				},
+				{
+					text: 'Transforming Product Culture with Lea Hickman',
+					url: 'https://www.mindtheproduct.com/transforming-product-culture-lea-hickman/',
+				},
+				{
+					text: 'Y Combinator - YouTube',
+					url: 'https://www.youtube.com/c/ycombinator',
+				},
+				{
+					text: "Lenny's Podcast - YouTube",
+					url: 'https://www.youtube.com/@LennysPodcast',
+				},
+				{
+					text: 'All-In Podcast - YouTube',
+					url: 'https://www.youtube.com/@allin',
+				},
+				{
 					text: 'What defines a top 1% Product Designer? | r/UXDesign',
 					url: 'https://www.reddit.com/r/UXDesign/comments/1ccdafz/what_defines_a_top_1_product_designer/',
 				},
@@ -859,48 +828,45 @@ export const info: LearnData[] = [
 			],
 		},
 	},
-
 	{
 		id: 8,
-		name: 'UX (II)',
+		name: 'UX Design & Interaction',
 		level: 2,
-		intro: 'If you want people to actually use your app, try to make it not suck.',
-		slug: 'ux-advanced',
+		intro:
+			'Master the craft: visual hierarchy, motion, information architecture, and detailed design.',
+		slug: 'ux-design-interaction',
 		topics: [
-			'accessibility',
 			'contextual inquiry',
 			'interaction',
 			'interview',
 			'lo-fi',
 			'motion',
 			'usability',
-			'ux',
 			'visual',
 			'wireframe',
+			'information architecture',
+			'gestalt',
 		],
 		questions: [
-			'How do you conduct user research, design, prototype, validation, testing?',
-			'What are the key principles of user-centric products?',
-			'Why should we incorporate design for users with disabilities and how can I make design inclusive?',
 			"What's the relationship between visual/interaction design and user experience?",
 			'What are visually appealing and usable interfaces?',
 			'What are interaction design patterns and how do people design intuitive and natural interactions?',
 			'Why is learning/doing Figma not enough to do UX well?',
+			'How do you conduct contextual inquiry and field studies?',
+			'What is Information Architecture and why is it critical?',
+		],
+		issues: [
+			// Execution & Craft Issues
+			'UX is neither about doing usability testing nor is it copywriting',
+			"Good design doesn't mean doing bright colors, flashy animations, layouts. In fact, predictable layout is good, like for websites.",
+			'Animations are generally not a great idea for usability and accessibility if done poorly',
 		],
 		objectives: [
-			"UX is not UI, it's all aspects of the end-user's interaction with the company, its services, and its products.",
-			'Understand user needs, behaviors, and motivations',
-			'Study principles of good UX design (e.g. usability, accessibility, desirability)',
 			'Grasp key usability principles (learnability, efficiency, memorability, error prevention, satisfaction)',
 			'See usable, intuitive, and appealing in action, especially for web products',
 			'Explore optimization for designs and user experiences',
-		],
-		issues: [
-			'People who manage products in Govt seldom talk to actual users',
-			"People who do know/talk to users don't get to decide and often get overridden by generalists",
-			'UX is neither about doing usability testing nor is it copywriting',
-			'There is product management theatre in the public sector',
-			"Good design doesn't mean doing bright colors, flashy animations, layouts. In fact, predictable layout is good, like for websites.",
+			'Master visual hierarchy and Gestalt principles',
+			'Understand how to use Motion and Animation to enhance, not distract',
 		],
 		resources: {
 			courses: [
@@ -919,13 +885,13 @@ export const info: LearnData[] = [
 				},
 			],
 			youtube: [
-				'https://www.youtube.com/embed/NepFo4zXyK4',
-				'https://www.youtube.com/embed/L22lDu3QX2c',
-				'https://www.youtube.com/embed/hlI6xGfBjkQ',
-				'https://www.youtube.com/embed/DBHBmeNhYrY',
-				'https://www.youtube.com/embed/rHeWoBPdNT4',
-				'https://www.youtube.com/embed/WgXU7XAZYmQ',
-				'https://www.youtube.com/embed/OgwlV-vQNYk',
+				'https://www.youtube.com/embed/NepFo4zXyK4', // Visual Hierarchy
+				'https://www.youtube.com/embed/L22lDu3QX2c', // Gestalt Principles
+				'https://www.youtube.com/embed/hlI6xGfBjkQ', // Micro-interactions
+				'https://www.youtube.com/embed/DBHBmeNhYrY', // Information Architecture
+				'https://www.youtube.com/embed/rHeWoBPdNT4', // Wireframing
+				'https://www.youtube.com/embed/WgXU7XAZYmQ', // Figma Pro Tips
+				'https://www.youtube.com/embed/OgwlV-vQNYk', // UI Design Trends
 			],
 			links: [
 				{
@@ -1005,7 +971,15 @@ export const info: LearnData[] = [
 					url: 'https://www.reddit.com/r/UXDesign/comments/1cdk001/what_is_not_talked_enough_about_in_the_topic_of/?share_id=ma_P0v_wsyb0aEnj5RiAG',
 				},
 				{
-					text: 'https://www.w3.org/WAI/test-evaluate/preliminary/#video',
+					text: 'The Beginner’s Guide to Information Architecture in UX',
+					url: 'https://xd.adobe.com/ideas/process/information-architecture/introductory-guide-to-information-architecture/',
+				},
+				{
+					text: 'Information Architecture. Basics for Designers.',
+					url: 'https://uxplanet.org/information-architecture-basics-for-designers-b5d43df62e20',
+				},
+				{
+					text: 'W3C Accessibility Evaluation Tools',
 					url: 'https://www.w3.org/WAI/test-evaluate/preliminary/#video',
 				},
 				{
@@ -1027,10 +1001,6 @@ export const info: LearnData[] = [
 				{
 					text: 'Sitemaps & Information Architecture (IA)',
 					url: 'https://xd.adobe.com/ideas/process/information-architecture/sitemap-and-information-architecture/',
-				},
-				{
-					text: 'Navigation design: Almost everything you need to know',
-					url: 'https://www.justinmind.com/blog/navigation-design-almost-everything-you-need-to-know/',
 				},
 				{
 					text: '5 UI Patterns: Navigation That Makes Good UX Sense',

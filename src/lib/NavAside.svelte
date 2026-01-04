@@ -33,8 +33,12 @@
 					id: 'header-ux',
 					icon: UX,
 					children: [
-						{ label: 'L1', id: 'ux', href: '/learn/ux' },
-						{ label: 'L2', id: 'ux-advanced', href: '/learn/ux-advanced' },
+						{ label: 'UX Fundamentals', id: 'ux-fundamentals', href: '/learn/ux-fundamentals' },
+						{
+							label: 'UX Design Interaction',
+							id: 'ux-design-interaction',
+							href: '/learn/ux-design-interaction',
+						},
 					],
 				},
 				{
@@ -42,8 +46,12 @@
 					id: 'header-products',
 					icon: Products,
 					children: [
-						{ label: 'L1', id: 'products', href: '/learn/products' },
-						{ label: 'L2', id: 'products-advanced', href: '/learn/products-advanced' },
+						{
+							label: 'Product Fundamentals',
+							id: 'product-fundamentals',
+							href: '/learn/product-fundamentals',
+						},
+						{ label: 'Product Strategy', id: 'product-strategy', href: '/learn/product-strategy' },
 					],
 				},
 				{ label: 'Methods', id: 'methods', href: '/learn/methods', icon: Methods },
