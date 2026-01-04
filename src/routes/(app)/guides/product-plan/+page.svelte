@@ -2,14 +2,12 @@
 	import CarbonCheckmarkFilled from '$lib/assets/svg/CarbonCheckmarkFilled.svelte';
 	import CarbonCloseFilled from '$lib/assets/svg/CarbonCloseFilled.svelte';
 	import GuideExample from '$lib/GuideExample.svelte';
-	import { type Contents } from '$lib/Types';
 	import NavToc from '$lib/NavToc.svelte';
 	import GuideExampleLong from '$lib/GuideExampleLong.svelte';
 	import NewWrap from '$lib/NewWrap.svelte';
 	import Intersection from '$lib/ui/Intersection.svelte';
 
-	//Props needed for PageWrapper component
-	let contents: Contents[] = [
+	let contents: TableOfContent[] = [
 		{ id: 'what-makes-a-product-plan', title: 'What makes a product plan?' },
 		{ id: 'the-problem', title: 'The Problem' },
 		{ id: 'measurable-outcomes-targets', title: 'Measurable Outcomes and Targets' },
@@ -89,44 +87,40 @@
 						</ul>
 					</div>
 					<GuideExample>
-						
-							<ul class="space-y-4">
-								<li>
-									<CarbonCheckmarkFilled class="text-success me-2 mb-1 inline" />80% of license
-									applications on XXX’s system A take >6 mths to resolve, against target of 3 mths.
-								</li>
-								<li>
-									<CarbonCheckmarkFilled class="text-success me-2 mb-1 inline" />This results in
-									revenue loss of $X per year for these businesses.
-								</li>
-								<li>
-									<CarbonCheckmarkFilled class="text-success me-2 mb-1 inline" />With N license
-									approvals a year, the overall impact is significant.
-								</li>
-							</ul>
-						
+						<ul class="space-y-4">
+							<li>
+								<CarbonCheckmarkFilled class="text-success me-2 mb-1 inline" />80% of license
+								applications on XXX’s system A take >6 mths to resolve, against target of 3 mths.
+							</li>
+							<li>
+								<CarbonCheckmarkFilled class="text-success me-2 mb-1 inline" />This results in
+								revenue loss of $X per year for these businesses.
+							</li>
+							<li>
+								<CarbonCheckmarkFilled class="text-success me-2 mb-1 inline" />With N license
+								approvals a year, the overall impact is significant.
+							</li>
+						</ul>
 					</GuideExample>
 
 					<GuideExampleLong showButton={false}>
-						
-							<ul class="space-y-4">
-								<li>
-									<p>
-										Does your thing solve a real problem in the world and are people clamoring,
-										needing it badly?
-									</p>
-									<p>
-										... during those 20 minutes (of product downtime), our customers weren't
-										furious. They weren't emailing us like crazy... I didn't realize at the time
-										that was the signal that we did not have product market fit.
-									</p>
-									<p class="mt-6 text-end">
-										<a href="https://www.youtube.com/watch?v=qbZQjprTnrU"
-											>Jeff Weinstein | Lenny's Podcast</a>
-									</p>
-								</li>
-							</ul>
-						
+						<ul class="space-y-4">
+							<li>
+								<p>
+									Does your thing solve a real problem in the world and are people clamoring,
+									needing it badly?
+								</p>
+								<p>
+									... during those 20 minutes (of product downtime), our customers weren't furious.
+									They weren't emailing us like crazy... I didn't realize at the time that was the
+									signal that we did not have product market fit.
+								</p>
+								<p class="mt-6 text-end">
+									<a href="https://www.youtube.com/watch?v=qbZQjprTnrU"
+										>Jeff Weinstein | Lenny's Podcast</a>
+								</p>
+							</li>
+						</ul>
 					</GuideExampleLong>
 				</div>
 				<h3 class="text-2xl font-bold">Clear Problem Statements</h3>
@@ -151,38 +145,34 @@
 					<li>
 						What happens if we left this problem alone?
 						<GuideExample>
-							
-								<div>
-									<CarbonCloseFilled class="text-warning me-2 mb-1 inline" />Unclear and outdated
-									documentation were flagged out as areas of risk during the audit reviews.
-								</div>
-								<div>
-									<CarbonCheckmarkFilled class="text-success me-2 mb-1 inline" /><span
-										class="text-primary">XX cases</span>
-									of non-compliance to prevailing policies
-									<span class="text-primary">cost us $XM</span> each year because these users relied on
-									guidelines in outdated policy documents strewn across our employee portal.
-								</div>
-							
+							<div>
+								<CarbonCloseFilled class="text-warning me-2 mb-1 inline" />Unclear and outdated
+								documentation were flagged out as areas of risk during the audit reviews.
+							</div>
+							<div>
+								<CarbonCheckmarkFilled class="text-success me-2 mb-1 inline" /><span
+									class="text-primary">XX cases</span>
+								of non-compliance to prevailing policies
+								<span class="text-primary">cost us $XM</span> each year because these users relied on
+								guidelines in outdated policy documents strewn across our employee portal.
+							</div>
 						</GuideExample>
 					</li>
 					<li>
 						If you need a benchmark, compare with alternate solutions or adjacent industries.
 						<GuideExample>
-							
-								<div>
-									<CarbonCheckmarkFilled class="text-success me-2 mb-1 inline" />Approvals continue
-									to take 6 mths, or more with X new policy
-								</div>
-								<div>
-									<CarbonCheckmarkFilled class="text-success me-2 mb-1 inline" />System B takes 4
-									mths per approval
-								</div>
-								<div>
-									<CarbonCheckmarkFilled class="text-success me-2 mb-1 inline" />F&B licenses take 3
-									mths per approval
-								</div>
-							
+							<div>
+								<CarbonCheckmarkFilled class="text-success me-2 mb-1 inline" />Approvals continue to
+								take 6 mths, or more with X new policy
+							</div>
+							<div>
+								<CarbonCheckmarkFilled class="text-success me-2 mb-1 inline" />System B takes 4 mths
+								per approval
+							</div>
+							<div>
+								<CarbonCheckmarkFilled class="text-success me-2 mb-1 inline" />F&B licenses take 3
+								mths per approval
+							</div>
 						</GuideExample>
 					</li>
 				</ul>
@@ -199,25 +189,23 @@
 							class="text-primary underline">problem statement</a
 						>.
 						<GuideExample>
-							
-								<div>
-									<CarbonCheckmarkFilled class="text-success me-2 mb-1 inline" /><span
-										class="text-primary">[Name of user persona]</span>
-									is a
-									<span class="text-primary">[type of user]</span>
-									who needs
-									<span class="text-primary">[type of user experience]</span>
-									because
-									<span class="text-primary">[benefits of user experience]</span>.
-								</div>
-								<div>
-									<CarbonCheckmarkFilled class="text-success me-2 mb-1 inline" />Anne is a staff
-									officer who writes AORs for overseas trips. She needs an efficient way to double
-									check her submission against all applicable finance guidelines. She presently
-									searches, downloads, and toggles among more than 5 separate finance policy
-									documents for each AOR.
-								</div>
-							
+							<div>
+								<CarbonCheckmarkFilled class="text-success me-2 mb-1 inline" /><span
+									class="text-primary">[Name of user persona]</span>
+								is a
+								<span class="text-primary">[type of user]</span>
+								who needs
+								<span class="text-primary">[type of user experience]</span>
+								because
+								<span class="text-primary">[benefits of user experience]</span>.
+							</div>
+							<div>
+								<CarbonCheckmarkFilled class="text-success me-2 mb-1 inline" />Anne is a staff
+								officer who writes AORs for overseas trips. She needs an efficient way to double
+								check her submission against all applicable finance guidelines. She presently
+								searches, downloads, and toggles among more than 5 separate finance policy documents
+								for each AOR.
+							</div>
 						</GuideExample>
 					</li>
 				</ul>
@@ -237,24 +225,20 @@
 						</li>
 					</ul>
 					<GuideExample>
-						
-							<div>
-								<CarbonCheckmarkFilled class="text-success me-2 mb-1 inline" />Revenue loss of $XXM
-								per year for X no. of businesses
-							</div>
-						
+						<div>
+							<CarbonCheckmarkFilled class="text-success me-2 mb-1 inline" />Revenue loss of $XXM
+							per year for X no. of businesses
+						</div>
 					</GuideExample>
 					<GuideExample>
-						
-							<div>
-								<CarbonCheckmarkFilled class="text-success me-2 mb-1 inline" />~3 man months are
-								spent by 15 officers monthly collating, cleaning, emailing, and drafting MS Word
-								reports on service transactions, which are done manually on Excel, Outlook, Word.
-								<CarbonCheckmarkFilled class="text-success me-2 mb-1 inline" />Symptoms of poor
-								service delivery is only identified and acted upon up 2 weeks later, because data
-								and business insights are manually collated and generated.
-							</div>
-						
+						<div>
+							<CarbonCheckmarkFilled class="text-success me-2 mb-1 inline" />~3 man months are spent
+							by 15 officers monthly collating, cleaning, emailing, and drafting MS Word reports on
+							service transactions, which are done manually on Excel, Outlook, Word.
+							<CarbonCheckmarkFilled class="text-success me-2 mb-1 inline" />Symptoms of poor
+							service delivery is only identified and acted upon up 2 weeks later, because data and
+							business insights are manually collated and generated.
+						</div>
 					</GuideExample>
 				</div>
 
@@ -266,20 +250,18 @@
 						<li>
 							Break down large problem statements into its components.
 							<GuideExample>
-								
-									<div>
-										<CarbonCloseFilled class="text-warning me-2 mb-1 inline" />Users struggle to
-										find the correct employee HR service they need in XXX employee portal, which
-										also doubly frustrates them when it randomly crashes while they're filling in an
-										application. Employee productivity drops and this also creates workload for
-										manual application processing.
-										<div
-											class="tooltip"
-											data-tip="Multiple 'whats' here relating to discoverability and reliability">
-											<button class="btn btn-outline btn-warning btn-xs ms-1">Why?</button>
-										</div>
+								<div>
+									<CarbonCloseFilled class="text-warning me-2 mb-1 inline" />Users struggle to find
+									the correct employee HR service they need in XXX employee portal, which also
+									doubly frustrates them when it randomly crashes while they're filling in an
+									application. Employee productivity drops and this also creates workload for manual
+									application processing.
+									<div
+										class="tooltip"
+										data-tip="Multiple 'whats' here relating to discoverability and reliability">
+										<button class="btn btn-outline btn-warning btn-xs ms-1">Why?</button>
 									</div>
-								
+								</div>
 							</GuideExample>
 						</li>
 						<li>
@@ -299,36 +281,32 @@
 							<li>
 								Reaching EOL or EOS tells you the timeline, not the value.
 								<GuideExample>
-									
-										<div>
-											<CarbonCloseFilled class="text-warning me-2 mb-1 inline" />XXX system will
-											reach end of life in 2025, and we need $XXXM to do a tech refresh, as
-											otherwise citizens would no longer be able to transact digitally for their XX
-											applications.
-											<div
-												class="tooltip"
-												data-tip="This tries to paint EOL as the problem to be solved, when the system might not even be solving the problem well.">
-												<button class="btn btn-outline btn-warning btn-xs ms-1">Why?</button>
-											</div>
+									<div>
+										<CarbonCloseFilled class="text-warning me-2 mb-1 inline" />XXX system will reach
+										end of life in 2025, and we need $XXXM to do a tech refresh, as otherwise
+										citizens would no longer be able to transact digitally for their XX
+										applications.
+										<div
+											class="tooltip"
+											data-tip="This tries to paint EOL as the problem to be solved, when the system might not even be solving the problem well.">
+											<button class="btn btn-outline btn-warning btn-xs ms-1">Why?</button>
 										</div>
-									
+									</div>
 								</GuideExample>
 
 								<GuideExample>
-									
-										<div>
-											<CarbonCloseFilled class="text-warning me-2 mb-1 inline" />Under the XXX
-											system v2 milestone, we could not complete development to improve
-											searchability and user centricity. Given the AI boom, it is timely to revisit
-											development for those aspects, in the form of building an AI chatbot that can
-											improve search and user experience.
-											<div
-												class="tooltip"
-												data-tip="Inability to deliver features previously is used as justification for an AI chatbot, without explaining why an AI chatbot solves searchability.">
-												<button class="btn btn-outline btn-warning btn-xs ms-1">Why?</button>
-											</div>
+									<div>
+										<CarbonCloseFilled class="text-warning me-2 mb-1 inline" />Under the XXX system
+										v2 milestone, we could not complete development to improve searchability and
+										user centricity. Given the AI boom, it is timely to revisit development for
+										those aspects, in the form of building an AI chatbot that can improve search and
+										user experience.
+										<div
+											class="tooltip"
+											data-tip="Inability to deliver features previously is used as justification for an AI chatbot, without explaining why an AI chatbot solves searchability.">
+											<button class="btn btn-outline btn-warning btn-xs ms-1">Why?</button>
 										</div>
-									
+									</div>
 								</GuideExample>
 							</li>
 						</ul>
@@ -346,16 +324,14 @@
 						</li>
 					</ul>
 					<GuideExample>
-						
-							<div>
-								<CarbonCloseFilled class="text-warning me-2 mb-1 inline" />We propose to support
-								local small and medium enterprises to do well and expand both locally and into
-								Southeast Asia.
-								<div class="tooltip" data-tip="What is preventing local businesses from scaling?">
-									<button class="btn btn-outline btn-warning btn-xs ms-1">Why?</button>
-								</div>
+						<div>
+							<CarbonCloseFilled class="text-warning me-2 mb-1 inline" />We propose to support local
+							small and medium enterprises to do well and expand both locally and into Southeast
+							Asia.
+							<div class="tooltip" data-tip="What is preventing local businesses from scaling?">
+								<button class="btn btn-outline btn-warning btn-xs ms-1">Why?</button>
 							</div>
-						
+						</div>
 					</GuideExample>
 
 					<h5 class="text-lg font-bold italic">Describing the solution</h5>
@@ -368,31 +344,27 @@
 						</li>
 					</ul>
 					<GuideExample>
-						
-							<div>
-								<CarbonCloseFilled class="text-warning me-2 mb-1 inline" />We do not have a system
-								that can collect comprehensive information that businesses give us in the process of
-								license applications.
-								<div class="tooltip" data-tip="">
-									<button class="btn btn-outline btn-warning btn-xs ms-1">Why?</button>
-								</div>
+						<div>
+							<CarbonCloseFilled class="text-warning me-2 mb-1 inline" />We do not have a system
+							that can collect comprehensive information that businesses give us in the process of
+							license applications.
+							<div class="tooltip" data-tip="">
+								<button class="btn btn-outline btn-warning btn-xs ms-1">Why?</button>
 							</div>
-						
+						</div>
 					</GuideExample>
 					<GuideExample>
-						
-							<div>
-								<CarbonCloseFilled class="text-warning me-2 mb-1 inline" />Employees need to go
-								through long documents to find relevant clauses, so they need an AI chatbot that can
-								fetch, communicate, and process rules for them, and we can improve the search
-								experience in XXX system today.
-								<div
-									class="tooltip"
-									data-tip="Describes solution and there are multiple problems here,">
-									<button class="btn btn-outline btn-warning btn-xs ms-1">Why?</button>
-								</div>
+						<div>
+							<CarbonCloseFilled class="text-warning me-2 mb-1 inline" />Employees need to go
+							through long documents to find relevant clauses, so they need an AI chatbot that can
+							fetch, communicate, and process rules for them, and we can improve the search
+							experience in XXX system today.
+							<div
+								class="tooltip"
+								data-tip="Describes solution and there are multiple problems here,">
+								<button class="btn btn-outline btn-warning btn-xs ms-1">Why?</button>
 							</div>
-						
+						</div>
 					</GuideExample>
 				</div>
 			</section>
@@ -414,141 +386,132 @@
 						bring in more sales.
 					</p>
 					<GuideExampleLong>
-						
-							<div class="space-y-6">
-								<p>
-									I had been working in our payments group at Stripe for a bit, and then I started
-									working on some of our banking and incorporation services. In Atlas, when I
-									started working on it, it had had some success. It had already existed for four or
-									five years prior to me spending time on it. But when I started to look at the
-									support tickets, people were pretty unhappy frequently. They had a DocuSign stuck
-									in their email box. They needed a co-founder's address, but they didn't know their
-									co-founder's address. They couldn't log into the dashboard to figure out their
-									83(b) manual filing instructions.
-								</p>
-								<p>
-									We saw this basically in the first week of spending time on Atlas. I was just
-									like, "Just show me all the support tickets. Are they happy support tickets?
-									People writing in being like, 'Oh, I love this service, it's absolutely fantastic.
-									Can you just do A, B, C more for me?' Or are they sad support tickets?"
-								</p>
-								<p>
-									<span class="text-warning"
-										>And they're like, "Oh my God, they're all sad support tickets." We're just
-										asking ourselves, "Well, why would someone recommend Atlas to a friend?"</span>
-								</p>
-								<p>
-									I was like, "Well, it would have to accomplish A, B, and C activities for them. It
-									would have to get their company, it would have to handle getting their tax ID from
-									the IRS. It'd have to handle all the downstream administrivia." <span
-										class="text-warning"
-										>But surely, if they had a bunch of support tickets at the end, they're not
-										going to go tell their friends to use this thing. We could measure all of the
-										intermediate parts, we could measure the success rate and the frequency of
-										incorporation services and we do all those things, but if you looked at the
-										support tickets, there's just no way if you had a support ticket, you would
-										recommend it to a friend.</span>
-								</p>
-								<p>
-									So we suggested this metric to ourselves, companies that have no support tickets
-									through the incorporation service.
-								</p>
+						<div class="space-y-6">
+							<p>
+								I had been working in our payments group at Stripe for a bit, and then I started
+								working on some of our banking and incorporation services. In Atlas, when I started
+								working on it, it had had some success. It had already existed for four or five
+								years prior to me spending time on it. But when I started to look at the support
+								tickets, people were pretty unhappy frequently. They had a DocuSign stuck in their
+								email box. They needed a co-founder's address, but they didn't know their
+								co-founder's address. They couldn't log into the dashboard to figure out their 83(b)
+								manual filing instructions.
+							</p>
+							<p>
+								We saw this basically in the first week of spending time on Atlas. I was just like,
+								"Just show me all the support tickets. Are they happy support tickets? People
+								writing in being like, 'Oh, I love this service, it's absolutely fantastic. Can you
+								just do A, B, C more for me?' Or are they sad support tickets?"
+							</p>
+							<p>
+								<span class="text-warning"
+									>And they're like, "Oh my God, they're all sad support tickets." We're just asking
+									ourselves, "Well, why would someone recommend Atlas to a friend?"</span>
+							</p>
+							<p>
+								I was like, "Well, it would have to accomplish A, B, and C activities for them. It
+								would have to get their company, it would have to handle getting their tax ID from
+								the IRS. It'd have to handle all the downstream administrivia." <span
+									class="text-warning"
+									>But surely, if they had a bunch of support tickets at the end, they're not going
+									to go tell their friends to use this thing. We could measure all of the
+									intermediate parts, we could measure the success rate and the frequency of
+									incorporation services and we do all those things, but if you looked at the
+									support tickets, there's just no way if you had a support ticket, you would
+									recommend it to a friend.</span>
+							</p>
+							<p>
+								So we suggested this metric to ourselves, companies that have no support tickets
+								through the incorporation service.
+							</p>
 
-								<p>
-									The whole process, from the moment you start the application open, actually the
-									first page load at the very beginning, all the way through the process waiting for
-									the government, waiting for the IRS, and we give you two more weeks to write into
-									support. We give an extra buffer two weeks. And if you get through that whole
-									thing with no support tickets, that's a yes. If you have any number of support
-									tickets, that's a no. And we just looked at the percentage of founders that were
-									going through the service with zero support tickets, which is very different than
-									looking at an average, right? You could have the average as 0.3, but that doesn't
-									necessarily mean that getting to 0.2 is going to cause them to tell their friends
-									more. We looked and only 15% of founders were getting through Atlas with zero
-									support tickets through that metric.
-								</p>
+							<p>
+								The whole process, from the moment you start the application open, actually the
+								first page load at the very beginning, all the way through the process waiting for
+								the government, waiting for the IRS, and we give you two more weeks to write into
+								support. We give an extra buffer two weeks. And if you get through that whole thing
+								with no support tickets, that's a yes. If you have any number of support tickets,
+								that's a no. And we just looked at the percentage of founders that were going
+								through the service with zero support tickets, which is very different than looking
+								at an average, right? You could have the average as 0.3, but that doesn't
+								necessarily mean that getting to 0.2 is going to cause them to tell their friends
+								more. We looked and only 15% of founders were getting through Atlas with zero
+								support tickets through that metric.
+							</p>
 
-								<p>
-									I just thought, "Okay, well let's just drive that number way up, and let's look at
-									the support tickets aside what people are needing and we'll bake it into the
-									product, and presumably it'll fix it. People will like that more and then tell
-									their friends." And over about 18 months, we took that number from 15% to 85. We
-									basically just flipped it. And you can look at the market share plotted on the
-									same timeframe and it's the same shape.
-								</p>
-								<p>
-									<span class="text-success"
-										>I think you have to find a measure by which it speaks directly to what the
-										customer wanted, and that if you accidentally leaked your dashboard to them,
-										your customer would be ecstatic to learn that that's what you were measuring the
-										whole time.</span>
-									If we were to showcase the internal Atlas metrics, which we often just screenshot and
-									publish, I think they'd be pretty happy to hear that we were spending all of our time
-									making sure that none of them had support tickets.
-								</p>
+							<p>
+								I just thought, "Okay, well let's just drive that number way up, and let's look at
+								the support tickets aside what people are needing and we'll bake it into the
+								product, and presumably it'll fix it. People will like that more and then tell their
+								friends." And over about 18 months, we took that number from 15% to 85. We basically
+								just flipped it. And you can look at the market share plotted on the same timeframe
+								and it's the same shape.
+							</p>
+							<p>
+								<span class="text-success"
+									>I think you have to find a measure by which it speaks directly to what the
+									customer wanted, and that if you accidentally leaked your dashboard to them, your
+									customer would be ecstatic to learn that that's what you were measuring the whole
+									time.</span>
+								If we were to showcase the internal Atlas metrics, which we often just screenshot and
+								publish, I think they'd be pretty happy to hear that we were spending all of our time
+								making sure that none of them had support tickets.
+							</p>
 
-								<p class="mt-6 text-end">
-									<a href="https://www.youtube.com/watch?v=qbZQjprTnrU"
-										>Jeff Weinstein | Lenny's Podcast</a>
-								</p>
-							</div>
-						
+							<p class="mt-6 text-end">
+								<a href="https://www.youtube.com/watch?v=qbZQjprTnrU"
+									>Jeff Weinstein | Lenny's Podcast</a>
+							</p>
+						</div>
 					</GuideExampleLong>
 				</div>
 				<h3 class="text-2xl font-bold">Attributes of the Right Outcome Metrics</h3>
 				<div class="col-span-3 mt-1">
 					<p>Outcome metrics should be relevant, frequent, objective, and specific.</p>
 					<GuideExample>
-						
-							<div>
-								<CarbonCheckmarkFilled class="text-success me-2 mb-1 inline" /><span
-									class="text-success"
-									>% of applications where time from first submission to communication of outcome is
-									≤ 3 months</span>
-							</div>
-						
+						<div>
+							<CarbonCheckmarkFilled class="text-success me-2 mb-1 inline" /><span
+								class="text-success"
+								>% of applications where time from first submission to communication of outcome is ≤
+								3 months</span>
+						</div>
 					</GuideExample>
 					<h5 class="text-lg font-bold italic">Relevant</h5>
 					<p>Improvement or worsening of problem should show in metrics.</p>
 					<GuideExample>
-						
-							<div>
-								<CarbonCloseFilled class="text-warning me-2 mb-1 inline" />% of successful
-								applications
-								<div class="tooltip" data-tip="Irrelevant to problem of processing time.">
-									<button class="btn btn-outline btn-warning btn-xs ms-1">Why?</button>
-								</div>
+						<div>
+							<CarbonCloseFilled class="text-warning me-2 mb-1 inline" />% of successful
+							applications
+							<div class="tooltip" data-tip="Irrelevant to problem of processing time.">
+								<button class="btn btn-outline btn-warning btn-xs ms-1">Why?</button>
 							</div>
-							<div>
-								<CarbonCheckmarkFilled class="text-success me-2 mb-1 inline" />...
-								<span class="text-success"
-									>time from first submission to communication of outcome</span
-								>...
-							</div>
-						
+						</div>
+						<div>
+							<CarbonCheckmarkFilled class="text-success me-2 mb-1 inline" />...
+							<span class="text-success"
+								>time from first submission to communication of outcome</span
+							>...
+						</div>
 					</GuideExample>
 
 					<h5 class="text-lg font-bold italic">Frequent</h5>
 					<p>Changes in solution should quickly show in metrics.</p>
 					<GuideExample>
-						
-							<div>
-								<CarbonCloseFilled class="text-warning me-2 mb-1 inline" />% of applications
-								resolved within 3 months, calculated based on data extracted from system by vendor
-								annually
-								<div
-									class="tooltip"
-									data-tip="Calculating the metric annually results in a long lag time before we can tell whether our
+						<div>
+							<CarbonCloseFilled class="text-warning me-2 mb-1 inline" />% of applications resolved
+							within 3 months, calculated based on data extracted from system by vendor annually
+							<div
+								class="tooltip"
+								data-tip="Calculating the metric annually results in a long lag time before we can tell whether our
 					interventions are working.">
-									<button class="btn btn-outline btn-warning btn-xs ms-1">Why?</button>
-								</div>
+								<button class="btn btn-outline btn-warning btn-xs ms-1">Why?</button>
 							</div>
-							<div>
-								<CarbonCheckmarkFilled class="text-success me-2 mb-1 inline" />... to communication
-								of outcome is
-								<span class="text-success">≤ 3 months</span>
-							</div>
-						
+						</div>
+						<div>
+							<CarbonCheckmarkFilled class="text-success me-2 mb-1 inline" />... to communication of
+							outcome is
+							<span class="text-success">≤ 3 months</span>
+						</div>
 					</GuideExample>
 
 					<h5 class="text-lg font-bold italic">Objective</h5>
@@ -558,22 +521,20 @@
 					</p>
 
 					<GuideExample>
-						
-							<div>
-								<CarbonCloseFilled class="text-warning me-2 mb-1 inline" />% of applicants which
-								report having their applications resolved within 3 months
-								<div
-									class="tooltip"
-									data-tip="Self-reported metrics tend to be less
+						<div>
+							<CarbonCloseFilled class="text-warning me-2 mb-1 inline" />% of applicants which
+							report having their applications resolved within 3 months
+							<div
+								class="tooltip"
+								data-tip="Self-reported metrics tend to be less
 					accurate and are best avoided, especially when objective measures are available.">
-									<button class="btn btn-outline btn-warning btn-xs ms-1">Why?</button>
-								</div>
+								<button class="btn btn-outline btn-warning btn-xs ms-1">Why?</button>
 							</div>
-							<div>
-								<CarbonCheckmarkFilled class="text-success me-2 mb-1 inline" />% of
-								<span class="text-success">applications</span>...
-							</div>
-						
+						</div>
+						<div>
+							<CarbonCheckmarkFilled class="text-success me-2 mb-1 inline" />% of
+							<span class="text-success">applications</span>...
+						</div>
 					</GuideExample>
 
 					<h5 class="text-lg font-bold italic">Specific</h5>
@@ -583,96 +544,87 @@
 						the metric.
 					</p>
 					<GuideExample>
-						
-							<div>
-								<CarbonCloseFilled class="text-warning me-2 mb-1 inline" />% of applications
-								resolved within 3 months
-								<div
-									class="tooltip"
-									data-tip="This is a good metric but could be more precise e.g., when does the timer
+						<div>
+							<CarbonCloseFilled class="text-warning me-2 mb-1 inline" />% of applications resolved
+							within 3 months
+							<div
+								class="tooltip"
+								data-tip="This is a good metric but could be more precise e.g., when does the timer
 					start – at time of first submission? when relevant materials are submitted? when
 					outstanding queries have been clarified?">
-									<button class="btn btn-outline btn-warning btn-xs ms-1">Why?</button>
-								</div>
+								<button class="btn btn-outline btn-warning btn-xs ms-1">Why?</button>
 							</div>
-							<div>
-								<CarbonCheckmarkFilled class="text-success me-2 mb-1 inline" />...
-								<span class="text-success"
-									>time from first submission to communication of outcome</span
-								>...
-							</div>
-						
+						</div>
+						<div>
+							<CarbonCheckmarkFilled class="text-success me-2 mb-1 inline" />...
+							<span class="text-success"
+								>time from first submission to communication of outcome</span
+							>...
+						</div>
 					</GuideExample>
 
 					<GuideExample>
-						
-							<div>
-								<CarbonCloseFilled class="text-warning me-2 mb-1 inline" />Objective: Ensure the
-								currency of guidelines documents using new administration feature in XXX system
-								<div
-									class="tooltip"
-									data-tip="Terms used here, like currency and outdated, are too subjective. There are usually also 2-4 KRs for each Objective, not 1-to-1.">
-									<button class="btn btn-outline btn-warning btn-xs ms-1">Why?</button>
-								</div>
+						<div>
+							<CarbonCloseFilled class="text-warning me-2 mb-1 inline" />Objective: Ensure the
+							currency of guidelines documents using new administration feature in XXX system
+							<div
+								class="tooltip"
+								data-tip="Terms used here, like currency and outdated, are too subjective. There are usually also 2-4 KRs for each Objective, not 1-to-1.">
+								<button class="btn btn-outline btn-warning btn-xs ms-1">Why?</button>
 							</div>
-							<div>
-								<CarbonCloseFilled class="text-warning me-2 mb-1 inline" />Key Result: No outdated
-								content on XXX system.
-								<div
-									class="tooltip"
-									data-tip="Terms used here, like currency and outdated, are too subjective. There are usually also 2-4 KRs for each Objective, not 1-to-1.">
-									<button class="btn btn-outline btn-warning btn-xs ms-1">Why?</button>
-								</div>
+						</div>
+						<div>
+							<CarbonCloseFilled class="text-warning me-2 mb-1 inline" />Key Result: No outdated
+							content on XXX system.
+							<div
+								class="tooltip"
+								data-tip="Terms used here, like currency and outdated, are too subjective. There are usually also 2-4 KRs for each Objective, not 1-to-1.">
+								<button class="btn btn-outline btn-warning btn-xs ms-1">Why?</button>
 							</div>
-							<div>
-								<CarbonCheckmarkFilled class="text-success me-2 mb-1 inline" />Objective: Search
-								results contain only content from the latest version of guidelines documents.
-							</div>
-							<div>
-								<CarbonCheckmarkFilled class="text-success me-2 mb-1 inline" />Key Result: Search
-								microservice will update index with content from outdated guidelines documents
-								within 1 min of a new version upload.
-							</div>
-						
+						</div>
+						<div>
+							<CarbonCheckmarkFilled class="text-success me-2 mb-1 inline" />Objective: Search
+							results contain only content from the latest version of guidelines documents.
+						</div>
+						<div>
+							<CarbonCheckmarkFilled class="text-success me-2 mb-1 inline" />Key Result: Search
+							microservice will update index with content from outdated guidelines documents within
+							1 min of a new version upload.
+						</div>
 					</GuideExample>
 
 					<GuideExample>
-						
-							<div>
-								<CarbonCloseFilled class="text-warning me-2 mb-1 inline" />Objective: Improve
-								information retrieval
-								<div class="tooltip" data-tip="What do we mean by improve information retrieval?">
-									<button class="btn btn-outline btn-warning btn-xs ms-1">Why?</button>
-								</div>
+						<div>
+							<CarbonCloseFilled class="text-warning me-2 mb-1 inline" />Objective: Improve
+							information retrieval
+							<div class="tooltip" data-tip="What do we mean by improve information retrieval?">
+								<button class="btn btn-outline btn-warning btn-xs ms-1">Why?</button>
 							</div>
-							<div>
-								<CarbonCheckmarkFilled class="text-success me-2 mb-1 inline" />Objective: Users get
-								an accurate and concise explanation of questions on employee administrative
-								policies.
-							</div>
-						
+						</div>
+						<div>
+							<CarbonCheckmarkFilled class="text-success me-2 mb-1 inline" />Objective: Users get an
+							accurate and concise explanation of questions on employee administrative policies.
+						</div>
 					</GuideExample>
 
 					<GuideExample>
-						
-							<div>
-								<p>
-									Instead of sitting around all day and saying, "Hey, I heard all these customer
-									problems, we should build X, Y, and Z." And another person could absolutely
-									reasonably say, "Well, I heard from these customers, we should build one, two and
-									three." And they're all true. We could have a lot of success in both, but the
-									majority case is that we don't build either and we sit around and argue and bicker
-									and we go slowly. "What are we going to do to naturally, organically every day,
-									orient a larger group of people in the right direction and see if our tactics are
-									generating progress over time for a customer from their perspective?" And metrics
-									on the left and a series of tweets on the right is a pretty great combo.
-								</p>
-								<p class="mt-6 text-end">
-									<a href="https://www.youtube.com/watch?v=qbZQjprTnrU"
-										>Jeff Weinstein | Lenny's Podcast</a>
-								</p>
-							</div>
-						
+						<div>
+							<p>
+								Instead of sitting around all day and saying, "Hey, I heard all these customer
+								problems, we should build X, Y, and Z." And another person could absolutely
+								reasonably say, "Well, I heard from these customers, we should build one, two and
+								three." And they're all true. We could have a lot of success in both, but the
+								majority case is that we don't build either and we sit around and argue and bicker
+								and we go slowly. "What are we going to do to naturally, organically every day,
+								orient a larger group of people in the right direction and see if our tactics are
+								generating progress over time for a customer from their perspective?" And metrics on
+								the left and a series of tweets on the right is a pretty great combo.
+							</p>
+							<p class="mt-6 text-end">
+								<a href="https://www.youtube.com/watch?v=qbZQjprTnrU"
+									>Jeff Weinstein | Lenny's Podcast</a>
+							</p>
+						</div>
 					</GuideExample>
 
 					<p>
@@ -680,22 +632,20 @@
 						will be wrong as well.
 					</p>
 					<GuideExample>
-						
-							<div>
-								<CarbonCloseFilled class="text-warning me-2 mb-1 inline" />Key Result: Less than 1
-								min to fetch requested information through an AI search engine
-								<div
-									class="tooltip"
-									data-tip="The problem being solved is the time it takes to display relevant content that can answer the user's questions, not the time it takes to fetch that information or the time it takes to run it via an AI chatbot. Measuring this is closing us off to alternate ways of improving the time it takes to get a user the desired information, e.g., improving Info Architecture.">
-									<button class="btn btn-outline btn-warning btn-xs ms-1">Why?</button>
-								</div>
+						<div>
+							<CarbonCloseFilled class="text-warning me-2 mb-1 inline" />Key Result: Less than 1 min
+							to fetch requested information through an AI search engine
+							<div
+								class="tooltip"
+								data-tip="The problem being solved is the time it takes to display relevant content that can answer the user's questions, not the time it takes to fetch that information or the time it takes to run it via an AI chatbot. Measuring this is closing us off to alternate ways of improving the time it takes to get a user the desired information, e.g., improving Info Architecture.">
+								<button class="btn btn-outline btn-warning btn-xs ms-1">Why?</button>
 							</div>
-							<div>
-								<CarbonCheckmarkFilled class="text-success me-2 mb-1 inline" />Key Result: User's
-								question on employee admin guidelines is answered within 1 min of arriving on
-								landing page
-							</div>
-						
+						</div>
+						<div>
+							<CarbonCheckmarkFilled class="text-success me-2 mb-1 inline" />Key Result: User's
+							question on employee admin guidelines is answered within 1 min of arriving on landing
+							page
+						</div>
 					</GuideExample>
 				</div>
 				<h3 class="text-2xl font-bold">Set Targets based on Cost Per Impact</h3>
@@ -706,12 +656,10 @@
 						the product will be.
 					</p>
 					<GuideExample>
-						
-							<div>
-								<CarbonCheckmarkFilled class="text-success me-2 mb-1 inline" />Cost per impact =
-								Annual Total Cost / Target units of impact achieved in the relevant year
-							</div>
-						
+						<div>
+							<CarbonCheckmarkFilled class="text-success me-2 mb-1 inline" />Cost per impact =
+							Annual Total Cost / Target units of impact achieved in the relevant year
+						</div>
 					</GuideExample>
 
 					<p>
@@ -724,45 +672,43 @@
 					</p>
 
 					<GuideExample>
-						
-							<div class="overflow-x-auto">
-								<table class="table">
-									<thead>
-										<tr>
-											<th>Item</th>
-											<th>Current</th>
-											<th>New</th>
-										</tr></thead>
-									<tbody>
-										<tr>
-											<td>Annual platform cost (Cost)</td>
-											<td>$100,000</td>
-											<td>$200,000</td>
-										</tr>
-										<tr>
-											<td>Annual applications</td>
-											<td>100,000</td>
-											<td>100,000</td>
-										</tr>
-										<tr>
-											<td>% Applications resolved within 3 months</td>
-											<td>10%</td>
-											<td>30%</td>
-										</tr>
-										<tr>
-											<td># Applications resolved within 3 months (Impact)</td>
-											<td>10,000</td>
-											<td>30,000</td>
-										</tr>
-										<tr>
-											<td>Cost per impact</td>
-											<td>$10</td>
-											<td>$6.67</td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
-						
+						<div class="overflow-x-auto">
+							<table class="table">
+								<thead>
+									<tr>
+										<th>Item</th>
+										<th>Current</th>
+										<th>New</th>
+									</tr></thead>
+								<tbody>
+									<tr>
+										<td>Annual platform cost (Cost)</td>
+										<td>$100,000</td>
+										<td>$200,000</td>
+									</tr>
+									<tr>
+										<td>Annual applications</td>
+										<td>100,000</td>
+										<td>100,000</td>
+									</tr>
+									<tr>
+										<td>% Applications resolved within 3 months</td>
+										<td>10%</td>
+										<td>30%</td>
+									</tr>
+									<tr>
+										<td># Applications resolved within 3 months (Impact)</td>
+										<td>10,000</td>
+										<td>30,000</td>
+									</tr>
+									<tr>
+										<td>Cost per impact</td>
+										<td>$10</td>
+										<td>$6.67</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
 					</GuideExample>
 				</div>
 			</section>
@@ -813,17 +759,15 @@
 						</li>
 					</ul>
 					<GuideExample>
-						
-							<p>
-								Reduce time taken for 80% of applications from 6 months to 3 months by introducing
-							</p>
-							<ul>
-								<li class="ms-4 list-disc">Detailed form to collect more relevant information</li>
-								<li class="ms-4 list-disc">
-									Better UI to present info and cut need for clarifications
-								</li>
-							</ul>
-						
+						<p>
+							Reduce time taken for 80% of applications from 6 months to 3 months by introducing
+						</p>
+						<ul>
+							<li class="ms-4 list-disc">Detailed form to collect more relevant information</li>
+							<li class="ms-4 list-disc">
+								Better UI to present info and cut need for clarifications
+							</li>
+						</ul>
 					</GuideExample>
 
 					<p>Identify the riskiest assumptions</p>
@@ -839,64 +783,60 @@
 						</li>
 					</ul>
 					<GuideExample>
-						
-							<div class="overflow-x-auto">
-								<table class="table">
-									<thead>
-										<tr>
-											<th>Step</th>
-											<th>Assumption</th>
-											<th>Change</th>
-											<th>Risk</th>
-											<th>Level</th>
-										</tr></thead>
-									<tbody>
-										<tr>
-											<td>1</td>
-											<td>Users fill in application</td>
-											<td>Better quality</td>
-											<td
-												>With more fields to complete, fatigued applicants might provide less
-												accurate information</td>
-											<td>Medium – This could increase the need for clarifications downstream</td>
-										</tr>
-										<tr>
-											<td>2</td>
-											<td>Users submit applications</td>
-											<td>No change</td>
-											<td>With a more complex form, we receive fewer submissions</td>
-											<td>Low – businesses are strongly incentivised to apply for a license</td>
-										</tr>
-										<tr>
-											<td>3</td>
-											<td>Officers assess applications for completeness</td>
-											<td>No change</td>
-											<td
-												>Officers might take more time to vet the detailed form for completeness</td>
-											<td
-												>Low – This step is relatively short compared to the rest and so has minimal
-												impact</td>
-										</tr>
-										<tr>
-											<td>4</td>
-											<td>Officers clarify additional details with applicants</td>
-											<td>Shorter duration</td>
-											<td
-												>Officers might take as much time, if not more, to clarify additional
-												details</td>
-											<td>High – this might fundamentally change our solution</td>
-										</tr>
-										<tr>
-											<td>5</td>
-											<td>Officers resolve applications</td>
-											<td>No change</td>
-											<td>Additional information will complicate decision-making</td>
-											<td>Low – decision-making process is based on a simple checklist</td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
-						
+						<div class="overflow-x-auto">
+							<table class="table">
+								<thead>
+									<tr>
+										<th>Step</th>
+										<th>Assumption</th>
+										<th>Change</th>
+										<th>Risk</th>
+										<th>Level</th>
+									</tr></thead>
+								<tbody>
+									<tr>
+										<td>1</td>
+										<td>Users fill in application</td>
+										<td>Better quality</td>
+										<td
+											>With more fields to complete, fatigued applicants might provide less accurate
+											information</td>
+										<td>Medium – This could increase the need for clarifications downstream</td>
+									</tr>
+									<tr>
+										<td>2</td>
+										<td>Users submit applications</td>
+										<td>No change</td>
+										<td>With a more complex form, we receive fewer submissions</td>
+										<td>Low – businesses are strongly incentivised to apply for a license</td>
+									</tr>
+									<tr>
+										<td>3</td>
+										<td>Officers assess applications for completeness</td>
+										<td>No change</td>
+										<td>Officers might take more time to vet the detailed form for completeness</td>
+										<td
+											>Low – This step is relatively short compared to the rest and so has minimal
+											impact</td>
+									</tr>
+									<tr>
+										<td>4</td>
+										<td>Officers clarify additional details with applicants</td>
+										<td>Shorter duration</td>
+										<td
+											>Officers might take as much time, if not more, to clarify additional details</td>
+										<td>High – this might fundamentally change our solution</td>
+									</tr>
+									<tr>
+										<td>5</td>
+										<td>Officers resolve applications</td>
+										<td>No change</td>
+										<td>Additional information will complicate decision-making</td>
+										<td>Low – decision-making process is based on a simple checklist</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
 					</GuideExample>
 
 					<p>Validate the assumptions with a proof-of-concept (POC)</p>
@@ -911,30 +851,27 @@
 						</li>
 					</ul>
 					<GuideExample>
-						
-							<ul class="space-y-4">
-								<li>
-									<p>
-										And so compartmentalizing those (key features) because ultimately you'll have
-										too much scope creep if you try to solve everything at once and validate. Also
-										you're not going to get signal too, like you're trying to test one thing at a
-										time.
-									</p>
+						<ul class="space-y-4">
+							<li>
+								<p>
+									And so compartmentalizing those (key features) because ultimately you'll have too
+									much scope creep if you try to solve everything at once and validate. Also you're
+									not going to get signal too, like you're trying to test one thing at a time.
+								</p>
 
-									<p>
-										The way that now I approach a lot of consumer product development is if this is
-										true, then what next needs to be true for this thing to work out? And these
-										layers of conditional statements. And the more layers you have, the higher risk
-										your product is, so you should try to condense it to about like four things that
-										must be true for the thing to work.
-									</p>
-									<p class="mt-6 text-end">
-										<a href="https://www.youtube.com/watch?v=bhnfZhJWCWY"
-											>Nikita Bier | Lenny's Podcast</a>
-									</p>
-								</li>
-							</ul>
-						
+								<p>
+									The way that now I approach a lot of consumer product development is if this is
+									true, then what next needs to be true for this thing to work out? And these layers
+									of conditional statements. And the more layers you have, the higher risk your
+									product is, so you should try to condense it to about like four things that must
+									be true for the thing to work.
+								</p>
+								<p class="mt-6 text-end">
+									<a href="https://www.youtube.com/watch?v=bhnfZhJWCWY"
+										>Nikita Bier | Lenny's Podcast</a>
+								</p>
+							</li>
+						</ul>
 					</GuideExample>
 				</div>
 			</section>

@@ -1,5 +1,5 @@
 interface TableOfContent {
-	id: SuggestionSection | ResearchSection | LearnSection;
+	id: SuggestionSection | ResearchSection | LearnSection | ProductPlanSection;
 	title: string;
 }
 
@@ -19,6 +19,14 @@ interface LearnData {
 		links: { text: string; url: string }[];
 	};
 }
+
+type ProductPlanSection =
+	| 'what-makes-a-product-plan'
+	| 'the-problem'
+	| 'measurable-outcomes-targets'
+	| 'risks'
+	| 'product-plan-template'
+	| 'credits';
 
 type LearnSection = 'questions' | 'objectives' | 'observations' | 'resources';
 

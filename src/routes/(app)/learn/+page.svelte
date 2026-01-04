@@ -3,12 +3,10 @@
 
 	let { data } = $props();
 
-	// Featured "start here" topics
 	const starterSlugs = ['basics', 'basics-web'];
 	const starterTopics = info.filter((i) => starterSlugs.includes(i.slug));
 	const otherTopics = info.filter((i) => !starterSlugs.includes(i.slug));
 
-	// Helper to count resources
 	function countResources(entry: LearnData) {
 		const r = entry.resources;
 		const videos = r.youtube?.length ?? 0;
