@@ -9,8 +9,8 @@ export const prerender = true;
 
 export const GET: RequestHandler = async () => {
 	// Get data for parameterized routes however you need to; this is only an example.
-	let slugsLearn: string[] = [];
-	let slugsGuide: string[] = [];
+	const slugsLearn: string[] = [];
+	const slugsGuide: string[] = [];
 	try {
 		for (let i = 0; i < Object.keys(info).length; i++) {
 			slugsLearn.push(info[i].slug);
@@ -19,13 +19,13 @@ export const GET: RequestHandler = async () => {
 		for (let i = 0; i < Object.keys(guides).length; i++) {
 			slugsGuide.push(guides[i].slug);
 		}
-	} catch (err) {
+	} catch {
 		throw error(500, 'Could not load data for param values.');
 	}
 
 	return await sitemap.response({
 		origin: 'https://titude.app',
-		excludePatterns: [
+		excludeRoutePatterns: [
 			'^/dashboard.*', // i.e. routes starting with `/dashboard`
 			'.*\\[page=integer\\].*', // i.e. routes containing `[page=integer]`–e.g. `/blog/2`
 			'.*\\(authenticated\\).*', // i.e. routes within a group

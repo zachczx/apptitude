@@ -1,8 +1,6 @@
 <script lang="ts">
 	import { info } from './data_learn.js';
 
-	let { data } = $props();
-
 	const starterSlugs = ['basics', 'basics-web'];
 	const starterTopics = info.filter((i) => starterSlugs.includes(i.slug));
 	const otherTopics = info.filter((i) => !starterSlugs.includes(i.slug));

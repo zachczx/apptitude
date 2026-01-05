@@ -3,7 +3,6 @@
 	import Footer from '$lib/Footer.svelte';
 	import { info } from './(app)/learn/data_learn';
 
-	let { data } = $props();
 	let pageName = $state('Apptitude');
 
 	interface Topics {

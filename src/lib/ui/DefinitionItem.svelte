@@ -1,7 +1,6 @@
 <script lang="ts">
 	import type { Snippet } from 'svelte';
 
-	// Using a snippet allows you to put bold text or links in the definition
 	let { term, children }: { term: string; children: Snippet } = $props();
 </script>
 

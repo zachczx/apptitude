@@ -1,16 +1,6 @@
 <script lang="ts">
-	import piggyBank from '$lib/assets/piggy-bank.webp?w=200&enhanced';
-	import product from '$lib/assets/product.webp?w=200&enhanced';
-	import problem from '$lib/assets/problem.webp?w=200&enhanced';
-	import magnifyingGlass from '$lib/assets/magnifying-glass.webp?w=200&enhanced';
-	import NavToc from '$lib/NavToc.svelte';
 	import NewWrap from '$lib/NewWrap.svelte';
 
-	let { data } = $props();
-	let currentSection: any = $state();
-	let path: any = $derived(data.url.split('/'));
-	let category: any = $derived(path[1]);
-	let page: any = $derived(path[2]);
 	const pageTitle = 'The Playbook';
 	const subtitle = `Frameworks for the messy parts of building products. From "should we build this?" to "why does this cost so much?"`;
 </script>

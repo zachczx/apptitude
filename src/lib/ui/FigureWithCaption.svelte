@@ -1,5 +1,4 @@
 <script lang="ts">
-	import type { Snippet } from 'svelte';
 	import type { Picture } from 'vite-imagetools';
 
 	let {

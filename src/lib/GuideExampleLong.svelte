@@ -27,11 +27,7 @@
 		{@render children()}
 	</div>
 	{#if showButton}
-		<button
-			class="btn btn-outline btn-sm"
-			onclick={(evt) => {
-				collapsed = !collapsed;
-			}}
+		<button class="btn btn-outline btn-sm" onclick={() => (collapsed = !collapsed)}
 			>Show
 			{#if collapsed}
 				more

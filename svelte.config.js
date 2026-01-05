@@ -50,11 +50,6 @@ const config = {
 			dir: '../',
 		},
 	},
-	// compilerOptions: {
-	// 	experimental: {
-	// 		async: true,
-	// 	},
-	// },
 };
 
 export default config;

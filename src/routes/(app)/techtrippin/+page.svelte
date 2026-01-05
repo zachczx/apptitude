@@ -1,8 +1,6 @@
 <script lang="ts">
 	import { techtrippin, type Trippin } from './data_techtrippin';
 	import NewWrap from '$lib/NewWrap.svelte';
-	import NavToc from '$lib/NavToc.svelte';
-	let currentSection: any = $state();
 
 	interface Sorted {
 		apathetic: Trippin[];

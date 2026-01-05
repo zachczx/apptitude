@@ -3,11 +3,8 @@
 	import NewWrap from '$lib/NewWrap.svelte';
 	import Intersection from '$lib/ui/Intersection.svelte';
 	import Section from '$lib/ui/Section.svelte';
-	import {
-		CloseFilled,
-		NotificationFilled
-	} from 'carbon-icons-svelte';
-	import { Marked, marked } from 'marked';
+	import { CloseFilled, NotificationFilled } from 'carbon-icons-svelte';
+	import { marked } from 'marked';
 	let { data } = $props();
 
 	let markedQuestions = $derived.by(() => {
@@ -60,8 +57,7 @@
 {#if data.post}
 	<NewWrap title={data.post.name}>
 		<Intersection bind:currentSection>
-			<article
-				class="grid gap-y-20 pb-10">
+			<article class="grid gap-y-20 pb-10">
 				{#if data.post.definitions && data.post.definitions.length > 0}
 					<Section id="definitions" title="Definitions">
 						{#each data.post.definitions as d}

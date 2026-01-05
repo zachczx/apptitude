@@ -3,10 +3,10 @@
 	import { onMount } from 'svelte';
 
 	onMount(async () => {
-		// @ts-expect-error - Pagefind will be present at runtime
+		// @ts-expect-error :: Pagefind will be present at runtime
 		const pagefind = await import('/pagefind/pagefind.js');
 		pagefind.init();
-		// @ts-expect-error - PagefindUI is global from script
+		// @ts-expect-error :: PagefindUI is global from script
 		new PagefindUI({
 			element: '#search',
 			showImages: false,
@@ -88,7 +88,7 @@
 		width: 1.25rem !important;
 		height: 1.25rem !important;
 		/* Fixed top position to anchor it to the input, avoiding shift when results expand form height */
-		top: 1.15rem !important; 
+		top: 1.15rem !important;
 		left: 1.5rem !important;
 		z-index: 5;
 		pointer-events: none;
@@ -156,7 +156,7 @@
 		color: var(--color-primary) !important;
 		padding: 0 0.2em;
 		border-radius: 0.2em;
-		text-decoration: none !important; 
+		text-decoration: none !important;
 		border-bottom: 0 !important; /* Ensure no borders on mark */
 	}
 

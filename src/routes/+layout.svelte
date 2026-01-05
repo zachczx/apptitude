@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import logo from '$lib/assets/new-logo.webp?w=150&enhanced';
 	import { matchUrl } from '$lib/helpers';
 	import '../app.css';

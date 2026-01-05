@@ -3,22 +3,6 @@
 
 	let { contents = [], currentSection }: { contents: TableOfContent[]; currentSection: string } =
 		$props();
-
-	const sectionIcons: Record<SuggestionSection, string> = {
-		definitions: '📖',
-		goals: '🎯',
-		questions: '💭',
-		alarms: '⚠️',
-		dealbreakers: '⛔',
-	};
-
-	const sectionColors: Record<SuggestionSection, string> = {
-		definitions: '#8B7355',
-		goals: '#059669',
-		questions: '#7C3AED',
-		alarms: '#F59E0B',
-		dealbreakers: '#DC2626',
-	};
 </script>
 
 {#if contents.length > 0}
