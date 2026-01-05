@@ -14,7 +14,6 @@ export default defineConfig({
 			bundleDirectory: 'pagefind',
 			buildScript: 'build',
 		}),
-		,
 		enhancedImages(),
 		sveltekit(),
 		tailwindcss(),

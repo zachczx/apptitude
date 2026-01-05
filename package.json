@@ -25,7 +25,6 @@
 		"eslint": "^9.39.2",
 		"eslint-config-prettier": "^10.1.8",
 		"eslint-plugin-svelte": "^3.13.1",
-		"mdsvex": "^0.12.6",
 		"pagefind": "^1.4.0",
 		"prettier": "^3.7.4",
 		"prettier-plugin-svelte": "^3.4.1",
@@ -47,12 +46,7 @@
 		"@tailwindcss/vite": "^4.1.18",
 		"carbon-icons-svelte": "^13.8.0",
 		"globals": "^17.0.0",
-		"gsap": "^3.14.2",
 		"marked": "^17.0.1",
-		"rehype-slug": "^6.0.0",
-		"remark-toc": "^9.0.0",
-		"shiki": "^3.20.0",
-		"split-type": "^0.3.4",
 		"svelte-check": "^4.3.5",
 		"vite-imagetools": "^9.0.2"
 	}
