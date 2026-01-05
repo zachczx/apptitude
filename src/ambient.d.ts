@@ -35,16 +35,30 @@ type SuggestionSection = 'definitions' | 'goals' | 'questions' | 'alarms' | 'dea
 
 type ResearchSection = 'empathize' | 'define' | 'ideate' | 'prototype-test' | 'sources';
 
-interface MenuItem {
+interface MenuSection {
 	label: string;
-	href?: string;
-	id?: string; // Used to match the 'page' prop for active state
-	icon?: Snippet; // Svelte 5 snippet for the icon
-	children?: MenuItem[]; // For Level 3 sub-menus
+	href: string;
+	items: MenuItem[];
 }
 
-interface MenuSection {
-	label: string; // Level 1 Header
-	href: string;
-	items: MenuItem[]; // Level 2 Items
+type MenuItem = MenuLink | MenuHeader;
+
+interface MenuLink {
+	label: string;
+	href?: string;
+	id: string;
+	icon?: Snippet;
+	children?: MenuLink[];
+
+	header?: never;
+}
+
+interface MenuHeader {
+	header: string;
+
+	id?: never;
+	label?: never;
+	href?: never;
+	children?: never;
+	icon?: never;
 }
