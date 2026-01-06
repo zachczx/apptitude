@@ -12,6 +12,7 @@ export const load: PageLoad = ({ params }) => {
 		'ux-advanced': 'ux-design-interaction',
 		ai: 'ai-fundamentals',
 		'ai-advanced': 'ai-engineering-strategy',
+		technical: 'web-engineering',
 	};
 
 	if (redirects[slug]) {

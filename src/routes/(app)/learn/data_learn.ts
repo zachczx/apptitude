@@ -272,7 +272,7 @@ export const info: LearnData[] = [
 		name: 'Apps',
 		level: 1,
 		intro:
-			'Know what the modern industry uses for work. See how much more efficient and better work can be.',
+			"Know what the modern industry uses for work. See how much more efficient and better work can be when tools don't fight you.",
 		slug: 'apps',
 		topics: ['apps', 'applications', 'aws', 'azure', 'gcp', 'm365', 'saas', 'workspace'],
 		questions: [
@@ -1033,8 +1033,10 @@ export const info: LearnData[] = [
 			"Is Scrum what you do when you're Agile?",
 			'Wait, Agile is not just implementing Scrum?',
 			'What is waterfall and why do people fall back to it?',
-			'What about Lean/Kanban/Less?',
-			'How do I apply Agile/Scrum/Lean/Kanban in my team?',
+			'What about Lean • LeSS • Kanban • Spiral • Xtreme Programming • Shape Up?',
+			'How do I apply xyz method in my team?',
+			"So what if I apply xyz method in my team if other teams don't?",
+			"I can't refuse my boss, and my boss just wants to look at GANTT charts, timelines, and fixed requirements!",
 		],
 		issues: [
 			'Everyone says agile this, agile that as buzzwords to sound clever, without trying to define it or making sure others share that definition',
@@ -1149,7 +1151,12 @@ export const info: LearnData[] = [
 			'How can we design and implement a scalable data pipeline to ingest and process large volumes of structured and unstructured data from multiple sources?',
 			'What is a typical design of a cloud-native stack to derive business intelligence?',
 		],
-		issues: ['Stop creating a new data lake to succeed previous data lakes and warehouses!'],
+		issues: [
+			'Stop creating a new data lake to succeed previous data lakes and warehouses!',
+			"The world's most popular database is Microsoft Excel. Any data strategy that ignores this reality will fail to get adopted.",
+			'Dashboards (Tableau & Power BI) are useless if they are just pretty pictures of bad data. Garbage In, Garbage Out.',
+			"Business users don't care about your 'Data Lakehouse architecture'; they just want to know why the numbers on page 5 don't match the numbers on page 2.",
+		],
 		objectives: [
 			'Know where we truly are amid (self created) hype on data science, transformation, AI',
 			"Know what's possible to ingest, ETL, exploit data, vs whats not in the organization",
@@ -1261,12 +1268,13 @@ export const info: LearnData[] = [
 			'What training or skills are necessary for public sector employees to work effectively with AI?',
 		],
 		issues: [
-			// Application & Hype Issues
 			"The AI genie is out of the bottle, there's no return to life before it",
 			"Given the ongoing hype train for AI, it's tempting to use AI for the sake of it, but that'd be a huge L",
 			'Focus on solving a meaningful problem, not the hype',
 			'AI user interfaces and workflows are not necessarily (and can often be contrary to) good UX',
-			'Simple applications of ML might be far more useful for everyday problems, as is straightforward improvements to how we organize info, design websites instead of pushing for a chatbot',
+			'Simple applications of ML might be far more useful for everyday problems, as is straightforward improvements to how we organize info, design websites instead of pushing for a chatbot.',
+			'LLMs are confident liars. They do not know facts, but instead they predict the next statistically likely word. Trusting them for factual accuracy without verification is dangerous!',
+			"AI won't replace you; a person using AI will replace you. But only if you actually learn how to prompt it correctly.",
 		],
 		objectives: [
 			'Sort through the AI hype from the keepers',
@@ -1380,7 +1388,10 @@ export const info: LearnData[] = [
 		issues: [
 			'Security is often seen as a blocker to speed, until you get hacked and speed drops to zero.',
 			'Compliance (ticking boxes) is NOT the same as Security.',
-			'Developers often trust user input too much—never trust anything the client sends.',
+			"Accepting a risk ('Risk Acceptance') without understanding the technical complexity of the exploit is like signing a blank check to a hacker.",
+			"Security policies that make it hard to do the right thing (e.g., blocking package managers or documentation sites) actually decrease security by forcing developers to use 'Shadow IT' on personal devices.",
+			"A 50-page penetration test report is useless if the findings are 'accepted as risk' and never fixed.",
+			'Developers often trust user input too much. Never trust anything the client sends.',
 			'Phishing tests are annoying, but one click typically compromises the entire network.',
 		],
 		objectives: [
@@ -1597,30 +1608,25 @@ export const info: LearnData[] = [
 		},
 	},
 	{
-		name: 'Web & Mobile Engineering',
+		name: 'Web Engineering',
 		level: 3,
 		intro:
 			'Befriend the machines. Learn the languages and frameworks before they achieve world domination.',
-		slug: 'technical',
+		slug: 'web-engineering',
 		topics: [
 			'algorithms',
 			'android',
 			'ci/cd',
 			'cybersecurity',
 			'data',
-			'flutter',
 			'git',
 			'ios',
 			'languages',
-			'mobile-dev',
-			'react-native',
 			'system-design',
 		],
 		questions: [
 			'What is XYZ language and what does it do well?',
 			'How do I solve <X> problem? How do others solve it with <Y>?',
-			'What is the difference between Native (Swift/Kotlin) and Cross-Platform (React Native/Flutter) development?',
-			'When should we build a mobile app vs. a progressive/responsive web app?',
 			'How hard is it to do <X>?',
 			'What constitutes a modern full-stack application?',
 		],
@@ -1657,7 +1663,7 @@ export const info: LearnData[] = [
 					url: 'https://www.coursera.org/professional-certificates/meta-front-end-developer',
 				},
 				{
-					text: 'Introduction to Computer Science and Programming in Python | Electrical Engineering and Computer Science | MIT OpenCourseWare',
+					text: 'Intro to Computer Science and Programming in Python | MIT OpenCourseWare',
 					url: 'https://ocw.mit.edu/courses/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/',
 				},
 				{
@@ -1680,7 +1686,6 @@ export const info: LearnData[] = [
 				'https://youtube.com/embed/je4CGd5IKt0',
 				'https://youtube.com/embed/W18o_qlWBtM',
 				'https://youtube.com/embed/d72aFePfXGU',
-				'https://youtube.com/embed/AIs9mQaerZE',
 				'https://youtube.com/embed/Z8KZCYbjEng',
 				'https://youtube.com/embed/dGAgxozNWFE',
 				'https://youtube.com/embed/1iAeSCwh92c',
@@ -1799,6 +1804,90 @@ export const info: LearnData[] = [
 		},
 	},
 	{
+		name: 'Mobile Engineering',
+		level: 3,
+		intro:
+			'Building an app is easy. Getting it approved by Apple and maintaining it is a marriage, not a fling.',
+		slug: 'mobile',
+		topics: [
+			'android',
+			'app-store',
+			'cross-platform',
+			'flutter',
+			'ios',
+			'play-store',
+			'provisioning',
+			'pwa',
+			'react-native',
+			'responsive',
+		],
+		questions: [
+			'When should we build a Progressive Web App (PWA) instead of a Mobile App?',
+			'Do we actually need a mobile app, or do we just want an icon on the home screen?',
+			'Are we prepared to support 3 different versions of the app simultaneously because users refuse to update?',
+			'What is the difference between Native (Swift/Kotlin) and Cross-Platform (React Native/Flutter)?',
+			'Why can\'t we just "hotfix" a bug on mobile like we do on the web?',
+			'How much engineering time are we budgeting for "React Native Upgrades" and breaking changes?',
+		],
+		issues: [
+			"Everyone wants an 'App' for the prestige, ignoring that a PWA solves 99% of the use case for 10% of the cost.",
+			'On the web, you deploy when you want. On Mobile, you deploy when Apple & Google review your binary. Maybe 24 hours, maybe a rejection!',
+			'Critical bug in production? On the web, you fix it in 5 minutes. On mobile, you fix it and wait 3 days for users to download the update (if they ever do).',
+			'React Native/Flutter is great until you need a specific native feature. Then you end up writing 3 codebases: JS/Dart, Swift, and Kotlin.',
+			'The speed of React Native evolution is a double-edged sword. You are always one `npm install` away from a broken build that takes 3 days to debug.',
+			"It works on your developer's iPhone 15 Pro. It crashes on DS's Pixel 10 Pro. Welcome to fragmentation hell.",
+		],
+		objectives: [
+			'Understand the massive trade-offs between "Native" (Performance) vs "Cross-Platform" (Speed) vs "PWA" (Sanity).',
+			'Realize that "Maintenance" is the biggest cost in mobile dev, not "Building".',
+			'Learn why "Hybrid" apps are often the worst of both worlds.',
+			'Stop building apps just because other agencies or projects have one.',
+		],
+		resources: {
+			courses: [
+				{
+					text: 'Meta React Native Specialization | Coursera',
+					url: 'https://www.coursera.org/specializations/meta-react-native',
+				},
+				{
+					text: 'Flutter & Dart - The Complete Guide | Udemy',
+					url: 'https://www.udemy.com/course/flutter-bootcamp-with-dart/',
+				},
+				{
+					text: 'CS50: Introduction to Computer Science | Harvard University',
+					url: 'https://pll.harvard.edu/course/cs50-introduction-computer-science',
+				},
+			],
+			youtube: [
+				'https://youtube.com/embed/obwQC7WPkTs',
+				'https://youtube.com/embed/GoDXfzpYGTc',
+				'https://youtube.com/embed/3ODP6tTpjqA',
+				'https://youtube.com/embed/OCwcedYTKDc',
+				'https://youtube.com/embed/T5Us3zUJihE',
+				'https://youtube.com/embed/XUl5BgRQ_7A',
+				'https://youtube.com/embed/Nn2t_7jVb-4',
+			],
+			links: [
+				{
+					text: 'Mobile App vs. Responsive Website: What Do You Actually Need?',
+					url: 'https://www.nngroup.com/articles/mobile-native-apps-vs-mobile-web/',
+				},
+				{
+					text: 'Why I Bet on the Web (PWA) over Native Apps',
+					url: 'https://jasonformat.com/why-pwa/',
+				},
+				{
+					text: 'React Native Upgrade Helper (The Tool of Nightmares)',
+					url: 'https://react-native-community.github.io/upgrade-helper/',
+				},
+				{
+					text: 'Apple App Store Review Guidelines',
+					url: 'https://developer.apple.com/app-store/review/guidelines/',
+				},
+			],
+		},
+	},
+	{
 		name: 'Engineering Management',
 		level: 3,
 		intro:
@@ -1824,12 +1913,15 @@ export const info: LearnData[] = [
 			'Why do vendor costings often sound ludicrous compared to personal experience?',
 		],
 		issues: [
-			'It is okay—and necessary—for business owners to dive into the technical world. Blind trust is not a strategy.',
+			'It is okay, and necessary, for business owners to dive into the technical world. Blind trust is not a strategy.',
+			"You can outsource the coding, but you cannot outsource the 'thinking'. If you lack the internal expertise to verify vendor work, you are not a client; you are a hostage.",
+			"The 'Bus Factor' applies to vendors too. If only one external company knows how your system works, you don't own the system—they own you.",
 			"Developers often make invisible trade-offs and assumptions to get code working. You won't know about them until something breaks in production.",
 			"It is not the developer's job to question your business assumptions; they are hired to build your specs into reality. If the spec is flawed, the code will be flawlessly wrong.",
 			"There is nothing inherently bad about challenging technical estimates or decisions. It's not micromanagement; it's understanding the constraints.",
 			'Reports, guidelines, and restrictions are often written by people with no idea of how the technology works.',
 			'Productivity of engineering talent is wasted explaining basic concepts to non-technical people just so they can write reports.',
+			"Adding manpower to a late software project makes it later. (Brooks's Law)",
 		],
 		objectives: [
 			'Bridge the gap between "Business Requirements" and "Technical Reality"',
@@ -1886,7 +1978,7 @@ export const info: LearnData[] = [
 		questions: [
 			'What makes something look good?',
 			'What is "good" design?',
-			"How do I know when a design is \'too much\'?",
+			"How do I know when a design is 'too much'?",
 			'What are dated trends in web design?',
 			'How is modern design on websites and apps done?',
 			'Why are animations generally not a great idea for usability and accessibility?',
@@ -1894,7 +1986,7 @@ export const info: LearnData[] = [
 		issues: [
 			"We typically don't know what makes good design and have no idea whether something a vendor/agency proposes is well designed.",
 			'Design is more than just looks!',
-			'Web design can be "too much" and knowing that limit is key to reigning in our impulses',
+			'Web design can be "too much" and knowing that limit is key to reining in our impulses',
 			'We tend to follow trends too much - the goal is to enable the user and look good.',
 			'Know the trade-offs in design and how they stack up against technical, business, cost considerations.',
 			'Stop treating UI and web design as all there is to UX.',
@@ -1920,6 +2012,8 @@ export const info: LearnData[] = [
 				'https://www.youtube.com/embed/UWwNIMHFdW4',
 				'https://www.youtube.com/embed/vqXLGX0szIQ',
 				'https://www.youtube.com/embed/sT2YiwRXoJM',
+				'https://www.youtube.com/embed/vvPklRN0Tco',
+				'https://www.youtube.com/embed/-O1ds-kPUZg',
 			],
 			links: [
 				{
@@ -2152,6 +2246,10 @@ export const info: LearnData[] = [
 					text: 'Google SRE Books',
 					url: 'https://sre.google/books/',
 				},
+				{
+					text: 'The Phoenix Project',
+					url: 'https://itrevolution.com/book/the-phoenix-project/',
+				},
 			],
 		},
 	},
@@ -2200,7 +2298,7 @@ export const info: LearnData[] = [
 		],
 		objectives: [
 			'Move from "Testing Phase" to "Continuous Quality"',
-			'Understand that Code and Data must move together—you cannot Shift Left without Test Data Management',
+			'Understand that Code and Data must move together. You cannot Shift Left without Test Data Management',
 			'Realize that Observability (logging/tracing) is actually a form of testing in production',
 			'Understand the Testing Pyramid: Why Integration tests provide higher ROI than Unit tests',
 			'Differentiate between Synthetic Data (fake) and Subsetting (slice of real data)',

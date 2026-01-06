@@ -4,30 +4,32 @@
 		Education,
 		Globe,
 		AppConnectivity,
-		Building, // Basics
+		Building,
 		UserSpeaker,
 		Gui,
 		Product,
 		Analytics,
-		Flow, // Product/UX
+		Flow,
 		Group,
 		Code,
+		Mobile,
 		DataBase,
 		Bot,
-		Chip, // Eng/AI
+		Chip,
 		Security,
-		Infinity, // Ops
+		Infinity,
 		Chemistry,
 
 		// Playbook Imports
-		Help, // Problem Statements
-		Search, // Research
-		CurrencyDollar, // Cost
-		Run, // Running
-		Chat, // Communications
+		Help,
+		Search,
+		CurrencyDollar,
+		Run,
+		Chat,
 
 		// Tripping Imports
-		Plane, // Tech Trippin'
+		Plane,
+		ColorPalette,
 	} from 'carbon-icons-svelte';
 
 	let { page = '' } = $props();
@@ -69,14 +71,26 @@
 					icon: Gui,
 				},
 				{
-					label: 'Eng. Management',
+					label: 'Web Design',
+					id: 'web-design',
+					href: '/learn/web-design',
+					icon: ColorPalette,
+				},
+				{
+					label: 'Engineering Management',
 					id: 'engineering-culture',
 					href: '/learn/engineering-culture',
 					icon: Group,
 				},
 
 				{ header: 'Engineering & Data' },
-				{ label: 'Web & Mobile', id: 'technical', href: '/learn/technical', icon: Code },
+				{
+					label: 'Web Engineering',
+					id: 'web-engineering',
+					href: '/learn/web-engineering',
+					icon: Code,
+				},
+				{ label: 'Mobile Engineering', id: 'mobile', href: '/learn/mobile', icon: Mobile },
 				{ label: 'Data & Analytics', id: 'data', href: '/learn/data', icon: DataBase },
 				{
 					label: 'AI Fundamentals',
@@ -140,7 +154,7 @@
 
 		const inactive = 'hover:bg-primary/5 text-base-content/70 hover:text-base-content';
 
-		const active = 'bg-primary/10 text-primary';
+		const active = 'bg-primary/10 text-orange-700';
 
 		const isActive = itemID && page === itemID;
 		return [baseInclParentItems, isActive ? active : inactive];
