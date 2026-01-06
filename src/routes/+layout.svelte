@@ -162,13 +162,6 @@
 					]}
 					href="/guides">Playbook</a>
 			</li>
-			<!-- <li aria-current={matchUrl(data.url, '/about') === 0 ? 'page' : undefined}>
-				<a
-					class="hover:text-primary text-lg hover:bg-transparent {cat === 'about'
-						? 'highlight'
-						: undefined}"
-					href="/about">About</a>
-			</li> -->
 		</ul>
 	</div>
 	<div class="hidden items-center justify-end text-lg lg:flex">
