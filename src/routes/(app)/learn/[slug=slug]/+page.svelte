@@ -28,12 +28,27 @@
 
 <NewWrap title={data.post?.name ?? ''}>
 	{#if data.post?.topics && data.post.topics.length > 0}
-		<div class="mb-12 flex flex-wrap gap-2">
-			{#each data.post.topics as topic}
-				<span class="bg-primary/10 text-primary rounded-full px-3 py-1 text-sm font-medium">
-					{topic}
+		<div class="border-base-200 mb-10 border-b pt-2 pb-6">
+			<div class="mb-3 flex items-center gap-3">
+				<span class="text-[10px] font-bold tracking-widest text-stone-400 uppercase">
+					Topic Tags
 				</span>
-			{/each}
+				<div class="bg-base-200 h-px flex-1"></div>
+			</div>
+
+			<div class="flex flex-wrap gap-2">
+				{#each data.post.topics as topic}
+					<span
+						class="
+                    border-base-200 bg-base-50 hover:border-primary/30 hover:text-primary
+                    inline-flex cursor-default items-center rounded-md
+                    border px-2.5 py-1 font-mono
+                    text-xs font-medium text-stone-600 transition-colors
+                ">
+						#{topic}
+					</span>
+				{/each}
+			</div>
 		</div>
 	{/if}
 
@@ -41,7 +56,7 @@
 		<article class="grid gap-20 pb-10">
 			{#if data.post?.questions && data.post.questions.length > 0}
 				<Section id="questions" title="Questions You'll Answer">
-					<div class="grid gap-4">
+					<div class="grid grid-cols-2 gap-4">
 						{#each data.post.questions as question}
 							<div
 								class="bg-base-card grid grid-cols-[auto_1fr] items-center gap-4 rounded-xl p-6 shadow-sm">
@@ -60,8 +75,7 @@
 				<Section id="objectives" title="What You'll Learn">
 					<div class="grid gap-4">
 						{#each data.post.objectives as objective, i}
-							<div
-								class="bg-base-card grid grid-cols-[auto_1fr] items-center gap-4 rounded-xl p-6 shadow-sm">
+							<div class="grid grid-cols-[auto_1fr] items-center gap-4 rounded-xl p-2">
 								<div
 									class="bg-secondary text-secondary-content flex size-8 items-center justify-center rounded-full text-sm font-bold">
 									{i + 1}
@@ -77,10 +91,18 @@
 				<Section id="hard-truths" title="Hard Truths">
 					<div class="grid gap-4">
 						{#each data.post.issues as issue}
-							<div
-								class="bg-base-card grid grid-cols-[auto_1fr] items-center gap-4 rounded-xl p-6 shadow-sm">
-								<WarningFilled class="text-error size-8" />
-								<p class="text-base-content">{issue}</p>
+							{@const issueFormatted = issue.endsWith('.') ? issue : issue + '.'}
+							<div class="border-primary/30 bg-base-card rounded-lg border-2 border-dashed p-6">
+								<div class="mb-3 flex items-center gap-2">
+									<WarningFilled size={16} class="text-orange-600" />
+									<span class="text-xs font-bold tracking-widest text-stone-500 uppercase">
+										Reality Check
+									</span>
+								</div>
+
+								<p class="text-base-content/90 text-base leading-relaxed font-medium">
+									{issueFormatted}
+								</p>
 							</div>
 						{/each}
 					</div>
