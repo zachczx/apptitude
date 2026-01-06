@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { ChevronRight } from 'carbon-icons-svelte';
+	import { ChevronRight, CurrencyDollar, Help, Product, Search } from 'carbon-icons-svelte';
 	import Footer from '$lib/Footer.svelte';
 	import { info } from './(app)/learn/data_learn';
 
@@ -39,7 +39,7 @@
 	<title>{pageName}</title>
 </svelte:head>
 
-<div class="bg-base-100 relative min-h-[75dvh] w-full overflow-hidden" data-pagefind-ignore>
+<div class="relative min-h-[75dvh] w-full overflow-hidden" data-pagefind-ignore>
 	<section
 		class="relative mx-auto grid h-full min-h-[75dvh] w-full max-w-(--breakpoint-2xl) items-center gap-12 px-6 py-24 lg:grid-cols-2">
 		<div class="flex flex-col items-start gap-6">
@@ -140,9 +140,7 @@
 
 		<div class="rounded-2xl border border-rose-200/60 bg-white p-8 shadow-sm">
 			<div class="mb-6">
-				<p class="text-secondary-content text-sm font-medium tracking-wide uppercase">
-					The Playbook
-				</p>
+				<p class="text-secondary text-sm font-medium tracking-wide uppercase">The Playbook</p>
 				<h2 class="text-base-content mt-2 text-2xl font-bold">Thinking through decisions</h2>
 				<p class="text-base-content/70 mt-2">
 					Opinionated frameworks for product strategy, scoping, and stakeholder management. This is
@@ -150,29 +148,29 @@
 				</p>
 			</div>
 
-			<div class="flex flex-col gap-2">
+			<div class="grid grid-cols-2 gap-2">
 				<a
-					href="/guides/product"
-					class="border-secondary-content/10 flex items-center justify-between rounded-lg border p-3 text-sm font-medium transition-colors hover:border-rose-300 hover:bg-rose-50">
-					<span>Product Strategy</span>
+					href="/guides/product-plan"
+					class="border-secondary/20 bg-secondary/3 text-secondary flex items-center justify-between rounded-lg border p-3 text-sm font-medium transition-colors hover:border-rose-300 hover:bg-rose-50 hover:text-rose-600">
+					<div class="flex items-center gap-4"><Product /><span>Product Strategy</span></div>
 					<ChevronRight class="text-secondary-content h-4 w-4" />
 				</a>
 				<a
 					href="/guides/problems"
-					class="border-secondary-content/10 flex items-center justify-between rounded-lg border p-3 text-sm font-medium transition-colors hover:border-rose-300 hover:bg-rose-50">
-					<span>Problem Solving</span>
+					class="border-secondary/20 bg-secondary/3 text-secondary flex items-center justify-between rounded-lg border p-3 text-sm font-medium transition-colors hover:border-rose-300 hover:bg-rose-50 hover:text-rose-600">
+					<div class="flex items-center gap-4"><Help /><span>Problem Solving</span></div>
 					<ChevronRight class="text-secondary-content h-4 w-4" />
 				</a>
 				<a
 					href="/guides/cost"
-					class="border-secondary-content/10 flex items-center justify-between rounded-lg border p-3 text-sm font-medium transition-colors hover:border-rose-300 hover:bg-rose-50">
-					<span>Cost Management</span>
+					class="border-secondary/20 bg-secondary/3 text-secondary flex items-center justify-between rounded-lg border p-3 text-sm font-medium transition-colors hover:border-rose-300 hover:bg-rose-50 hover:text-rose-600">
+					<div class="flex items-center gap-4"><CurrencyDollar /><span>Cost Management</span></div>
 					<ChevronRight class="text-secondary-content h-4 w-4" />
 				</a>
 				<a
 					href="/guides/research"
-					class="border-secondary-content/10 flex items-center justify-between rounded-lg border p-3 text-sm font-medium transition-colors hover:border-rose-300 hover:bg-rose-50">
-					<span>User Research</span>
+					class="border-secondary/20 bg-secondary/3 text-secondary flex items-center justify-between rounded-lg border p-3 text-sm font-medium transition-colors hover:border-rose-300 hover:bg-rose-50 hover:text-rose-600">
+					<div class="flex items-center gap-4"><Search /><span>User Research</span></div>
 					<ChevronRight class="text-secondary-content h-4 w-4" />
 				</a>
 			</div>
@@ -191,7 +189,7 @@
 	class="mx-auto flex max-w-(--breakpoint-2xl) flex-col items-center justify-center gap-4 px-6 py-12 text-center sm:flex-row"
 	data-pagefind-ignore>
 	<div class="space-y-2 text-center">
-		<p class="text-primary text-base italic">
+		<p class="text-base-content/75 text-base font-medium italic">
 			For everyone who's ever nodded along pretending to understand the tech stuff.
 		</p>
 		<a href="/about" class="text-primary inline-block text-sm font-medium hover:underline">

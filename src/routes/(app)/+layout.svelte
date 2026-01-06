@@ -9,7 +9,7 @@
 		class="lg:border-r-base-100 vertical-offset sidebar-color sticky top-14 hidden w-full min-w-72 content-start overflow-y-auto lg:grid lg:border-r-2">
 		<NavAside {page} />
 	</aside>
-	<main class="border-r-base-100 bg-base-100 w-full border-r-2">
+	<main class="border-r-base-100 w-full border-r-2">
 		{@render children()}
 	</main>
 </div>
