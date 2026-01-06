@@ -77,7 +77,7 @@
 					icon: ColorPalette,
 				},
 				{
-					label: 'Engineering Management',
+					label: 'Eng Management',
 					id: 'engineering-culture',
 					href: '/learn/engineering-culture',
 					icon: Group,
@@ -202,17 +202,17 @@
 					{/if}
 
 					{#if item.children}
-						<ul class="border-base-200 relative mt-1 ml-5 space-y-0.5 border-l pb-1 pl-0">
+						<ul class="border-base-content/30 relative ms-9 mt-1 space-y-0.5 border-l ps-0">
 							{#each item.children as subItem}
 								{@const isActiveSub = page === subItem.id}
 								<li>
 									<a
 										href={subItem.href}
 										class={[
-											'-ml-px block rounded-l-none rounded-r-lg border-l-2 py-1.5 pl-4 text-sm transition-all duration-200',
+											'-ms-px block rounded-l-none rounded-r-lg border-l-2 py-1.5 pl-4 text-sm transition-all duration-200',
 											isActiveSub
 												? 'border-primary bg-primary/10 text-primary font-bold'
-												: 'text-base-content/60 hover:text-base-content hover:border-base-300 border-transparent',
+												: 'text-base-content/60 hover:text-base-content hover:border-base-content/30 border-transparent',
 										]}>
 										{subItem.label}
 									</a>
