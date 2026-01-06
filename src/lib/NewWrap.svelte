@@ -10,7 +10,7 @@
 	}: { children: Snippet; toc?: Snippet; title: string; subtitle?: string } = $props();
 </script>
 
-<div class="relative grid min-h-dvh grid-cols-[1fr_auto]">
+<div class={['relative grid min-h-dvh', toc && 'grid-cols-[1fr_auto]']}>
 	<article class="mx-4 grid max-w-200 grid-rows-[auto_1fr_auto] justify-self-center">
 		<div class="mb-8 rounded-xl py-8">
 			<h1 class="text-4xl font-bold">
@@ -27,8 +27,9 @@
 
 		<Footer />
 	</article>
-
-	<aside class="sticky top-14 hidden h-[calc(100vh-4rem)] min-w-64 overflow-y-auto lg:block">
-		{@render toc?.()}
-	</aside>
+	{#if toc}
+		<aside class="sticky top-14 hidden h-[calc(100vh-4rem)] min-w-64 overflow-y-auto lg:block">
+			{@render toc?.()}
+		</aside>
+	{/if}
 </div>

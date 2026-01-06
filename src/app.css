@@ -9,13 +9,13 @@
 	--color-primary: #ea580c; /* Orange-600: Warm, visible, inviting */
 	--color-primary-content: #fff7ed; /* Deep orange-brown */
 
-	/* Secondary: Soft Teal */
-	--color-secondary: #5eead4; /* Teal-300: Fresh complement */
-	--color-secondary-content: #134e4a; /* Deep teal */
+	/* Secondary: Deeper Teal - more usable */
+	--color-secondary: #0d9488; /* Teal-600: muted, sophisticated */
+	--color-secondary-content: #f0fdfa; /* Teal-50 */
 
-	/* Accent: Lavender */
-	--color-accent: #d8b4fe; /* Purple-300 */
-	--color-accent-content: #581c87;
+	/* Accent: Deeper Purple - more visible */
+	--color-accent: #a855f7; /* Purple-500: richer than 300 */
+	--color-accent-content: #faf5ff; /* Purple-50 */
 
 	/* Neutral: Warm Beige */
 	--color-neutral: #f5f5f4; /* Stone-100 */
@@ -23,8 +23,8 @@
 
 	/* --- Backgrounds (keep your warm cream!) --- */
 	--color-base-100: #fffbeb; /* Amber-50 */
-	--color-base-200: #fef3c7; /* Amber-100 */
-	--color-base-300: #fde68a; /* Amber-200 */
+	--color-base-200: #fde68a; /* Amber-200 */
+	--color-base-300: #fcd34d; /* Amber-300 */
 
 	/* --- Text --- */
 	--color-base-content: #44403c; /* Stone-700 */
