@@ -98,7 +98,7 @@
 										href={course.url}
 										target="_blank"
 										rel="noopener noreferrer"
-										class="bg-base-card group flex items-start gap-3 rounded-xl p-4 shadow-sm transition-all hover:shadow-md">
+										class="bg-base-card group flex items-center gap-3 rounded-xl p-4 shadow-sm transition-all hover:shadow-md">
 										<div
 											class="bg-primary/10 text-primary flex size-10 shrink-0 items-center justify-center rounded-lg">
 											<svg
