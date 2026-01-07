@@ -157,7 +157,7 @@
 										rel="noopener noreferrer"
 										class="bg-base-card group flex items-center gap-3 rounded-xl p-4 shadow-sm transition-all hover:shadow-md">
 										<div
-											class="bg-accent/20 text-accent-content flex size-10 shrink-0 items-center justify-center rounded-lg">
+											class="bg-accent-content text-accent flex size-10 shrink-0 items-center justify-center rounded-lg">
 											<svg
 												xmlns="http://www.w3.org/2000/svg"
 												class="size-5"
