@@ -300,16 +300,8 @@ export const guides: GuidesData[] = [
 				why: 'The money spent on this new system is going to be wasted, because the crux of the problem lies in the majority of time wasted on manual processes and other legacy systems.',
 			},
 			{
-				what: 'Get this feature added, I don’t care how you get it done.',
-				why: 'There’s obviously no prioritization done for features and no idea (probably unlikely) it solves an important user pain point. User research is an afterthought, so this decision is definitely not going to help the product.',
-			},
-			{
 				what: 'There’re 5 organizations using our wrapper product, they’re using it because doing this is cheaper than using the actual product as is.',
 				why: 'We’re subsidizing this usage and wasting money (versus letting market economics dictate demand).',
-			},
-			{
-				what: 'I’m doing this system revamp because I can shave X days from this process, though the entire process still takes 10X days in total from other manual processes and legacy systems.',
-				why: 'The money spent on this new system is going to be wasted, because the crux of the problem lies in the majority of time wasted on manual processes and other legacy systems.',
 			},
 			{
 				what: 'I know the problem, I’m user number 1 and my colleagues are users 2, 3, 4…',
@@ -712,10 +704,6 @@ export const guides: GuidesData[] = [
 			{
 				what: 'How do we manage vulnerabilities (CVEs) and patches?',
 				why: "It's part and parcel of running systems. Patching is essential.",
-			},
-			{
-				what: "Let's do UI UX better.",
-				why: "They're very different things! The person saying this betrays a lack of understanding of what these 2 acronyms mean. UI is a part of ux. UX is far more than just tinkering with screens, colors, typography, spacing on figma templates. And this lack of clarity prevents us from going into what needs to be solved and how we should solve them.",
 			},
 			{
 				what: 'There needs to be X approvals from xxx, yyy, zzz groups to make an edit to the website.',
