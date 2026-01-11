@@ -55,7 +55,7 @@
 	<Intersection bind:currentSection config={observerConfig}>
 		<article class="grid gap-20 pb-10">
 			{#if data.post?.questions && data.post.questions.length > 0}
-				<Section id="questions" title="Questions You'll Answer">
+				<Section id="questions" title="Key Questions">
 					<div class="grid grid-cols-2 gap-4">
 						{#each data.post.questions as question}
 							<div
