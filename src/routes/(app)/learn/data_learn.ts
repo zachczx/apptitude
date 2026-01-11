@@ -440,10 +440,10 @@ export const info: LearnData[] = [
 		},
 	},
 	{
-		name: 'Personal Effectiveness',
+		name: 'Self Management',
 		level: 2,
 		intro: 'The best idea in the world dies in a bad slide deck.',
-		slug: 'personal-effectiveness',
+		slug: 'self-management',
 		topics: [
 			'slides',
 			'deck',
@@ -1733,10 +1733,10 @@ export const info: LearnData[] = [
 		},
 	},
 	{
-		name: 'Organizational Effectiveness',
+		name: 'Organizational Dynamics',
 		level: 2,
 		intro: 'Why good technology dies in bad processes.',
-		slug: 'org-effectiveness',
+		slug: 'org-dynamics',
 		topics: [
 			'conways-law',
 			'tech-debt',

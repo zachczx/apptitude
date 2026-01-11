@@ -19,6 +19,8 @@
 		Security,
 		Infinity,
 		Chemistry,
+		SkillLevel,
+		ChartRelationship,
 
 		// Playbook Imports
 		Help,
@@ -30,8 +32,6 @@
 		// Tripping Imports
 		Plane,
 		ColorPalette,
-		SkillLevel,
-		ChartRelationship,
 	} from 'carbon-icons-svelte';
 
 	let { page = '' } = $props();
@@ -46,15 +46,15 @@
 				{ label: 'Apps', id: 'apps', href: '/learn/apps', icon: AppConnectivity },
 				{ label: 'Central Tools', id: 'wog', href: '/learn/wog', icon: Building },
 				{
-					label: 'Personal Effectiveness',
-					id: 'personal-effectiveness',
-					href: '/learn/personal-effectiveness',
+					label: 'Self Management',
+					id: 'self-management',
+					href: '/learn/self-management',
 					icon: SkillLevel,
 				},
 				{
-					label: 'Organizational Effectiveness',
-					id: 'org-effectiveness',
-					href: '/learn/org-effectiveness',
+					label: 'Org Dynamics',
+					id: 'org-dynamics',
+					href: '/learn/org-dynamics',
 					icon: ChartRelationship,
 				},
 
