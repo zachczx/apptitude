@@ -192,9 +192,6 @@
 		<p class="text-base-content/75 text-base font-medium italic">
 			For everyone who's ever nodded along pretending to understand the tech stuff.
 		</p>
-		<a href="/about" class="text-primary inline-block text-sm font-medium hover:underline">
-			Why this exists →
-		</a>
 	</div>
 </section>
 
