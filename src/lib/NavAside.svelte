@@ -30,6 +30,8 @@
 		// Tripping Imports
 		Plane,
 		ColorPalette,
+		SkillLevel,
+		ChartRelationship,
 	} from 'carbon-icons-svelte';
 
 	let { page = '' } = $props();
@@ -43,6 +45,18 @@
 				{ label: 'Internet', id: 'basics-web', href: '/learn/basics-web', icon: Globe },
 				{ label: 'Apps', id: 'apps', href: '/learn/apps', icon: AppConnectivity },
 				{ label: 'Central Tools', id: 'wog', href: '/learn/wog', icon: Building },
+				{
+					label: 'Personal Effectiveness',
+					id: 'personal-effectiveness',
+					href: '/learn/personal-effectiveness',
+					icon: SkillLevel,
+				},
+				{
+					label: 'Organizational Effectiveness',
+					id: 'org-effectiveness',
+					href: '/learn/org-effectiveness',
+					icon: ChartRelationship,
+				},
 
 				{ header: 'Product & Design' },
 				{

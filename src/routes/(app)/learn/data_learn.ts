@@ -440,6 +440,127 @@ export const info: LearnData[] = [
 		},
 	},
 	{
+		name: 'Personal Effectiveness',
+		level: 2,
+		intro: 'The best idea in the world dies in a bad slide deck.',
+		slug: 'personal-effectiveness',
+		topics: [
+			'slides',
+			'deck',
+			'storytelling',
+			'consensus',
+			'stakeholder',
+			'secretariat',
+			'minutes',
+			'approval',
+			'executive-communication',
+			'presentation-design',
+			'writing',
+			'decision-frameworks',
+			'prioritization',
+			'influence-without-authority',
+		],
+		questions: [
+			'What is staff work and why does it matter?',
+			'How do you write a paper or deck that management will actually approve?',
+			'How do you "socialize" an idea before the actual meeting?',
+			'What is the "So What?" test and why do most proposals fail it?',
+			'What is the Pyramid Principle and why does every McKinsey consultant use it?',
+			'How do you influence without authority in bureaucratic organizations?',
+			'What are decision frameworks like RICE, ICE, Eisenhower Matrix?',
+		],
+		issues: [
+			'The best idea in the world will die if the paperwork (submission) is bad.',
+			'Consensus building happens before the meeting, not during it.',
+			'Slides are for the audience, not for you to read your script.',
+			'Most slide decks are dense text with no visual hierarchy and a buried lede',
+			'Executives have 30 seconds, so if your first slide doesn\'t answer "why should I care?", you\'ve lost',
+			'Technical people explain HOW before establishing WHY it matters',
+			'Stakeholders say "yes" in meetings then ghost you - you didn\'t build alignment',
+			'Differentiate between seeking approval, endorsement, forgiveness or to inform.',
+		],
+		objectives: [
+			'Learn to write for decision makers (Bottom Line Up Front, Pyramid Principle)',
+			'Master the "pre-meeting" hustle to ensure your agenda passes',
+			'Understand visual hierarchy in slides: one message per slide, not ten',
+			'Learn decision frameworks to prioritize ruthlessly',
+			'Develop stakeholder mapping and influence strategies',
+		],
+		resources: {
+			courses: [
+				{
+					text: 'Successful Negotiation: Essential Strategies and Skills | University of Michigan',
+					url: 'https://www.coursera.org/learn/negotiation-skills',
+				},
+				{
+					text: 'Storytelling and Influencing: Communicate with Impact | Macquarie University',
+					url: 'https://www.coursera.org/learn/communicate-with-impact',
+				},
+				{
+					text: 'High-Impact Business Writing | UC Irvine',
+					url: 'https://www.coursera.org/learn/business-writing',
+				},
+			],
+			youtube: [
+				'https://www.youtube.com/embed/j9NZz6Re-88',
+				'https://www.youtube.com/embed/CY1Y367KEko',
+				'https://www.youtube.com/embed/l0hVIH3EnlQ',
+				'https://www.youtube.com/embed/meBXuTIPJQk',
+				'https://www.youtube.com/embed/4TQC83nGv4Y',
+				'https://www.youtube.com/embed/iuYlGRnC7J8',
+				'https://www.youtube.com/embed/HnlWiVs9P5o',
+				'https://www.youtube.com/embed/zlrb_X6fYZ0',
+				'https://www.youtube.com/embed/e47wAgIhZ7o',
+			],
+			links: [
+				{
+					text: 'Completed Staff Work (The Doctrine)',
+					url: 'https://govleaders.org/completed-staff-work.htm',
+				},
+				{
+					text: 'On staff work | SAFTI MI Library',
+					url: 'https://saftimi.spydus.com.sg/cgi-bin/spydus.exe/ENQ/WPAC/BIBENQ?SETLVL=&BRN=11982',
+				},
+				{
+					text: 'The Pyramid Principle: Logic in Writing and Thinking (Barbara Minto)',
+					url: 'https://medium.com/lessons-from-mckinsey/the-pyramid-principle-f0885dd3c5c7',
+				},
+				{
+					text: 'Writing for Busy Readers (Harvard Business Review)',
+					url: 'https://hbr.org/2016/04/how-to-write-email-with-military-precision',
+				},
+				{
+					text: "Amazon's 6-Page Narrative Memo",
+					url: 'https://www.linkedin.com/pulse/beauty-amazons-6-pager-brad-porter/',
+				},
+				{
+					text: 'Slide:ology: The Art and Science of Presentation Design',
+					url: 'https://www.duarte.com/presentation-skills-resources/books/slideology/',
+				},
+				{
+					text: 'BLUF: Bottom Line Up Front (Military Communication)',
+					url: 'https://www.animalz.co/blog/bottom-line-up-front/',
+				},
+				{
+					text: 'Influence Without Authority',
+					url: 'https://hbr.org/2018/12/how-to-build-influence-in-your-organization',
+				},
+				{
+					text: 'RICE Prioritization Framework',
+					url: 'https://www.intercom.com/blog/rice-simple-prioritization-for-product-managers/',
+				},
+				{
+					text: 'Eisenhower Matrix',
+					url: 'https://www.eisenhower.me/eisenhower-matrix/',
+				},
+				{
+					text: 'Mental Models: The Best Way to Make Intelligent Decisions',
+					url: 'https://fs.blog/mental-models/',
+				},
+			],
+		},
+	},
+	{
 		name: 'UX Fundamentals',
 		level: 1,
 		intro: 'UX is not just UI. It is how something works, not just how it looks.',
@@ -692,6 +813,8 @@ export const info: LearnData[] = [
 			'strategy',
 			'metrics',
 			'funding',
+			'transformation',
+			'change-management',
 		],
 		questions: [
 			'What is product-market fit?',
@@ -730,6 +853,8 @@ export const info: LearnData[] = [
 				'https://www.youtube.com/embed/yr_sz6fRy-w',
 				'https://www.youtube.com/embed/6Uc-EiQ2xnU',
 				'https://www.youtube.com/embed/YCIF9948uts?si=vYu5TVLBICY7Ll8W',
+				'https://www.youtube.com/embed/L2OPYYthw4c',
+				'https://www.youtube.com/embed/8-boBsWcr5A',
 			],
 			links: [
 				{ text: 'Product-Market Fit | First Round Capital', url: 'https://pmf.firstround.com/' },
@@ -1608,6 +1733,110 @@ export const info: LearnData[] = [
 		},
 	},
 	{
+		name: 'Organizational Effectiveness',
+		level: 2,
+		intro: 'Why good technology dies in bad processes.',
+		slug: 'org-effectiveness',
+		topics: [
+			'conways-law',
+			'tech-debt',
+			'agile',
+			'devops-culture',
+			'decision-frameworks',
+			'team-topologies',
+			'metrics',
+			'change-management',
+			'process-automation',
+			'digital-transformation',
+			'bureaucracy',
+			'stakeholder-management',
+		],
+		questions: [
+			"Why do org charts determine software architecture? (Conway's Law)",
+			'What is the difference between Agile theater and actual iterative delivery?',
+			'How do we measure engineering productivity without destroying morale?',
+			'Why does adding more developers to a late project make it later?',
+			'What is tech debt and when should we pay it down vs accumulate more?',
+			'How do we balance feature velocity with system stability?',
+			'What are Team Topologies and why do they matter?',
+			'How do we make decisions when stakeholders disagree on priorities?',
+			'Why do digital transformation initiatives fail 70% of the time?',
+			'What is the difference between automation and digitalization?',
+			'How do we navigate bureaucracy without getting stuck in process theater?',
+		],
+		issues: [
+			'Most organizations buy Agile consultants but keep waterfall approval processes',
+			"Adding headcount doesn't linearly increase output - communication overhead is real",
+			'Tech debt compounds silently until a "simple change" takes 6 months',
+			'Metrics like "lines of code" or "tickets closed" optimize for the wrong behaviors',
+			'Stakeholders want "fast, cheap, and perfect" - you get to pick two at most',
+			'Change management is treated as "send an email and hope" instead of deliberate culture work',
+			'Digital transformation gets sold as tool migration instead of process redesign',
+			'Procurement and compliance teams often block the exact tools needed for modern development',
+			'The phrase "it works in production" shouldn\'t be more reliable than "it works in staging"',
+		],
+		objectives: [
+			"Understand Conway's Law: how organizational structure shapes system architecture",
+			'Learn to identify real Agile practices vs cargo cult Agile',
+			"Recognize when tech debt needs paying vs when it's acceptable",
+			'Understand engineering productivity frameworks (DORA, SPACE)',
+			'Learn Team Topologies: Stream-aligned, Platform, Enabling, Complicated Subsystem',
+			'Grasp why "best practices" from BigTech don\'t copy-paste to government/enterprise',
+		],
+		resources: {
+			courses: [
+				{
+					text: 'Leading Digital Transformation | Boston University',
+					url: 'https://www.coursera.org/learn/leading-digital-transformation',
+				},
+				{
+					text: 'Agile Meets Design Thinking | University of Virginia',
+					url: 'https://www.coursera.org/learn/uva-darden-getting-started-agile',
+				},
+				{
+					text: 'Organizational Analysis | Stanford',
+					url: 'https://www.coursera.org/learn/organizational-analysis',
+				},
+			],
+			youtube: [
+				'https://www.youtube.com/embed/502ILHjX9EE',
+				'https://www.youtube.com/embed/pMuiVlnGqjk',
+				'https://www.youtube.com/embed/5IUj1EZwpJY',
+				'https://www.youtube.com/embed/fDILpuiLuAI',
+			],
+			links: [
+				{
+					text: "Conway's Law",
+					url: 'https://martinfowler.com/bliki/ConwaysLaw.html',
+				},
+				{
+					text: 'Team Topologies',
+					url: 'https://teamtopologies.com/key-concepts',
+				},
+				{
+					text: 'The DORA Metrics: Measuring DevOps Performance',
+					url: 'https://cloud.google.com/blog/products/devops-sre/using-the-four-keys-to-measure-your-devops-performance',
+				},
+				{
+					text: 'Accelerate: The Science of DevOps',
+					url: 'https://itrevolution.com/product/accelerate/',
+				},
+				{
+					text: 'Why Digital Transformations Fail',
+					url: 'https://hbr.org/2019/03/digital-transformation-is-not-about-technology',
+				},
+				{
+					text: 'The Mythical Man-Month',
+					url: 'https://en.wikipedia.org/wiki/The_Mythical_Man-Month',
+				},
+				{
+					text: 'SPACE Framework: Beyond Velocity',
+					url: 'https://queue.acm.org/detail.cfm?id=3454124',
+				},
+			],
+		},
+	},
+	{
 		name: 'Web Engineering',
 		level: 3,
 		intro:
@@ -1689,6 +1918,7 @@ export const info: LearnData[] = [
 				'https://youtube.com/embed/Z8KZCYbjEng',
 				'https://youtube.com/embed/dGAgxozNWFE',
 				'https://youtube.com/embed/1iAeSCwh92c',
+				'https://youtube.com/embed/zZW1ZaYxi8M',
 			],
 			links: [
 				{
@@ -1931,7 +2161,7 @@ export const info: LearnData[] = [
 		],
 		resources: {
 			courses: [],
-			youtube: [],
+			youtube: ['https://www.youtube.com/embed/W42YJYkO8gw'],
 			links: [
 				{
 					text: 'The XY Problem',
